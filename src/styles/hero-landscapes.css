@@ -1,0 +1,234 @@
+/* Subtle landscape silhouettes per hero theme */
+
+.hero-era__landscape {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-era__landscape-sky {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-era__landscape-hills {
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  bottom: 0;
+  height: 42%;
+  transition: opacity var(--hero-era-transition, 640ms ease);
+}
+
+.hero-era__landscape-hills--back {
+  height: 34%;
+  opacity: 0.55;
+}
+
+.hero-era__landscape-hills--front {
+  height: 26%;
+  opacity: 0.85;
+}
+
+.hero-era__landscape-sun {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(1px);
+}
+
+/* Modern dark — twilight hills (split-complementary washes) */
+.hero-era--modern.hero-era--dark .hero-era__landscape-hills--back {
+  background: linear-gradient(180deg, transparent 0%, rgb(76 29 149 / 0.35) 100%);
+  clip-path: polygon(
+    0% 100%,
+    0% 58%,
+    12% 42%,
+    24% 52%,
+    38% 34%,
+    52% 48%,
+    66% 30%,
+    78% 44%,
+    90% 36%,
+    100% 50%,
+    100% 100%
+  );
+}
+
+.hero-era--modern.hero-era--dark .hero-era__landscape-hills--front {
+  background: linear-gradient(180deg, transparent 0%, rgb(18 8 28 / 0.92) 100%);
+  clip-path: polygon(
+    0% 100%,
+    0% 72%,
+    14% 56%,
+    28% 68%,
+    44% 50%,
+    58% 62%,
+    72% 48%,
+    86% 58%,
+    100% 46%,
+    100% 100%
+  );
+}
+
+.hero-era--modern.hero-era--dark .hero-era__landscape-sun {
+  width: 6rem;
+  height: 6rem;
+  top: 16%;
+  right: 18%;
+  background: radial-gradient(circle, rgb(253 186 116 / 0.28) 0%, transparent 70%);
+}
+
+/* Modern light — watercolor horizon */
+.hero-era--modern.hero-era--light .hero-era__landscape-hills--back {
+  background: linear-gradient(180deg, transparent 0%, rgb(167 139 250 / 0.28) 100%);
+  clip-path: polygon(
+    0% 100%,
+    0% 62%,
+    16% 48%,
+    32% 58%,
+    48% 40%,
+    64% 52%,
+    80% 38%,
+    100% 52%,
+    100% 100%
+  );
+}
+
+.hero-era--modern.hero-era--light .hero-era__landscape-hills--front {
+  background: linear-gradient(180deg, transparent 0%, rgb(45 21 62 / 0.12) 100%);
+  clip-path: polygon(
+    0% 100%,
+    0% 70%,
+    18% 58%,
+    36% 66%,
+    54% 52%,
+    72% 62%,
+    88% 54%,
+    100% 60%,
+    100% 100%
+  );
+}
+
+.hero-era--modern.hero-era--light .hero-era__landscape-sun {
+  width: 7rem;
+  height: 7rem;
+  top: 12%;
+  left: 14%;
+  background: radial-gradient(circle, rgb(251 191 36 / 0.35) 0%, transparent 72%);
+}
+
+/* Retro16 — neon vector skyline (see hero-retro-skyline in hero-landscapes.css) */
+.hero-era--retro16 .hero-era__landscape-hills,
+.hero-era--retro16 .hero-era__landscape-sun {
+  display: none;
+}
+
+.hero-era--retro16 .hero-era__landscape-sky {
+  background: transparent;
+}
+
+.hero-era--modern .hero-era__landscape,
+.hero-era--retro16 .hero-era__landscape {
+  z-index: 0;
+}
+
+/* ——— Retro16 neon skyline ——— */
+
+.hero-retro-skyline {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 1;
+  width: 100%;
+  height: min(58vh, 26rem);
+  overflow: visible;
+  pointer-events: none;
+}
+
+.hero-retro-skyline__sun-disc {
+  fill: url(#retro-skyline-sun-dark);
+  opacity: 0.92;
+}
+
+.hero-era--retro16.hero-era--light .hero-retro-skyline__sun-disc {
+  fill: url(#retro-skyline-sun-light);
+  opacity: 0.85;
+}
+
+.hero-retro-skyline__sun-stripe {
+  fill: rgb(26 10 78 / 0.55);
+}
+
+.hero-era--retro16.hero-era--light .hero-retro-skyline__sun-stripe {
+  fill: rgb(255 255 255 / 0.45);
+}
+
+.hero-retro-skyline__ridge {
+  fill: rgb(88 28 135 / 0.35);
+  stroke: rgb(192 132 252 / 0.45);
+  stroke-width: 1.5;
+}
+
+.hero-era--retro16.hero-era--light .hero-retro-skyline__ridge {
+  fill: rgb(147 197 253 / 0.35);
+  stroke: rgb(236 72 153 / 0.4);
+}
+
+.hero-retro-skyline__layer path {
+  vector-effect: non-scaling-stroke;
+  stroke-linejoin: miter;
+}
+
+.hero-retro-skyline__layer--back path {
+  fill: rgb(15 8 45 / 0.72);
+  stroke: rgb(167 139 250 / 0.35);
+  stroke-width: 1.25;
+}
+
+.hero-retro-skyline__layer--mid path {
+  fill: rgb(10 6 35 / 0.82);
+  stroke: rgb(0 255 255 / 0.45);
+  stroke-width: 1.5;
+}
+
+.hero-retro-skyline__layer--front path {
+  fill: rgb(5 4 22 / 0.88);
+  stroke: rgb(255 0 255 / 0.85);
+  stroke-width: 2;
+}
+
+.hero-retro-skyline__windows rect {
+  fill: rgb(254 240 138 / 0.75);
+}
+
+.hero-retro-skyline__horizon {
+  stroke: rgb(0 255 255 / 0.9);
+  stroke-width: 2;
+  filter: drop-shadow(0 0 6px rgb(0 255 255 / 0.65));
+}
+
+/* Light mode — Miami pastel neon */
+.hero-era--retro16.hero-era--light .hero-retro-skyline__layer--back path {
+  fill: rgb(219 234 254 / 0.55);
+  stroke: rgb(37 99 235 / 0.35);
+}
+
+.hero-era--retro16.hero-era--light .hero-retro-skyline__layer--mid path {
+  fill: rgb(255 255 255 / 0.5);
+  stroke: rgb(236 72 153 / 0.5);
+}
+
+.hero-era--retro16.hero-era--light .hero-retro-skyline__layer--front path {
+  fill: rgb(255 255 255 / 0.62);
+  stroke: rgb(37 99 235 / 0.85);
+}
+
+.hero-era--retro16.hero-era--light .hero-retro-skyline__windows rect {
+  fill: rgb(251 191 36 / 0.8);
+}
+
+.hero-era--retro16.hero-era--light .hero-retro-skyline__horizon {
+  stroke: rgb(236 72 153 / 0.85);
+  filter: drop-shadow(0 0 5px rgb(236 72 153 / 0.45));
+}

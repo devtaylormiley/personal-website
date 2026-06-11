@@ -1,0 +1,15 @@
+{
+  "In Prog": { "canonical": "In progress", "confidence": 0.95, "method": "ai", "reason": "Abbreviated CRM status synonym" },
+  "IN_PROGRESS": { "canonical": "In progress", "confidence": 1.0, "method": "rule", "reason": "Exact enum match after normalization" },
+  "In Progress": { "canonical": "In progress", "confidence": 1.0, "method": "rule", "reason": "Title-case spreadsheet export" },
+  "WIP": { "canonical": "In progress", "confidence": 0.91, "method": "ai", "reason": "Maintenance shorthand for work-in-progress" },
+  "ACTIVE": { "canonical": "In progress", "confidence": 0.89, "method": "ai", "reason": "Legacy CMMS active flag mapped to in-flight work" },
+  "ON_HOLD": { "canonical": "Blocked", "confidence": 0.93, "method": "ai", "reason": "Operations hold treated as blocked queue" },
+  "BLOCKED": { "canonical": "Blocked", "confidence": 1.0, "method": "rule", "reason": "Exact enum match" },
+  "NEW": { "canonical": "Ready", "confidence": 0.86, "method": "ai", "reason": "Unstarted tickets grouped with ready queue" },
+  "Open": { "canonical": "Ready", "confidence": 0.84, "method": "ai", "reason": "CRM open state mapped to ready-for-work" },
+  "COMPLETE": { "canonical": "Closed", "confidence": 0.97, "method": "ai", "reason": "Past-tense completion status" },
+  "DONE": { "canonical": "Closed", "confidence": 0.96, "method": "ai", "reason": "Informal closed synonym" },
+  "Closed": { "canonical": "Closed", "confidence": 1.0, "method": "rule", "reason": "Exact enum match" },
+  "Ready": { "canonical": "Ready", "confidence": 1.0, "method": "rule", "reason": "Exact enum match" }
+}

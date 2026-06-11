@@ -1,0 +1,48 @@
+/* Site-wide hero theme shell (portfolio routes except Blackfang campaign) */
+
+.portfolio-site--themed {
+  position: relative;
+  background: transparent;
+  color: var(--hero-fg);
+}
+
+.hero-era-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.portfolio-site__foreground {
+  position: relative;
+  z-index: 10;
+}
+
+.portfolio-site--themed .site-navbar {
+  border-color: var(--hero-border);
+  background: var(--hero-surface);
+  color: var(--hero-fg);
+  backdrop-filter: blur(14px);
+}
+
+.portfolio-site--themed .site-navbar__brand {
+  color: var(--hero-title-fg);
+}
+
+.portfolio-site--themed .site-navbar__brand:hover {
+  color: var(--hero-fg);
+}
+
+.portfolio-site--themed .site-navbar__link {
+  color: var(--hero-fg-muted);
+}
+
+.portfolio-site--themed .site-navbar__link:hover {
+  color: var(--hero-title-fg);
+}
+
+.portfolio-site--themed .portfolio-site__footer {
+  border-color: var(--hero-border);
+  color: var(--hero-fg-muted);
+}

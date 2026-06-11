@@ -1,0 +1,306 @@
+{
+  "id": "strike-force-variel",
+  "killteamId": "IMP-SFV",
+  "factionId": "IMP",
+  "imageUrl": "https://ktdash.app/img/killteams/IMP-SFV.webp",
+  "killTeam": {
+    "name": "Strike Force Variel",
+    "archetypes": "Seek And Destroy, Infiltration",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Stoic Sternguard Sergeant Ramus is joined by Infernus Marine Haroth, Assault Intercessor Maphael, Infiltrator Belath, Intercessor Zeradim and Reiver Nahrden. This elite team is led by a mysterious lieutenant of the Chapter.",
+    "ploys": [
+      {
+        "name": "Shock Assault",
+        "description": "Use this firefight ploy when a friendly STRIKE FORCE VARIEL operative is performing the Fight action during an activation in which it performed the Charge action, at the start of the Resolve Attack Dice step. Until the end of that action:\n- Its melee weapon has the Shock weapon rule\n- The first time your strike during that sequence, inflict 1 additional damage",
+        "type": null
+      },
+      {
+        "name": "Wrath Of Vengeance",
+        "description": "Use this firefight ploy when a friendly STRIKE FORCE VARIEL operative is counteracting. It can perform an additional 1 AP action for free during that counteraction, but both actions must be different.",
+        "type": null
+      },
+      {
+        "name": "Transhuman Physiology",
+        "description": "Use this firefight ploy when an operative is shooting a friendly STRIKE FORCE VARIEL operative, in the Roll Defence Dice step. You can retain one of your normal successes as a critical success instead.",
+        "type": null
+      },
+      {
+        "name": "Combat Doctrine",
+        "description": "Select one COMBAT DOCTRINE from those presented below. Whenever a friendly STRIKE FORCE VARIEL operative is `x`, its weapons have the Balanced weapon rule. `x` is the COMBAT DOCTRINE you selected.\n\n- **Devastator Doctrine:** Shooting an operative more than 6\" from it\n- **Tactical Doctrine:** Shooting an operative within 6\" of it\n- **Assault Doctring:** Fighting or retaliating",
+        "type": "strategy"
+      },
+      {
+        "name": "And They Shall Know No Fear",
+        "description": "You can ignore any changes to the stats of friendly STRIKE FORCE VARIEL operatives from being injured (including their weapons' stats).",
+        "type": "strategy"
+      },
+      {
+        "name": "Grim Resolve",
+        "description": "Whenever determining control of a marker, treat the total APL stat of friendly STRIKE FORCE VARIEL operatives that contest it as 1 higher if friendly operatives controlled that marker at the start of the Firefight phase. Note this isn't a change to the APL stat, so any changes are cumulative with this.",
+        "type": "strategy"
+      },
+      {
+        "name": "Indomitus",
+        "description": "Whenever an operative is shooting a friendly STRIKE FORCE VARIEL operative, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+        "type": "strategy"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A STRIKE FORCE VARIEL killteam is composed of 6 different operatives.",
+    "description": "Stoic Sternguard Sergeant Ramus is joined by Infernus Marine Haroth, Assault Intercessor Maphael, Infiltrator Belath, Intercessor Zeradim and Reiver Nahrden. This elite team is led by a mysterious lieutenant of the Chapter."
+  },
+  "operatives": [
+    {
+      "id": "imp-sfv-var",
+      "opTypeId": "IMP-SFV-VAR",
+      "name": "Strike Force Variel Lieutenant Variel",
+      "category": "po",
+      "cardType": "official",
+      "role": "Lieutenant Variel",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 13,
+      "keywords": "STRIKE FORCE VARIEL, IMPERIUM, ADEPTUS ASTARTES, LIEUTENANT VARIEL",
+      "weapons": [
+        {
+          "name": "Master-Crafted Special Issue Bolt Pistol (Default)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Lethal 5+, Prc1"
+        },
+        {
+          "name": "Combat Knife (Default)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Astartes: During this operative's activation, it can perfrom either two Shoot actions or two Fight actions. This operative can counteract regardless of its order.\n\nHeadhunter: This operative can perform the Charge action while it has a Conceal order",
+      "notes": ""
+    },
+    {
+      "id": "imp-sfv-ram",
+      "opTypeId": "IMP-SFV-RAM",
+      "name": "Strike Force Variel Veteran Sergeant Ramus",
+      "category": "po",
+      "cardType": "official",
+      "role": "Veteran Sergeant Ramus",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 15,
+      "keywords": "STRIKE FORCE VARIEL, IMPERIUM, ADEPTUS ASTARTES, VETERAN SERGEANT RAMUS",
+      "weapons": [
+        {
+          "name": "Combi-Melta (Bolter)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Tor1\""
+        },
+        {
+          "name": "Combi-Melta (Melta)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "6/3",
+          "rules": "Rng 6\", Dev4, Lim1, Prc2"
+        },
+        {
+          "name": "Fists (Default)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Astartes: During this operative's activation, it can perfrom either two Shoot actions or two Fight actions. This operative can counteract regardless of its order.\n\nRelic of the Chapter: Normal and Critical Dmg of 3 or more inflicts 1 less damage on this operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-sfv-bel",
+      "opTypeId": "IMP-SFV-BEL",
+      "name": "Strike Force Variel Brother Belath",
+      "category": "po",
+      "cardType": "official",
+      "role": "Brother Belath",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 12,
+      "keywords": "STRIKE FORCE VARIEL, IMPERIUM, ADEPTUS ASTARTES, BROTHER BELATH",
+      "weapons": [
+        {
+          "name": "Marksman Bolt Carbine (Default)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Lethal 5+"
+        },
+        {
+          "name": "Fists (Default)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Astartes: During this operative's activation, it can perfrom either two Shoot actions or two Fight actions. This operative can counteract regardless of its order.\n\nOmni-Scrambler: **STRATEGIC GAMBIT:** Select one enemy operative visible to this operative, then roll 1D3.  \r In the following Firefight phase, that enemy operative cannot be activated or perform actions until one of the following is true:\r - Your opponent has activated a number of enemy operatives equal to the result of the D3\r - It's the last enemy operative to be activated",
+      "notes": ""
+    },
+    {
+      "id": "imp-sfv-nah",
+      "opTypeId": "IMP-SFV-NAH",
+      "name": "Strike Force Variel Brother Nahrden",
+      "category": "po",
+      "cardType": "official",
+      "role": "Brother Nahrden",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 12,
+      "keywords": "STRIKE FORCE VARIEL, IMPERIUM, ADEPTUS ASTARTES, BROTHER NAHRDEN",
+      "weapons": [
+        {
+          "name": "Bolt Carbine (Default)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Accurate 1"
+        },
+        {
+          "name": "Fists (Default)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Astartes: During this operative's activation, it can perfrom either two Shoot actions or two Fight actions. This operative can counteract regardless of its order.\n\nGrav-Chute: Whenever this operative is dropping, ignore the vertical distance.\n\nGrav-Chute Insertion: **STRATEGIC GAMBIT** in the first Turning Point. If this operative is wholly within your drop zone, it can immediately perform a free Reposition action. It must end that move wholly within 4\" of your drop zone.",
+      "notes": ""
+    },
+    {
+      "id": "imp-sfv-map",
+      "opTypeId": "IMP-SFV-MAP",
+      "name": "Strike Force Variel Brother Maphael",
+      "category": "po",
+      "cardType": "official",
+      "role": "Brother Maphael",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "STRIKE FORCE VARIEL, IMPERIUM, ADEPTUS ASTARTES, BROTHER MAPHAEL",
+      "weapons": [
+        {
+          "name": "Heavy Bolt Pistol (Default)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", PrcCrit1"
+        },
+        {
+          "name": "Chainsword (Default)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Astartes: During this operative's activation, it can perfrom either two Shoot actions or two Fight actions. This operative can counteract regardless of its order.",
+      "notes": ""
+    },
+    {
+      "id": "imp-sfv-zer",
+      "opTypeId": "IMP-SFV-ZER",
+      "name": "Strike Force Variel Brother Zeradim",
+      "category": "po",
+      "cardType": "official",
+      "role": "Brother Zeradim",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "STRIKE FORCE VARIEL, IMPERIUM, ADEPTUS ASTARTES, BROTHER ZERADIM",
+      "weapons": [
+        {
+          "name": "Bolt Rifle (Default)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "PrcCrit1"
+        },
+        {
+          "name": "Fists (Default)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Astartes: During this operative's activation, it can perfrom either two Shoot actions or two Fight actions. This operative can counteract regardless of its order.",
+      "notes": ""
+    },
+    {
+      "id": "imp-sfv-har",
+      "opTypeId": "IMP-SFV-HAR",
+      "name": "Strike Force Variel Brother Haroth",
+      "category": "po",
+      "cardType": "official",
+      "role": "Brother Haroth",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "STRIKE FORCE VARIEL, IMPERIUM, ADEPTUS ASTARTES, BROTHER HAROTH",
+      "weapons": [
+        {
+          "name": "Bolt Pistol (Default)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Pyreblaster (Standard)",
+          "atk": 5,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 8\", Sat, Tor2\""
+        },
+        {
+          "name": "Pyreblaster (Deluge)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 4\", Sat, Seek Light"
+        },
+        {
+          "name": "Fists (Default)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Astartes: During this operative's activation, it can perfrom either two Shoot actions or two Fight actions. If it's two Shoot actions and a Pyreblaster is selected for both, 1 additional AP must be spent for the second action.  \nThis operative can counteract regardless of its order.",
+      "notes": ""
+    }
+  ]
+}

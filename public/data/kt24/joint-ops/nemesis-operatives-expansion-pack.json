@@ -1,0 +1,147 @@
+{
+  "slug": "nemesis-operatives-expansion-pack",
+  "killteamId": "SPEC-NEMESIS",
+  "name": "Nemesis Operatives Expansion Pack",
+  "description": "Example Nemesis Operatives from Kill Team: Nemesis Operatives (custom builder showcase profiles). Control is stored in the APL column. Ambull and Archivist mission packs are synced separately from KTDash. Sourced from the Nemesis Operatives dossier until KTDash publishes this pack.",
+  "operatives": [
+    {
+      "id": "spec-nemesis-sentinel",
+      "opTypeId": "SPEC-NEMESIS-SENT",
+      "name": "Armoured Sentinel",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Armoured Sentinel",
+      "points": 0,
+      "imageUrl": "",
+      "apl": 5,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 50,
+      "keywords": "NEMESIS, IMPERIUM, MEDIUM",
+      "weapons": [
+        {
+          "name": "Plasma Cannon",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Rng 9\", Blast 2\", Hvy, Prc 1"
+        },
+        {
+          "name": "Close Combat Weapon",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Control 5 (use APL column for control checks; operatives do not spend action points).\n\nBehaviour: MARKSMAN — When activated, if this NPO can perform the Shoot action during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n1. Fall Back to cover. If possible, to a location where there is a valid target that is not obscured.\n2. Shoot.\n3. Reposition to cover. If possible, to a location where there is a valid target that is not obscured (a subsequent Dash action can fulfil this, if able).\n4. Dash to cover. If possible, to a location where there is a valid target that is not obscured.\n\nDefenders of the Imperium: Whenever an operative is shooting this NPO, if it is wholly within its territory, one of its defence dice can be retained as a normal success without rolling it.\n\nArmored: This operative has the Extra Defence core rule (roll one additional defence dice unless injured).\n\nFocused Targeting: Whenever this operative is shooting, weapons on its datacard have the Accurate 1 weapon rule.\n\nNemesis Operative: Bulky; can move through operatives (excluding other NEMESIS operatives); ignore APL changes; cannot be Conceal; cannot be in cover from Light terrain; can be shot while in melee; activates up to twice per turning point per mission pack rules.",
+      "notes": "Medium-size example Nemesis Operative (custom builder)."
+    },
+    {
+      "id": "spec-nemesis-crisis",
+      "opTypeId": "SPEC-NEMESIS-CRISIS",
+      "name": "XV8 Crisis Battlesuit",
+      "category": "npo",
+      "cardType": "official",
+      "role": "XV8 Crisis Battlesuit",
+      "points": 0,
+      "imageUrl": "",
+      "apl": 5,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 50,
+      "keywords": "NEMESIS, TAU EMPIRE, MEDIUM",
+      "weapons": [
+        {
+          "name": "Burst Cannon",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": "Rng 9\", Ceaseless"
+        },
+        {
+          "name": "Battlesuit Fists",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Control 5 (use APL column for control checks).\n\nBehaviour: BATTLER — When activated, if this NPO can perform the Shoot action during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n1. Shoot the closest player operative.\n2. Reposition towards the closest player operative, to cover if possible.\n3. Dash towards the closest player operative, to cover if possible.\n4. Fight if the closest player operative is within control range.\n\nSupporting Fire: Whenever another friendly T'au Empire NPO is within 3\" of this operative, ranged weapons on this operative's datacard have the Accurate 1 weapon rule.\n\nNemesis Operative: Bulky; can move through operatives (excluding other NEMESIS operatives); ignore APL changes; cannot be Conceal; cannot be in cover from Light terrain; can be shot while in melee; activates up to twice per turning point per mission pack rules.",
+      "notes": "Medium-size example Nemesis Operative (custom builder)."
+    },
+    {
+      "id": "spec-nemesis-screamer",
+      "opTypeId": "SPEC-NEMESIS-SCREAM",
+      "name": "Screamer-Killer",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Screamer-Killer",
+      "points": 0,
+      "imageUrl": "",
+      "apl": 6,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 75,
+      "keywords": "NEMESIS, TYRANID, LARGE",
+      "weapons": [
+        {
+          "name": "Bio-Plasma",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Rng 6\", Blast 2\", Hvy"
+        },
+        {
+          "name": "Scything Claws",
+          "atk": 6,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Brutal, Ceaseless"
+        }
+      ],
+      "abilities": "Control 6 (use APL column for control checks).\n\nBehaviour: BRAWLER — When activated, if this NPO can perform the Fight or Charge action during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n1. Fight.\n2. Charge the closest player operative via the shortest possible route.\n3. Reposition towards the closest player operative, to cover if possible (a subsequent Dash action can fulfil this, if able).\n4. Dash towards the closest player operative, to cover if possible.\n\nThe Will of the Hive Mind: Ignore changes to this operative's stats from being injured.\n\nNemesis Operative: Bulky; can move through operatives (excluding other NEMESIS operatives); ignore APL changes; cannot be Conceal; cannot be in cover from Light terrain; can be shot while in melee; activates up to twice per turning point per mission pack rules.",
+      "notes": "Large-size example Nemesis Operative (custom builder)."
+    },
+    {
+      "id": "spec-nemesis-redemptor",
+      "opTypeId": "SPEC-NEMESIS-RED",
+      "name": "Redemptor Dreadnought",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Redemptor Dreadnought",
+      "points": 0,
+      "imageUrl": "",
+      "apl": 6,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 75,
+      "keywords": "NEMESIS, IMPERIUM, ADEPTUS ASTARTES, LARGE",
+      "weapons": [
+        {
+          "name": "Macro Plasma Incinerator",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "5/6",
+          "rules": "Rng 9\", Hvy, Prc 1"
+        },
+        {
+          "name": "Redemptor Fist",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Brutal"
+        },
+        {
+          "name": "Icarus Rocket Pod",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": "Rng 12\", Blast 2\""
+        }
+      ],
+      "abilities": "Control 6 (use APL column for control checks).\n\nBehaviour: BATTLER — When activated, if this NPO can perform the Shoot action during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n1. Shoot the closest player operative.\n2. Reposition towards the closest player operative, to cover if possible.\n3. Dash towards the closest player operative, to cover if possible.\n4. Fight if the closest player operative is within control range.\n\nDefenders of the Imperium: Whenever an operative is shooting this NPO, if it is wholly within its territory, one of its defence dice can be retained as a normal success without rolling it.\n\nArmored: This operative has the Extra Defence core rule (roll one additional defence dice unless injured).\n\nNemesis Operative: Bulky; can move through operatives (excluding other NEMESIS operatives); ignore APL changes; cannot be Conceal; cannot be in cover from Light terrain; can be shot while in melee; activates up to twice per turning point per mission pack rules.",
+      "notes": "Large-size example Nemesis Operative (custom builder)."
+    }
+  ]
+}

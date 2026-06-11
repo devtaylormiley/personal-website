@@ -1,0 +1,2261 @@
+{
+  "id": "inquisitorial-agents",
+  "killteamId": "IMP-INQ",
+  "factionId": "IMP",
+  "imageUrl": "https://ktdash.app/img/killteams/IMP-INQ.webp",
+  "killTeam": {
+    "name": "Inquisitorial Agents",
+    "archetypes": "Recon, Security, Seek And Destroy, Infiltration",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Ruthless Efficiency: Whenever a friendly EXACTION SQUAD operative is shooting (excluding with frag or krak grenades) and you’re selecting a valid target, you can use this rule.\nIf you do, having other friendly EXACTION SQUAD operatives within an enemy operative’s control range doesn’t prevent that enemy operative from being selected.\n\nVoid Armour: Whenever an operative is shooting a friendly IMPERIAL NAVY BREACHER operative, if the ranged weapon in that sequence has the Blast or Torrent weapon rule (excluding weapons that have a sweeping profile),\nyou can re-roll one of your defence dice, or up to two of your defence dice if that friendly operative is a GRENADIER.  \n\nFriendly IMPERIAL NAVY BREACHER operatives aren’t affected by the x\" Devastating x weapon rule (i.e. Devastating with a distance) unless they are the target during that sequence.",
+    "ploys": [
+      {
+        "name": "Denounce",
+        "description": "Select one enemy operative and roll one D3. In the Firefight phase of this turning point, that enemy operative cannot be activated or perform actions until it is the last enemy operative to be activated,\nor your opponent has activated a number of enemy operatives equal to the result of the D3 (whichever comes first).\nThis ploy costs you 1 additional CP for each previous time you’ve used it during the battle (e.g. 1CP the first time you would use it, 2CP the second time, etc.).",
+        "type": "strategy"
+      },
+      {
+        "name": "Irrefutable Jurisdiction",
+        "description": "Whenever an operative is shooting a friendly INQUISITORIAL AGENT operative that’s within 3\" of an objective marker, you can re-roll one of your defence dice.\nIf that friendly operative contests that marker, you can re-roll any of your defence dice results of one result instead (e.g. results of 2).",
+        "type": "strategy"
+      },
+      {
+        "name": "Intense Scrutiny",
+        "description": "Whenever you’re selecting a valid target for a friendly INQUISITORIAL AGENT operative, enemy operatives within 4\" of it cannot be in cover (instead of 2\").\nWhile this can allow such operatives to be targeted (assuming they’re visible), it doesn’t remove their cover save (if any), unless the friendly INQUISITORIAL AGENT operative is within 2\" as normal.",
+        "type": "strategy"
+      },
+      {
+        "name": "Quarry",
+        "description": "Select one enemy operative to be your quarry for the turning point. Whenever a friendly INQUISITORIAL AGENT operative is shooting against, fighting against or retaliating against your quarry,\nthat friendly operative’s weapons have the Ceaseless weapon rule. Whenever your quarry is incapacitated, you can select a new enemy operative to be your quarry (and can continue to do so during this turning point).  \n**Ceaseless:** Can re-roll any or all results of one value (e.g. all results of 2)",
+        "type": "strategy"
+      },
+      {
+        "name": "Absolute Authority",
+        "description": "Use this firefight ploy during the battle, when an opponent uses a strategy or firefight ploy (excluding Command Re-roll or one that costs 0CP).\nTheir ploy isn’t used, the CP spent on it is refunded and they cannot use that ploy again during this turning point. This ploy cannot be used to stop the same ploy more than once per battle.",
+        "type": "firefight"
+      },
+      {
+        "name": "Intimidating Presence",
+        "description": "Use this firefight ploy when an enemy operative visible to and within 3\" of a friendly INQUISITORIAL AGENT operative, or visible to and within 6\" of a friendly MYSTIC operative, performs the Pick Up Marker or a mission action (excluding Operate Hatch).\nYour opponent must spend 1 additional AP for that enemy operative to perform that action (if they cannot or choose not to, the AP spent on it is refunded).",
+        "type": "firefight"
+      },
+      {
+        "name": "Relentless In Pursuit",
+        "description": "Use this firefight ploy when an enemy operative within 2\" of a ready friendly INQUISITORIAL AGENT operative performs an action in which it moves.\nAfter it moves, that friendly INQUISITORIAL AGENT operative can either perform a free Reposition action, but must end that move within 2\" of that enemy operative, or a free Charge action, but must end that move within control range of that enemy operative.\nIf neither is possible, that friendly operative cannot perform those actions, this ploy isn’t used and the CP spent on it is refunded.",
+        "type": "firefight"
+      },
+      {
+        "name": "The Emperor's Will",
+        "description": "Use this firefight ploy when a friendly INQUISITORIAL AGENT operative is activated. Until the end of that operative’s activation, you can ignore any changes to its stats (including its weapons’ stats).",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "An INQUISITORIAL AGENTS killteam is composed of:\n\n- 1 INQUISITORIAL AGENT INTERROGATOR operative\n- 1 INQUISITORIAL AGENT TOME-SKULL operative\n- 5 INQUISITORIAL AGENT operatives selected from the following list:\n  - AUTOSAVANT\n  - QUESTKEEPER\n  - DEATH WORLD VETERAN\n  - ENLIGHTENER\n  - HEXORCIST\n  - MYSTIC\n  - PENAL LEGIONNAIRE\n  - PISTOLIER\n  - GUN SERVITOR with one of the following options:\n    - Heavy bolter; servo-claw\n    - Multi-melta; servo-claw\n    - Plasma cannon; servo-claw\n- 5 INQUISITORIAL AGENT operatives selected from the list above, or REQUISITIONED operatives from one group in the Inquisitorial Requisition faction rule (you cannot select REQUISITIONED operatives from different groups).\n  \nYour kill team can only include each operative on this list once, unless you're not including any REQUISITIONED operatives, in which case you can include up to two GUN SERVITOR operatives, but each one must have different options.  \n\nYour kill team (including any REQUISITIONED operatives) cannot include more than one weapon with the Piercing 2 weapon rule, and cannot include more than three weapons with the Piercing X (excluding Piercing Crits X) weapon rule combined.\n\n----\n\n### INQUISITORIAL REQUISITION\n\nFew authorities in the Imperium have greater jurisdiction than the Inquisition. An Inquisitor can, on a whim, requisition forces from virtually any of the Imperium's military branches.\n\nREQUISITIONED operatives can be taken from one of the following groups to supplement an INQUISITORIAL AGENT kill team, as specified in this kill team's selection rules:\n- DEATH KORPS\n- EXACTION SQUAD\n- IMPERIAL NAVY BREACHER\n- KASRKIN\n- SISTER OF SILENCE\n- TEMPESTUS SCION\n\nThese operatives have their faction keyword replaced in all instances on their datacards with INQUISITORIAL AGENT (unless they already have it).\nYou cannot use ploys and equipment associated with a REQUISITIONED operative's former faction keyword, and you cannot use a REQUISITIONED operative's former faction rules unless specified on their Inquisitorial Requisition card (it only applies to those REQUISITIONED operatives).\nNote that with their new faction keyword, REQUISITIONED operatives can interact with the INQUISITORIAL AGENT rules.\nFor example, a REQUISITIONED VOX-OPERATOR operative from the DEATH KORPS group would have its DEATH KORPS keyword replaced in all instances on its datacard with INQUISITORIAL AGENT.\nThis allows you to select any other friendly INQUISITORIAL AGENT operative for its Signal unique action.\nHowever, the Guardsman Orders faction rule isn't permitted, so its Relay Orders additional rule would be ignored.\nIt would now also be a valid operative for the INQUISITORIAL AGENT MYSTIC operative's Scry unique action.\n\n#### DEATH KORPS\n\n6 DEATH KORPS operatives selected from the following list:\n- BRUISER\n- CONFIDANT with one of the following options:\n  - Boltgun or lasgun; bayonet\n  - Bolt pistol or relic laspistol; chainsword\n- GUNNER with flamer and bayonet\n- GUNNER with grenade launcher and bayonet\n- GUNNER with meltagun and bayonet\n- GUNNER with plasma gun and bayonet\n- MEDIC\n- SAPPER\n- SNIPER\n- TROOPER\n- VETERAN\n- VOX-OPERATOR\n- ZEALOT\n\nOther than TROOPER operatives, your kill team can only include each operative on this list once. You cannot select more than three of these operatives combined.\n\n#### EXACTION SQUAD\n\n5 EXACTION SQUAD operatives selected from the following list:\n- CASTIGATOR\n- CHIRURGANT\n- GUNNER with one of the following options:\n  - Grenade launcher; repression baton\n  - Heavy stubber; repression baton\n  - Webber; repression baton\n- LEASHMASTER\n- MALOCATOR\n- MARKSMAN\n- REVELATUM\n- R-VR CYBER-MASTIFF\n- SUBDUCTOR\n- VIGILANT\n- VOX-SIGNIFIER\n\nOther than SUBDUCTOR and VIGILANT operatives, your kill team can only include each operative on this list once.\nYour kill team can only include up to two SUBDUCTOR operatives.\n\nPermitted EXACTION SQUAD faction rules: Ruthless Efficiency, Repress.\n\n#### IMPERIAL NAVY BREACHERS\n\n5 IMPERIAL NAVY BREACHER operatives selected from the following list:\n- ARMSMAN\n- AXEJACK\n- C.A.T. UNIT\n- ENDURANT\n- GHEISTSKULL\n- GRENADIER\n- HATCHCUTTER\n- SURVEYOR\n- VOID-JAMMER\n- GUNNER with one of the following options:\n\t- Navis las-volley; gun butt\n\t- Meltagun; gun butt\n\t- Plasma gun; gun butt\n\nOther than ARMSMAN operatives, your kill team can only include each operative on this list once.\nYour kill team can only include a GHEISTSKULL operative if it also includes a VOID-JAMMER operative, and it can only include a C.A.T. UNIT operative if it also includes a SURVEYOR operative.\n\nThese operatives count as half a selection each, meaning you can select both of them and it's treated as one selection in total.\n\nPermitted IMPERIAL NAVY BREACHER faction rule: Void Armour.\n\n#### KASRKIN\n\n5 KASRKIN operatives selected from the following list:\n- COMBAT MEDIC\n- DEMO-TROOPER\n- GUNNER with flamer and gun butt*\n- GUNNER with grenade launcher and gun butt*\n- GUNNER with hot-shot volley gun and gun butt*\n- GUNNER with meltagun and gun butt*\n- GUNNER with plasma gun and gun butt*\n- RECON-TROOPER\n- SHARPSHOOTER*\n- TROOPER\n- VOX-TROOPER\n\nOther than TROOPER operatives, your kill team can only include each operative on this list once.\n\n*You cannot select more than two of these operatives combined.\n\n#### SISTERS OF SILENCE\n\n5 SISTER OF SILENCE operatives selected from the following list:\n- PROSECUTOR\n- VIGILATOR\n- WITCHSEEKER\n\n#### TEMPESTUS SCIONS\n\n5 TEMPESTUS SCION operatives selected from the following list:\n- GUNNER with flamer and gun butt\n- GUNNER with grenade launcher and gun butt\n- GUNNER with hot-shot volley gun and gun butt\n- GUNNER with meltagun and gun butt\n- GUNNER with plasma gun and gun butt\n- MEDIC\n- TROOPER\n- VOX-OPERATOR\n\nOther than TROOPER operatives, your kill team can only include each operative on this list once.\nYour kill team can only include up to two GUNNER operatives.",
+    "description": "The reach of the Inquisition extends across the vastness of the Imperium. Inquisitorial kill teams bring together agents from all strata of Imperial society, from elite soldiers to zealous priests. Together, these disparate elements combine their skills to deadly effect, enabling them to root out and destroy heretics, aliens and the servants of Chaos."
+  },
+  "operatives": [
+    {
+      "id": "imp-inq-inq24-int",
+      "opTypeId": "IMP-INQ-INQ24-INT",
+      "name": "Inquisitorial Agents Interrogator",
+      "category": "po",
+      "cardType": "official",
+      "role": "Interrogator",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, INQUISITION, LEADER, INTERROGATOR",
+      "weapons": [
+        {
+          "name": "Extended Stock AutoPistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rng 12\", Lethal 5+"
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Inquisitorial Tomes: STRATEGIC GAMBIT and/or when this operative is activated. Select one of the following INQUISITORIAL TOME rules for this operative to have,\r and one for a friendly INQUISITORIAL AGENT TOME-SKULL operative to have (they can be the same, and ignore the rule you didn’t select for each operative):\r \r - **Denunciation:** Whenever a friendly INQUISITORIAL AGENT operative is shooting against, fighting against or retaliating against an enemy operative within 2\" of operatives with this rule, add 1 to the Atk stat of that friendly operative’s weapons.\r - **Sanctification:** Whenever an enemy operative is shooting against, fighting against or retaliating against a friendly INQUISITORIAL AGENT operative within 2\" of friendly operatives with this rule, subtract 1 from the Atk stat of that enemy operative’s weapons.\r ",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inq24-ts",
+      "opTypeId": "IMP-INQ-INQ24-TS",
+      "name": "Inquisitorial Agents Tome-Skull",
+      "category": "po",
+      "cardType": "official",
+      "role": "Tome-Skull",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 5,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, INQUISITION, TOME-SKULL",
+      "weapons": [],
+      "abilities": "Consecrated Tome: This operative can have an INQUISITORIAL TOME rule (see INTERROGATOR). Note it keeps that rule even if that friendly INTERROGATOR operative is removed from the killzone.\n\nExpendable: This operative is ignored for your opponent’s kill/elimination op (when it’s incapacitated, and when determining your starting number of operatives).\r It’s also ignored for victory conditions and scoring VPs if either require operatives to ‘escape’, ‘survive’ or be incapacitated (if it escapes/survives/is incapacitated by enemy operatives, determining how many operatives must escape/survive/be incapacitated, etc.).\n\nGroup Activation: Whenever this operative is expended, you must then activate a ready friendly INQUISITORIAL AGENT INTERROGATOR operative (if able) before your opponent activates.\nThe same is true in reverse (INTERROGATOR followed by TOME-SKULL). When that other operative is expended, your opponent then activates as normal.\n\nMachine: \r - This operative cannot perform any actions other than Charge, Dash, Fall Back and Reposition.\r - It cannot retaliate or assist in a fight.\r - Whenever determining control of a marker, treat this operative’s APL stat as 1 lower. Note this isn’t a change to its APL stat, so any changes are cumulative with this.\r - Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".\r ",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inq24-as",
+      "opTypeId": "IMP-INQ-INQ24-AS",
+      "name": "Inquisitorial Agents Autosavant",
+      "category": "po",
+      "cardType": "official",
+      "role": "Autosavant",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, INQUISITION, AUTOSAVANT",
+      "weapons": [
+        {
+          "name": "Mechanical Appendages",
+          "atk": 3,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": ""
+        }
+      ],
+      "abilities": "Irrefutable Report: Whenever this operative contests an objective marker or one of your mission markers, it always controls that marker. This takes precedence over all other rules.\n\nLightly Armed: This operative cannot use any weapons that aren’t on its datacard, or perform unique actions.\n\nScrivener: Each subsequent time your opponent uses each ploy during the battle (excluding Command Re-roll), you gain 1CP (to a maximum of 2CP per turning point).",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inq24-qk",
+      "opTypeId": "IMP-INQ-INQ24-QK",
+      "name": "Inquisitorial Agents Questkeeper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Questkeeper",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, INQUISITION, QUESTKEEPER",
+      "weapons": [
+        {
+          "name": "AutoPistol",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Eviscerator",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "5/6",
+          "rules": "Brutal"
+        }
+      ],
+      "abilities": "Irrepressible Purpose: If this operative is incapacitated while fighting or retaliating, you can strike the enemy operative in that sequence with one of your unresolved successes before it’s removed from the killzone.\n\nZealot: Whenever an attack dice inflicts damage of 3 or more on this operative, roll one D6: on a 5+, subtract 1 from that inflicted damage.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inq24-vet",
+      "opTypeId": "IMP-INQ-INQ24-VET",
+      "name": "Inquisitorial Agents Deathworld Veteran",
+      "category": "po",
+      "cardType": "official",
+      "role": "Deathworld Veteran",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, INQUISITION, DEATH WORLD VETERAN",
+      "weapons": [
+        {
+          "name": "AutoPistol",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Knifer",
+          "atk": 1,
+          "hit": "2+",
+          "dmg": "5/7",
+          "rules": "Lethal 5+"
+        },
+        {
+          "name": "Polearm",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Hunter: This operative can perform the Charge action while it has a Conceal order.\n\nWeathered: Once per turning point, when this operative is fighting or retaliating, in the Resolve Attack Dice step, you can ignore the damage inflicted on it from one normal success.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inq24-enl",
+      "opTypeId": "IMP-INQ-INQ24-ENL",
+      "name": "Inquisitorial Agents Enlightener",
+      "category": "po",
+      "cardType": "official",
+      "role": "Enlightener",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, INQUISITION, ENLIGHTENER",
+      "weapons": [
+        {
+          "name": "AutoPistol",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Paired Blades",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Bal, Rnd"
+        }
+      ],
+      "abilities": "Extract Information: Whenever an enemy operative is incapacitated within this operative’s control range, you gain 1CP.\n\nNo Escape: Whenever an enemy operative would perform the Fall Back action while within control range of this operative, you can use this rule.\nIf you do, roll one D6, subtracting 1 from the result if that enemy operative has a higher Wounds stat than this operative, and adding 1 if that enemy operative is wounded:\non a 4+, that enemy operative cannot perform that action during that activation/counteraction (the AP spent on it isn’t refunded).",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inq24-guns",
+      "opTypeId": "IMP-INQ-INQ24-GUNS",
+      "name": "Inquisitorial Agents Gun Servitor",
+      "category": "po",
+      "cardType": "official",
+      "role": "Gun Servitor",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 1,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 11,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, INQUISITION, GUN SERVITOR",
+      "weapons": [
+        {
+          "name": "Heavy Bolter (Focused)",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Hvy(Dash), PrcCrit1"
+        },
+        {
+          "name": "Heavy Bolter (Sweeping)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Hvy(Dash), PrcCrit1, Tor1\""
+        },
+        {
+          "name": "Multi-Melta",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "6/3",
+          "rules": "Dev4, Hvy(Dash), Prc2"
+        },
+        {
+          "name": "Plasma Cannon (Standard)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/6",
+          "rules": "Blast 2\", Hvy(Dash), Prc1"
+        },
+        {
+          "name": "Plasma Cannon (Supercharge)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "5/6",
+          "rules": "Blast 2\", Hvy(Dash), Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Servo-Claw",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Lobotomised: Whenever this operative is activated, if it’s visible to and within 3\" of another friendly INQUISITORIAL AGENT operative (excluding GUN SERVITOR) or vice versa, add 1 to this operative’s APL stat until the end of that activation.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inq24-hex",
+      "opTypeId": "IMP-INQ-INQ24-HEX",
+      "name": "Inquisitorial Agents Hexorcist",
+      "category": "po",
+      "cardType": "official",
+      "role": "Hexorcist",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, INQUISITION, HEXORCIST",
+      "weapons": [
+        {
+          "name": "Shotgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Chasten: Select one enemy operative that is a valid target for this operative and within 6\" of it, then select one additional rule (including a unique action) that enemy operative has on its datacard (excluding a weapon rule or a rule that states it is ignored for the kill/elimination op).\r Until the end of that enemy operative’s next activation, it’s treated as not having that additional rule.  \r \r This operative cannot perform this action while within control range of an enemy operative.\n\nHexorcise: Whenever an enemy operative is visible to and within 6\" of this operative, your opponent cannot re-roll their attack or defence dice for that operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inq24-mys",
+      "opTypeId": "IMP-INQ-INQ24-MYS",
+      "name": "Inquisitorial Agents Mystic",
+      "category": "po",
+      "cardType": "official",
+      "role": "Mystic",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, INQUISITION, MYSTIC",
+      "weapons": [
+        {
+          "name": "AutoPistol",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "2/3",
+          "rules": "Rng 8\", Seek"
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "5+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Icon Bearer: Whenever determining control of a marker, treat this operative’s APL stat as 1 higher. Note this isn’t a change to its APL stat, so any changes are cumulative with this.\n\nLightly Armed: This operative cannot use any weapons that aren’t on its datacard.\n\nScry: **PSYCHIC**\r Select one friendly INQUISITORIAL AGENT operative within 6\" of this operative, then select one of the following effects to last until the start of this operative’s next activation, until it’s incapacitated or until it performs this action again (whichever comes first):\r \r - **Guidance:** PSYCHIC. Whenever the selected operative is shooting, fighting or retaliating, in the Roll Attack Dice step, you can retain one of your fails as a normal success instead of discarding it, or retain one of your normal successes as a critical success instead.\r - **Protection:** PSYCHIC. Whenever an operative is shooting the selected operative, in the Roll Defence Dice step, you can retain one of your fails as a normal success instead of discarding it, or retain one of your normal successes as a critical success instead.\r \r This operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inq24-pen",
+      "opTypeId": "IMP-INQ-INQ24-PEN",
+      "name": "Inquisitorial Agents Penal Legionnaire",
+      "category": "po",
+      "cardType": "official",
+      "role": "Penal Legionnaire",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, INQUISITION, PENAL LEGIONNAIRE",
+      "weapons": [
+        {
+          "name": "Hand Flamer",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 6\", Sat, Tor1\""
+        },
+        {
+          "name": "Chainsword",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Chem-Mask: You can ignore any changes to this operative’s APL stat, and any changes to its stats from being injured. This operative isn’t affected by enemy operatives’ Shock and Stun weapon rules.\n\nCruel: Whenever this operative is shooting against, fighting against or retaliating against a wounded enemy operative, this operative’s weapons have the Relentless weapon rule.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inq24-pst",
+      "opTypeId": "IMP-INQ-INQ24-PST",
+      "name": "Inquisitorial Agents Pistolier",
+      "category": "po",
+      "cardType": "official",
+      "role": "Pistolier",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, INQUISITION, PISTOLIER",
+      "weapons": [
+        {
+          "name": "Scoped Plasma Pistol (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Rng 12\", Prc1"
+        },
+        {
+          "name": "Scoped Plasma Pistol (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 12\", Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Suppressed AutoPistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Rng 8\", Silent"
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Pistol Barrage: Perform two free Shoot actions with this operative (this takes precedence over action restrictions). You must select a profile of its scoped plasma pistol for one action and its suppressed autopistol for the other (in any order).  \n\r This operative cannot perform this action while it has a Conceal order, or during an activation in which it performed the Shoot action (or vice versa).\n\nPistolier: You can ignore any changes to the Hit stat of this operative’s ranged weapons.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-sos24-sospro",
+      "opTypeId": "IMP-INQ-SOS24-SOSPRO",
+      "name": "Inquisitorial Agents Sister Of Silence Prosecutor",
+      "category": "po",
+      "cardType": "official",
+      "role": "Sister Of Silence Prosecutor",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ANATHEMA PSYKANA, SISTER OF SILENCE, PROSECUTOR",
+      "weapons": [
+        {
+          "name": "Boltgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Psychic Null: PSYCHIC ranged weapons cannot inflict damage on this operative. For the effects of PSYCHIC actions, this operative cannot be selected and is never treated as being within those actions’ required distances.\nWhenever an operative is within 6\" of this operative:\n\n- That operative cannot perform PSYCHIC actions or use PSYCHIC additional rules.\n- That operative cannot use PSYCHIC ranged weapons.\n- PSYCHIC melee weapons have no weapon rules and cannot have Dmg stats higher than 3/4.\n",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-sos24-sosvig",
+      "opTypeId": "IMP-INQ-SOS24-SOSVIG",
+      "name": "Inquisitorial Agents Sister Of Silence Vigilator",
+      "category": "po",
+      "cardType": "official",
+      "role": "Sister Of Silence Vigilator",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ANATHEMA PSYKANA, SISTER OF SILENCE, VIGILATOR",
+      "weapons": [
+        {
+          "name": "Executor Greatblade",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Psychic Null: PSYCHIC ranged weapons cannot inflict damage on this operative. For the effects of PSYCHIC actions, this operative cannot be selected and is never treated as being within those actions’ required distances.\nWhenever an operative is within 6\" of this operative:\n\n- That operative cannot perform PSYCHIC actions or use PSYCHIC additional rules.\n- That operative cannot use PSYCHIC ranged weapons.\n- PSYCHIC melee weapons have no weapon rules and cannot have Dmg stats higher than 3/4.\n",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-sos24-soswsk",
+      "opTypeId": "IMP-INQ-SOS24-SOSWSK",
+      "name": "Inquisitorial Agents Sister Of Silence WitchSeeker",
+      "category": "po",
+      "cardType": "official",
+      "role": "Sister Of Silence WitchSeeker",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ANATHEMA PSYKANA, SISTER OF SILENCE, WITCHSEEKER",
+      "weapons": [
+        {
+          "name": "Flamer",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 8\", Sat, Tor2\""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Psychic Null: PSYCHIC ranged weapons cannot inflict damage on this operative. For the effects of PSYCHIC actions, this operative cannot be selected and is never treated as being within those actions’ required distances.\nWhenever an operative is within 6\" of this operative:\n\n- That operative cannot perform PSYCHIC actions or use PSYCHIC additional rules.\n- That operative cannot use PSYCHIC ranged weapons.\n- PSYCHIC melee weapons have no weapon rules and cannot have Dmg stats higher than 3/4.\n",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-dkk24-bru",
+      "opTypeId": "IMP-INQ-DKK24-BRU",
+      "name": "Inquisitorial Agents Death Korps Bruiser",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Bruiser",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, BRUISER",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Trench Club",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Shock"
+        }
+      ],
+      "abilities": "Bruiser: Once per turning point, when this operative is fighting or retaliating, in the Resolve Attack Dice step, you can ignore the damage inflicted on it from one normal success.  \nIf this operative is incapacitated during the Fight action, you can strike the enemy operative in that sequence with one of your unresolved successes before this operative is removed from the killzone.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-dkk24-con",
+      "opTypeId": "IMP-INQ-DKK24-CON",
+      "name": "Inquisitorial Agents Death Korps Confidant",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Confidant",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, CONFIDANT",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Boltgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Relic Laspistol",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/4",
+          "rules": "Rng 8\", Lethal 5+"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Chainsword",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Directive: Whenever this operative is activated, if you have not used the Second in Command rule during the battle, you can select one other ready friendly DEATH KORPS operative visible to and within 6\" of it.\nWhen this operative is expended, activate that other friendly operative before your opponent activates (if that operative is a TROOPER, ignore its Group Activation rule).",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-dkk24-gnr",
+      "opTypeId": "IMP-INQ-DKK24-GNR",
+      "name": "Inquisitorial Agents Death Korps Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Gunner",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, GUNNER",
+      "weapons": [
+        {
+          "name": "Flamer",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 8\", Sat, Tor 2\""
+        },
+        {
+          "name": "Grenade Launcher (Frag)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/4",
+          "rules": "Blast 2\""
+        },
+        {
+          "name": "Grenade Launcher (Krak)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Meltagun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "6/3",
+          "rules": "Rng 6\", Dev 4, Prc2"
+        },
+        {
+          "name": "Plasma Gun (Standard)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/6",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Plasma Gun (Supercharge)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "5/6",
+          "rules": "Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-dkk24-mdc",
+      "opTypeId": "IMP-INQ-DKK24-MDC",
+      "name": "Inquisitorial Agents Death Korps Medic",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Medic",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, MEDIC",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Medic!: The first time during each turning point that another friendly DEATH KORPS operative would be removed from the killzone as incapacitated while visible to and within 3\" of this operative, you can use this rule,\nproviding neither this nor that operative is within control range of an enemy operative.\nIf you do, that friendly operative isn’t incapacitated and has 1 wound remaining.\nThat friendly operative can then immediately perform a free Dash action, but must end that move within this operative’s control range.\nSubtract 1 from this and that operative's APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative's activation, that activation ends.  \n\nYou cannot use this rule if this operative is incapacitated.\n\nMedikit: Select one friendly DEATH KORPS operative within this operative's control range to regain up to 2D3 lost wounds.\nIt cannot be an operative that the Medic! rule was used on during this turning point.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-dkk24-sap",
+      "opTypeId": "IMP-INQ-DKK24-SAP",
+      "name": "Inquisitorial Agents Death Korps Sapper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Sapper",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, SAPPER",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Remote Detonator",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "5/6",
+          "rules": "Hvy(Dash), Lim1, Prc1, Sil, *Detonate"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Detonate: Do not select a valid target. Instead, shoot against each operative within 2\" of your Mine marker, unless Heavy terrain is wholly intervening between that operative and that marker.\r Each of those operatives cannot be in cover or obscured. Roll each sequence separately in an order of your choice.\r This weapon cannot be selected if your Mine marker isn’t in the killzone. At the end of the action, remove your Mine marker from the killzone. In a killzone that uses the close quarters rule, this weapon has the Lethal 5+ weapon rule.\n\nMine Layer: This operative is carrying your Mine marker. It can perform the Pick Up Marker action on that marker, and whenever it performs the Place Marker action on that marker, it can immediately perform a free Dash action.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-dkk24-snp",
+      "opTypeId": "IMP-INQ-DKK24-SNP",
+      "name": "Inquisitorial Agents Death Korps Sniper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Sniper",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, SNIPER",
+      "weapons": [
+        {
+          "name": "Long-Las (Concealed)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev3, Hvy, Sil, *Concealed Position"
+        },
+        {
+          "name": "Long-Las (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Long-Las (Stationary)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev3, Hvy"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Concealed Position: This operative can only use this weapon the first time it is performing the Shoot action during the battle.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-dkk24-trp",
+      "opTypeId": "IMP-INQ-DKK24-TRP",
+      "name": "Inquisitorial Agents Death Korps Trooper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Trooper",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, TROOPER",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Group Activation: Whenever this operative is expended, you must then activate one other ready friendly DEATH KORPS TROOPER operative (if able) before your opponent activates.\nWhen that other operative is expended, your opponent then activates as normal (in other words, you cannot activate more than two operatives in succession with this rule).",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-dkk24-vet",
+      "opTypeId": "IMP-INQ-DKK24-VET",
+      "name": "Inquisitorial Agents Death Korps Veteran",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Veteran",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, VETERAN",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bionic Arm",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Bionics: Normal Dmg of 3 or more inflicts 1 less damage on this operative.\n\nVeteran Guardsman: Whenever this operative is activated, it can receive one GUARDSMAN ORDER.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-dkk24-vox",
+      "opTypeId": "IMP-INQ-DKK24-VOX",
+      "name": "Inquisitorial Agents Death Korps Vox-Operator",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Vox-Operator",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, VOX-OPERATOR",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Relay Orders: Once per turning point, when this operative receives a GUARDSMAN ORDER, if it’s not within control range of enemy operatives, it can relay that order.\nWhenever an order is relayed, all friendly DEATH KORPS operatives in the killzone receive that order, then subtract 1 from this operative's APL stat until the end of its next activation.\n\nSignal: **SUPPORT**\nSelect one other friendly DEATH KORPS operative visible to and within 6\" of this operative. Until the end of that operative's next activation, add 1 to its APL stat.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-dkk24-zlt",
+      "opTypeId": "IMP-INQ-DKK24-ZLT",
+      "name": "Inquisitorial Agents Death Korps Zealot",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Zealot",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, ZEALOT",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "The Emperor Protects: Whenever an operative is shooting this operative, you can re-roll any of your defence dice.\n\nUplifting Primer: **SUPPORT**\nWhenever a friendly DEATH KORPS operative is within 3\" of this operative, that friendly operative's weapons have the Severe weapon rule.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-ts24-tsvox",
+      "opTypeId": "IMP-INQ-TS24-TSVOX",
+      "name": "Inquisitorial Agents Tempestus Scion Vox-Operator",
+      "category": "po",
+      "cardType": "official",
+      "role": "Tempestus Scion Vox-Operator",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, TEMPESTUS SCION, COMMS",
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Signal: SUPPORT. Select one other friendly INQUISITORIAL AGENT operative in the killzone. Until the end of that operative’s next activation, add 1 to its APL stat.  \n\nThis operative can perform this action twice during its activation, but cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-ts24-tsgun",
+      "opTypeId": "IMP-INQ-TS24-TSGUN",
+      "name": "Inquisitorial Agents Tempestus Scion Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Tempestus Scion Gunner",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, TEMPESTUS SCION, GUNNER",
+      "weapons": [
+        {
+          "name": "Flamer",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 8\", Sat, Tor2\""
+        },
+        {
+          "name": "Grenade Launcher (Frag)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Blast 2\""
+        },
+        {
+          "name": "Grenade Launcher (Krak)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Hot-Shot Volley Gun (Focused)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "PrcCrit1"
+        },
+        {
+          "name": "Hot-Shot Volley Gun (Sweeping)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "PrcCrit1, Tor1\""
+        },
+        {
+          "name": "Meltagun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "6/3",
+          "rules": "Rng 6\", Dev4, Prc2"
+        },
+        {
+          "name": "Plasma Gun (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Plasma Gun (Superchart)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/6",
+          "rules": "Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-ts24-tsmed",
+      "opTypeId": "IMP-INQ-TS24-TSMED",
+      "name": "Inquisitorial Agents Tempestus Scion Medic",
+      "category": "po",
+      "cardType": "official",
+      "role": "Tempestus Scion Medic",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, TEMPESTUS SCION, MEDIC",
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Medic!: The first time during each turning point that another friendly INQUISITORIAL AGENT operative would be incapacitated while visible to and within 3\" of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn’t incapacitated, has 1 wound remaining, and cannot be incapacitated for the remainder of the action. After that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative’s control range.\r Subtract 1 from this and that operative’s APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative’s activation, that activation ends.\r You cannot use this rule if this operative is incapacitated or if it is a Shoot action and this operative would be a primary or secondary target.\n\nMedikit: Select one friendly INQUISITORIAL AGENT operative within this operative’s control range to regain up to 2D3 lost wounds. It cannot be an operative that the Medic! rule was used on during this turning point.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-ts24-tstrp",
+      "opTypeId": "IMP-INQ-TS24-TSTRP",
+      "name": "Inquisitorial Agents Tempestus Scion Trooper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Tempestus Scion Trooper",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, TEMPESTUS SCION, TROOPER",
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Adaptive Equipment: You can do each of the following once per turning point:\n\n- One friendly INQUISITORIAL AGENT TEMPESTUS SCION TROOPER operative can perform the Smoke Grenade action.\n- One friendly INQUISITORIAL AGENT TEMPESTUS SCION TROOPER operative can perform the Stun Grenade action.\n\nThe rules for these actions are found in universal equipment. Performing these actions using this rule doesn’t count towards their action limits (i.e. if you also select those grenades from equipment).",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-aes24-cast",
+      "opTypeId": "IMP-INQ-AES24-CAST",
+      "name": "Inquisitorial Agents Arbites Castigator",
+      "category": "po",
+      "cardType": "official",
+      "role": "Arbites Castigator",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ADEPTUS ARBITES, ARBITES, CASTIGATOR",
+      "weapons": [
+        {
+          "name": "Combat Shotgun (Close Range)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/4",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Combat Shotgun (Long Range)",
+          "atk": 4,
+          "hit": "5+",
+          "dmg": "2/2",
+          "rules": ""
+        },
+        {
+          "name": "Excruciator Maul",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/5",
+          "rules": "Rnd, Shock"
+        }
+      ],
+      "abilities": "Castigator's Arrest: Whenever an enemy operative is within control range of this operative, if no other enemy operatives are within this operative’s control range, that enemy operative cannot perform the Fall Back action.\n\nEngendered Focus: You can ignore any changes to this operative’s stats (including its weapons’ stats, but excluding its Save stat).\n\nZealous Dedication: Whenever an attack dice inflicts damage of 3 or more on this operative, roll one D6: on a 5+, subtract 1 from that inflicted damage.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-aes24-chi",
+      "opTypeId": "IMP-INQ-AES24-CHI",
+      "name": "Inquisitorial Agents Arbites Chirurgant",
+      "category": "po",
+      "cardType": "official",
+      "role": "Arbites Chirurgant",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ADEPTUS ARBITES, MEDIC, ARBITES, CHIRURGANT",
+      "weapons": [
+        {
+          "name": "Combat Shotgun (Close Range)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/4",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Combat Shotgun (Long Range)",
+          "atk": 4,
+          "hit": "5+",
+          "dmg": "2/2",
+          "rules": ""
+        },
+        {
+          "name": "Repression Baton",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Medic!: The first time during each turning point that another friendly EXACTION SQUAD operative would be removed from the killzone as incapacitated while visible to and within 3\" of this operative,\nyou can use this rule, providing neither this nor that operative is within control range of an enemy operative.\nIf you do, that friendly operative isn’t incapacitated and has 1 wound remaining. That friendly operative can then immediately perform a free Dash action, but must end that move within this operative’s\ncontrol range. Subtract 1 from this and that operative’s APL stats until the end of their next activations respectively, and if this rule was used during that\nfriendly operative’s activation, that activation ends. You cannot use this rule if this operative is incapacitated.\n\nMedikit: Select one friendly EXACTION SQUAD operative within this operative’s control range to regain up to 2D3 lost wounds.\nIt cannot be an operative that the Medic! rule was used on during this turning point.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-aes24-gnr",
+      "opTypeId": "IMP-INQ-AES24-GNR",
+      "name": "Inquisitorial Agents Arbites Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Arbites Gunner",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ADEPTUS ARBITES, ARBITES, GUNNER",
+      "weapons": [
+        {
+          "name": "Grenade Launcher",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/6",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Heavy Stubber (Focused)",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Hvy(Dash)"
+        },
+        {
+          "name": "Heavy Stubber (Sweeping)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Hvy(Dash), Tor1\""
+        },
+        {
+          "name": "Webber",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 12\", Severe, Stun"
+        },
+        {
+          "name": "Repression Baton",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-aes24-lsh",
+      "opTypeId": "IMP-INQ-AES24-LSH",
+      "name": "Inquisitorial Agents Arbites Leashmaster",
+      "category": "po",
+      "cardType": "official",
+      "role": "Arbites Leashmaster",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ADEPTUS ARBITES, ARBITES, LEASHMASTER",
+      "weapons": [
+        {
+          "name": "Combat Shotgun (Close Range)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/4",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Combat Shotgun (Long Range)",
+          "atk": 4,
+          "hit": "5+",
+          "dmg": "2/2",
+          "rules": ""
+        },
+        {
+          "name": "Repression Baton",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Attack Pattern: STRATEGIC GAMBIT in the first turning point. Select two of the following attack patterns for a friendly EXACTION SQUAD R-VR CYBER-MASTIFF operative to have for the battle:\r \r - Aggressive: Its melee weapons have the Relentless weapon rule.\r - Swift: Add 2\" to its Move stat.\r - Defensive: Improve its Save stat by 1.\r \n\nHandler: Whenever this operative is activated, you can activate a ready friendly EXACTION SQUAD R-VR CYBER-MASTIFF operative at the same time. Complete their activations action by action in any order.\n\nR-VR Command: Select one friendly EXACTION SQUAD R-VR CYBER-MASTIFF operative and change its attack pattern.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-aes24-rvr",
+      "opTypeId": "IMP-INQ-AES24-RVR",
+      "name": "Inquisitorial Agents R-VR Cyber-Mastiff",
+      "category": "po",
+      "cardType": "official",
+      "role": "R-VR Cyber-Mastiff",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ADEPTUS ARBITES, ARBITES, R-VR CYBER-MASTIFF",
+      "weapons": [
+        {
+          "name": "Mechanical Bite",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/5",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Apprehend: Select one enemy operative within this operative’s control range.\nUntil that enemy operative is no longer within this operative’s control range, or until this operative performs this action again (whichever comes first),\nworsen the Hit stat of that enemy operative’s weapons by 1 (this isn’t cumulative with being injured);\nin addition, that enemy operative cannot perform the Fall Back action.  \n\nThis operative cannot perform this action unless an enemy operative is within its control range.\n\nBeast: This operative cannot perform any actions other than Apprehend, Charge, Dash, Fall Back, Fight, Guard, Reposition, Pick Up Marker and Place Marker. It cannot use any weapons that aren’t on its datacard.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-aes24-mal",
+      "opTypeId": "IMP-INQ-AES24-MAL",
+      "name": "Inquisitorial Agents Arbites Malocator",
+      "category": "po",
+      "cardType": "official",
+      "role": "Arbites Malocator",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ADEPTUS ARBITES, ARBITES, MALOCATOR",
+      "weapons": [
+        {
+          "name": "Combat Shotgun (Close Range)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/4",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Combat Shotgun (Long Range)",
+          "atk": 4,
+          "hit": "5+",
+          "dmg": "2/2",
+          "rules": ""
+        },
+        {
+          "name": "Repression Baton",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Acute Focus: Once during each of this operative’s activations, it can perform the Pick Up Marker, Place Marker, Veriscant or a mission action for 1 less AP.\n\nVeriscant: Select one enemy operative visible to this operative. Until the start of this operative’s next activation, until it’s incapacitated or until it performs this action again (whichever comes first),\nwhenever a friendly EXACTION SQUAD operative is shooting against, fighting against or retaliating against that enemy operative, that friendly operative’s weapons have the Severe weapon rule;\nif the weapon already has that weapon rule, it has the Lethal 5+ weapon rule.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-aes24-mrk",
+      "opTypeId": "IMP-INQ-AES24-MRK",
+      "name": "Inquisitorial Agents Arbites Marksman",
+      "category": "po",
+      "cardType": "official",
+      "role": "Arbites Marksman",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ADEPTUS ARBITES, ARBITES, MARKSMAN",
+      "weapons": [
+        {
+          "name": "Executioner Shotgun (Concealed)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "4/0",
+          "rules": "Dev4, Hvy, Silent, *Concealed Position"
+        },
+        {
+          "name": "Executioner Shotgun (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/4",
+          "rules": ""
+        },
+        {
+          "name": "Executioner Shotgun (Stationary)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "4/0",
+          "rules": "Dev4, Hvy"
+        },
+        {
+          "name": "Repression Baton",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Concealed Position: This operative can only use this weapon the first time it’s performing the Shoot action during the battle.\n\nOptics: Until the start of this operative’s next activation:\n\n- The concealed and stationary profiles of its executioner shotgun have the Lethal 5+ weapon rule.\n- Whenever it’s shooting with its executioner shotgun, enemy operatives cannot be obscured.\n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-aes24-rev",
+      "opTypeId": "IMP-INQ-AES24-REV",
+      "name": "Inquisitorial Agents Arbites Revelatum",
+      "category": "po",
+      "cardType": "official",
+      "role": "Arbites Revelatum",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ADEPTUS ARBITES, ARBITES, REVELATUM",
+      "weapons": [
+        {
+          "name": "Scoped Shot Pistol (Short Range)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Rng 8\", Lethal 5+"
+        },
+        {
+          "name": "Scoped Shot Pistol (Long Range)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": ""
+        },
+        {
+          "name": "Repression Baton",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "First In The Field: **STRATEGIC GAMBIT** in the first turning point.\nIf this operative is wholly within your drop zone, it can immediately perform a free Reposition action.\n\nSpot: **SUPPORT**\nSelect one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly EXACTION SQUAD operative within 3\" of this operative is shooting that enemy operative,\nyou can use this effect. If you do:\n\n- That friendly operative’s ranged weapons have the Seek Light weapon rule.\n- That enemy operative cannot be obscured.\n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-aes24-sub",
+      "opTypeId": "IMP-INQ-AES24-SUB",
+      "name": "Inquisitorial Agents Arbites Subductor",
+      "category": "po",
+      "cardType": "official",
+      "role": "Arbites Subductor",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ADEPTUS ARBITES, ARBITES, SUBDUCTOR",
+      "weapons": [
+        {
+          "name": "Shot Pistol",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/3",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Shock Maul & Assault Shield",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/4",
+          "rules": "Shock, *Repress"
+        }
+      ],
+      "abilities": "*Repress: Whenever this operative is using this weapon:\n\n- Each of your blocks can be allocated to block two unresolved successes (instead of one).\n- If this operative is retaliating, you resolve the first attack dice (i.e. defender instead of attacker).\n\n\nStubborn Subjugator: You can ignore any changes to the Hit stat of this operative’s melee weapons.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-aes24-vig",
+      "opTypeId": "IMP-INQ-AES24-VIG",
+      "name": "Inquisitorial Agents Arbites Vigilant",
+      "category": "po",
+      "cardType": "official",
+      "role": "Arbites Vigilant",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ADEPTUS ARBITES, ARBITES, VIGILANT",
+      "weapons": [
+        {
+          "name": "Combat Shotgun (Close Range)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/4",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Combat Shotgun (Long Range)",
+          "atk": 4,
+          "hit": "5+",
+          "dmg": "2/2",
+          "rules": ""
+        },
+        {
+          "name": "Repression Baton",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Close Quarters Vigilance: This operative can perform the Shoot action (excluding Guard) while within control range of an enemy operative, but only if it hasn’t performed the Charge action during the activation,\nor if it’s a counteraction. Note this operative isn’t restricted from performing the Charge action after performing the Shoot action.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-aes24-vox",
+      "opTypeId": "IMP-INQ-AES24-VOX",
+      "name": "Inquisitorial Agents Arbites Vox-Signifier",
+      "category": "po",
+      "cardType": "official",
+      "role": "Arbites Vox-Signifier",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ADEPTUS ARBITES, ARBITES, VOX-SIGNIFIER",
+      "weapons": [
+        {
+          "name": "Combat Shotgun (Close Range)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/4",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Combat Shotgun (Long Range)",
+          "atk": 4,
+          "hit": "5+",
+          "dmg": "2/2",
+          "rules": ""
+        },
+        {
+          "name": "Repression Baton",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Signal: **SUPPORT**\nSelect one other friendly EXACTION SQUAD operative visible to this operative. Until the end of that operative’s next activation, add 1 to its APL stat.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inb24-arm",
+      "opTypeId": "IMP-INQ-INB24-ARM",
+      "name": "Inquisitorial Agents Navis Armsman",
+      "category": "po",
+      "cardType": "official",
+      "role": "Navis Armsman",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "IMPERIAL NAVY BREACHER, IMPERIUM, NAVIS, ARMSMAN",
+      "weapons": [
+        {
+          "name": "Navis Shotgun (Close Range)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Navis Shotgun (Long Range)",
+          "atk": 4,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": ""
+        },
+        {
+          "name": "Navis Hatchet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Group Activation: Whenever this operative is expended, you must then activate one other ready friendly IMPERIAL NAVY BREACHER ARMSMAN operative (if able) before your opponent activates.\nWhen that other operative is expended, your opponent then activates as normal (in other words, you cannot activate more than two operatives in succession with this rule).\nIgnore this rule when you are using the Breach and Clear faction rule.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inb24-axe",
+      "opTypeId": "IMP-INQ-INB24-AXE",
+      "name": "Inquisitorial Agents Navis Axejack",
+      "category": "po",
+      "cardType": "official",
+      "role": "Navis Axejack",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "IMPERIAL NAVY BREACHER, IMPERIUM, NAVIS, AXEJACK",
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Emboldened: Whenever an attack dice inflicts damage of 3 or more on this operative during a turning point in which it performed the Charge action, roll one D6: on a 5+, subtract 1 from that inflicted damage.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inb24-cat",
+      "opTypeId": "IMP-INQ-INB24-CAT",
+      "name": "Inquisitorial Agents Navis C.A.T. Unit",
+      "category": "po",
+      "cardType": "official",
+      "role": "Navis C.A.T. Unit",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "8\"",
+      "save": "5+",
+      "wounds": 5,
+      "keywords": "IMPERIAL NAVY BREACHER, IMPERIUM, NAVIS, C.A.T. UNIT",
+      "weapons": [],
+      "abilities": "Expendable: This operative is ignored for your opponent’s kill/elimination op (when it’s incapacitated, and when determining your starting number of operatives).\nIt’s also ignored for victory conditions that require operatives to ‘escape’, ‘survive’ or be incapacitated (if it escapes/survives/is incapacitated, determining how many operatives must escape/survive/be incapacitated, etc.).\n\nMachine: \n- This operative cannot be activated or perform actions if it’s within control range of an enemy operative, or if a friendly IMPERIAL NAVY BREACHER SURVEYOR operative has been incapacitated. The turning point can end even if this operative is still ready.\n- This operative cannot perform any actions other than Charge, Dash, Fall Back, Reposition and Spot.\n- It cannot retaliate, assist in a fight, climb or jump.\n- Whenever determining control of a marker, treat this operative’s APL stat as 1 lower. Note this isn’t a change to its APL stat, so any changes are cumulative with this.\n- Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Vantage terrain).\n- Whenever determining what’s visible to this operative, draw the line from any part of the miniature.\n\n\nSpot: Select one enemy operative visible to this operative. Until the end of the turning point, until that enemy operative is no longer visible to this operative or until this operative performs this action again (whichever comes first),\nwhenever a friendly IMPERIAL NAVY BREACHER operative is shooting that enemy operative, you can use this effect.\nIf you do:\n\n- That friendly operative’s ranged weapons have the Seek Light weapon rule.\n- That enemy operative cannot be obscured.\n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inb24-end",
+      "opTypeId": "IMP-INQ-INB24-END",
+      "name": "Inquisitorial Agents Navis Endurant",
+      "category": "po",
+      "cardType": "official",
+      "role": "Navis Endurant",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "4\"",
+      "save": "2+",
+      "wounds": 11,
+      "keywords": "IMPERIAL NAVY BREACHER, IMPERIUM, NAVIS, ENDURANT",
+      "weapons": [
+        {
+          "name": "Navis Heavy Shotgun (Close Range)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Rng 6\", Relentless"
+        },
+        {
+          "name": "Navis Heavy Shotgun (Long Range)",
+          "atk": 4,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": "Relentless"
+        },
+        {
+          "name": "Shield Bash",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "1/2",
+          "rules": "Brutal, *Shield"
+        }
+      ],
+      "abilities": "*Shield: Whenever this operative is fighting or retaliating with this weapon, each of your blocks can be allocated to block two unresolved successes (instead of one).\n\nBreachwall: Whenever your opponent is selecting a valid target, they cannot select another friendly IMPERIAL NAVY BREACHER operative whose base is touching this operative’s if this operative has an Engage order and is intervening.\nThis rule has no effect if more than one other friendly operative’s base is touching this operative’s.\n\nDisengage: This operative can perform the Fall Back action for 1 less AP.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inb24-gs",
+      "opTypeId": "IMP-INQ-INB24-GS",
+      "name": "Inquisitorial Agents Navis Gheistskull",
+      "category": "po",
+      "cardType": "official",
+      "role": "Navis Gheistskull",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "8\"",
+      "save": "5+",
+      "wounds": 5,
+      "keywords": "IMPERIAL NAVY BREACHER, IMPERIUM, FLY, NAVIS, GHEISTSKULL",
+      "weapons": [],
+      "abilities": "Boost: Until the end of the activation, add 6\" to this operative’s Move stat.  \n\nThis operative can only perform this action once per battle, and cannot perform it during the first turning point.\n\nExpendable: This operative is ignored for your opponent’s kill/elimination op (when it’s incapacitated, and when determining your starting number of operatives).\nIt’s also ignored for victory conditions that require operatives to ‘escape’, ‘survive’ or be incapacitated (if it escapes/survives/is incapacitated, determining how many operatives must escape/survive/be incapacitated, etc.).\n\nMachine: \n- This operative cannot perform any actions other than Boost, Charge, Dash, Fall Back and Reposition.\n- It cannot retaliate or assist in a fight.\n- Whenever determining control of a marker, treat this operative’s APL stat as 1 lower. Note this isn’t a change to its APL stat, so any changes are cumulative with this.\n- Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Vantage terrain).\n",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inb24-grn",
+      "opTypeId": "IMP-INQ-INB24-GRN",
+      "name": "Inquisitorial Agents Navis Grenadier",
+      "category": "po",
+      "cardType": "official",
+      "role": "Navis Grenadier",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "IMPERIAL NAVY BREACHER, IMPERIUM, NAVIS, GRENADIER",
+      "weapons": [
+        {
+          "name": "Demolition Charge",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Rng 3\", Blast 2\", Hvy(Repos), Lim1, Prc1, Sat"
+        },
+        {
+          "name": "Navis Shotgun (Close Range)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Navis Shotgun (Long Range)",
+          "atk": 4,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": ""
+        },
+        {
+          "name": "Navis Hatchet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Frag Grenade",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rng 6\", Blast 2\", Sat"
+        },
+        {
+          "name": "Krak Grenade",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 6\", Prc1, Sat"
+        }
+      ],
+      "abilities": "Grenadier: This operative can use frag, krak and stun grenades (see universal equipment). Doing so doesn’t count towards any limited uses you have (i.e. if you also select those grenades from equipment for other operatives).\nWhenever this operative is using a frag or krak grenade, improve the Hit stat of that weapon by 1.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inb24-gnr",
+      "opTypeId": "IMP-INQ-INB24-GNR",
+      "name": "Inquisitorial Agents Navis Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Navis Gunner",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "IMPERIAL NAVY BREACHER, IMPERIUM, NAVIS, GUNNER",
+      "weapons": [
+        {
+          "name": "Meltagun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "6/3",
+          "rules": "Rng 6\", Dev4, Prc2"
+        },
+        {
+          "name": "Navis Las-Volley (Focused)",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Hvy(Dash), Rnd"
+        },
+        {
+          "name": "Navis Las-Volley (Sweeping)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Hvy(Dash), Rnd, Tor 1\""
+        },
+        {
+          "name": "Plasma Gun (Standard)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/6",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Plasma Gun (Supercharge)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "5/6",
+          "rules": "Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inb24-hc",
+      "opTypeId": "IMP-INQ-INB24-HC",
+      "name": "Inquisitorial Agents Navis Hatchcutter",
+      "category": "po",
+      "cardType": "official",
+      "role": "Navis Hatchcutter",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "IMPERIAL NAVY BREACHER, IMPERIUM, NAVIS, HATCHCUTTER",
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Chainfist",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "5/6",
+          "rules": "Brutal, Rnd"
+        }
+      ],
+      "abilities": "Breach Point: Place one of your Breach markers within this operative’s control range as close as possible to a terrain feature within control range of it.\nWhenever an operative is within 1\" of that marker, it treats parts of that terrain feature that are no more than 1\" thick as Accessible terrain.  \n\nThis operative cannot perform this action while within control range of an enemy operative, or if a terrain feature isn’t within its control range.\n\nWeld Shut: Select a closed hatchway (e.g. Killzone: Gallowdark) within this operative’s control range. 1 additional AP must be spent for other operatives to perform the Operate Hatch action to open that hatchway.\nThis effect ends when that hatchway is opened. Note this operative isn’t affected by this effect.  \n\nThis operative cannot perform this action while within control range of an enemy operative, or if it isn’t within 1\" of a closed hatchway.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inb24-srv",
+      "opTypeId": "IMP-INQ-INB24-SRV",
+      "name": "Inquisitorial Agents Navis Surveyor",
+      "category": "po",
+      "cardType": "official",
+      "role": "Navis Surveyor",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "IMPERIAL NAVY BREACHER, IMPERIUM, NAVIS, SURVEYOR",
+      "weapons": [
+        {
+          "name": "Navis Shotgun (Close Range)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Navis Shotgun (Long Range)",
+          "atk": 4,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": ""
+        },
+        {
+          "name": "Navis Hatchet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Remote Control: Select one friendly IMPERIAL NAVY BREACHER C.A.T. UNIT operative. That operative can immediately perform one free action, but it cannot move more than 3\" during that action.  \n\nThis operative cannot perform this action while within control range of an enemy operative, or if a friendly IMPERIAL NAVY BREACHER C.A.T. UNIT operative isn’t in the killzone.\n\nWayfind: **SUPPORT**\nSelect one other friendly IMPERIAL NAVY BREACHER operative (excluding C.A.T. UNIT or GHEISTSKULL) visible to and within 6\" of this operative, or visible to and within 6\" of a friendly IMPERIAL NAVY BREACHER C.A.T. UNIT operative.\nUntil the end of that operative’s next activation, add 1 to its APL stat. For the purposes of the Comms Device universal equipment, the operative the distance is being determined from must control that marker.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-inb24-vj",
+      "opTypeId": "IMP-INQ-INB24-VJ",
+      "name": "Inquisitorial Agents Navis Void-Jammer",
+      "category": "po",
+      "cardType": "official",
+      "role": "Navis Void-Jammer",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "IMPERIAL NAVY BREACHER, IMPERIUM, NAVIS, VOID-JAMMER",
+      "weapons": [
+        {
+          "name": "Gheistskull Detonator",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Blast 1\", Lethal 5+, Lim1, Silent, Stun, *Detonate"
+        },
+        {
+          "name": "Navis Shotgun (Close Range)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Navis Shotgun (Long Range)",
+          "atk": 4,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": ""
+        },
+        {
+          "name": "Navis Hatchet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Detonate: Don’t select a valid target. Instead, a friendly IMPERIAL NAVY BREACHER GHEISTSKULL operative is always the primary target and cannot be in cover or obscured. If that operative isn’t in the killzone, you cannot select this weapon.\n\nInterference Pulse: Select one enemy operative visible to and within 8\" of a friendly GHEISTSKULL operative. Roll one D6, adding 1 to the result if that enemy operative is a valid target for that friendly GHEISTSKULL operative:\non a 3+, subtract 1 from that enemy operative’s APL stat until the end of its next activation.  \n\nThis operative cannot perform this action while within control range of an enemy operative, or if a friendly GHEISTSKULL operative isn’t in the killzone.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-kas24-mdc",
+      "opTypeId": "IMP-INQ-KAS24-MDC",
+      "name": "Inquisitorial Agents Kasrkin Combat Medic",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Combat Medic",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, MEDIC, COMBAT MEDIC",
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Medic!: The first time during each turning point that another friendly KASRKIN operative would be removed from the killzone as incapacitated while visible to and within 3\" of this operative,\nyou can use this rule, providing neither this nor that operative is within control range of an enemy operative.\nIf you do, that friendly operative isn’t incapacitated and has 1 wound remaining. That friendly operative can then immediately perform a free Dash action, but must end that move within this operative's control range.\nSubtract 1 from this and that operative's APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative's activation, that activation ends.  \n\nYou cannot use this rule if this operative is incapacitated.\n\nMedikit: Select one friendly KASRKIN operative within this operative's control range to regain up to 2D3 lost wounds.\nIt cannot be an operative that the Medic! rule was used on during this turning point.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-kas24-dt",
+      "opTypeId": "IMP-INQ-KAS24-DT",
+      "name": "Inquisitorial Agents Kasrkin Demo Trooper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Demo Trooper",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, DEMO-TROOPER",
+      "weapons": [
+        {
+          "name": "Hot-Shot Laspistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Blast Padding: Whenever an operative is shooting this operative with a weapon that has the Blast or Torrent weapon rule (excluding weapons that have a sweeping profile),\nyou can re-roll one of your defence dice.\nIn addition, this operative is not affected by the x\" Devastating x weapon rule (i.e. Devastating with a distance) unless they are the target during that sequence.\n\nMelta Mine: This operative is carrying your Melta Mine marker.\nIt can perform the Pick Up Marker action on that marker, and whenever it performs the Place Marker action on that marker, it can immediately perform a free Dash action.\nThat marker cannot be placed within an enemy operative's control range (if this operative is incapacitated while carrying that marker and that marker cannot be placed, it’s removed with this operative).\n\nProximity Mine: The first time your Melta Mine marker is within another operative's control range, remove that marker and inflict 2D6+3 damage on that operative;\nif it is not incapacitated, end its action (if any), even if that action's effects are not fulfilled.\nIf it cannot be placed, move it the minimum amount to do so.\nNote that this operative is ignored for these effects (i.e. it cannot set it off or take damage from that marker).",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-kas24-gnr",
+      "opTypeId": "IMP-INQ-KAS24-GNR",
+      "name": "Inquisitorial Agents Kasrkin Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Gunner",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, GUNNER",
+      "weapons": [
+        {
+          "name": "Flamer",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 8\", Sat, Tor 2\""
+        },
+        {
+          "name": "Grenade Launcher (Frag)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Blast 2\""
+        },
+        {
+          "name": "Grenade Launcher (Krak)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Hot-Shot Volley Gun (Focused)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "PrcCrit1"
+        },
+        {
+          "name": "Hot-Shot Volley Gun (Sweeping)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "PrcCrit1, Tor 1\""
+        },
+        {
+          "name": "Meltagun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "6/3",
+          "rules": "Rng 6\", Dev4, Prc2"
+        },
+        {
+          "name": "Plasma Gun (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Plasma Gun (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/6",
+          "rules": "Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-kas24-rt",
+      "opTypeId": "IMP-INQ-KAS24-RT",
+      "name": "Inquisitorial Agents Kasrkin Recon-Trooper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Recon-Trooper",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, RECON-TROOPER",
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Auspex Scan: Until the start of this operative's next activation or until it is incapacitated (whichever comes first),\nwhenever a friendly KASRKIN operative is shooting an enemy operative within 8\" of this operative, that enemy operative cannot be obscured.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-kas24-ss",
+      "opTypeId": "IMP-INQ-KAS24-SS",
+      "name": "Inquisitorial Agents Kasrkin Sharpshooter",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Sharpshooter",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, SHARPSHOOTER",
+      "weapons": [
+        {
+          "name": "Hot-Shot Marksman Rifle (Concealed)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev3, Hvy, Sil, *Concealed Position"
+        },
+        {
+          "name": "Hot-Shot Marksman Rifle (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Hot-Shot Marksman Rifle (Stationary)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev3, Heavy"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Concealed Position: This operative can only use this weapon the first time it is performing the Shoot action during the battle.\n\nCamo Cloak: Whenever an operative is shooting this operative:\n\n- Ignore the Saturate weapon rule.\n- If you can retain any cover saves, you can retain one additional cover save, or you can retain one cover save as a critical success instead.]\nThis is not cumulative with improved cover saves from Vantage terrain.\n",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-kas24-trp",
+      "opTypeId": "IMP-INQ-KAS24-TRP",
+      "name": "Inquisitorial Agents Kasrkin Trooper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Trooper",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, TROOPER",
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Adaptive Equipment: You can do each of the following once per turning point:\n\n- One friendly KASRKIN TROOPER operative can perform the Smoke Grenade action.\n- One friendly KASRKIN TROOPER operative can perform the Stun Grenade action.\n\nThe rules for these actions are found in universal equipment. Performing these actions using this rule does not count towards their action limits (i.e. if you also select those grenades from equipment).",
+      "notes": ""
+    },
+    {
+      "id": "imp-inq-kas24-vox",
+      "opTypeId": "IMP-INQ-KAS24-VOX",
+      "name": "Inquisitorial Agents Kasrkin Vox-Trooper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Vox-Trooper",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "INQUISITORIAL AGENT, IMPERIUM, ASTRA MILITARUM, VOX-TROOPER",
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Battle Comms: Select one other friendly KASRKIN operative. Until the end of that operative's next activation, add 1 to its APL stat (to a maximum of 3 after all APL stat changes have been totalled).\n\n\nThis operative can perform this action twice during its activation, but cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    }
+  ]
+}

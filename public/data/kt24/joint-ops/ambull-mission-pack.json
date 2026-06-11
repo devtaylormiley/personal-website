@@ -1,0 +1,244 @@
+{
+  "slug": "ambull-mission-pack",
+  "killteamId": "SPEC-AMB",
+  "name": "Ambull Mission Pack",
+  "description": "This mission pack contains rules for the Ambull NEMESIS operative and its two Borewyrm Infestations, alongside two missions designed specifically for them.",
+  "operatives": [
+    {
+      "id": "spec-amb-amb",
+      "opTypeId": "SPEC-AMB-AMB",
+      "name": "Ambull",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Ambull",
+      "points": 50,
+      "imageUrl": "",
+      "apl": 4,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 35,
+      "keywords": "NEMESIS, AMBULL",
+      "weapons": [
+        {
+          "name": "Enormous Claws",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Brutal, Ceaseless, Rending"
+        }
+      ],
+      "abilities": "Behaviour: **BRAWLER**\n\nThis NPO will move towards the enemy to fight them, but will seek cover on its way. When activated, if it’s a NEMESIS NPO or will perform the Fight or Charge action during that activation, give it an Engage order. Otherwise, give it a Conceal order.\n\n1. Fight.\n2. Charge the closest player operative via the shortest possible route.\n3. Reposition towards the closest player operative, to cover if possible (a subsequent Dash action can fulfil this).\n4. Dash towards the closest player operative, to cover if possible.\n\nBulky: This operative cannot be placed on Vantage terrain higher than 2\" from the killzone floor.\n\n- Whenever this operative would perform the Fight action, the distance requirements of its control range can be changed to 1\" horizontally and 4\" vertically until the end of that action.\n- This operative can move through other operatives (excluding NEMESIS operatives).\n- Ignore all changes to this operative’s APL and if it’s a player operative, APL changes don’t affect the 5AP you can spend per turning point.\n\nExtra Defence: Whenever an operative is shooting this operative, collect and roll one additional defence dice, unless this operative is injured.",
+      "notes": ""
+    },
+    {
+      "id": "spec-amb-bwi",
+      "opTypeId": "SPEC-AMB-BWI",
+      "name": "Borewyrm Infestation",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Borewyrm Infestation",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 1,
+      "move": "4\"",
+      "save": "5+",
+      "wounds": 5,
+      "keywords": "BOREWYRM INFESTATION",
+      "weapons": [
+        {
+          "name": "Vicious Jaws",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": "Rending"
+        }
+      ],
+      "abilities": "Behaviour: **BRAWLER**\n\nThis NPO will move towards the enemy to fight them, but will seek cover on its way. When activated, if it’s a NEMESIS NPO or will perform the Fight or Charge action during that activation, give it an Engage order. Otherwise, give it a Conceal order.\n\n1. Fight.\n2. Charge the closest player operative via the shortest possible route.\n3. Reposition towards the closest player operative, to cover if possible (a subsequent Dash action can fulfil this).\n4. Dash towards the closest player operative, to cover if possible.\n\nSmall: Whenever this NPO has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".",
+      "notes": ""
+    },
+    {
+      "id": "spec-amb-br-trp",
+      "opTypeId": "SPEC-AMB-BR-TRP",
+      "name": "Brawler Trooper",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Brawler Trooper",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "",
+      "weapons": [
+        {
+          "name": "Blades",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": "Ceaseless"
+        }
+      ],
+      "abilities": "Behaviour: When activated, if this NPO can perform either of its first two actions during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n- Fight\n- Charge the closest enemy operative via the shortest possible route\n- Reposition toward the closest enemy operative, to cover if possible (a subsequent Dash action can fulfil this, if able)\n- Dash towards the closest enemy operative, to cover if possible\n",
+      "notes": ""
+    },
+    {
+      "id": "spec-amb-br-tgh",
+      "opTypeId": "SPEC-AMB-BR-TGH",
+      "name": "Brawler Tough",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Brawler Tough",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 10,
+      "keywords": "",
+      "weapons": [
+        {
+          "name": "Blades",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Ceaseless"
+        }
+      ],
+      "abilities": "Behaviour: When activated, if this NPO can perform either of its first two actions during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n- Fight\n- Charge the closest enemy operative via the shortest possible route\n- Reposition toward the closest enemy operative, to cover if possible (a subsequent Dash action can fulfil this, if able)\n- Dash towards the closest enemy operative, to cover if possible\n",
+      "notes": ""
+    },
+    {
+      "id": "spec-amb-br-hvy",
+      "opTypeId": "SPEC-AMB-BR-HVY",
+      "name": "Brawler Heavy",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Brawler Heavy",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "",
+      "weapons": [
+        {
+          "name": "Blades",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Ceaseless"
+        }
+      ],
+      "abilities": "Behaviour: When activated, if this NPO can perform either of its first two actions during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n- Fight\n- Charge the closest enemy operative via the shortest possible route\n- Reposition toward the closest enemy operative, to cover if possible (a subsequent Dash action can fulfil this, if able)\n- Dash towards the closest enemy operative, to cover if possible\n\n\nDouble Fight: This operative can perform two Fight actions during its activation.",
+      "notes": ""
+    },
+    {
+      "id": "spec-amb-mm-trp",
+      "opTypeId": "SPEC-AMB-MM-TRP",
+      "name": "Marksman Trooper",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Marksman Trooper",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "",
+      "weapons": [
+        {
+          "name": "Firearm",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Special Weapon",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Knife",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Behaviour: When activated, if this NPO can perform the Shoot action during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n- Fall Back to cover. If possible, to a location where there is a valid target that is not obscured. If not, where there is an objective marker visible to this NPO\n- Shoot\n- Reposition to cover. If possible, to a location where there is a valid target that is not obscured. If not, where there is an objective marker visible to this NPO (a subsequent Dash action can fulfil these, if able)\n- Dash to cover. If possible, to a location where there is a valid target that is not obscured. If not, where there is an objective marker visible to this NPO\n\n\nSpecial Weapon: Only 1 in 3 Marksman Trooper operatives can have this weapon.",
+      "notes": ""
+    },
+    {
+      "id": "spec-amb-mm-war",
+      "opTypeId": "SPEC-AMB-MM-WAR",
+      "name": "Marksman Warrior",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Marksman Warrior",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "",
+      "weapons": [
+        {
+          "name": "Firearm",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Knife",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Behaviour: When activated, if this NPO can perform the Shoot action during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n- Fall Back to cover. If possible, to a location where there is a valid target that is not obscured. If not, where there is an objective marker visible to this NPO\n- Shoot\n- Reposition to cover. If possible, to a location where there is a valid target that is not obscured. If not, where there is an objective marker visible to this NPO (a subsequent Dash action can fulfil these, if able)\n- Dash to cover. If possible, to a location where there is a valid target that is not obscured. If not, where there is an objective marker visible to this NPO\n",
+      "notes": ""
+    },
+    {
+      "id": "spec-amb-mm-hvy",
+      "opTypeId": "SPEC-AMB-MM-HVY",
+      "name": "Marksman Heavy",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Marksman Heavy",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "",
+      "weapons": [
+        {
+          "name": "Firearm",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Knife",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Behaviour: When activated, if this NPO can perform the Shoot action during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n- Fall Back to cover. If possible, to a location where there is a valid target that is not obscured. If not, where there is an objective marker visible to this NPO\n- Shoot\n- Reposition to cover. If possible, to a location where there is a valid target that is not obscured. If not, where there is an objective marker visible to this NPO (a subsequent Dash action can fulfil these, if able)\n- Dash to cover. If possible, to a location where there is a valid target that is not obscured. If not, where there is an objective marker visible to this NPO\n\n\nDouble Shoot: This operative can perform two Shoot actions during its activation.",
+      "notes": ""
+    }
+  ]
+}

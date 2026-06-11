@@ -1,0 +1,2044 @@
+/* Blackfang — CRT green phosphor terminal */
+
+.blackfang-campaign {
+  --bf-bg: #000000;
+  --bf-bg-elevated: #030a04;
+  --bf-surface: #050f06;
+  --bf-surface-hover: #081408;
+  --bf-border: #1b4d2a;
+  --bf-border-bright: #33a357;
+  --bf-text: #e4e4e7;
+  --bf-text-bright: #fafafa;
+  --bf-text-muted: #b0b0b8;
+  --bf-field: #f4f4f5;
+  --bf-field-muted: #d0d0d6;
+  --bf-accent: #33ff66;
+  --bf-accent-bright: #7dffb0;
+  --bf-accent-dim: #1a6633;
+  --bf-accent-bg: rgb(51 255 102 / 0.08);
+  --bf-accent-glow: rgb(51 255 102 / 0.45);
+  --bf-danger: #ff6b6b;
+  --bf-font-display: 'VT323', 'IBM Plex Mono', monospace;
+  --bf-font-mono: 'IBM Plex Mono', 'Consolas', 'Courier New', monospace;
+  --bf-font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --bf-font-dropcap: 'UnifrakturMaguntia', 'Times New Roman', serif;
+  --bf-radius: 0;
+
+  position: relative;
+  isolation: isolate;
+  font-family: var(--bf-font-body);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--bf-text);
+  background-color: var(--bf-bg);
+  text-shadow: none;
+}
+
+/* CRT scanlines + vignette */
+.blackfang-campaign::before,
+.blackfang-campaign::after {
+  content: '';
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+}
+
+.blackfang-campaign::before {
+  background: repeating-linear-gradient(
+    0deg,
+    rgb(0 0 0 / 0) 0px,
+    rgb(0 0 0 / 0) 2px,
+    rgb(0 0 0 / 0.22) 2px,
+    rgb(0 0 0 / 0.22) 4px
+  );
+  opacity: 0.35;
+}
+
+.blackfang-campaign::after {
+  background: radial-gradient(ellipse 85% 75% at 50% 45%, transparent 35%, rgb(0 0 0 / 0.65) 100%);
+}
+
+.blackfang-campaign ::selection {
+  background: rgb(51 255 102 / 0.35);
+  color: #000;
+  text-shadow: none;
+}
+
+/* Square corners across the section */
+.blackfang-campaign :where(
+  .rounded,
+  .rounded-md,
+  .rounded-lg,
+  .rounded-xl,
+  .rounded-2xl,
+  .rounded-full
+) {
+  border-radius: var(--bf-radius) !important;
+}
+
+/* —— Terminal frame —— */
+.bf-terminal-screen {
+  border: 2px solid var(--bf-border-bright);
+  box-shadow:
+    0 0 0 1px #000,
+    0 0 24px rgb(51 255 102 / 0.12),
+    inset 0 0 80px rgb(0 0 0 / 0.85);
+  background: var(--bf-bg-elevated);
+}
+
+.bf-terminal-titlebar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding: 0.35rem 0.75rem;
+  border-bottom: 1px solid var(--bf-border-bright);
+  background: linear-gradient(180deg, rgb(8 28 14 / 0.95), rgb(2 8 4 / 0.98));
+  font-family: var(--bf-font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bf-accent);
+  text-shadow: 0 0 8px var(--bf-accent-glow);
+}
+
+.bf-terminal-titlebar-path {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bf-terminal-prompt {
+  color: var(--bf-text-muted);
+}
+
+.bf-terminal-cursor {
+  animation: bf-cursor-blink 1.1s step-end infinite;
+  color: var(--bf-accent-bright);
+  margin-left: 1px;
+}
+
+.bf-terminal-titlebar-meta {
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  color: var(--bf-text-muted);
+  text-shadow: none;
+}
+
+.bf-terminal-body {
+  padding: 0.75rem 1rem 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .bf-terminal-body {
+    padding: 1rem 1.25rem 1.5rem;
+  }
+}
+
+@keyframes bf-cursor-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* —— Typography —— */
+.bf-eyebrow {
+  font-family: var(--bf-font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bf-text-muted);
+}
+
+.bf-eyebrow::before {
+  content: '[ ';
+  color: var(--bf-accent-dim);
+}
+
+.bf-eyebrow::after {
+  content: ' ]';
+  color: var(--bf-accent-dim);
+}
+
+.bf-title {
+  font-family: var(--bf-font-display);
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--bf-accent-bright);
+  text-shadow:
+    0 0 6px var(--bf-accent-glow),
+    0 0 18px rgb(51 255 102 / 0.25);
+}
+
+.bf-heading {
+  font-family: var(--bf-font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bf-accent-bright);
+  text-shadow: 0 0 10px rgb(51 255 102 / 0.2);
+}
+
+.bf-mono-label {
+  font-family: var(--bf-font-mono);
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--bf-text-muted);
+}
+
+.bf-body {
+  font-family: var(--bf-font-body);
+  color: var(--bf-field);
+  line-height: 1.6;
+  text-shadow: none;
+}
+
+.bf-muted {
+  font-family: var(--bf-font-body);
+  color: var(--bf-text-muted);
+  text-shadow: none;
+}
+
+/* Readable prose — mono/display reserved for terminal chrome & section labels */
+.blackfang-campaign :where(
+  p,
+  li,
+  td,
+  .bf-hint,
+  .bf-error,
+  .bf-campaign-nav-tile-desc,
+  .bf-lore-document-body,
+  .bf-lore-document-subtitle,
+  .bf-connection-body,
+  .bf-party-slot-meta,
+  .bf-party-slot-empty-text
+) {
+  font-family: var(--bf-font-body);
+}
+
+.blackfang-campaign .operative-card-section-head h4 {
+  font-family: var(--bf-font-mono);
+}
+
+.blackfang-campaign .operative-registry-collapsed h3 {
+  font-family: var(--bf-font-display);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* —— Breadcrumbs —— */
+.bf-breadcrumbs {
+  font-family: var(--bf-font-mono);
+  font-size: 0.8125rem;
+}
+
+.bf-breadcrumbs-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.125rem 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bf-breadcrumbs-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.bf-breadcrumb-icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  flex-shrink: 0;
+}
+
+.bf-breadcrumb-separator {
+  width: 0.875rem;
+  height: 0.875rem;
+  flex-shrink: 0;
+  margin: 0 0.125rem;
+  color: var(--bf-border-bright);
+  opacity: 0.7;
+}
+
+.bf-breadcrumb-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--bf-text-muted);
+  text-decoration: none;
+  text-shadow: none;
+  transition: color 0.1s ease;
+}
+
+.bf-breadcrumb-link:hover {
+  color: var(--bf-accent-bright);
+  text-shadow: 0 0 8px var(--bf-accent-glow);
+}
+
+.bf-breadcrumb-current {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--bf-accent);
+  text-shadow: 0 0 6px rgb(51 255 102 / 0.2);
+}
+
+.bf-breadcrumb-current span {
+  max-width: 14rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .bf-breadcrumb-current span {
+    max-width: 24rem;
+  }
+}
+
+/* Legacy single back links (prefer BlackfangBreadcrumbs) */
+.bf-link {
+  font-family: var(--bf-font-mono);
+  color: var(--bf-text-muted);
+  text-decoration: none;
+  text-shadow: none;
+  transition: color 0.1s ease;
+}
+
+.bf-link:hover {
+  color: var(--bf-accent-bright);
+  text-shadow: 0 0 8px var(--bf-accent-glow);
+}
+
+/* —— Surfaces —— */
+.bf-panel {
+  border: 1px solid var(--bf-border);
+  background: var(--bf-bg);
+  box-shadow: inset 0 0 24px rgb(0 0 0 / 0.6);
+}
+
+.bf-panel-elevated {
+  border: 1px solid var(--bf-border-bright);
+  background: var(--bf-surface);
+  box-shadow:
+    inset 0 0 32px rgb(0 0 0 / 0.5),
+    0 0 12px rgb(51 255 102 / 0.06);
+}
+
+.bf-panel-elevated::before {
+  content: '┌─ DATA ─────────────────────────────────────────';
+  display: block;
+  margin: -0.25rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--bf-border);
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  color: var(--bf-text-muted);
+  text-shadow: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bf-divider {
+  border-color: var(--bf-border);
+  border-style: dashed;
+}
+
+/* —— Controls —— */
+.bf-btn-primary,
+.bf-btn-ghost,
+.bf-btn-danger {
+  font-family: var(--bf-font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+.bf-btn-primary {
+  border: 1px solid var(--bf-border-bright);
+  background: var(--bf-accent-bg);
+  color: var(--bf-accent-bright);
+}
+
+.bf-btn-primary::before {
+  content: '[ ';
+  opacity: 0.6;
+}
+
+.bf-btn-primary::after {
+  content: ' ]';
+  opacity: 0.6;
+}
+
+.bf-btn-primary:hover:not(:disabled) {
+  background: rgb(51 255 102 / 0.15);
+  color: var(--bf-accent);
+  box-shadow: 0 0 12px rgb(51 255 102 / 0.2);
+}
+
+.bf-btn-primary:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.bf-btn-ghost {
+  border: 1px solid var(--bf-border);
+  color: var(--bf-text);
+  background: transparent;
+}
+
+.bf-btn-ghost:hover:not(:disabled) {
+  border-color: var(--bf-border-bright);
+  color: var(--bf-accent-bright);
+  background: var(--bf-accent-bg);
+}
+
+.bf-btn-danger {
+  border: 1px solid rgb(180 60 60 / 0.5);
+  color: var(--bf-danger);
+  background: rgb(40 8 8 / 0.4);
+}
+
+.bf-btn-danger:hover:not(:disabled) {
+  border-color: var(--bf-danger);
+  color: #ffb4b4;
+}
+
+.bf-tab {
+  padding: 0.4rem 0.85rem;
+  font-family: var(--bf-font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  text-shadow: none;
+}
+
+.bf-tab-active {
+  border-color: var(--bf-border-bright);
+  background: var(--bf-accent-bg);
+  color: var(--bf-accent-bright);
+  box-shadow: inset 0 0 12px rgb(51 255 102 / 0.1);
+}
+
+.bf-tab-active::before {
+  content: '■ ';
+  font-size: 0.5rem;
+  vertical-align: middle;
+}
+
+.bf-tab-inactive {
+  color: var(--bf-text-muted);
+}
+
+.bf-tab-inactive:hover {
+  border-color: var(--bf-border);
+  color: var(--bf-text);
+  background: var(--bf-surface);
+}
+
+.bf-input,
+.blackfang-campaign .bf-input,
+.blackfang-campaign .bf-field-input {
+  box-sizing: border-box;
+  max-width: 100%;
+  border: 1px solid var(--bf-border);
+  background: #000;
+  color: var(--bf-field);
+  font-family: var(--bf-font-body);
+  outline: none;
+  text-shadow: none;
+  box-shadow: inset 0 0 12px rgb(0 0 0 / 0.8);
+}
+
+.blackfang-campaign .bf-field-input.w-full,
+.blackfang-campaign select.bf-field-input.w-full,
+.blackfang-campaign textarea.bf-field-input.w-full {
+  width: 100%;
+}
+
+.bf-input::placeholder,
+.blackfang-campaign .bf-field-input::placeholder {
+  color: var(--bf-field-muted);
+}
+
+.bf-input:focus,
+.blackfang-campaign .bf-field-input:focus {
+  border-color: var(--bf-accent);
+  box-shadow:
+    inset 0 0 12px rgb(0 0 0 / 0.8),
+    0 0 0 1px var(--bf-accent-dim),
+    0 0 16px rgb(51 255 102 / 0.15);
+}
+
+.blackfang-campaign .bf-registry-filter-control {
+  box-sizing: border-box;
+  height: 2.5rem;
+  min-height: 2.5rem;
+}
+
+.blackfang-campaign input.bf-registry-filter-control,
+.blackfang-campaign select.bf-registry-filter-control {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 2.5rem;
+}
+
+.blackfang-campaign summary.bf-registry-filter-control {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.blackfang-campaign .bf-registry-filter-row > * {
+  min-width: 0;
+}
+
+.bf-hint {
+  color: var(--bf-text-muted);
+  font-family: var(--bf-font-body);
+  font-size: 0.8125rem;
+  text-shadow: none;
+}
+
+.bf-hint::before {
+  content: 'NOTE: ';
+  color: var(--bf-accent-dim);
+}
+
+.bf-error {
+  font-family: var(--bf-font-body);
+  color: var(--bf-danger);
+  text-shadow: 0 0 8px rgb(255 80 80 / 0.4);
+}
+
+.bf-error::before {
+  content: 'ERR: ';
+}
+
+.bf-dirty {
+  outline: 1px dashed var(--bf-accent);
+  outline-offset: 2px;
+}
+
+/* —— Operative dataslate card —— */
+.blackfang-campaign .operative-card {
+  position: relative;
+  border: 1px solid var(--bf-border-bright) !important;
+  border-radius: 0 !important;
+  background: #000 !important;
+  box-shadow:
+    inset 0 0 40px rgb(51 255 102 / 0.03),
+    0 0 20px rgb(0 0 0 / 0.8) !important;
+}
+
+/* Corner brackets */
+.blackfang-campaign .operative-card::before,
+.blackfang-campaign .operative-card::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--bf-accent);
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.blackfang-campaign .operative-card::before {
+  top: 4px;
+  left: 4px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.blackfang-campaign .operative-card::after {
+  bottom: 4px;
+  right: 4px;
+  border-left: none;
+  border-top: none;
+}
+
+.blackfang-campaign .operative-card-name {
+  border-color: rgb(113 113 122 / 0.45) !important;
+  border-bottom-color: rgb(113 113 122 / 0.55) !important;
+  background: #000 !important;
+  border-style: solid;
+  border-width: 0 0 1px;
+}
+
+.blackfang-campaign .operative-card-name h3,
+.blackfang-campaign .operative-card-name input {
+  color: var(--bf-accent-bright) !important;
+  font-family: var(--bf-font-display) !important;
+  font-size: 1.5rem !important;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 8px var(--bf-accent-glow);
+}
+
+.blackfang-campaign .operative-card-name p {
+  color: var(--bf-field-muted) !important;
+  font-family: var(--bf-font-body) !important;
+  text-shadow: none;
+}
+
+.blackfang-campaign .operative-card-base,
+.blackfang-campaign .operative-card-base p,
+.blackfang-campaign .operative-card-base input {
+  color: var(--bf-text-muted) !important;
+  font-family: var(--bf-font-body) !important;
+  text-shadow: none;
+}
+
+.blackfang-campaign .operative-card-base input:focus {
+  color: var(--bf-field-muted) !important;
+}
+
+.blackfang-campaign .operative-card-keywords {
+  border-color: var(--bf-border) !important;
+  background: #000 !important;
+}
+
+.blackfang-campaign .operative-card-keywords--inline {
+  border: none !important;
+  background: transparent !important;
+}
+
+.blackfang-campaign .operative-card-keywords--inline p,
+.blackfang-campaign .operative-card-keywords--inline input {
+  color: var(--bf-field-muted) !important;
+  font-family: var(--bf-font-body) !important;
+  text-shadow: none;
+}
+
+.blackfang-campaign .operative-card-keywords p,
+.blackfang-campaign .operative-card-keywords input {
+  color: var(--bf-field) !important;
+  font-family: var(--bf-font-body) !important;
+  text-shadow: none;
+}
+
+.blackfang-campaign .operative-card-stat-ribbon {
+  border-color: var(--bf-border) !important;
+  background: #000;
+}
+
+.blackfang-campaign .operative-card-stat-ribbon--inline {
+  border: none !important;
+  background: transparent !important;
+}
+
+.blackfang-campaign .operative-card-stat-ribbon .divide-amber-900\/50 {
+  --tw-divide-opacity: 1;
+  border-color: var(--bf-border);
+}
+
+.blackfang-campaign .operative-card-stat-ribbon p {
+  color: var(--bf-field-muted) !important;
+}
+
+.blackfang-campaign .operative-card-stat-ribbon input,
+.blackfang-campaign .operative-card-stat-ribbon .font-bold {
+  color: var(--bf-field) !important;
+  text-shadow: none;
+}
+
+.blackfang-campaign .operative-card-section-head {
+  border-color: var(--bf-border) !important;
+  background: #000 !important;
+}
+
+.blackfang-campaign .operative-card-section-head h4 {
+  color: var(--bf-accent) !important;
+  letter-spacing: 0.3em;
+}
+
+.blackfang-campaign .operative-card-section-head h4::before {
+  content: '>> ';
+  margin: 0;
+  color: var(--bf-accent-dim);
+  letter-spacing: 0;
+}
+
+.blackfang-campaign .operative-card-section-head h4::after {
+  content: none;
+}
+
+.blackfang-campaign .operative-card-section-body {
+  background: #000 !important;
+}
+
+.blackfang-campaign .operative-card-table--aligned {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.blackfang-campaign .operative-card-weapons-block {
+  border-top-color: rgb(113 113 122 / 0.55) !important;
+}
+
+.blackfang-campaign .operative-card-aligned-tables {
+  --bf-operative-col-stat: 3.5rem;
+  --bf-operative-col-actions: 5.5rem;
+  --bf-operative-col-wide: 32%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.blackfang-campaign .operative-card-aligned-tables .operative-card-col-name {
+  width: auto;
+}
+
+.blackfang-campaign .operative-card-aligned-tables .operative-card-col-stat {
+  width: var(--bf-operative-col-stat);
+}
+
+.blackfang-campaign .operative-card-aligned-tables .operative-card-col-wide {
+  width: var(--bf-operative-col-wide);
+}
+
+.blackfang-campaign .operative-card-aligned-tables .operative-card-col-actions {
+  width: var(--bf-operative-col-actions);
+}
+
+.blackfang-campaign .operative-card-profile-stats {
+  border-bottom: none;
+}
+
+.blackfang-campaign .operative-card-col-stat-cell {
+  white-space: nowrap;
+}
+
+.blackfang-campaign .operative-card-table-head {
+  background: #000 !important;
+  border-bottom: 1px solid var(--bf-border);
+  color: var(--bf-accent) !important;
+}
+
+.blackfang-campaign .operative-card-profile-stats-head th {
+  background: #000 !important;
+  border-bottom: 1px solid rgb(180 120 60 / 0.45);
+  color: rgb(232 168 124 / 0.92) !important;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-shadow: 0 0 6px rgb(232 168 124 / 0.2);
+}
+
+.blackfang-campaign .operative-card ul li {
+  border-color: var(--bf-border) !important;
+  background: #000 !important;
+}
+
+.blackfang-campaign .operative-card ul li p:first-child {
+  color: var(--bf-accent) !important;
+}
+
+.blackfang-campaign .operative-card-editor {
+  border-color: var(--bf-border-bright) !important;
+  background: #000 !important;
+}
+
+.blackfang-campaign .operative-card table td {
+  color: var(--bf-field);
+  font-family: var(--bf-font-body);
+  font-size: 0.8125rem;
+  text-shadow: none;
+}
+
+.blackfang-campaign .operative-card table td.font-medium {
+  color: var(--bf-field);
+}
+
+.blackfang-campaign .operative-card table tr {
+  border-color: var(--bf-border);
+}
+
+.blackfang-campaign .operative-card-weapon-row {
+  border-color: var(--bf-border);
+}
+
+.blackfang-campaign .bf-weapon-combobox {
+  border: 1px solid var(--bf-border-bright);
+  background: #000;
+  box-shadow: 0 0 24px rgb(51 255 102 / 0.1);
+}
+
+.blackfang-campaign .bf-weapon-combobox-item--active {
+  background: var(--bf-accent-bg);
+}
+
+.blackfang-campaign .bf-weapon-combobox-item:hover {
+  background: var(--bf-surface-hover);
+}
+
+.blackfang-campaign .bf-team-card {
+  border: 1px solid var(--bf-border);
+  background: #000;
+}
+
+.blackfang-campaign .bf-team-card:hover {
+  border-color: var(--bf-accent);
+  box-shadow: 0 0 16px rgb(51 255 102 / 0.12);
+}
+
+.blackfang-campaign .bf-team-card h3,
+.blackfang-campaign .bf-team-card .bf-team-card-title {
+  font-family: var(--bf-font-display);
+  font-size: 1.125rem;
+  color: var(--bf-accent-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.blackfang-campaign .bf-team-card .bf-team-card-overlay {
+  padding: 0.5rem 1rem 0.625rem;
+}
+
+.blackfang-campaign .bf-team-card .bf-team-card-title {
+  margin-top: 0.25rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.blackfang-campaign .bf-team-card h3 {
+  font-size: 1.25rem;
+}
+
+.blackfang-campaign .bf-team-card .bf-accent-text::before {
+  content: '>> ';
+  color: var(--bf-text-muted);
+}
+
+.blackfang-campaign .bf-accent-text {
+  font-family: var(--bf-font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.blackfang-campaign .bf-team-card .rounded-md.uppercase {
+  border: 1px solid var(--bf-border);
+  background: #000;
+  color: var(--bf-accent);
+  font-family: var(--bf-font-mono);
+}
+
+.blackfang-campaign .ability-scores-row td {
+  border-color: var(--bf-border);
+}
+
+.blackfang-campaign .operative-card-campaign {
+  border-color: var(--bf-border);
+  background: #000;
+}
+
+.blackfang-campaign .operative-card-campaign > p {
+  color: var(--bf-text-muted);
+}
+
+.blackfang-campaign .boost-sparkle {
+  animation: bf-boost-sparkle 2.2s ease-in-out infinite;
+}
+
+@keyframes bf-boost-sparkle {
+  0%,
+  100% {
+    color: var(--bf-accent);
+    text-shadow: 0 0 8px var(--bf-accent-glow);
+  }
+
+  50% {
+    color: var(--bf-accent-bright);
+    text-shadow: 0 0 16px rgb(125 255 176 / 0.8);
+  }
+}
+
+.blackfang-campaign .bf-chip,
+.blackfang-campaign .bf-chip-violet {
+  border: 1px solid var(--bf-border-bright);
+  background: #000;
+  color: var(--bf-accent);
+  font-family: var(--bf-font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+}
+
+.blackfang-campaign .bf-field-label {
+  font-family: var(--bf-font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bf-field-muted);
+  text-shadow: none;
+}
+
+.blackfang-campaign .bf-field-label::after {
+  content: '_';
+  animation: bf-cursor-blink 1.1s step-end infinite;
+  color: var(--bf-accent-dim);
+}
+
+/* Field values — white text, no phosphor glow */
+.blackfang-campaign :is(
+  input,
+  textarea,
+  select,
+  .bf-field-input,
+  .bf-input,
+  .operative-card-abilities-input
+) {
+  color: var(--bf-field);
+  text-shadow: none;
+}
+
+.blackfang-campaign .operative-card-section-body,
+.blackfang-campaign .operative-card-section-body .bf-body {
+  color: var(--bf-field);
+  text-shadow: none;
+}
+
+.blackfang-campaign .ability-scores-row input {
+  color: var(--bf-field);
+  text-shadow: none;
+}
+
+.blackfang-campaign .bf-weapon-combobox-item p {
+  text-shadow: none;
+}
+
+.blackfang-campaign .bf-killteam-panel {
+  border: 1px solid var(--bf-border);
+  background: #000;
+  box-shadow: inset 0 0 24px rgb(0 0 0 / 0.7);
+  width: 100%;
+  min-width: 0;
+}
+
+.blackfang-campaign .bf-killteam-panel.bf-dirty {
+  border-color: var(--bf-accent);
+  outline: 1px dashed var(--bf-accent-dim);
+}
+
+/* Card images — terminal tint */
+.blackfang-campaign .bf-team-card img {
+  filter: grayscale(0.4) contrast(1.1);
+}
+
+.blackfang-campaign .bf-equipment-dataslate {
+  border: 1px solid var(--bf-border);
+  background: #000;
+  box-shadow: inset 0 0 20px rgb(0 0 0 / 0.65);
+}
+
+.bf-equipment-dataslate-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--bf-border);
+  background: linear-gradient(180deg, rgb(8 28 14 / 0.55), rgb(2 8 4 / 0.85));
+}
+
+.bf-equipment-dataslate-title {
+  margin: 0;
+  font-family: var(--bf-font-display);
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--bf-accent-bright);
+}
+
+.bf-equipment-dataslate-source {
+  margin: 0;
+  font-family: var(--bf-font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bf-text-muted);
+}
+
+.bf-equipment-dataslate-body {
+  padding: 0.85rem 1rem 1rem;
+}
+
+.blackfang-campaign .bf-weapon-dataslate {
+  border: 1px solid var(--bf-border);
+  background: #000;
+  box-shadow: inset 0 0 20px rgb(0 0 0 / 0.65);
+}
+
+.blackfang-campaign .bf-weapon-registry-aligned {
+  --bf-operative-col-stat: 3.5rem;
+  --bf-operative-col-wide: 36%;
+}
+
+.blackfang-campaign .bf-weapon-registry-aligned .bf-weapon-dataslate-columns-head {
+  border-bottom: none;
+  margin-bottom: 0.75rem;
+}
+
+.blackfang-campaign .bf-weapon-registry-aligned .bf-weapon-dataslate-table {
+  table-layout: fixed;
+}
+
+.bf-weapon-dataslate-table thead {
+  background: linear-gradient(180deg, rgb(8 28 14 / 0.55), rgb(2 8 4 / 0.85));
+}
+
+.bf-weapon-dataslate-table th {
+  font-family: var(--bf-font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bf-text-muted);
+}
+
+.bf-weapon-dataslate-table td {
+  border-top: 1px solid var(--bf-border);
+}
+
+.blackfang-campaign .bf-team-card .rounded-md.uppercase {
+  text-shadow: 0 0 6px var(--bf-accent-glow);
+}
+
+/* Nav active state enhancement */
+.blackfang-campaign nav .bf-tab-active {
+  text-shadow: 0 0 10px var(--bf-accent-glow);
+}
+
+/* —— Campaign hub nav tiles —— */
+.bf-page-title {
+  font-family: var(--bf-font-display);
+  color: var(--bf-accent-bright);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.bf-section-label {
+  margin: 0;
+  font-family: var(--bf-font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bf-accent-bright);
+}
+
+.bf-section-label::before {
+  content: '>> ';
+  color: var(--bf-text-muted);
+}
+
+.bf-campaign-nav-tile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 9.5rem;
+  padding: .5rem 1rem 1rem 1rem;
+  text-decoration: none;
+  border: 1px solid var(--bf-border);
+  background: #000;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.bf-campaign-nav-tile:hover {
+  border-color: var(--bf-accent);
+  box-shadow: 0 0 16px rgb(51 255 102 / 0.12);
+  transform: translateY(-1px);
+}
+
+.bf-campaign-nav-tile:focus-visible {
+  outline: 1px solid var(--bf-accent-bright);
+  outline-offset: 2px;
+}
+
+.bf-campaign-nav-tile-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.bf-campaign-nav-tile-code {
+  font-family: var(--bf-font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  color: var(--bf-text-muted);
+}
+
+.bf-campaign-nav-tile-icon {
+  color: var(--bf-accent-dim);
+  transition: color 0.15s ease;
+}
+
+.bf-campaign-nav-tile:hover .bf-campaign-nav-tile-icon {
+  color: var(--bf-accent-bright);
+}
+
+.bf-campaign-nav-tile-title {
+  margin: 0.65rem 0 0;
+  font-family: var(--bf-font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--bf-accent-bright);
+}
+
+.bf-campaign-nav-tile-desc {
+  margin: 0.5rem 0 0;
+  flex: 1;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--bf-text-muted);
+}
+
+.bf-campaign-nav-tile-cta {
+  margin-top: 0.75rem;
+  font-family: var(--bf-font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bf-accent);
+}
+
+.bf-campaign-nav-tile:hover .bf-campaign-nav-tile-cta {
+  color: var(--bf-accent-bright);
+}
+
+.bf-lazy-list-sentinel {
+  border-top: 1px dashed var(--bf-border);
+}
+
+/* —— Party squad roster —— */
+.bf-party-killteam .bf-section-label {
+  margin-bottom: 0;
+}
+
+.bf-party-squad {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bf-party-slot {
+  display: flex;
+  flex-direction: column;
+  min-height: 10.5rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--bf-border);
+  background: #000;
+  box-shadow: inset 0 0 18px rgb(0 0 0 / 0.55);
+}
+
+.bf-party-slot--empty {
+  border-style: dashed;
+  background: rgb(0 0 0 / 0.65);
+}
+
+.bf-party-slot-label {
+  margin: 0;
+  font-family: var(--bf-font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bf-text-muted);
+}
+
+.bf-party-slot-name {
+  margin: 0.65rem 0 0;
+  font-family: var(--bf-font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--bf-accent-bright);
+}
+
+.bf-party-slot-meta {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  color: var(--bf-field);
+}
+
+.bf-party-slot-empty-text {
+  margin: 0.75rem 0 0;
+  flex: 1;
+  font-size: 0.85rem;
+  color: var(--bf-text-muted);
+}
+
+.bf-party-slot-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.85rem;
+}
+
+/* —— Lore / classified document —— */
+.bf-lore-document-panel.bf-panel-elevated::before {
+  content: '┌─ CLASSIFIED DOCUMENT ──────────────────────────';
+}
+
+.bf-lore-document-masthead {
+  max-width: 40rem;
+  margin: 0 auto 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--bf-border-bright);
+}
+
+.bf-lore-document-classification {
+  margin: 0;
+  font-family: var(--bf-font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bf-accent-bright);
+}
+
+.bf-lore-document-title {
+  margin: 0.65rem 0 0;
+  font-family: var(--bf-font-display);
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bf-accent-bright);
+  text-shadow: 0 0 12px var(--bf-accent-glow);
+}
+
+.bf-lore-document-subtitle {
+  margin: 0.5rem 0 0;
+  font-family: var(--bf-font-body);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  letter-spacing: normal;
+  color: var(--bf-text-muted);
+}
+
+.bf-lore-document-body {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.bf-lore-document-section + .bf-lore-document-section {
+  margin-top: 2.25rem;
+  padding-top: 1.75rem;
+  border-top: 1px dashed var(--bf-border);
+}
+
+.bf-lore-document-section-title {
+  margin: 0 0 1.25rem;
+  font-family: var(--bf-font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bf-accent);
+}
+
+.bf-lore-document-section-title::before {
+  content: '>> ';
+  color: var(--bf-text-muted);
+}
+
+.bf-lore-document-body p {
+  margin: 0 0 1.2rem;
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  color: var(--bf-field);
+  text-align: justify;
+  text-indent: 1.75rem;
+  hyphens: auto;
+  text-shadow: none;
+}
+
+.bf-lore-document-body p:last-child {
+  margin-bottom: 0;
+}
+
+.bf-lore-document-lead {
+  text-indent: 0 !important;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--bf-text);
+  border-left: 3px solid var(--bf-accent-dim);
+  padding-left: 1.1rem;
+  margin-bottom: 1.35rem !important;
+}
+
+.bf-lore-document-lead-dropcap::first-letter {
+  float: left;
+  margin: 0.04em 0.14em 0 0;
+  padding: 0.02em 0.08em 0 0;
+  font-family: var(--bf-font-dropcap);
+  font-size: 4.25rem;
+  font-weight: 400;
+  line-height: 0.78;
+  letter-spacing: 0.02em;
+  color: var(--bf-accent-bright);
+  text-shadow: 0 0 14px var(--bf-accent-glow);
+}
+
+@media (min-width: 640px) {
+  .bf-lore-document-lead-dropcap::first-letter {
+    font-size: 4.75rem;
+  }
+}
+
+.bf-lore-terminal-emphasis {
+  display: inline;
+  font-family: var(--bf-font-mono);
+  font-size: 1.05em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bf-accent-bright);
+  text-shadow: 0 0 10px var(--bf-accent-glow);
+}
+
+.bf-lore-document-figure {
+  margin: 1.35rem 0 1.5rem;
+  border: 1px solid var(--bf-border-bright);
+  background: rgb(0 0 0 / 0.45);
+  box-shadow: inset 0 0 24px rgb(51 255 102 / 0.05);
+}
+
+.bf-lore-document-figure-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: grayscale(0.35) contrast(1.08) brightness(0.92);
+}
+
+.bf-lore-document-figure-caption {
+  margin: 0;
+  padding: 0.55rem 0.85rem;
+  border-top: 1px dashed var(--bf-border);
+  font-family: var(--bf-font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--bf-text-muted);
+}
+
+.bf-lore-document-figure-caption::before {
+  content: 'FIG. 1 · ';
+  color: var(--bf-accent-dim);
+}
+
+.bf-mission-map-figure {
+  margin: 1.35rem 0 1.5rem;
+}
+
+.bf-mission-map-figure .bf-lore-document-figure-caption::before {
+  content: 'FIG. 2 · ';
+}
+
+.bf-mission-map-screen {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--bf-border-bright);
+  background: #020804;
+  box-shadow:
+    inset 0 0 32px rgb(51 255 102 / 0.06),
+    0 0 18px rgb(51 255 102 / 0.08);
+}
+
+.bf-mission-map-screen::after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgb(0 0 0 / 0) 0,
+    rgb(0 0 0 / 0) 2px,
+    rgb(0 0 0 / 0.18) 2px,
+    rgb(0 0 0 / 0.18) 4px
+  );
+  opacity: 0.35;
+}
+
+.bf-mission-map-header {
+  padding: 0.65rem 0.85rem;
+  border-bottom: 1px solid var(--bf-border);
+  background: linear-gradient(180deg, rgb(8 28 14 / 0.95), rgb(2 8 4 / 0.98));
+}
+
+.bf-mission-map-header-label {
+  margin: 0;
+  font-family: var(--bf-font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--bf-text-muted);
+}
+
+.bf-mission-map-header-title {
+  margin: 0.25rem 0 0;
+  font-family: var(--bf-font-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bf-accent-bright);
+  text-shadow: 0 0 10px var(--bf-accent-glow);
+}
+
+.bf-mission-map-header-meta {
+  margin: 0.2rem 0 0;
+  font-family: var(--bf-font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bf-accent-dim);
+}
+
+.bf-mission-map-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bf-mission-map-svg-label,
+.bf-mission-map-svg-room-label,
+.bf-mission-map-svg-room-sub,
+.bf-mission-map-svg-marker,
+.bf-mission-map-svg-objective,
+.bf-mission-map-svg-compass {
+  font-family: var(--bf-font-mono);
+  text-transform: uppercase;
+}
+
+.bf-mission-map-svg-label {
+  fill: var(--bf-accent-dim);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+}
+
+.bf-mission-map-svg-room-label {
+  fill: var(--bf-accent-bright);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.bf-mission-map-svg-room-sub {
+  fill: var(--bf-text-muted);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+
+.bf-mission-map-svg-marker {
+  fill: var(--bf-accent-bright);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.bf-mission-map-svg-objective {
+  fill: #ff8866;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.bf-mission-map-svg-compass {
+  fill: var(--bf-accent);
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.bf-mission-map-objective-pulse {
+  animation: bf-map-objective-pulse 2s ease-in-out infinite;
+}
+
+@keyframes bf-map-objective-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.55;
+  }
+}
+
+.bf-mission-map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  margin: 0;
+  padding: 0.55rem 0.85rem;
+  list-style: none;
+  border-top: 1px dashed var(--bf-border);
+  font-family: var(--bf-font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bf-text-muted);
+}
+
+.bf-mission-map-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.bf-mission-map-legend-swatch {
+  width: 0.65rem;
+  height: 0.65rem;
+  border: 1px solid var(--bf-border-bright);
+}
+
+.bf-mission-map-legend-swatch--insert {
+  background: #0f2e18;
+  border-color: #7dffb0;
+}
+
+.bf-mission-map-legend-swatch--room {
+  background: #081408;
+  border-color: #33a357;
+}
+
+.bf-mission-map-legend-swatch--warn {
+  background: #1a1408;
+  border-color: #c9a227;
+}
+
+.bf-mission-map-legend-swatch--unknown {
+  background: #050806;
+  border-color: #1b4d2a;
+  border-style: dashed;
+}
+
+.bf-mission-map-legend-swatch--objective {
+  background: #2a120c;
+  border-color: #ff8866;
+}
+
+.bf-lore-document-pullquote {
+  margin: 1.75rem 0 0;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--bf-border-bright);
+  background: rgb(0 0 0 / 0.35);
+  box-shadow: inset 0 0 20px rgb(51 255 102 / 0.06);
+  font-family: var(--bf-font-display);
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.55;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-indent: 0;
+  text-transform: uppercase;
+  color: var(--bf-accent-bright);
+  text-shadow: 0 0 10px var(--bf-accent-glow);
+}
+
+.bf-lore-document-footer {
+  max-width: 40rem;
+  margin: 2.5rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--bf-border);
+}
+
+.bf-lore-document-footer p {
+  margin: 0;
+  font-family: var(--bf-font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bf-text-muted);
+  text-align: center;
+}
+
+/* —— Campaign app shell + nav —— */
+.bf-campaign-app {
+  width: 100%;
+}
+
+.bf-campaign-shell {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bf-campaign-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.bf-campaign-main .bf-campaign-terminal {
+  min-height: 100vh;
+  border-left: none;
+  border-radius: 0;
+}
+
+.bf-nav-menu-trigger {
+  padding: 0.45rem;
+  border: 1px solid var(--bf-border);
+}
+
+.bf-nav-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgb(0 0 0 / 0.6);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.bf-nav-drawer-backdrop-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.bf-campaign-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 201;
+  display: flex;
+  flex-direction: column;
+  width: min(19rem, 90vw);
+  height: 100%;
+  border-right: 1px solid var(--bf-border-bright);
+  background: var(--bf-surface-elevated, var(--bf-surface));
+  box-shadow: 8px 0 32px rgb(0 0 0 / 0.45);
+  transform: translateX(-100%);
+  transition:
+    transform 0.22s ease,
+    width 0.2s ease;
+}
+
+.bf-campaign-nav--mobile-open {
+  transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+  .bf-campaign-nav {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    align-self: flex-start;
+    flex-shrink: 0;
+    width: 16.5rem;
+    height: 100vh;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .bf-campaign-nav--collapsed {
+    width: 3.75rem;
+  }
+
+  .bf-campaign-nav--collapsed .bf-nav-drawer-title,
+  .bf-campaign-nav--collapsed .bf-nav-item-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .bf-campaign-nav--collapsed .bf-nav-drawer-header {
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .bf-campaign-nav--collapsed .bf-nav-drawer-link,
+  .bf-campaign-nav--collapsed .bf-nav-drawer-sublink {
+    justify-content: center;
+    padding-inline: 0.5rem;
+  }
+
+  .bf-campaign-nav--collapsed .bf-nav-drawer-sublink {
+    padding-left: 0.5rem;
+  }
+
+  .bf-campaign-nav--collapsed .bf-nav-drawer-link-active::before {
+    content: none;
+  }
+
+  .bf-campaign-nav--collapsed .bf-nav-drawer-sublist {
+    margin-top: 0.1rem;
+  }
+}
+
+.bf-nav-drawer-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.5rem 0.65rem;
+  border-bottom: 1px solid var(--bf-border);
+  background: var(--bf-surface-elevated, var(--bf-surface));
+}
+
+.bf-nav-drawer-title {
+  margin: 0;
+  font-family: var(--bf-font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bf-accent-bright);
+}
+
+.bf-nav-drawer-close {
+  padding: 0.35rem;
+}
+
+.bf-nav-drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.75rem 0.5rem 0.5rem;
+}
+
+.bf-nav-drawer-footer {
+  flex-shrink: 0;
+  margin-top: auto;
+  padding: 0.65rem 0.5rem 0.85rem;
+  border-top: 1px solid var(--bf-border);
+}
+
+.bf-nav-portfolio-link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.45rem 0.85rem;
+  font-family: var(--bf-font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--bf-text-muted);
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.bf-nav-portfolio-link:hover {
+  color: var(--bf-text);
+  border-color: var(--bf-border);
+  background: var(--bf-surface);
+}
+
+.bf-campaign-nav--collapsed .bf-nav-portfolio-link {
+  justify-content: center;
+  padding-inline: 0.5rem;
+}
+
+.bf-nav-drawer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bf-nav-drawer-section + .bf-nav-drawer-section {
+  margin-top: 0.35rem;
+}
+
+.bf-nav-drawer-link,
+.bf-nav-drawer-sublink {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.85rem;
+  font-family: var(--bf-font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--bf-text-muted);
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.bf-nav-drawer-sublink {
+  padding: 0.45rem 0.85rem 0.45rem 1.1rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: none;
+}
+
+.bf-nav-drawer-link:hover,
+.bf-nav-drawer-sublink:hover {
+  color: var(--bf-text);
+  border-color: var(--bf-border);
+  background: var(--bf-surface);
+}
+
+.bf-nav-drawer-link-active {
+  border-color: var(--bf-border-bright);
+  background: var(--bf-accent-bg);
+  color: var(--bf-accent-bright);
+  box-shadow: inset 0 0 12px rgb(51 255 102 / 0.1);
+  text-shadow: 0 0 10px var(--bf-accent-glow);
+}
+
+.bf-nav-drawer-link-active::before {
+  content: '■ ';
+  font-size: 0.5rem;
+  vertical-align: middle;
+}
+
+.bf-nav-drawer-sublist {
+  margin: 0.15rem 0 0.5rem 0.85rem;
+  padding: 0.15rem 0 0.15rem 0.65rem;
+  border-left: 1px solid var(--bf-border);
+  list-style: none;
+}
+
+.bf-nav-drawer-sublist-muted .bf-nav-drawer-sublink {
+  opacity: 0.72;
+}
+
+/* —— Fort Pykman first-visit connection overlay —— */
+.bf-connection-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: #000;
+  opacity: 1;
+  transition: opacity 0.55s ease;
+}
+
+.bf-connection-overlay--exiting {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bf-connection-scanlines {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgb(0 0 0 / 0) 0px,
+    rgb(0 0 0 / 0) 2px,
+    rgb(0 0 0 / 0.28) 2px,
+    rgb(0 0 0 / 0.28) 4px
+  );
+  opacity: 0.45;
+}
+
+.bf-connection-panel {
+  position: relative;
+  width: min(100%, 42rem);
+  border: 2px solid var(--bf-border-bright);
+  background: var(--bf-bg-elevated);
+  box-shadow:
+    0 0 0 1px #000,
+    0 0 32px rgb(51 255 102 / 0.18),
+    inset 0 0 100px rgb(0 0 0 / 0.9);
+}
+
+.bf-connection-titlebar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding: 0.35rem 0.75rem;
+  border-bottom: 1px solid var(--bf-border-bright);
+  background: linear-gradient(180deg, rgb(8 28 14 / 0.95), rgb(2 8 4 / 0.98));
+  font-family: var(--bf-font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bf-accent);
+  text-shadow: 0 0 8px var(--bf-accent-glow);
+}
+
+.bf-connection-titlebar-meta {
+  font-size: 0.625rem;
+  letter-spacing: 0.12em;
+  color: var(--bf-text-muted);
+  text-shadow: none;
+}
+
+.bf-connection-body {
+  padding: 1.25rem 1rem 1.5rem;
+  font-family: var(--bf-font-body);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+  .bf-connection-body {
+    padding: 1.5rem 1.25rem 1.75rem;
+    font-size: 0.875rem;
+  }
+}
+
+.bf-connection-prompt {
+  margin: 0 0 0.75rem;
+  color: var(--bf-text-muted);
+  letter-spacing: 0.04em;
+}
+
+.bf-connection-log {
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+  min-height: 9.5rem;
+  color: var(--bf-accent-bright);
+  text-shadow: 0 0 6px var(--bf-accent-glow);
+}
+
+.bf-connection-log li {
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.03em;
+}
+
+.bf-connection-log li:last-child {
+  animation: bf-connection-line-in 0.2s step-end;
+}
+
+@keyframes bf-connection-line-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.bf-connection-bar-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.bf-connection-bar-label,
+.bf-connection-bar-pct {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--bf-accent);
+  text-shadow: 0 0 6px var(--bf-accent-glow);
+}
+
+.bf-connection-bar-pct {
+  min-width: 3.25rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.bf-connection-bar {
+  display: flex;
+  gap: 2px;
+  height: 1.125rem;
+  padding: 2px;
+  border: 1px solid var(--bf-border-bright);
+  background: rgb(0 0 0 / 0.65);
+  box-shadow: inset 0 0 12px rgb(0 0 0 / 0.8);
+}
+
+.bf-connection-bar-seg {
+  flex: 1;
+  min-width: 0;
+  background: rgb(26 102 51 / 0.35);
+  box-shadow: inset 0 0 2px rgb(0 0 0 / 0.6);
+}
+
+.bf-connection-bar-seg--on {
+  background: linear-gradient(180deg, var(--bf-accent-bright), var(--bf-accent));
+  box-shadow:
+    0 0 6px var(--bf-accent-glow),
+    inset 0 1px 0 rgb(255 255 255 / 0.25);
+  animation: bf-connection-seg-pulse 0.15s step-end;
+}
+
+@keyframes bf-connection-seg-pulse {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.bf-connection-status {
+  margin: 0.85rem 0 0;
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bf-text-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bf-connection-overlay--exiting {
+    transition: none;
+  }
+
+  .bf-connection-log li:last-child,
+  .bf-connection-bar-seg--on {
+    animation: none;
+  }
+}

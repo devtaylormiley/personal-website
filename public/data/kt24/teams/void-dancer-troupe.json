@@ -1,0 +1,289 @@
+{
+  "id": "void-dancer-troupe",
+  "killteamId": "AEL-VDT",
+  "factionId": "AEL",
+  "imageUrl": "https://ktdash.app/img/killteams/AEL-VDT.webp",
+  "killTeam": {
+    "name": "Void-Dancer Troupe",
+    "archetypes": "Infiltration, Recon",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Harlequin's Panoply: Whenever an operative is shooting a friendly VOID-DANCER TROUPE operative, and no attack dice are retained as critical successes, worsen the x of the Piercing weapon rule by 1 (if any).\nNote that Piercing 1 would therefore be ignored.   \nWhenever a friendly VOID-DANCER TROUPE operative is climbing up, you can treat the vertical distance as 2\" (regardless of how far the operative actually moves vertically).   \nFriendly VOID-DANCER TROUPE operatives can move within control range of enemy operatives (they must still start and end the move following all requirements for that move).\n\nSaedath: As a STRATEGIC GAMBIT in the first turning point, you must select an ALLEGORY (Epic or Melodrama below) for your kill team for the battle, and one friendly VOID-DANCER TROUPE operative to have the PIVOTAL ROLE for the battle.\nWhenever a friendly operative has the PIVOTAL ROLE, it has the ACCOLADE rule of your ALLEGORY for the battle.  \n\nAs a STRATEGIC GAMBIT in each subsequent turning point, you can select one friendly VOID-DANCER TROUPE operative to gain the ACCOLADE rule of your ALLEGORY for the battle.  \n\nOnce per turning point, when a friendly operative that has the PIVOTAL ROLE completes the performance of your ALLEGORY, you can select a friendly VOID-DANCER TROUPE operative to gain the ACCOLADE rule of your ALLEGORY for the battle.  \n\n**Epic**  \n\n- Performance:  \nThe operative incapacitates an enemy operative while fighting.\n- Accolade:  \nWhenever this operative is fighting, its melee weapons have the Balanced weapon rule.\n\n**Melodrama**  \n\n- Performance:  \nThe operative incapacitates an enemy operative while shooting.\n- Accolade:  \nThe operative’s ranged weapons have the Balanced weapon rule.\n",
+    "ploys": [
+      {
+        "name": "Cegorach's Jest",
+        "description": "Whenever a friendly VOID-DANCER TROUPE operative is fighting or retaliating and your opponent strikes with a normal success, you can roll one D6:  \n\nif the result is less than the Hit stat of your opponent’s selected weapon, that strike is a block instead (ignore the Brutal weapon rule, if relevant) and you cannot use this rule for the rest of the sequence.",
+        "type": "strategy"
+      },
+      {
+        "name": "Darting Salvo",
+        "description": "Whenever a friendly VOID-DANCER TROUPE operative performs the Reposition action during its activation, it can perform the Shoot action during that action\n(it must do so in a location it can be placed, and any remaining move distance it had from that Reposition action can be used after it does so).",
+        "type": "strategy"
+      },
+      {
+        "name": "Prismatic Blur",
+        "description": "Whenever an operative is shooting a friendly VOID-DANCER TROUPE operative that performed an action in which it moved during this turning point, you can re-roll one of your defence dice.",
+        "type": "strategy"
+      },
+      {
+        "name": "Rising Crescendo",
+        "description": "Friendly VOID-DANCER TROUPE operatives can perform the Dash action during the same activation in which they performed the Charge action, but not vice versa (i.e. not Dash then Charge).",
+        "type": "strategy"
+      },
+      {
+        "name": "Domino Field",
+        "description": "Use this firefight ploy when an operative is shooting a friendly VOID-DANCER TROUPE operative, during the Resolve Defence Dice step.\nYou can allocate one of your rolled successful dice to block all of your opponent's attack dice with matching results (e.g. one of your successful defence dice results of 5 can be used to block all successful attack dice results of 5).",
+        "type": "firefight"
+      },
+      {
+        "name": "Elusive Target",
+        "description": "Use this firefight ploy during a friendly VOID-DANCER TROUPE operative’s activation. Until the start of its next activation, while that operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".",
+        "type": "firefight"
+      },
+      {
+        "name": "Murderous Entrance",
+        "description": "Use this firefight ploy when a friendly VOID-DANCER TROUPE operative is fighting during an activation in which it performed the Charge action, after you strike.\nYou can immediately resolve another of your normal successes as a strike (before your opponent), or a critical success if there are none.",
+        "type": "firefight"
+      },
+      {
+        "name": "The Curtain Falls",
+        "description": "Use this firefight ploy when a friendly VOID-DANCER TROUPE operative is fighting, after you strike with a critical success, if the enemy operative is not incapacitated. End that sequence (any remaining attack dice are discarded) and immediately perform a free Fall Back action up to 3\" with that operative (then the Fight action ends). That operative can do so even if it’s performed an action that prevents it from performing the Fall Back action.",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A VOID-DANCER TROUPE killteam is composed of:\n\n- 1 VOID-DANCER TROUPE LEAD PLAYER operative with one option from each of the following:\n  - Fusion pistol, neuro disruptor or shuriken pistol\n  - Blade, caress, embrace, kiss or power weapon\n- 7 VOID-DANCER TROUPE operatives selected from the following list:\n  - DEATH JESTER\n  - PLAYER with one option from each of the following:\n    - Fusion pistol, neuro disruptor or shuriken pistol\n    - Blade, caress, embrace or kiss    \n  - SHADOWSEER with hallucinogen grenade and one of the following options:\n    - Neuro disruptor; miststave\n    - Shuriken pistol; miststave\n\nOther than PLAYER operatives, your kill team can only include each operative on this list once. Your kill team can only include up to one fusion pistol and up to one neuro disruptor.\n",
+    "description": "Even amongst the agile Aeldari, the Harlequins of the Void-dancer Troupes display an almost preternatural level of dexterity and skill. Performance and war merge in their actions, precisely directed to shape the fate of their race."
+  },
+  "operatives": [
+    {
+      "id": "ael-vdt-lpl",
+      "opTypeId": "AEL-VDT-LPL",
+      "name": "Void-Dancer Troupe Lead Player",
+      "category": "po",
+      "cardType": "official",
+      "role": "Lead Player",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 9,
+      "keywords": "VOID-DANCER TROUPE, AELDARI, HARLEQUINS, LEADER, LEAD PLAYER",
+      "weapons": [
+        {
+          "name": "Fusion Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/3",
+          "rules": "Rng 3\", Dev3, Prc2"
+        },
+        {
+          "name": "Neuro Disruptor",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Prc1, Stun"
+        },
+        {
+          "name": "Shuriken Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Rnd"
+        },
+        {
+          "name": "Blade",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": ""
+        },
+        {
+          "name": "Caress",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rnd"
+        },
+        {
+          "name": "Embrace",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Brutal"
+        },
+        {
+          "name": "Kiss",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/7",
+          "rules": ""
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Lead The Performance: Once per battle STRATEGIC GAMBIT. If this operative is in the killzone, change the ALLEGORY you selected for your kill team. Note that the ACCOLADE rule friendly operatives have will also change.",
+      "notes": ""
+    },
+    {
+      "id": "ael-vdt-djs",
+      "opTypeId": "AEL-VDT-DJS",
+      "name": "Void-Dancer Troupe Death Jester",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Jester",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 9,
+      "keywords": "VOID-DANCER TROUPE, AELDARI, HARLEQUINS, DEATH JESTER",
+      "weapons": [
+        {
+          "name": "Shrieker Cannon (Focused)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rnd, Hvy(Repos), *Humbling Cruelty"
+        },
+        {
+          "name": "Shrieker Cannon (Sweeping)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rnd, Hvy(Dash), Tor2\", *Humbling Cruelty"
+        },
+        {
+          "name": "Shrieker Blade",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rnd"
+        }
+      ],
+      "abilities": "*Humbling Cruelty: If the target of this weapon isn’t incapacitated but any of your attack dice inflict damage, the target gains one of your Humbling Cruelty tokens (if it doesn’t already have one).\nWhenever an enemy operative has one of your Humbling Cruelty tokens, worsen the Hit stat of its weapons by 1 and subtract 2\" from its Move stat.\nThis isn’t cumulative with being injured. At the end of that enemy operative’s next activation, remove its Humbling Cruelty token.",
+      "notes": ""
+    },
+    {
+      "id": "ael-vdt-play",
+      "opTypeId": "AEL-VDT-PLAY",
+      "name": "Void-Dancer Troupe Player",
+      "category": "po",
+      "cardType": "official",
+      "role": "Player",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "VOID-DANCER TROUPE, AELDARI, HARLEQUINS, PLAYER",
+      "weapons": [
+        {
+          "name": "Fusion Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/3",
+          "rules": "Rng 3\", Dev3, Prc2"
+        },
+        {
+          "name": "Neuro Disruptor",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Prc1, Stun"
+        },
+        {
+          "name": "Shuriken Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Rnd"
+        },
+        {
+          "name": "Blade",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": ""
+        },
+        {
+          "name": "Caress",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rnd"
+        },
+        {
+          "name": "Embrace",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Brutal"
+        },
+        {
+          "name": "Kiss",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/7",
+          "rules": ""
+        }
+      ],
+      "abilities": "Luck Of The Laughing God: Once per turning point, you can use this rule. If you do, you can use a firefight ploy for 0CP if this is the specified VOID-DANCER TROUPE operative\n(including Command Re-roll if the attack or defence dice was rolled for this operative). You cannot select the same firefight ploy for this rule more than once per battle.",
+      "notes": ""
+    },
+    {
+      "id": "ael-vdt-sds",
+      "opTypeId": "AEL-VDT-SDS",
+      "name": "Void-Dancer Troupe Shadowseer",
+      "category": "po",
+      "cardType": "official",
+      "role": "Shadowseer",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 9,
+      "keywords": "VOID-DANCER TROUPE, AELDARI, HARLEQUINS, PSYKER, SHADOWSEER",
+      "weapons": [
+        {
+          "name": "Hallucinogen Grenade",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "1/1",
+          "rules": "Rng 6\", Blast 2\", Lethal 5+, Seek Light, Silent, Stun"
+        },
+        {
+          "name": "Neuro Disruptor",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Prc1, Stun"
+        },
+        {
+          "name": "Shuriken Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Rnd"
+        },
+        {
+          "name": "Miststave",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/4",
+          "rules": "Shock"
+        }
+      ],
+      "abilities": "Fog Of Dreams: **PSYCHIC** Select one ready enemy operative visible to this operative and roll one D6.\nUntil the end of the turning point, that enemy operative cannot be activated or perform actions until it is the last enemy operative to be activated,\nor until your opponent has activated a number of enemy operatives after this action equal to the result of the D6 (whichever comes first).  \n\nThis operative cannot perform this action while within control range of an enemy operative.\n\nMirror Of Minds: **PSYCHIC** Select one enemy operative that’s a valid target for and within 8\" of this operative.\r Both players roll five D6. Pair your dice with your opponent’s dice based on matching results.\r For each matching pair, inflict D3 damage on that enemy operative (to a maximum of 8). For example, if you rolled 6, 5, 5, 4, 2, 1 and your opponent rolled 6, 5, 4, 4, 3, 1, you would inflict 4D3 damage on that enemy operative.  \n\r This operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    }
+  ]
+}

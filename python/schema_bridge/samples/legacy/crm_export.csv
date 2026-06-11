@@ -1,0 +1,22 @@
+WO #,Asset Tag,Location,State,Assigned To,Urgency,Cost,Last Modified,Notes
+WO-10482,PMP-NPL-04B-HTX-PRIMARY-CIRCULATION-SKID-A12,North Plant,Ready,J. Rivera,High,"$2,847.50",2026-05-28,Mechanical
+10479,CNV-DCK-07-OUTBOUND-SORTATION-LINE-BELT-DRIVE,,In Prog,S. Chen,Med,"12990",05/28/2026,Electrical - belt drive replacement
+WO-10471,BLR-SYD-02-STEAM-GENERATION-HEADER-MANIFOLD,South Yard,BLOCKED,M. Okonkwo,Critical,4560.00,27/05/2026,Safety inspection hold
+10465,CHL-NPL-C4-PROCESS-CHILLED-WATER-LOOP,North Plant,Open,,Low,456.25,2026-05-27,HVAC
+WO-10458,FLT-WHB-09-ELECTRIC-COUNTERBALANCE-TRUCK,Warehouse B,Closed,L. Kim,Medium,,2026-05-26,Fleet
+10452,CMP-DCK-X1-HIGH-PRESSURE-AIR-COMPRESSOR-RACK,Dock 3,IN_PROGRESS,J. Rivera,High,"7,823.99",2026-05-26,Mechanical - compressor rack
+WO-10448,GEN-NPL-03B-BACKUP-DIESEL-GENERATOR-SET,North Plant,Ready,T. Nguyen,High,15420,2026-05-25,Electrical
+10445,PMP-SYD-01-COOLING-TOWER-FAN-MOTOR,South Yard,Ready,A. Patel,Medium,892.00,2026-05-25,Mechanical
+WO-10440,VLV-NPL-12-STEAM-TRAP-ASSEMBLY,North Plant,Blocked,K. Walsh,High,1240.50,24/05/2026,Plumbing - steam trap
+10438,CNV-DCK-02-INBOUND-DIVERter-MOTOR,Dock 3,In Prog,S. Chen,Medium,3450,2026-05-24,Electrical
+WO-10435,BLR-WHB-01-BOILER-FEED-PUMP,Warehouse B,Ready,J. Rivera,High,5678.25,2026-05-23,Mechanical
+10430,FLT-NPL-05-PROPANE-FORKLIFT,North Plant,Closed,M. Okonkwo,Low,,2026-05-22,Fleet
+WO-10428,CHL-DCK-03-CHILLER-CONDENSER-COIL,Dock 3,Ready,L. Kim,Medium,2890,2026-05-22,HVAC
+10425,PMP-SYD-04-HOT-WATER-CIRC-PUMP,South Yard,Ready,T. Nguyen,Medium,675.00,2026-05-21,Mechanical - pump seal leak North Plant
+10422,GEN-DCK-01-PORTABLE-GENERATOR,Dock 3,In Prog,A. Patel,High,11200,2026-05-21,Electrical
+WO-10418,VLV-WHB-03-BALL-VALVE-ACTUATOR,Warehouse B,Ready,K. Walsh,Low,445.99,2026-05-20,Plumbing
+10415,CNV-NPL-08-SORTATION-SCANNER,North Plant,Ready,S. Chen,Medium,1890,2026-05-20,Electrical
+WO-10412,BLR-DCK-05-STEAM-HEADER,Dock 3,Blocked,J. Rivera,Critical,8900,2026-05-19,Safety - pressure relief failed
+10408,FLT-SYD-02-REACH-TRUCK,South Yard,Closed,L. Kim,Medium,,2026-05-19,Fleet
+WO-10405,CHL-WHB-02-AHU-FAN-BELT,Warehouse B,Ready,M. Okonkwo,Low,234.50,2026-05-18,HVAC
+10402,PMP-DCK-09-RAW-WATER-BOOSTER,Dock 3,In Prog,T. Nguyen,High,4567,2026-05-18,Mechanical

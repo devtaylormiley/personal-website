@@ -1,0 +1,482 @@
+{
+  "id": "wyrmblade",
+  "killteamId": "TYR-WB",
+  "factionId": "TYR",
+  "imageUrl": "https://ktdash.app/img/killteams/TYR-WB.webp",
+  "killTeam": {
+    "name": "Wyrmblade",
+    "archetypes": "Seek And Destroy, Infiltration",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Cult Ambush: Whenever a friendly WYRMBLADE operative is shooting or fighting during its activation, if its order was changed from Conceal to Engage at the start of that activation, or it wasn’t visible to enemy operatives at the start of that activation,\nthat friendly operative's weapons have the Ceaseless weapon rule.\n\nFamiliar Territory: When setting up a WYRMBLADE kill team before the battle, one third of your kill team can be set up in HIDING: place them to one side instead of in the killzone.\nCULT AGENT operatives cannot be set up in HIDING.  \n\nIn the Firefight phase, friendly WYRMBLADE operatives set up in HIDING are activated as normal.\nWhen you do, you can either expend that operative or have it emerge. If it emerges, set it up in the killzone in a location it can be placed as follows (it’s no longer set up in HIDING):\n\n- Wholly within 6\" of your drop zone.\n- More than 6\" from enemy operatives.\n- With an order of your choice.\n\nThe operative is treated as performing the Reposition action (spend the AP accordingly), then continue its activation as normal. If the operative is a WARRIOR, ignore its Group Activation rule.\nFriendly operatives still in HIDING at the end of the second turning point are incapacitated.\n\nCult Agent: Whenever an operative is shooting a friendly WYRMBLADE CULT AGENT operative:\n\n- Ignore the Piercing and Saturate weapon rules.\n- If you can retain any cover saves, you can retain one additional cover save, or you can retain one cover save as a critical success instead. This isn’t cumulative with improved cover saves from Vantage terrain.\n",
+    "ploys": [
+      {
+        "name": "Crossfire",
+        "description": "Whenever a friendly WYRMBLADE operative is shooting an operative that another friendly WYRMBLADE operative has already shot during this turning point, that first friendly operative's ranged weapons have the Accurate 1 weapon rule.  \n**Accurate 1:** You can retain 1 Attack Die as a normal success without rolling it.",
+        "type": "strategy"
+      },
+      {
+        "name": "Divert And Disappear",
+        "description": "Up to three friendly WYRMBLADE operatives can immediately perform a free Dash or Charge action in an order of your choice (choose separately for each, and for the latter, it cannot move more than 3\").\nIf a WYRMBLADE CULT AGENT operative is selected for this ploy, it counts as two operatives, and it can perform a free Fall Back action instead (it cannot move more than 3\"); if it does, subtract 1 from its APL stat until the end of its next activation.",
+        "type": "strategy"
+      },
+      {
+        "name": "One With The Shadows",
+        "description": "Whenever an operative is shooting a friendly WYRMBLADE operative that has a Conceal order, if Light terrain is intervening, that friendly operative is obscured (unless the intervening Light terrain is within 1\" of either operative).",
+        "type": "strategy"
+      },
+      {
+        "name": "The Day Is At Hand",
+        "description": "Whenever a friendly WYRMBLADE operative is activated, if its order is changed from Conceal to Engage, until the end of that activation:\n\n- Its ranged weapons have the Rending weapon rule.\n- Add 1 to the Atk stat of its melee weapons (to a maximum of 5).\n  \n**Rending:** If you retain any critical hits, retain 1 normal hit as a critical hit instead.",
+        "type": "strategy"
+      },
+      {
+        "name": "A Plan Generations In The Making",
+        "description": "Use this firefight ploy when a friendly WYRMBLADE NEOPHYTE operative is incapacitated. It can perform a free mission action before it’s removed from the killzone.",
+        "type": "firefight"
+      },
+      {
+        "name": "Coiled Serpent",
+        "description": "Use this firefight ploy when a friendly WYRMBLADE operative is shooting or fighting, after rolling your attack dice.\nIf that friendly operative’s order was changed from Conceal to Engage at the start of that activation and this is the first time it has performed either the Shoot or Fight action during that activation,\nyou can retain one of your normal successes as a critical success instead. Note this ploy cannot come into effect more than once per activation (you cannot use it during both the Shoot and Fight action in the same activation).",
+        "type": "firefight"
+      },
+      {
+        "name": "Slink Into Darkness",
+        "description": "Use this firefight ploy at the end of a friendly WYRMBLADE operative’s activation. If that operative has an Engage order, change it to Conceal. You cannot use this ploy for each friendly operative more than once per battle.",
+        "type": "firefight"
+      },
+      {
+        "name": "Unquestioning Loyalty",
+        "description": "Use this firefight ploy when a friendly WYRMBLADE CULT AGENT or WYRMBLADE LEADER operative is selected as the valid target of a Shoot action or to fight against during the Fight action. Select one other friendly WYRMBLADE NEOPHYTE operative (excluding LEADER) visible to and within 3\" of that first friendly operative to become the valid target or to be fought against (as appropriate) instead (even if it wouldn’t normally be valid for this). If it’s the Fight action, treat that other operative as being within the fighting operative’s control range for the duration of that action. If it is the Shoot action, that other operative is only in cover or obscured if the original target was.  \n This ploy has no effect if it’s the Shoot action and the ranged weapon has the Blast or Torrent weapon rule.",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A WYRMBLADE killteam is composed of:\n\n- 1 WYRMBLADE NEOPHYTE LEADER operative with one of the following options:  \n  - Autogun; gun butt\n  - Shotgun; gun butt  \n  Or one option from each of the following:\n  - Bolt pistol, master-crafted autopistol or web pistol\n  - Chainsword, power maul or power pick\n- 13 WYRMBLADE operatives selected from the following list: \n  - KELERMORPH*\n  - LOCUS*\n  - GUNNER with flamer and gun butt\n  - GUNNER with grenade launcher and gun butt\n  - GUNNER with webber and gun butt\n  - HEAVY GUNNER with heavy stubber and gun butt\n  - HEAVY GUNNER with mining laser and gun butt\n  - HEAVY GUNNER with seismic cannon and gun butt\n  - ICON BEARER with one of the following options:\n      - Autogun; gun butt\n      - Shotgun; gun butt\n  - SANCTUS SNIPER*\n  - SANCTUS TALON*\n  - WARRIOR with one of the following options:\n      - Autogun; gun butt\n      - Shotgun; gun butt\n\n*These operatives count as two selections each.  \nOther than WARRIOR operatives, your kill team can only include each operative on this list once.  \n\nYour kill team can only include up to two GUNNER operatives, up to two HEAVY GUNNER operatives and up to two CULT AGENT operatives.",
+    "description": "Genestealer Cults are insidious broods of Human-xenos hybrids that spread unnoticed on Imperial worlds, sometimes for generations. They infiltrate the Imperium’s social, industrial and military fabric, and their elite Wyrmblade kill teams squirm undetected into perfect ambush sites."
+  },
+  "operatives": [
+    {
+      "id": "tyr-wb-ldr",
+      "opTypeId": "TYR-WB-LDR",
+      "name": "Wyrmblade Neophyte Leader",
+      "category": "po",
+      "cardType": "official",
+      "role": "Neophyte Leader",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "WYRMBLADE, TYRANIDS, GENESTEALER CULTS, NEOPHYTE, LEADER",
+      "weapons": [
+        {
+          "name": "Autogun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Master-Crafted AutoPistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rng 8\", Lethal 5+"
+        },
+        {
+          "name": "Shotgun",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Web Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 6\", Severe, Stun"
+        },
+        {
+          "name": "Chainsword",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Power Maul",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Shock"
+        },
+        {
+          "name": "Power Pick",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rnd"
+        }
+      ],
+      "abilities": "Shadow Vector: Once per turning point, you can use the Slink Into Darkness or Coiled Serpent firefight ploy for 0CP if the specified friendly WYRMBLADE operative is a NEOPHYTE visible to this operative.",
+      "notes": ""
+    },
+    {
+      "id": "tyr-wb-klm",
+      "opTypeId": "TYR-WB-KLM",
+      "name": "Wyrmblade Kelermorph",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kelermorph",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 9,
+      "keywords": "WYRMBLADE, TYRANIDS, GENESTEALER CULTS, CULT AGENT, KELERMORPH",
+      "weapons": [
+        {
+          "name": "Liberator Autostubs (Hypersense)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 6\", Sat, Seek Light, *Hypersense"
+        },
+        {
+          "name": "Liberator Autostubs (Long Range)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": "PrcCrit1, Rnd"
+        },
+        {
+          "name": "Liberator Autostubs (Short Range)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Prc1, Rnd"
+        },
+        {
+          "name": "Kelermorph Knife",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": "Rnd"
+        }
+      ],
+      "abilities": "*Hypersense: Whenever this operative is shooting with this weapon profile, enemy operatives cannot be obscured.\n\nExpert Gunslinger: This operative can perform two Shoot actions during its activation.\n\nHeroic Inspiration: Whenever a friendly WYRMBLADE NEOPHYTE operative visible to and within 3\" of this operative is shooting, fighting or retaliating, if this operative has incapacitated an enemy operative during this turning point, that friendly operative’s weapons have the Severe weapon rule.",
+      "notes": ""
+    },
+    {
+      "id": "tyr-wb-loc",
+      "opTypeId": "TYR-WB-LOC",
+      "name": "Wyrmblade Locus",
+      "category": "po",
+      "cardType": "official",
+      "role": "Locus",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 9,
+      "keywords": "WYRMBLADE, TYRANIDS, GENESTEALER CULTS, CULT AGENT, SANCTUS, LOCUS",
+      "weapons": [
+        {
+          "name": "Barbed Tail",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 3\", Silent"
+        },
+        {
+          "name": "Locus Blades",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Bladed Stance: Whenever this operative is fighting or retaliating, you can resolve one of your successes before the normal order. If you do, that success must be used to block.\n\nExpert Swordsman: This operative can perform two Fight actions during its activation. Whenever this operative ends the Fight action, if it’s no longer within control range of enemy operatives, it can immediately perform a free Charge action (even if it’s already performed the Charge action during that activation), but it cannot move more than 3\" during that action.\nDoing so doesn’t prevent it from performing the Dash action afterwards during that activation.\n\nQuicksilver Strike: Once per turning point, after an enemy operative performs an action in which it moves or is set up, you can interrupt to use this rule.\r If you do, this operative can immediately perform a free Charge action (you can change its order to do so), but it cannot move more than 3\", and it must end that move within control range of that enemy operative.\r If this isn’t possible, the interruption is cancelled and this rule hasn’t been used.",
+      "notes": ""
+    },
+    {
+      "id": "tyr-wb-gnr",
+      "opTypeId": "TYR-WB-GNR",
+      "name": "Wyrmblade Neophyte Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Neophyte Gunner",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "WYRMBLADE, TYRANIDS, GENESTEALER CULTS, NEOPHYTE, GUNNER",
+      "weapons": [
+        {
+          "name": "Flamer",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 8\", Sat, Tor 2\""
+        },
+        {
+          "name": "Grenade Launcher (Frag)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/4",
+          "rules": "Blast 2\""
+        },
+        {
+          "name": "Grenade Launcher (Krak)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Webber",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 12\", Severe, Stun"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "tyr-wb-hgnr",
+      "opTypeId": "TYR-WB-HGNR",
+      "name": "Wyrmblade Neophyte Heavy Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Neophyte Heavy Gunner",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "WYRMBLADE, TYRANIDS, GENESTEALER CULTS, NEOPHYTE, HEAVY GUNNER",
+      "weapons": [
+        {
+          "name": "Heavy Stubber (Focused)",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Hvy(Dash)"
+        },
+        {
+          "name": "Heavy Stubber (Sweeping)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Hvy(Dash), Tor 1\""
+        },
+        {
+          "name": "Mining Laser",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "5/6",
+          "rules": "Hvy(Dash),Prc1"
+        },
+        {
+          "name": "Seismic Cannon (Long-Wave)",
+          "atk": 6,
+          "hit": "4+",
+          "dmg": "2/2",
+          "rules": "Blast 1\", Hvy(Dash), Stun"
+        },
+        {
+          "name": "Seismic Cannon (Short-Wave)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/4",
+          "rules": "Rng 6\", Hvy(Dash), PrcCrit1, Stun"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Heavy Weapon Bipod: Whenever this operative is shooting with a weapon from its datacard, if it hasn’t moved during the activation, or if it’s a counteraction, that weapon has the Ceaseless weapon rule;\nif the weapon already has that weapon rule (i.e. from the Cult Ambush faction rule), it has the Relentless weapon rule.\nNote this operative isn’t restricted from moving after shooting.",
+      "notes": ""
+    },
+    {
+      "id": "tyr-wb-ib",
+      "opTypeId": "TYR-WB-IB",
+      "name": "Wyrmblade Neophyte Icon Bearer",
+      "category": "po",
+      "cardType": "official",
+      "role": "Neophyte Icon Bearer",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "WYRMBLADE, TYRANIDS, GENESTEALER CULTS, NEOPHYTE, ICON BEARER",
+      "weapons": [
+        {
+          "name": "Autogun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Shotgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Icon Bearer: Whenever determining control of a marker, treat this operative’s APL stat as 1 higher.\nNote this is not a change to its APL stat, so any changes are cumulative with this.\n\nOverthrow The Oppressors: Once per turning point, when a ready friendly WYRMBLADE NEOPHYTE operative is incapacitated while visible to and within 6\" of this operative, you can use this rule.\nIf you do, before that operative is removed from the killzone, it can either perform one free Shoot action (you can change its order to do so), or you can use the A Plan Generations in the Making firefight ploy for 0CP if that incapacitated\noperative is the specified friendly WYRMBLADE NEOPHYTE operative.  \n\nIt is then removed from the killzone as normal.",
+      "notes": ""
+    },
+    {
+      "id": "tyr-wb-snp",
+      "opTypeId": "TYR-WB-SNP",
+      "name": "Wyrmblade Sanctus Sniper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Sanctus Sniper",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 9,
+      "keywords": "WYRMBLADE, TYRANIDS, GENESTEALER CULTS, CULT AGENT, SANCTUS, SNIPER",
+      "weapons": [
+        {
+          "name": "Sanctus Sniper Rifle (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Sanctus Sniper Rifle (Stationary)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev3, Hvy(Dash), Silent"
+        },
+        {
+          "name": "Fists",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Familiar's Soulsight: Select one enemy operative visible to this operative. Until the end of the battle, or until this action is performed again by a friendly operative (whichever comes first),\nthat enemy operative gains one of your Soulsight tokens. Whenever this operative is shooting an enemy operative that has one of your Soulsight tokens,\nall profiles of this operative's Sanctus sniper rifle have the Saturate weapon rule and that enemy operative cannot be obscured.  \n\nThis operative cannot perform this action while within control range of an enemy operative.\n\nTarget Vulnerability: Until the end of this operative’s activation, the stationary profile of its Sanctus sniper rifle has the Lethal 5+ weapon rule.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "tyr-wb-tal",
+      "opTypeId": "TYR-WB-TAL",
+      "name": "Wyrmblade Sanctus Talon",
+      "category": "po",
+      "cardType": "official",
+      "role": "Sanctus Talon",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 9,
+      "keywords": "WYRMBLADE, TYRANIDS, GENESTEALER CULTS, CULT AGENT, SANCTUS, TALON",
+      "weapons": [
+        {
+          "name": "Sanctus Bio-Dagger",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/6",
+          "rules": "Lethal 4+, Shock"
+        }
+      ],
+      "abilities": "Assassinate: Select one enemy operative this operative isn’t visible to.\nPerform a free Charge action with this operative, but do not exceed its Move stat (i.e. do not add 2\"), and it must end that move within control range of that enemy operative.\nThen immediately perform a free Fight action with this operative against that enemy operative. The first time you strike during that action, you can immediately resolve another of your successes as a strike (before your opponent).  \n\nThis operative cannot perform this action while it has an Engage order, or while within control range of an enemy operative.\n\nCreeping Shadow: This operative can perform the Charge action while it has a Conceal order. Whenever this operative performs the Fight action, it can immediately perform a free Dash or Fall Back action afterwards\n(for the latter, it cannot move more than 3\"), even if it’s performed an action that prevents it from performing those actions.\n\nFamiliar's Soulsight: Select one enemy operative visible to this operative. Until the end of the battle, or until this action is performed again by a friendly operative (whichever comes first),\nthat enemy operative gains one of your Soulsight tokens. Whenever this operative is shooting an enemy operative that has one of your Soulsight tokens,\nits Sanctus bio-dagger has the Brutal and Balanced weapon rules.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "tyr-wb-war",
+      "opTypeId": "TYR-WB-WAR",
+      "name": "Wyrmblade Neophyte Warrior",
+      "category": "po",
+      "cardType": "official",
+      "role": "Neophyte Warrior",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "WYRMBLADE, TYRANIDS, GENESTEALER CULTS, NEOPHYTE, WARRIOR",
+      "weapons": [
+        {
+          "name": "Autogun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Shotgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Group Activation: Whenever this operative is expended, you must then activate one other ready friendly WYRMBLADE WARRIOR operative (if able) before your opponent activates.\nWhen that other operative is expended, your opponent then activates as normal (in other words, you cannot activate more than two operatives in succession with this rule).",
+      "notes": ""
+    }
+  ]
+}

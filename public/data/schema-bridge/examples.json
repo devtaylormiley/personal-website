@@ -1,0 +1,138 @@
+[
+  {
+    "id": "status-in-prog",
+    "label": "Status normalization",
+    "source": "crm_export",
+    "row_index": 1,
+    "legacy": {
+      "WO #": "10479",
+      "Asset Tag": "CNV-DCK-07-OUTBOUND-SORTATION-LINE-BELT-DRIVE",
+      "Location": null,
+      "State": "In Prog",
+      "Assigned To": "S. Chen",
+      "Urgency": "Med",
+      "Cost": "12990",
+      "Last Modified": "05/28/2026",
+      "Notes": "Electrical - belt drive replacement"
+    },
+    "suggested": {
+      "id": "WO-10479",
+      "asset": "CNV-DCK-07-OUTBOUND-SORTATION-LINE-BELT-DRIVE",
+      "site": null,
+      "status": "In progress",
+      "owner": "S. Chen",
+      "priority": "Medium",
+      "price": 12990.0,
+      "updated": "2026-05-28",
+      "category": "Electrical"
+    },
+    "confidence": 0.95,
+    "reason": "Abbreviated CRM status synonym mapped via AI decision log",
+    "decisions": [
+      {
+        "field": "status",
+        "source_value": "In Prog",
+        "target_value": "In progress",
+        "confidence": 0.95,
+        "method": "ai",
+        "reason": "Abbreviated CRM status synonym"
+      },
+      {
+        "field": "category",
+        "source_value": "Electrical - belt drive replacement",
+        "target_value": "Electrical",
+        "confidence": 0.88,
+        "method": "ai",
+        "reason": "Category inferred from leading discipline label"
+      }
+    ]
+  },
+  {
+    "id": "prose-pump-seal",
+    "label": "Prose extraction",
+    "source": "crm_export",
+    "row_index": 13,
+    "legacy": {
+      "WO #": "10425",
+      "Asset Tag": "PMP-SYD-04-HOT-WATER-CIRC-PUMP",
+      "Location": "South Yard",
+      "State": "Ready",
+      "Assigned To": "T. Nguyen",
+      "Urgency": "Medium",
+      "Cost": "675.00",
+      "Last Modified": "2026-05-21",
+      "Notes": "Mechanical - pump seal leak North Plant"
+    },
+    "suggested": {
+      "id": "WO-10425",
+      "asset": "PMP-SYD-04-HOT-WATER-CIRC-PUMP",
+      "site": "North Plant",
+      "status": "Ready",
+      "owner": "T. Nguyen",
+      "priority": "Medium",
+      "price": 675.0,
+      "updated": "2026-05-21",
+      "category": "Mechanical"
+    },
+    "confidence": 0.92,
+    "reason": "Site and category extracted from prose notes — location column conflict flagged",
+    "decisions": [
+      {
+        "field": "category",
+        "source_value": "Mechanical - pump seal leak North Plant",
+        "target_value": "Mechanical",
+        "confidence": 0.92,
+        "method": "ai",
+        "reason": "Prose notes encode category prefix and site suffix"
+      },
+      {
+        "field": "site",
+        "source_value": "Mechanical - pump seal leak North Plant",
+        "target_value": "North Plant",
+        "confidence": 0.92,
+        "method": "ai",
+        "reason": "Site inferred from prose notes"
+      }
+    ]
+  },
+  {
+    "id": "duplicate-generator",
+    "label": "Duplicate detection",
+    "source": "spreadsheet_export",
+    "row_index": 21,
+    "legacy": {
+      "order_num": "10400",
+      "asset_code": "GEN-NPL-03B-BACKUP-DIESEL-GENERATOR-SET",
+      "site_name": "North Plant",
+      "wo_status": "Ready",
+      "owner_initials": "T. Nguyen",
+      "prio": "High",
+      "amount": "15420",
+      "modified_on": "2026-05-25",
+      "comments": "Electrical - possible duplicate of WO-10448"
+    },
+    "suggested": {
+      "id": "WO-10400",
+      "asset": "GEN-NPL-03B-BACKUP-DIESEL-GENERATOR-SET",
+      "site": "North Plant",
+      "status": "Ready",
+      "owner": "T. Nguyen",
+      "priority": "High",
+      "price": 15420.0,
+      "updated": "2026-05-25",
+      "category": "Electrical"
+    },
+    "confidence": 0.65,
+    "reason": "Same asset as WO-10448 — held for human merge review",
+    "decisions": [
+      {
+        "field": "notes",
+        "source_value": "Electrical - possible duplicate of WO-10448",
+        "target_value": null,
+        "confidence": 0.65,
+        "method": "ai",
+        "reason": "Duplicate hint only — no category extraction"
+      }
+    ]
+  }
+]

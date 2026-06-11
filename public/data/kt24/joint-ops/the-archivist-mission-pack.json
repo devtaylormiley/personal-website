@@ -1,0 +1,41 @@
+{
+  "slug": "the-archivist-mission-pack",
+  "killteamId": "SPEC-ARCH",
+  "name": "The Archivist Mission Pack",
+  "description": "This mission pack contains rules for the Archivist NEMESIS operative, alongside two missions designed specifically for it. The first mission is player vs environment (PvE) for co-operative or solo gameplay with the Archivist against NPO adversaries, but the Archivist will betray the players to achieve its own aims. The second mission is player vs player (PvP), but the Archivist acts as a third party operative that players must compete to appease and win to their side. The Archivist can be used in other missions at your discretion.",
+  "operatives": [
+    {
+      "id": "spec-arch-arch",
+      "opTypeId": "SPEC-ARCH-ARCH",
+      "name": "The Archivist",
+      "category": "npo",
+      "cardType": "official",
+      "role": "The Archivist",
+      "points": 50,
+      "imageUrl": "",
+      "apl": 4,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 35,
+      "keywords": "NEMESIS, ARCHIVIST ",
+      "weapons": [
+        {
+          "name": "Atomic Disassembler",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "4/2",
+          "rules": "Rng 8\", Dev 3, Prc2"
+        },
+        {
+          "name": "Eradicator Glove",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "5/7",
+          "rules": "Brutal, Shock, Stun"
+        }
+      ],
+      "abilities": "Behavior: This NPO will shoot the closest player operative as a priority, but will fight if the need arises and shoot other NPOs. When activated, if it will perform the Fight or Shoot action during that activation, give it an Engage order. Otherwise, give it a Conceal order.\r \r 1. Fight.\r 2. Shoot the closest player operative.\r 3. Charge the closest operative with less than 10 wounds remaining.\r 4. Reposition towards the closest player operative, to cover if possible (a subsequent Dash action can fulfil this).\r 5. Shoot the closest NPO.\r 6. Dash towards the closest player operative, to cover if possible.\n\nBulky: - This operative cannot be placed on Vantage terrain higher than 2\" from the killzone floor.\n- Whenever this operative would perform the Fight action, the distance requirements of its control range can be changed to 1\" horizontally and 4\" vertically until the end of that action.\n- This operative can move through other operatives (excluding NEMESIS operatives).\n- Ignore all changes to this operative’s APL and if it’s a player operative, APL changes don’t affect the 5AP you can spend per turning point.\n\nExtra Defence: Whenever an operative is shooting this operative, collect and roll one additional defence dice, unless this operative is injured.\n\nXenotech Shielding: Whenever an operative is shooting this NPO:\n\n- Ignore the Piercing weapon rule.\n- Normal and Critical Dmg of 4 or more inflicts 1 less damage on this operative.\n- This NPO can benefit from the effects of the Extra Defence core rule regardless of being injured (this takes precedence over that rule).",
+      "notes": ""
+    }
+  ]
+}

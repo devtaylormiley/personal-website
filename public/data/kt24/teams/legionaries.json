@@ -1,0 +1,550 @@
+{
+  "id": "legionaries",
+  "killteamId": "CHAOS-LEG",
+  "factionId": "CHAOS",
+  "imageUrl": "https://ktdash.app/img/killteams/CHAOS-LEG.webp",
+  "killTeam": {
+    "name": "Legionaries",
+    "archetypes": "Security, Seek And Destroy",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Astartes: During each friendly LEGIONARY operative's activation, it can perform either two Shoot actions or two Fight actions.\nIf it is two Shoot actions, a bolt pistol, boltgun or tainted bolt pistol must be selected for at least one of them.  \n\nEach friendly LEGIONARY operative can counteract regardless of its order.\n\nMark Of Chaos: Whenever you select a LEGIONARY operative for the battle, you must select one of the following keywords for it to have for that battle: KHORNE, NURGLE, SLAANESH, TZEENTCH, UNDIVIDED.\nEach operative's keyword can be different, but a BALEFIRE ACOLYTE operative cannot have the KHORNE keyword.  \n\nFriendly LEGIONARY operatives have an additional rule determined by this keyword. In addition, LEGIONARY ploys have additional benefits for operatives with the relevant keyword.",
+    "ploys": [
+      {
+        "name": "Blood For The Blood God",
+        "description": "Whenever a friendly LEGIONARY operative (excluding KHORNE) is fighting, the first time you strike during that sequence, inflict 1 additional damage (to a maximum of 7).    Add 1 to both Dmg stats of friendly LEGIONARY KHORNE operatives' melee weapons (to a maximum of 7).",
+        "type": "strategy"
+      },
+      {
+        "name": "Fickle Fates",
+        "description": "Whenever a friendly LEGIONARY operative is shooting a ready enemy operative, that friendly operative’s ranged weapons have the Balanced weapon rule.   \nWhenever an operative is shooting a ready friendly LEGIONARY TZEENTCH operative, in the Roll Defence Dice step, if you retain any critical successes, you can retain one of your fails as a normal success instead of discarding it.   \n \n**Balanced:** Can re-roll one Attack die.",
+        "type": "strategy"
+      },
+      {
+        "name": "Implacable",
+        "description": "Whenever an operative is shooting a friendly LEGIONARY operative, weapons with the Piercing 1 weapon rule have the Piercing Crits 1 weapon rule instead.\n\nYou can ignore any changes to the stats of friendly LEGIONARY NURGLE operatives from being injured (including their weapons’ stats).",
+        "type": "strategy"
+      },
+      {
+        "name": "Quicksilver Speed",
+        "description": "Whenever a friendly LEGIONARY operative that performed an action in which it moved during this turning point is fighting, worsen the Hit stat of the enemy operative's melee weapons by 1.  \n Whenever an operative is shooting a friendly LEGIONARY SLAANESH operative more than 6\" from it that performed an action in which it moved during this turning point, worsen the Hit stat of the enemy operative's weapons by 1.  \n In all cases for this ploy, this is not cumulative with being injured.",
+        "type": "strategy"
+      },
+      {
+        "name": "Malignant Aura",
+        "description": "Use this firefight ploy when a friendly LEGIONARY NURGLE operative is performing the Shoot action, when you select a valid target.\nUntil the end of that action, whenever that friendly operative is shooting an enemy operative within 3\" of it (i.e. including secondary targets, if any),\nthat friendly operative's ranged weapons have the Piercing 1 weapon rule.  \n\n**Piercing 1:** The defender collects 1 less Defence die.",
+        "type": "firefight"
+      },
+      {
+        "name": "Mutability And Change",
+        "description": "Use this firefight ploy when a friendly LEGIONARY TZEENTCH operative is activated. Until the end of that operative’s activation, add 1 to its APL stat, but it cannot perform the same action more than once during that activation.   If it’s a WARRIOR operative, that operative’s Marks of Chaos keyword cannot be changed during this turning point (see Infernal Pact additional rule).",
+        "type": "firefight"
+      },
+      {
+        "name": "Sickening Captivation",
+        "description": "Use this firefight ploy during a friendly LEGIONARY SLAANESH operative's activation, before or after it performs an action.\nSelect one enemy operative visible to and within 4\" of that friendly operative. Until the end of that enemy operative's next activation, subtract 1 from its APL stat.",
+        "type": "firefight"
+      },
+      {
+        "name": "Unending Bloodshed",
+        "description": "Use this firefight ploy when a friendly LEGIONARY KHORNE operative is incapacitated while fighting or retaliating.  \n\nYou can strike the enemy operative in that sequence with one of your unresolved successes before it’s removed from the killzone.",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A LEGIONARIES KillTeam is composed of:\n\n- 1 LEGIONARY operative selected from the following list:\n  - ASPIRING CHAMPION with one option from each of the following:\n    - Plasma pistol or tainted bolt pistol\n    - Power fist, power maul, power weapon or tainted chainsword  \n  - CHOSEN with one of the following options:\n    - Plasma pistol; daemon blade\n    - Tainted bolt pistol; daemon blade\n- 5 LEGIONARY operatives selected from the following list:\n  - ANOINTED\n  - BALEFIRE ACOLYTE\n  - BUTCHER\n  - ICON BEARER with one of the following options:\n    - Boltgun; fists\n    - Bolt pistol; chainsword  \n  - SHRIVETALON\n  - WARRIOR with one of the following options:\n    - Boltgun; fists\n    - Bolt pistol; chainsword    \n  - GUNNER with one of the following options:\n    - Bolt pistol; flamer; fists\n    - Bolt pistol; meltagun; fists\n    - Bolt pistol; plasma gun; fists   \n  - HEAVY GUNNER with one of the following options:\n    - Bolt pistol; heavy bolter; fists\n    - Bolt pistol; missile launcher; fists\n    - Bolt pistol; reaper chaincannon; fists\n\nOther than WARRIOR operatives, your kill team can only include each operative on this list once.",
+    "description": "Legionary kill teams are bitter veterans who possess centuries of combat experience. Some are little more than\nravening killers who desire only to reave, slaughter and despoil. Others are devoted worshippers of the Dark Gods,\nseeking to conduct fell rituals in the hope of pleasing their infernal patrons and attaining greater power."
+  },
+  "operatives": [
+    {
+      "id": "chaos-leg-ac",
+      "opTypeId": "CHAOS-LEG-AC",
+      "name": "Legionaries Legionary Aspiring Champion",
+      "category": "po",
+      "cardType": "official",
+      "role": "Legionary Aspiring Champion",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 15,
+      "keywords": "LEGIONARY, CHAOS, HERETIC ASTARTES, LEADER, ASPIRING CHAMPION",
+      "weapons": [
+        {
+          "name": "Plasma Pistol (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Rng 8\", Prc1"
+        },
+        {
+          "name": "Plasma Pistol (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Tainted Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Rng 8\", Rnd"
+        },
+        {
+          "name": "Power Fist",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "5/7",
+          "rules": "Brutal"
+        },
+        {
+          "name": "Power Maul",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Shock"
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        },
+        {
+          "name": "Tainted Chainsword",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rnd"
+        }
+      ],
+      "abilities": "In The Eyes Of The Gods: Once during each of this operative's activations, if it incapacitates an enemy operative, add 1 to its APL stat until the end of that activation.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-leg-cho",
+      "opTypeId": "CHAOS-LEG-CHO",
+      "name": "Legionaries Legionary Chosen",
+      "category": "po",
+      "cardType": "official",
+      "role": "Legionary Chosen",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 15,
+      "keywords": "LEGIONARY, CHAOS, HERETIC ASTARTES, LEADER, CHOSEN",
+      "weapons": [
+        {
+          "name": "Plasma Pistol (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Rng 8\", Prc1"
+        },
+        {
+          "name": "Plasma Pistol (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Tainted Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Rng 8\", Rnd"
+        },
+        {
+          "name": "Daemon Blade",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/7",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Daemonic Aura: Whenever an enemy operative performs the Fall Back action while within control range of this operative, you can use this rule.\nIf you do, roll one D6: on a 3+, that enemy operative cannot perform that action during that activation/counteraction (the AP spent on it is refunded).\n\nSoul Gorge: After this operative fights or retaliates, if it is not incapacitated, but it incapacitated an enemy operative during that sequence, it regains D3+1 lost wounds.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-leg-ano",
+      "opTypeId": "CHAOS-LEG-ANO",
+      "name": "Legionaries Legionary Anointed",
+      "category": "po",
+      "cardType": "official",
+      "role": "Legionary Anointed",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "LEGIONARY, CHAOS, HERETIC ASTARTES, ANOINTED",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Daemonic Claw",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rnd"
+        }
+      ],
+      "abilities": "Unleash Daemon: Once per battle, when this operative is activated, you can use this rule. If you do, until the end of the battle:\r \r - This operative cannot perform the Pick Up Marker or mission actions (excluding Operate Hatch). If it’s carrying a marker, it must immediately perform the Place Marker action for 0AP (this takes precedence over all other rules).\r - Normal and Critical Dmg of 4 or more inflicts 1 less damage on this operative.  \nIf this operative has the NURGLE keyword, you cannot reduce the damage of an attack dice by more than 1. In other words, you cannot use both rules to reduce Normal Dmg of 4 or more by 2.\r - Its daemonic claw has the Ceaseless and Lethal 5+ weapon rules.\r ",
+      "notes": ""
+    },
+    {
+      "id": "chaos-leg-ba",
+      "opTypeId": "CHAOS-LEG-BA",
+      "name": "Legionaries Legionary Balefire Acolyte",
+      "category": "po",
+      "cardType": "official",
+      "role": "Legionary Balefire Acolyte",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "LEGIONARY, CHAOS, HERETIC ASTARTES, PSYKER, BALEFIRE ACOLYTE",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Fireblast",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Psychic, Blast 2\", 1\" Dev1, Sat"
+        },
+        {
+          "name": "Life Syphon",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Psychic, Sat, *Siphon Life"
+        },
+        {
+          "name": "Fell Dagger",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Psychic, Rnd, *Siphon Life"
+        }
+      ],
+      "abilities": "*Siphon Life: When you select this weapon, you can use this rule. If you do, at the start of the Resolve Attack Dice step, select one friendly LEGIONARY operative visible to and within 6\" of this operative.\r For each attack die you resolve during that step that inflicts damage, that friendly operative regains 1 lost wound, or D3 lost wounds if it was a critical success. You cannot use this weapon rule more than once per Turning Point.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-leg-but",
+      "opTypeId": "CHAOS-LEG-BUT",
+      "name": "Legionaries Legionary Butcher",
+      "category": "po",
+      "cardType": "official",
+      "role": "Legionary Butcher",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "LEGIONARY, CHAOS, HERETIC ASTARTES, BUTCHER",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Double-Handed Chainaxe",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "5/7",
+          "rules": "Brutal"
+        }
+      ],
+      "abilities": "Devastating Onslaught: \n- Whenever this operative is fighting or retaliating, enemy operatives cannot assist.\n- At the end of each enemy operative’s activation or counteraction, you can select an enemy operative within 2\" of this operative.\nThis operative can perform a free Charge action (you can change its order to Engage to do so), but it cannot move more than 2\" and must end that move within control range of that selected operative.\n",
+      "notes": ""
+    },
+    {
+      "id": "chaos-leg-gnr",
+      "opTypeId": "CHAOS-LEG-GNR",
+      "name": "Legionaries Legionary Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Legionary Gunner",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "LEGIONARY, CHAOS, HERETIC ASTARTES, GUNNER",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Flamer",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 8\", Sat, Tor 2\""
+        },
+        {
+          "name": "Meltagun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "6/3",
+          "rules": "Rng 6\", Dev4, Prc2"
+        },
+        {
+          "name": "Plasma Gun (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Plasma Gun (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/6",
+          "rules": "Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Fists",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "chaos-leg-hgnr",
+      "opTypeId": "CHAOS-LEG-HGNR",
+      "name": "Legionaries Legionary Heavy Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Legionary Heavy Gunner",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "LEGIONARY, CHAOS, HERETIC ASTARTES, HEAVY GUNNER",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Heavy Bolter (Focused)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Hvy(Repos), PrcCrit1"
+        },
+        {
+          "name": "Heavy Bolter (Sweeping)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Hvy(Repos), PrcCrit1, Tor 1\""
+        },
+        {
+          "name": "Missile Launcher (Frag)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Blast 2\", Hvy(Repos)"
+        },
+        {
+          "name": "Missile Launcher (Krak)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/7",
+          "rules": "Hvy(Repos), Prc1"
+        },
+        {
+          "name": "Reaper Chaincannon (Focused)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Ceaseless, Hvy(Repos), Punishing"
+        },
+        {
+          "name": "Reaper Chaincannon (Sweeping)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Ceaseless, Hvy(Repos), Punishing, Tor 2\""
+        },
+        {
+          "name": "Fists",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "chaos-leg-ib",
+      "opTypeId": "CHAOS-LEG-IB",
+      "name": "Legionaries Legionary Icon Bearer",
+      "category": "po",
+      "cardType": "official",
+      "role": "Legionary Icon Bearer",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "LEGIONARY, CHAOS, HERETIC ASTARTES, ICON BEARER",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Boltgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Chainsword",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        },
+        {
+          "name": "Fists",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Favoured Of The Dark Gods: In the Ready step of each Strategy phase, if this operative controls an objective marker that isn’t tainted, that objective marker is tainted for the battle and you gain 1CP. Note that if any operative (including enemy operatives) has tainted an objective marker, you cannot taint that objective marker.\n\nIcon Bearer: Whenever determining control of a marker, treat this operative's APL stat as 1 higher. Note this is not a change to its APL stat, so any changes are cumulative with this.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-leg-stl",
+      "opTypeId": "CHAOS-LEG-STL",
+      "name": "Legionaries Legionary Shrivetalon",
+      "category": "po",
+      "cardType": "official",
+      "role": "Legionary Shrivetalon",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "LEGIONARY, CHAOS, HERETIC ASTARTES, SHRIVETALON",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Flensing Blades",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Grisly Mark: Place your Grisly marker within this operative’s control range.\r \r - Whenever an enemy operative is within 3\" of your Grisly marker, your opponent must spend 1 additional AP for that enemy operative to perform the Pick Up Marker and mission actions.\r - Whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 3\" of your Grisly marker.\r Note this is not a change to the APL stat, so any changes are cumulative with this.\r \r This operative cannot perform this action more than once per battle, and cannot perform this action while within control range of an enemy operative.\n\nHorrifying Dismemberment: Whenever this operative incapacitates an enemy operative while fighting or retaliating, select one other enemy operative visible to and within 3\" of either this operative or the incapacitated enemy\noperative. Subtract 1 from that enemy operative’s APL stat until the end of its next activation.\n\nVicious Reflexes: Whenever this operative is retaliating, you resolve the first attack dice (i.e. defender instead of attacker).",
+      "notes": ""
+    },
+    {
+      "id": "chaos-leg-war",
+      "opTypeId": "CHAOS-LEG-WAR",
+      "name": "Legionaries Legionary Warrior",
+      "category": "po",
+      "cardType": "official",
+      "role": "Legionary Warrior",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "LEGIONARY, CHAOS, HERETIC ASTARTES, WARRIOR",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Boltgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Chainsword",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        },
+        {
+          "name": "Fists",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Infernal Pact: Once per battle, when a friendly LEGIONARY WARRIOR operative is activated, you can use this rule. If you do, change that operative’s Marks of Chaos keyword.",
+      "notes": ""
+    }
+  ]
+}

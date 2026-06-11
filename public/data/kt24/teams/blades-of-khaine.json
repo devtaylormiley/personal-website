@@ -1,0 +1,341 @@
+{
+  "id": "blades-of-khaine",
+  "killteamId": "AEL-BOK",
+  "factionId": "AEL",
+  "imageUrl": "https://ktdash.app/img/killteams/AEL-BOK.webp",
+  "killTeam": {
+    "name": "Blades Of Khaine",
+    "archetypes": "Seek And Destroy, Security, Recon, Infiltration",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Aspect Techniques: \n- You cannot use more than one ASPECT TECHNIQUE per activation or counteraction.\n- You cannot use each ASPECT TECHNIQUE more than once per turning point.\n- If every friendly BLADES OF KHAINE operative selected for deployment has the same Aspect keyword (e.g. STRIKING SCORPION), you cannot use each ASPECT TECHNIQUE more than twice per turning point (instead of once).\n\n##### Dire Avenger Aspect Techniques\n**The Slicing Hurricane**  \n\nUse this ASPECT TECHNIQUE when a friendly DIRE AVENGER operative is performing the Reposition action.\nThat operative can perform the Shoot action during that action (it must do so in a location it can be placed, and any remaining move distance it had from that Reposition action can be used after it does so).\nYou must select its shuriken catapult, shuriken pistol or twin shuriken catapult for that Shoot action.\n  \n  \n\n**Death Of A Thousand Blades**  \n\nUse this ASPECT TECHNIQUE when a friendly DIRE AVENGER operative is performing the Shoot action and you select a shuriken catapult or twin shuriken catapult.\nUntil the end of that action, that weapon has the Torrent 2\" weapon rule, but you cannot select more than one secondary target.\n  \n  \n\n**Vigilance Of The Avenger**  \n\nUse this ASPECT TECHNIQUE when a friendly DIRE AVENGER operative is performing the Shoot action and you select a shuriken catapult or twin shuriken catapult. Until the end of that action, that weapon has the Lethal 5+ weapon rule.\n  \n  \n\n**Unstinting, Immovable**  \n\nUse this ASPECT TECHNIQUE when an operative is shooting a friendly DIRE AVENGER operative, and you’ve rolled two or more fails. You can discard one of them to retain the other as a normal success instead.\n  \n  \n\n**Raging Heat Of The Dying Flame**  \n\nUse this ASPECT TECHNIQUE during a friendly DIRE AVENGER operative’s activation. Until the start of that operative’s next activation, you can ignore any changes to its stats from being injured (including its weapons’ stats).",
+    "ploys": [
+      {
+        "name": "Dance Of Death",
+        "description": "Select two friendly BLADES OF KHAINE operatives visible to and within 6\" of each other. Remove them both from the killzone and set them back up in each other’s previous locations (in other words, swap their positions).",
+        "type": "strategy"
+      },
+      {
+        "name": "Forewarned",
+        "description": "Whenever an operative is shooting a ready friendly BLADES OF KHAINE operative, you can re-roll any of your defence dice results of one result (e.g. results of 2).",
+        "type": "strategy"
+      },
+      {
+        "name": "Khaine's Vengeance",
+        "description": "Whenever a friendly BLADES OF KHAINE operative is shooting an expended enemy operative, that friendly operative’s ranged weapons have the Ceaseless weapon rule.  \n**Ceaseless:** Can re-roll any or all results of one value (e.g. all results of 2)",
+        "type": "strategy"
+      },
+      {
+        "name": "Ruthless Poise",
+        "description": "Whenever a friendly BLADES OF KHAINE operative is fighting a ready enemy operative, that friendly operative’s melee weapons have the Ceaseless weapon rule.  \n**Ceaseless:** Can re-roll any or all results of one value (e.g. all results of 2)",
+        "type": "strategy"
+      },
+      {
+        "name": "Bladewind",
+        "description": "Use this firefight ploy during a friendly BLADES OF KHAINE operative’s activation. During that activation, that operative can perform two Fight actions.",
+        "type": "firefight"
+      },
+      {
+        "name": "Contempt",
+        "description": "Use this firefight ploy when a friendly BLADES OF KHAINE operative is retaliating or an enemy operative is shooting it, after your opponent rolls their attack dice, but before re- rolls.\nUntil the end of the sequence, your opponent cannot re-roll their attack dice (if your opponent declared the use of any firefight ploys during that sequence that would allow them to re-roll,\nthat ploy is cancelled and the CP spent on it is refunded).",
+        "type": "firefight"
+      },
+      {
+        "name": "Fading Light",
+        "description": "Use this firefight ploy during a friendly BLADES OF KHAINE operative’s activation, before or after it performs an action. During that activation, that operative can perform the Fall Back action for 1 less AP.",
+        "type": "firefight"
+      },
+      {
+        "name": "Starfall",
+        "description": "Use this firefight ploy during a friendly BLADES OF KHAINE operative’s activation. During that activation, that operative can perform two Shoot actions.",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A BLADES OF KHAINE KillTeam is composed of:\n\n- 1 BLADES OF KHAINE operative selected from the following list:\n  - DIRE AVENGER EXARCH with one of the following options:\n    - Shuriken catapult; fists\n      - Twin shuriken catapult; gun butts  \n    Or one option from each of the following:\n    - Diresword or power weapon\n      - Shuriken pistol or shimmershield\n  - HOWLING BANSHEE EXARCH with one of the following options:\n    - Mirrorswords\n      - Shuriken pistol; executioner\n      - Shuriken pistol; power weapon\n      - Shuriken pistol; triskele\n      - Triskele; power weapon\n  - STRIKING SCORPION EXARCH with one of the following options:\n    - Shuriken pistol; biting blade\n      - Shuriken pistol; scorpion’s claw & chainsword\n      - Twin shuriken pistols; twin chainswords  \n- 7 BLADES OF KHAINE operatives selected from the following list:\n  - DIRE AVENGER WARRIOR\n  - HOWLING BANSHEE WARRIOR\n  - STRIKING SCORPION WARRIOR",
+    "description": "Athletic, graceful and utterly lethal, the Aeldari warriors that comprise Blades of Khaine kill teams come together to undertake missions of utmost importance on behalf of their craftworlds. They are dispatched to sever specific strands of fate, ensuring that terrible events they have foreseen never come to pass."
+  },
+  "operatives": [
+    {
+      "id": "ael-bok-dax",
+      "opTypeId": "AEL-BOK-DAX",
+      "name": "Blades Of Khaine Dire Avenger Exarch",
+      "category": "po",
+      "cardType": "official",
+      "role": "Dire Avenger Exarch",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 9,
+      "keywords": "BLADES OF KHAINE, ALEDARI, ASURYANI, LEADER, DIRE AVENGER, EXARCH",
+      "weapons": [
+        {
+          "name": "Shuriken Catapult",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rnd"
+        },
+        {
+          "name": "Shuriken Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Rnd"
+        },
+        {
+          "name": "Twin Shuriken Catapult",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Ceaseless, Rnd"
+        },
+        {
+          "name": "Diresword",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Lethal 5+, Rnd"
+        },
+        {
+          "name": "Fists",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butts",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Defence Tactics: Whenever this operative contests an objective marker or one of your mission markers, or whenever it’s shooting an enemy operative that does, this operative’s weapons have the Balanced weapon rule.\n\nExarch: This operative can perform two Fight or two Shoot actions during its activation.\n\nShimmershield: Whenever an operative is shooting a friendly BLADES OF KHAINE operative that’s visible to and within 2\" of this operative, ignore the Piercing weapon rule. This operative only has this rule if you select the shimmershield weapon option.",
+      "notes": ""
+    },
+    {
+      "id": "ael-bok-hbx",
+      "opTypeId": "AEL-BOK-HBX",
+      "name": "Blades Of Khaine Howling Banshee Exarch",
+      "category": "po",
+      "cardType": "official",
+      "role": "Howling Banshee Exarch",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 9,
+      "keywords": "BLADES OF KHAINE, ALEDARI, ASURYANI, LEADER, HOWLING BANSHEE, EXARCH",
+      "weapons": [
+        {
+          "name": "Shuriken Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Rnd"
+        },
+        {
+          "name": "Triskele",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Rng 8\", Tor 2\", Rnd"
+        },
+        {
+          "name": "Executioner",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/7",
+          "rules": "Lethal 5+"
+        },
+        {
+          "name": "Mirrorswords",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+, Ceaseless"
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        },
+        {
+          "name": "Triskele",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rnd"
+        }
+      ],
+      "abilities": "Banshee Mask: Whenever this operative is fighting, worsen the Hit stat of the enemy operative’s melee weapons by 1. This isn’t cumulative with being injured.\n\nExarch: This operative can perform two Fight or two Shoot actions during its activation.",
+      "notes": ""
+    },
+    {
+      "id": "ael-bok-ssx",
+      "opTypeId": "AEL-BOK-SSX",
+      "name": "Blades Of Khaine Striking Scorpion Exarch",
+      "category": "po",
+      "cardType": "official",
+      "role": "Striking Scorpion Exarch",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 9,
+      "keywords": "BLADES OF KHAINE, ALEDARI, ASURYANI, LEADER, STRIKING SCORPION, EXARCH",
+      "weapons": [
+        {
+          "name": "Shuriken Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Rnd"
+        },
+        {
+          "name": "Twin Shuriken Pistols",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Ceaseless, Rnd"
+        },
+        {
+          "name": "Biting Blade",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "5/6",
+          "rules": "Rnd"
+        },
+        {
+          "name": "Twin Chainswords",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Ceaseless, Rnd"
+        },
+        {
+          "name": "Scorpion's Claw and Chainsword",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Brutal, Lethal 5+"
+        }
+      ],
+      "abilities": "Exarch: This operative can perform two Fight or two Shoot actions during its activation.\n\nMandiblasters: Whenever this operative performs the Fight action, at the start of the Roll Attack Dice step, you can use this rule. If you do, inflict 2 damage on the enemy operative in that sequence.",
+      "notes": ""
+    },
+    {
+      "id": "ael-bok-daw",
+      "opTypeId": "AEL-BOK-DAW",
+      "name": "Blades Of Khaine Dire Avenger Warrior",
+      "category": "po",
+      "cardType": "official",
+      "role": "Dire Avenger Warrior",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "BLADES OF KHAINE, ALEDARI, ASURYANI, DIRE AVENGER, WARRIOR",
+      "weapons": [
+        {
+          "name": "Shuriken Catapult",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rnd"
+        },
+        {
+          "name": "Fists",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Defence Tactics: Whenever this operative contests an objective marker or one of your mission markers, or whenever it’s shooting an enemy operative that does, this operative’s weapons have the Balanced weapon rule.",
+      "notes": ""
+    },
+    {
+      "id": "ael-bok-hbw",
+      "opTypeId": "AEL-BOK-HBW",
+      "name": "Blades Of Khaine Howling Banshee Warrior",
+      "category": "po",
+      "cardType": "official",
+      "role": "Howling Banshee Warrior",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "BLADES OF KHAINE, ALEDARI, ASURYANI, HOWLING BANSHEE, WARRIOR",
+      "weapons": [
+        {
+          "name": "Shuriken Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Rnd"
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Banshee Mask: Whenever this operative is fighting, worsen the Hit stat of the enemy operative’s melee weapons by 1. This isn’t cumulative with being injured.",
+      "notes": ""
+    },
+    {
+      "id": "ael-bok-ssw",
+      "opTypeId": "AEL-BOK-SSW",
+      "name": "Blades Of Khaine Striking Scorpion Warrior",
+      "category": "po",
+      "cardType": "official",
+      "role": "Striking Scorpion Warrior",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 8,
+      "keywords": "BLADES OF KHAINE, ALEDARI, ASURYANI, STRIKING SCORPION, WARRIOR",
+      "weapons": [
+        {
+          "name": "Shuriken Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Rnd"
+        },
+        {
+          "name": "Chainsword",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rnd"
+        }
+      ],
+      "abilities": "Mandiblasters: Whenever this operative performs the Fight action, at the start of the Roll Attack Dice step, you can use this rule. If you do, inflict 2 damage on the enemy operative in that sequence.",
+      "notes": ""
+    }
+  ]
+}

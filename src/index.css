@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap');
+@import 'tailwindcss';
+@import './styles/blackfang-theme.css';
+@import './styles/hero-aurora.css';
+@import './styles/hero-style-morph.css';
+@import './styles/hero-landscapes.css';
+@import './styles/hero-theme-tokens.css';
+@import './styles/portfolio-theme-shell.css';
+@import './styles/home-sections.css';
+@import './styles/contact-form-showcase.css';
+@import './styles/schema-bridge-page.css';
+@import './styles/site-a11y.css';
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@keyframes boost-sparkle {
+  0%,
+  100% {
+    color: #fbbf24;
+    text-shadow:
+      0 0 6px rgb(251 191 36 / 45%),
+      0 0 14px rgb(251 191 36 / 20%);
+  }
+
+  50% {
+    color: #fde68a;
+    text-shadow:
+      0 0 10px rgb(253 224 106 / 90%),
+      0 0 22px rgb(251 191 36 / 55%),
+      1px -1px 0 rgb(255 255 255 / 35%);
+  }
+}
+
+.boost-sparkle {
+  animation: boost-sparkle 2.2s ease-in-out infinite;
+}
+
+.operative-card-table-head {
+  background: linear-gradient(180deg, rgb(69 26 3 / 0.55), rgb(28 25 23 / 0.9));
+  color: rgb(253 230 138 / 0.9);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.operative-card-table-head th {
+  font-weight: 600;
+}
+
+.operative-card .operative-card-art img {
+  max-height: 14rem;
+}
+
+.operative-card ul li {
+  border-color: rgb(120 53 15 / 0.35);
+  background: rgb(9 9 11 / 0.5);
+}
+
+.operative-card ul li p:first-child {
+  color: rgb(253 230 138 / 0.85);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+}

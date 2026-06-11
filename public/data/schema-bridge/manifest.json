@@ -1,0 +1,118 @@
+{
+  "version": "1.0",
+  "sources": [
+    "crm_export",
+    "maintenance_dump",
+    "spreadsheet_export"
+  ],
+  "rows_in": 63,
+  "rows_accepted": 20,
+  "rows_review": 9,
+  "rows_rejected": 0,
+  "ai_assisted_mappings": 26,
+  "rule_mappings": 23,
+  "fuzzy_mappings": 0,
+  "field_inferences": [
+    {
+      "source": "crm_export",
+      "column": "Notes",
+      "target": "category",
+      "confidence": 0.72,
+      "method": "ai",
+      "reason": "Notes column mixes category labels with free-text context"
+    },
+    {
+      "source": "maintenance_dump",
+      "column": "work_description",
+      "target": "category",
+      "confidence": 0.78,
+      "method": "ai",
+      "reason": "Description prose often encodes category and site"
+    },
+    {
+      "source": "spreadsheet_export",
+      "column": "owner_initials",
+      "target": "owner",
+      "confidence": 0.88,
+      "method": "ai",
+      "reason": "Initials expanded to full names via lookup table inferred by agent"
+    },
+    {
+      "source": "spreadsheet_export",
+      "column": "comments",
+      "target": "category",
+      "confidence": 0.74,
+      "method": "ai",
+      "reason": "Comments column used for category and duplicate hints"
+    }
+  ],
+  "status_normalizations": [
+    {
+      "raw": "In Prog",
+      "canonical": "In progress",
+      "confidence": 0.95,
+      "method": "ai",
+      "reason": "Abbreviated CRM status synonym"
+    },
+    {
+      "raw": "WIP",
+      "canonical": "In progress",
+      "confidence": 0.91,
+      "method": "ai",
+      "reason": "Maintenance shorthand for work-in-progress"
+    },
+    {
+      "raw": "ACTIVE",
+      "canonical": "In progress",
+      "confidence": 0.89,
+      "method": "ai",
+      "reason": "Legacy CMMS active flag mapped to in-flight work"
+    },
+    {
+      "raw": "ON_HOLD",
+      "canonical": "Blocked",
+      "confidence": 0.93,
+      "method": "ai",
+      "reason": "Operations hold treated as blocked queue"
+    },
+    {
+      "raw": "NEW",
+      "canonical": "Ready",
+      "confidence": 0.86,
+      "method": "ai",
+      "reason": "Unstarted tickets grouped with ready queue"
+    },
+    {
+      "raw": "Open",
+      "canonical": "Ready",
+      "confidence": 0.84,
+      "method": "ai",
+      "reason": "CRM open state mapped to ready-for-work"
+    },
+    {
+      "raw": "COMPLETE",
+      "canonical": "Closed",
+      "confidence": 0.97,
+      "method": "ai",
+      "reason": "Past-tense completion status"
+    },
+    {
+      "raw": "DONE",
+      "canonical": "Closed",
+      "confidence": 0.96,
+      "method": "ai",
+      "reason": "Informal closed synonym"
+    }
+  ],
+  "duplicate_candidates": [
+    {
+      "asset": "GEN-NPL-03B-BACKUP-DIESEL-GENERATOR-SET",
+      "left_id": "WO-10448",
+      "right_id": "WO-10400",
+      "updated": "2026-05-25",
+      "similarity": 0.75,
+      "reason": "Possible duplicate work order for same asset"
+    }
+  ],
+  "runtime_ms": 30
+}

@@ -1,0 +1,304 @@
+{
+  "id": "vespid-stingwings",
+  "killteamId": "TAU-VESP",
+  "factionId": "TAU",
+  "imageUrl": "https://ktdash.app/img/killteams/TAU-VESP.webp",
+  "killTeam": {
+    "name": "Vespid Stingwings",
+    "archetypes": "Recon, Seek And Destroy",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Communion: Communion points are used to maintain the tactical focus of friendly VESPID STINGWING operatives.\nIn the Ready step of each Strategy phase, you gain 1D3 Communion points, plus 1 if a friendly OVERSIGHT DRONE operative is in the killzone.\nCommunion points are used as follows (OVERSIGHT DRONE operatives are unaffected by the following):\n\n- Whenever a friendly VESPID STINGWING operative is performing the Shoot action, it can only target the closest enemy operative within 8\" of it (excluding enemy operatives within control range of other friendly VESPID STINGWING operatives) unless you spend 1 of your Communion points. For weapons with the Blast and Torrent weapon rules, only the first target must be selected in this way.\n- Whenever a friendly VESPID STINGWING operative performs the Charge action, it must finish the action within control range of the closest enemy operative unless you spend 1 of your Communion points.\n- Whenever you would perform the Pick Up Marker or a mission action (excluding Operate Hatch) with a friendly VESPID STINGWING operative, you must also spend one of your Communion points to do so.\n- Whenever a friendly VESPID STINGWING operative is shooting, you can spend one (and only one) of your Communion points to re-roll one Attack Die.\n\n\nFly: Whenever a friendly VESPID STINGWING operative performs an action in which it moves, it can FLY.\nIf it does so, do not move it. Instead, remove it from the killzone and set it back up wholly within a distance equal to its Move stat (or 3\" if it was a Dash) of its original location, measuring horizontal distance only.\nNote that it gains no additional distance when performing the Charge action.  \n\nIt must be set up in a location it can be placed, and unless it was the Charge action, it cannot be set up within control range of an enemy operative.\nIn a killzone that uses the Close Quarters rules (e.g. killzone Gallowdark), you cannot measure the distance over or through wall terrain, and that operative cannot be set up on the other side of an access point (in other words, it cannot FLY through an open hatchway).\n\nNeutron Charge: Neutron weapons are any weapons that have the word \"Neutron\" in their name. Whenever a friendly VESPID STINGWING operative moves or uses FLY, its Neutron weapons have the Piercing 1 weapon rule until the end of the Turning Point.",
+    "ploys": [
+      {
+        "name": "Aerial Agility",
+        "description": "Whenever an operative is shooting a friendly VESPID STINGWING operative while counteracting, or during an activation in which that shooting operative moved or was setup, roll 1D6 whenever a normal sucess would inflict damage.\nOn a 5+, ignore that inflicted damage. A maximum of one Attack Die can be ignored per shooting sequence.",
+        "type": "strategy"
+      },
+      {
+        "name": "Airborne Predators",
+        "description": "Whenever a friendly VESPID STINGWING operative moves or uses FLY, its weapons have the Balanced weapon rule until the end of that activation.  \n**Balanced:** Can re-roll one Attack die.",
+        "type": "strategy"
+      },
+      {
+        "name": "Hardened Exoskeleton",
+        "description": "Whenever a friendly VESPID STINGWING operative (excluding OVERSIGHT DRONE) is fighting or retaliating, Normal Damage of 4 or more inflicts 1 less damage on it.",
+        "type": "strategy"
+      },
+      {
+        "name": "Sting",
+        "description": "Improve the Hit stat of friendly VESPID STINGWING operatives' claws by 1, and those weapons have the Lethal 5+ and Shock weapon rules.",
+        "type": "strategy"
+      },
+      {
+        "name": "Darting Flight",
+        "description": "Use this Firefight Ploy when a friendly VESPID STINGWING operative performs the Reposition action. Until the end of that action, it can move an additional D3\", or be set up an additional D3\" away if it uses FLY. In either case, it cannot perform Fight or Shoot actions for the rest of the Turning Point.",
+        "type": "firefight"
+      },
+      {
+        "name": "Neutron Overload",
+        "description": "Use this Firefight Ploy when you resolve a critical success for a friendly VESPID STINGWING operative that is shooting with a Neutron weapon during an activation in which it has moved or used FLY. If the target is within 4\" of it, inflict D3 additional damage.",
+        "type": "firefight"
+      },
+      {
+        "name": "Ocelli",
+        "description": "Use this Firefight Ploy when a friendly VESPID STINGWING operative performs the Shoot action during an activation in which it has used FLY. Until the end of that action, it gains all benefits from the first and second main features of Vantage terrain. When determining the height difference between operatives for Vantage terrain rules, treat that friendly operative as being 3\" higher than it currently is (but not when determining the distance for Communion).",
+        "type": "firefight"
+      },
+      {
+        "name": "Vicious Venom",
+        "description": "Use this Firefight Ploy when a friendly VESPID STINGWING operative (excluding OVERSIGHT DRONE) is fighting and strikes with a critical success. Inflict D3 additional damage.",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A VESPID STINGWINGS killteam is composed of:\n\n- 1 VESPID STINGWING STRAIN LEADER operative\n- 1 VESPID STINGWING OVERSIGHT DRONE operative\n- 9 VESPID STINGWING operatives selected from the following list:\n  - LONGSTING\n  - SHADESTRAIN\n  - SKYBLAST\n  - SWARMGUARD\n  - WARRIOR\n\nOther than WARRIOR operatives, your killteam can only include each operative above once.",
+    "description": "\"So swift and so deadly are the Mal'Kor, it is as though they fury of the D'Yangi moon tempests had swept the enemy away. I almost pity those who stand against them\"  \n\n*--Shas'o Vior'la Shem*"
+  },
+  "operatives": [
+    {
+      "id": "tau-vesp-vsl",
+      "opTypeId": "TAU-VESP-VSL",
+      "name": "Vespid Stingwings Vespid Strain Leader",
+      "category": "po",
+      "cardType": "official",
+      "role": "Vespid Strain Leader",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 10,
+      "keywords": "VESPID STINGWING, T'AU EMPIRE, STRAIN, LEADER",
+      "weapons": [
+        {
+          "name": "Neutron Blaster",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Dev2"
+        },
+        {
+          "name": "Claws",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Commune: When selecting your operatives for the battle, also select one VESPID STINGWING Strategy Ploy. Whenever this operative is in the killzone and not within control range of an enemy operative, that Ploy costs you 0CP.\n\nCommunion Helm: Once during each of this operative's activations, you can spend one Communion Point for free.",
+      "notes": ""
+    },
+    {
+      "id": "tau-vesp-osd",
+      "opTypeId": "TAU-VESP-OSD",
+      "name": "Vespid Stingwings Oversight Drone",
+      "category": "po",
+      "cardType": "official",
+      "role": "Oversight Drone",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "8\"",
+      "save": "2+",
+      "wounds": 5,
+      "keywords": "VESPID STINGWING, T'AU EMPIRE, OVERSIGHT, DRONE",
+      "weapons": [
+        {
+          "name": "Ram",
+          "atk": 3,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": ""
+        }
+      ],
+      "abilities": "Aerial Guidance: **SUPPORT:** Until the start of this operative's next activation, whenever another friendly VESPID STINGWING operative within 6\" of this operative is shooting an enemy operative Visible To this operative, that friendly operative's ranged weapons have the Lethal 5+ and Saturate weapon rules. This has no effect while this operative is within control range of an enemy operative.  \n\r This operative cannot perform this action while within control range of an enemy operative.\n\nEvasive Drone: \r - This operative cannot perform any action other than Aerial Guidance, Charge, Dash, Fall Back, Fight, or Reposition.\r - Whenever determining control of objective markers, treat this operative's APL stat as 1 lower.\r - Whenever determining what is Visible To this operative, the round disc at the top of the miniature is its head.\r - Whenever this operative has a Conceal order and is in Cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".\r - Whenever an operative is shooting this operative, ignore the Piercing weapon rule.\r ",
+      "notes": ""
+    },
+    {
+      "id": "tau-vesp-vls",
+      "opTypeId": "TAU-VESP-VLS",
+      "name": "Vespid Stingwings Vespid Longsting",
+      "category": "po",
+      "cardType": "official",
+      "role": "Vespid Longsting",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 9,
+      "keywords": "VESPID STINGWING, T'AU EMPIRE, LONGSTING",
+      "weapons": [
+        {
+          "name": "Neutron Rail Rifle (Standard)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/4",
+          "rules": "Dev2, *Neutron Fragment"
+        },
+        {
+          "name": "Neutron Rail Rifle (Aimed)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/4",
+          "rules": "Dev2, Hvy(Dash), Lethal 5+, *Neutron Fragment"
+        },
+        {
+          "name": "Claws",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Neutron Fragment: If the target is not incapacitated but you resolve any Attack Dice, the target gains one of your Neutron Fragment tokens. Whenever an operative that has one of your Neutron Fragment tokens is activated, inflict D3 damage on it for each Neutron Fragment token it has (roll separately for each).",
+      "notes": ""
+    },
+    {
+      "id": "tau-vesp-vss",
+      "opTypeId": "TAU-VESP-VSS",
+      "name": "Vespid Stingwings Vespid Shadestrain",
+      "category": "po",
+      "cardType": "official",
+      "role": "Vespid Shadestrain",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "3+",
+      "wounds": 9,
+      "keywords": "VESPID STINGWING, T'AU EMPIRE, SHADESTRAIN",
+      "weapons": [
+        {
+          "name": "Neutron Sting",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/3",
+          "rules": "Rng 8\", Dev2"
+        },
+        {
+          "name": "Neutron Grenade",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/3",
+          "rules": "Rng 6\", Blast 2\", Dev2, Lim1, Sat"
+        },
+        {
+          "name": "Claws",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Camouflaged: Whenever an operative is shooting this operative, ignore the Piercing weapon rule and all Cover saves are retained as critical successes. This rule has no effect if this operative is not selected as the valid target, e.g. if it is a secondary target from the Blast weapon rule.\n\nGhost Rig: While this operative has a Conceal order, your opponent cannot select it as a valid target unless it is within 6\" of the operative trying to target it. Note that this rule has no effect if this operative is not selected as the valid target, e.g. if it is a secondary target from the Blast weapon rule.",
+      "notes": ""
+    },
+    {
+      "id": "tau-vesp-vsb",
+      "opTypeId": "TAU-VESP-VSB",
+      "name": "Vespid Stingwings Vespid Skyblast",
+      "category": "po",
+      "cardType": "official",
+      "role": "Vespid Skyblast",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 9,
+      "keywords": "VESPID STINGWING, T'AU EMPIRE, SKYBLAST",
+      "weapons": [
+        {
+          "name": "Neutron Grenade Launcher",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/3",
+          "rules": "Blast 2\", Dev2, *Neutron Bombardment"
+        },
+        {
+          "name": "Claws",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Neutron Bombardment: Place one of your Neutron Fallout markers within the primary target's control range.\n\nNeutron Fallout: Once during each enemy operative's activation, as soon as it is within 2\" of one of your Neutron Fallout markers, inflict 1D3 damage on it (multiple markers are not cumulative).",
+      "notes": ""
+    },
+    {
+      "id": "tau-vesp-vsg",
+      "opTypeId": "TAU-VESP-VSG",
+      "name": "Vespid Stingwings Vespid Swarmguard",
+      "category": "po",
+      "cardType": "official",
+      "role": "Vespid Swarmguard",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 9,
+      "keywords": "VESPID STINGWING, T'AU EMPIRE, SWARMGUARD",
+      "weapons": [
+        {
+          "name": "Flamer (Standard)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 8\", Sat, Tor 2\""
+        },
+        {
+          "name": "Flamer (Skytorch)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "*Skytorch, Sat, *Torrent 0\""
+        },
+        {
+          "name": "Claws",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Skytorch: An operative can only use this weapon during the Skytorch Assault action.\r If it does, do not select a valid target. Instead, shoot against each operative within its Torch Zone (excluding operatives wholly underneath Vantage terrain), they are not in Cover or Obscured.\r Roll each sequence separately in order of furthest operative to closest. The Torch Zone is the area between the operative's current and previous locations.\r A 28mm round Skytorch marker can be temporarily placed underneath this operative before it moves to help determine this.\n\n*Torrent 0\": Torrent 0\" means you cannot select secondary targets outside its torch zone, but this weapon still has the Torrent weapon rule for all other rules purposes, e.g. the Condensed Stronghold rules (see Killzone: Volkus).\n\nSkytorch Assault: Perform a free Reposition action with this operative. During that action, it must FLY and can move an additional 2\". Then perform a free Shoot action. You can only select a flamer (skytorch) for that Shoot action.  \n\nThis operative cannot perform this action while it has a Conceal order, or while within control range of an enemy operative",
+      "notes": ""
+    },
+    {
+      "id": "tau-vesp-war",
+      "opTypeId": "TAU-VESP-WAR",
+      "name": "Vespid Stingwings Vespid Warrior",
+      "category": "po",
+      "cardType": "official",
+      "role": "Vespid Warrior",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 9,
+      "keywords": "VESPID STINGWING, T'AU EMPIRE, WARRIOR",
+      "weapons": [
+        {
+          "name": "Neutron Blaster",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/3",
+          "rules": "Dev2"
+        },
+        {
+          "name": "Claws",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Warrior Instincts: Whenever this operative is shooting, if you do not spend Communion points during that sequence, its Neutron Blaster has the Accurate 1 weapon rule until the end of that sequence.",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+WorkOrderID,equipment_id,facility,status_code,tech_name,priority_level,estimate,date_updated,work_description
+WO-10479,CNV-DCK-07-OUTBOUND-SORTATION-LINE-BELT-DRIVE,,IN_PROGRESS,S. Chen,Medium,12990.00,2026-05-28,Belt drive replacement - Electrical
+10471,BLR-SYD-02-STEAM-GENERATION-HEADER-MANIFOLD,South Yard,ON_HOLD,M. Okonkwo,Critical,4560.00,2026-05-27,Steam header safety hold
+10465,CHL-NPL-C4-PROCESS-CHILLED-WATER-LOOP,North Plant,NEW,,Low,456.25,2026-05-27,Chilled water loop service
+WO-10458,FLT-WHB-09-ELECTRIC-COUNTERBALANCE-TRUCK,Warehouse B,COMPLETE,L. Kim,Medium,,2026-05-26,Counterbalance truck PM
+10452,CMP-DCK-X1-HIGH-PRESSURE-AIR-COMPRESSOR-RACK,Dock 3,ACTIVE,J. Rivera,High,7823.99,2026-05-26,Compressor rack overhaul
+WO-10448,GEN-NPL-03B-BACKUP-DIESEL-GENERATOR-SET,North Plant,READY,T. Nguyen,High,15420.00,2026-05-25,Generator load test
+10445,PMP-SYD-01-COOLING-TOWER-FAN-MOTOR,South Yard,READY,A. Patel,Medium,892.00,2026-05-25,Cooling tower fan motor
+WO-10440,VLV-NPL-12-STEAM-TRAP-ASSEMBLY,North Plant,BLOCKED,K. Walsh,High,1240.50,2026-05-24,Steam trap assembly repair
+10438,CNV-DCK-02-INBOUND-DIVERter-MOTOR,Dock 3,WIP,S. Chen,Medium,3450.00,2026-05-24,Diverter motor electrical
+WO-10435,BLR-WHB-01-BOILER-FEED-PUMP,Warehouse B,READY,J. Rivera,High,5678.25,2026-05-23,Boiler feed pump mechanical
+10430,FLT-NPL-05-PROPANE-FORKLIFT,North Plant,DONE,M. Okonkwo,Low,,2026-05-22,Propane forklift inspection
+WO-10428,CHL-DCK-03-CHILLER-CONDENSER-COIL,Dock 3,READY,L. Kim,Medium,2890.00,2026-05-22,Chiller condenser coil cleaning
+10425,PMP-SYD-04-HOT-WATER-CIRC-PUMP,South Yard,READY,T. Nguyen,Medium,675.00,2026-05-21,Mechanical - pump seal leak North Plant
+10422,GEN-DCK-01-PORTABLE-GENERATOR,Dock 3,ACTIVE,A. Patel,High,11200.00,2026-05-21,Portable generator electrical service
+WO-10418,VLV-WHB-03-BALL-VALVE-ACTUATOR,Warehouse B,READY,K. Walsh,Low,445.99,2026-05-20,Ball valve actuator plumbing
+10415,CNV-NPL-08-SORTATION-SCANNER,North Plant,READY,S. Chen,Medium,1890.00,2026-05-20,Sortation scanner electrical
+WO-10412,BLR-DCK-05-STEAM-HEADER,Dock 3,BLOCKED,J. Rivera,Critical,8900.00,2026-05-19,Safety - pressure relief failed
+10408,FLT-SYD-02-REACH-TRUCK,South Yard,COMPLETE,L. Kim,Medium,,2026-05-19,Reach truck fleet PM
+WO-10405,CHL-WHB-02-AHU-FAN-BELT,Warehouse B,READY,M. Okonkwo,Low,234.50,2026-05-18,AHU fan belt HVAC
+10402,PMP-DCK-09-RAW-WATER-BOOSTER,Dock 3,ACTIVE,T. Nguyen,High,4567.00,2026-05-18,Raw water booster mechanical

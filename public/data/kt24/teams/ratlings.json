@@ -1,0 +1,572 @@
+{
+  "id": "ratlings",
+  "killteamId": "IMP-RAT",
+  "factionId": "IMP",
+  "imageUrl": "https://ktdash.app/img/killteams/IMP-RAT.webp",
+  "killTeam": {
+    "name": "Ratlings",
+    "archetypes": "Security, Infiltration",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Scarper: After each enemy operative's activation, before the next operative is activated, you can perform a free Dash action with one friendly RATLING operative (excluding BULLGRYN, OGRYN, and SNEAK), \nbut it cannot finish that move within 3\" of an enemy operative unless it is not visible to every enemy operative when it finishes that move.\n\nEach friendly operative can only do this once per Turning Point, and cannot do so after the final activation of the Turning Point.",
+    "ploys": [
+      {
+        "name": "Crack Shots",
+        "description": "Whenever a friendly RATLING operative is shooting an enemy operative more than 6\" from it, if that friendly operative has not performed the Charge, Fall Back, or Reposition action during the activation,\nor it is a counteraction, its rifle (if any) has the Balanced weapon rule.  \n\nNote that operative is not restricted from performing those actions after shooting.",
+        "type": "strategy"
+      },
+      {
+        "name": "Frontline Assault",
+        "description": "Whenever a friendly RATLING BULLGRYN or friendly RATLING OGRYN operative is shooting within, fighting within, or retaliating within your opponent's territory or within 3\" of an objective marker, its weapons have the Balanced weapon rule.",
+        "type": "strategy"
+      },
+      {
+        "name": "Shifty",
+        "description": "Whenever a friendly RATLING operative (excluding OGRYN or BULLGRYN) has a Conceal order and is in Cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Vantage terrain) except being within 2\".",
+        "type": "strategy"
+      },
+      {
+        "name": "Sniper Positions",
+        "description": "Whenever a friendly RATLING operative is more than 6\" from enemy operatives and has Heavy Terrain within its Control Range, the Stationary profile of its rifle (if any) has the Silent weapon rule.",
+        "type": "strategy"
+      },
+      {
+        "name": "Larcenous",
+        "description": "Use this Firefight Ploy during a friendly RATLING operative's activation (excluding OGRYN or BULLGRYN).\nUntil the end of that activation, that operative does not have to control a marker to perform the Pick Up Marker or Mission actions that usually require this\n(taking precedence over that action's conditions - it only needs to contest the marker), and having an enemy operative within Control Range of it does not prevent it from doing so.",
+        "type": "firefight"
+      },
+      {
+        "name": "Shoot And Hide",
+        "description": "Use this Firefight Ploy after a friendly RATLING operative that has an Engage order perfoms the Shoot action with a rifle. If it is more than 3\" from enemy operatives, or not visible to every enemy operative, you can change its order to Conceal.",
+        "type": "firefight"
+      },
+      {
+        "name": "Survival Instincts",
+        "description": "Use this Firefight Ploy when an enemy operative is shooting or fighting a friendly RATLING operative (excluding OGRYN or BULLGRYN) and you are allocating a die to block.\nIf it is a normal success, it can block one unresolved critical success;\nif it is a critical success, it can block two unresolved successes (normal or critical).",
+        "type": "firefight"
+      },
+      {
+        "name": "Sharpshot",
+        "description": "Use this Firefight Ploy when a friendly RATLING operative if performing the Shoot action with a rifle and you are selecting a valid target.\nHaving other friendly RATLING operatives within an enemy operative's Control Range does not prevent that enemy operative from being selected.",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A RATLING KillTeam is composed of:\n\n- 1 RATLING FIXER operative with one of the following options:  \n  - Battle Rifle, Fists\n  - Sniper Rifle, Fists\n- 10 RATLING operatives selected from the following list:\n  - BATTLEMUTT\n  - BULLGRYN* with one from each of the following:\n    - Grenadier Gauntlet or Power Maul\n    - Brute Shield or Slabshield  \n  - OGRYN*\n  - BIG SHOT\n  - BOMBER\n  - HARDBIT\n  - RAIDER\n  - SNEAK\n  - SNIPER\n  - SPOTTER\n  - STASHMASTER\n  - VOX-THIEF\n\n*You cannot select more than three of these operatives combined. Up to three times, instead of selecting one of these operatives, you can select one RATLING ploy to cost you 0CP for the battle.  \n\nOther than BULLGRYN, OGRYN, and SNIPER operatives, your KillTeam can only include each operative above once.",
+    "description": "Though less resilient than their baseline Human comrades, Ratlings are naturally excellent shots. It is said that Ratling marksmen can take the head off a Heretic from over a kilometre away. Coupled with their knack for staying out of harm's way, this makes Ratlings formidable snipers who can exact a withering toll upon superior enemy forces. "
+  },
+  "operatives": [
+    {
+      "id": "imp-rat-fix",
+      "opTypeId": "IMP-RAT-FIX",
+      "name": "Ratlings Ratling Fixer",
+      "category": "po",
+      "cardType": "official",
+      "role": "Ratling Fixer",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "5\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "RATLING, IMPERIUM, ASTRA MILITARUM, LEADER, FIXER",
+      "weapons": [
+        {
+          "name": "Battle Rifle",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Sniper Rifle (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Sniper Rifle (Stationary)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev3, Hvy"
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": ""
+        }
+      ],
+      "abilities": "Munitorum Contacts: You can select one additional equipment option.\n\nTarget Designation: **Strategic Gambit**\r Select one enemy operative.\r Until the end of the Turning Point, whenever a friendly RATLING operative is shooting that enemy operative with a Rifle, that weapon has the Lethal 5+ weapon rule.",
+      "notes": ""
+    },
+    {
+      "id": "imp-rat-big",
+      "opTypeId": "IMP-RAT-BIG",
+      "name": "Ratlings Ratling Big Shot",
+      "category": "po",
+      "cardType": "official",
+      "role": "Ratling Big Shot",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "5\"",
+      "save": "5+",
+      "wounds": 6,
+      "keywords": "RATLING, IMPERIUM, ASTRA MILITARUM, BIG SHOT",
+      "weapons": [
+        {
+          "name": "Tankstopper Rifle (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/4",
+          "rules": "Dev1, Hvy(Dash), Prc1"
+        },
+        {
+          "name": "Tankstopper Rifle (Stationary)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "4/2",
+          "rules": "Dev4, Hvy, Prc1, Severe"
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "imp-rat-hard",
+      "opTypeId": "IMP-RAT-HARD",
+      "name": "Ratlings Ratling Hardbit",
+      "category": "po",
+      "cardType": "official",
+      "role": "Ratling Hardbit",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "5\"",
+      "save": "5+",
+      "wounds": 6,
+      "keywords": "RATLING, IMPERIUM, ASTRA MILITARUM, HARDBIT",
+      "weapons": [
+        {
+          "name": "Battle Rifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Combat Knife",
+          "atk": 3,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Balanced"
+        }
+      ],
+      "abilities": "Hunter: This operative can perform the Charge action while it has a Conceal order.\nIf it does so during its activation, until the end of that activation, add 1 to the ATK stat of its Combat Knife and that melee weapon has the Brutal weapon rule.\n\nLie In Wait: Whenever this operative is retaliating while Light or Heavy terrain is within its Control Range, you resolve the first attack die (i.e. defender instead of attacker).",
+      "notes": ""
+    },
+    {
+      "id": "imp-rat-spot",
+      "opTypeId": "IMP-RAT-SPOT",
+      "name": "Ratlings Ratling Spotter",
+      "category": "po",
+      "cardType": "official",
+      "role": "Ratling Spotter",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "5\"",
+      "save": "5+",
+      "wounds": 6,
+      "keywords": "RATLING, IMPERIUM, ASTRA MILITARUM, SPOTTER",
+      "weapons": [
+        {
+          "name": "Sniper Rifle (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Sniper Rifle (Stationary)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Dev3, Hvy"
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": ""
+        }
+      ],
+      "abilities": "Spot: **SUPPORT**\r Select one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly RATLING operative within 3\" of this operative is shooting that enemy operative, you can use this effect.\r If you do:\r \r - That friendly operative's ranged weapons have the Seek Light weapon rule.\r - That enemy operative is not Obscured.\r \r This operative cannot perform this action while within Control Range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-rat-bomb",
+      "opTypeId": "IMP-RAT-BOMB",
+      "name": "Ratlings Ratling Bomber",
+      "category": "po",
+      "cardType": "official",
+      "role": "Ratling Bomber",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "5\"",
+      "save": "4+",
+      "wounds": 6,
+      "keywords": "RATLING, IMPERIUM, ASTRA MILITARUM, BOMBER",
+      "weapons": [
+        {
+          "name": "Explosive Arsenal",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng3\", Blast1\", Lim1, Hvy(Repos), Prc1, Sat"
+        },
+        {
+          "name": "Sniper Rifle (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Sniper Rifle (Stationary)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Dev3, Hvy"
+        },
+        {
+          "name": "Bionic Arm",
+          "atk": 3,
+          "hit": "5+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Mine: Mines you select from Univeral Equipment inflict 2D3+3 damage instead, and fiendly RATLING operatives (excluding OGRYN and BULLGRYN) are ignored for its effects (i.e. they cannot trigger it or take damage from it).\nThis takes precedence over the normal mines rules.\n\nTripwire: When setting up equipment before the battle, you can set up to two of your Tripwire markers up wholly within your territory and more than 2\" from other markers, access points, and Accessible terrain.\r The first time that marker is within an enemy operative's control range, remove that marker, subtract 1 from that operative’s APL stat until the end of its next activation and end its action (if any),\r even if that action's effects aren’t fulfilled. If it cannot be placed, move it the minimum amount to do so.",
+      "notes": ""
+    },
+    {
+      "id": "imp-rat-stash",
+      "opTypeId": "IMP-RAT-STASH",
+      "name": "Ratlings Ratling Stashmaster",
+      "category": "po",
+      "cardType": "official",
+      "role": "Ratling Stashmaster",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "5\"",
+      "save": "5+",
+      "wounds": 6,
+      "keywords": "RATLING, IMPERIUM, ASTRA MILITARUM, STASHMASTER",
+      "weapons": [
+        {
+          "name": "Sniper Rifle (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Sniper Rifle (Stationary)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Dev3, Hvy"
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": ""
+        }
+      ],
+      "abilities": "Light-Fingered: Once during each of this operative's activations, it can perform the Place Marker, Pick Up Marker, or a Mission Action for 1 less AP.\n\nWell Stocked: If you select an Ammo Cache from Univeral Equipment, you can set up an additional Ammo Cache marker.",
+      "notes": ""
+    },
+    {
+      "id": "imp-rat-raid",
+      "opTypeId": "IMP-RAT-RAID",
+      "name": "Ratlings Ratling Raider",
+      "category": "po",
+      "cardType": "official",
+      "role": "Ratling Raider",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "5\"",
+      "save": "5+",
+      "wounds": 6,
+      "keywords": "RATLING, IMPERIUM, ASTRA MILITARUM, RAIDER",
+      "weapons": [
+        {
+          "name": "Suppressed Sniper Rifle (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Silent"
+        },
+        {
+          "name": "Suppressed Sniper Rifle (Stationary)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Dev2, Hvy, Silent"
+        },
+        {
+          "name": "Dagger",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Grappling Hook: Whenever this operative is climbing up, you can treat the vertical distance as 2\" (regardless of how far the oeprative actually moves vertically).\n\nSlingshot: Select a point on a terrain feature that is visible to and within 6\" of this operative.\r Remove this operative from the killzone and set it back up wholly within 6\" horizontally of that point, not within Control Range of an enemy operative, and with that point visible to it.  \r \r This action is treated as a Reposition action.\r This operative cannot perform this action while within Control Range of an enemy operative, or during an activation in which it performed the Charge, Fall Back, or Shoot action (or vice-versa).",
+      "notes": ""
+    },
+    {
+      "id": "imp-rat-snp",
+      "opTypeId": "IMP-RAT-SNP",
+      "name": "Ratlings Ratling Sniper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Ratling Sniper",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "5\"",
+      "save": "5+",
+      "wounds": 6,
+      "keywords": "RATLING, IMPERIUM, ASTRA MILITARUM, SNIPER",
+      "weapons": [
+        {
+          "name": "Sniper Rifle (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Sniper Rifle (Stationary)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev3, Hvy"
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "imp-rat-vox",
+      "opTypeId": "IMP-RAT-VOX",
+      "name": "Ratlings Ratling Vox-Thief",
+      "category": "po",
+      "cardType": "official",
+      "role": "Ratling Vox-Thief",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "5\"",
+      "save": "5+",
+      "wounds": 6,
+      "keywords": "RATLING, IMPERIUM, ASTRA MILITARUM, VOX-THIEF",
+      "weapons": [
+        {
+          "name": "Sniper Rifle (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Sniper Rifle (Stationary)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Dev3, Hvy"
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": ""
+        }
+      ],
+      "abilities": "Intercept Communications: **SUPPORT**\nSelect one other friendly RATLING operative visible to and within 6\" of this operative.\nUntil the end of its next activation, add 1 to that operative's APL stat.\n  \n\nThis operative cannot perform this action while within Control Range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-rat-snk",
+      "opTypeId": "IMP-RAT-SNK",
+      "name": "Ratlings Ratling Sneak",
+      "category": "po",
+      "cardType": "official",
+      "role": "Ratling Sneak",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "5\"",
+      "save": "5+",
+      "wounds": 6,
+      "keywords": "RATLING, IMPERIUM, ASTRA MILITARUM, SNEAK",
+      "weapons": [
+        {
+          "name": "Suppressed Sniper Rifle (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Silent"
+        },
+        {
+          "name": "Suppressed Sniper Rifle (Stationary)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Dev2, Hvy, Silent"
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "5+",
+          "dmg": "1/2",
+          "rules": ""
+        }
+      ],
+      "abilities": "Evade: Once per Turning Point, after an enemy operative performs an action, you can interrupt and perform a free Dash action with this operative.\r Note this operative cannot use the Scarper faction rule (it has this rule instead).\n\nOptics: Until the start of this operative's next activation, whenever it is shooting, enemy operatives cannot be Obscured and the stationary profile of this operative’s suppressed sniper rifle has the Lethal 5+ weapon rule.\r \r \r This operative cannot perform this action while within Control Range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-rat-ogr",
+      "opTypeId": "IMP-RAT-OGR",
+      "name": "Ratlings Ogryn",
+      "category": "po",
+      "cardType": "official",
+      "role": "Ogryn",
+      "points": 40,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 16,
+      "keywords": "RATLING, IMPERIUM, ASTRA MILITARUM, OGRYN",
+      "weapons": [
+        {
+          "name": "Ripper Gun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Punishing"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Bayonet Charge: Whenever this operative finishes moving during the Charge action, you can inflict 1D3+1 damage on one enemy operative within its Control Range.\n\nBrute: Whenever your opponent is selecting a valid target, if this operative has a Conceal order, it cannot use Light terrain for cover.\nWhilst this can allow this operative to be targeted (assuming it is visible), it does not remove its cover save (if any).\n\nSlow-Witted: You must spend 1 additional AP for this operative to perform the Pick Up Marker and Mission actions (excluding Operate Hatch).",
+      "notes": ""
+    },
+    {
+      "id": "imp-rat-bull",
+      "opTypeId": "IMP-RAT-BULL",
+      "name": "Ratlings Bullgryn",
+      "category": "po",
+      "cardType": "official",
+      "role": "Bullgryn",
+      "points": 40,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 16,
+      "keywords": "RATLING, IMPERIUM, ASTRA MILITARUM, BULLGRYN",
+      "weapons": [
+        {
+          "name": "Grenadier Gauntlet",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/5",
+          "rules": "Blast 2\""
+        },
+        {
+          "name": "Power Maul",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Shock"
+        },
+        {
+          "name": "Brute Shield",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Slabshield",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Brute: Whenever your opponent is selecting a valid target, if this operative has a Conceal order, it cannot use Light terrain for cover.\nWhilst this can allow this operative to be targeted (assuming it is visible), it does not remove its cover save (if any).\n\nShield: If this operative has a Slabshield, it has a 3+ Save stat;\nif it has a Brute Shield, whenever it is fighting or retaliating, each of your blocks can be allocated to block two unresolved successes (instead of one).\n\nSlow-Witted: You must spend 1 additional AP for this operative to perform the Pick Up Marker and Mission actions (excluding Operate Hatch).",
+      "notes": ""
+    },
+    {
+      "id": "imp-rat-mutt",
+      "opTypeId": "IMP-RAT-MUTT",
+      "name": "Ratlings Ratling Battlemutt",
+      "category": "po",
+      "cardType": "official",
+      "role": "Ratling Battlemutt",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 4,
+      "keywords": "RATLING, IMPERIUM, ASTRA MILITARUM, BATTLEMUTT",
+      "weapons": [
+        {
+          "name": "Bite",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Beast: This operative cannot perform any actions other than Charge, Dash, Fall Back, Fight, and Reposition.\nIt cannot use any weapons that are not on its datacard.\n\nEarly Warning: Once per Turning Point, after an enemy operative performs an action in which it moves or is set up, you can interrupt to use this rule.\r If you do, each friendly RATLING operative (excluding OGRYN and BULLGRYN) within 6\" of this operative and within 2\" of that enemy operative can perform a free Dash action or a free Fall Back action, but it cannot move more than 3\".\r In either case, each one cannot finish that move within 2\" of an enemy operative unless it is not visible to every enemy operative when it finishes that move (if this is not possible for an operative, it cannot move).",
+      "notes": ""
+    }
+  ]
+}

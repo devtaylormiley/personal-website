@@ -1,0 +1,173 @@
+{
+  "slug": "shadow-hunt-mission-pack",
+  "killteamId": "SPEC-SHADOW",
+  "name": "Joint Ops: Shadowhunt Mission Pack",
+  "description": "Non-player operatives from Kill Team: Shadowhunt (Tomb World adversaries and the C'tan Shard of the Nightbringer). Sourced from the Shadowhunt dossier and Warhammer Community previews until KTDash publishes this pack.",
+  "operatives": [
+    {
+      "id": "spec-shadow-nbr",
+      "opTypeId": "SPEC-SHADOW-NBR",
+      "name": "C'tan Shard of the Nightbringer",
+      "category": "npo",
+      "cardType": "official",
+      "role": "C'tan Shard of the Nightbringer",
+      "points": 0,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "5\"",
+      "save": "4+",
+      "wounds": 25,
+      "keywords": "CTAN, NIGHTBRINGER, NEMESIS",
+      "weapons": [
+        {
+          "name": "Gaze of Death",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/6",
+          "rules": "Rng 6\", Dev 2, Prc 1"
+        },
+        {
+          "name": "Scythe of the Nightbringer (Strike)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "5/6",
+          "rules": "Brutal, Dev 2"
+        },
+        {
+          "name": "Scythe of the Nightbringer (Sweep)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Ceaseless, Tor 1\""
+        }
+      ],
+      "abilities": "Behaviour: When activated, if this NPO can perform the Fight action during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n1. Fight.\n2. Charge the closest player operative via the shortest possible route.\n3. Shoot the closest player operative.\n4. Reposition towards the closest player operative (a subsequent Dash action can fulfil this, if able).\n5. Dash towards the closest player operative.\n\nMighty Foe: Whenever the NPO team activates, roll one D6: on a 4+, this operative activates again immediately after the current NPO activation ends (it can activate multiple times in this way during the same turning point).\n\nDomineering Presence: Whenever this operative performs a Move or Charge action, it can move through terrain features (including Wall features in close quarters killzones). It removes any Light terrain it moves through. It must end each move in a location where it can be placed.\n\nIndomitable Reanimation: This operative cannot be injured. Whenever it would be incapacitated, instead it regains all lost wounds, is removed from the killzone, and is set up again in a later turning point as described in the mission pack.\n\nImmutable: This operative's wounds stat and datacard cannot be changed by mission special rules.",
+      "notes": "Boss NPO for Shadowhunt escape missions; not permanently destroyable in-pack."
+    },
+    {
+      "id": "spec-shadow-nec-war",
+      "opTypeId": "SPEC-SHADOW-NEC-WAR",
+      "name": "Necron Warrior",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Necron Warrior",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "5\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "NECRON, WARRIOR",
+      "weapons": [
+        {
+          "name": "Gauss Flayer",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": "Prc 1"
+        },
+        {
+          "name": "Close Combat Weapon",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Behaviour: When activated, if this NPO can perform the Shoot action during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n1. Fall Back to cover. If possible, to a location where there is a valid target that is not obscured.\n2. Shoot.\n3. Reposition to cover. If possible, to a location where there is a valid target that is not obscured (a subsequent Dash action can fulfil this, if able).\n4. Dash to cover. If possible, to a location where there is a valid target that is not obscured.",
+      "notes": "Tomb World adversary profile from Shadowhunt."
+    },
+    {
+      "id": "spec-shadow-scarab",
+      "opTypeId": "SPEC-SHADOW-SCARAB",
+      "name": "Canoptek Scarab Swarm",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Canoptek Scarab Swarm",
+      "points": 20,
+      "imageUrl": "",
+      "apl": 1,
+      "move": "8\"",
+      "save": "5+",
+      "wounds": 5,
+      "keywords": "NECRON, CANOPTEK, SCARAB",
+      "weapons": [
+        {
+          "name": "Feeder Mandibles",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": "Ceaseless"
+        }
+      ],
+      "abilities": "Behaviour: When activated, if this NPO can perform either of its first two actions during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n1. Fight.\n2. Charge the closest player operative via the shortest possible route.\n3. Reposition towards the closest player operative, to cover if possible (a subsequent Dash action can fulfil this, if able).\n4. Dash towards the closest player operative, to cover if possible.",
+      "notes": "Tomb World adversary profile from Shadowhunt."
+    },
+    {
+      "id": "spec-shadow-tomb-crawler",
+      "opTypeId": "SPEC-SHADOW-TC",
+      "name": "Canoptek Tomb Crawler",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Canoptek Tomb Crawler",
+      "points": 50,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "5\"",
+      "save": "3+",
+      "wounds": 18,
+      "keywords": "NECRON, CANOPTEK, TOMB CRAWLER",
+      "weapons": [
+        {
+          "name": "Twin Gauss Reapers",
+          "atk": 5,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Prc 1"
+        },
+        {
+          "name": "Claws",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Behaviour: When activated, if this NPO can perform the Shoot action during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n1. Shoot the closest player operative.\n2. Reposition towards the closest player operative, to cover if possible.\n3. Dash towards the closest player operative, to cover if possible.\n4. Fight if the closest player operative is within control range.",
+      "notes": "Tomb World adversary profile from Shadowhunt."
+    },
+    {
+      "id": "spec-shadow-macrocyte",
+      "opTypeId": "SPEC-SHADOW-MAC",
+      "name": "Canoptek Macrocyte",
+      "category": "npo",
+      "cardType": "official",
+      "role": "Canoptek Macrocyte",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "NECRON, CANOPTEK, MACROCYTE",
+      "weapons": [
+        {
+          "name": "Gauss Scalpel",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": "Prc 1"
+        },
+        {
+          "name": "Claws & Tail",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Behaviour: When activated, if this NPO can perform either of its first two actions during that activation, give it an Engage order. If it cannot, give it a Conceal order.\n\n1. Fight.\n2. Charge the closest player operative via the shortest possible route.\n3. Shoot the closest player operative.\n4. Reposition towards the closest player operative (a subsequent Dash action can fulfil this, if able).\n5. Dash towards the closest player operative.",
+      "notes": "Tomb World adversary profile from Shadowhunt."
+    }
+  ]
+}

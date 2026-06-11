@@ -1,0 +1,358 @@
+{
+  "id": "wolf-scouts",
+  "killteamId": "IMP-WS",
+  "factionId": "IMP",
+  "imageUrl": "https://ktdash.app/img/killteams/IMP-WS.webp",
+  "killTeam": {
+    "name": "Wolf Scouts",
+    "archetypes": "Seek And Destroy, Recon",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Elemental Storm: STRATEGIC GAMBIT. Remove your Storm marker from the killzone (if any), then place it in the killzone.\nWhenever an operative is within 6\" horizontally of your Storm marker, it’s within your STORM.\n\nEach friendly WOLF SCOUT operative can perform the Charge action while it has a Conceal order if it ends that action within your STORM.\n\nHunting Astartes: During each friendly WOLF SCOUT operative’s activation, it can perform either two Shoot actions or two Fight actions. If it’s two Shoot actions:\n- 1 additional AP must be spent for the second action if both actions are using a plasma gun or plasma pistol.\n- You cannot select two PSYCHIC ranged weapons.\n\nEach friendly WOLF SCOUT operative can counteract regardless of its order. Whenever it does so within your STORM, you can change its order first, or change its order instead of performing an action (for the latter, still treat it as having counteracted this turning point).",
+    "ploys": [
+      {
+        "name": "Cloaked By The Storm",
+        "description": "Whenever an operative is shooting a friendly WOLF SCOUT operative that’s within your STORM, you can re-roll one of your defence dice.",
+        "type": "strategy"
+      },
+      {
+        "name": "Tempestuous Wrath",
+        "description": "Whenever a friendly WOLF SCOUT operative is fighting or retaliating, if it’s within your STORM or was within your STORM at the start of the activation, its melee weapons have the Balanced weapon rule.",
+        "type": "strategy"
+      },
+      {
+        "name": "Storm's Bite",
+        "description": "Whenever a friendly WOLF SCOUT operative is fighting against an enemy operative that is within your STORM, subtract 1 from the Atk stat of that enemy operative's melee weapons (to a minimum of 3).",
+        "type": "strategy"
+      },
+      {
+        "name": "Savage Fighters",
+        "description": "Whenever a friendly WOLF SCOUT operative finishes retaliating, if it wasn’t incapacitated, you can inflict D3+1 damage on the enemy operative in that sequence.",
+        "type": "strategy"
+      },
+      {
+        "name": "Acute Senses",
+        "description": "Use this firefight ploy when a friendly WOLF SCOUT operative performs the Shoot action and you’re selecting a valid target. Until the end of that action, that friendly operative’s ranged weapons have the Range 6\" and Seek Light weapon rules and enemy operatives cannot be obscured.",
+        "type": "firefight"
+      },
+      {
+        "name": "Counterattack",
+        "description": "Use this firefight ploy at the end of an enemy operative’s activation, or after an enemy operative performs the Fight action. One friendly WOLF SCOUT operative can immediately perform a free Fight action, but you cannot select any other enemy operative to fight against during that action.",
+        "type": "firefight"
+      },
+      {
+        "name": "Touched By Lokyar",
+        "description": "Use this firefight ploy after rolling your attack dice for a friendly WOLF SCOUT operative (excluding FENRISIAN WOLF), if it’s fighting more than 5\" from other friendly operatives. You can re-roll any of your attack dice.",
+        "type": "firefight"
+      },
+      {
+        "name": "Transhuman Physiology",
+        "description": "Use this firefight ploy when an operative is shooting a friendly WOLF SCOUT operative (excluding FENRISIAN WOLF), in the Roll Defence Dice step. You can retain one of your normal successes as a critical success instead.",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A WOLF SCOUTS KillTeam is composed of:\r - 1 WOLF SCOUT FENRISIAN WOLF\r - 5 WOLF SCOUT operatives selected from the following list:\r   - PACK LEADER\r   - FANGBEARER\r   - FROSTEYE\r   - GUNNER\r   - TRAPMASTER\r   - RUNE PRIEST SKJALD\r   - HUNTER\r \r Other than HUNTER operatives, your kill team can only include each operative on this list once.",
+    "description": "Wolf Scout kill teams are their Great Company's most feared and accomplished hunters, roving far ahead of the Space Wolves' strike forces on solitary, unsupported missions. They cause death and anarchy behind enemy lines through assassination, sabotage and more besides, often while cloaked in strange mists or furious storms."
+  },
+  "operatives": [
+    {
+      "id": "imp-ws-ldr",
+      "opTypeId": "IMP-WS-LDR",
+      "name": "Wolf Scouts Pack Leader",
+      "category": "po",
+      "cardType": "official",
+      "role": "Pack Leader",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 13,
+      "keywords": "WOLF SCOUT, IMPERIUM, ADEPTUS ASTARTES, SPACE WOLVES, PACK, LEADER",
+      "weapons": [
+        {
+          "name": "Plasma Pistol (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Rng 8\", Prc1"
+        },
+        {
+          "name": "Plasma Pistol (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Grizzled Veteran: The first time this operative would be incapacitated during the battle, it is not incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. All remaining attack dice are discarded (including yours if this operative is fighting or retaliating). You cannot use the Counterattack firefight ploy or inflict damage as a result of the Savage Fighters strategy ploy at the end of that action.\n\nLupine Guile: Once per battle, after rolling off to decide initiative, if this operative is in the killzone, you can re-roll your dice.",
+      "notes": ""
+    },
+    {
+      "id": "imp-ws-fb",
+      "opTypeId": "IMP-WS-FB",
+      "name": "Wolf Scouts Fangbearer",
+      "category": "po",
+      "cardType": "official",
+      "role": "Fangbearer",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 13,
+      "keywords": "WOLF SCOUT, IMPERIUM, ADEPTUS ASTARTES, SPACE WOLVES, FANGBEARER",
+      "weapons": [
+        {
+          "name": "Absolver Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 9\", PrcCrit 1"
+        },
+        {
+          "name": "Combat Blade",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Healing Balms: Select one friendly WOLF SCOUT operative within this operative’s control range to regain up to D3+3 lost wounds.\n\nThis operative cannot perform this action while within control range of an enemy operative.\n\nSpiritual Chirurgy: You can ignore any changes to the stats of friendly WOLF SCOUT operatives (excluding FENRISIAN WOLF) from being injured (including their weapons’ stats). Note that friendly operatives have this rule if you select this operative for the battle (even if it’s incapacitated later). ",
+      "notes": ""
+    },
+    {
+      "id": "imp-ws-fe",
+      "opTypeId": "IMP-WS-FE",
+      "name": "Wolf Scouts Frosteye",
+      "category": "po",
+      "cardType": "official",
+      "role": "Frosteye",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 13,
+      "keywords": "WOLF SCOUT, IMPERIUM, ADEPTUS ASTARTES, SPACE WOLVES, FROSTEYE",
+      "weapons": [
+        {
+          "name": "Instigator Bolt Carbine",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "PrcCrit 1, Silent"
+        },
+        {
+          "name": "Combat Blade",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Hunter's Senses: Select one of the following rules for this operative’s instigator bolt carbine to have until the start of its next activation:\r - Severe.\r - Saturate, and whenever this operative is shooting with that weapon, enemy operatives cannot be obscured.\r \r This operative cannot perform this action while within control range of an enemy operative.\n\nStorm-Veiled Execution: Whenever this operative is within your STORM:\n- It can perform the Guard action regardless of the killzone (see close quarters rules, Kill Team Core Book).\n- It can perform the Guard action while it has a Conceal order, but if it does, it cannot perform more than one Shoot action for the rest of the turning point (i.e. it cannot Shoot both during the interruption and during counteract).",
+      "notes": ""
+    },
+    {
+      "id": "imp-ws-gnr",
+      "opTypeId": "IMP-WS-GNR",
+      "name": "Wolf Scouts Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Gunner",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 13,
+      "keywords": "WOLF SCOUT, IMPERIUM, ADEPTUS ASTARTES, SPACE WOLVES, GUNNER",
+      "weapons": [
+        {
+          "name": "Plasma Gun (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Plasma Gun (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/6",
+          "rules": "Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Combat Blade",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Tempest's Fury: Whenever this operative is within your STORM:\n- All profiles of its plasma gun have the Punishing weapon rule.\n- Its plasma gun (supercharge) doesn’t have the Hot weapon rule.",
+      "notes": ""
+    },
+    {
+      "id": "imp-ws-hnt",
+      "opTypeId": "IMP-WS-HNT",
+      "name": "Wolf Scouts Hunter",
+      "category": "po",
+      "cardType": "official",
+      "role": "Hunter",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 13,
+      "keywords": "WOLF SCOUT, IMPERIUM, ADEPTUS ASTARTES, SPACE WOLVES, HUNTER",
+      "weapons": [
+        {
+          "name": "Plasma Pistol (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Rng 8\", Prc1"
+        },
+        {
+          "name": "Plasma Pistol (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Combat Blade",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Fierce Temperament: Whenever this operative is within your STORM, its weapons have the Severe weapon rule.",
+      "notes": ""
+    },
+    {
+      "id": "imp-ws-rp",
+      "opTypeId": "IMP-WS-RP",
+      "name": "Wolf Scouts Rune Priest Skjald",
+      "category": "po",
+      "cardType": "official",
+      "role": "Rune Priest Skjald",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 13,
+      "keywords": "WOLF SCOUT, IMPERIUM, ADEPTUS ASTARTES, SPACE WOLVES, PSYKER, RUNE PRIEST SKJALD",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Jaws of the World Wolf",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "PSYCHIC, Blast 2\", Sev"
+        },
+        {
+          "name": "Thunderclap",
+          "atk": 5,
+          "hit": "2+",
+          "dmg": "2/2",
+          "rules": "PSYCHIC, Rng 6\", Sat, Seek Light, Stun, Tor 2\""
+        },
+        {
+          "name": "Runic Stave",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "PSYCHIC, Shock"
+        }
+      ],
+      "abilities": "Call the Storm: PSYCHIC. Remove your Storm marker from the killzone (if any), then place it in the killzone.\n\nPSYCHIC. Alternatively, instead of resolving the above effect, select one friendly WOLF SCOUT operative.\nUntil the start of this operative’s next activation, until it’s incapacitated or until it performs this action again (whichever comes first),\nwhenever that friendly operative is within your STORM and more than 3\" from the active operative, it’s obscured.\n\nThis operative cannot perform this action while within control range of an enemy operative.\n\nCast the Runes: After selecting this operative, before the battle, roll three D6 and put them to one side.\nFor each result of 1-4, you can use the Command Re-roll firefight ploy for OCP once during the turning point that matches the result.\nFor each result of 5-6, you gain 1CP.\nFor example, if you roll 2, 2 and 5, you gain 1CP and twice during the second turning point you can use Command Re-roll for 0CP",
+      "notes": ""
+    },
+    {
+      "id": "imp-ws-tm",
+      "opTypeId": "IMP-WS-TM",
+      "name": "Wolf Scouts Trapmaster",
+      "category": "po",
+      "cardType": "official",
+      "role": "Trapmaster",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "7\"",
+      "save": "3+",
+      "wounds": 13,
+      "keywords": "WOLF SCOUT, IMPERIUM, ADEPTUS ASTARTES, SPACE WOLVES, TRAPMASTER",
+      "weapons": [
+        {
+          "name": "Plasma Pistol (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Rng 8\", Prc1"
+        },
+        {
+          "name": "Plasma Pistol (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\",  Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Combat Blade",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Haywire Mine: This operative is carrying your Haywire Mine marker.\nIt can perform the Pick Up Marker action on that marker, but that marker cannot be placed within another operative’s control range (if this operative is incapacitated while carrying that marker and that marker cannot be placed, it’s removed with this operative).\n\nProximity Mine: The first time your Haywire Mine marker is within another operative’s control range, remove that marker, subtract 1 from that operative’s APL stat until the end of its next activation,\nand inflict 2D3+3 damage on it (or D3+6 if that marker is within 6\" horizontally of your Storm marker);\nif it isn’t incapacitated, end its action (if any), even if that action’s effects aren’t fulfilled.\nIf it cannot be placed, move it the minimum amount to do so. Note that this operative is ignored for these effects (i.e. it cannot set it off or take damage from that marker).",
+      "notes": ""
+    },
+    {
+      "id": "imp-ws-wlf",
+      "opTypeId": "IMP-WS-WLF",
+      "name": "Wolf Scouts Fenrisian Wolf",
+      "category": "po",
+      "cardType": "official",
+      "role": "Fenrisian Wolf",
+      "points": 60,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "8\"",
+      "save": "5+",
+      "wounds": 9,
+      "keywords": "WOLF SCOUT, IMPERIUM, ADEPTUS ASTARTES, SPACE WOLVES, FENRISIAN WOLF",
+      "weapons": [
+        {
+          "name": "Fangs",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rending"
+        }
+      ],
+      "abilities": "Instinctive Predator: This operative cannot perform any actions other than Charge, Dash, Fall Back, Fight, Guard and Reposition. It cannot use any weapons that aren’t on its datacard. This operative can perform the Charge action while it has a Conceal order.\n\nPounce: Once per battle STRATEGIC GAMBIT. If this operative’s APL stat is 2 or more, this operative can perform a free Charge, Fall Back or Reposition action.\nIf it does, until the end of its next activation, subtract 1 from its APL stat and it cannot perform any of the aforementioned actions.",
+      "notes": ""
+    }
+  ]
+}

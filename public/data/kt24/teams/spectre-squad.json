@@ -1,0 +1,531 @@
+{
+  "id": "spectre-squad",
+  "killteamId": "IMP-SPECT",
+  "factionId": "IMP",
+  "imageUrl": "https://ktdash.app/img/killteams/IMP-SPECT.webp",
+  "killTeam": {
+    "name": "Spectre Squad",
+    "archetypes": "Infiltration, Recon",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Camo Cloak: Whenever an operative is shooting a friendly SPECTRE SQUAD operative (excluding VOX-RELAY BEACON), if you can retain any cover saves, you can retain one additional cover save,\nor you can retain one cover save as a critical success instead. This isn’t cumulative with improved cover saves from Vantage terrain.\n\nElite Fieldcraft: In the Ready step of each Strategy phase, you gain 1 Fieldcraft point, or 2 if a friendly SPECTRE SQUAD VOX-OPERATOR operative is in the killzone and isn’t within control range of enemy operatives.\nAt the end of each turning point, discard your Fieldcraft points. After an enemy operative that has an Engage order performs an action during its activation, you can spend 1 of your Fieldcraft points to interrupt that activation.\nIf you do, a ready friendly SPECTRE SQUAD operative that isn’t within control range of any other enemy operatives can perform a free Shoot (excluding Guard), Dash or Reposition action.\n\nYou cannot interrupt each enemy operative’s activation more than once per activation (including Guard), and each friendly operative cannot perform more than one free action per turning point as a result of this rule.\n\nIf it’s the Shoot action, you can change that friendly operative’s order to perform this action. You cannot select any other enemy operative as a valid target during that action.\nBeing within that enemy operative’s control range (but no others) doesn’t prevent that friendly operative from performing that action, in which case follow the rules for a point-blank shot from the Guard action (see Kill Team Core Book).\n\nIf it’s the Reposition action, that friendly operative cannot perform that action again during the turning point.\n\nIf it’s the Dash or Reposition action, that friendly operative cannot end this move closer to that enemy operative or your opponent’s drop zone (unless it ends that move wholly within your drop zone).\n\nIn a killzone that uses the close quarters rules (e.g. Killzone: Tomb World), ignore Wall terrain when determining closer and you cannot teleport.",
+    "ploys": [
+      {
+        "name": "Disappear",
+        "description": "One friendly SPECTRE SQUAD operative can immediately perform a free Reposition action.\nIt cannot end that move closer to enemy operatives or your opponent’s drop zone (unless it ends that move wholly within your drop zone) and it cannot perform that action again during the turning point.\nIn a killzone that uses the close quarters rules (e.g. Killzone: Tomb World), ignore Wall terrain when determining closer.",
+        "type": "strategy"
+      },
+      {
+        "name": "Hidden Engagement",
+        "description": "Whenever a friendly SPECTRE SQUAD operative is shooting, if it’s in cover from the target’s perspective, that friendly operative’s weapons have the Balanced weapon rule.\nNote that your opponent still determines the targeting lines for this (i.e. they decide which point of their operative’s base targeting lines are drawn from).",
+        "type": "strategy"
+      },
+      {
+        "name": "Ambushing Volley",
+        "description": "Whenever a friendly SPECTRE SQUAD operative is activated, if it’s more than 3\" from enemy operatives and isn’t a valid target for enemy operatives before determining its order, its ranged weapons (excluding the suppressive profile of an autostubber) have the Devastating 1 weapon rule until the end of that activation.",
+        "type": "strategy"
+      },
+      {
+        "name": "Patience",
+        "description": "In the Firefight phase of this turning point, you can do one of the following:\n\n- When it’s your turn to activate a friendly operative, you can skip that activation. You cannot do this until after your opponent’s first activation.\n- When a friendly SPECTRE SQUAD operative performs the Shoot or Fight action during its activation, if it’s the last friendly operative to be activated during this turning point, its weapons have the Relentless weapon rule for that action.",
+        "type": "strategy"
+      },
+      {
+        "name": "Dodge",
+        "description": "Use this firefight ploy during a friendly SPECTRE SQUAD operative’s activation, before or after it performs an action. During that activation, that operative can perform the Fall Back action for 1 less AP.",
+        "type": "firefight"
+      },
+      {
+        "name": "Silent Killers",
+        "description": "Use this firefight ploy during a friendly SPECTRE SQUAD operative’s activation before or after it performs an action, if it has a Conceal order and isn’t a valid target for enemy operatives.\nUntil the end of that activation, it can perform the Charge action while it has a Conceal order, and the first time it strikes you can inflict 3 additional damage, but cannot resolve any other successes during that sequence.",
+        "type": "firefight"
+      },
+      {
+        "name": "Sharp Reactions",
+        "description": "Use this firefight ploy after an enemy operative that has a Conceal order performs an action during its activation, if it’s within 8\" of a friendly SPECTRE SQUAD operative.\nYou can use the Elite Fieldcraft faction rule to interrupt that activation with that friendly SPECTRE SQUAD operative regardless of that enemy operative’s order (taking precedence over the normal rules)",
+        "type": "firefight"
+      },
+      {
+        "name": "Prepared Defence",
+        "description": "Use this firefight ploy when a friendly SPECTRE SQUAD operative that has a Conceal order or is ready is retaliating. You can do one of the following:\n\n- At the start of the Resolve Attack Dice step, you can resolve one of your successes before the normal order. If you do, that success must be used to block.\n- When you block, that block can be allocated to block two unresolved successes (instead of one).\n\nYou cannot use this ploy during an activation in which you’ve interrupted with the Elite Fieldcraft faction rule.",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A SPECTRE SQUAD killteam is composed of:\n- 1 SPECTRE SQUAD VETERAN SERGEANT\n- 1 SPECTRE SQUAD VOX-RELAY BEACON\n- 9 SPECTRE SQUAD operatives selected from the following list:\n\t- FIELD MEDICAE*\n\t- GRENADIER*\n\t- GUIDE*\n\t- GUNNER with one of the following options:\n\t\t- Meltagun; fists\n\t\t- Plasma gun; fists\n- HEAVY GUNNER\n- LOADER\n- SHARPSHOOTER\n- STUB-GUNNER\n- TROOPER*\n- VOX-OPERATOR*\n\nOther than TROOPER operatives, your kill team can only include each operative on this list once.\n\n*With one of the following options:\n- Lasrifle; gun butt\n- Lascarbine; gun butt",
+    "description": "Spectre Squads wield many of the same weapons borne by rank-and-file Imperial Guardsmen, building on their familiarity with the robust wargear to achieve impressive results. Coupled with their array of highly experienced veteran specialists, this allows Spectre Squads to defeat enemy kill teams that, at first glance, seem far more elite."
+  },
+  "operatives": [
+    {
+      "id": "imp-spect-sgt",
+      "opTypeId": "IMP-SPECT-SGT",
+      "name": "Spectre Squad Veteran Sergeant",
+      "category": "po",
+      "cardType": "official",
+      "role": "Veteran Sergeant",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 9,
+      "keywords": "SPECTRE SQUAD, IMPERIUM, ASTRA MILITARUM, LEADER, VETERAN SERGEANT",
+      "weapons": [
+        {
+          "name": "Scoped Lascarbine",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Rending, Lethal 5+"
+        },
+        {
+          "name": "Bionic Arm",
+          "atk": 3,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Issue Mission: Select one expended friendly SPECTRE SQUAD operative (excluding VOX-RELAY BEACON) visible to this operative that hasn’t interrupted an enemy operative’s activation with the Elite Fieldcraft faction rule this turning point.\nUntil the end of the turning point, that friendly operative can do so even though it’s expended (taking precedence over the normal rules). However, if it does, it cannot counteract during the turning point, or perform the Reposition action if it’s already done so this turning point.\n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-spect-med",
+      "opTypeId": "IMP-SPECT-MED",
+      "name": "Spectre Squad Field Medicae",
+      "category": "po",
+      "cardType": "official",
+      "role": "Field Medicae",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "SPECTRE SQUAD, IMPERIUM, ASTRA MILITARUM, FIELD MEDICAE",
+      "weapons": [
+        {
+          "name": "Lascarbine",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Rending"
+        },
+        {
+          "name": "Lasrifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Hvy(Repos), Lethal 5+"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Medic!: The first time during each turning point that another friendly SPECTRE SQUAD operative (excluding VOX-RELAY BEACON) would be incapacitated while visible to and within 3\" of this operative,\nyou can use this rule, providing neither this nor that operative is within control range of an enemy operative.\nIf you do, that friendly operative isn’t incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action.\nAfter that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative’s control range.\nSubtract 1 from this and that operative’s APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative’s activation, that activation ends.\nYou cannot use this rule if this operative is incapacitated, or if it’s a Shoot action and this operative would be a primary or secondary target.\n\nMedikit: Select one friendly SPECTRE SQUAD operative (excluding VOX-RELAY BEACON) within this operative’s control range to regain up to 2D3 lost wounds. It cannot be an operative that the Medic! rule was used on during this turning point.\n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-spect-grn",
+      "opTypeId": "IMP-SPECT-GRN",
+      "name": "Spectre Squad Grenadier",
+      "category": "po",
+      "cardType": "official",
+      "role": "Grenadier",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "SPECTRE SQUAD, IMPERIUM, ASTRA MILITARUM, GRENADIER",
+      "weapons": [
+        {
+          "name": "Lascarbine",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Rending"
+        },
+        {
+          "name": "Lasrifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Hvy(Repos), Lethal 5+"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Grenadier: This operative can use frag, krak, and smoke grenades (see universal equipment). Doing so doesn’t count towards any limited uses you have (i.e. if you also select those grenades from equipment for other operatives).\nWhenever this operative is using a frag or krak grenade, improve the Hit stat of that weapon by 1.\n\nMelta Mine: This operative is carrying your Melta Mine marker. It can perform the Pick Up Marker action on that marker, and whenever it performs the Place Marker action on that marker, it can immediately perform a free Dash action.\nThat marker cannot be placed within an enemy operative’s control range (if this operative is incapacitated while carrying that marker and that marker cannot be placed, it’s removed with this operative).\n\nProximity Mine: The first time your Melta Mine marker is within another operative’s control range, remove that marker and inflict 2D6+3 damage on that operative; if it isn’t incapacitated, end its action (if any), even if that action’s effects aren’t fulfilled.\nIf it cannot be placed, move it the minimum amount to do so. Note that this operative is ignored for these effects (i.e. it cannot set it off or take damage from that marker).",
+      "notes": ""
+    },
+    {
+      "id": "imp-spect-gde",
+      "opTypeId": "IMP-SPECT-GDE",
+      "name": "Spectre Squad Guide",
+      "category": "po",
+      "cardType": "official",
+      "role": "Guide",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "SPECTRE SQUAD, IMPERIUM, ASTRA MILITARUM, GUIDE",
+      "weapons": [
+        {
+          "name": "Lascarbine",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Rending"
+        },
+        {
+          "name": "Lasrifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Hvy(Repos), Lethal 5+"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Prepared Killzone: You can select one additional equipment option, but it must be an Ammo Cache or an equipment terrain feature (see universal equipment).\n\nScout Terrain: Terrain features within your territory or within 3\" of this operative are scouted for friendly SPECTRE SQUAD operatives. Once in each of their activations, friendly SPECTRE SQUAD operatives can do one of the following:\n\n- Ignore the first vertical distance of 2\" it moves during one climb up if the terrain feature is scouted for friendly SPECTRE SQUAD operatives.\n- Perform the Operate Hatch action for 1 less AP if the access point is scouted for friendly SPECTRE SQUAD operatives.",
+      "notes": ""
+    },
+    {
+      "id": "imp-spect-gnr",
+      "opTypeId": "IMP-SPECT-GNR",
+      "name": "Spectre Squad Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Gunner",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "SPECTRE SQUAD, IMPERIUM, ASTRA MILITARUM, GUNNER",
+      "weapons": [
+        {
+          "name": "Meltagun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "6/3",
+          "rules": "Rng 6\", Dev 4, Prc2"
+        },
+        {
+          "name": "Plasma Gun (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Plasma Gun (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/6",
+          "rules": "Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "imp-spect-hgnr",
+      "opTypeId": "IMP-SPECT-HGNR",
+      "name": "Spectre Squad Heavy Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Heavy Gunner",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "SPECTRE SQUAD, IMPERIUM, ASTRA MILITARUM, HEAVY GUNNER",
+      "weapons": [
+        {
+          "name": "Laspistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Missile Launcher (Frag)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Blast 2\", Hvy"
+        },
+        {
+          "name": "Missile Launcher (Krak)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/7",
+          "rules": "Hvy, Prc1"
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Weapons Team: Whenever this operative is activated, if a friendly LOADER operative is within its control range, all profiles of its missile launcher have the Heavy (Dash only) weapon rule instead of the Heavy weapon rule until the end of that activation.",
+      "notes": ""
+    },
+    {
+      "id": "imp-spect-ldr",
+      "opTypeId": "IMP-SPECT-LDR",
+      "name": "Spectre Squad Loader",
+      "category": "po",
+      "cardType": "official",
+      "role": "Loader",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "SPECTRE SQUAD, IMPERIUM, ASTRA MILITARUM, LOADER",
+      "weapons": [
+        {
+          "name": "Laspistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Load Weapon: Select one friendly SPECTRE SQUAD operative within this operative’s control range and not within 3\" of enemy operatives. That friendly operative can immediately perform a free Shoot action (excluding Guard), and you can change its order to do so.\n\nThis operative cannot perform this action while within control range of an enemy operative, while counteracting, or during an activation in which it performed the Charge, Dash or Shoot action (or vice versa).\n\nWeapon Assist: Whenever another friendly SPECTRE SQUAD operative within control range of this operative is shooting, you can re-roll one of your attack dice.",
+      "notes": ""
+    },
+    {
+      "id": "imp-spect-ss",
+      "opTypeId": "IMP-SPECT-SS",
+      "name": "Spectre Squad Sharpshooter",
+      "category": "po",
+      "cardType": "official",
+      "role": "Sharpshooter",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "SPECTRE SQUAD, IMPERIUM, ASTRA MILITARUM, SHARPSHOOTER",
+      "weapons": [
+        {
+          "name": "Long-Las (Concealed)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev 3, Hvy, Sil, *Concealed Position"
+        },
+        {
+          "name": "Long-Las (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Long-Las (Stationary)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev 3, Hvy"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Concealed Position: This operative can only use this weapon the first time it’s performing the Shoot action during the battle.",
+      "notes": ""
+    },
+    {
+      "id": "imp-spect-stub",
+      "opTypeId": "IMP-SPECT-STUB",
+      "name": "Spectre Squad Stub-Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Stub-Gunner",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "SPECTRE SQUAD, IMPERIUM, ASTRA MILITARUM, STUB-GUNNER",
+      "weapons": [
+        {
+          "name": "Auto-Stubber (Focused)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Hvy(Dash)"
+        },
+        {
+          "name": "Auto-Stubber (Suppressive)",
+          "atk": 5,
+          "hit": "5+",
+          "dmg": "0/0",
+          "rules": "Hvy, Lethal 5+, Seek Light, Stun, Tor 1\""
+        },
+        {
+          "name": "Auto-Stubber (Sweeping)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Hvy(Dash), Tor 1\""
+        },
+        {
+          "name": "Fists",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Suppressive Fire: Whenever an enemy operative is visible to and within 3\" of this operative, if this operative has an Engage order and isn’t within control range of any other enemy operatives, subtract 1 from the Atk stat of that enemy operative’s weapons (to a minimum of 1).\nThis rule has no effect if this operative performed the Charge action during this turning point.",
+      "notes": ""
+    },
+    {
+      "id": "imp-spect-trp",
+      "opTypeId": "IMP-SPECT-TRP",
+      "name": "Spectre Squad Trooper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Trooper",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "SPECTRE SQUAD, IMPERIUM, ASTRA MILITARUM, TROOPER",
+      "weapons": [
+        {
+          "name": "Lascarbine",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Rending"
+        },
+        {
+          "name": "Lasrifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Hvy(Repos), Lethal 5+"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Cool-Headed: Once per turning point, one friendly SPECTRE SQUAD operative with this rule can interrupt an enemy operative’s activation with the Elite Fieldcraft faction rule for 0 Fieldcraft points (taking precedence over the normal rules).",
+      "notes": ""
+    },
+    {
+      "id": "imp-spect-vox",
+      "opTypeId": "IMP-SPECT-VOX",
+      "name": "Spectre Squad Vox-Operator",
+      "category": "po",
+      "cardType": "official",
+      "role": "Vox-Operator",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "SPECTRE SQUAD, IMPERIUM, ASTRA MILITARUM, VOX-OPERATOR",
+      "weapons": [
+        {
+          "name": "Lascarbine",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Rending"
+        },
+        {
+          "name": "Lasrifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Hvy(Repos), Lethal 5+"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Signal: **SUPPORT** Select one other friendly SPECTRE SQUAD operative (excluding VOX-RELAY BEACON) visible to this operative. Until the end of that operative’s next activation, add 1 to its APL stat.\n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-spect-bcn",
+      "opTypeId": "IMP-SPECT-BCN",
+      "name": "Spectre Squad Vox-Relay Beacon",
+      "category": "po",
+      "cardType": "official",
+      "role": "Vox-Relay Beacon",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 1,
+      "move": "0\"",
+      "save": "5+",
+      "wounds": 3,
+      "keywords": "SPECTRE SQUAD, IMPERIUM, ASTRA MILITARUM, VOX-RELAY BEACON",
+      "weapons": [],
+      "abilities": "Expendable: This operative cannot perform any actions other than Signal. It cannot counteract, retaliate or assist in a fight.\n\nThis operative cannot contest markers or areas of the killzone, and is ignored for your opponent’s kill/elimination op (when it’s incapacitated, and when determining your starting number of operatives).\nIt’s also ignored for victory conditions and scoring VPs if either require operatives to ‘escape’, ‘survive’ or be incapacitated by enemy operatives (if it escapes/survives/is incapacitated, determining how many operatives must escape/survive/be incapacitated, etc.).\n\nOperatives can move through this operative. Your opponent can ignore this operative’s control range at any time.\nWhenever a friendly SPECTRE SQUAD operative is performing the Shoot action and you’re selecting a valid target, you can ignore this operative’s control range.\nNote that control range wouldn’t be mutual when ignored.\n\nPre-Deploy: In the Set Up Operatives step, this operative can be set up outside of your drop zone. It must be set up in a location it can be placed, wholly within your territory and more than 2\" from markers and equipment terrain features.\n\nSignal: Select one other friendly SPECTRE SQUAD operative within 6\" of this operative. Until the end of that operative’s next activation, add 1 to its APL stat.\n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    }
+  ]
+}

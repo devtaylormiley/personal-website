@@ -1,0 +1,586 @@
+{
+  "id": "blooded",
+  "killteamId": "CHAOS-BLD",
+  "factionId": "CHAOS",
+  "imageUrl": "https://ktdash.app/img/killteams/CHAOS-BLD.webp",
+  "killTeam": {
+    "name": "Blooded",
+    "archetypes": "Infiltration, Seek And Destroy",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Blooded: You gain one Blooded token:\n\n- In the ready step of each strategy phase.\n- The first time an enemy operative is incapacitated during each turning point.\n- The first time a friendly operative is incapacitated within 6\" of an enemy operative during each turning point.\n\nAs a strategic gambit, you can assign any of your unassigned blooded tokens to friendly\nblooded operatives. Each operative cannot have more than one of your blooded tokens.  \n\nThen, if four or more friendly operatives in the killzone have one of your Blooded tokens,\nyou can select one of them to be under the GAZE OF THE GODS until the end of the\nturning point.  \n\nWhenever a friendly BLOODED operative has one of your Blooded tokens, its weapons\nhave the accurate 1 weapon rule. If that friendly BLOODED operative is under the GAZE\nOF THE GODS, you can retain one of your normal successes as a result of the Accurate\n1 weapon rule as a critical success instead.",
+    "ploys": [
+      {
+        "name": "Bitter Demise",
+        "description": "Whenever a friendly BLOODED operative is incapacitated, before it is removed from the killzone, roll 1D3; on a 3 (or 2+ if that friendly operative has one of your Blooded tokens), inflict damage equal to the result on one enemy operative visible to and within 2\" of that friendly operative.",
+        "type": "strategy"
+      },
+      {
+        "name": "Glory Kill",
+        "description": "Select one enemy operative. Until the end of the turning point, whenever a friendly BLOODED operative is shooting against, fighting against, or retaliating against that enemy operative, its weapons have the Ceaseless weapon rule, or Relentless if that shooting, fighting, or retaliating operative has one of your Blooded tokens.   **Ceaseless:** Can re-roll any or all results of one value (e.g. all results of 2)   **Relentless:** Can re-roll any or all Attack dice.",
+        "type": "strategy"
+      },
+      {
+        "name": "Malevolent Grit",
+        "description": "Whenever an operative is shooting a friendly BLOODED operative that has one of your Blooded tokens or is wholly within your opponent's territory, you can re-roll one of your defence dice.",
+        "type": "strategy"
+      },
+      {
+        "name": "Reckless Aspirant",
+        "description": "Whenever a friendly BLOODED operative that is wholly within your opponent's territory and does not have one of your Blooded tokens is shooting or fighting, its weapons have the Accurate 1 weapon rule.  \n\nWhenever a friendly BLOODED operative that has one of your blooded tokens is wholly within your opponent's territory, its weapons have the Punishing weapon rule.  \n**Punishing:** If you retain any critical successes, you can retain one of your fails as a normal success instead of discarding it.  \n**Accurate 1:** You can retain 1 Attack Die as a normal success without rolling it.",
+        "type": "strategy"
+      },
+      {
+        "name": "Callous Disregard",
+        "description": "Use this firefight ploy when a friendly BLOODED operative performs the Shoot action and you are selecting a valid target.\nHaving other friendly BLOODED operatives within an enemy operative's control range does not prevent that enemy operative from being selected.\nUntil the end of that action, whenever you discard an attack die as a fail, inflict damage equal to the die result on one friendly operative of your choice within control range of the target.",
+        "type": "firefight"
+      },
+      {
+        "name": "Dark Favour",
+        "description": "Use this firefight ploy when a friendly BLOODED operative that has one of your Blooded tokens is selected as the valid target of a shoot action or to fight against during the Fight action. Select one other friendly BLOODED operative visible to and within 3\" of that first friendly operative to become the valid target or to be fought against (as appropriate) instead, even if it normally would not be valid for this. If it is the Fight action, treat that other operative as being within the fighting operative's control range for the duration of that action. If it is the Shoot action, that other operative is only in cover or obscured if the original target was.  \n This ploy has no effect if it is the shoot action and the ranged weapon has the Blast or Torrent special rule.",
+        "type": "firefight"
+      },
+      {
+        "name": "Moment Of Repute",
+        "description": "Use this firefight ploy during the activation fo a friendly BLOODED operative that is under the GAZE OF THE GODS before or after it performs an action.  \n\nUntil the end of that operative's activation, add 1 to its APL stat.",
+        "type": "firefight"
+      },
+      {
+        "name": "Reward Earned",
+        "description": "Use this firefight ploy when an enemy operative is incapacitated by a friendly BLOODED operative within 2\" of it that has one of your Blooded tokens.  \n\nYou gain one Blooded token.",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A BLOODED killteam is composed of:\n- 1 Blooded Chieftan operative with one of the following options:\n  - Autopistol or laspistol, chainsword or power weapon\n  - Bolt Pistol, chainsword\n  - Boltgun, bayonet\n  - Plasma pistol, improvised Blade *(2)*\n- 9 Blooded operatives selected from the following list:\n  - Brimstone Grenadier\n  - Butcher\n  - Commsman\n  - Corpseman\n  - Flenser\n  - Gunner with bayonet and Flamer *(1)*\n  - Gunner with bayonet and Grenade Launcher *(1)*\n  - Gunner with bayonet and Meltagun *(1)*\n  - Gunner with bayonet and plasma gun *(1,2)*\n  - Sharpshooter *(1)*\n  - Thug\n  - Trench Sweeper\n  - Trooper\n- 4 Blooded operatives selected from the following list:\n - Enforcer (counts as two selections)\n - Ogryn (counts as two selections)\n - Trooper\n\nOther than Trooper operatives your Kill Team can only include each operative on this list once.  \n\n**(1):** You cannot select more than three of these operatives combined  \n\n**(2):** You cannot select this option and this operative. In other words you can only have one operative with a plasma weapon.",
+    "description": "Many Astra Militarum troops have turned to Chaos over the centuries, including entire regiments of the Astra Militarum's Imperial Army predecessors that followed the Warmaster Horus into battle against the Imperium during the Horus Heresy.\n  \n  \n\nThese Traitors represent the primary mortal troops available to the forces of Chaos, now known as the \"Traitoris Militarum\" in High Gothic to the defenders of the Imperium. Even ten millennia later, Chaos Lords are known to attract these followers of Chaos into their warbands and personal armies, which vary greatly in both size and strength."
+  },
+  "operatives": [
+    {
+      "id": "chaos-bld-chf",
+      "opTypeId": "CHAOS-BLD-CHF",
+      "name": "Blooded Traitor Chieftain",
+      "category": "po",
+      "cardType": "official",
+      "role": "Traitor Chieftain",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "BLOODED, CHAOS, CHIEFTAIN, LEADER",
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Boltgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Laspistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Plasma Pistol (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Rng 8\", Prc1"
+        },
+        {
+          "name": "Plasma Pistol (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Chainsword",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        },
+        {
+          "name": "Improvised Blade",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Blooded Icon: Once per turning point, when a friendly\nBLOODED operative that has one of your Blooded tokens is\nincapacitated, if this operative is within 6\" of it, you can regain\nthat token.\n\nLead With Strength: Whenever this operative has one of your\r Blooded tokens or is wholly within your opponent's territory\r treat it as if it is under the GAZE OF THE GODS.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-bld-grn",
+      "opTypeId": "CHAOS-BLD-GRN",
+      "name": "Blooded Traitor Brimstone Grenadier",
+      "category": "po",
+      "cardType": "official",
+      "role": "Traitor Brimstone Grenadier",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "BLOODED, CHAOS, BRIMSTONE GRENADIER",
+      "weapons": [
+        {
+          "name": "Diabolyk Bomb",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/3",
+          "rules": "Rng 6\", Blast 2\", Dev2, Lim1, Hvy(Repos), Prc1, Sat"
+        },
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Frag Grenade",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rng 6\", Blast 2\", Sat"
+        },
+        {
+          "name": "Krak Grenade",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 6\", Piercing 1, Sat"
+        }
+      ],
+      "abilities": "Explosive Demise: If this operative is incapacitated, before it is removed from the killzone, you can use\r this rule. If you do, roll 2d6, or 1d6 if this operative is within control\r range of an enemy operative. If any result is a 4+, inflict d3+2 damage\r on each operative visible 2 and within 2\" of this operative. If this\r operative has not used its Diabolyk Bomb during the battle, inflict\r d6+2 damage instead.\n\nGrenadier: This operative can use frag and krak grenades (See\nuniversal equipment). Doing so does not count towards any limited\nuses you have (i.e, if you also select those grenades from equipment\nfor other operatives. Whenever it is doing so, improve the Hit stat of\nthat weapon by 1.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-bld-but",
+      "opTypeId": "CHAOS-BLD-BUT",
+      "name": "Blooded Traitor Butcher",
+      "category": "po",
+      "cardType": "official",
+      "role": "Traitor Butcher",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "BLOODED, CHAOS, BUTCHER",
+      "weapons": [
+        {
+          "name": "Power Weapon and Cleaver",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Ceaseless, Lethal 5+, *Blood Offering"
+        }
+      ],
+      "abilities": "*Blood Offering: Whenever this operative is fighting or retaliating with\nthis weapon, the first time you strike with a critical success during\nthat sequence, you gain one Blooded token.\n\nUnholy Sustenance: Whenever this operative is fighting or retaliating,\nif it incapacitates the enemy operative in that sequence, it regains d3\nlost wounds. This is cumulative with the Symbols of Bloody Worship\nEquipment.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-bld-com",
+      "opTypeId": "CHAOS-BLD-COM",
+      "name": "Blooded Traitor Commsman",
+      "category": "po",
+      "cardType": "official",
+      "role": "Traitor Commsman",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "BLOODED, CHAOS, COMMSMAN",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Sacrilegeous Actuation: You gain one Blooded token.  \n\nThis operative cannot perform this action while within control range of an enemy operative, or if it does not have one of your Blooded tokens.\n\nSignal: **SUPPORT:** Select one other friendly BLOODED operative (excluding OGRYN) visible to and within 6\" of this operative. Until the end of that operative's next activation add 1 to its APL stat.  \n\nThis operative cannot perform this action while within control range of an enemy operative",
+      "notes": ""
+    },
+    {
+      "id": "chaos-bld-crps",
+      "opTypeId": "CHAOS-BLD-CRPS",
+      "name": "Blooded Traitor Corpseman",
+      "category": "po",
+      "cardType": "official",
+      "role": "Traitor Corpseman",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "BLOODED, CHAOS, CORPSEMAN",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Stimm Needle",
+          "atk": 3,
+          "hit": "5+",
+          "dmg": "1/4",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Regular Dosage: At the end of the select operative step, if this operative is selected for deployment, you can select one other friendly BLOODED operative to gain a STIMM rule for the battle (Excluding rejuvenated).  \n\n**Stimm Rules**\n\n- Rejuvenated: The operative regains 2d3 lost wounds.\n- Enraged: The operative's melee weapons have the relentless weapon rule\n- Fortified: Whenever an attack die inflicts damage of 3 or more on the operative, roll one d6; on a 5+ subtract 1 from the inflicted damage.\n\n\nStimms: Select one friendly BLOODED operative within this operative' control range, then select the Rejuvenated STIMM RULE or one other STIMM RULE for that operative to have for that battle.\nYou cannot select each STIMM rule for each operative more than once per battle.  \n\nThis operative cannot perform this action while within control range of an enemy operative",
+      "notes": ""
+    },
+    {
+      "id": "chaos-bld-enf",
+      "opTypeId": "CHAOS-BLD-ENF",
+      "name": "Blooded Traitor Enforcer",
+      "category": "po",
+      "cardType": "official",
+      "role": "Traitor Enforcer",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 9,
+      "keywords": "BLOODED, CHAOS, ENFORCER",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Power Fist",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "5/7",
+          "rules": "Brutal"
+        }
+      ],
+      "abilities": "Enforce: Select one other friendly BLOODED operative visible to and within 3\" of this operative.\nThat operative can immediately perform a 1AP action for free, but it cannot move more than 2\" during that action.\nIf the selected operative is a COMMSMAN, it cannot perform the SACRILIGEOUS ACTUATION or SIGNAL action.  \n\nThis operative cannot perform this action while within control range of an enemy operative\n\nGrueling Disciplinarian: Whenever a friendly BLOODED operative is within 6\" of this operative, you can ignore any changes to that operative's stats from being injured (Including its weapons' stats). Whenever a friendly BLOODED operative is activated within 6\" of this operative, you can ignore any changes to that operative's stats from being injured until the end of its activation (including its weapons' stats).",
+      "notes": ""
+    },
+    {
+      "id": "chaos-bld-fln",
+      "opTypeId": "CHAOS-BLD-FLN",
+      "name": "Blooded Traitor Flenser",
+      "category": "po",
+      "cardType": "official",
+      "role": "Traitor Flenser",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "BLOODED, CHAOS, FLENSER",
+      "weapons": [
+        {
+          "name": "Skinning Blades",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Ceaseless, *Stalk"
+        }
+      ],
+      "abilities": "*Stalk: Whenever this operative is fighting or retaliating with this weapon, if light or heavy terrain is within its control range, this weapon has the Lethal 5+ rule.\n\nWretched: This operative can perform the charge action while it has a Conceal order. If this operative is incapacitated during the Fight action, you can strike with one of your unresolved successes before it is removed from the killzone.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-bld-gnr",
+      "opTypeId": "CHAOS-BLD-GNR",
+      "name": "Blooded Traitor Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Traitor Gunner",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "BLOODED, CHAOS, GUNNER",
+      "weapons": [
+        {
+          "name": "Flamer",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 8\", Sat, Tor 2\""
+        },
+        {
+          "name": "Grenade Launcher (Frag)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/4",
+          "rules": "Blast 2\""
+        },
+        {
+          "name": "Grenade Launcher (Krak)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Meltagun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "6/3",
+          "rules": "Rng 6\", Dev4, Prc2"
+        },
+        {
+          "name": "Plasma Gun (Standard)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/6",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Plasma Gun (Supercharge)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "5/6",
+          "rules": "Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "chaos-bld-ogr",
+      "opTypeId": "CHAOS-BLD-OGR",
+      "name": "Blooded Traitor Ogryn",
+      "category": "po",
+      "cardType": "official",
+      "role": "Traitor Ogryn",
+      "points": 40,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 16,
+      "keywords": "BLOODED, CHAOS, OGRYN",
+      "weapons": [
+        {
+          "name": "Power Maul and Mutant Claw",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/6",
+          "rules": "Rnd, Shock"
+        }
+      ],
+      "abilities": "Avalanche Of Muscle: Whenever this operative endts its move during the Charge action, you can inflict 1D3 damage on one enemy operative within its control range.\n\nBrute: Whenever an opponent is selecting a valid target, if this operative has a conceal order, it cannot use Light Terrain for cover. While this can allow this operative to be targeted (assuming it is visible) it does not remove its cover save (if any).\n\nChem Enhanced: You can ignore any changes to this operatives APL stat and it is not affected by enemy operatives' Shock and Stun rules.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-bld-ss",
+      "opTypeId": "CHAOS-BLD-SS",
+      "name": "Blooded Traitor Sharpshooter",
+      "category": "po",
+      "cardType": "official",
+      "role": "Traitor Sharpshooter",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "BLOODED, CHAOS, SHARPSHOOTER",
+      "weapons": [
+        {
+          "name": "Long-Las (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Long-Las (Stationary)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev1, Hvy(Dash), Silent"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "A Name Whispered In Blood: **STRATEGIC GAMBIT** in the first turning point.  \n\nSelect one enemy operative. Whenever this operative is shooting that enemy operative treat this operative as if it has one of your Blooded tokens and is under the GAZE OF THE GODS.\n\nCamo Cloak: Whenever an operative is shooting this operative, if you can retain any cover saves, you can retain one additional cover save. This is not cumulative with improved cover saves from vantage terrain.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-bld-thug",
+      "opTypeId": "CHAOS-BLD-THUG",
+      "name": "Blooded Traitor Thug",
+      "category": "po",
+      "cardType": "official",
+      "role": "Traitor Thug",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "BLOODED, CHAOS, THUG",
+      "weapons": [
+        {
+          "name": "Heavy Club",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/4",
+          "rules": "Brutal"
+        }
+      ],
+      "abilities": "Tough: Whenever this operative is fighting or retaliating, or an operative is shooting it, normal damage of 3 or more inflicts 1 less damage on it.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-bld-trs",
+      "opTypeId": "CHAOS-BLD-TRS",
+      "name": "Blooded Traitor Trench Sweeper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Traitor Trench Sweeper",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 9,
+      "keywords": "BLOODED, CHAOS, TRENCH SWEEPER",
+      "weapons": [
+        {
+          "name": "Shotgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Rng 6\""
+        },
+        {
+          "name": "Bayonet and Shield",
+          "atk": 3,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "*Shield"
+        }
+      ],
+      "abilities": "*Shield: Whenever this operative is fighting or retaliating with this weapon, each of your blocks can be allocated to block two unresolved successes (Instead of one).\n\nShielding: Whenever this operative is activated, you can use this rule.\nIf you do, until the start of this operative's next activation:\n\n- Subtract 2\" from its Move stat\n- Whenever an operative is shooting this operative, you can re-roll any of your defence dice\n",
+      "notes": ""
+    },
+    {
+      "id": "chaos-bld-trp",
+      "opTypeId": "CHAOS-BLD-TRP",
+      "name": "Blooded Traitor Trooper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Traitor Trooper",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "BLOODED, CHAOS, TROOPER",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Group Activation: Whenever this operative is expended, you must then activate any other ready friendly BLOODED TROOPPER operative (if able) before your opponent activates.\nWhen that other operative is expended, your opponent then activates as normal (in other words, you cannot activate more than two operatives as specified with this rule).",
+      "notes": ""
+    }
+  ]
+}

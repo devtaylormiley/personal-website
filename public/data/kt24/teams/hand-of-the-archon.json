@@ -1,0 +1,419 @@
+{
+  "id": "hand-of-the-archon",
+  "killteamId": "AEL-HOTA",
+  "factionId": "AEL",
+  "imageUrl": "https://ktdash.app/img/killteams/AEL-HOTA.webp",
+  "killTeam": {
+    "name": "Hand Of The Archon",
+    "archetypes": "Recon, Seek And Destroy",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Power From Pain: After a friendly HAND OF THE ARCHON operative performs an action, it gains one of your Pain tokens if:\n\n- An enemy operative was injured during that action, but was not incapacitated.\n- An enemy operative was incapacitated during that action. If that enemy operative had a Wounds stat of 12 or more, that friendly operative gains two of your Pain tokens instead.\n\nYou can spend friendly operatives' Pain tokens on the invigorations below when the \"when\" condition is met.\nYou cannot use more than one invigoration per activation or counteraction, except Stimulated Senses, which can be used in addition to other invigorations.  \n\n**Dark Animus**\n\n- When: During the operative’s activation, before or after it performs an action.\n- Effect: Until the start of the operative’s next activation, add 1 to its APL stat.\n\n**Accelerated Rejuvenation**\n\n- When: During the operative’s activation or counteraction, before or after it performs an action.\n- Effect: The operative regains D3+1 lost wounds.\n\n**Vitalised Surge**\n\n- When: After the operative incapacitates an enemy operative and that enemy operative is removed from the killzone.\n- Effect: The operative can immediately perform a free Dash action, even if it’s performed an action that prevents it from performing the Dash action.\n\n**Stimulated Senses**\n\n- When: After rolling your attack or defence dice for the operative.\n- Effect: You can re-roll any of your dice results of one result (e.g. results of 2).",
+    "ploys": [
+      {
+        "name": "Blade Artists",
+        "description": "Friendly HAND OF THE ARCHON operatives’ melee weapons have the Rending weapon rule.  \n**Rending:** If you retain any critical hits, retain 1 normal hit as a critical hit instead.",
+        "type": "strategy"
+      },
+      {
+        "name": "Denizens Of Night",
+        "description": "Whenever an enemy operative is shooting a friendly HAND OF THE ARCHON operative that’s more than 2\" from enemy operatives, if Heavy or Light terrain is intervening, or any part of that friendly operative’s base is underneath Vantage terrain, you can re-roll one of your defence dice.",
+        "type": "strategy"
+      },
+      {
+        "name": "From Darkness, Death",
+        "description": "Whenever a friendly HAND OF THE ARCHON operative is activated, before you determine its order, you can select one enemy operative that friendly operative isn’t a valid target for.\nUntil the end of that activation, the first time that friendly operative is shooting against or fighting against that enemy operative, you can retain one of your normal successes as a critical success instead.",
+        "type": "strategy"
+      },
+      {
+        "name": "Merciless Sadists",
+        "description": "Whenever a friendly HAND OF THE ARCHON operative is shooting against or fighting against a wounded enemy operative, that friendly operative’s weapons have the Balanced weapon rule.  \n**Balanced:** Can re-roll one Attack die.",
+        "type": "strategy"
+      },
+      {
+        "name": "Cruel Deception",
+        "description": "Use this firefight ploy during a friendly HAND OF THE ARCHON operative’s activation, before or after it performs an action. During that activation, that operative can perform the Fall Back action for 1 less AP.",
+        "type": "firefight"
+      },
+      {
+        "name": "Devious Scheme",
+        "description": "Use this firefight ploy after an opponent uses a firefight ploy (excluding one that costs 0CP).\nThe next time they would use that ploy, they must spend 1 additional CP to do so (at which point this effect ends).\nYou cannot use this ploy again during the battle until its effect has ended.",
+        "type": "firefight"
+      },
+      {
+        "name": "Heinous Arrogance",
+        "description": "Use this firefight ploy when it’s your turn to activate a friendly operative. You can skip that activation.",
+        "type": "firefight"
+      },
+      {
+        "name": "Prey On The Wounded",
+        "description": "Use this firefight ploy after rolling your attack dice for a friendly HAND OF THE ARCHON operative, if it’s shooting against or fighting against a wounded enemy operative. You can re-roll any of your attack dice.",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A HAND OF THE ARCHON KillTeam is composed of:\n\n- 1 HAND OF THE ARCHON ARCHSYBARITE operative with one of the following options:\n  - Blast pistol; venom blade\n  - Splinter pistol; venom blade\n  - Splinter pistol; agoniser\n  - Splinter pistol; power weapon\n  - Splinter rifle; array of blades\n- 8 HAND OF THE ARCHON operatives selected from the following list:\n  - AGENT\n  - CRIMSON DUELLIST\n  - DISCIPLE OF YAELINDRA\n  - ELIXICANT\n  - FLAYER\n  - GUNNER with one of the following options:\n    - Blaster; array of blades\n    - Shredder; array of blades\n  - HEAVY GUNNER with one of the following options:\n    - Dark lance; array of blades\n    - Splinter cannon; array of blades\n  - SKYSPLINTER ASSASSIN\n\nOther than AGENT operatives, your kill team can only include each operative on this list once.  \n\nYour kill team can only include up to two darklight weapons (blast pistol, blaster and dark lance are darklight weapons).",
+    "description": "The Archons of the Drukhari Kabals are forever plotting to expand their sprawling criminal empires. Should their\nschemes require a subtle touch, they may turn to Hand of the Archon kill teams. These bands of assassins, thieves,\ntorturers and worse wield an array of esoteric and macabre weapons to aid them in their diabolical missions."
+  },
+  "operatives": [
+    {
+      "id": "ael-hota-kas",
+      "opTypeId": "AEL-HOTA-KAS",
+      "name": "Hand Of The Archon Kabalite Archsybarite",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kabalite Archsybarite",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 9,
+      "keywords": "HAND OF THE ARCHON, AELDARI, DRUKHARI, LEADER, ARCHSYBARITE",
+      "weapons": [
+        {
+          "name": "Blast Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Prc2"
+        },
+        {
+          "name": "Splinter Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rng 8\", Lethal 5+"
+        },
+        {
+          "name": "Splinter Rifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Lethal 5+"
+        },
+        {
+          "name": "Agoniser",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Brutal, Lethal 5+, Shock"
+        },
+        {
+          "name": "Array Of Blades",
+          "atk": 3,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        },
+        {
+          "name": "Venom Blade",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Lethal 4+"
+        }
+      ],
+      "abilities": "Cunning: In the Gambit step of each Strategy phase, if you pass at the first opportunity, you gain 1CP. Ignore each STRATEGIC GAMBIT from the mission pack (if any) when determining this.\n\nRifles: Whenever a friendly HAND OF THE ARCHON operative is shooting with a splinter rifle during an activation in which it has not performed the Charge, Fall Back or Reposition action,\nthat weapon has the Accurate 1 weapon rule. Note that operative isn’t restricted from performing those actions after shooting.\n\nTorturous Vision: Once during each of this operative’s activations, if it doesn’t have any of your Pain tokens when it performs either the Fight or Shoot action, it can gain one of your Pain tokens when you select a valid target or an enemy operative to fight against.",
+      "notes": ""
+    },
+    {
+      "id": "ael-hota-kag",
+      "opTypeId": "AEL-HOTA-KAG",
+      "name": "Hand Of The Archon Kabalite Agent",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kabalite Agent",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "HAND OF THE ARCHON, AELDARI, DRUKHARI, AGENT",
+      "weapons": [
+        {
+          "name": "Splinter Rifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Lethal 5+"
+        },
+        {
+          "name": "Array Of Blades",
+          "atk": 3,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Rifles: Whenever a friendly HAND OF THE ARCHON operative is shooting with a splinter rifle during an activation in which it has not performed the Charge, Fall Back or Reposition action,\nthat weapon has the Accurate 1 weapon rule. Note that operative isn’t restricted from performing those actions after shooting.\n\nSadistic Competition: Once per turning point, when a friendly HAND OF THE ARCHON operative gains one of your Pain tokens, one friendly HAND OF THE ARCHON AGENT operative that doesn’t have one of your Pain tokens can also gain one.",
+      "notes": ""
+    },
+    {
+      "id": "ael-hota-kcd",
+      "opTypeId": "AEL-HOTA-KCD",
+      "name": "Hand Of The Archon Kabalite Crimson Duellist",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kabalite Crimson Duellist",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "HAND OF THE ARCHON, AELDARI, DRUKHARI, CRIMSON DUELLIST",
+      "weapons": [
+        {
+          "name": "Splinter Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rng 8\", Lethal 5+"
+        },
+        {
+          "name": "Razorflail",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "4/5",
+          "rules": "Brutal, *Tangle"
+        }
+      ],
+      "abilities": "*Tangle: Whenever this operative is fighting or retaliating with this weapon, each of your blocks can be allocated to block two unresolved successes (instead of one).\n\nBrutal Display: Once per turning point, when this operative incapacitates an enemy operative within its control range, you can select one other enemy operative visible to and within 6\" of either this operative or the incapacitated\nenemy operative. Until the start of the next turning point, that other enemy operative cannot control markers or perform the Pick Up Marker or mission actions.\n\nCrimson Duellist: This operative can perform two Fight actions during its activation.",
+      "notes": ""
+    },
+    {
+      "id": "ael-hota-kdoy",
+      "opTypeId": "AEL-HOTA-KDOY",
+      "name": "Hand Of The Archon Kabalite Disciple Of Yaelindra",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kabalite Disciple Of Yaelindra",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "HAND OF THE ARCHON, AELDARI, DRUKHARI, DISCIPLE OF YAELINDRA",
+      "weapons": [
+        {
+          "name": "Stinger Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Rng 8\", Lethal 5+, *Stinger"
+        },
+        {
+          "name": "Array Of Blades",
+          "atk": 3,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Stinger: Whenever an enemy operative is incapacitated by this weapon, before it’s removed from the killzone, inflict D3 damage on each other operative visible to and within 2\" of it.\nEach operative subsequently incapacitated as a result of this weapon rule will cause this to happen again.\n\nTorment Grenade: Select one enemy operative visible to and within 6\" of this operative. That operative and each other operative within 1\" of it takes a poison test.  \n\nFor an operative to take a poison test, roll one D6, adding 1 to the result if that operative has a Save stat of 4+ or worse:\non a 3+, inflict D3 damage on that operative and it gains one of your Poison tokens (if it does not already have one). Whenever an operative that has one of your Poison tokens is activated, inflict D3 damage on it.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "ael-hota-kelx",
+      "opTypeId": "AEL-HOTA-KELX",
+      "name": "Hand Of The Archon Kabalite Elixicant",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kabalite Elixicant",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "HAND OF THE ARCHON, AELDARI, DRUKHARI, ELIXICANT",
+      "weapons": [
+        {
+          "name": "Splinter Rifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Lethal 5+"
+        },
+        {
+          "name": "Stim-Needler",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "0/0",
+          "rules": "Rng 3\", Lethal 3+, Stun"
+        },
+        {
+          "name": "Array Of Blades",
+          "atk": 3,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Administer Drug: Select one friendly HAND OF THE ARCHON operative visible to and within 3\" of this operative, then select one of the following for that friendly operative:\n\n- It regains 2D3 lost wounds.\n- Select a different COMBAT DRUG rule for it to have for the battle (this replaces its previous one).\n\nThis operative cannot perform this action while within control range of an enemy operative.\n\nCombat Drugs: At the end of the Select Operatives step, if this operative is selected for deployment, select one of the following COMBAT DRUG rules for friendly HAND OF THE ARCHON operatives to have for the battle:\r \r - **Painbringer:** Whenever an attack dice inflicts damage of 3 or more on this operative, roll one D6: on a 6, subtract 1 from that inflicted damage.\r - **Adrenalight:** In the Ready step of each Strategy phase, you can select one friendly operative that has this COMBAT DRUG to gain one of your Pain tokens.\r - **Hypex:** You can ignore any changes to this operative’s Move stat from being injured.\r \n\nRifles: Whenever a friendly HAND OF THE ARCHON operative is shooting with a splinter rifle during an activation in which it has not performed the Charge, Fall Back or Reposition action,\nthat weapon has the Accurate 1 weapon rule. Note that operative isn’t restricted from performing those actions after shooting.",
+      "notes": ""
+    },
+    {
+      "id": "ael-hota-kflay",
+      "opTypeId": "AEL-HOTA-KFLAY",
+      "name": "Hand Of The Archon Kabalite Flayer",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kabalite Flayer",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "HAND OF THE ARCHON, AELDARI, DRUKHARI, FLAYER",
+      "weapons": [
+        {
+          "name": "Pain Sculptors",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Ceaseless, *Flay"
+        }
+      ],
+      "abilities": "*Flay: Whenever this operative is using this weapon, the first time you strike with a critical success during that sequence, you can select one friendly HAND OF THE ARCHON operative within 6\" of it to gain one of your Pain tokens.\n\nInsensible To Pain: Normal and Critical Dmg of 3 or more inflicts 1 less damage on this operative.",
+      "notes": ""
+    },
+    {
+      "id": "ael-hota-kgnr",
+      "opTypeId": "AEL-HOTA-KGNR",
+      "name": "Hand Of The Archon Kabalite Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kabalite Gunner",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "HAND OF THE ARCHON, AELDARI, DRUKHARI, GUNNER",
+      "weapons": [
+        {
+          "name": "Blaster",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Prc2"
+        },
+        {
+          "name": "Shredder",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rnd, Tor 2\""
+        },
+        {
+          "name": "Array Of Blades",
+          "atk": 3,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "ael-hota-khgnr",
+      "opTypeId": "AEL-HOTA-KHGNR",
+      "name": "Hand Of The Archon Kabalite Heavy Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kabalite Heavy Gunner",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "HAND OF THE ARCHON, AELDARI, DRUKHARI, HEAVY GUNNER",
+      "weapons": [
+        {
+          "name": "Dark Lance",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "6/7",
+          "rules": "Hvy(Dash), Prc2"
+        },
+        {
+          "name": "Splinter Cannon (Focused)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Hvy(Dash), Lethal 5+"
+        },
+        {
+          "name": "Splinter Cannon (Sweeping)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Hvy(Dash), Lethal 5+, Tor 1\""
+        },
+        {
+          "name": "Array Of Blades",
+          "atk": 3,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "ael-hota-ksa",
+      "opTypeId": "AEL-HOTA-KSA",
+      "name": "Hand Of The Archon Kabalite Skysplinter Assassin",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kabalite Skysplinter Assassin",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "7\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "HAND OF THE ARCHON, AELDARI, DRUKHARI, SKYSPLINTER ASSASSIN",
+      "weapons": [
+        {
+          "name": "Razorwing",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "1/2",
+          "rules": "Sat, Seek, Silent"
+        },
+        {
+          "name": "Shardcarbine",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "2/2",
+          "rules": "Dev 2, Lethal 5+"
+        },
+        {
+          "name": "Array Of Blades",
+          "atk": 3,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "Mark: Select one enemy operative visible to this operative. Until the end of the turning point, whenever this operative is shooting that enemy operative you can use this effect. If you do:\n\n- This operative’s ranged weapons have the Seek Light weapon rule.\n- That enemy operative cannot be obscured.\n\nThis operative cannot perform this action while within control range of an enemy operative.\n\nMerciless Hunter: If this operative does not perform the Mark unique action (see right) during its activation, it can perform two Shoot actions during its activation, but a razorwing must be selected for one (and only one) of those actions.\n\nOmen: In the Select Operatives step, when you’re selecting equipment, you can select one enemy operative or one other friendly HAND OF THE ARCHON operative (reveal your selection when you reveal equipment).  \n\nWhenever attack or defence dice are rolled for that operative:\n\n- If it’s an enemy operative, your opponent must re-roll their dice results of 6.\n- If it’s a friendly operative, you can re-roll any of your dice results of 1.\n",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,682 @@
+{
+  "id": "hunter-clade",
+  "killteamId": "IMP-HC",
+  "factionId": "IMP",
+  "imageUrl": "https://ktdash.app/img/killteams/IMP-HC.webp",
+  "killTeam": {
+    "name": "Hunter Clade",
+    "archetypes": "Recon, Seek And Destroy",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Doctrina Imperatives: *At the end of the Select Operatives step, select one DOCTRINA IMPERATIVE to be a Primary Mode for your kill team until the end of the battle (note that selecting a Primary Mode doesn’t automatically give you the effects of that DOCTRINA IMPERATIVE for the battle; you must still select it as a STRATEGIC GAMBIT, as below).*  \n**STRATEGIC GAMBIT**  \n\nSelect a DOCTRINA IMPERATIVE for friendly HUNTER CLADE operatives to have until the Ready step of the next Strategy phase.\nEach DOCTRINA IMPERATIVE has both an Optimisation and a Deprecation rule. Both are in effect while your kill team has that DOCTRINA IMPERATIVE.  \n  \n\n**Protector Imperative**\n- Optimisation: Friendly HUNTER CLADE operatives’ ranged weapons have the Ceaseless weapon rule.\n- Deprecation: Worsen the Hit stat of friendly HUNTER CLADE operatives’ melee weapons by 1. This isn’t cumulative with being injured.\n\n**Conqueror Imperative**\n- Optimisation: Friendly HUNTER CLADE operatives’ melee weapons have the Ceaseless weapon rule.\n- Deprecation: Worsen the Hit stat of friendly HUNTER CLADE operatives’ ranged weapons by 1. This isn’t cumulative with being injured.\n\n**Bulwark Imperative**\n- Optimisation: Normal Dmg of 3 or more inflicts 1 less damage on HUNTER CLADE friendly operatives.\n- Deprecation: Subtract 1\" from the Move stat of friendly HUNTER CLADE operatives.\n\n**Aggressor Imperative**\n- Optimisation: Add 1\" to the Move stat of friendly HUNTER CLADE operatives.\n- Deprecation: Worsen the Save stat of friendly HUNTER CLADE operatives by 1.\n\n**Neutral Imperative**\n- Optimisation: None.\n- Deprecation: None.\n",
+    "ploys": [
+      {
+        "name": "Accelerant Agents",
+        "description": "During each friendly HUNTER CLADE RUSTSTALKER operative’s activation, it can perform two Fight actions, and one of them can be free.",
+        "type": "strategy"
+      },
+      {
+        "name": "Debilitating Irradiation",
+        "description": "Whenever an enemy operative is shooting against, fighting against or retaliating against a friendly HUNTER CLADE VANGUARD operative, if that enemy operative is under the effects of the Rad-Saturation rule\n(see VANGUARD operatives), subtract 1 from the Normal Dmg stat of its weapons (to a minimum of 3).",
+        "type": "strategy"
+      },
+      {
+        "name": "Neurostatic Interference",
+        "description": "Whenever an enemy operative within 6\" of a friendly HUNTER CLADE INFILTRATOR operative is shooting, fighting or retaliating, your opponent cannot re-roll their attack dice.",
+        "type": "strategy"
+      },
+      {
+        "name": "Scouting Protocol",
+        "description": "Each friendly HUNTER CLADE RANGER operative that has a Conceal order and is more than 6\" from enemy operatives can immediately perform a free Dash action in an order of your choice. You cannot use this ploy during the first turning point.",
+        "type": "strategy"
+      },
+      {
+        "name": "Control Edict",
+        "description": "Use this firefight ploy when it’s your turn to activate a friendly operative. Select one friendly HUNTER CLADE LEADER operative and one other ready friendly HUNTER CLADE operative visible to and within 3\" of that LEADER operative;\nactivate one of them as normal. When that first friendly operative you activate is expended, you can activate the other friendly operative before your opponent activates.\nWhen that other operative is expended, your opponent then activates as normal. Whenever you use this ploy, you cannot select more than one HUNTER CLADE SICARIAN operative.",
+        "type": "firefight"
+      },
+      {
+        "name": "Command Override",
+        "description": "Use this firefight ploy when you activate a friendly HUNTER CLADE operative. Select a DOCTRINA IMPERATIVE for that operative to have instead of its current one (if any) until the Ready step of the next Strategy phase.",
+        "type": "firefight"
+      },
+      {
+        "name": "Omnissiah's Imperative",
+        "description": "Use this firefight ploy during a friendly HUNTER CLADE operative’s activation. Alternatively, use it when an enemy operative is shooting a friendly HUNTER CLADE operative, at the end of the Roll Attack Dice step. Until the Ready step of the next Strategy phase, that friendly operative has an additional rule determined by its current DOCTRINA IMPERATIVE as follows:  - **Protector:** This operative's ranged weapons have the Severe weapon rule. - **Conqueror:** Whenever this operative is fighting, after resolving your first attack dice during that sequence, you can immediately resolve another (before your opponent). - **Bulwark: Improve this operative’s Save stat by 1. In addition, whenever an operative is shooting this operative, you can collect and roll an additional defence dice. If you use this ploy during a Shoot action, this operative’s Save stat is changed immediately (this takes precedence over the core rules). - **Aggressor: You can ignore the first vertical distance of 2\" this operative moves during one climb up. - **Neutral: None.  Note that you can use this ploy after rolling attack or defence dice for this operative, or before or after retaining or re-rolling those dice.",
+        "type": "firefight"
+      },
+      {
+        "name": "Scrap Code Overload",
+        "description": "Use this firefight ploy when a friendly HUNTER CLADE INFILTRATOR operative is activated. Alternatively, use this firefight ploy when a friendly HUNTER CLADE INFILTRATOR operative, or an enemy operative within 3\" of that friendly\noperative, would perform the Pick Up Marker or a mission action (excluding Operate Hatch). Until the start of that friendly operative’s next activation, whenever determining control of a marker, treat the total APL stat of enemy\noperatives that contest it as 1 lower if at least one of those enemy operatives is within 3\" of that friendly operative. Note this isn’t a change to the APL stat, so any changes are cumulative with this, and this can change control of a marker before performing the action.",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A HUNTER CLADE killteam is composed of:\r \r - 1 HUNTER CLADE operative selected from the following list:\r   - SICARIAN INFILTRATOR PRINCEPS with one option from each of the following:\r     - Flechette blaster or stubcarbine\r     - Power weapon or taser goad\r   - SICARIAN RUSTSTALKER PRINCEPS\r   - SKITARII RANGER ALPHA with one of the following options:\r     - Galvanic rifle; gun butt\r       - Master-crafted radium pistol; power weapon  \r     Or one option from each of the following:\r     - Arc pistol or phosphor blast pistol\r     - Arc maul or taser goad\r   - SKITARII VANGUARD ALPHA with one of the following options:\r     - Radium carbine; gun butt\r     - Master-crafted radium pistol; power weapon  \r     Or one option from each of the following:\r     - Arc pistol or phosphor blast pistol\r     - Arc maul or taser goad\r - 9 HUNTER CLADE operatives selected from the following list:\r   - SICARIAN INFILTRATOR WARRIOR* with one option from each of the following:\r     - Flechette blaster or stubcarbine\r     - Power weapon or taser goad\r   - SICARIAN RUSTSTALKER WARRIOR* with one of the following options:\r     - Chordclaw & transonic razor\r     - Transonic blades\r   - SKITARII RANGER DIKTAT\r   - SKITARII RANGER GUNNER* with gun butt and one of the following options:\r     - Arc rifle, plasma caliver or transuranic arquebus\r   - SKITARII RANGER SURVEYOR\r   - SKITARII RANGER WARRIOR\r   - SKITARII VANGUARD DIKTAT\r   - SKITARII VANGUARD GUNNER* with gun butt and one of the following options:\r     - Arc rifle, plasma caliver or transuranic arquebus    \r   - SKITARII VANGUARD SURVEYOR\r   - SKITARII VANGUARD WARRIOR\r \r \r *You cannot select more than 7 of these operatives combined.  \r \r Other than GUNNER and WARRIOR operatives, your kill team can only include each operative on this list once.\r Your kill team can only include up to one DIKTAT operative, up to one SURVEYOR operative and up to five SICARIAN operatives.  \r \r Your kill team can only include up to one arc rifle, up to one plasma caliver and up to one transuranic arquebus.",
+    "description": "To the techno-zealots of the Adeptus Mechanicus, the galaxy is a complex mechanism, its workings the creation of\ntheir Machine God. They see the acquisition of knowledge as holy work, and task their cybernetically altered servants\nwith carrying it out, no matter the cost."
+  },
+  "operatives": [
+    {
+      "id": "imp-hc-srsp",
+      "opTypeId": "IMP-HC-SRSP",
+      "name": "Hunter Clade Sicarian Ruststalker Princeps",
+      "category": "po",
+      "cardType": "official",
+      "role": "Sicarian Ruststalker Princeps",
+      "points": 40,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 11,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, LEADER, SICARIAN, RUSTSTALKER, PRINCEPS",
+      "weapons": [
+        {
+          "name": "Chordclaw & Transonic Blades",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Balanced, Rnd"
+        }
+      ],
+      "abilities": "Canticle Of Destruction: Whenever a friendly HUNTER CLADE RUSTSTALKER operative within 3\" of this operative is fighting, the first time you strike with a critical success during that sequence, inflict 1 additional damage.\n\nControl Protocol: You can use the Command Override firefight ploy for 0CP if the specified friendly HUNTER CLADE operative is visible to this operative.\n\nWasteland Stalker: Whenever an operative is shooting this operative, if you\ncan retain any cover saves, you can retain one additional cover save, or you\ncan retain one cover save as a critical success instead. This isn’t cumulative\nwith improved cover saves from Vantage terrain.",
+      "notes": ""
+    },
+    {
+      "id": "imp-hc-sip",
+      "opTypeId": "IMP-HC-SIP",
+      "name": "Hunter Clade Sicarian Infiltrator Princeps",
+      "category": "po",
+      "cardType": "official",
+      "role": "Sicarian Infiltrator Princeps",
+      "points": 40,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 11,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, LEADER, SICARIAN, INFILTRATOR, PRINCEPS",
+      "weapons": [
+        {
+          "name": "Flechette Blaster",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "2/2",
+          "rules": "Rng 8\", Sat, Silent"
+        },
+        {
+          "name": "Stubcarbine",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Ceaseless"
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        },
+        {
+          "name": "Taser Goad",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Lethal 5+, Shock"
+        }
+      ],
+      "abilities": "Canticle Of Shroudpsalm: Whenever a friendly HUNTER CLADE INFILTRATOR operative is within 3\" of this operative, has a Conceal order and is in cover, that friendly operative cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".\n\nControl Protocol: You can use the Command Override firefight ploy for 0CP if the specified friendly HUNTER CLADE operative is visible to this operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-hc-srga",
+      "opTypeId": "IMP-HC-SRGA",
+      "name": "Hunter Clade Skitarii Ranger Alpha",
+      "category": "po",
+      "cardType": "official",
+      "role": "Skitarii Ranger Alpha",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, LEADER, SKITARII, RANGER, ALPHA",
+      "weapons": [
+        {
+          "name": "Arc Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Prc1, Stun"
+        },
+        {
+          "name": "Galvanic Rifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Hvy(Repos), PrcCrit1"
+        },
+        {
+          "name": "Master-Crafted Radium Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rng 8\", Bal, Rnd"
+        },
+        {
+          "name": "Phosphor Blast Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Blast 1\", Severe"
+        },
+        {
+          "name": "Arc Maul",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Shock"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        },
+        {
+          "name": "Taser Goad",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": "Lethal 5+, Shock"
+        }
+      ],
+      "abilities": "Canticle Of Elimination: Whenever a friendly HUNTER CLADE RANGER operative is within 3\" of this operative, that friendly operative's ranged weapons have the Punishing weapon rule.\n\nControl Protocol: You can use the Command Override firefight ploy for 0CP if the specified friendly HUNTER CLADE operative is visible to this operative.\n\nTargeting Protocol: Whenever this operative is shooting, if it hasn’t moved during the activation, or if it’s a counteraction, ranged weapons on its datacard have the Lethal 5+ weapon rule. Note this operative isn’t restricted from moving after shooting.",
+      "notes": ""
+    },
+    {
+      "id": "imp-hc-sva",
+      "opTypeId": "IMP-HC-SVA",
+      "name": "Hunter Clade Skitarii Vanguard Alpha",
+      "category": "po",
+      "cardType": "official",
+      "role": "Skitarii Vanguard Alpha",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, LEADER, SKITARII, VANGUARD, ALPHA",
+      "weapons": [
+        {
+          "name": "Arc Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Prc1, Stun"
+        },
+        {
+          "name": "Master-Crafted Radium Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rng 8\", Bal, Rnd"
+        },
+        {
+          "name": "Phosphor Blast Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\", Blast 1\", Severe"
+        },
+        {
+          "name": "Radium Carbine",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rnd"
+        },
+        {
+          "name": "Arc Maul",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Shock"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        },
+        {
+          "name": "Taser Goad",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": "Lethal 5+, Shock"
+        }
+      ],
+      "abilities": "Canticle Of The Glow: Whenever an enemy operative is within 3\" of this operative, if it is under the effects of the Rad-Saturation rule, also subtract 1 from the Atk stat of that enemy operative’s weapons.\n\nControl Protocol: You can use the Command Override firefight ploy for 0CP if the specified friendly HUNTER CLADE operative is visible to this operative.\n\nRad-Saturation: Whenever an enemy operative is within 2\" of friendly HUNTER CLADE VANGUARD operatives, worsen the Hit stat of that enemy operative’s weapons by 1. This isn’t cumulative with being injured.",
+      "notes": ""
+    },
+    {
+      "id": "imp-hc-siw",
+      "opTypeId": "IMP-HC-SIW",
+      "name": "Hunter Clade Sicarian Infiltrator Warrior",
+      "category": "po",
+      "cardType": "official",
+      "role": "Sicarian Infiltrator Warrior",
+      "points": 40,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 10,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, SICARIAN, INFILTRATOR, WARRIOR",
+      "weapons": [
+        {
+          "name": "Flechette Blaster",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "2/2",
+          "rules": "Rng 8\", Sat, Silent"
+        },
+        {
+          "name": "Stubcarbine",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Ceaseless"
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        },
+        {
+          "name": "Taser Goad",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Lethal 5+, Shock"
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "imp-hc-srsw",
+      "opTypeId": "IMP-HC-SRSW",
+      "name": "Hunter Clade Sicarian Ruststalker Warrior",
+      "category": "po",
+      "cardType": "official",
+      "role": "Sicarian Ruststalker Warrior",
+      "points": 40,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 10,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, SICARIAN, RUSTSTALKER, WARRIOR",
+      "weapons": [
+        {
+          "name": "Chordclaw & Transonic Razor",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Balanced"
+        },
+        {
+          "name": "Transonic Blades",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Rnd"
+        }
+      ],
+      "abilities": "Wasteland Stalker: Whenever an operative is shooting this operative, if you\ncan retain any cover saves, you can retain one additional cover save, or you\ncan retain one cover save as a critical success instead. This isn’t cumulative\nwith improved cover saves from Vantage terrain.",
+      "notes": ""
+    },
+    {
+      "id": "imp-hc-srgd",
+      "opTypeId": "IMP-HC-SRGD",
+      "name": "Hunter Clade Skitarii Ranger Diktat",
+      "category": "po",
+      "cardType": "official",
+      "role": "Skitarii Ranger Diktat",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, SKITARII, RANGER, DIKTAT",
+      "weapons": [
+        {
+          "name": "Galvanic Rifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Hvy(Repos), PrcCrit1"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Signal: **SUPPORT** Select one other friendly HUNTER CLADE operative visible to and within 6\" of this operative. Until the end of that operative’s next activation, add 1 to its APL stat.  \n\nThis operative cannot perform this action while within control range of an enemy operative.\n\nTargeting Protocol: Whenever this operative is shooting, if it hasn’t moved during the activation, or if it’s a counteraction, ranged weapons on its datacard have the Lethal 5+ weapon rule. Note this operative isn’t restricted from moving after shooting.",
+      "notes": ""
+    },
+    {
+      "id": "imp-hc-srgg",
+      "opTypeId": "IMP-HC-SRGG",
+      "name": "Hunter Clade Skitarii Ranger Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Skitarii Ranger Gunner",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, SKITARII, RANGER, GUNNER",
+      "weapons": [
+        {
+          "name": "Arc Rifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Prc1, Stun"
+        },
+        {
+          "name": "Plasma Caliver (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Plasma Caliver (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/6",
+          "rules": "Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Transuranic Arquebus (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/3",
+          "rules": "Dev2, Hvy(Dash), Prc1"
+        },
+        {
+          "name": "Transuranic Arquebus (Stationary)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "4/3",
+          "rules": "Dev3, Hvy, Prc1, Severe"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Targeting Protocol: Whenever this operative is shooting, if it hasn’t moved during the activation, or if it’s a counteraction, ranged weapons on its datacard have the Lethal 5+ weapon rule. Note this operative isn’t restricted from moving after shooting.",
+      "notes": ""
+    },
+    {
+      "id": "imp-hc-srgs",
+      "opTypeId": "IMP-HC-SRGS",
+      "name": "Hunter Clade Skitarii Ranger Surveyor",
+      "category": "po",
+      "cardType": "official",
+      "role": "Skitarii Ranger Surveyor",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, SKITARII, RANGER, SURVEYOR",
+      "weapons": [
+        {
+          "name": "Galvanic Rifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Hvy(Repos), PrcCrit1"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Spot: **SUPPORT**\nSelect one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly HUNTER CLADE operative within 3\" of this operative is shooting that enemy operative, you can use this effect. If you do:\n\n- That friendly operative’s ranged weapons have the Seek Light weapon rule.\n- That enemy operative cannot be obscured.\n\nThis operative cannot perform this action while within control range of an enemy operative.\n\nTargeting Protocol: Whenever this operative is shooting, if it hasn’t moved during the activation, or if it’s a counteraction, ranged weapons on its datacard have the Lethal 5+ weapon rule. Note this operative isn’t restricted from moving after shooting.",
+      "notes": ""
+    },
+    {
+      "id": "imp-hc-srgw",
+      "opTypeId": "IMP-HC-SRGW",
+      "name": "Hunter Clade Skitarii Ranger Warrior",
+      "category": "po",
+      "cardType": "official",
+      "role": "Skitarii Ranger Warrior",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, SKITARII, RANGER, WARRIOR",
+      "weapons": [
+        {
+          "name": "Galvanic Rifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Hvy(Repos), PrcCrit1"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Targeting Protocol: Whenever this operative is shooting, if it hasn’t moved during the activation, or if it’s a counteraction, ranged weapons on its datacard have the Lethal 5+ weapon rule. Note this operative isn’t restricted from moving after shooting.",
+      "notes": ""
+    },
+    {
+      "id": "imp-hc-svd",
+      "opTypeId": "IMP-HC-SVD",
+      "name": "Hunter Clade Skitarii Vanguard Diktat",
+      "category": "po",
+      "cardType": "official",
+      "role": "Skitarii Vanguard Diktat",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, SKITARII, VANGUARD, DIKTAT",
+      "weapons": [
+        {
+          "name": "Radium Carbine",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rnd"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Rad-Saturation: Whenever an enemy operative is within 2\" of friendly HUNTER CLADE VANGUARD operatives, worsen the Hit stat of that enemy operative’s weapons by 1. This isn’t cumulative with being injured.\n\nSignal: **SUPPORT**\nSelect one other friendly HUNTER CLADE operative visible to and within 6\" of this operative. Until the end of that operative’s next activation, add 1 to its APL stat.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-hc-svg",
+      "opTypeId": "IMP-HC-SVG",
+      "name": "Hunter Clade Skitarii Vanguard Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Skitarii Vanguard Gunner",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, SKITARII, VANGUARD, GUNNER",
+      "weapons": [
+        {
+          "name": "Arc Rifle",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Prc1, Stun"
+        },
+        {
+          "name": "Plasma Caliver (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Plasma Caliver (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/6",
+          "rules": "Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Transuranic Arquebus (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/3",
+          "rules": "Dev2, Hvy(Dash), Prc1"
+        },
+        {
+          "name": "Transuranic Arquebus (Stationary)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "4/3",
+          "rules": "Dev3, Hvy, Prc1, Severe"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Rad-Saturation: Whenever an enemy operative is within 2\" of friendly HUNTER CLADE VANGUARD operatives, worsen the Hit stat of that enemy operative’s weapons by 1. This isn’t cumulative with being injured.",
+      "notes": ""
+    },
+    {
+      "id": "imp-hc-svs",
+      "opTypeId": "IMP-HC-SVS",
+      "name": "Hunter Clade Skitarii Vanguard Surveyor",
+      "category": "po",
+      "cardType": "official",
+      "role": "Skitarii Vanguard Surveyor",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, SKITARII, VANGUARD, SURVEYOR",
+      "weapons": [
+        {
+          "name": "Radium Carbine",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rnd"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Rad-Saturation: Whenever an enemy operative is within 2\" of friendly HUNTER CLADE VANGUARD operatives, worsen the Hit stat of that enemy operative’s weapons by 1. This isn’t cumulative with being injured.\n\nSpot: **SUPPORT**\nSelect one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly HUNTER CLADE operative within 3\" of this operative is shooting that enemy operative, you can use this effect. If you do:\n\n- That friendly operative’s ranged weapons have the Seek Light weapon rule.\n- That enemy operative cannot be obscured.\n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-hc-svw",
+      "opTypeId": "IMP-HC-SVW",
+      "name": "Hunter Clade Skitarii Vanguard Warrior",
+      "category": "po",
+      "cardType": "official",
+      "role": "Skitarii Vanguard Warrior",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 7,
+      "keywords": "HUNTER CLADE, ADEPTUS MECHANICUS, SKITARII, VANGUARD, WARRIOR",
+      "weapons": [
+        {
+          "name": "Radium Carbine",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rnd"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Rad-Saturation: Whenever an enemy operative is within 2\" of friendly HUNTER CLADE VANGUARD operatives, worsen the Hit stat of that enemy operative’s weapons by 1. This isn’t cumulative with being injured.",
+      "notes": ""
+    }
+  ]
+}

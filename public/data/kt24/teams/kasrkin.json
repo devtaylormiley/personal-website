@@ -1,0 +1,428 @@
+{
+  "id": "kasrkin",
+  "killteamId": "IMP-KAS",
+  "factionId": "IMP",
+  "imageUrl": "https://ktdash.app/img/killteams/IMP-KAS.webp",
+  "killTeam": {
+    "name": "Kasrkin",
+    "archetypes": "Security, Seek And Destroy",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Rapid Fire: Each friendly KASRKIN operative that doesn’t perform an action in which it moves during its activation can perform two Shoot actions (excluding Guard) during that activation, but a bolt pistol, hot-shot lasgun or hot-shot laspistol must be selected for both of those actions.\n\nSkill At Arms: **STRATEGIC GAMBIT** Select a SKILL AT ARMS for friendly KASRKIN operatives to have until the Ready step of the next Strategy phase.\r \r - **Light 'Em Up**  \r  Friendly KASRKIN operatives’ ranged weapons have the Severe weapon rule\r \r \r - **Strike Fast**  \r  Whenever a friendly KASRKIN operative is performing the Reposition action, add 1\" to its Move stat.\r - **Ice In Your Veins**  \r  Whenever a friendly KASRKIN operative is fighting or retaliating, or an operative is shooting it, the first time an attack die inflicts Normal Dmg of 3 or more on this operative during that sequence, that dice inflicts 1 less damage on it.\r - **For Cadia!**  \r  Add 1 to the Atk stat of friendly KASRKIN operatives' melee weapons (to a maximum of 4). Whenever a friendly KASRKIN operative is fighting, the first time you strike during that sequence, inflict 1 additional damage.\r ",
+    "ploys": [
+      {
+        "name": "Clearance Sweep",
+        "description": "Place your Clearance Sweep marker in the killzone. Whenever a friendly KASRKIN operative within 5\" horizontally of that marker is shooting an operative also within 5\" horizontally of that marker, that friendly operative's weapons have the Ceaseless weapon rule. In the Ready step of the next Strategy phase, remove that marker.",
+        "type": "strategy"
+      },
+      {
+        "name": "Engage From Cover",
+        "description": "Whenever an operative is shooting a friendly KASRKIN operative that’s in cover, you can re-roll one of your defence dice.",
+        "type": "strategy"
+      },
+      {
+        "name": "Elimination Pattern",
+        "description": "Whenever a friendly KASRKIN operative is shooting with a hot-shot weapon against an operative that cannot retain any cover saves or is being scanned (see RECON-TROOPER), that weapon has the Piercing Crits 1 weapon rule, or Piercing 1 instead if it’s a hot-shot volley gun.",
+        "type": "strategy"
+      },
+      {
+        "name": "Relocate",
+        "description": "Select one friendly KASRKIN operative that is more than 3\" from enemy operatives.\nThat operative, and each other friendly KASRKIN operative that is both within 3\" of that operative and more than 3\" from enemy operatives,\ncan immediately perform a free Dash action in an order of your choice. You cannot use this ploy during the first turning point.",
+        "type": "strategy"
+      },
+      {
+        "name": "Cover Retreat",
+        "description": "Use this firefight ploy when a friendly KASRKIN operative performs the Fall Back action while visible to and within 6\" of another friendly KASRKIN operative that is not within control range of enemy operatives. After that friendly operative has finished moving, but before that Fall Back action ends, that other friendly operative can immediately perform a free Shoot action (you can change its order to Engage to do so).",
+        "type": "firefight"
+      },
+      {
+        "name": "Give No Ground",
+        "description": "Use this firefight ploy during a friendly KASRKIN operative's activation, or at the end of the Firefight phase.\nSelect one of your mission markers or an objective marker.\nUntil the end of that activation or until the start of the next turning point respectively, if the total APL of friendly KASRKIN operatives that contest that marker is 2,\nand the total APL of enemy operatives that contest it is the same, friendly KASRKIN operatives control that marker.",
+        "type": "firefight"
+      },
+      {
+        "name": "Neutralise Target",
+        "description": "Use this firefight ploy after rolling your attack dice for a friendly KASRKIN operative, if it’s shooting an operative that either cannot retain any cover saves or is being scanned (see RECON-TROOPER). You can re-roll any of your attack dice.",
+        "type": "firefight"
+      },
+      {
+        "name": "Seize The Initiative",
+        "description": "Use this firefight ploy at the start of the Firefight phase. One friendly KASRKIN operative can immediately perform a 1AP action for free, but it cannot move during that action. You cannot use this ploy if you are the player with initiative.",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A KASRKIN KillTeam is composed of:\n\n- 1 KASRKIN SERGEANT operative with one of the following options:\n  - Bolt pistol; power weapon\n  - Hot-shot lasgun; gun butt\n  - Hot-shot laspistol; power weapon\n  - Plasma pistol; chainsword\n- 9 KASRKIN operatives selected from the following list:\n  - COMBAT MEDIC\n  - DEMO-TROOPER\n  - GUNNER with flamer and gun butt*\n  - GUNNER with grenade launcher and gun butt*\n  - GUNNER with hot-shot volley gun and gun butt*\n  - GUNNER with meltagun and gun butt*\n  - GUNNER with plasma gun and gun butt*\n  - RECON-TROOPER\n  - SHARPSHOOTER*\n  - TROOPER\n  - VOX-TROOPER\n\nOther than TROOPER operatives, your kill team can only include each operative on this list once.  \n\n*You cannot select more than four of these operatives combined.  \n\nSome KASRKIN rules refer to a ‘hot-shot weapon’. This is a ranged weapon that includes ‘hot-shot’ in its name, e.g. hot-shot lasgun, all profiles of a hot-shot marksman rifle, etc.",
+    "description": "Amongst Cadia's most elite warriors, the Kasrkin are trained from birth in the art of war.\nClad in carapace armour and bearing a wide range of specialist wargear, they are the special forces of the Cadian regiments, tasked with completing nigh impossible missions in the defence and furtherance of the Imperial cause."
+  },
+  "operatives": [
+    {
+      "id": "imp-kas-sgt",
+      "opTypeId": "IMP-KAS-SGT",
+      "name": "Kasrkin Sergeant",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Sergeant",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 9,
+      "keywords": "KASRKIN, IMPERIUM, ASTRA MILITARUM, LEADER, SERGEANT",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Hot-Shot Lasgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Hot-Shot Laspistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Plasma Pistol (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Rng 8\", Prc1"
+        },
+        {
+          "name": "Plasma Pistol (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Chainsword",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Tactical Command: Select one friendly KASRKIN operative, then select one SKILL AT ARMS for that operative to have until the Ready step of the next Strategy phase. This can be in addition to any SKILL AT ARMS it already has, but they cannot be the same.  \n\nAlternatively, instead of resolving the above effect, if your Clearance Sweep marker is in the killzone, you can remove it and place it again.  \n\nThis operative cannot perform this action while within control range of an enemy operative.\n\nVeteran Leadership: Whenever this operative is in the killzone and you use the SKILL AT ARMS STRATEGIC GAMBIT, you can select one additional SKILL AT ARMS but they cannot be the same.",
+      "notes": ""
+    },
+    {
+      "id": "imp-kas-mdc",
+      "opTypeId": "IMP-KAS-MDC",
+      "name": "Kasrkin Combat Medic",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Combat Medic",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "KASRKIN, IMPERIUM, ASTRA MILITARUM, MEDIC, COMBAT MEDIC",
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Medic!: The first time during each turning point that another friendly KASRKIN operative would be incapacitated while visible to and within 3\" of this operative,\r you can use this rule, providing neither this nor that operative is within control range of an enemy operative.\r If you do, that friendly operative isn’t incapacitated, has 1 wound remaining, and cannot be incapacitated for the remainder of that action. After that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative's control range.\r Subtract 1 from this and that operative's APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative's activation, that activation ends.  \n\r You cannot use this rule if this operative is incapacitated, or if it is a Shoot action and this operative would be a primary or secondary target.\n\nMedikit: Select one friendly KASRKIN operative within this operative's control range to regain up to 2D3 lost wounds.\nIt cannot be an operative that the Medic! rule was used on during this turning point.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-kas-dt",
+      "opTypeId": "IMP-KAS-DT",
+      "name": "Kasrkin Demo Trooper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Demo Trooper",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "KASRKIN, IMPERIUM, ASTRA MILITARUM, DEMO-TROOPER",
+      "weapons": [
+        {
+          "name": "Hot-Shot Laspistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Blast Padding: Whenever an operative is shooting this operative with a weapon that has the Blast or Torrent weapon rule (excluding weapons that have a sweeping profile),\nyou can re-roll one of your defence dice.\nIn addition, this operative is not affected by the x\" Devastating x weapon rule (i.e. Devastating with a distance) unless they are the target during that sequence.\n\nMelta Mine: This operative is carrying your Melta Mine marker.\nIt can perform the Pick Up Marker action on that marker, and whenever it performs the Place Marker action on that marker, it can immediately perform a free Dash action.\nThat marker cannot be placed within an enemy operative's control range (if this operative is incapacitated while carrying that marker and that marker cannot be placed, it’s removed with this operative).\n\nProximity Mine: The first time your Melta Mine marker is within another operative's control range, remove that marker and inflict 2D6+3 damage on that operative;\nif it is not incapacitated, end its action (if any), even if that action's effects are not fulfilled.\nIf it cannot be placed, move it the minimum amount to do so.\nNote that this operative is ignored for these effects (i.e. it cannot set it off or take damage from that marker).",
+      "notes": ""
+    },
+    {
+      "id": "imp-kas-gnr",
+      "opTypeId": "IMP-KAS-GNR",
+      "name": "Kasrkin Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Gunner",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "KASRKIN, IMPERIUM, ASTRA MILITARUM, GUNNER",
+      "weapons": [
+        {
+          "name": "Flamer",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 8\", Sat, Tor 2\""
+        },
+        {
+          "name": "Grenade Launcher (Frag)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Blast 2\""
+        },
+        {
+          "name": "Grenade Launcher (Krak)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Hot-Shot Volley Gun (Focused)",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "PrcCrit1"
+        },
+        {
+          "name": "Hot-Shot Volley Gun (Sweeping)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "PrcCrit1, Tor 1\""
+        },
+        {
+          "name": "Meltagun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "6/3",
+          "rules": "Rng 6\", Dev4, Prc2"
+        },
+        {
+          "name": "Plasma Gun (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Plasma Gun (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "5/6",
+          "rules": "Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "imp-kas-rt",
+      "opTypeId": "IMP-KAS-RT",
+      "name": "Kasrkin Recon-Trooper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Recon-Trooper",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "KASRKIN, IMPERIUM, ASTRA MILITARUM, RECON-TROOPER",
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Auspex Scan: Until the start of this operative's next activation or until it is incapacitated (whichever comes first),\nwhenever an enemy operative is within 8\" of this operative, that enemy operative is being scanned. Whenever a friendly KASRKIN operative is shooting an enemy operative that’s being scanned, that enemy operative cannot be obscured.  \n\nThis operative cannot perform this action while within control range of an enemy operative.\n\nReconnoitre Killzone: The Relocate strategy ploy costs you 0CP if this operative is the selected friendly KASRKIN operative.\r",
+      "notes": ""
+    },
+    {
+      "id": "imp-kas-ss",
+      "opTypeId": "IMP-KAS-SS",
+      "name": "Kasrkin Sharpshooter",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Sharpshooter",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "KASRKIN, IMPERIUM, ASTRA MILITARUM, SHARPSHOOTER",
+      "weapons": [
+        {
+          "name": "Hot-Shot Marksman Rifle (Concealed)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev3, Hvy, Sil, *Concealed Position"
+        },
+        {
+          "name": "Hot-Shot Marksman Rifle (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Hot-Shot Marksman Rifle (Stationary)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev3, Heavy"
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Concealed Position: This operative can only use this weapon the first time it is performing the Shoot action during the battle.\n\nCamo Cloak: Whenever an operative is shooting this operative:\n\n- Ignore the Saturate weapon rule.\n- If you can retain any cover saves, you can retain one additional cover save, or you can retain one cover save as a critical success instead.]\nThis is not cumulative with improved cover saves from Vantage terrain.\n",
+      "notes": ""
+    },
+    {
+      "id": "imp-kas-trp",
+      "opTypeId": "IMP-KAS-TRP",
+      "name": "Kasrkin Trooper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Trooper",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "KASRKIN, IMPERIUM, ASTRA MILITARUM, TROOPER",
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Adaptive Equipment: You can do each of the following once per turning point:\n\n- One friendly KASRKIN TROOPER operative can perform the Smoke Grenade action.\n- One friendly KASRKIN TROOPER operative can perform the Stun Grenade action.\n\nThe rules for these actions are found in universal equipment. Performing these actions using this rule does not count towards their action limits (i.e. if you also select those grenades from equipment).",
+      "notes": ""
+    },
+    {
+      "id": "imp-kas-vox",
+      "opTypeId": "IMP-KAS-VOX",
+      "name": "Kasrkin Vox-Trooper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Kasrkin Vox-Trooper",
+      "points": 28,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "4+",
+      "wounds": 8,
+      "keywords": "KASRKIN, IMPERIUM, ASTRA MILITARUM, VOX-TROOPER",
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Gun Butt",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Battle Comms: Select one other friendly KASRKIN operative. Until the end of that operative's next activation, add 1 to its APL stat (to a maximum of 3 after all APL stat changes have been totalled).\n\n\nThis operative can perform this action twice during its activation, but cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    }
+  ]
+}

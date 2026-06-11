@@ -1,0 +1,20 @@
+[project]
+name = "schema-bridge"
+version = "0.1.0"
+description = "AI-assisted enterprise data migration pipeline for portfolio demo"
+readme = "schema_bridge/README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0",
+  "pydantic>=2.0",
+  "rapidfuzz>=3.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+schema-bridge = "schema_bridge.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["schema_bridge/tests"]

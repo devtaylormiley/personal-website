@@ -1,0 +1,31 @@
+{
+  "column_mappings": [
+    { "source": "crm_export", "column": "WO #", "target": "id", "confidence": 1.0, "method": "rule" },
+    { "source": "crm_export", "column": "Asset Tag", "target": "asset", "confidence": 1.0, "method": "rule" },
+    { "source": "crm_export", "column": "Location", "target": "site", "confidence": 1.0, "method": "rule" },
+    { "source": "crm_export", "column": "State", "target": "status", "confidence": 1.0, "method": "rule" },
+    { "source": "crm_export", "column": "Assigned To", "target": "owner", "confidence": 1.0, "method": "rule" },
+    { "source": "crm_export", "column": "Urgency", "target": "priority", "confidence": 1.0, "method": "rule" },
+    { "source": "crm_export", "column": "Cost", "target": "price", "confidence": 1.0, "method": "rule" },
+    { "source": "crm_export", "column": "Last Modified", "target": "updated", "confidence": 1.0, "method": "rule" },
+    { "source": "crm_export", "column": "Notes", "target": "category", "confidence": 0.72, "method": "ai", "reason": "Notes column mixes category labels with free-text context" },
+    { "source": "maintenance_dump", "column": "WorkOrderID", "target": "id", "confidence": 1.0, "method": "rule" },
+    { "source": "maintenance_dump", "column": "equipment_id", "target": "asset", "confidence": 1.0, "method": "rule" },
+    { "source": "maintenance_dump", "column": "facility", "target": "site", "confidence": 1.0, "method": "rule" },
+    { "source": "maintenance_dump", "column": "status_code", "target": "status", "confidence": 1.0, "method": "rule" },
+    { "source": "maintenance_dump", "column": "tech_name", "target": "owner", "confidence": 1.0, "method": "rule" },
+    { "source": "maintenance_dump", "column": "priority_level", "target": "priority", "confidence": 1.0, "method": "rule" },
+    { "source": "maintenance_dump", "column": "estimate", "target": "price", "confidence": 1.0, "method": "rule" },
+    { "source": "maintenance_dump", "column": "date_updated", "target": "updated", "confidence": 1.0, "method": "rule" },
+    { "source": "maintenance_dump", "column": "work_description", "target": "category", "confidence": 0.78, "method": "ai", "reason": "Description prose often encodes category and site" },
+    { "source": "spreadsheet_export", "column": "order_num", "target": "id", "confidence": 1.0, "method": "rule" },
+    { "source": "spreadsheet_export", "column": "asset_code", "target": "asset", "confidence": 1.0, "method": "rule" },
+    { "source": "spreadsheet_export", "column": "site_name", "target": "site", "confidence": 1.0, "method": "rule" },
+    { "source": "spreadsheet_export", "column": "wo_status", "target": "status", "confidence": 1.0, "method": "rule" },
+    { "source": "spreadsheet_export", "column": "owner_initials", "target": "owner", "confidence": 0.88, "method": "ai", "reason": "Initials expanded to full names via lookup table inferred by agent" },
+    { "source": "spreadsheet_export", "column": "prio", "target": "priority", "confidence": 1.0, "method": "rule" },
+    { "source": "spreadsheet_export", "column": "amount", "target": "price", "confidence": 1.0, "method": "rule" },
+    { "source": "spreadsheet_export", "column": "modified_on", "target": "updated", "confidence": 1.0, "method": "rule" },
+    { "source": "spreadsheet_export", "column": "comments", "target": "category", "confidence": 0.74, "method": "ai", "reason": "Comments column used for category and duplicate hints" }
+  ]
+}

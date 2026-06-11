@@ -1,0 +1,53 @@
+/* Site-wide contrast, focus, hover, and pointer affordances (WCAG-oriented) */
+
+@layer base {
+  a[href],
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']),
+  label[for],
+  select,
+  summary,
+  input[type='checkbox'],
+  input[type='radio'],
+  [tabindex='0']:not([disabled]) {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  [aria-disabled='true'] {
+    cursor: not-allowed;
+  }
+
+  textarea,
+  input:not([type='checkbox']):not([type='radio']):not([type='button']):not([type='submit']):not([type='reset']) {
+    cursor: text;
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(167 139 250);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* Portfolio: stronger text contrast on dark backgrounds */
+.portfolio-site a[href]:not(.no-underline) {
+  text-decoration-skip-ink: auto;
+}
+
+.portfolio-site .text-muted {
+  color: rgb(212 212 216);
+}
+
+.portfolio-site .text-muted-subtle {
+  color: rgb(161 161 170);
+}

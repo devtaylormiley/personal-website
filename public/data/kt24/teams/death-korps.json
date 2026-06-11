@@ -1,0 +1,588 @@
+{
+  "id": "death-korps",
+  "killteamId": "IMP-DKK",
+  "factionId": "IMP",
+  "imageUrl": "https://ktdash.app/img/killteams/IMP-DKK.webp",
+  "killTeam": {
+    "name": "Death Korps",
+    "archetypes": "Security, Seek And Destroy",
+    "factionRuleName": "Faction rules",
+    "factionRule": "Guardsmen Orders: **STRATEGIC GAMBIT** and **SUPPORT**\n A friendly DEATH KORPS WATCHMASTER operative can issue a GUARDSMAN ORDER.\n Whenever it does, select one GUARDSMAN ORDER for all friendly DEATH KORPS operatives within 6\" of it to receive.\n Whenever a friendly operative receives a GUARDSMAN ORDER, apply its rules until the end of the turning point.\n Operatives cannot benefit from more than one GUARDSMAN ORDER at once; they only benefit from the most recent order they received during the turning point.\n \n - **Take Aim!**  \n\n Ranged weapons of operatives that received this order (excluding mortar barrage and remote detonator) have the Ceaseless weapon rule.\n - **Fix Bayonets!**  \n\n Melee weapons of operatives that received this order have the Ceaseless weapon rule.\n - **Dig In!**  \n\n Whenever an operative is shooting a friendly operative that has received this order, if you can retain any cover saves, you can re-roll any of your defence dice results of one result (e.g. results of 2).\n - **Move! Move! Move!**  \n\n Whenever an operative that’s received this order is performing the Reposition action, add 1\" to its Move stat.\n ",
+    "ploys": [
+      {
+        "name": "Clear The Line",
+        "description": "Friendly DEATH KORPS operatives’ melee weapons have the Accurate 1 weapon rule. Whenever a friendly DEATH KORPS operative is fighting wholly within your territory, or whenever it’s retaliating, its melee weapons also have the Severe weapon rule.  \n **Accurate 1:** You can retain 1 Attack Die as a normal success without rolling it.  \n **Severe:** If you do not retain any critical successes, you can change one of your normal successes to a critical success. The Devastating and Piercing Crits weapon rules still take effect, but Punishing and Rending don’t.",
+        "type": "strategy"
+      },
+      {
+        "name": "Regroup",
+        "description": "**SUPPORT**\nSelect one friendly DEATH KORPS operative that is more than 3\" from enemy operatives.\nEach other friendly DEATH KORPS operative within 5\" of that operative and not within control range of enemy operatives can immediately perform a free Dash action in an order of your choice,\nbut each that does so must end that move closer to that operative.\nNote that a Comms Device from universal equipment only affects the second distance of this rule.  \n\nYou cannot use this ploy and the Chronometer faction equipment STRATEGIC GAMBIT in the same turning point.",
+        "type": "strategy"
+      },
+      {
+        "name": "Siege Warfare",
+        "description": "Friendly DEATH KORPS operatives' ranged weapons have the Saturate and Accurate 1 weapon rules.  \n**Saturate:** The defender cannot retain Cover saves.  \n**Accurate x:** You can retain up to x Attack Dice as normal successes without rolling them.",
+        "type": "strategy"
+      },
+      {
+        "name": "Take Cover",
+        "description": "Whenever an operative is shooting a friendly DEATH KORPS operative, if you can retain any cover saves, improve that friendly operative’s Save stat by 1.",
+        "type": "strategy"
+      },
+      {
+        "name": "Combined Arms",
+        "description": "Use this firefight ploy after rolling your attack dice for a friendly DEATH KORPS operative, if it is shooting an enemy operative that has been shot by another friendly DEATH KORPS operative during this turning point. You can re-roll any of your attack dice.",
+        "type": "firefight"
+      },
+      {
+        "name": "In Death, Atonement",
+        "description": "Use this firefight ploy when a ready friendly DEATH KORPS operative is incapacitated, if it is not within control range of enemy operatives. Before it is removed from the killzone, it can immediately perform one free action and you can change its order to do so. Unless otherwise specified, the operative would be injured for this. Note that that friendly operative is injured for the duration of that action.",
+        "type": "firefight"
+      },
+      {
+        "name": "Inspirational Leadership",
+        "description": "**SUPPORT**\nUse this firefight ploy during a friendly DEATH KORPS WATCHMASTER or DEATH KORPS CONFIDANT operative's activation, before or after it performs an action.\nIt issues a GUARDSMAN ORDER.",
+        "type": "firefight"
+      },
+      {
+        "name": "In Life, Shame",
+        "description": "Use this firefight ploy when a friendly DEATH KORPS operative is activated and given an Engage order.\nIt receives every GUARDSMAN ORDER. This takes precedence over the normal rule that operatives cannot benefit from more than one GUARDSMAN ORDER at once.",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A DEATH KORPS KillTeam is composed of:\n\n- 1 DEATH KORPS WATCHMASTER operative with the following:\n  - Boltgun; bayonet  \n  Or one option from each of the following:\n  - Bolt pistol, plasma pistol or relic laspistol\n  - Chainsword or power weapon\n- 4 TROOPER operatives*\n- 9 DEATH KORPS operatives selected from the following list:\n  - BRUISER\n  - CONFIDANT with one of the following options:\n    - Boltgun or lasgun; bayonet\n    - Bolt pistol or relic laspistol; chainsword    \n  - GUNNER with bayonet and flamer\n  - GUNNER with bayonet and grenade launcher\n  - GUNNER with bayonet and meltagun\n  - GUNNER with bayonet and plasma gun\n  - MEDIC\n  - SAPPER\n  - SNIPER\n  - SPOTTER\n  - TROOPER\n  - VETERAN\n  - VOX-OPERATOR\n  - ZEALOT\n\nOther than TROOPER operatives, your kill team can only include each operative on this list once.  \n\n*Up to four times, instead of taking one of these TROOPER operatives, you can select one DEATH KORPS ploy to cost you 0CP for the battle.",
+    "description": "Grim, fatalistic and utterly uncompromising, the Death Korps of Krieg are famed for their endurance and ability to do\nbattle in the most horrific conditions. Death Korps kill teams are made up of veteran specialists who have seen more fighting that many Astra Militarum soldiers will experience in their entire lifetime."
+  },
+  "operatives": [
+    {
+      "id": "imp-dkk-wm",
+      "opTypeId": "IMP-DKK-WM",
+      "name": "Death Korps Watchmaster",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Watchmaster",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 8,
+      "keywords": "DEATH KORPS, IMPERIUM, ASTRA MILITARUM, LEADER, WATCHMASTER",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Boltgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Plasma Pistol (Standard)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/5",
+          "rules": "Rng 8\", Prc1"
+        },
+        {
+          "name": "Plasma Pistol (Supercharge)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Relic Laspistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rng 8\", Lethal 5+"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Chainsword",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": ""
+        },
+        {
+          "name": "Power Weapon",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/6",
+          "rules": "Lethal 5+"
+        }
+      ],
+      "abilities": "Adaptive Orders: If this operative doesn’t issue a GUARDSMAN ORDER as a STRATEGIC GAMBIT, you can use the Inspirational Leadership firefight ploy for 0CP during this operative’s activation.\n\nBring It Down!: **STRATEGIC GAMBIT** if this operative is in the killzone.\nSelect one enemy operative. Whenever a friendly DEATH KORPS operative is shooting against, fighting against or retaliating against that enemy operative, that friendly operative’s weapons have the Punishing weapon rule.",
+      "notes": ""
+    },
+    {
+      "id": "imp-dkk-bru",
+      "opTypeId": "IMP-DKK-BRU",
+      "name": "Death Korps Bruiser",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Bruiser",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "DEATH KORPS, IMPERIUM, ASTRA MILITARUM, BRUISER",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Trench Club",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/3",
+          "rules": "Shock"
+        }
+      ],
+      "abilities": "Bruiser: Once per turning point, when this operative is fighting or retaliating, in the Resolve Attack Dice step, you can ignore the damage inflicted on it from one normal success.  \nIf this operative is incapacitated during the Fight action, you can strike the enemy operative in that sequence with one of your unresolved successes before this operative is removed from the killzone.",
+      "notes": ""
+    },
+    {
+      "id": "imp-dkk-con",
+      "opTypeId": "IMP-DKK-CON",
+      "name": "Death Korps Confidant",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Confidant",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "DEATH KORPS, IMPERIUM, ASTRA MILITARUM, CONFIDANT",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Boltgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Relic Laspistol",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/4",
+          "rules": "Rng 8\", Lethal 5+"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Chainsword",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Directive: Whenever this operative is activated, if you have not used the Second in Command rule during the battle, you can select one other ready friendly DEATH KORPS operative visible to and within 6\" of it.\nWhen this operative is expended, activate that other friendly operative before your opponent activates (if that operative is a TROOPER, ignore its Group Activation rule).\n\nSecond In Command: If a friendly WATCHMASTER operative is incapacitated and removed from the killzone, you can use this rule.\nIf you do, until the end of the battle, this operative can issue a GUARDSMAN ORDER as a STRATEGIC GAMBIT (even though it is not a WATCHMASTER operative).",
+      "notes": ""
+    },
+    {
+      "id": "imp-dkk-gnr",
+      "opTypeId": "IMP-DKK-GNR",
+      "name": "Death Korps Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Gunner",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "DEATH KORPS, IMPERIUM, ASTRA MILITARUM, GUNNER",
+      "weapons": [
+        {
+          "name": "Flamer",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 8\", Sat, Tor 2\""
+        },
+        {
+          "name": "Grenade Launcher (Frag)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/4",
+          "rules": "Blast 2\""
+        },
+        {
+          "name": "Grenade Launcher (Krak)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Meltagun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "6/3",
+          "rules": "Rng 6\", Dev 4, Prc2"
+        },
+        {
+          "name": "Plasma Gun (Standard)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "4/6",
+          "rules": "Prc1"
+        },
+        {
+          "name": "Plasma Gun (Supercharge)",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "5/6",
+          "rules": "Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "imp-dkk-mdc",
+      "opTypeId": "IMP-DKK-MDC",
+      "name": "Death Korps Medic",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Medic",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "DEATH KORPS, IMPERIUM, ASTRA MILITARUM, MEDIC",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Medic!: The first time during each turning point that another friendly DEATH KORPS operative would be incapacitated while visible to and within 3\" of this operative, you can use this rule,\r providing neither this nor that operative is within control range of an enemy operative.\r If you do, that friendly operative isn’t incapacitated, has 1 wound remaining, and cannot be incapacitated for the remainder of that action.\rAfter that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative’s control range.\r Subtract 1 from this and that operative's APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative's activation, that activation ends.  \n\r You cannot use this rule if this operative is incapacitated, or if it is a Shoot action and this operative would be a primary or secondary target.\n\nMedikit: Select one friendly DEATH KORPS operative within this operative's control range to regain up to 2D3 lost wounds.\nIt cannot be an operative that the Medic! rule was used on during this turning point.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-dkk-sap",
+      "opTypeId": "IMP-DKK-SAP",
+      "name": "Death Korps Sapper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Sapper",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "DEATH KORPS, IMPERIUM, ASTRA MILITARUM, SAPPER",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Remote Detonator",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "5/6",
+          "rules": "Hvy(Dash), Lim1, Prc1, Sil, *Detonate"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Detonate: Do not select a valid target. Instead, shoot against each operative within 2\" of your Mine marker, unless Heavy terrain is wholly intervening between that operative and that marker.\nEach of those operatives cannot be in cover or obscured. Roll each sequence separately in an order of your choice.\nThis weapon cannot be selected if your Mine marker isn’t in the killzone. At the end of the action, remove your Mine marker from the killzone.\n\nMine Layer: This operative is carrying your Mine marker. It can perform the Pick Up Marker action on that marker, and whenever it performs the Place Marker action on that marker, it can immediately perform a free Dash action.",
+      "notes": ""
+    },
+    {
+      "id": "imp-dkk-snp",
+      "opTypeId": "IMP-DKK-SNP",
+      "name": "Death Korps Sniper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Sniper",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "DEATH KORPS, IMPERIUM, ASTRA MILITARUM, SNIPER",
+      "weapons": [
+        {
+          "name": "Long-Las (Concealed)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev3, Hvy, Sil, *Concealed Position"
+        },
+        {
+          "name": "Long-Las (Mobile)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Long-Las (Stationary)",
+          "atk": 4,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Dev3, Hvy"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "*Concealed Position: This operative can only use this weapon the first time it is performing the Shoot action during the battle.",
+      "notes": ""
+    },
+    {
+      "id": "imp-dkk-spt",
+      "opTypeId": "IMP-DKK-SPT",
+      "name": "Death Korps Spotter",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Spotter",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "DEATH KORPS, IMPERIUM, ASTRA MILITARUM, SPOTTER",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Mortar Barrage",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "3/5",
+          "rules": "Blast 2\", Hvy(Dash), Silent"
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Spot: **SUPPORT**\n\nSelect one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly DEATH KORPS operative within 3\" of this operative is shooting that enemy operative, you can use this effect.\nIf you do:\n- That friendly operative’s ranged weapons have the Seek Light weapon rule.\n- That enemy operative cannot be obscured.\n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-dkk-trp",
+      "opTypeId": "IMP-DKK-TRP",
+      "name": "Death Korps Trooper",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Trooper",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "DEATH KORPS, IMPERIUM, ASTRA MILITARUM, TROOPER",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Group Activation: Whenever this operative is expended, you must then activate one other ready friendly DEATH KORPS TROOPER operative (if able) before your opponent activates.\nWhen that other operative is expended, your opponent then activates as normal (in other words, you cannot activate more than two operatives in succession with this rule).",
+      "notes": ""
+    },
+    {
+      "id": "imp-dkk-vet",
+      "opTypeId": "IMP-DKK-VET",
+      "name": "Death Korps Veteran",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Veteran",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "DEATH KORPS, IMPERIUM, ASTRA MILITARUM, VETERAN",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bionic Arm",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "4/5",
+          "rules": ""
+        }
+      ],
+      "abilities": "Bionics: Normal Dmg of 3 or more inflicts 1 less damage on this operative.\n\nVeteran Guardsman: Whenever this operative is activated, it can receive one GUARDSMAN ORDER.",
+      "notes": ""
+    },
+    {
+      "id": "imp-dkk-vox",
+      "opTypeId": "IMP-DKK-VOX",
+      "name": "Death Korps Vox-Operator",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Vox-Operator",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "DEATH KORPS, IMPERIUM, ASTRA MILITARUM, VOX-OPERATOR",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "Relay Orders: Once per turning point, when this operative receives a GUARDSMAN ORDER, if it’s not within control range of enemy operatives, it can relay that order.\nWhenever an order is relayed, all friendly DEATH KORPS operatives in the killzone receive that order, then subtract 1 from this operative's APL stat until the end of its next activation.\n\nSignal: **SUPPORT**\nSelect one other friendly DEATH KORPS operative visible to and within 6\" of this operative. Until the end of that operative's next activation, add 1 to its APL stat.  \n\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "notes": ""
+    },
+    {
+      "id": "imp-dkk-zlt",
+      "opTypeId": "IMP-DKK-ZLT",
+      "name": "Death Korps Zealot",
+      "category": "po",
+      "cardType": "official",
+      "role": "Death Korps Zealot",
+      "points": 25,
+      "imageUrl": "",
+      "apl": 2,
+      "move": "6\"",
+      "save": "5+",
+      "wounds": 7,
+      "keywords": "DEATH KORPS, IMPERIUM, ASTRA MILITARUM, ZEALOT",
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "atk": 4,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        },
+        {
+          "name": "Bayonet",
+          "atk": 3,
+          "hit": "4+",
+          "dmg": "2/3",
+          "rules": ""
+        }
+      ],
+      "abilities": "The Emperor Protects: Whenever an operative is shooting this operative, you can re-roll any of your defence dice.\n\nUplifting Primer: **SUPPORT**\nWhenever a friendly DEATH KORPS operative is within 3\" of this operative, that friendly operative's weapons have the Severe weapon rule.\n\n**Severe:** If you do not retain any critical successes, you can change one of your normal successes to a critical success. Any rules that take effect as a result of retaining a critical success (e.g. Devastating, Piercing Crits, etc.) still do.",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "id": "plague-marines",
+  "killteamId": "CHAOS-PM",
+  "factionId": "CHAOS",
+  "imageUrl": "https://ktdash.app/img/killteams/CHAOS-PM.webp",
+  "killTeam": {
+    "name": "Plague Marines",
+    "archetypes": "Security, Seek And Destroy",
+    "factionRuleName": "Faction rules",
+    "factionRule": "*Poison: In the Resolve Attack Dice step, if you inflict damage with any successes, the operative this weapon is being used against (excluding friendly PLAGUE MARINE operatives) gains one of your Poison tokens (if it does not already have one).\r Whenever an operative that has one of your Poison tokens is activated, inflict 1 damage on it.\n\nAstartes: During each friendly PLAGUE MARINE operative’s activation, it can perform either two Shoot actions or two Fight actions.\nIf it is two Shoot actions, a bolt pistol, boltgun or PSYCHIC weapon must be selected for at least one of them.\nYou cannot select the same PSYCHIC ranged weapon more than once per activation.  \n\nEach friendly PLAGUE MARINE operative can counteract regardless of its order.\n\nDisgustingly Resilient: Whenever an attack dice inflicts damage of 3 or more on a friendly PLAGUE MARINE operative, roll one D6: on a 4+, subtract 1 from that inflicted damage.",
+    "ploys": [
+      {
+        "name": "Cloud Of Flies",
+        "description": "Place one of your Cloud of Flies markers in the killzone. Whenever an operative is shooting a friendly PLAGUE MARINE operative that is more than 3\" from it, if that friendly operative is wholly within 1\" of that marker, that friendly operative is obscured. In the Ready step of the next Strategy phase, remove that marker.",
+        "type": "strategy"
+      },
+      {
+        "name": "Contagion",
+        "description": "Subtract 2\" from the Move stat of an enemy operative and worsen the Hit stat of its weapons by 1 (this is not cumulative with being injured) whenever any of the following are true:  - It has one of your Poison tokens and is visible to (or vice versa) and within 3\" of friendly PLAGUE MARINE operatives. - It is visible to (or vice versa) and within 3\" of a friendly PLAGUE MARINE ICON BEARER operative.",
+        "type": "strategy"
+      },
+      {
+        "name": "Lumbering Death",
+        "description": "Whenever a friendly PLAGUE MARINE operative is shooting or fighting during an activation in which it has not moved more than 3\", or whenever it is retaliating, its weapons have the Ceaseless weapon rule.\n**Ceaseless:** Can re-roll any or all results of one value (e.g. all results of 2)",
+        "type": "strategy"
+      },
+      {
+        "name": "Nurglings",
+        "description": "Select one enemy operative within 3\" of a friendly PLAGUE MARINE operative, or one enemy operative that has one of your Poison tokens and is within 7\" of a friendly PLAGUE MARINE operative.\nUntil the end of the selected operative’s next activation, subtract 1 from its APL stat.",
+        "type": "strategy"
+      },
+      {
+        "name": "Curse Of Rot",
+        "description": "Use this firefight ploy when a friendly PLAGUE MARINE operative is fighting against or shooting against an enemy operative within 3\" of it (or within 7\" of it if that enemy operative has one of your Poison tokens), after your opponent rolls their attack or defence dice. For each result of 3 they roll, inflict 1 damage on that enemy operative, that result cannot be retained as a success, and they cannot re-roll it.",
+        "type": "firefight"
+      },
+      {
+        "name": "Poisonous Demise",
+        "description": "Use this firefight ploy when a friendly PLAGUE MARINE operative is incapacitated, before it is removed from the killzone. Each enemy operative visible to and within 3\" of that operative gains one of your Poison tokens (if they don’t already have one); for each of those enemy operatives that already has one of your Poison tokens (including if they gained one during this action), inflict 1 damage on them instead.",
+        "type": "firefight"
+      },
+      {
+        "name": "Sickening Resilience",
+        "description": "Use this firefight ploy when an attack dice inflicts damage on a friendly PLAGUE MARINE operative.\nUntil the end of the activation/counteraction, for the purposes of the Disgustingly Resilient rule for that operative, always subtract 1 from the damage inflicted (to a minimum of 2) – you do not need to roll.",
+        "type": "firefight"
+      },
+      {
+        "name": "Virulent Poison",
+        "description": "Use this firefight ploy during a friendly PLAGUE MARINE operative’s activation or counteraction, before or after it performs an action. One enemy operative within 3\" of, or visible to and within 7\" of, that operative gains one of your Poison tokens (if it does not already have one).",
+        "type": "firefight"
+      }
+    ],
+    "specialIssueAmmunition": "",
+    "rosterNote": "A PLAGUE MARINES KillTeam is composed of:\n\n- 1 PLAGUE MARINE CHAMPION operative\n- 5 PLAGUE MARINE operatives selected from the following list:\n  - BOMBARDIER\n  - FIGHTER\n  - HEAVY GUNNER\n  - ICON BEARER\n  - MALIGNANT PLAGUECASTER\n  - WARRIOR\n\nYour kill team can only include each operative on this list once",
+    "description": "Corrupted sons of Mortarion, Plague Marines are suffused and bloated with rot and disease. Though compact and slow moving, Plague Marines are horrifyingly resilient, trudging relentlessly towards their objectives while spreading contagion in their wake."
+  },
+  "operatives": [
+    {
+      "id": "chaos-pm-champ",
+      "opTypeId": "CHAOS-PM-CHAMP",
+      "name": "Plague Marines Plague Marine Champion",
+      "category": "po",
+      "cardType": "official",
+      "role": "Plague Marine Champion",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "5\"",
+      "save": "3+",
+      "wounds": 15,
+      "keywords": "PLAGUE MARINE, CHAOS, HERETIC ASTARTES, LEADER, CHAMPION",
+      "weapons": [
+        {
+          "name": "Plasma Pistol (Standard)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/5",
+          "rules": "Rng 8\", Prc1"
+        },
+        {
+          "name": "Plasma Pistol (Supercharge)",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 8\", Hot, Lethal 5+, Prc1"
+        },
+        {
+          "name": "Plague Sword",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Severe, *Poison, *Toxic"
+        }
+      ],
+      "abilities": "*Toxic: Whenever this operative is using this weapon against an enemy operative that has one of your Poison tokens, add 1 to both Dmg stats of this weapon.\n\nGrandfather's Blessing: Whenever an enemy operative that has one of your Poison tokens loses one or more wounds within 7\" of this operative, this operative regains up to an equal number of lost wounds (to a maximum of 3 lost wounds per turning point,\r and only if this operative isn’t incapacitated).",
+      "notes": ""
+    },
+    {
+      "id": "chaos-pm-mal",
+      "opTypeId": "CHAOS-PM-MAL",
+      "name": "Plague Marines Malignant Plaguecaster",
+      "category": "po",
+      "cardType": "official",
+      "role": "Malignant Plaguecaster",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "5\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "PLAGUE MARINE, CHAOS, HERETIC ASTARTES, PSYKER, MALIGNANT PLAGUECASTER",
+      "weapons": [
+        {
+          "name": "Entropy",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/7",
+          "rules": "Psychic, Rng 7\", Sat, Severe, *Poison"
+        },
+        {
+          "name": "Plague Wind",
+          "atk": 6,
+          "hit": "3+",
+          "dmg": "2/3",
+          "rules": "Psychic, Sat, Severe, Tor 1\", *Poison"
+        },
+        {
+          "name": "Corrupted Staff",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Psychic, Severe, Shock, Stun, *Poison"
+        }
+      ],
+      "abilities": "Poisonous Miasma: **PSYCHIC**\nSelect one enemy operative visible to and within 7\" of this operative, or one enemy operative that’s a valid target for this operative.\nThat enemy operative gains one of your Poison tokens (if it does not already have one). If it already has one, inflict 3 damage on that enemy operative instead.  \n\nAn operative cannot perform this action while within control range of an enemy operative.\n\nPutrescent Vitality: **PSYCHIC**\r Select one friendly operative visible to and within 3\" of this operative, then roll 2D6: if the result is 7, the selected operative regains 7 lost wounds; otherwise, the selected operative regains lost wounds equal to the highest D6.  \n\r An operative cannot perform this action while within control range of an enemy operative, or more than once per Turning Point.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-pm-bomb",
+      "opTypeId": "CHAOS-PM-BOMB",
+      "name": "Plague Marines Plague Marine Bombardier",
+      "category": "po",
+      "cardType": "official",
+      "role": "Plague Marine Bombardier",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "5\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "PLAGUE MARINE, CHAOS, HERETIC ASTARTES, BOMBARDIER",
+      "weapons": [
+        {
+          "name": "Boltgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Blight Grenade",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "2/4",
+          "rules": "Rng 6\", Blast 2\", Sat, Severe, *Poison, *Toxic"
+        },
+        {
+          "name": "Fists",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        },
+        {
+          "name": "Krak Grenade",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Rng 6\", Prc1, Sat"
+        }
+      ],
+      "abilities": "*Toxic: Whenever this operative is using this weapon against an enemy operative that has one of your Poison tokens, add 1 to both Dmg stats of this weapon.\n\nGrenadier: This operative can use blight and krak grenades (see faction and universal equipment).\nDoing so doesn’t count towards any limited uses you have (i.e. if you also select those grenades from equipment for other operatives).\nWhenever it’s doing so, improve the Hit stat of that weapon by 1 and blight grenades have the Toxic weapon rule.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-pm-ftr",
+      "opTypeId": "CHAOS-PM-FTR",
+      "name": "Plague Marines Plague Marine Fighter",
+      "category": "po",
+      "cardType": "official",
+      "role": "Plague Marine Fighter",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "5\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "PLAGUE MARINE, CHAOS, HERETIC ASTARTES, FIGHTER",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Flail Of Corruption",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "4/5",
+          "rules": "Brutal, Severe, Shock, *Poison"
+        }
+      ],
+      "abilities": "Flail: Inflict D3+2 damage on each other operative that iss both visible to and within 2\" of this operative.\nRoll separately for each: if it is an enemy operative, if the D3 result is a 3, that enemy operative also gains one of your Poison tokens (if it doesn’t already have one).   \nFor the purposes of action restrictions and the Astartes faction rule, this action is treated as a Fight action.  \nThis operative cannot perform this action while it has a Conceal order.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-pm-hgnr",
+      "opTypeId": "CHAOS-PM-HGNR",
+      "name": "Plague Marines Plague Marine Heavy Gunner",
+      "category": "po",
+      "cardType": "official",
+      "role": "Plague Marine Heavy Gunner",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "5\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "PLAGUE MARINE, CHAOS, HERETIC ASTARTES, HEAVY GUNNER",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Plague Spewer",
+          "atk": 5,
+          "hit": "2+",
+          "dmg": "3/3",
+          "rules": "Rng 7\", Sat, Severe, Tor 2\", *Poison"
+        },
+        {
+          "name": "Fists",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": ""
+        }
+      ],
+      "abilities": "",
+      "notes": ""
+    },
+    {
+      "id": "chaos-pm-ib",
+      "opTypeId": "CHAOS-PM-IB",
+      "name": "Plague Marines Plague Marine Icon Bearer",
+      "category": "po",
+      "cardType": "official",
+      "role": "Plague Marine Icon Bearer",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "5\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "PLAGUE MARINE, CHAOS, HERETIC ASTARTES, ICON BEARER",
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Rng 8\""
+        },
+        {
+          "name": "Plague Knife",
+          "atk": 5,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Severe, *Poison"
+        }
+      ],
+      "abilities": "Icon Bearer: Whenever determining control of a marker, treat this operative’s APL stat as 1 higher. Note this isn’t a change to its APL stat, so any changes are cumulative with this.\n\nIcon Of Contagion: Whenever this operative is within your opponent’s territory, the Contagion strategy ploy costs you 0CP.",
+      "notes": ""
+    },
+    {
+      "id": "chaos-pm-war",
+      "opTypeId": "CHAOS-PM-WAR",
+      "name": "Plague Marines Plague Marine Warrior",
+      "category": "po",
+      "cardType": "official",
+      "role": "Plague Marine Warrior",
+      "points": 32,
+      "imageUrl": "",
+      "apl": 3,
+      "move": "5\"",
+      "save": "3+",
+      "wounds": 14,
+      "keywords": "PLAGUE MARINE, CHAOS, HERETIC ASTARTES, WARRIOR",
+      "weapons": [
+        {
+          "name": "Boltgun",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "*Toxic"
+        },
+        {
+          "name": "Plague Knife",
+          "atk": 4,
+          "hit": "3+",
+          "dmg": "3/4",
+          "rules": "Severe, *Poison"
+        }
+      ],
+      "abilities": "*Toxic: Whenever this operative is using this weapon against an enemy operative that has one of your Poison tokens, add 1 to both Dmg stats of this weapon.\n\nRepulsive Fortitude: Whenever an operative is shooting this operative, defence dice results of 5+ are critical successes.",
+      "notes": ""
+    }
+  ]
+}

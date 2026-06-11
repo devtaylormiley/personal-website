@@ -1,0 +1,434 @@
+[
+  {
+    "slug": "angels-of-death",
+    "killteamId": "IMP-AOD",
+    "name": "Angels Of Death",
+    "factionId": "IMP",
+    "archetypes": "Security, Seek And Destroy",
+    "operativeCount": 9,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-AOD.webp"
+  },
+  {
+    "slug": "battleclade",
+    "killteamId": "IMP-BC",
+    "name": "Battleclade",
+    "factionId": "IMP",
+    "archetypes": "Infiltration, Recon",
+    "operativeCount": 7,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-BC.webp"
+  },
+  {
+    "slug": "blades-of-khaine",
+    "killteamId": "AEL-BOK",
+    "name": "Blades Of Khaine",
+    "factionId": "AEL",
+    "archetypes": "Seek And Destroy, Security, Recon, Infiltration",
+    "operativeCount": 6,
+    "imageUrl": "https://ktdash.app/img/killteams/AEL-BOK.webp"
+  },
+  {
+    "slug": "blooded",
+    "killteamId": "CHAOS-BLD",
+    "name": "Blooded",
+    "factionId": "CHAOS",
+    "archetypes": "Infiltration, Seek And Destroy",
+    "operativeCount": 13,
+    "imageUrl": "https://ktdash.app/img/killteams/CHAOS-BLD.webp"
+  },
+  {
+    "slug": "brood-brothers",
+    "killteamId": "TYR-BBRO",
+    "name": "Brood Brothers",
+    "factionId": "TYR",
+    "archetypes": "Infiltration, Security",
+    "operativeCount": 15,
+    "imageUrl": "https://ktdash.app/img/killteams/TYR-BBRO.webp"
+  },
+  {
+    "slug": "canoptek-circle",
+    "killteamId": "NEC-CAN",
+    "name": "Canoptek Circle",
+    "factionId": "NEC",
+    "archetypes": "Recon, Security",
+    "operativeCount": 5,
+    "imageUrl": "https://ktdash.app/img/killteams/NEC-CAN.webp"
+  },
+  {
+    "slug": "celestian-insidiants",
+    "killteamId": "IMP-CI",
+    "name": "Celestian Insidiants",
+    "factionId": "IMP",
+    "archetypes": "Security, Seek And Destroy",
+    "operativeCount": 8,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-CI.webp"
+  },
+  {
+    "slug": "chaos-cult",
+    "killteamId": "CHAOS-CULT",
+    "name": "Chaos Cult",
+    "factionId": "CHAOS",
+    "archetypes": "Infiltration, Seek And Destroy",
+    "operativeCount": 7,
+    "imageUrl": "https://ktdash.app/img/killteams/CHAOS-CULT.webp"
+  },
+  {
+    "slug": "corsair-voidscarred",
+    "killteamId": "AEL-COR",
+    "name": "Corsair Voidscarred",
+    "factionId": "AEL",
+    "archetypes": "Infiltration, Recon",
+    "operativeCount": 11,
+    "imageUrl": "https://ktdash.app/img/killteams/AEL-COR.webp"
+  },
+  {
+    "slug": "death-korps",
+    "killteamId": "IMP-DKK",
+    "name": "Death Korps",
+    "factionId": "IMP",
+    "archetypes": "Security, Seek And Destroy",
+    "operativeCount": 12,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-DKK.webp"
+  },
+  {
+    "slug": "deathwatch",
+    "killteamId": "IMP-DW",
+    "name": "Deathwatch",
+    "factionId": "IMP",
+    "archetypes": "Seek And Destroy, Security",
+    "operativeCount": 11,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-DW.webp"
+  },
+  {
+    "slug": "elucidian-starstriders",
+    "killteamId": "IMP-ESS",
+    "name": "Elucidian Starstriders",
+    "factionId": "IMP",
+    "archetypes": "Recon, Security",
+    "operativeCount": 7,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-ESS.webp"
+  },
+  {
+    "slug": "exaction-squad",
+    "killteamId": "IMP-AES",
+    "name": "Exaction Squad",
+    "factionId": "IMP",
+    "archetypes": "Security, Seek And Destroy",
+    "operativeCount": 12,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-AES.webp"
+  },
+  {
+    "slug": "farstalker-kinband",
+    "killteamId": "TAU-FSKB",
+    "name": "Farstalker Kinband",
+    "factionId": "TAU",
+    "archetypes": "Infiltration, Recon",
+    "operativeCount": 11,
+    "imageUrl": "https://ktdash.app/img/killteams/TAU-FSKB.webp"
+  },
+  {
+    "slug": "fellgor-ravagers",
+    "killteamId": "CHAOS-FELL",
+    "name": "Fellgor Ravagers",
+    "factionId": "CHAOS",
+    "archetypes": "Recon, Seek And Destroy",
+    "operativeCount": 11,
+    "imageUrl": "https://ktdash.app/img/killteams/CHAOS-FELL.webp"
+  },
+  {
+    "slug": "gellerpox-infected",
+    "killteamId": "CHAOS-GPI",
+    "name": "Gellerpox Infected",
+    "factionId": "CHAOS",
+    "archetypes": "Security, Seek And Destroy",
+    "operativeCount": 9,
+    "imageUrl": "https://ktdash.app/img/killteams/CHAOS-GPI.webp"
+  },
+  {
+    "slug": "goremongers",
+    "killteamId": "CHAOS-GORE",
+    "name": "Goremongers",
+    "factionId": "CHAOS",
+    "archetypes": "Recon, Seek And Destroy",
+    "operativeCount": 7,
+    "imageUrl": "https://ktdash.app/img/killteams/CHAOS-GORE.webp"
+  },
+  {
+    "slug": "hand-of-the-archon",
+    "killteamId": "AEL-HOTA",
+    "name": "Hand Of The Archon",
+    "factionId": "AEL",
+    "archetypes": "Recon, Seek And Destroy",
+    "operativeCount": 9,
+    "imageUrl": "https://ktdash.app/img/killteams/AEL-HOTA.webp"
+  },
+  {
+    "slug": "hearthkyn-salvagers",
+    "killteamId": "VOT-HKS",
+    "name": "Hearthkyn Salvagers",
+    "factionId": "VOT",
+    "archetypes": "Recon, Security",
+    "operativeCount": 11,
+    "imageUrl": "https://ktdash.app/img/killteams/VOT-HKS.webp"
+  },
+  {
+    "slug": "hernkyn-yaegirs",
+    "killteamId": "VOT-HKY",
+    "name": "Hernkyn Yaegirs",
+    "factionId": "VOT",
+    "archetypes": "Infiltration, Seek And Destroy",
+    "operativeCount": 8,
+    "imageUrl": "https://ktdash.app/img/killteams/VOT-HKY.webp"
+  },
+  {
+    "slug": "hierotek-circle",
+    "killteamId": "NEC-HIER",
+    "name": "Hierotek Circle",
+    "factionId": "NEC",
+    "archetypes": "Recon, Security",
+    "operativeCount": 9,
+    "imageUrl": "https://ktdash.app/img/killteams/NEC-HIER.webp"
+  },
+  {
+    "slug": "hunter-clade",
+    "killteamId": "IMP-HC",
+    "name": "Hunter Clade",
+    "factionId": "IMP",
+    "archetypes": "Recon, Seek And Destroy",
+    "operativeCount": 14,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-HC.webp"
+  },
+  {
+    "slug": "imperial-navy-breachers",
+    "killteamId": "IMP-INB",
+    "name": "Imperial Navy Breachers",
+    "factionId": "IMP",
+    "archetypes": "Security, Seek And Destroy",
+    "operativeCount": 11,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-INB.webp"
+  },
+  {
+    "slug": "inquisitorial-agents",
+    "killteamId": "IMP-INQ",
+    "name": "Inquisitorial Agents",
+    "factionId": "IMP",
+    "archetypes": "Recon, Security, Seek And Destroy, Infiltration",
+    "operativeCount": 56,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-INQ.webp"
+  },
+  {
+    "slug": "kasrkin",
+    "killteamId": "IMP-KAS",
+    "name": "Kasrkin",
+    "factionId": "IMP",
+    "archetypes": "Security, Seek And Destroy",
+    "operativeCount": 8,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-KAS.webp"
+  },
+  {
+    "slug": "kommandos",
+    "killteamId": "ORK-KOM",
+    "name": "Kommandos",
+    "factionId": "ORK",
+    "archetypes": "Seek And Destroy, Infiltration",
+    "operativeCount": 11,
+    "imageUrl": "https://ktdash.app/img/killteams/ORK-KOM.webp"
+  },
+  {
+    "slug": "legionaries",
+    "killteamId": "CHAOS-LEG",
+    "name": "Legionaries",
+    "factionId": "CHAOS",
+    "archetypes": "Security, Seek And Destroy",
+    "operativeCount": 10,
+    "imageUrl": "https://ktdash.app/img/killteams/CHAOS-LEG.webp"
+  },
+  {
+    "slug": "mandrakes",
+    "killteamId": "AEL-MND",
+    "name": "Mandrakes",
+    "factionId": "AEL",
+    "archetypes": "Infiltration, Recon",
+    "operativeCount": 6,
+    "imageUrl": "https://ktdash.app/img/killteams/AEL-MND.webp"
+  },
+  {
+    "slug": "murderwing",
+    "killteamId": "CHAOS-MW",
+    "name": "Murderwing",
+    "factionId": "CHAOS",
+    "archetypes": "Recon, Seek And Destroy",
+    "operativeCount": 9,
+    "imageUrl": "https://ktdash.app/img/killteams/CHAOS-MW.webp"
+  },
+  {
+    "slug": "nemesis-claw",
+    "killteamId": "CHAOS-NC",
+    "name": "Nemesis Claw",
+    "factionId": "CHAOS",
+    "archetypes": "Infiltration, Seek And Destroy",
+    "operativeCount": 8,
+    "imageUrl": "https://ktdash.app/img/killteams/CHAOS-NC.webp"
+  },
+  {
+    "slug": "novitiates",
+    "killteamId": "IMP-NOV",
+    "name": "Novitiates",
+    "factionId": "IMP",
+    "archetypes": "Recon, Security",
+    "operativeCount": 12,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-NOV.webp"
+  },
+  {
+    "slug": "pathfinders",
+    "killteamId": "TAU-PF",
+    "name": "Pathfinders",
+    "factionId": "TAU",
+    "archetypes": "Infiltration, Recon",
+    "operativeCount": 16,
+    "imageUrl": "https://ktdash.app/img/killteams/TAU-PF.webp"
+  },
+  {
+    "slug": "phobos-strike-team",
+    "killteamId": "IMP-PHO",
+    "name": "Phobos Strike Team",
+    "factionId": "IMP",
+    "archetypes": "Infiltration, Recon",
+    "operativeCount": 13,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-PHO.webp"
+  },
+  {
+    "slug": "plague-marines",
+    "killteamId": "CHAOS-PM",
+    "name": "Plague Marines",
+    "factionId": "CHAOS",
+    "archetypes": "Security, Seek And Destroy",
+    "operativeCount": 7,
+    "imageUrl": "https://ktdash.app/img/killteams/CHAOS-PM.webp"
+  },
+  {
+    "slug": "ratlings",
+    "killteamId": "IMP-RAT",
+    "name": "Ratlings",
+    "factionId": "IMP",
+    "archetypes": "Security, Infiltration",
+    "operativeCount": 13,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-RAT.webp"
+  },
+  {
+    "slug": "raveners",
+    "killteamId": "TYR-RAV",
+    "name": "Raveners",
+    "factionId": "TYR",
+    "archetypes": "Seek And Destroy, Infiltration",
+    "operativeCount": 6,
+    "imageUrl": "https://ktdash.app/img/killteams/TYR-RAV.webp"
+  },
+  {
+    "slug": "sanctifiers",
+    "killteamId": "IMP-SANC",
+    "name": "Sanctifiers",
+    "factionId": "IMP",
+    "archetypes": "Security, Seek And Destroy",
+    "operativeCount": 11,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-SANC.webp"
+  },
+  {
+    "slug": "scout-squad",
+    "killteamId": "IMP-SCT",
+    "name": "Scout Squad",
+    "factionId": "IMP",
+    "archetypes": "Infiltration, Recon",
+    "operativeCount": 6,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-SCT.webp"
+  },
+  {
+    "slug": "spectre-squad",
+    "killteamId": "IMP-SPECT",
+    "name": "Spectre Squad",
+    "factionId": "IMP",
+    "archetypes": "Infiltration, Recon",
+    "operativeCount": 12,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-SPECT.webp"
+  },
+  {
+    "slug": "strike-force-variel",
+    "killteamId": "IMP-SFV",
+    "name": "Strike Force Variel",
+    "factionId": "IMP",
+    "archetypes": "Seek And Destroy, Infiltration",
+    "operativeCount": 7,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-SFV.webp"
+  },
+  {
+    "slug": "tempestus-aquilon",
+    "killteamId": "IMP-TEMPAQ",
+    "name": "Tempestus Aquilon",
+    "factionId": "IMP",
+    "archetypes": "Recon, Seek And Destroy",
+    "operativeCount": 8,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-TEMPAQ.webp"
+  },
+  {
+    "slug": "vespid-stingwings",
+    "killteamId": "TAU-VESP",
+    "name": "Vespid Stingwings",
+    "factionId": "TAU",
+    "archetypes": "Recon, Seek And Destroy",
+    "operativeCount": 7,
+    "imageUrl": "https://ktdash.app/img/killteams/TAU-VESP.webp"
+  },
+  {
+    "slug": "void-dancer-troupe",
+    "killteamId": "AEL-VDT",
+    "name": "Void-Dancer Troupe",
+    "factionId": "AEL",
+    "archetypes": "Infiltration, Recon",
+    "operativeCount": 4,
+    "imageUrl": "https://ktdash.app/img/killteams/AEL-VDT.webp"
+  },
+  {
+    "slug": "warp-coven",
+    "killteamId": "CHAOS-WC",
+    "name": "Warp Coven",
+    "factionId": "CHAOS",
+    "archetypes": "Recon, Security",
+    "operativeCount": 10,
+    "imageUrl": "https://ktdash.app/img/killteams/CHAOS-WC.webp"
+  },
+  {
+    "slug": "wolf-scouts",
+    "killteamId": "IMP-WS",
+    "name": "Wolf Scouts",
+    "factionId": "IMP",
+    "archetypes": "Seek And Destroy, Recon",
+    "operativeCount": 8,
+    "imageUrl": "https://ktdash.app/img/killteams/IMP-WS.webp"
+  },
+  {
+    "slug": "wrecka-krew",
+    "killteamId": "ORK-WK",
+    "name": "Wrecka Krew",
+    "factionId": "ORK",
+    "archetypes": "Seek And Destroy, Security",
+    "operativeCount": 7,
+    "imageUrl": "https://ktdash.app/img/killteams/ORK-WK.webp"
+  },
+  {
+    "slug": "wyrmblade",
+    "killteamId": "TYR-WB",
+    "name": "Wyrmblade",
+    "factionId": "TYR",
+    "archetypes": "Seek And Destroy, Infiltration",
+    "operativeCount": 9,
+    "imageUrl": "https://ktdash.app/img/killteams/TYR-WB.webp"
+  },
+  {
+    "slug": "xv26-stealth-battlesuits",
+    "killteamId": "TAU-XV26",
+    "name": "XV26 Stealth Battlesuits",
+    "factionId": "TAU",
+    "archetypes": "Infiltration, Recon",
+    "operativeCount": 8,
+    "imageUrl": "https://ktdash.app/img/killteams/TAU-XV26.webp"
+  }
+]

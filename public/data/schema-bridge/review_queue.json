@@ -1,0 +1,344 @@
+[
+  {
+    "source": "crm_export",
+    "row_index": 1,
+    "legacy": {
+      "WO #": "10479",
+      "Asset Tag": "CNV-DCK-07-OUTBOUND-SORTATION-LINE-BELT-DRIVE",
+      "Location": null,
+      "State": "In Prog",
+      "Assigned To": "S. Chen",
+      "Urgency": "Med",
+      "Cost": "12990",
+      "Last Modified": "05/28/2026",
+      "Notes": "Electrical - belt drive replacement"
+    },
+    "suggested": {
+      "id": "WO-10479",
+      "asset": "CNV-DCK-07-OUTBOUND-SORTATION-LINE-BELT-DRIVE",
+      "site": null,
+      "status": "In progress",
+      "owner": "S. Chen",
+      "priority": "Medium",
+      "price": 12990.0,
+      "updated": "2026-05-28",
+      "category": "Electrical"
+    },
+    "confidence": 0.88,
+    "reason": "Low-confidence semantic mapping",
+    "decisions": [
+      {
+        "field": "category",
+        "source_value": "Electrical - belt drive replacement",
+        "target_value": "Electrical",
+        "confidence": 0.88,
+        "method": "ai",
+        "reason": "Category inferred from leading discipline label"
+      }
+    ]
+  },
+  {
+    "source": "crm_export",
+    "row_index": 4,
+    "legacy": {
+      "WO #": "WO-10458",
+      "Asset Tag": "FLT-WHB-09-ELECTRIC-COUNTERBALANCE-TRUCK",
+      "Location": "Warehouse B",
+      "State": "Closed",
+      "Assigned To": "L. Kim",
+      "Urgency": "Medium",
+      "Cost": null,
+      "Last Modified": "2026-05-26",
+      "Notes": "Fleet"
+    },
+    "suggested": {
+      "id": "WO-10458",
+      "asset": "FLT-WHB-09-ELECTRIC-COUNTERBALANCE-TRUCK",
+      "site": "Warehouse B",
+      "status": "Closed",
+      "owner": "L. Kim",
+      "priority": "Medium",
+      "price": null,
+      "updated": "2026-05-26",
+      "category": "Fleet"
+    },
+    "confidence": 0.87,
+    "reason": "Low-confidence semantic mapping",
+    "decisions": [
+      {
+        "field": "category",
+        "source_value": "Fleet",
+        "target_value": "Fleet",
+        "confidence": 0.87,
+        "method": "ai",
+        "reason": "Fleet keyword in trailing comment"
+      }
+    ]
+  },
+  {
+    "source": "crm_export",
+    "row_index": 11,
+    "legacy": {
+      "WO #": "10430",
+      "Asset Tag": "FLT-NPL-05-PROPANE-FORKLIFT",
+      "Location": "North Plant",
+      "State": "Closed",
+      "Assigned To": "M. Okonkwo",
+      "Urgency": "Low",
+      "Cost": null,
+      "Last Modified": "2026-05-22",
+      "Notes": "Fleet"
+    },
+    "suggested": {
+      "id": "WO-10430",
+      "asset": "FLT-NPL-05-PROPANE-FORKLIFT",
+      "site": "North Plant",
+      "status": "Closed",
+      "owner": "M. Okonkwo",
+      "priority": "Low",
+      "price": null,
+      "updated": "2026-05-22",
+      "category": "Fleet"
+    },
+    "confidence": 0.87,
+    "reason": "Low-confidence semantic mapping",
+    "decisions": [
+      {
+        "field": "category",
+        "source_value": "Fleet",
+        "target_value": "Fleet",
+        "confidence": 0.87,
+        "method": "ai",
+        "reason": "Fleet keyword in trailing comment"
+      }
+    ]
+  },
+  {
+    "source": "crm_export",
+    "row_index": 18,
+    "legacy": {
+      "WO #": "10408",
+      "Asset Tag": "FLT-SYD-02-REACH-TRUCK",
+      "Location": "South Yard",
+      "State": "Closed",
+      "Assigned To": "L. Kim",
+      "Urgency": "Medium",
+      "Cost": null,
+      "Last Modified": "2026-05-19",
+      "Notes": "Fleet"
+    },
+    "suggested": {
+      "id": "WO-10408",
+      "asset": "FLT-SYD-02-REACH-TRUCK",
+      "site": "South Yard",
+      "status": "Closed",
+      "owner": "L. Kim",
+      "priority": "Medium",
+      "price": null,
+      "updated": "2026-05-19",
+      "category": "Fleet"
+    },
+    "confidence": 0.87,
+    "reason": "Low-confidence semantic mapping",
+    "decisions": [
+      {
+        "field": "category",
+        "source_value": "Fleet",
+        "target_value": "Fleet",
+        "confidence": 0.87,
+        "method": "ai",
+        "reason": "Fleet keyword in trailing comment"
+      }
+    ]
+  },
+  {
+    "source": "maintenance_dump",
+    "row_index": 17,
+    "legacy": {
+      "WorkOrderID": "10408",
+      "equipment_id": "FLT-SYD-02-REACH-TRUCK",
+      "facility": "South Yard",
+      "status_code": "COMPLETE",
+      "tech_name": "L. Kim",
+      "priority_level": "Medium",
+      "estimate": null,
+      "date_updated": "2026-05-19",
+      "work_description": "Reach truck fleet PM"
+    },
+    "suggested": {
+      "id": "WO-10408",
+      "asset": "FLT-SYD-02-REACH-TRUCK",
+      "site": "South Yard",
+      "status": "Closed",
+      "owner": "L. Kim",
+      "priority": "Medium",
+      "price": null,
+      "updated": "2026-05-19",
+      "category": "Fleet"
+    },
+    "confidence": 0.87,
+    "reason": "Low-confidence semantic mapping",
+    "decisions": [
+      {
+        "field": "category",
+        "source_value": "Reach truck fleet PM",
+        "target_value": "Fleet",
+        "confidence": 0.87,
+        "method": "ai",
+        "reason": "Fleet keyword in trailing comment"
+      }
+    ]
+  },
+  {
+    "source": "spreadsheet_export",
+    "row_index": 4,
+    "legacy": {
+      "order_num": "10458",
+      "asset_code": "FLT-WHB-09-ELECTRIC-COUNTERBALANCE-TRUCK",
+      "site_name": "Warehouse B",
+      "wo_status": "Closed",
+      "owner_initials": "LK",
+      "prio": "Medium",
+      "amount": null,
+      "modified_on": "2026-05-26",
+      "comments": "Fleet counterbalance truck"
+    },
+    "suggested": {
+      "id": "WO-10458",
+      "asset": "FLT-WHB-09-ELECTRIC-COUNTERBALANCE-TRUCK",
+      "site": "Warehouse B",
+      "status": "Closed",
+      "owner": "L. Kim",
+      "priority": "Medium",
+      "price": null,
+      "updated": "2026-05-26",
+      "category": "Fleet"
+    },
+    "confidence": 0.87,
+    "reason": "Low-confidence semantic mapping",
+    "decisions": [
+      {
+        "field": "category",
+        "source_value": "Fleet counterbalance truck",
+        "target_value": "Fleet",
+        "confidence": 0.87,
+        "method": "ai",
+        "reason": "Fleet keyword in trailing comment"
+      }
+    ]
+  },
+  {
+    "source": "spreadsheet_export",
+    "row_index": 11,
+    "legacy": {
+      "order_num": "10430",
+      "asset_code": "FLT-NPL-05-PROPANE-FORKLIFT",
+      "site_name": "North Plant",
+      "wo_status": "Closed",
+      "owner_initials": "MO",
+      "prio": "Low",
+      "amount": null,
+      "modified_on": "2026-05-22",
+      "comments": "Fleet propane forklift"
+    },
+    "suggested": {
+      "id": "WO-10430",
+      "asset": "FLT-NPL-05-PROPANE-FORKLIFT",
+      "site": "North Plant",
+      "status": "Closed",
+      "owner": "M. Okonkwo",
+      "priority": "Low",
+      "price": null,
+      "updated": "2026-05-22",
+      "category": "Fleet"
+    },
+    "confidence": 0.87,
+    "reason": "Low-confidence semantic mapping",
+    "decisions": [
+      {
+        "field": "category",
+        "source_value": "Fleet propane forklift",
+        "target_value": "Fleet",
+        "confidence": 0.87,
+        "method": "ai",
+        "reason": "Fleet keyword in trailing comment"
+      }
+    ]
+  },
+  {
+    "source": "spreadsheet_export",
+    "row_index": 18,
+    "legacy": {
+      "order_num": "10408",
+      "asset_code": "FLT-SYD-02-REACH-TRUCK",
+      "site_name": "South Yard",
+      "wo_status": "Closed",
+      "owner_initials": "LK",
+      "prio": "Medium",
+      "amount": null,
+      "modified_on": "2026-05-19",
+      "comments": "Fleet reach truck"
+    },
+    "suggested": {
+      "id": "WO-10408",
+      "asset": "FLT-SYD-02-REACH-TRUCK",
+      "site": "South Yard",
+      "status": "Closed",
+      "owner": "L. Kim",
+      "priority": "Medium",
+      "price": null,
+      "updated": "2026-05-19",
+      "category": "Fleet"
+    },
+    "confidence": 0.87,
+    "reason": "Low-confidence semantic mapping",
+    "decisions": [
+      {
+        "field": "category",
+        "source_value": "Fleet reach truck",
+        "target_value": "Fleet",
+        "confidence": 0.87,
+        "method": "ai",
+        "reason": "Fleet keyword in trailing comment"
+      }
+    ]
+  },
+  {
+    "source": "spreadsheet_export",
+    "row_index": 21,
+    "legacy": {
+      "order_num": "10400",
+      "asset_code": "GEN-NPL-03B-BACKUP-DIESEL-GENERATOR-SET",
+      "site_name": "North Plant",
+      "wo_status": "Ready",
+      "owner_initials": "T. Nguyen",
+      "prio": "High",
+      "amount": "15420",
+      "modified_on": "2026-05-25",
+      "comments": "Electrical - possible duplicate of WO-10448"
+    },
+    "suggested": {
+      "id": "WO-10400",
+      "asset": "GEN-NPL-03B-BACKUP-DIESEL-GENERATOR-SET",
+      "site": "North Plant",
+      "status": "Ready",
+      "owner": "T. Nguyen",
+      "priority": "High",
+      "price": 15420.0,
+      "updated": "2026-05-25",
+      "category": "Electrical"
+    },
+    "confidence": 0.65,
+    "reason": "Low-confidence semantic mapping",
+    "decisions": [
+      {
+        "field": "notes",
+        "source_value": "Electrical - possible duplicate of WO-10448",
+        "target_value": null,
+        "confidence": 0.65,
+        "method": "ai",
+        "reason": "Duplicate hint only \u2014 no category extraction"
+      }
+    ]
+  }
+]

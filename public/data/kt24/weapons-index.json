@@ -1,0 +1,4181 @@
+[
+  {
+    "name": "'Eavy Rokkit Launcha",
+    "atk": 6,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Blast 1\", Hvy(Dash)"
+  },
+  {
+    "name": "Absolver Bolt Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng 9\", PrcCrit 1"
+  },
+  {
+    "name": "Abyssal Lance",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "2/2",
+    "rules": "Blast 2\", 2\" Dev1, Prc2, *Magnify"
+  },
+  {
+    "name": "Accelerator Bow (Fused Arrow)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Accelerator Bow (Glide Arrow)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Silent"
+  },
+  {
+    "name": "Accelerator Bow (Voltaic Arrow)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Blast 1\""
+  },
+  {
+    "name": "Acid Spit",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "2/2",
+    "rules": "Rng 6\", 1\" Dev1, Prc1"
+  },
+  {
+    "name": "Aeonstave",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Blast 2\", Lethal 5+, Stun, *Magnify"
+  },
+  {
+    "name": "Agoniser",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Brutal, Lethal 5+, Shock"
+  },
+  {
+    "name": "APM Launcher (Armour Piercing)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "*Bipod, Hvy(Repos), Prc1"
+  },
+  {
+    "name": "APM Launcher (Breaching)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "3/5",
+    "rules": "*Bipod, Hvy(Repos), Blast 2\""
+  },
+  {
+    "name": "APM Launcher (High Explosive)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "2/4",
+    "rules": "*Bipod, Hvy(Repos), Blast 3\""
+  },
+  {
+    "name": "Arc Maul",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Shock"
+  },
+  {
+    "name": "Arc Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng 8\", Prc1, Stun"
+  },
+  {
+    "name": "Arc Rifle",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Prc1, Stun"
+  },
+  {
+    "name": "Arcane Conduit",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Prc1, *Magnify"
+  },
+  {
+    "name": "Array Of Blades",
+    "atk": 3,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Artificer Shotgun (Close Range)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Rng 6\""
+  },
+  {
+    "name": "Artificer Shotgun (Long Range)",
+    "atk": 4,
+    "hit": "5+",
+    "dmg": "2/2",
+    "rules": ""
+  },
+  {
+    "name": "Astartes Shotgun",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/4",
+    "rules": "Rng 6\""
+  },
+  {
+    "name": "Atomic Disassembler",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/2",
+    "rules": "Rng 8\", Dev 3, Prc2"
+  },
+  {
+    "name": "Atomiser Beam",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Rng 6\", Lethal 5+"
+  },
+  {
+    "name": "Augmetic Claw",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Brutal"
+  },
+  {
+    "name": "Auto Bolt Rifle",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Tor 1\""
+  },
+  {
+    "name": "Auto-Stubber (Focused)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Hvy(Dash)"
+  },
+  {
+    "name": "Auto-Stubber (Suppressive)",
+    "atk": 5,
+    "hit": "5+",
+    "dmg": "0/0",
+    "rules": "Hvy, Lethal 5+, Seek Light, Stun, Tor 1\""
+  },
+  {
+    "name": "Auto-Stubber (Sweeping)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Hvy(Dash), Tor 1\""
+  },
+  {
+    "name": "Autoch-Pattern Bolt Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", Acc1"
+  },
+  {
+    "name": "Autoch-Pattern Bolter",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Acc1"
+  },
+  {
+    "name": "Autogun",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Autopistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": "Rng 8\""
+  },
+  {
+    "name": "Auxiliary Grenade Launcher (Frag)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Blast 2\""
+  },
+  {
+    "name": "Auxiliary Grenade Launcher (Krak)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Baleblade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/6",
+    "rules": "Brutal, Lethal 5+"
+  },
+  {
+    "name": "Baleblast",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "*Soulstrike"
+  },
+  {
+    "name": "Balesurge (Blast)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Blast 2\", *Soulstrike"
+  },
+  {
+    "name": "Balesurge (Burn)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Lethal 5+, *Soulstrike"
+  },
+  {
+    "name": "Barbed Tail",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 3\", Silent"
+  },
+  {
+    "name": "Battle Rifle",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Battlesuit Fists",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Bayonet",
+    "atk": 3,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Bayonet and Claw",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": "Balanced"
+  },
+  {
+    "name": "Bayonet and Shield",
+    "atk": 3,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": "*Shield"
+  },
+  {
+    "name": "Big Choppa",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "5/6",
+    "rules": ""
+  },
+  {
+    "name": "Bio Dagger",
+    "atk": 2,
+    "hit": "4+",
+    "dmg": "3/6",
+    "rules": "Lethal 4+"
+  },
+  {
+    "name": "Bio-Plasma",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Rng 6\", Blast 2\", Hvy"
+  },
+  {
+    "name": "Bionic Arm",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Bionic Fist",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Brutal"
+  },
+  {
+    "name": "Bite",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Biting Blade",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "5/6",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Blade",
+    "atk": 3,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": ""
+  },
+  {
+    "name": "Blades",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Ceaseless"
+  },
+  {
+    "name": "Blasphemous Appendages",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Ceaseless, Rnd"
+  },
+  {
+    "name": "Blast Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", Prc2"
+  },
+  {
+    "name": "Blaster",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Prc2"
+  },
+  {
+    "name": "Blessed Broadsword",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Lethal 5+, Brutal"
+  },
+  {
+    "name": "Blessed Sword & Praesidium Protectiva (Defensive)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "*Shield"
+  },
+  {
+    "name": "Blessed Sword & Praesidium Protectiva (Offensive)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Blight Grenade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Rng 6\", Blast 2\", Sat, Severe, *Poison, *Toxic"
+  },
+  {
+    "name": "Bloodsucking Proboscis",
+    "atk": 2,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": "Rnd, *Feast"
+  },
+  {
+    "name": "Bludgeon",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Brutal"
+  },
+  {
+    "name": "Bolt Carbine",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Acc1"
+  },
+  {
+    "name": "Bolt Carbine (Default)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Accurate 1"
+  },
+  {
+    "name": "Bolt Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\""
+  },
+  {
+    "name": "Bolt Pistol (Default)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\""
+  },
+  {
+    "name": "Bolt Revolver",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Rng 8\""
+  },
+  {
+    "name": "Bolt Rifle",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "PrcCrit1"
+  },
+  {
+    "name": "Bolt Rifle (Default)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "PrcCrit1"
+  },
+  {
+    "name": "Bolt Shotgun (Long Range)",
+    "atk": 4,
+    "hit": "5+",
+    "dmg": "2/2",
+    "rules": ""
+  },
+  {
+    "name": "Bolt Shotgun (Short Range)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Rng 6\""
+  },
+  {
+    "name": "Bolt Sniper Rifle (Executioner)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/4",
+    "rules": "Hvy(Dash), Sat, Seek Light, Silent"
+  },
+  {
+    "name": "Bolt Sniper Rifle (Hyperfrag)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "2/4",
+    "rules": "Blast 1\", Hvy(Dash), Silent"
+  },
+  {
+    "name": "Bolt Sniper Rifle (Mortis)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev3, Hvy(Dash), Prc1, Silent"
+  },
+  {
+    "name": "Boltgun",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Bone Mace",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 3\", Prc1, Silent"
+  },
+  {
+    "name": "Bonesword and Toxin Injector Claw",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Lethal 5+, Rnd"
+  },
+  {
+    "name": "Boneswords",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Braystave",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Shock"
+  },
+  {
+    "name": "Brazier Of Holy Fire",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/4",
+    "rules": "Rng 4\", Sat, Tor 1\", *Blaze"
+  },
+  {
+    "name": "Breacha Ram",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "5/5",
+    "rules": "Brutal, Severe, Shock"
+  },
+  {
+    "name": "Brute Shield",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Burna (Deluge)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 4\", Sat, Seek, *Torrent 0\""
+  },
+  {
+    "name": "Burna (Standard)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 8\", Sat, Tor 2\""
+  },
+  {
+    "name": "Burning Censer",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/4",
+    "rules": "Rng 5\", Sat, Tor 2\""
+  },
+  {
+    "name": "Burning Hands",
+    "atk": 1,
+    "hit": "2+",
+    "dmg": "7/8",
+    "rules": "Brutal, Lim 1, *Blaze"
+  },
+  {
+    "name": "Burst Cannon",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": "Rng 9\", Ceaseless"
+  },
+  {
+    "name": "Burst Cannon (Focused)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Ceaseless, Hvy(Repos), Punishing"
+  },
+  {
+    "name": "Burst Cannon (Sweeping)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Ceaseless, Hvy(Repos), Punishing, Tor 1\""
+  },
+  {
+    "name": "C8 HX Charge",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Rng 4\", Blast 1\", Hvy(Repos), Lim1, Prc1, Sat"
+  },
+  {
+    "name": "Caress",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Chainblade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Chainfist",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "5/6",
+    "rules": "Brutal, Rnd"
+  },
+  {
+    "name": "Chainglaive",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Chainsword",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Chainsword (Default)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Chainsword and Claw",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Balanced, Rnd"
+  },
+  {
+    "name": "Choppa",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Chordclaw & Transonic Blades",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Balanced, Rnd"
+  },
+  {
+    "name": "Chordclaw & Transonic Razor",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Balanced"
+  },
+  {
+    "name": "Claws",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Claws & Spark",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Lethal 5+, Stun"
+  },
+  {
+    "name": "Claws & Tail",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Claws & Talons",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": ""
+  },
+  {
+    "name": "Claws & Teeth",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "2/4",
+    "rules": "Ceaseless"
+  },
+  {
+    "name": "Cleaver",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Close Combat Weapon",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Combat Blade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Combat Knife",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Combat Knife (Default)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Combat Knives",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Combat Shotgun (Close Range)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Rng 6\""
+  },
+  {
+    "name": "Combat Shotgun (Long Range)",
+    "atk": 4,
+    "hit": "5+",
+    "dmg": "2/2",
+    "rules": ""
+  },
+  {
+    "name": "Combi-Melta (Bolter)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Tor1\""
+  },
+  {
+    "name": "Combi-Melta (Melta)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "6/3",
+    "rules": "Rng 6\", Dev4, Lim1, Prc2"
+  },
+  {
+    "name": "Commune Blade",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/6",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Concussion Gauntlet",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "5/7",
+    "rules": "Brutal, Shock"
+  },
+  {
+    "name": "Concussion Knux",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Ceaseless, Lethal 5+, Shock"
+  },
+  {
+    "name": "Condemnor Stakethrower",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/2",
+    "rules": "Dev 1, PrcCrit1, Silent, Anti-PSYKER"
+  },
+  {
+    "name": "Corrupted Chainsword",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Corrupted Pistol",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/5",
+    "rules": "Rng 8\", Rnd"
+  },
+  {
+    "name": "Corrupted Staff",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Psychic, Severe, Shock, Stun, *Poison"
+  },
+  {
+    "name": "Crackthorn Whip",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "2/3",
+    "rules": "Rng 3\", Lethal 4+, Stun"
+  },
+  {
+    "name": "Crude Melee Weapon",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Custom Bolt Carbine",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "*Custom"
+  },
+  {
+    "name": "Cut-Skin's Blades",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Ceaseless, Lethal 5+"
+  },
+  {
+    "name": "Daemon Blade",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/7",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Daemonic Claw",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Dagger",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Dakka Shoota (Long Range)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Dakka Shoota (Short Range)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Rng 9\", Ceaseless"
+  },
+  {
+    "name": "Dark Lance",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "6/7",
+    "rules": "Hvy(Dash), Prc2"
+  },
+  {
+    "name": "Dartmask",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "1/1",
+    "rules": "Rng 6\", Lethal 5+, Silent, Stun"
+  },
+  {
+    "name": "Dataspikes",
+    "atk": 3,
+    "hit": "5+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Demolition Charge",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Rng 3\", Blast 2\", HVY(Repos), Lim1, Prc1, Sat"
+  },
+  {
+    "name": "Diabolical Stave",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/6",
+    "rules": "Rng 2\", Stun"
+  },
+  {
+    "name": "Diabolyk Bomb",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/3",
+    "rules": "Rng 6\", Blast 2\", Dev2, Lim1, Hvy(Repos), Prc1, Sat"
+  },
+  {
+    "name": "Dialogus Stave",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/3",
+    "rules": "Shock"
+  },
+  {
+    "name": "Diresword",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Lethal 5+, Rnd"
+  },
+  {
+    "name": "Diseased Effluence",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "2/2",
+    "rules": "Rng 6\""
+  },
+  {
+    "name": "Diseased Nippers",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "1/2",
+    "rules": ""
+  },
+  {
+    "name": "Dominator Maul & Assault Shield",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Lethal 5+, Shock, *Repress"
+  },
+  {
+    "name": "Doombolt",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/2",
+    "rules": "Psychic, Dev2, Lethal 5+"
+  },
+  {
+    "name": "Double-Handed Chainaxe",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "5/7",
+    "rules": "Brutal"
+  },
+  {
+    "name": "Drum-Fed Autogun",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": "Ceaseless"
+  },
+  {
+    "name": "Dual Autopistols",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/2",
+    "rules": "Rng 8\", Ceaseless, Dev 1, Rnd"
+  },
+  {
+    "name": "Dual Kroot Pistols (Focused)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Rng 8\", Ceaseless, Lethal 5+"
+  },
+  {
+    "name": "Dual Kroot Pistols (Salvo)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Rng 8\", *Salvo"
+  },
+  {
+    "name": "Dual Plasma Knives",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Ceaseless, Lethal 5+"
+  },
+  {
+    "name": "Dual Power Weapons",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Ceaseless, Lethal 5+"
+  },
+  {
+    "name": "Duelling Blades",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Ceaseless, *Riposte"
+  },
+  {
+    "name": "Dvorgite Skinner",
+    "atk": 5,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 6\", Hvy(Repos), Prc2, Tor 2\""
+  },
+  {
+    "name": "Embrace",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Brutal"
+  },
+  {
+    "name": "EMP Bomb",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "2/2",
+    "rules": "Rng 4\", Blast 2\", Dev1, Hvy(Repos), Lethal 4+, Lim1, Sat"
+  },
+  {
+    "name": "Enormous Claws",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Brutal, Ceaseless, Rending"
+  },
+  {
+    "name": "Entrencher",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Entropic Lance",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/3",
+    "rules": "Dev3, Prc1, *Magnify"
+  },
+  {
+    "name": "Entropy",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/7",
+    "rules": "Psychic, Rng 7\", Sat, Severe, *Poison"
+  },
+  {
+    "name": "Eradication Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/2",
+    "rules": "Rng 8\", 1\" Dev3, Lethal 5+"
+  },
+  {
+    "name": "Eradicator Glove",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "5/7",
+    "rules": "Brutal, Shock, Stun"
+  },
+  {
+    "name": "EtaCarn Plasma Beamer",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "5/6",
+    "rules": "Prc1, *Beam"
+  },
+  {
+    "name": "EtaCarn Plasma Pistol",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/5",
+    "rules": "Rng 8\", Prc1"
+  },
+  {
+    "name": "Eviscerator",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "5/6",
+    "rules": "Brutal"
+  },
+  {
+    "name": "Excruciator Maul",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/5",
+    "rules": "Rnd, Shock"
+  },
+  {
+    "name": "Executioner",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/7",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Executioner Shotgun (Concealed)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/0",
+    "rules": "Dev4, Hvy, Silent, *Concealed Position"
+  },
+  {
+    "name": "Executioner Shotgun (Mobile)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": ""
+  },
+  {
+    "name": "Executioner Shotgun (Stationary)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/0",
+    "rules": "Dev4, Hvy"
+  },
+  {
+    "name": "Executor Greatblade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Explosive Arsenal",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng3\", Blast1\", Lim1, Hvy(Repos), Prc1, Sat"
+  },
+  {
+    "name": "Explosives",
+    "atk": 6,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Blast 1\", Lim1, *Explosive"
+  },
+  {
+    "name": "Extended Stock AutoPistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Rng 12\", Lethal 5+"
+  },
+  {
+    "name": "Fanged Maw",
+    "atk": 2,
+    "hit": "4+",
+    "dmg": "1/3",
+    "rules": ""
+  },
+  {
+    "name": "Fangs",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rending"
+  },
+  {
+    "name": "Faolchu",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "1/2",
+    "rules": "Rnd, Sat, Seek Light, Silent"
+  },
+  {
+    "name": "Feeder Mandibles",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": "Ceaseless"
+  },
+  {
+    "name": "Fell Dagger",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Psychic, Rnd, *Siphon Life"
+  },
+  {
+    "name": "Firearm",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Fireblast",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Psychic, Blast 2\", 1\" Dev1, Sat"
+  },
+  {
+    "name": "Firestorm",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": "Psychic, Sat, Seek Light, Tor 2\""
+  },
+  {
+    "name": "Fists",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Fists (Default)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Flail Of Corruption",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Brutal, Severe, Shock, *Poison"
+  },
+  {
+    "name": "Flamer",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 8\", Sat, Tor 2\""
+  },
+  {
+    "name": "Flamer (Skytorch)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "*Skytorch, Sat, *Torrent 0\""
+  },
+  {
+    "name": "Flamer (Standard)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 8\", Sat, Tor 2\""
+  },
+  {
+    "name": "Flechette Blaster",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "2/2",
+    "rules": "Rng 8\", Sat, Silent"
+  },
+  {
+    "name": "Flensing Blades",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Fleshmelded Weapons",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "*Engineered"
+  },
+  {
+    "name": "Fleshskewer",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng 8\", Stun, *Drag, *Prey"
+  },
+  {
+    "name": "Fluxblast",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Psychic, Blast 2\", Rnd"
+  },
+  {
+    "name": "Force Stave",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/6",
+    "rules": "Psychic, Shock"
+  },
+  {
+    "name": "Frag Cannon (Shell)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/7",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Frag Cannon (Shrapnel)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Tor 2\""
+  },
+  {
+    "name": "Frag Grenade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Rng 6\", Blast 2\", Sat"
+  },
+  {
+    "name": "Freezing Grasp",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "1/2",
+    "rules": "Psychic, Severe, Silent, Stun"
+  },
+  {
+    "name": "Fusion Blaster (Long Range)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Rng 12\", Prc1"
+  },
+  {
+    "name": "Fusion Blaster (Short Range)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "6/3",
+    "rules": "Rng 6\", Dev4, Prc2"
+  },
+  {
+    "name": "Fusion Grenade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/3",
+    "rules": "Rng 6\", Dev2, Lim1, Prc2, Sat"
+  },
+  {
+    "name": "Fusion Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/3",
+    "rules": "Rng 3\", Dev3, Prc2"
+  },
+  {
+    "name": "Galvanic Rifle",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Hvy(Repos), PrcCrit1"
+  },
+  {
+    "name": "Gauss Blaster",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Gauss Flayer",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Prc 1"
+  },
+  {
+    "name": "Gauss Scalpel",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Gaze of Death",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/6",
+    "rules": "Rng 6\", Dev 2, Prc 1"
+  },
+  {
+    "name": "Gene-Needler",
+    "atk": 1,
+    "hit": "4+",
+    "dmg": "5/7",
+    "rules": "Lethal 5+, Lim1"
+  },
+  {
+    "name": "Gheistskull Detonator",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Blast 1\", Lethal 4+, Lim1, Silent, Stun, *Detonate"
+  },
+  {
+    "name": "Glimmersteel Blade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Great Chainaxe",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/6",
+    "rules": "Brutal"
+  },
+  {
+    "name": "Great Hammer",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/4",
+    "rules": "Brutal, Shock"
+  },
+  {
+    "name": "Greataxe",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Brutal, Lethal 5+"
+  },
+  {
+    "name": "Greatblade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Lethal 5+, Rnd"
+  },
+  {
+    "name": "Grenade Launcher",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Grenade Launcher (Frag)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "2/4",
+    "rules": "Blast 2\""
+  },
+  {
+    "name": "Grenade Launcher (Krak)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Grenadier Gauntlet",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/5",
+    "rules": "Blast 2\""
+  },
+  {
+    "name": "Grot Choppa",
+    "atk": 3,
+    "hit": "5+",
+    "dmg": "1/4",
+    "rules": ""
+  },
+  {
+    "name": "Gun Butt",
+    "atk": 3,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Gun Butts",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Hallucinogen Grenade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "1/1",
+    "rules": "Rng 6\", Blast 2\", Lethal 5+, Seek Light, Silent, Stun"
+  },
+  {
+    "name": "Hand Flamer",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 6\", Sat, Tor 1\""
+  },
+  {
+    "name": "Hand Flamer (Deluge)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 4\", Sat, Seek Light, *Tor 0\""
+  },
+  {
+    "name": "Hand Flamer (Standard)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 6\", Sat, Tor 1\""
+  },
+  {
+    "name": "Hatchet",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Heavy Arc Rifle",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/6",
+    "rules": "Hvy(Dash), Prc1, Stun"
+  },
+  {
+    "name": "Heavy Axe",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Brutal"
+  },
+  {
+    "name": "Heavy Bolt Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", PrcCrit1"
+  },
+  {
+    "name": "Heavy Bolt Pistol (Default)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", PrcCrit1"
+  },
+  {
+    "name": "Heavy Bolter (Focused)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "PrcCrit1"
+  },
+  {
+    "name": "Heavy Bolter (Sweeping)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "PrcCrit1, Tor 1\""
+  },
+  {
+    "name": "Heavy Club",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Brutal"
+  },
+  {
+    "name": "Heavy Plasma Incinerator (Standard)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Heavy Plasma Incinerator (Supercharge)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "5/6",
+    "rules": "Hot, Lethal 5+, Prc1"
+  },
+  {
+    "name": "Heavy Stubber (Focused)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Hvy(Dash)"
+  },
+  {
+    "name": "Heavy Stubber (Sweeping)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Hvy(Dash), Tor1\""
+  },
+  {
+    "name": "Heavy Thunder Hammer",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "6/7",
+    "rules": "Shock, Stun"
+  },
+  {
+    "name": "Heirloom Autopistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Rng 8\", Lethal 5+"
+  },
+  {
+    "name": "Heirloom Relic Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng 8\", PrcCrit1, Seek Light"
+  },
+  {
+    "name": "Hekatarii Blades",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Ceaseless, Lethal 5+"
+  },
+  {
+    "name": "Hellstorm Bolt Rifle",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Tor 1\""
+  },
+  {
+    "name": "Hideous Mutations",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Ceaseless, Rnd"
+  },
+  {
+    "name": "Holy Light",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/3",
+    "rules": "Rng 8\", Dev 3, Lim 1, Prc 1, Sat, *Blaze"
+  },
+  {
+    "name": "Horrifying Scream",
+    "atk": 5,
+    "hit": "2+",
+    "dmg": "2/2",
+    "rules": "Rng 6\", Dev 2, Seek Light, Stun, *Soulstrike"
+  },
+  {
+    "name": "Hot-Shot Lascarbine",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Hot-Shot Lasgun",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Hot-Shot Laspistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\""
+  },
+  {
+    "name": "Hot-Shot Laspistol (Focused)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", Ceaseless, Rend"
+  },
+  {
+    "name": "Hot-Shot Laspistol (Point Blank)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Ceaseless"
+  },
+  {
+    "name": "Hot-Shot Laspistol (Salvo)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", *Salvo"
+  },
+  {
+    "name": "Hot-Shot Longlas (Concealed)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev3, Hvy, Sil, *Concealed Position"
+  },
+  {
+    "name": "Hot-Shot Longlas (Mobile)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Hot-Shot Longlas (Stationary)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev3, Hvy"
+  },
+  {
+    "name": "Hot-Shot Marksman Rifle (Concealed)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev3, Hvy, Sil, *Concealed Position"
+  },
+  {
+    "name": "Hot-Shot Marksman Rifle (Mobile)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Hot-Shot Marksman Rifle (Stationary)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev3, Heavy"
+  },
+  {
+    "name": "Hot-Shot Volley Gun (Focused)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "PrcCrit1"
+  },
+  {
+    "name": "Hot-Shot Volley Gun (Sweeping)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "PrcCrit1, Tor1\""
+  },
+  {
+    "name": "Huskblade",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Lethal 5+, Shock"
+  },
+  {
+    "name": "Hydraulic Pincer & Lascutter",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/6",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "HYLas Auto Rifle",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Ceaseless, Rnd"
+  },
+  {
+    "name": "HYLas Rotary Cannon (Focused)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Ceaseless, Hvy(Repos), Sat"
+  },
+  {
+    "name": "HYLas Rotary Cannon (Sweeping)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Ceaseless, Hvy(Repos), Sat, Tor 1\""
+  },
+  {
+    "name": "Icarus Rocket Pod",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Rng 12\", Blast 2\""
+  },
+  {
+    "name": "Icon Of Khorne",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/4",
+    "rules": "Rng 8\", Sat"
+  },
+  {
+    "name": "Improvised Blade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Improvised Weapon",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Ceaseless"
+  },
+  {
+    "name": "Incendine Igniter",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/4",
+    "rules": "Rng 6\", Sat, Tor1\""
+  },
+  {
+    "name": "Incentiviser",
+    "atk": 3,
+    "hit": "5+",
+    "dmg": "1/3",
+    "rules": "Shock"
+  },
+  {
+    "name": "Infernal Gaze",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "0/0",
+    "rules": "Psychic, Rng 6\", Dev2, Lethal 3+"
+  },
+  {
+    "name": "Inferno Bolt Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", Prc1"
+  },
+  {
+    "name": "Inferno Boltgun",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Inferno Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/2",
+    "rules": "Rng 3\", Dev3, Prc2"
+  },
+  {
+    "name": "Infernus Heavy Bolter (Flame)",
+    "atk": 5,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 8\", Sat, Tor2\""
+  },
+  {
+    "name": "Infernus Heavy Bolter (Focused Bolt)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "PrcCrit1"
+  },
+  {
+    "name": "Infernus Heavy Bolter (Sweeping Bolt)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "PrcCrit1, Tor1\""
+  },
+  {
+    "name": "Instigator Bolt Carbine",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "PrcCrit 1, Silent"
+  },
+  {
+    "name": "Ion Blaster",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "PrcCrit1"
+  },
+  {
+    "name": "Ion Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", PrcCrit1"
+  },
+  {
+    "name": "Ion Rifle (Overcharge)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Hot, Lethal 5+, Prc1"
+  },
+  {
+    "name": "Ion Rifle (Standard)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "PrcCrit1"
+  },
+  {
+    "name": "Jaws of the World Wolf",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "PSYCHIC, Blast 2\", Sev"
+  },
+  {
+    "name": "Kelermorph Knife",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Kiss",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/7",
+    "rules": ""
+  },
+  {
+    "name": "Knife",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Knifer",
+    "atk": 1,
+    "hit": "2+",
+    "dmg": "5/7",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Knucklebustas",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/6",
+    "rules": "Brutal, Shock, *Smash"
+  },
+  {
+    "name": "Krak Grenade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng 6\", Prc1, Sat"
+  },
+  {
+    "name": "Kroot Hunting Rifle (Concealed)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Hvy, Dev3, Silent, *Concealed Position"
+  },
+  {
+    "name": "Kroot Hunting Rifle (Mobile)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Kroot Hunting Rifle (Stationary)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Hvy, Dev3"
+  },
+  {
+    "name": "Kroot Rifle",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Kroot Scattergun",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Rng 6\""
+  },
+  {
+    "name": "L7 Missile Launcher (Blast)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/5",
+    "rules": "Blast 2\""
+  },
+  {
+    "name": "L7 Missile Launcher (Focused)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "5/6",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Large Knife",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/5",
+    "rules": ""
+  },
+  {
+    "name": "Lascarbine",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": "Rending"
+  },
+  {
+    "name": "Lascutter (Close Range)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng 2\", Lethal 5+, Prc2"
+  },
+  {
+    "name": "Lascutter (Short Range)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng 6\", Lethal 5+"
+  },
+  {
+    "name": "Lasgun",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Laspistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": "Rng 8\""
+  },
+  {
+    "name": "Lasrifle",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": "Hvy(Repos), Lethal 5+"
+  },
+  {
+    "name": "Liberator Autostubs (Hypersense)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 6\", Sat, Seek Light, *Hypersense"
+  },
+  {
+    "name": "Liberator Autostubs (Long Range)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "PrcCrit1, Rnd"
+  },
+  {
+    "name": "Liberator Autostubs (Short Range)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", Prc1, Rnd"
+  },
+  {
+    "name": "Life Syphon",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Psychic, Sat, *Siphon Life"
+  },
+  {
+    "name": "Lightning Claw",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Lethal 5+, Rnd"
+  },
+  {
+    "name": "Lightning Claws",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Ceaseless, Lethal 5+, Rnd"
+  },
+  {
+    "name": "Lightning Strike",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/3",
+    "rules": "Psychic, 2\" Dev2"
+  },
+  {
+    "name": "Locus Blades",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Londaxi Tribalest",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Hvy(Repos), Prc1, Rnd"
+  },
+  {
+    "name": "Long-Las (Concealed)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev3, Hvy, Sil, *Concealed Position"
+  },
+  {
+    "name": "Long-Las (Mobile)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Long-Las (Stationary)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev1, Hvy(Dash), Silent"
+  },
+  {
+    "name": "Mace of Censure",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/5",
+    "rules": "Brutal, Shock"
+  },
+  {
+    "name": "Mace Of The Righteous",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "5/5",
+    "rules": "Brutal, Severe"
+  },
+  {
+    "name": "Macro Plasma Incinerator",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "5/6",
+    "rules": "Rng 9\", Hvy, Prc 1"
+  },
+  {
+    "name": "Magna Rail Rifle",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/2",
+    "rules": "Dev3, Hvy(Dash), Prc2"
+  },
+  {
+    "name": "Magna-Coil Rifle (Concealed)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev3, Hvy, Prc1, Silent, *Concealed Position"
+  },
+  {
+    "name": "Magna-Coil Rifle (Mobile)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Hvy(Repos), Prc1"
+  },
+  {
+    "name": "Magna-Coil Rifle (Stationary)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev3, Hvy, Prc1"
+  },
+  {
+    "name": "Mancrusher",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "5/5",
+    "rules": "Brutal, *Vicious Blows"
+  },
+  {
+    "name": "Marksman Bolt Carbine",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Marksman Bolt Carbine (Default)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Marksman Rail Rifle (Dart Round)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Prc1, Silent"
+  },
+  {
+    "name": "Marksman Rail Rifle (Standard)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Dev2, Lethal 5+, Prc1"
+  },
+  {
+    "name": "Master-Crafted AutoPistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Rng 8\", Lethal 5+"
+  },
+  {
+    "name": "Master-Crafted Radium Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Rng 8\", Bal, Rnd"
+  },
+  {
+    "name": "Master-Crafted Special Issue Bolt Pistol (Default)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", Lethal 5+, Prc1"
+  },
+  {
+    "name": "Mechanical Appendages",
+    "atk": 3,
+    "hit": "5+",
+    "dmg": "1/2",
+    "rules": ""
+  },
+  {
+    "name": "Mechanical Bite",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/5",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Melta Bomb",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/3",
+    "rules": "Rng 3\", Dev3, Hvy(Repos), Lim1, Prc2"
+  },
+  {
+    "name": "Melta Carbine",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "6/3",
+    "rules": "Rng 6\", Dev4, Prc2"
+  },
+  {
+    "name": "Meltagun",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "6/3",
+    "rules": "Rng 6\", Dev4, Prc2"
+  },
+  {
+    "name": "Mindburn",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "1/1",
+    "rules": "Psychic, Lethal 5+, Sat, Seek Light, *Mindburn"
+  },
+  {
+    "name": "Mining Laser",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "5/6",
+    "rules": "Hvy(Dash),Prc1"
+  },
+  {
+    "name": "Ministorum Flamer",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/4",
+    "rules": "Rng 8\", Sat, Tor 2\""
+  },
+  {
+    "name": "Mirrorswords",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Lethal 5+, Ceaseless"
+  },
+  {
+    "name": "Missile Launcher (Frag)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Blast 2\", Hvy(Repos)"
+  },
+  {
+    "name": "Missile Launcher (Krak)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/7",
+    "rules": "Hvy(Repos), Prc1"
+  },
+  {
+    "name": "Miststave",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Shock"
+  },
+  {
+    "name": "Monomolecular Cane-Rapier",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/6",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Mortar Barrage",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/5",
+    "rules": "Blast 2\", Hvy(Dash), Silent"
+  },
+  {
+    "name": "Multi-Melta",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "6/3",
+    "rules": "Dev4, Hvy(Dash), Prc2"
+  },
+  {
+    "name": "Mutant Claw",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "6/7",
+    "rules": "Brutal"
+  },
+  {
+    "name": "Mutant Claws & Tentacles (Slashing)",
+    "atk": 6,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Mutant Claws & Tentacles (Swiping)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "*Swipe"
+  },
+  {
+    "name": "Mutant Fist & Cleaver (Lopping Blow)",
+    "atk": 1,
+    "hit": "3+",
+    "dmg": "8/9",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Mutant Fist & Cleaver (Slashing)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "5/6",
+    "rules": ""
+  },
+  {
+    "name": "Mutant Tentacles",
+    "atk": 6,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Rng 3\", Tor 1\""
+  },
+  {
+    "name": "Mutated Claws",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Navis Hatchet",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Navis Heavy Shotgun (Close Range)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Rng 6\", Relentless"
+  },
+  {
+    "name": "Navis Heavy Shotgun (Long Range)",
+    "atk": 4,
+    "hit": "5+",
+    "dmg": "1/2",
+    "rules": "Relentless"
+  },
+  {
+    "name": "Navis Las-Volley (Focused)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Hvy(Dash), Rnd"
+  },
+  {
+    "name": "Navis Las-Volley (Sweeping)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Hvy(Dash), Rnd, Tor 1\""
+  },
+  {
+    "name": "Navis Shotgun (Close Range)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Rng 6\""
+  },
+  {
+    "name": "Navis Shotgun (Long Range)",
+    "atk": 4,
+    "hit": "5+",
+    "dmg": "1/2",
+    "rules": ""
+  },
+  {
+    "name": "Neural Whips",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": "Rng 3\", Lethal 5+, Stun"
+  },
+  {
+    "name": "Neuro Disruptor",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng 8\", Prc1, Stun"
+  },
+  {
+    "name": "Neutron Blaster",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Dev2"
+  },
+  {
+    "name": "Neutron Grenade",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/3",
+    "rules": "Rng 6\", Blast 2\", Dev2, Lim1, Sat"
+  },
+  {
+    "name": "Neutron Grenade Launcher",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/3",
+    "rules": "Blast 2\", Dev2, *Neutron Bombardment"
+  },
+  {
+    "name": "Neutron Rail Rifle (Aimed)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Dev2, Hvy(Dash), Lethal 5+, *Neutron Fragment"
+  },
+  {
+    "name": "Neutron Rail Rifle (Standard)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/4",
+    "rules": "Dev2, *Neutron Fragment"
+  },
+  {
+    "name": "Neutron Sting",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/3",
+    "rules": "Rng 8\", Dev2"
+  },
+  {
+    "name": "Nostraman Chainblade",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Nostraman Chainglaive",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Novitiate Blade",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Null  Mace",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Shock, Anti-PSYKER"
+  },
+  {
+    "name": "Null Mace",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Shock, Anti-PSYKER"
+  },
+  {
+    "name": "Null Rod",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/3",
+    "rules": "Shock, *Anti-PSYKER"
+  },
+  {
+    "name": "Occulus Bolt Carbine",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Sat"
+  },
+  {
+    "name": "Pain Sculptors",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Ceaseless, *Flay"
+  },
+  {
+    "name": "Paired Blades",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Bal, Rnd"
+  },
+  {
+    "name": "Penitent Eviscerator",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "5/6",
+    "rules": "Brutal, *Zealous Rage"
+  },
+  {
+    "name": "Phosphor Blast Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", Blast 1\", Severe"
+  },
+  {
+    "name": "Phosphor Blaster",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Sev, Blast 1\""
+  },
+  {
+    "name": "Pickrippers",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Pincer Tail",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 3\", Silent"
+  },
+  {
+    "name": "Pistol",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": "Rng 8\""
+  },
+  {
+    "name": "Plague Knife",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Severe, *Poison"
+  },
+  {
+    "name": "Plague Spewer",
+    "atk": 5,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 7\", Sat, Severe, Tor 2\", *Poison"
+  },
+  {
+    "name": "Plague Sword",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Severe, *Poison, *Toxic"
+  },
+  {
+    "name": "Plague Wind",
+    "atk": 6,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": "Psychic, Sat, Severe, Tor 1\", *Poison"
+  },
+  {
+    "name": "Plasma Caliver (Standard)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Plasma Caliver (Supercharge)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/6",
+    "rules": "Hot, Lethal 5+, Prc1"
+  },
+  {
+    "name": "Plasma Cannon",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Rng 9\", Blast 2\", Hvy, Prc 1"
+  },
+  {
+    "name": "Plasma Cannon (Standard)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/6",
+    "rules": "Blast 2\", Hvy(Dash), Prc1"
+  },
+  {
+    "name": "Plasma Cannon (Supercharge)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "5/6",
+    "rules": "Blast 2\", Hvy(Dash), Hot, Lethal 5+, Prc1"
+  },
+  {
+    "name": "Plasma Carbine (Standard)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Plasma Carbine (Supercharge)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/6",
+    "rules": "Hot, Lethal 5+, Prc1"
+  },
+  {
+    "name": "Plasma Gun (Standard)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/6",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Plasma Gun (Supercharge)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "5/6",
+    "rules": "Hot, Lethal 5+, Prc1"
+  },
+  {
+    "name": "Plasma Gun (Superchart)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/6",
+    "rules": "Hot, Lethal 5+, Prc1"
+  },
+  {
+    "name": "Plasma Knife",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/5",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Plasma Pistol (Standard)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Rng 8\", Prc1"
+  },
+  {
+    "name": "Plasma Pistol (Supercharge)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng 8\", Hot, Lethal 5+, Prc1"
+  },
+  {
+    "name": "Plasma Weapon",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Poisoned Fighting Knives",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Ceaseless, Lethal 5+"
+  },
+  {
+    "name": "Polearm",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Power Claw",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/7",
+    "rules": "Brutal, Shock"
+  },
+  {
+    "name": "Power Fist",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "5/7",
+    "rules": "Brutal"
+  },
+  {
+    "name": "Power Maul",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Shock"
+  },
+  {
+    "name": "Power Maul & Storm Shield",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Shock, *Shield"
+  },
+  {
+    "name": "Power Maul and Mutant Claw",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/6",
+    "rules": "Rnd, Shock"
+  },
+  {
+    "name": "Power Pick",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Power Weapon",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Power Weapon and Claw",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Balanced, Lethal 5+"
+  },
+  {
+    "name": "Power Weapon and Cleaver",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Ceaseless, Lethal 5+, *Blood Offering"
+  },
+  {
+    "name": "Prosperine Khopesh",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Pulsa Rokkit",
+    "atk": 6,
+    "hit": "5+",
+    "dmg": "-",
+    "rules": "Hvy(Repos), Lim 1, *Pulsa"
+  },
+  {
+    "name": "Pulse Carbine",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Pulse Pistol",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Rng 8\""
+  },
+  {
+    "name": "Pulse Weapon",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Pyreblaster (Deluge)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 4\", Sat, Seek Light"
+  },
+  {
+    "name": "Pyreblaster (Standard)",
+    "atk": 5,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 8\", Sat, Tor2\""
+  },
+  {
+    "name": "Pyregut (Deluge)",
+    "atk": 5,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 4\", Sat, Seek Light"
+  },
+  {
+    "name": "Pyregut (Standard)",
+    "atk": 5,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 6\", Sat, Tor 2\""
+  },
+  {
+    "name": "Radium Carbine",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Rail Rifle",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/4",
+    "rules": "Dev2, Lethal 5+, Prc1"
+  },
+  {
+    "name": "Ram",
+    "atk": 3,
+    "hit": "5+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Ranged Bio-Weapon",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Ranger Long Rifle (Mobile)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Ranger Long Rifle (Stationary)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev3, Hvy, Silent"
+  },
+  {
+    "name": "Razorflail",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/5",
+    "rules": "Brutal, *Tangle"
+  },
+  {
+    "name": "Razorwing",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "1/2",
+    "rules": "Sat, Seek, Silent"
+  },
+  {
+    "name": "Reaper Chaincannon (Focused)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Ceaseless, Hvy(Repos), Punishing"
+  },
+  {
+    "name": "Reaper Chaincannon (Sweeping)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Ceaseless, Hvy(Repos), Punishing, Tor 2\""
+  },
+  {
+    "name": "Redemptor Fist",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Brutal"
+  },
+  {
+    "name": "Relic Bolt Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Rng 8\", Lethal 5+"
+  },
+  {
+    "name": "Relic Boltgun",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Relic Condemnor Stakethrower",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/2",
+    "rules": "Dev2, Lethal 5+, PrcCrit1, Silent, Anti-PSYKER"
+  },
+  {
+    "name": "Relic Laspistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Rng 8\", Lethal 5+"
+  },
+  {
+    "name": "Relic Lightning Claws",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Ceaseless, Lethal 5+, Rending"
+  },
+  {
+    "name": "Remote Detonator",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "5/6",
+    "rules": "Hvy(Dash), Lim1, Prc1, Sil, *Detonate"
+  },
+  {
+    "name": "Repression Baton",
+    "atk": 3,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Ripper Gun",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng 8\", Punishing"
+  },
+  {
+    "name": "Ripping Fangs",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Ritual Blade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Ritual Blades",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/6",
+    "rules": ""
+  },
+  {
+    "name": "Rokkit Launcha",
+    "atk": 6,
+    "hit": "5+",
+    "dmg": "4/5",
+    "rules": "Blast 1\""
+  },
+  {
+    "name": "Rokkit Launcha (Aimed)",
+    "atk": 6,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Blast 1\", Ceaseless, Hvy(Dash)"
+  },
+  {
+    "name": "Rokkit Launcha (Mobile)",
+    "atk": 6,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Blast 1\""
+  },
+  {
+    "name": "Rokkit Pistol",
+    "atk": 6,
+    "hit": "5+",
+    "dmg": "4/5",
+    "rules": "Rng 8\", Blast 1\""
+  },
+  {
+    "name": "Rokkit Rack",
+    "atk": 6,
+    "hit": "5+",
+    "dmg": "4/5",
+    "rules": "Blast 2\", Hvy(Repos), Lim 1, Relentless"
+  },
+  {
+    "name": "Rotor Cannon (Focused)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Hvy(Dash), Rnd"
+  },
+  {
+    "name": "Rotor Cannon (Sweeping)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Hvy(Dash), Rnd, Tor1\""
+  },
+  {
+    "name": "Runic Stave",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "PSYCHIC, Shock"
+  },
+  {
+    "name": "Sanctus Bio-Dagger",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/6",
+    "rules": "Lethal 4+, Shock"
+  },
+  {
+    "name": "Sanctus Sniper Rifle (Mobile)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Sanctus Sniper Rifle (Stationary)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev3, Hvy(Dash), Silent"
+  },
+  {
+    "name": "Scalpel Claw",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Scoped Big Shoota (Concealed)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Hvy, Dev 2, Silent, *Concealed Position"
+  },
+  {
+    "name": "Scoped Big Shoota (Stationary)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Hvy, Dev 2"
+  },
+  {
+    "name": "Scoped Big Shoota (Sweeping)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Hvy(Dash), Tor 1\""
+  },
+  {
+    "name": "Scoped Bolt Pistol (Long Range)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Scoped Bolt Pistol (Short Range)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", Lethal 5+"
+  },
+  {
+    "name": "Scoped Lascarbine",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": "Rending, Lethal 5+"
+  },
+  {
+    "name": "Scoped Needle Pistol (Long Range)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Silent"
+  },
+  {
+    "name": "Scoped Needle Pistol (Short Range)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Rng 8\", Lethal 5+, Silent"
+  },
+  {
+    "name": "Scoped Plasma Pistol (Standard)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Rng 12\", Prc1"
+  },
+  {
+    "name": "Scoped Plasma Pistol (Supercharge)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng 12\", Hot, Lethal 5+, Prc1"
+  },
+  {
+    "name": "Scoped Shot Pistol (Long Range)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": ""
+  },
+  {
+    "name": "Scoped Shot Pistol (Short Range)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Rng 8\", Lethal 5+"
+  },
+  {
+    "name": "Scorpion's Claw and Chainsword",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Brutal, Lethal 5+"
+  },
+  {
+    "name": "Scythe of the Nightbringer (Strike)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "5/6",
+    "rules": "Brutal, Dev 2"
+  },
+  {
+    "name": "Scythe of the Nightbringer (Sweep)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Ceaseless, Tor 1\""
+  },
+  {
+    "name": "Scything Claws",
+    "atk": 6,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Brutal, Ceaseless"
+  },
+  {
+    "name": "Scything Talons",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Scything Talons & Crushing Claws",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "*Crush"
+  },
+  {
+    "name": "Scything Talons & Maw",
+    "atk": 6,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Swallow Whole"
+  },
+  {
+    "name": "Scything Talons & Rending Claws",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Seismic Cannon (Long-Wave)",
+    "atk": 6,
+    "hit": "4+",
+    "dmg": "2/2",
+    "rules": "Blast 1\", Hvy(Dash), Stun"
+  },
+  {
+    "name": "Seismic Cannon (Short-Wave)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Rng 6\", Hvy(Dash), PrcCrit1, Stun"
+  },
+  {
+    "name": "Servo-Arc Claw",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Sev, Shock"
+  },
+  {
+    "name": "Servo-Chirurgic Claw",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Servo-Claw",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Shardcarbine",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "2/2",
+    "rules": "Dev 2, Lethal 5+"
+  },
+  {
+    "name": "Shield Bash",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "1/2",
+    "rules": "Brutal, *Shield"
+  },
+  {
+    "name": "Shock Maul",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/4",
+    "rules": "Shock"
+  },
+  {
+    "name": "Shock Maul & Assault Shield",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/4",
+    "rules": "Shock, *Repress"
+  },
+  {
+    "name": "Shokka",
+    "atk": 6,
+    "hit": "4+",
+    "dmg": "1/0",
+    "rules": "Rng 8\", Dev2, Severe, Stun"
+  },
+  {
+    "name": "Shot Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Rng 8\""
+  },
+  {
+    "name": "Shotgun",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Rng 6\""
+  },
+  {
+    "name": "Shotpistol",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/3",
+    "rules": "Rng 8\""
+  },
+  {
+    "name": "Shredder",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd, Tor 2\""
+  },
+  {
+    "name": "Shrieker Blade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Shrieker Cannon (Focused)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd, Hvy(Repos), *Humbling Cruelty"
+  },
+  {
+    "name": "Shrieker Cannon (Sweeping)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd, Hvy(Dash), Tor2\", *Humbling Cruelty"
+  },
+  {
+    "name": "Shuriken Cannon (Focused)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Hvy(Dash), Rnd"
+  },
+  {
+    "name": "Shuriken Cannon (Sweeping)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Hvy(Dash), Rnd, Tor 1\""
+  },
+  {
+    "name": "Shuriken Catapult",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Shuriken Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", Rnd"
+  },
+  {
+    "name": "Shuriken Rifle",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rnd"
+  },
+  {
+    "name": "SiNR Handbow",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/5",
+    "rules": "Silent"
+  },
+  {
+    "name": "Skinning Blades",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Ceaseless, *Stalk"
+  },
+  {
+    "name": "Skullcleaver",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Lethal 5+, *Headtaker"
+  },
+  {
+    "name": "Slabshield",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Slugga",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Rng 8\""
+  },
+  {
+    "name": "Smash Hammer",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "5/6",
+    "rules": "Brutal"
+  },
+  {
+    "name": "Sniper Rifle",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev3, Hvy, Sil"
+  },
+  {
+    "name": "Sniper Rifle (Concealed)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev3, Hvy, Sil, *Concealed Position"
+  },
+  {
+    "name": "Sniper Rifle (Mobile)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Sniper Rifle (Stationary)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Dev3, Hvy"
+  },
+  {
+    "name": "Soulreaper Cannon (Focused)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Soulreaper Cannon (Sweeping)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Prc1, Tor 1\""
+  },
+  {
+    "name": "Soulstave",
+    "atk": 3,
+    "hit": "5+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Spark",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": "Rng 4\", Prc1"
+  },
+  {
+    "name": "Special Issue Bolt Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", Prc1"
+  },
+  {
+    "name": "Special Weapon",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Prc1"
+  },
+  {
+    "name": "Splinter Cannon (Focused)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Hvy(Dash), Lethal 5+"
+  },
+  {
+    "name": "Splinter Cannon (Sweeping)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Hvy(Dash), Lethal 5+, Tor 1\""
+  },
+  {
+    "name": "Splinter Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Rng 8\", Lethal 5+"
+  },
+  {
+    "name": "Splinter Rifle",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Staff Of Declamation",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Shock"
+  },
+  {
+    "name": "Staff Of Light",
+    "atk": 6,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rnd, *Magnify"
+  },
+  {
+    "name": "Stalker Bolt Rifle (Heavy)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Hvy(Dash), Lethal 5+, PrcCrit1"
+  },
+  {
+    "name": "Stalker Bolt Rifle (Mobile)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": ""
+  },
+  {
+    "name": "Stalker Marksman Bolt Carbine",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/4",
+    "rules": "Lethal 5+, Prc1"
+  },
+  {
+    "name": "Stalker's Blade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Bal, Rnd"
+  },
+  {
+    "name": "Stim-Needler",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "0/0",
+    "rules": "Rng 3\", Lethal 3+, Stun"
+  },
+  {
+    "name": "Stimm Needle",
+    "atk": 3,
+    "hit": "5+",
+    "dmg": "1/4",
+    "rules": "Lethal 5+"
+  },
+  {
+    "name": "Sting",
+    "atk": 5,
+    "hit": "5+",
+    "dmg": "1/2",
+    "rules": "Shock"
+  },
+  {
+    "name": "Stinger Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Rng 8\", Lethal 5+, *Stinger"
+  },
+  {
+    "name": "Stubcarbine",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Ceaseless"
+  },
+  {
+    "name": "Suppressed AutoPistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": "Rng 8\", Silent"
+  },
+  {
+    "name": "Suppressed Pulse Carbine",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Silent"
+  },
+  {
+    "name": "Suppressed Sniper Rifle (Mobile)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Silent"
+  },
+  {
+    "name": "Suppressed Sniper Rifle (Stationary)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Dev2, Hvy, Silent"
+  },
+  {
+    "name": "Surgical Saw",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": "Lethal 5+, Rnd"
+  },
+  {
+    "name": "Swarm",
+    "atk": 5,
+    "hit": "6+",
+    "dmg": "0/0",
+    "rules": "Rng 6\", Stun"
+  },
+  {
+    "name": "Synaptic Disintegrator",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/3",
+    "rules": "Dev2, Hvy(Dash), Prc1, Severe"
+  },
+  {
+    "name": "Tail Blade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 3\", Rnd, Silent"
+  },
+  {
+    "name": "Tainted Blade",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "*Terrorchem"
+  },
+  {
+    "name": "Tainted Bolt Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Rng 8\", Rnd"
+  },
+  {
+    "name": "Tainted Chainsword",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Tankhammer (Bash)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": ""
+  },
+  {
+    "name": "Tankhammer (Detonate)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "*",
+    "rules": "Lethal 5+, Lim 1, *Detonate"
+  },
+  {
+    "name": "Tankstopper Rifle (Mobile)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Dev1, Hvy(Dash), Prc1"
+  },
+  {
+    "name": "Tankstopper Rifle (Stationary)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/2",
+    "rules": "Dev4, Hvy, Prc1, Severe"
+  },
+  {
+    "name": "Taser Goad",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Lethal 5+, Shock"
+  },
+  {
+    "name": "Tech-Curse",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "1/3",
+    "rules": "Psychic, Rnd, Sat, Seek Light"
+  },
+  {
+    "name": "Tempestus Dagger",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Lethal 5+, Ceaseless"
+  },
+  {
+    "name": "Terrorchem Vial",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "2/0",
+    "rules": "Rng 6\", Blast 2\", Dev3, Lim1, Sat, *Terrorchem"
+  },
+  {
+    "name": "Tesla Carbine",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "2\" Dev1"
+  },
+  {
+    "name": "Tesla Caster (Focused)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": ""
+  },
+  {
+    "name": "Tesla Caster (Living Lightning)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "2/3",
+    "rules": "Blast 2\""
+  },
+  {
+    "name": "Throwing Blades",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/4",
+    "rules": "Rng 6\", Silent"
+  },
+  {
+    "name": "Throwing Hatchet",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Rng 6\", Lim1, Rnd, Silent"
+  },
+  {
+    "name": "Throwing Knives",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/5",
+    "rules": "Rng 6\", Silent"
+  },
+  {
+    "name": "Throwing Plasma Knife",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Rng 6\", Lethal 5+, Lim1, Silent"
+  },
+  {
+    "name": "Thunder Hammer",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "5/6",
+    "rules": "Shock, Stun"
+  },
+  {
+    "name": "Thunderclap",
+    "atk": 5,
+    "hit": "2+",
+    "dmg": "2/2",
+    "rules": "PSYCHIC, Rng 6\", Sat, Seek Light, Stun, Tor 2\""
+  },
+  {
+    "name": "Toxic Glands",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 6\", Silent, *Poison"
+  },
+  {
+    "name": "Toxic Scythes",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Lethal 5+, Shock, *Poison"
+  },
+  {
+    "name": "Transdimensional Isolator",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "5/6",
+    "rules": "*Dimensional Banishment"
+  },
+  {
+    "name": "Transonic Blades",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Transuranic Arquebus (Mobile)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/3",
+    "rules": "Dev2, Hvy(Dash), Prc1"
+  },
+  {
+    "name": "Transuranic Arquebus (Stationary)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/3",
+    "rules": "Dev3, Hvy, Prc1, Severe"
+  },
+  {
+    "name": "Tremorglaive",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Sev, Shock, Stun"
+  },
+  {
+    "name": "Tremorglaive (Part Matter)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Prc1, PrcCrit2"
+  },
+  {
+    "name": "Tremorglaive (Quake)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "1/2",
+    "rules": "Blast 2\", Seek Light, Stun"
+  },
+  {
+    "name": "Trench Club",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/3",
+    "rules": "Shock"
+  },
+  {
+    "name": "Triple Cleavers (Offensive)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Ceaseless"
+  },
+  {
+    "name": "Triskele",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "2/3",
+    "rules": "Rng 8\", Tor 2\", Rnd"
+  },
+  {
+    "name": "Twin Chainswords",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Ceaseless, Rnd"
+  },
+  {
+    "name": "Twin Choppas",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Ceaseless, Lethal 5+"
+  },
+  {
+    "name": "Twin Gauss Reapers",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Prc 1"
+  },
+  {
+    "name": "Twin Gauss Reapers (Focused)",
+    "atk": 5,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Prc1, Sev"
+  },
+  {
+    "name": "Twin Gauss Reapers (Sweeping)",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Prc1, Sev, Tor1\""
+  },
+  {
+    "name": "Twin Hand Flamers (Focused)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 6\", Sat, Tor 2\", *Blaze"
+  },
+  {
+    "name": "Twin Hand Flamers (Twin Torrent)",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 6\", Sat, Tor 0\", *Twin Torrent, *Blaze"
+  },
+  {
+    "name": "Twin Pulse Carbine",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Ceaseless"
+  },
+  {
+    "name": "Twin Shuriken Catapult",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Ceaseless, Rnd"
+  },
+  {
+    "name": "Twin Shuriken Pistols",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Rng 8\", Ceaseless, Rnd"
+  },
+  {
+    "name": "Two Rokkit Pistols (Focused)",
+    "atk": 6,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Rng 8\", Blast 1\", Ceaseless"
+  },
+  {
+    "name": "Two Rokkit Pistols (Salvo)",
+    "atk": 6,
+    "hit": "5+",
+    "dmg": "4/5",
+    "rules": "Rng 8\", Blast 1\", *Salvo"
+  },
+  {
+    "name": "Tzaangor Blade & Shield",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "*Shield"
+  },
+  {
+    "name": "Tzaangor Blades",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "4/5",
+    "rules": "Balanced"
+  },
+  {
+    "name": "Venom Blade",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Lethal 4+"
+  },
+  {
+    "name": "Venom Blast (Blast)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Rng 8\", Blast 2\", *Poison"
+  },
+  {
+    "name": "Venom Blast (Focused)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng 8\", Prc1, *Poison"
+  },
+  {
+    "name": "Vicious Bite",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rnd"
+  },
+  {
+    "name": "Vicious Claws",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Ceaseless, *Tactual Hunter"
+  },
+  {
+    "name": "Vicious Jaws",
+    "atk": 3,
+    "hit": "4+",
+    "dmg": "3/4",
+    "rules": "Rending"
+  },
+  {
+    "name": "Virge Of Admonition",
+    "atk": 4,
+    "hit": "4+",
+    "dmg": "5/5",
+    "rules": "Brutal, Shock, Anti-PSYKER"
+  },
+  {
+    "name": "Voice Of Condemnation",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "1/1",
+    "rules": "Rng 6\", Seek, Stun"
+  },
+  {
+    "name": "Voltaic Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/4",
+    "rules": "Rng 8\", 1\" Dev1, Rnd"
+  },
+  {
+    "name": "Warpflame Pistol",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "3/3",
+    "rules": "Rng 6\", Prc1, Tor 1\""
+  },
+  {
+    "name": "Warpflamer",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/4",
+    "rules": "Rng 8\", Sat, Prc1, Tor 2\""
+  },
+  {
+    "name": "Web Pistol",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/4",
+    "rules": "Rng 6\", Severe, Stun"
+  },
+  {
+    "name": "Webber",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/5",
+    "rules": "Rng 12\", Severe, Stun"
+  },
+  {
+    "name": "Witch Staff",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Psychic, Shock"
+  },
+  {
+    "name": "Wraithcannon",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "6/3",
+    "rules": "Dev4, Hvy(Dash), Prc2"
+  },
+  {
+    "name": "Wreath In Fire",
+    "atk": 4,
+    "hit": "2+",
+    "dmg": "4/4",
+    "rules": "Blast 1\", Lim 1, Wreathed*, *Blaze"
+  },
+  {
+    "name": "Wroughtlock Revolvers",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "3/5",
+    "rules": "Rng 9\", Ceaseless, Lethal 5+"
+  },
+  {
+    "name": "Xenophase Blade (Duel)",
+    "atk": 5,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Brutal, Lethal 5+"
+  },
+  {
+    "name": "Xenophase Blade (Phase Sweep)",
+    "atk": 4,
+    "hit": "3+",
+    "dmg": "4/6",
+    "rules": "Brutal, Lethal 5+, *Phase Sweep"
+  }
+]

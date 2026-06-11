@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "ambull-mission-pack",
+    "killteamId": "SPEC-AMB",
+    "name": "Ambull Mission Pack",
+    "operativeCount": 8
+  },
+  {
+    "slug": "shadow-hunt-mission-pack",
+    "killteamId": "SPEC-SHADOW",
+    "name": "Joint Ops: Shadowhunt Mission Pack",
+    "operativeCount": 5
+  },
+  {
+    "slug": "terror-on-devlan-mission-pack",
+    "killteamId": "SPEC-DEVLAN",
+    "name": "Joint Ops: Terror on Devlan Mission Pack",
+    "operativeCount": 4
+  },
+  {
+    "slug": "nemesis-operatives-expansion-pack",
+    "killteamId": "SPEC-NEMESIS",
+    "name": "Nemesis Operatives Expansion Pack",
+    "operativeCount": 4
+  },
+  {
+    "slug": "non-player-operatives",
+    "killteamId": "SPEC-NPO",
+    "name": "Non-Player Operatives",
+    "operativeCount": 7
+  },
+  {
+    "slug": "the-archivist-mission-pack",
+    "killteamId": "SPEC-ARCH",
+    "name": "The Archivist Mission Pack",
+    "operativeCount": 1
+  },
+  {
+    "slug": "titus-mission-pack",
+    "killteamId": "SPEC-TITUS",
+    "name": "Titus Mission Pack",
+    "operativeCount": 7
+  }
+]

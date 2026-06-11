@@ -1,0 +1,1610 @@
+[
+  {
+    "eqId": "UNIVERSAL-UE-AC",
+    "name": "Ammo Cache (x1)",
+    "description": "Before the battle, you can set up one of your Ammo Cache markers wholly within your territory. Friendly operatives can perform the following mission action during the battle: **AMMO RESUPPLY (0 AP):** One of your Ammo Cache markers the active operative controls is used during this turning point.  \n Until the start of the next turning point, whenever this operative is shooting with a weapon from its datacard, you can re-roll one of your attack dice.\n\n An operative cannot perform this action while within control range of an enemy operative, if that marker is not yours, or if that marker has been used this turning point.",
+    "killteamId": null,
+    "teamName": "Universal",
+    "isUniversal": true
+  },
+  {
+    "eqId": "UNIVERSAL-UE-BC",
+    "name": "Breaching Charge",
+    "description": "Once per battle, when a friendly operative performs the Breach action, you can use this rule. If you do, that operative can perform that action for 1 less AP (to a minimum of 1AP) as though it had the word \"breach marker\" on its datacard.",
+    "killteamId": null,
+    "teamName": "Universal",
+    "isUniversal": true
+  },
+  {
+    "eqId": "UNIVERSAL-UE-CD",
+    "name": "Comms Device (x1)",
+    "description": "Before the battle, you can set up one of your Comms Device markers wholly within your territory.\nWhile a friendly operative controls this marker, add 3\" to the distance requirements of its SUPPORT rules that refer to friendly operatives\n(e.g. ‘select one friendly operative within 6\"’ would be 9\" instead).\nNote that you cannot benefit from your opponent's Comms Device markers.",
+    "killteamId": null,
+    "teamName": "Universal",
+    "isUniversal": true
+  },
+  {
+    "eqId": "UNIVERSAL-UE-XG-FRAG",
+    "name": "Explosive Grenade - Frag (x1/2)",
+    "description": "When you select this equipment, select two explosive grenades (2 frag, 2 krak, or 1 frag and 1 krak).\n\n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Frag Grenade|4|4+|2/4|\n|**Weapon Rules**|\n|Rng 6\", Blast 2\", Saturate|",
+    "killteamId": null,
+    "teamName": "Universal",
+    "isUniversal": true
+  },
+  {
+    "eqId": "UNIVERSAL-UE-XG-KRAK",
+    "name": "Explosive Grenade - Krak (x1/2)",
+    "description": "When you select this equipment, select two explosive grenades (2 frag, 2 krak, or 1 frag and 1 krak).  |**Name**|**ATK**|**HIT**|**DMG**| |-----|:-----:|:-----:|:-----:| |Krak Grenade|4|4+|4/5| |**Weapon Rules**| |Rng 6\", Piercing 1, Saturate|",
+    "killteamId": null,
+    "teamName": "Universal",
+    "isUniversal": true
+  },
+  {
+    "eqId": "UNIVERSAL-UE-HB",
+    "name": "Heavy Barricade (x1)",
+    "description": "A heavy barricade is Heavy terrain. Before the battle, you can set it up wholly within 4\" of your drop zone, on the killzone floor and more than 2\" from other equipment terrain features, access points, and Accessible terrain.",
+    "killteamId": null,
+    "teamName": "Universal",
+    "isUniversal": true
+  },
+  {
+    "eqId": "UNIVERSAL-UE-LAD",
+    "name": "Ladders (x2)",
+    "description": "Ladders are Insignificant and Exposed terrain. Before the battle, you can set up any of them as follows:\n- Wholly within your territory.\n- Upright against terrain that’s at least 2\" tall.\n- More than 2\" from other equipment terrain features.\n- More than 1\" from doors and access points.\n\nOnce per action, whenever an operative is climbing the terrain feature a ladder is placed against, treat the vertical distance as 1\" if the ladder is within that operative’s control range during that entire climb.",
+    "killteamId": null,
+    "teamName": "Universal",
+    "isUniversal": true
+  },
+  {
+    "eqId": "UNIVERSAL-UE-LB",
+    "name": "Light Barricades (x2)",
+    "description": "Light barricades are Light terrain, except the feet, which are Insignificant and Exposed. Before the battle, you can set up any of them wholly within your territory, on the killzone floor and more than 2\" from other equipment terrain features, access points, and Accessible terrain.",
+    "killteamId": null,
+    "teamName": "Universal",
+    "isUniversal": true
+  },
+  {
+    "eqId": "UNIVERSAL-UE-MN",
+    "name": "Mines (x1)",
+    "description": "Before the battle, you can set up one of your Mines markers wholly within your territory and more than 2\" from other markers, access points, and Accessible terrain. The first time that marker is within an operative's control range, remove that marker and inflict D3+3 damage on that operative.",
+    "killteamId": null,
+    "teamName": "Universal",
+    "isUniversal": true
+  },
+  {
+    "eqId": "UNIVERSAL-UE-PB",
+    "name": "Portable Barricade (x1)",
+    "description": "A portable barricade is Light, Protective and Portable terrain, except the feet which are Insignificant and Exposed. Before the battle, you can set it up wholly within your territory, on the killzone floor and more than 2\" from other equipment terrain features, access points, and Accessible terrain.     **Protective:** While an operative is in cover from this terrain feature, improve its Save stat by 1 (to a maximum of 2+).    **Portable:** This terrain feature only provides cover while an operative is connected to it and if the shield is intervening (ignore its feet). Operatives connected to the inside of it can perform the following unique action during the battle:    **Move With Barricade (1 AP):** The same as the Reposition action, except the active operative can move no more than its Move stat minus 2\" and cannot climb, drop, jump, or use any killteam's rules that remove it and set it back up again (e.gh. HEARTHKYN SALVAGER Fly, MANDRAKE Shadow Passage).    Before this operative moves, remove the portable barricade it is connected to. After it moves, set up the portable barricade so it is connected again, but the portable barricade cannot be set up within 2\" of other equipment terrain features, access points or Accessible terrain. If this is not possible, the portable barricade is not set up again.    This action is treated as a Reposition action. An operative cannot perform this action while within control range of an enemy operative, or in the same activation in which it performed the Fall Back or Charge action.",
+    "killteamId": null,
+    "teamName": "Universal",
+    "isUniversal": true
+  },
+  {
+    "eqId": "UNIVERSAL-UE-RW",
+    "name": "Razor Wire (x1)",
+    "description": "Razor wire is Exposed and Obstructing terrain. Before the battle, you can set it up wholly within your territory, on the killzone floor and more than 2\" from other equipment terrain features, access points, and Accessible terrain.  \n Obstructing: Whenever an operative would cross over this terrain feature within 1\" of it, treat the distance as an additional 1\".",
+    "killteamId": null,
+    "teamName": "Universal",
+    "isUniversal": true
+  },
+  {
+    "eqId": "UNIVERSAL-UE-UG-SMK",
+    "name": "Utility Grenade - Smoke (x1/2)",
+    "description": "When you select this equipment, select two utility grenades (2 smoke, 2 stun, or 1 smoke and 1 stun). Each selection is a unique action your operatives can perform, but your kill team can only perform that action a total number of times during the battle equal to your selection.     **SMOKE GRENADE (1 AP):**     - Place one of your Smoke Grenade markers within 6\" of this operative. It must be visible to this operative, or on Vantage terrain of a terrain feature that is visible to this operative. The marker creates an area of smoke 1\" horizontally and unlimited height vertically from (but not below) it. - While an operative is wholly within an area of smoke, it is obscured to operatives more than 2\" from it, and vice versa. In addition, whenever an operative is shooting an enemy operative wholly within an area of smoke, weapons with the Piercing 2 or Piercing Crits 2 weapon rule have the Piercing 1 or Piercing Crits 1 weapon rule (respectively) instead, unless they’re within 2\" of each other. - In the Ready step of the next Strategy phase, roll one D3. Remove that Smoke Grenade marker after a number of activations equal to that D3 have been completed or at the end of the turning point (whichever comes first). - An operative cannot perform this action while within control range of an enemy operative, or if you have reached the total number of times your kill team can perform it.",
+    "killteamId": null,
+    "teamName": "Universal",
+    "isUniversal": true
+  },
+  {
+    "eqId": "UNIVERSAL-UE-UG-STN",
+    "name": "Utility Grenade - Stun (x1/2)",
+    "description": "When you select this equipment, select two utility grenades (2 smoke, 2 stun, or 1 smoke and 1 stun).\nEach selection is a unique action your operatives can perform, but your kill team can only perform that action a total number of times during the battle equal to your selection.\n  \n\n**STUN GRENADE (1 AP):**  \n\n\n- Select one enemy operative visible to and within 6\" of this operative. That operative and each other operative within 1\" of it takes a stun test. For an operative to take a stun test, roll one D6: on a 3+, subtract 1 from its APL stat until the end of its next activation.\n- An operative cannot perform this action while within control range of an enemy operative, or if you have reached the total number of times your kill team can perform it.",
+    "killteamId": null,
+    "teamName": "Universal",
+    "isUniversal": true
+  },
+  {
+    "eqId": "IMP-AOD-AUS",
+    "name": "Auspex",
+    "description": "Once per turning point, when a friendly ANGEL OF DEATH operative performs the Shoot action and you’re selecting a valid target, you can use this rule.\nIf you do, until the end of the activation (or counteraction), enemy operatives within 8\" of it cannot be obscured.",
+    "killteamId": "IMP-AOD",
+    "teamName": "Angels Of Death",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-AOD-CR",
+    "name": "Chapter Reliquaries",
+    "description": "You can use the Wrath of Vengeance firefight ploy for 0CP if the specified friendly operative has an Engage order.",
+    "killteamId": "IMP-AOD",
+    "teamName": "Angels Of Death",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-AOD-PS",
+    "name": "Purity Seals",
+    "description": "Once per turning point, when a friendly ANGEL OF DEATH operative is shooting, fighting or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+    "killteamId": "IMP-AOD",
+    "teamName": "Angels Of Death",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-AOD-TS",
+    "name": "Tilting Shields",
+    "description": "Once per turning point, when a friendly ANGEL OF DEATH operative is fighting or retaliating, after your opponent rolls their attack dice, but before re-rolls, you can use this rule. If you do, your opponent cannot retain attack dice results of less than 6 as critical successes during that sequence (e.g. as a result of the Lethal, Rending or Severe weapon rules).",
+    "killteamId": "IMP-AOD",
+    "teamName": "Angels Of Death",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-BC-CA",
+    "name": "Concealed Apparatus",
+    "description": "Once per battle, one COMBAT SERVITOR or GUN SERVITOR operative can use another weapon option on its datacard it didn’t select for the battle.",
+    "killteamId": "IMP-BC",
+    "teamName": "Battleclade",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-BC-CG",
+    "name": "Covert Guises",
+    "description": "After revealing this equipment option, roll one D3. As a STRATEGIC GAMBIT in the first turning point, a number of friendly BATTLECLADE operatives equal to the result that are wholly within your drop zone can immediately perform a free Reposition action, but must end that move wholly within 3\" of your drop zone.\nYour TECHNOARCHEOLOGIST operative cannot perform more than one Reposition action in the Strategy phase of the first turning point (i.e. as a result of the Seeker of Divine Arcana rule as well).",
+    "killteamId": "IMP-BC",
+    "teamName": "Battleclade",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-BC-EC",
+    "name": "Electromantic Capacitors",
+    "description": "Friendly BATTLECLADE operatives’ melee weapons have the Shock weapon rule. Whenever a friendly BATTLECLADE operative is retaliating, its melee weapons also have the Severe weapon rule.",
+    "killteamId": "IMP-BC",
+    "teamName": "Battleclade",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-BC-NCRC",
+    "name": "Neurocyclic Reserve Cells",
+    "description": "Once per turning point, whenever you TRANSFER POWER, you can use this rule. If you do, you can TRANSFER POWER for 0 AP (this takes precedence over the normal Noospheric Network rules).",
+    "killteamId": "IMP-BC",
+    "teamName": "Battleclade",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-BOK-ROF",
+    "name": "Rune Of Foresight",
+    "description": "When this equipment is revealed, roll one D3. In the Strategy phase of the turning point equal to the result, you gain 1 additional CP.",
+    "killteamId": "AEL-BOK",
+    "teamName": "Blades Of Khaine",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-BOK-ROP",
+    "name": "Rune Of Prophecy",
+    "description": "Once per battle, after rolling off to decide initiative, you can add D3 to, or subtract D3 from, your result.",
+    "killteamId": "AEL-BOK",
+    "teamName": "Blades Of Khaine",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-BOK-ROS",
+    "name": "Rune Of Shielding",
+    "description": "Once per battle, when an attack dice inflicts Normal Dmg on a friendly BLADES OF KHAINE operative, you can ignore that inflicted damage.",
+    "killteamId": "AEL-BOK",
+    "teamName": "Blades Of Khaine",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-BOK-WBT",
+    "name": "Wraithbone Talisman",
+    "description": "Once per turning point, when a friendly BLADES OF KHAINE operative is shooting, fighting or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+    "killteamId": "AEL-BOK",
+    "teamName": "Blades Of Khaine",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-BLD-CS",
+    "name": "Chaos Sigil",
+    "description": "The Reward Earned firefight ploy costs you 0 CP.",
+    "killteamId": "CHAOS-BLD",
+    "teamName": "Blooded",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-BLD-ST",
+    "name": "Sinister Trophies",
+    "description": "Whenever an enemy operative is shooting against, fighting against, or retaliating against a friendly BLOODED operative that has one of your Blooded tokens and is within 2\" of it,\nyour opponent cannot re-roll their attack dice results of 1.",
+    "killteamId": "CHAOS-BLD",
+    "teamName": "Blooded",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-BLD-SOBW",
+    "name": "Symbols of Bloody Worship",
+    "description": "Whenever a friendly BLOODED operative ends an action, if it was not incapacitated but inflicted damage on any enemy operatives during that action, it regains 1 lost wound.",
+    "killteamId": "CHAOS-BLD",
+    "teamName": "Blooded",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-BLD-WB",
+    "name": "Wicked Blades",
+    "description": "Add 1 to both Dmg stats of each friendly BLOODED operative's bayonet, bayonet and shield, and improvised blade for the battle.",
+    "killteamId": "CHAOS-BLD",
+    "teamName": "Blooded",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TYR-BBRO-CD",
+    "name": "Covert Disguises",
+    "description": "After revealing this equipment option, roll 1D3.\nAs a STRATEGIC GAMBIT in the first turning point, a number of friendly BROOD BROTHER BROODGUARD operatives equal to the result that are wholly within your drop zone can immediately perform a free\nReposition action, but must end that move wholly within 3\" of your drop zone.",
+    "killteamId": "TYR-BBRO",
+    "teamName": "Brood Brothers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TYR-BBRO-CK",
+    "name": "Cult Knives",
+    "description": "Friendly BROOD BROTHER BROODGUARD operatives have the following melee weapon:\n\n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Cult Knife|3|4+|3/4|",
+    "killteamId": "TYR-BBRO",
+    "teamName": "Brood Brothers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TYR-BBRO-CT",
+    "name": "Cult Talisman",
+    "description": "Once per turning point, when an operative is shooting a friendly BROOD BROTHER operative (Excluding Patriarch), in the roll defence dice step, you can retain one of your normal successes as a critical success instead.",
+    "killteamId": "TYR-BBRO",
+    "teamName": "Brood Brothers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TYR-BBRO-LO",
+    "name": "Lookout",
+    "description": "STRATEGIC GAMBIT: Select one enemy operative visible to a friendly BROOD BROTHER operative to gain one of your Crossfire tokens.",
+    "killteamId": "TYR-BBRO",
+    "teamName": "Brood Brothers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "NEC-CAN-AON",
+    "name": "Awakened Obelisk Nodes",
+    "description": "After revealing this equipment option, roll one D3. You can use the Animate Obelisk Nodes firefight ploy for 0CP a number of times during the battle equal to the result.",
+    "killteamId": "NEC-CAN",
+    "teamName": "Canoptek Circle",
+    "isUniversal": false
+  },
+  {
+    "eqId": "NEC-CAN-MM",
+    "name": "Matrix Manipulator",
+    "description": "Once per battle, during a friendly CANOPTEK CIRCLE operative’s activation or counteraction, you can use this rule. If you do, until the end of that activation/counteraction, a friendly CANOPTEK CIRCLE GEOMANCER operative is treated as your fourth OBELISK NODE marker.",
+    "killteamId": "NEC-CAN",
+    "teamName": "Canoptek Circle",
+    "isUniversal": false
+  },
+  {
+    "eqId": "NEC-CAN-SDC",
+    "name": "Nanoscarab Caskets",
+    "description": "Whenever a friendly CANOPTEK CIRCLE operative is activated, it regains up to D3 lost wounds.",
+    "killteamId": "NEC-CAN",
+    "teamName": "Canoptek Circle",
+    "isUniversal": false
+  },
+  {
+    "eqId": "NEC-CAN-PS",
+    "name": "Phase Shifter",
+    "description": "Once per turning point, when an operative is shooting a friendly CANOPTEK CIRCLE GEOMANCER operative, at the start of the Roll Defence Dice step, you can use this rule.\nIf you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence. Note that Piercing 1 would therefore be ignored.",
+    "killteamId": "NEC-CAN",
+    "teamName": "Canoptek Circle",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-CI-AF",
+    "name": "Auto-Flagellator",
+    "description": "Whenever a friendly CELESTIAN INSIDIANT operative is activated, you can use this rule.\nIf you do, roll one D6 and inflict damage on that operative equal to half the result (rounding up); on a 4+, that operative also becomes INSPIRING.\nYou cannot make more than one friendly operative INSPIRING using this rule per turning point.",
+    "killteamId": "IMP-CI",
+    "teamName": "Celestian Insidiants",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-CI-POG",
+    "name": "Psyk-Out Grenades",
+    "description": "This equipment allows you to select two utility grenades from the utility grenades equipment (see universal equipment) and they must all be stun grenades.\nIf you also select that equipment as normal, you cannot select any stun grenades (i.e. to give you more than two).\nWhenever an operative takes a stun test as a result of a friendly CELESTIAN INSIDIANT operative performing the Stun Grenade action, if the result is a 3+, also inflict damage on that first operative equal to the dice result halved (rounding up).\nIf that first operative has the PSYKER keyword, inflict damage on it equal to the dice result instead.",
+    "killteamId": "IMP-CI",
+    "teamName": "Celestian Insidiants",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-CI-SR",
+    "name": "Saintly Relics",
+    "description": "Whenever an attack dice would inflict damage on a friendly CELESTIAN INSIDIANT operative, you can use this rule.\nIf you do, roll one D6, or two D6 if that operative is INSPIRING: if any result is a 6, ignore the damage inflicted from that attack dice.\nYou cannot ignore more than one attack dice per action and two attack dice per battle this way.",
+    "killteamId": "IMP-CI",
+    "teamName": "Celestian Insidiants",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-CI-VM",
+    "name": "Vocifera Mortis",
+    "description": "Once per battle, when an INSPIRING friendly CELESTIAN INSIDIANT operative is incapacitated, you can use this rule.\nIf you do, for the Martyrdom faction rule, the other friendly CELESTIAN INSIDIANT operative you select can be one that isn’t visible to or within 6\" of that operative.",
+    "killteamId": "IMP-CI",
+    "teamName": "Celestian Insidiants",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-CULT-BS",
+    "name": "Baleful Script",
+    "description": "Once per battle STRATEGIC GAMBIT. Change one of your ACCURSED GIFTS. Note that if it is an ACCURSED GIFT an operative has from the Abhorrent Mutation firefight ploy, only that operative benefits from this.",
+    "killteamId": "CHAOS-CULT",
+    "teamName": "Chaos Cult",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-CULT-CG",
+    "name": "Covert Guises",
+    "description": "After revealing this equipment option, roll one D3. As a STRATEGIC GAMBIT in the first turning point, a number of friendly CHAOS CULT DEVOTEE operatives equal to the result that are wholly within your drop zone can immediately perform\na free Reposition action, but must end that move wholly within 3\" of your drop zone.",
+    "killteamId": "CHAOS-CULT",
+    "teamName": "Chaos Cult",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-CULT-UT",
+    "name": "Unholy Talisman",
+    "description": "Once per turning point, when an operative is shooting a friendly CHAOS CULT operative, in the Roll Defence Dice step, you can retain one of your normal successes as a critical success instead.",
+    "killteamId": "CHAOS-CULT",
+    "teamName": "Chaos Cult",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-CULT-VB",
+    "name": "Vile Blessing",
+    "description": "Once per battle, when an attack dice inflicts Normal Dmg on a friendly CHAOS CULT operative (excluding DEVOTEE), you can ignore that inflicted damage.\nIf that friendly operative is a MUTANT or TORMENT operative, you cannot roll for the Unnatural Regeneration rule for that attack dice then decide to use this rule on the same dice – you must use one or the other.",
+    "killteamId": "CHAOS-CULT",
+    "teamName": "Chaos Cult",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-COR-DM",
+    "name": "Diuturnal Mantles",
+    "description": "Whenever an operative is shooting a friendly CORSAIR VOIDSCARRED operative, if the ranged weapon in that sequence has the Blast or Torrent weapon rule, you can re-roll one of your defence dice.\nIn addition, friendly CORSAIR VOIDSCARRED operatives are not affected by the X\" Devastating X weapon rule (i.e, Devastating with a distance) unless they are the target during that sequence.",
+    "killteamId": "AEL-COR",
+    "teamName": "Corsair Voidscarred",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-COR-MF",
+    "name": "Mistfield",
+    "description": "Once per Turning point, when an operative is shooting a friendly CORSAIR VOIDSCARRED operative more than 3\" from it, at the start of the Roll Defence Dice step, you can use this rule.\nIf you do, worsen the X of the piercing weapon rule by 1 (If any) until the end of that sequence. Note that Piercing 1 would therefore be ignored.",
+    "killteamId": "AEL-COR",
+    "teamName": "Corsair Voidscarred",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-COR-ROG",
+    "name": "Runes Of Guidance",
+    "description": "Once per turning point, whenever a friendly CORSAIR VOIDSCARRED WAY SEEKER or CORSAIR VOIDSCARRED SOUL WEAVER operative is performing a PSYCHIC unique action (excluding Warp Fold),\nyou can use this rule. If you do, until the end of that action, add 3\" to its distance requirement. Note this has no effect on PSYCHIC weapons (e.g, the Devastating distance requirement of Lightning Strike).",
+    "killteamId": "AEL-COR",
+    "teamName": "Corsair Voidscarred",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-COR-SC",
+    "name": "Star Charts",
+    "description": "**STRATEGIC GAMBIT**  \n\nRoll 1D3, if the result is higher than the number of current turning point, you gain 1CP and cannot use this STRATEGIC GAMBIT for the rest of the battle.",
+    "killteamId": "AEL-COR",
+    "teamName": "Corsair Voidscarred",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-DKK-CM",
+    "name": "Chronometer",
+    "description": "Once per battle STRATEGIC GAMBIT in the first or second turning point.\nEach friendly DEATH KORPS operative wholly within your territory can immediately perform a free Dash action in an order of your choice, but each that does so must end that move closer to an opponent's drop zone or killzone edge.  \n\nYou cannot use this STRATEGIC GAMBIT and the Regroup strategy ploy during the same turning point.",
+    "killteamId": "IMP-DKK",
+    "teamName": "Death Korps",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-DKK-CB",
+    "name": "Comm-Beads",
+    "description": "Whenever a friendly DEATH KORPS WATCHMASTER or friendly DEATH KORPS CONFIDANT operative issues a GUARDSMAN ORDER, you can use this rule.\nIf you do, instead of each friendly DEATH KORPS operative within 6\" of it receiving that order, you can select one friendly DEATH KORPS operative to receive that order.",
+    "killteamId": "IMP-DKK",
+    "teamName": "Death Korps",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-DKK-GB",
+    "name": "Gas Bombardment",
+    "description": "Once per battle STRATEGIC GAMBIT. Place your Gas marker in the killzone; it cannot be placed underneath Vantage terrain.\nWhenever an operative is within 3\" of that marker, subtract 1 from its APL stat. In the Ready step of the next Strategy phase, remove that marker.\nNote that an operative's APL stat is only changed while it is within 3\" of that marker. If it moves more than 3\" from that marker, its APL stat is no longer changed by this rule.",
+    "killteamId": "IMP-DKK",
+    "teamName": "Death Korps",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-DKK-HA",
+    "name": "Hand Axes",
+    "description": "Friendly DEATH KORPS operatives have the following melee weapon:\n\n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Hand Axe|3|4+|3/4|",
+    "killteamId": "IMP-DKK",
+    "teamName": "Death Korps",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-DW-AR",
+    "name": "Ammunition Reserve",
+    "description": "Once per battle, you can use the Special Issue Ammunition faction rule for up to two Shoot actions during one turning point, but you must select different weapon rules for both uses. This takes precedence over the normal Special Issue Ammunition rules.",
+    "killteamId": "IMP-DW",
+    "teamName": "Deathwatch",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-DW-DW",
+    "name": "Digital Weapons",
+    "description": "Once per turning point, when a friendly DEATHWATCH operative performs the Fight action, at the start of the Roll Attack Dice step, you can use this rule. If you do, inflict 1 damage on the enemy operative in that sequence.",
+    "killteamId": "IMP-DW",
+    "teamName": "Deathwatch",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-DW-SVBSC",
+    "name": "Sanctus-V Bioscryer Cuffs",
+    "description": "Once during each friendly DEATHWATCH operative’s activation, before or after it performs an action, if it’s not within control range of enemy operatives, you can use this rule. If you do, select one of the following:\n- That friendly operative regains up to D3 lost wounds.\n- Remove any changes to that friendly operative’s APL stat.\n- Remove one of the following tokens that friendly operative has (before that token’s activation effects are resolved, if relevant): Neutron Fragment, Poison, Terrorchem.",
+    "killteamId": "IMP-DW",
+    "teamName": "Deathwatch",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-DW-SST",
+    "name": "Scrutavore Servo-Thrall",
+    "description": "Once per turning point, during a friendly DEATHWATCH operative’s activation, you can use this rule. If you do, during that activation, that operative can perform a mission action for 1 less AP.\nHaving an enemy operative within its control range doesn’t prevent that friendly operative from performing that mission action.\nHowever, in such an instance, after it does so, you and your opponent roll-off. If your opponent wins, you cannot use this equipment for the rest of the battle.",
+    "killteamId": "IMP-DW",
+    "teamName": "Deathwatch",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-ESS-AUS",
+    "name": "Armoured Undersuit",
+    "description": "Whenever an operative is shooting a friendly ELUCIDIAN STARSTRIDER operative that has a 5+ Save stat (excluding CANID), you can retain one of your defence dice results of 4 as a normal success.",
+    "killteamId": "IMP-ESS",
+    "teamName": "Elucidian Starstriders",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-ESS-HSCP",
+    "name": "Hot Shot Capacitor Pack",
+    "description": "Up to twice per turning point, whenever a friendly ELUCIDIAN STARSTRIDER operative is performing the Shoot action and you select a laspistol, lasgun, or relic laspistol, you can use this rule. If you do, until the end of the turning point, add 1 to both Dmg stats of that weapon and it has the Hot and Piercing Crits 1 weapon rules.",
+    "killteamId": "IMP-ESS",
+    "teamName": "Elucidian Starstriders",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-ESS-ICUL",
+    "name": "Improved Coordinates Uplink",
+    "description": "Whenever a friendly ELUCIDIAN STARSTRIDER operative is using a PRIVATEER SUPPORT ASSET, if the target is within 6\" of a friendly ELUCIDIAN STARSTRIDER NAVIS operative, the target cannot be obscured and that weapon has the Saturate weapon rule.",
+    "killteamId": "IMP-ESS",
+    "teamName": "Elucidian Starstriders",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-ESS-RG",
+    "name": "Rapid Gunnery",
+    "description": "Once per battle, when selecting a PRIVATEER SUPPORT ASSET, you can select one that has already been used during the battle. This takes precedence over the normal PRIVATEER SUPPORT ASSET rules.",
+    "killteamId": "IMP-ESS",
+    "teamName": "Elucidian Starstriders",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-AES-MAN",
+    "name": "Manacles",
+    "description": "Whenever an enemy operative would perform the Fall Back action while within control range of a friendly EXACTION SQUAD operative, if no other enemy operatives are within that friendly operative’s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation or counteraction (no AP are spent on it), and you cannot use this rule again during this turning point.",
+    "killteamId": "IMP-AES",
+    "teamName": "Exaction Squad",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-AES-RMV",
+    "name": "Reinforced Mirror-Visor",
+    "description": "You can ignore any changes to the APL stats of friendly EXACTION SQUAD operatives, and they aren’t affected by enemy operatives’ Shock weapon rule.",
+    "killteamId": "IMP-AES",
+    "teamName": "Exaction Squad",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-AES-SIS",
+    "name": "Special Issue Shells",
+    "description": "Up to twice per turning point, when a friendly EXACTION SQUAD operative is performing the Shoot action and you select a combat shotgun, executioner shotgun, scoped shotpistol or shotpistol, you can use this rule. If you do, select one of the following weapon rules for that weapon to have until the end of that action:  - Saturate. - Piercing 1, but only if the target has a Save stat of 3+ or better. - Torrent 1\", but you cannot select more than one secondary target.",
+    "killteamId": "IMP-AES",
+    "teamName": "Exaction Squad",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-AES-SPL",
+    "name": "Strobing Phosphor-Lumen",
+    "description": "Whenever an enemy operative is shooting against, fighting against or retaliating against a friendly EXACTION SQUAD operative within 2\" of it, your opponent cannot re-roll their attack dice results of 1.",
+    "killteamId": "IMP-AES",
+    "teamName": "Exaction Squad",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-FSKB-MEAT",
+    "name": "Meat",
+    "description": "Once per turning point, when a friendly FARSTALKER KINBAND operative (excluding HOUND) is activated, if it’s not within control range of enemy operatives, you can use this rule. If you do, that friendly operative regains D3+1 lost wounds.",
+    "killteamId": "TAU-FSKB",
+    "teamName": "Farstalker Kinband",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-FSKB-PS",
+    "name": "Piercing Shot",
+    "description": "Once per turning point, when a friendly FARSTALKER KINBAND operative is performing the Shoot action and you select a Kroot rifle, Kroot scattergun or dual Kroot pistols (focused), you can use this rule. If you do, until the end of that action, that weapon has the Piercing 1 weapon rule.  \nYou cannot use the Piercing Shot and Toxin Shot rules during the same action.",
+    "killteamId": "TAU-FSKB",
+    "teamName": "Farstalker Kinband",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-FSKB-TS",
+    "name": "Toxin Shot",
+    "description": "Once per turning point, when a friendly FARSTALKER KINBAND operative is performing the Shoot action and you select a Kroot rifle, Kroot scattergun or dual Kroot pistols (focused), you can use this rule. If you do, until the end of that action, that weapon has the Lethal 5+ and Stun weapon rules.  \nYou cannot use the Piercing Shot and Toxin Shot rules during the same action.",
+    "killteamId": "TAU-FSKB",
+    "teamName": "Farstalker Kinband",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-FSKB-TRP",
+    "name": "Trophy",
+    "description": "Once per battle, during a friendly FARSTALKER KINBAND operative's activation (excluding HOUND), before or after it performs an action, if it’s not within control range of enemy operatives, you can use this rule. If you do, add 1 to that friendly operative’s APL stat until the end of its activation.",
+    "killteamId": "TAU-FSKB",
+    "teamName": "Farstalker Kinband",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-FELL-BA",
+    "name": "Brass Adornments",
+    "description": "Once per battle, you can use the Animalistic Fury and Wild Rage firefight ploys for 0CP each.",
+    "killteamId": "CHAOS-FELL",
+    "teamName": "Fellgor Ravagers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-FELL-CS",
+    "name": "Chaos Sigil",
+    "description": "Once per turning point, when an operative is shooting a friendly FELLGOR RAVAGER operative, at the start of the Roll Defence Dice step, you can use this rule.\nIf you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence. Note that Piercing 1 would therefore be ignored.",
+    "killteamId": "CHAOS-FELL",
+    "teamName": "Fellgor Ravagers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-FELL-GM",
+    "name": "Gore Marks",
+    "description": "Once per turning point, when a friendly FELLGOR RAVAGER operative is fighting or retaliating, you can use this rule.\nIf you do, inflict 1 damage on that friendly operative and re-roll one of your attack dice. If the result is a fail, inflict 1 additional damage on that friendly operative.",
+    "killteamId": "CHAOS-FELL",
+    "teamName": "Fellgor Ravagers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-FELL-WP",
+    "name": "War Paint",
+    "description": "You can ignore any changes to the Move stat of friendly FELLGOR RAVAGER operatives from being injured.",
+    "killteamId": "CHAOS-FELL",
+    "teamName": "Fellgor Ravagers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-GPI-MS",
+    "name": "Mutated Symptoms",
+    "description": "Once per battle, when you activate a friendly GELLERPOX INFECTED operative, you can select one additional TECHNO-CURSE for that operative to gain until the end of the turning point (it must be different from your existing TECHNO-CURSE). Note that if a rule refers to an enemy operative being affected by your selected TECHNO-CURSE rule (e.g. VULGRAR THIRCE-CURSED operative''s Spread The Glorious Gifts rule), it is affected by your additional TECHNO-CURSE rule too.",
+    "killteamId": "CHAOS-GPI",
+    "teamName": "Gellerpox Infected",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-GPI-MV",
+    "name": "Mutoid Vermin",
+    "description": "After revealing this equipment option, add four GELLERPOX INFECTED MUTOID VERMIN operatives to your kill team for the battle.",
+    "killteamId": "CHAOS-GPI",
+    "teamName": "Gellerpox Infected",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-GPI-PB",
+    "name": "Plague Bellows",
+    "description": "Whenever an operative is shooting a friendly GELLERPOX INFECTED NIGHTMARE HULK operative that’s more than 6\" from it, you can retain one of your defence dice results of 3 as a normal success instead of discarding it.",
+    "killteamId": "CHAOS-GPI",
+    "teamName": "Gellerpox Infected",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-GPI-PS",
+    "name": "Polluted Stockpile",
+    "description": "After revealing this equipment option, roll 2D6: on a 7+, remove one of your opponent’s selected equipment options; otherwise, that player removes one of their own selected equipment options.\nThey cannot select that equipment again during the game sequence (e.g. in the Scouting step of Approved Ops). You cannot select this equipment option after the Select Operatives step.",
+    "killteamId": "CHAOS-GPI",
+    "teamName": "Gellerpox Infected",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-GORE-BC",
+    "name": "Bloody Cadaver",
+    "description": "Before the battle, you can set up one of your Bloody Cadaver markers wholly within your territory and more than 2\" from other markers (excluding your Gory Totem marker).\nFriendly GOREMONGER operatives can perform the Pick Up Marker action on that marker. In the Ready step of each Strategy phase, you can increase the GORE TANK of one friendly GOREMONGER operative that controls that marker, unless that friendly operative is within control range of an enemy operative.",
+    "killteamId": "CHAOS-GORE",
+    "teamName": "Goremongers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-GORE-CS",
+    "name": "Chaos Sigil",
+    "description": "Once per turning point, when an operative is shooting a friendly GOREMONGER operative, at the start of the Roll Defence Dice step, you can use this rule. If you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence. Note that Piercing 1 would therefore be ignored.",
+    "killteamId": "CHAOS-GORE",
+    "teamName": "Goremongers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-GORE-GT",
+    "name": "Gory Totem",
+    "description": "Before the battle, you can set up one of your Gory Totem markers wholly within your territory and more than 2\" from other markers (excluding your Bloody Cadaver marker).\nWhenever an enemy operative within 3\" of your Gory Totem marker is shooting, fighting or retaliating, your opponent cannot re-roll their attack dice.",
+    "killteamId": "CHAOS-GORE",
+    "teamName": "Goremongers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-GORE-WC",
+    "name": "Wrist Chains",
+    "description": "Once per turning point, when a friendly GOREMONGER operative performs the Shoot action and you’re selecting a ranged weapon, you can use this rule.\nIf you do, until the end of that action, the following melee weapons are treated as ranged weapons with the Range 2\" weapon rule: chainblade, chainglaive, great chainaxe (ignore its Brutal weapon rule), pickrippers.",
+    "killteamId": "CHAOS-GORE",
+    "teamName": "Goremongers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-HOTA-CS",
+    "name": "Chain Snare",
+    "description": "Whenever an enemy operative would perform the Fall Back action while within control range of a friendly HAND OF THE ARCHON operative, if no other enemy operatives are within that friendly operative’s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation or counteraction (no AP are spent on it), and you cannot use this rule again during this turning point.",
+    "killteamId": "AEL-HOTA",
+    "teamName": "Hand Of The Archon",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-HOTA-RP",
+    "name": "Refined Poison",
+    "description": "Up to twice per turning point, whenever a friendly HAND OF THE ARCHON operative is performing the Shoot action and you select a shardcarbine, splinter cannon, splinter pistol, splinter rifle or stinger pistol,\nyou can use this rule. If you do, until the end of that action, add 1 to the Normal Dmg stat of that weapon.",
+    "killteamId": "AEL-HOTA",
+    "teamName": "Hand Of The Archon",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-HOTA-TC",
+    "name": "Toxic Coating",
+    "description": "Up to twice per turning point, whenever a friendly HAND OF THE ARCHON operative is fighting or retaliating and you’re selecting a melee weapon, you can use this rule.\nIf you do, until the end of that sequence, that operative’s melee weapon has the Lethal 5+ weapon rule.",
+    "killteamId": "AEL-HOTA",
+    "teamName": "Hand Of The Archon",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-HOTA-WB",
+    "name": "Wicked Blades",
+    "description": "Add 1 to the Atk stat of friendly HAND OF THE ARCHON operatives’ array of blades.",
+    "killteamId": "AEL-HOTA",
+    "teamName": "Hand Of The Archon",
+    "isUniversal": false
+  },
+  {
+    "eqId": "VOT-HKS-CR",
+    "name": "Climbing Rigs",
+    "description": "During each friendly HEARTHKYN SALVAGER operative’s activation, you can do one of the following:\n\n- When that operative is climbing up, you can treat the vertical distance as 2\" (regardless of how far the operative actually moves vertically).\n- When that operative is dropping, ignore the vertical distance.",
+    "killteamId": "VOT-HKS",
+    "teamName": "Hearthkyn Salvagers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "VOT-HKS-ET",
+    "name": "Excavation Tools",
+    "description": "Friendly HEARTHKYN SALVAGER operatives can perform the Pick Up Marker action for 1 less AP, and don’t have to control the marker to do so (taking precedence over that action's conditions – they only need to contest the marker).",
+    "killteamId": "VOT-HKS",
+    "teamName": "Hearthkyn Salvagers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "VOT-HKS-PK",
+    "name": "Plasma Knives",
+    "description": "Friendly HEARTHKYN SALVAGER operatives have the following melee weapon. Note that the FIELD MEDIC operative already has this weapon but with better stats; in that instance, use the better version.\n\n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Plasma Knife|3|4+|3/5|\n|**Weapon Rules**|\n|Lethal 5+|",
+    "killteamId": "VOT-HKS",
+    "teamName": "Hearthkyn Salvagers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "VOT-HKS-WOC",
+    "name": "Writ Of Claim",
+    "description": "Once per battle, if friendly HEARTHKYN SALVAGER operatives contest two or more objective markers, after rolling off to decide initiative, you can re-roll your dice.",
+    "killteamId": "VOT-HKS",
+    "teamName": "Hearthkyn Salvagers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "VOT-HKY-FSBS",
+    "name": "Firestorm Bolt Shells",
+    "description": "Once per turning point, when a friendly HERNKYN YAEGIR operative is performing the Shoot action and you select a bolt shotgun (short range), you can use this rule.\nIf you do, until the end of that action, that weapon has the Blast 1\" weapon rule.",
+    "killteamId": "VOT-HKY",
+    "teamName": "Hernkyn Yaegirs",
+    "isUniversal": false
+  },
+  {
+    "eqId": "VOT-HKY-KVCU",
+    "name": "KV-Ceramide Undersuit",
+    "description": "Whenever an enemy operative is shooting a friendly HERNKYN YAEGIR operative, if the ranged weapon in that sequence has the Blast or Torrent weapon rule, you can re-roll one of your defence dice.\nIn addition, friendly HERNKYN YAEGIR operatives are not affected by the X\" Devastating X weapon rule (i.e, Devastating with a distance) unless they are the target during that sequence.",
+    "killteamId": "VOT-HKY",
+    "teamName": "Hernkyn Yaegirs",
+    "isUniversal": false
+  },
+  {
+    "eqId": "VOT-HKY-PK",
+    "name": "Plasma Knives",
+    "description": "Friendly HERNKYN YAEGIR operatives have the following melee weapon. Note that some operatives already have this weapon but with better stats; in that instance use the better version, and that weapon has the Balanced weapon rule for the battle..\n\n|**Name**|**ATK**|**HIT**|**DMG**|\n|----|:-----:|:-----:|:-----:|\n|Plasma Knife|3|4+|3/5|\n|**Weapon Rules**|\n|Lethal 5+|",
+    "killteamId": "VOT-HKY",
+    "teamName": "Hernkyn Yaegirs",
+    "isUniversal": false
+  },
+  {
+    "eqId": "VOT-HKY-SBS",
+    "name": "Stabilized Bolt Shells",
+    "description": "Up to twice per turning point, whenever a friendly HERNKYN YAEGIR operative is performing the Shoot action and you selected a bolt shotgun (long range), you can use this rule.\nIf you do, until the end of that action, improve the Hit stat of that weapon by 1 and add 1 to both of its damage stats.",
+    "killteamId": "VOT-HKY",
+    "teamName": "Hernkyn Yaegirs",
+    "isUniversal": false
+  },
+  {
+    "eqId": "NEC-HIER-MC",
+    "name": "Magnification Conduits",
+    "description": "Once per turning point, when a friendly HIEROTEK CIRCLE APPRENTEK or HIEROTEK CIRCLE CRYPTEK operative is performing the Shoot action, you can use this rule.\nIf you do, select one other friendly HIEROTEK CIRCLE operative (excluding PLASMACYTE) that has an Engage order and is visible to that friendly operative.\nUntil the end of that action, that other friendly operative can be treated as the active operative for the Magnify weapon rule.",
+    "killteamId": "NEC-HIER",
+    "teamName": "Hierotek Circle",
+    "isUniversal": false
+  },
+  {
+    "eqId": "NEC-HIER-PS",
+    "name": "Phase Shifter",
+    "description": "Once per turning point, when an operative is shooting a friendly CRYPTEK operative, at the start of the Roll Defence Dice step, you can use this rule.\nIf you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence.\nNote that Piercing 1 would therefore be ignored.",
+    "killteamId": "NEC-HIER",
+    "teamName": "Hierotek Circle",
+    "isUniversal": false
+  },
+  {
+    "eqId": "NEC-HIER-TW",
+    "name": "Tesla Weave",
+    "description": "Once per turning point, when an enemy operative ends the Charge action with friendly HIEROTEK CIRCLE operatives within its control range, you can use this rule. If you do, inflict D3+1 damage on that enemy operative.",
+    "killteamId": "NEC-HIER",
+    "teamName": "Hierotek Circle",
+    "isUniversal": false
+  },
+  {
+    "eqId": "NEC-HIER-TC",
+    "name": "Tesseract Cube",
+    "description": "In the Ready step of each Strategy phase, when you gain CP, if a friendly CRYPTEK operative is not incapacitated, is not within control range of enemy operatives, and has not been REANIMATED this turning point,\nyou can use this rule.\nIf you do, roll one D6: on a 1, you cannot use this rule for the rest of the battle; on a 4+, you gain 1CP.\nOnce you have gained 2CP from this rule, you cannot use it for the rest of the battle.",
+    "killteamId": "NEC-HIER",
+    "teamName": "Hierotek Circle",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-HC-EML",
+    "name": "Extremis Mind-Link",
+    "description": "Once per battle, you can use the Control Edict firefight ploy for 0CP, but instead of activating the selected friendly operatives in succession, activate them at the same time.\nComplete their activations action by action in any order.",
+    "killteamId": "IMP-HC",
+    "teamName": "Hunter Clade",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-HC-RB",
+    "name": "Rad Bombardment",
+    "description": "Once per battle STRATEGIC GAMBIT in any turning point after the first. Select one objective marker or your opponent’s drop zone.\nRoll one D6 separately for each enemy operative within control range of that selected objective marker or within that drop zone, and subtract 1 if any part of that enemy operative's base is underneath Vantage terrain:  \n\non a 4+, subtract 1 from that operative's APL stat until the end of its next activation;  \n\non a 6, also inflict D3 damage on it (roll separately for each).",
+    "killteamId": "IMP-HC",
+    "teamName": "Hunter Clade",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-HC-RS",
+    "name": "Redundancy Systems",
+    "description": "Once per turning point, when a friendly HUNTER CLADE operative is activated, if it’s not within control range of enemy operatives, you can use this rule.\nIf you do, that friendly operative regains up to D3+2 lost wounds.",
+    "killteamId": "IMP-HC",
+    "teamName": "Hunter Clade",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-HC-RF",
+    "name": "Refractor Field",
+    "description": "Once per turning point, when an operative is shooting a friendly HUNTER CLADE operative, at the start of the Roll Defence Dice step, you can use this rule.\nIf you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence. Note that Piercing 1 would therefore be ignored.",
+    "killteamId": "IMP-HC",
+    "teamName": "Hunter Clade",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-INB-CS",
+    "name": "Combat Stimms",
+    "description": "You can ignore any changes to the Move stat of friendly IMPERIAL NAVY BREACHER operatives from being injured.",
+    "killteamId": "IMP-INB",
+    "teamName": "Imperial Navy Breachers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-INB-RB",
+    "name": "Rebreathers",
+    "description": "You can ignore any changes to the APL stats of friendly IMPERIAL NAVY BREACHER operatives, and they aren’t affected by enemy operatives’ Shock weapon rule.",
+    "killteamId": "IMP-INB",
+    "teamName": "Imperial Navy Breachers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-INB-SL",
+    "name": "Slugs",
+    "description": "Up to three times per turning point, whenever a friendly IMPERIAL NAVY BREACHER operative is performing the Shoot action and you select a navis shotgun (long range), you can use this rule.\nIf you do, until the end of that action, improve the Hit stat of that weapon by 1 and add 1 to both of its Dmg stats.",
+    "killteamId": "IMP-INB",
+    "teamName": "Imperial Navy Breachers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-INB-SORD",
+    "name": "System Override Device",
+    "description": "Once per turning point, one friendly IMPERIAL NAVY BREACHER operative can perform the Operate Hatch action for 1 less AP.",
+    "killteamId": "IMP-INB",
+    "teamName": "Imperial Navy Breachers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-INQ-AB",
+    "name": "Armoured Bodysuits",
+    "description": "Whenever an operative is shooting a friendly INQUISITORIAL AGENT operative (excluding TOME-SKULL) that has a 5+ Save stat, you can retain one of your defence dice results of 4 as a normal success.",
+    "killteamId": "IMP-INQ",
+    "teamName": "Inquisitorial Agents",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-INQ-CD",
+    "name": "Combat Daggers",
+    "description": "Friendly INQUISITORIAL AGENT operatives have the following melee weapon. Whenever a friendly SISTER OF SILENCE operative is using it, add 1 to its Atk stat. \n\n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Combat Dagger|3|4+|3/4|",
+    "killteamId": "IMP-INQ",
+    "teamName": "Inquisitorial Agents",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-INQ-IR",
+    "name": "Inquisitorial Rosette",
+    "description": "Once per battle, when a friendly INQUISITORIAL AGENT operative is activated, if you’ve used the Quarry strategy ploy during this turning point, you can use this rule.\nIf you do, you can select a new enemy operative to be your quarry until the end of the turning point.",
+    "killteamId": "IMP-INQ",
+    "teamName": "Inquisitorial Agents",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-INQ-SS",
+    "name": "Servo-Skull",
+    "description": "Once per battle, one friendly INQUISITORIAL AGENT operative can perform a mission action for 1 less AP.",
+    "killteamId": "IMP-INQ",
+    "teamName": "Inquisitorial Agents",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-KAS-CD",
+    "name": "Combat Daggers",
+    "description": "Friendly KASRKIN operatives have the following melee weapon:\n\n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Combat Dagger|3|4+|3/4|",
+    "killteamId": "IMP-KAS",
+    "teamName": "Kasrkin",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-KAS-FG",
+    "name": "Foregrip",
+    "description": "Whenever a friendly KASRKIN operative is shooting an operative within 3\" of it, ranged weapons on its datacard\n(excluding weapons that include ‘pistol’ in their name, e.g. hot-shot laspistol, all profiles of a plasma pistol, etc.) have the Accurate 1 weapon rule.",
+    "killteamId": "IMP-KAS",
+    "teamName": "Kasrkin",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-KAS-LRS",
+    "name": "Long-Range Scope",
+    "description": "Whenever a friendly KASRKIN operative is shooting an operative more than 6\" from it, that friendly operative's hot-shot weapons have the Saturate weapon rule.",
+    "killteamId": "IMP-KAS",
+    "teamName": "Kasrkin",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-KAS-ROC",
+    "name": "Relics Of Cadia",
+    "description": "Once per turning point, when a friendly KASRKIN operative is shooting, fighting, or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+    "killteamId": "IMP-KAS",
+    "teamName": "Kasrkin",
+    "isUniversal": false
+  },
+  {
+    "eqId": "ORK-KOM-CHP",
+    "name": "Choppas",
+    "description": "Friendly KOMMANDO operatives (excluding BOMB SQUIG and GROT) have the following melee weapon. Note that some operatives already have this weapon but with better stats, in that instance, use the better version.\n \n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Choppa|3|3+|4/5|",
+    "killteamId": "ORK-KOM",
+    "teamName": "Kommandos",
+    "isUniversal": false
+  },
+  {
+    "eqId": "ORK-KOM-CS",
+    "name": "Collapsible Stocks",
+    "description": "Remove the Range weapon rule from the following ranged weapons that friendly KOMMANDO operatives have:  - Shokka Pistol - Slugga",
+    "killteamId": "ORK-KOM",
+    "teamName": "Kommandos",
+    "isUniversal": false
+  },
+  {
+    "eqId": "ORK-KOM-DYN",
+    "name": "Dynamite",
+    "description": "Once per battle, a friendly KOMMANDO operative (excluding BOMB SQUIG and GROT) can use the following Ranged Weapon:\n\n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Dynamite|5|4+|4/5|\n|**Weapon Rules**|\n|Rng 4\", Blast 1\", Heavy (RepositionOnly), Saturate|",
+    "killteamId": "ORK-KOM",
+    "teamName": "Kommandos",
+    "isUniversal": false
+  },
+  {
+    "eqId": "ORK-KOM-HRP",
+    "name": "Harpoon",
+    "description": "Once per turning point, a friendly KOMMANDO operative (excluding BOMB SQUIG and GROT) can use the following Ranged Weapon:\n\n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Harpoon|4|4+|4/5|\n|**Weapon Rules**|\n|Rng 8\", Lethal 5+, Stun|",
+    "killteamId": "ORK-KOM",
+    "teamName": "Kommandos",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-LEG-CT",
+    "name": "Chaos Talismans",
+    "description": "**STRATEGIC GAMBIT**\nSelect one Marks of Chaos keyword.\nOnce during each of their activations, when a friendly LEGIONARY operative that has that keyword is shooting, fighting or retaliating, if you roll two or more fails,\nyou can inflict D3 damage on that friendly operative to discard one of them and retain the other as a normal success instead.\nNote that if it is the Shoot action and that damage incapacitates that friendly operative, the action does not end (continue the sequence with your successful attack dice).",
+    "killteamId": "CHAOS-LEG",
+    "teamName": "Legionaries",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-LEG-MB",
+    "name": "Malefic Blades",
+    "description": "Friendly LEGIONARY operatives have the following melee weapon for the battle:\n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Malefic Blade|5|3+|3/4|",
+    "killteamId": "CHAOS-LEG",
+    "teamName": "Legionaries",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-LEG-TR",
+    "name": "Tainted Rounds",
+    "description": "Once per turning point, when a friendly LEGIONARY operative is performing the Shoot action and you select a bolt pistol or boltgun, you can use this rule.\nIf you do, until the end of that action, that weapon has the Rending weapon rule.",
+    "killteamId": "CHAOS-LEG",
+    "teamName": "Legionaries",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-LEG-WA",
+    "name": "Warded Armour",
+    "description": "**STRATEGIC GAMBIT** Select one friendly LEGIONARY operative. Until the Ready step of the next Strategy phase, change that operative’s Save stat to 2+.",
+    "killteamId": "CHAOS-LEG",
+    "teamName": "Legionaries",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-MND-BD",
+    "name": "Bone Darts",
+    "description": "Once per turning point, a friendly MANDRAKE operative can use the following ranged weapon:\n\n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Bone Dart|4|3+|2/4|\n|**Weapon Rules**|\n|Rng 6\", Rending, Silent|",
+    "killteamId": "AEL-MND",
+    "teamName": "Mandrakes",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-MND-CS",
+    "name": "Chain Snare",
+    "description": "Whenever an enemy operative would perform the Fall Back action while within control range of a friendly MANDRAKE operative, if no other enemy operatives are within that friendly operative's control range, you can use this rule. If you do, roll 2D6, or 1D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy cannot perform that action during that activation or counteraction (No AP are spent on it), and you cannot use this rule again during this turning point.",
+    "killteamId": "AEL-MND",
+    "teamName": "Mandrakes",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-MND-SG",
+    "name": "Shadow Glyph",
+    "description": "Once per turning point, when a friendly MANDRAKE operative is activated WITHIN SHADOW, you can use this rule. If you do, until the start of its next activation, while that operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g, Seek, Vantage Point) except being within 2\".",
+    "killteamId": "AEL-MND",
+    "teamName": "Mandrakes",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-MND-SGM",
+    "name": "Soul Gem",
+    "description": "Once per turning point, when a friendly MANDRAKE operative is performing the Shoot action and you select a Baleblast, you can use this rule.\nIf you do, until the end of that action, that weapon has the Blast 1\" rule.",
+    "killteamId": "AEL-MND",
+    "teamName": "Mandrakes",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-MW-BF",
+    "name": "Bladefins",
+    "description": "Friendly MURDERWING operatives can perform the following unique action:\n\n**SLICE FROM ABOVE 1AP**\n\nBOOST action. Inflict D3+1 damage on one enemy operative within this operative’s BOOST ZONE.\n\nAn operative cannot perform this action normally.\nInstead it performs this action during the Fall Back or Reposition action after setting up from a BOOST.\nA DEPREDATOR operative cannot perform this action during the same activation in which it performed the Carving Blow action (or vice versa).",
+    "killteamId": "CHAOS-MW",
+    "teamName": "Murderwing",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-MW-CA",
+    "name": "Clawed Armour",
+    "description": "Friendly MURDERWING operatives can perform the following unique action:\n\n**CLAWED CHARGE 0AP**\n\nBOOST action. Inflict 1 damage on one enemy operative within this operative’s control range, then the Charge action ends.\nAn operative cannot perform this action normally. Instead, it performs this action during the Charge action after setting up from a BOOST.",
+    "killteamId": "CHAOS-MW",
+    "teamName": "Murderwing",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-MW-VC",
+    "name": "Vox-Casters",
+    "description": "Once per turning point, one friendly MURDERWING operative can perform the following unique action:  **VOX-CRY 1AP**  Each enemy operative within 2\" of this operative takes a stun test. For an operative to take a stun test, roll one D6: on a 3+, subtract 1 from its APL stat until the end of its next activation.  An operative cannot perform this action while it has a Conceal order.",
+    "killteamId": "CHAOS-MW",
+    "teamName": "Murderwing",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-MW-WF",
+    "name": "Warp Fuel",
+    "description": "Once per turning point, when an enemy operative ends the Fall Back action during its activation, if at least one friendly MURDERWING operative was within its control range at the start of that action, you can use this rule.\nOne of those friendly operatives can immediately perform a free Reposition or Charge action, but cannot use more than 3\" of move distance.\nNote that if the enemy operative doesn’t perform the Fall Back action during its own activation, this has no effect.",
+    "killteamId": "CHAOS-MW",
+    "teamName": "Murderwing",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-NC-CS",
+    "name": "Chain Snare",
+    "description": "Whenever an enemy operative would perform the Fall Back action while within control range of a friendly NEMESIS CLAW operative, if no other enemy operatives are within that friendly operative's control range, you can use this rule. If you do, roll 2D6, or 1D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation or counteraction (No AP are spent on it), and you cannot use this rule again during this turning point.",
+    "killteamId": "CHAOS-NC",
+    "teamName": "Nemesis Claw",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-NC-CJ",
+    "name": "Comms Jammer",
+    "description": "Whenever an enemy operative is within 3\" of a friendly NEMESIS CLAW operative, that enemy operative's APL stat cannot be added to. Note that this does not affect APL stats that have already been changed.",
+    "killteamId": "CHAOS-NC",
+    "teamName": "Nemesis Claw",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-NC-FS",
+    "name": "Flayed Skin",
+    "description": "Whenever an enemy operative is shooting against, fighting against or retaliating against a friendly NEMESIS CLAW operative within 2\" of it, your opponent cannot re-roll their attack dice results of 1.",
+    "killteamId": "CHAOS-NC",
+    "teamName": "Nemesis Claw",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-NC-GT",
+    "name": "Grisly Trophy",
+    "description": "Once per Battle, when a friendly NEMESIS CLAW operative incapacitates an enemy operative within 2\" of it, you can use this rule.\nIf you do, that friendly operative gains one of your Grisly Trophy tokens (if it does not already have one).\nWhenever a friendly NEMESIS CLAW operative that has one of your Grisly Trophy tokens is visible to and within 2\" of an enemy operative, subtract 1 from the ATK stat of that enemy operative's weapons.",
+    "killteamId": "CHAOS-NC",
+    "teamName": "Nemesis Claw",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-NOV-AC",
+    "name": "Auto-Chastisers",
+    "description": "Once per turning point, when a friendly NOVITIATE operative is shooting, fighting or retaliating, in the Roll Attack Dice step,\nyou can inflict 1-3 damage on that friendly operative (but not enough to incapacitate it).\nIf you do, you can use one ACT OF FAITH for free during that sequence with a Faith points cost no more than the damage you inflicted from this rule.",
+    "killteamId": "IMP-NOV",
+    "teamName": "Novitiates",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-NOV-HE",
+    "name": "Holy Embrocations",
+    "description": "You can ignore any changes to the Move stat of friendly NOVITIATE operatives from being injured.",
+    "killteamId": "IMP-NOV",
+    "teamName": "Novitiates",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-NOV-IOF",
+    "name": "Icon Of Faith",
+    "description": "Once per turning point, you can use up to two ACTS OF FAITH during a sequence, but each one must be different. This takes precedence over the normal ACTS OF FAITH rules.",
+    "killteamId": "IMP-NOV",
+    "teamName": "Novitiates",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-NOV-SR",
+    "name": "Sanctified Rounds",
+    "description": "Whenever a friendly NOVITIATE operative is shooting with an autogun, autopistol, relic bolt pistol or relic boltgun, if you spend a Faith point, that weapon has the Piercing Crits 1 weapon rule until the end of that sequence.",
+    "killteamId": "IMP-NOV",
+    "teamName": "Novitiates",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-PF-HIML",
+    "name": "High-Intensity Markerlight",
+    "description": "Up to twice per turning point, when a friendly PATHFINDER operative (excluding MV7 MARKER DRONE) performs the Markerlight action, you can use this rule. If you do, the enemy operative you select gains two of your Markerlight tokens (instead of one).",
+    "killteamId": "TAU-PF",
+    "teamName": "Pathfinders",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-PF-OSUL",
+    "name": "Orbital Survey Uplink",
+    "description": "Once per turning point, when a friendly PATHFINDER operative performs the Markerlight action, you can use this rule.\nIf you do, you can select one enemy operative in the killzone to gain one of your Markerlight tokens instead (it doesn’t need to be visible).\nThis is not cumulative with the high-intensity Markerlight or Analyse rules.",
+    "killteamId": "TAU-PF",
+    "teamName": "Pathfinders",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-PF-PG",
+    "name": "Photon Grenade",
+    "description": "Once per turning point, a friendly PATHFINDER operative that has the Markerlight action on their datacard (excluding DRONE) can perform the following unique action:    **PHOTON GRENADE (1 AP):**    Select one enemy operative visible to this operative and roll one D6:    On a 3+, until the end of that operative’s next activation, subtract 2\" from its Move stat. An operative cannot perform this action while within control range of an enemy operative.",
+    "killteamId": "TAU-PF",
+    "teamName": "Pathfinders",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-PF-TAO",
+    "name": "Target Analysis Optic",
+    "description": "Once per turning point, when a friendly PATHFINDER operative (excluding DRONE) is performing the Shoot action and you’re selecting a valid target, you can use this rule.\nIf you do, until the end of that action, if the target has at least one of your Markerlight tokens, it is treated as having one more. If the ranged weapon has the Blast or Torrent weapon rule, only the primary target is affected.",
+    "killteamId": "TAU-PF",
+    "teamName": "Pathfinders",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-PHO-AUG",
+    "name": "Additional Utility Grenades",
+    "description": "This equipment allows you to select four utility grenades from the utility grenades equipment (see universal equipment).  \n\nYou cannot also select that equipment as normal (i.e. to give you six).",
+    "killteamId": "IMP-PHO",
+    "teamName": "Phobos Strike Team",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-PHO-CB",
+    "name": "Combat Blades",
+    "description": "Friendly PHOBOS STRIKE TEAM operatives have the following melee weapon:\n \n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Combat Blade|5|3+|3/4|",
+    "killteamId": "IMP-PHO",
+    "teamName": "Phobos Strike Team",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-PHO-PS",
+    "name": "Purity Seals",
+    "description": "Once per turning point, when a friendly PHOBOS STRIKE TEAM operative is shooting, fighting or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+    "killteamId": "IMP-PHO",
+    "teamName": "Phobos Strike Team",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-PHO-SIA",
+    "name": "Special Issue Ammunition",
+    "description": "Once per turning point, when a friendly PHOBOS STRIKE TEAM operative is performing the Shoot action and you select a bolt carbine, marksman bolt carbine or occulus bolt carbine,\nyou can use this rule. If you do, until the end of the turning point, that weapon has the Piercing 1 weapon rule.",
+    "killteamId": "IMP-PHO",
+    "teamName": "Phobos Strike Team",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-PM-BG",
+    "name": "Blight Grenades",
+    "description": "Friendly PLAGUE MARINE operatives have the following ranged weapon (you cannot select it for use more than twice during the battle):\n \n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Blight Grenade|4|4+|2/4|\n|**Weapon Rules**|\n|Range 6\", Blast 2\", Saturate, Severe, *Poison|",
+    "killteamId": "CHAOS-PM",
+    "teamName": "Plague Marines",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-PM-PB",
+    "name": "Plague Bells",
+    "description": "You can ignore any changes to the stats of friendly PLAGUE MARINE operatives from being injured (including their weapons’ stats).",
+    "killteamId": "CHAOS-PM",
+    "teamName": "Plague Marines",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-PM-PR",
+    "name": "Plague Rounds",
+    "description": "Friendly PLAGUE MARINE operatives' boltguns and bolt pistols have the Poison and Severe weapon rules.",
+    "killteamId": "CHAOS-PM",
+    "teamName": "Plague Marines",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-PM-PV",
+    "name": "Poison Vents",
+    "description": "Whenever an enemy operative is activated within 3\" of a friendly PLAGUE MARINE operative:\n- If that enemy operative doesn’t have one of your Poison tokens, roll one D3: on a 3, it gains one.\n- If that enemy operative has one of your Poison tokens, inflict D3 damage on it (instead of 1).",
+    "killteamId": "CHAOS-PM",
+    "teamName": "Plague Marines",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-RAT-IA",
+    "name": "Improvised Armour",
+    "description": "Whenever an operative is shooting a friendly RATLING BULLGRYN or friendly RATLING OGRYN operative, defence dice results of 5+ are critical successes.",
+    "killteamId": "IMP-RAT",
+    "teamName": "Ratlings",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-RAT-LR",
+    "name": "Lucky Round",
+    "description": "Once per Turning Point, whenever a friendly RATLING operative is shooting with a rifle and you've rolled your Attack dice, you can use this rule. If you do, that weapon has the Severe weapon rule for that sequence.",
+    "killteamId": "IMP-RAT",
+    "teamName": "Ratlings",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-RAT-PR",
+    "name": "Purloined Rations",
+    "description": "Once per turning point, when a friendly RATLING operative is shooting with a rifle and you’ve rolled your attack dice, you can use this rule. If you do, improve the Hit stat of its rifle by 1 until the end of that sequence.",
+    "killteamId": "IMP-RAT",
+    "teamName": "Ratlings",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-RAT-SG",
+    "name": "Stolen Goods",
+    "description": "At the end of the Select Operatives step, roll 1D3. If the result is:\n\n- 1, you lose 1 CP\n- 2, you gain 1 CP\n- 3, your opponent loses 1CP",
+    "killteamId": "IMP-RAT",
+    "teamName": "Ratlings",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TYR-RAV-AB",
+    "name": "Acid Blood",
+    "description": "Whenever a friendly RAVENER operative is fighting or retaliating, whenever an attack dice inflicts damage on it, roll one D6: on a 5+, inflict 1 damage on the enemy operative in that sequence.",
+    "killteamId": "TYR-RAV",
+    "teamName": "Raveners",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TYR-RAV-CPC",
+    "name": "Chromatospore Camouflage",
+    "description": "Whenever an operative is shooting a friendly RAVENER operative, if you can retain any cover saves, you can retain one additional cover save. This isn’t cumulative with improved cover saves from Vantage terrain.",
+    "killteamId": "TYR-RAV",
+    "teamName": "Raveners",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TYR-RAV-HS",
+    "name": "Heightened Senses",
+    "description": "Once per battle, after rolling off to decide initiative, if a friendly RAVENER operative is underground and an enemy operative is within 5\" of your TUNNEL, you can re-roll your dice.",
+    "killteamId": "TYR-RAV",
+    "teamName": "Raveners",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TYR-RAV-MMF",
+    "name": "Metamorphic Flesh",
+    "description": "Whenever a friendly RAVENER operative is activated, it regains up to D3 lost wounds.",
+    "killteamId": "TYR-RAV",
+    "teamName": "Raveners",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-SANC-ET",
+    "name": "Ecclesiarchy Texts",
+    "description": "In the Ready step of each Strategy phase, roll 3D6: if the result is less than the remaining wounds of a friendly ORATOR operative, you gain 1CP. Note that this is done before the Gambit step, so if there isn’t a valid ORATOR operative, you cannot use this rule during that turning point (e.g. during the first turning point).",
+    "killteamId": "IMP-SANC",
+    "teamName": "Sanctifiers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-SANC-ICS",
+    "name": "Imperial Cult Symbols",
+    "description": "Once per turning point, when an operative is shooting a friendly SANCTIFIER operative that’s benefitting from the SERMON, when you collect your defence dice, you can use this rule.\nIf you do, change one of the attacker’s retained critical successes to a normal success (any weapon rules they’ve already resolved aren’t affected, e.g. Piercing Crits).",
+    "killteamId": "IMP-SANC",
+    "teamName": "Sanctifiers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-SANC-PS",
+    "name": "Purity Seals",
+    "description": "Once per turning point, when a friendly SANCTIFIER operative is shooting or fighting, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+    "killteamId": "IMP-SANC",
+    "teamName": "Sanctifiers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-SANC-SO",
+    "name": "Sanctification Orbs",
+    "description": "Once per turning point, one friendly SANCTIFIER operative (excluding CHERUB, DEATH CULT ASSASSIN and MIRACULIST) can perform the following unique action:  \n\n**SANCTIFICATION ORB (1AP):**\n\n- Select one enemy operative visible to and within 6\" of this operative. That operative and each other enemy operative within 1\" of it takes a doused test.\nFor an operative to take a doused test, roll one D6: on a 3+, it gains one of your Doused tokens.\n- Whenever a friendly SANCTIFIER operative is shooting against an operative that has one of your Doused tokens with a weapon that has the Blaze weapon rule, that weapon also has the Seek weapon rule.\n- After a friendly SANCTIFIER operative uses a weapon that has the Blaze weapon rule against an enemy operative that has one of your Doused tokens, remove that token (even if the Seek weapon rule wasn’t used).  \n\n- This operative cannot perform this action while within control range of an enemy operative.",
+    "killteamId": "IMP-SANC",
+    "teamName": "Sanctifiers",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-SCT-CC",
+    "name": "Camo Cloak",
+    "description": "Whenever an operative is shooting a friendly SCOUT SQUAD operative (excluding SNIPER), if you can retain any cover saves, you can retain one additional cover save.  \n This is not cumulative with improved cover saves from vantage terrain.",
+    "killteamId": "IMP-SCT",
+    "teamName": "Scout Squad",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-SCT-CBAK",
+    "name": "Combat Blades",
+    "description": "Friendly SCOUT SQUAD operatives have the following melee weapon. Note that some operatives already have this weapon but with better stats; in that instance, use the better version.\n \n|**Name**|**ATK**|**HIT**|**DMG**|\n|---|---|---|---|\n|Combat Blade|3|3+|4/5|",
+    "killteamId": "IMP-SCT",
+    "teamName": "Scout Squad",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-SCT-TVL",
+    "name": "Tactical Vox-Link",
+    "description": "Once per turning point, you can use the Astartes Training or Emboldened Aspirant firefight ploy for 0CP if a friendly SERGEANT operative is in the killzone.",
+    "killteamId": "IMP-SCT",
+    "teamName": "Scout Squad",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-SCT-TO",
+    "name": "Targeting Oculars",
+    "description": "Up to twice per turning point, when a friendly SCOUT SQUAD operative is performing the Shoot action and you are selecting a valid target, you can use this rule. If you do, until the end of that action, its ranged weapons have the Lethal 5+ and Saturate weapon rules. **Saturate:** The defender cannot retain Cover saves.",
+    "killteamId": "IMP-SCT",
+    "teamName": "Scout Squad",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-SPECT-AC",
+    "name": "Advanced Camouflage",
+    "description": "Friendly SPECTRE SQUAD operatives (excluding VOX-RELAY BEACON) can perform the following unique action:\n\n**Advanced Camouflage (1 AP):**\n\nUntil the start of this operative’s next activation, while it has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".\n\nThis operative cannot perform this action while visible to and within 3\" of an enemy operative.",
+    "killteamId": "IMP-SPECT",
+    "teamName": "Spectre Squad",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-SPECT-SO",
+    "name": "Sniper Overwatch",
+    "description": "Once per turning point, a friendly SPECTRE SQUAD operative can use the following ranged weapon:\n\n|**NAME**|**ATK**|**HIT**|**DMG**|\n|---|---|---|---|\n|Sniper overwatch|4|3+|3/3|\n|**WR**|\n|Devastating 2, Heavy (Dash only), Saturate, Silent|",
+    "killteamId": "IMP-SPECT",
+    "teamName": "Spectre Squad",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-SPECT-SSF",
+    "name": "Starshell Flare",
+    "description": "**STRATEGIC GAMBIT** One friendly SPECTRE SQUAD operative can immediately perform a free Stun Grenade action (see universal equipment). Performing this action using this rule doesn’t count towards its action limits (i.e. if you also select that grenade from equipment).\nWhen an enemy operative’s APL stat is changed as a result of this STRATEGIC GAMBIT, you cannot use it for the rest of the battle.",
+    "killteamId": "IMP-SPECT",
+    "teamName": "Spectre Squad",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-SPECT-VID",
+    "name": "Vid-Feed Triangulation",
+    "description": "Once per turning point, when a friendly SPECTRE SQUAD operative is performing the Shoot action and you’re selecting a valid target, you can use this rule. If you do, that target cannot be obscured if either of the following are true:\n\n- It’s also a valid target for another friendly SPECTRE SQUAD operative.\n- It’s within 6\" of a friendly VOX-RELAY BEACON operative.",
+    "killteamId": "IMP-SPECT",
+    "teamName": "Spectre Squad",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-TEMPAQ-CS",
+    "name": "Combat Stimms",
+    "description": "You can ignore any changes to the Move stat of friendly TEMPESTUS AQUILON operatives from being injured.",
+    "killteamId": "IMP-TEMPAQ",
+    "teamName": "Tempestus Aquilon",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-TEMPAQ-DA",
+    "name": "Drop Augury",
+    "description": "Once during the battle, when a friendly TEMPESTUS AQUILON operative that is set up above is activated, before expending or landing that operative, you can move one of your Drop markers again. However, it cannot be moved closer to your opponent's drop zone.",
+    "killteamId": "IMP-TEMPAQ",
+    "teamName": "Tempestus Aquilon",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-TEMPAQ-ROS",
+    "name": "Remote Overseer",
+    "description": "Once during the battle, when rolling off to decide initiative, you can re-roll your D6.",
+    "killteamId": "IMP-TEMPAQ",
+    "teamName": "Tempestus Aquilon",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-TEMPAQ-TD",
+    "name": "Tempestus Dagger",
+    "description": "Friendly Tempestus Aquilon operatives (excluding SERVO-SENTRY) have the following Melee weapon:\n\n|**Name**|**ATK**|**HIT**|**DMG**|\n|-----|:-----:|:-----:|:-----:|\n|Tempestus Dagger|3|4+|3/4|",
+    "killteamId": "IMP-TEMPAQ",
+    "teamName": "Tempestus Aquilon",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-VESP-AS",
+    "name": "Accelerant Stimulant",
+    "description": "Whenever a friendly VESPID STINGWING operative (excluding OVERSIGHT DRONE) performs the Charge or Dash action, it can move an additional 1\". If it uses FLY for this action, you can set it back up 1\" further away.",
+    "killteamId": "TAU-VESP",
+    "teamName": "Vespid Stingwings",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-VESP-AGS",
+    "name": "Aggression Stimulant",
+    "description": "Whenever a friendly VESPID STINGWING operative (excluding OVERSIGHT DRONE) is fighting, its melee weapons have the Ceaseless weapon rule.",
+    "killteamId": "TAU-VESP",
+    "teamName": "Vespid Stingwings",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-VESP-CS",
+    "name": "Convergence Stimulant",
+    "description": "Once per Turning Point, a friendly VESPID STINGWING operative can perform the Pick Up Marker or a mission action without spending a Communion point.",
+    "killteamId": "TAU-VESP",
+    "teamName": "Vespid Stingwings",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-VESP-NS",
+    "name": "Neurostimulant",
+    "description": "In the Ready step of each Strategy phase, when determining how many Communion points to gain, you can roll two D3 and select one D3 to use.",
+    "killteamId": "TAU-VESP",
+    "teamName": "Vespid Stingwings",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-VDT-DM",
+    "name": "Death Mask",
+    "description": "Keep a Tragedy tally. Whenever a friendly VOID-DANCER TROUPE operative that has an ACCOLADE rule is incapacitated, add 1 to your Tragedy tally. When your Tragedy tally reaches 3, you gain 1CP and stop that tally.",
+    "killteamId": "AEL-VDT",
+    "teamName": "Void-Dancer Troupe",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-VDT-STR",
+    "name": "Shrieker Toxic Rounds",
+    "description": "Once per turning point, when a friendly VOID-DANCER TROUPE operative is performing the Shoot action and you select a shuriken pistol or shrieker cannon (focused), you can use this rule.\nIf you do, until the end of that action, that weapon has the Devastating 1 weapon rule.",
+    "killteamId": "AEL-VDT",
+    "teamName": "Void-Dancer Troupe",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-VDT-UM",
+    "name": "Understudy's Mask",
+    "description": "Once per battle, when you activate a friendly VOID-DANCER TROUPE operative, if the friendly operative that has the PIVOTAL ROLE has been incapacitated, you can use this rule.\nIf you do, that activated operative has the PIVOTAL ROLE for the battle.",
+    "killteamId": "AEL-VDT",
+    "teamName": "Void-Dancer Troupe",
+    "isUniversal": false
+  },
+  {
+    "eqId": "AEL-VDT-WBT",
+    "name": "Wraithbone Talisman",
+    "description": "Once per turning point, when a friendly VOID-DANCER TROUPE operative is shooting, fighting or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+    "killteamId": "AEL-VDT",
+    "teamName": "Void-Dancer Troupe",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-WC-AR",
+    "name": "Arcane Robes",
+    "description": "Whenever an attack dice would inflict Critical Dmg on a friendly WARPCOVEN SORCERER operative, you can choose for that attack dice to inflict Normal Dmg instead.\nYou cannot use this rule for each friendly WARPCOVEN SORCERER operative more than once per turning point.",
+    "killteamId": "CHAOS-WC",
+    "teamName": "Warp Coven",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-WC-DMW",
+    "name": "Daemonmaw Weapons",
+    "description": "Add 1 to the Atk stat of friendly WARPCOVEN RUBRIC MARINE operatives’ melee weapons. Whenever a friendly WARPCOVEN RUBRIC MARINE operative is retaliating, its melee weapons have the Accurate 1 weapon rule.",
+    "killteamId": "CHAOS-WC",
+    "teamName": "Warp Coven",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-WC-ER",
+    "name": "Ensorcelled Rounds",
+    "description": "Friendly WARPCOVEN operatives’ inferno boltguns, inferno bolt pistols and autopistols have the Devastating 1 weapon rule.",
+    "killteamId": "CHAOS-WC",
+    "teamName": "Warp Coven",
+    "isUniversal": false
+  },
+  {
+    "eqId": "CHAOS-WC-SS",
+    "name": "Sorcerous Scrolls",
+    "description": "Once per battle, when a friendly WARPCOVEN SORCERER operative is activated or counteracts, you can select a different BOON OF TZEENTCH for it to have until the end of the battle (it loses any it previously had). It cannot be the same BOON OF TZEENTCH any other friendly operative has. Note that if you use this rule when a friendly operative counteracts and you select Echoes from the Warp, it can be used immediately to change the operative’s order and perform a free action during that counteraction.",
+    "killteamId": "CHAOS-WC",
+    "teamName": "Warp Coven",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-WS-FW",
+    "name": "Frost Weapons",
+    "description": "Whenever a friendly WOLF SCOUT operative is wholly within your STORM, its combat blades (if any) has the Lethal 5+ weapon rule",
+    "killteamId": "IMP-WS",
+    "teamName": "Wolf Scouts",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-WS-RC",
+    "name": "Runic Charms",
+    "description": "Once per turning point, when an operative is shooting a friendly WOLF SCOUT operative (excluding FENRISIAN WOLF) that is wholly within your STORM, at the start of the Roll Defence Dice step, you can use this rule. If you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence. Note that Piercing 1 would therefore be ignored.",
+    "killteamId": "IMP-WS",
+    "teamName": "Wolf Scouts",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-WS-TT",
+    "name": "Talismanic Trophies",
+    "description": "Whenever a friendly WOLF SCOUT operative (excluding FENRISIAN WOLF) that's wholly within your STORM is fighting or retaliating, in the Resolve Attack Dice step, you can subtract 1 from the damage inflicted on it from one normal success.",
+    "killteamId": "IMP-WS",
+    "teamName": "Wolf Scouts",
+    "isUniversal": false
+  },
+  {
+    "eqId": "IMP-WS-WTNL",
+    "name": "Wolfteeth Necklaces",
+    "description": "Once per turning point, when a friendly WOLF SCOUT operative (excluding FENRISIAN WOLF) is shooting, fighting or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+    "killteamId": "IMP-WS",
+    "teamName": "Wolf Scouts",
+    "isUniversal": false
+  },
+  {
+    "eqId": "ORK-WK-DR",
+    "name": "Drill Rokkits",
+    "description": "Once per Turning Point, whenever a friendly WRECKA KREW operative is performing the Shoot action and you select a Rokkit Launcha or 'Eavy Rokkit Launcha, you can use this rule.\nIf you do, until the end of that action, that weapon loses the Blast weapon rule but has the Piercing 1 weapon rule.",
+    "killteamId": "ORK-WK",
+    "teamName": "Wrecka Krew",
+    "isUniversal": false
+  },
+  {
+    "eqId": "ORK-WK-EO",
+    "name": "Engine Oil",
+    "description": "Once per Turning Point, whenever a friendly WRECKA KREW operative (excluding BOMB SQUIG) is activated, you can use this rule.\nIf you do, until the end of that activation, you can ignore any changes to that operative's stats from being injured (including its weapons' stats).",
+    "killteamId": "ORK-WK",
+    "teamName": "Wrecka Krew",
+    "isUniversal": false
+  },
+  {
+    "eqId": "ORK-WK-XA",
+    "name": "Extra Armour",
+    "description": "Subtract 1\" from the Move stat of friendly WRECKA KREW operatives and improve their Save stat by 1. This excludes BOMB SQUIG operatives and is not cumulative with the Protective rule of a Portable Barricade from Universal Equipment.",
+    "killteamId": "ORK-WK",
+    "teamName": "Wrecka Krew",
+    "isUniversal": false
+  },
+  {
+    "eqId": "ORK-WK-GL",
+    "name": "Glyphs",
+    "description": "When this item of equipment is selected, also select the Waaagh! or Destruction strategy ploy.\nThe first time you would use that ploy during the battle, it costs 0CP; whenever you would use it thereafter, it costs 0CP if you have any Wrecka points.",
+    "killteamId": "ORK-WK",
+    "teamName": "Wrecka Krew",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TYR-WB-BC",
+    "name": "Blasting Charges",
+    "description": "Once per turning point, a friendly WYRMBLADE NEOPHYTE operative can use the following ranged weapon:\n \n|**Name**|**Atk**|**Hit**|**Dmg**|\n|-----|:-----:|:-----:|:-----:|\n|Blasting Charge|4|4+|3/5|\n|**Weapon Rules**|\n|Range 4\", Blast 1\", Saturate|",
+    "killteamId": "TYR-WB",
+    "teamName": "Wyrmblade",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TYR-WB-CK",
+    "name": "Cult Knives",
+    "description": "Friendly WYRMBLADE NEOPHYTE operatives have the following melee weapon:\n \n|**Name**|**Atk**|**Hit**|**Dmg**|\n|-----|:-----:|:-----:|:-----:|\n|Cult Knife|3|4+|3/4|",
+    "killteamId": "TYR-WB",
+    "teamName": "Wyrmblade",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TYR-WB-XT",
+    "name": "Explosive Traps",
+    "description": "This equipment allows you to select two mines (see universal equipment).\nYou cannot also select that equipment as normal (i.e. to give you three), and friendly WYRMBLADE operatives are ignored for your mines’ effects (i.e. they cannot trigger or take damage from them).\nThis takes precedence over the normal mines rules.",
+    "killteamId": "TYR-WB",
+    "teamName": "Wyrmblade",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TYR-WB-SL",
+    "name": "Spotlights",
+    "description": "Whenever a friendly WYRMBLADE operative is shooting, the target cannot be obscured if it is visible to and within 6\" of a friendly WYRMBLADE NEOPHYTE operative that is not within control range of enemy operatives.",
+    "killteamId": "TYR-WB",
+    "teamName": "Wyrmblade",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-XV26-ABSF",
+    "name": "Advanced Blacksun Filters",
+    "description": "Whenever a friendly XV26 STEALTH BATTLESUIT operative is shooting an operative that is obscured, you do not have to discard one success as a result of that rule. All other effects of obscured apply as normal.",
+    "killteamId": "TAU-XV26",
+    "teamName": "XV26 Stealth Battlesuits",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-XV26-CNJ",
+    "name": "Counter-Network Jammers",
+    "description": "STRATEGIC GAMBIT. Select one objective marker or mission marker.\nUntil the end of the turning point, whenever determining control of that marker, treat the total APL stat of enemy operatives that contest it as 1 lower\nif at least one of those enemy operatives is within 3\" of friendly XV26 STEALTH BATTLESUIT operatives. Note this isn’t a change to the APL stat, so any changes are cumulative with this.",
+    "killteamId": "TAU-XV26",
+    "teamName": "XV26 Stealth Battlesuits",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-XV26-HWTL",
+    "name": "Hardwired Target Locks",
+    "description": "Whenever you would counteract, you can do so with one friendly XV26 STEALTH BATTLESUIT operative that has a Conceal order and is more than 3\" from enemy operatives, but before it counteracts, you must change its order to Engage and it cannot perform any actions other than Shoot during that counteraction.",
+    "killteamId": "TAU-XV26",
+    "teamName": "XV26 Stealth Battlesuits",
+    "isUniversal": false
+  },
+  {
+    "eqId": "TAU-XV26-MT",
+    "name": "XV26 Multitrackers",
+    "description": "Once per turning point, when a friendly XV26 STEALTH BATTLESUIT operative is performing the Shoot action and you select a burst cannon (sweeping), you can use this rule. If you do, until the end of that action, that weapon has the Torrent 2\" weapon rule.",
+    "killteamId": "TAU-XV26",
+    "teamName": "XV26 Stealth Battlesuits",
+    "isUniversal": false
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "extractions": [
+    {
+      "match_contains": "Mechanical - pump seal leak",
+      "category": "Mechanical",
+      "site": "North Plant",
+      "confidence": 0.92,
+      "method": "ai",
+      "reason": "Prose notes encode category prefix and site suffix"
+    },
+    {
+      "match_contains": "Electrical - belt drive",
+      "category": "Electrical",
+      "site": null,
+      "confidence": 0.88,
+      "method": "ai",
+      "reason": "Category inferred from leading discipline label"
+    },
+    {
+      "match_contains": "Safety - pressure relief failed",
+      "category": "Safety",
+      "site": null,
+      "confidence": 0.94,
+      "method": "ai",
+      "reason": "Safety keyword overrides generic mechanical default"
+    },
+    {
+      "match_contains": "Safety hold on steam header",
+      "category": "Safety",
+      "site": "South Yard",
+      "confidence": 0.9,
+      "method": "ai",
+      "reason": "Safety context in maintenance description"
+    },
+    {
+      "match_contains": "Possible duplicate of WO-10448",
+      "category": null,
+      "site": null,
+      "confidence": 0.65,
+      "method": "ai",
+      "reason": "Duplicate hint only — no category extraction"
+    },
+    {
+      "match_contains": "Fleet",
+      "category": "Fleet",
+      "site": null,
+      "confidence": 0.87,
+      "method": "ai",
+      "reason": "Fleet keyword in trailing comment"
+    },
+    {
+      "match_contains": "HVAC",
+      "category": "HVAC",
+      "site": null,
+      "confidence": 0.9,
+      "method": "ai",
+      "reason": "Discipline acronym in notes"
+    },
+    {
+      "match_contains": "Plumbing",
+      "category": "Plumbing",
+      "site": null,
+      "confidence": 0.91,
+      "method": "ai",
+      "reason": "Discipline label in notes or description"
+    }
+  ]
+}
