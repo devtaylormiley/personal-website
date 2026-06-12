@@ -6,6 +6,7 @@ import {
   CAMPAIGN_HUB_SUBROUTES,
   CAMPAIGN_NAV_HUB,
   CAMPAIGN_NAV_SECTIONS,
+  bfToneClass,
   getRegistryTabId,
   hubSubrouteIsActive,
   hubSubrouteToPath,
@@ -21,19 +22,20 @@ function registryTabIsActive(pathname, tabId) {
   return getRegistryTabId(pathname) === tabId
 }
 
-function navLinkClass(isActive, isSub = false) {
+function navLinkClass(isActive, isSub = false, tone = 'green') {
   const base = isSub ? 'bf-nav-drawer-sublink' : 'bf-nav-drawer-link'
-  return `${base} ${isActive ? 'bf-nav-drawer-link-active' : ''}`
+  const active = isActive ? `bf-nav-drawer-link-active ${bfToneClass(tone)}` : ''
+  return `${base} ${active}`.trim()
 }
 
-function NavItem({ to, end, title, icon, iconLabel, label, onNavigate, isActive, isSub = false }) {
+function NavItem({ to, end, title, icon, iconLabel, label, onNavigate, isActive, isSub = false, tone = 'green' }) {
   return (
     <NavLink
       to={to}
       end={end}
       title={title}
       onClick={onNavigate}
-      className={() => navLinkClass(isActive, isSub)}
+      className={() => navLinkClass(isActive, isSub, tone)}
     >
       <ButtonIcon icon={icon} label={iconLabel} className="bf-nav-item-icon h-4 w-4 shrink-0" />
       <span className="bf-nav-item-label">{label}</span>
@@ -121,6 +123,7 @@ export default function BlackfangCampaignNav({
                 label={CAMPAIGN_NAV_HUB.label}
                 onNavigate={onNavigate}
                 isActive={onHubBranch}
+                tone={CAMPAIGN_NAV_HUB.tone}
               />
               <ul
                 className={`bf-nav-drawer-sublist ${onHubBranch ? '' : 'bf-nav-drawer-sublist-muted'}`}
@@ -137,6 +140,7 @@ export default function BlackfangCampaignNav({
                       onNavigate={onNavigate}
                       isActive={hubSubrouteIsActive(pathname, subroute.pathMatch)}
                       isSub
+                      tone={subroute.tone}
                     />
                   </li>
                 ))}
@@ -156,6 +160,7 @@ export default function BlackfangCampaignNav({
                     label={section.label}
                     onNavigate={onNavigate}
                     isActive={active}
+                    tone={section.tone}
                   />
 
                   {showRegistry && (
@@ -175,6 +180,7 @@ export default function BlackfangCampaignNav({
                               onNavigate={onNavigate}
                               isActive={subActive}
                               isSub
+                              tone={tab.tone}
                             />
                           </li>
                         )

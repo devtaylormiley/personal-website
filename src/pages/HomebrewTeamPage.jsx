@@ -6,6 +6,7 @@ import KillTeamHeader from '../components/blackfang/KillTeamHeader'
 import OperativeDataslate from '../components/blackfang/OperativeDataslate'
 import StickyAfterFullScroll from '../components/blackfang/StickyAfterFullScroll'
 import ActionButton from '../components/ui/ActionButton'
+import { bfToneClass } from '../lib/blackfangNavigation'
 import { useAuth } from '../context/AuthContext'
 import {
   deleteHomebrewTeam,
@@ -134,7 +135,7 @@ export default function HomebrewTeamPage() {
     return (
       <div className="blackfang-campaign min-h-screen px-4 pt-4 pb-16 sm:px-6">
         <div className="mx-auto max-w-screen-2xl">
-          <BlackfangTerminalShell title="access_denied">
+          <BlackfangTerminalShell>
             <p className="bf-body">Sign in with Google to access homebrew teams.</p>
           </BlackfangTerminalShell>
         </div>
@@ -155,7 +156,7 @@ export default function HomebrewTeamPage() {
     return (
       <div className="blackfang-campaign min-h-screen px-4 pt-4 pb-16 sm:px-6">
         <div className="mx-auto max-w-screen-2xl">
-          <BlackfangTerminalShell title="not_found">
+          <BlackfangTerminalShell>
             <BlackfangBreadcrumbs
               items={[
                 { label: 'Portfolio', to: '/#projects', icon: 'portfolio' },
@@ -169,8 +170,6 @@ export default function HomebrewTeamPage() {
       </div>
     )
   }
-
-  const terminalTitle = `homebrew_${(killTeam.name ?? teamId).replace(/\s+/g, '_').toUpperCase()}`
 
   const breadcrumbItems = [
     { label: 'Portfolio', to: '/#projects', icon: 'portfolio' },
@@ -379,7 +378,7 @@ export default function HomebrewTeamPage() {
   return (
     <div className="blackfang-campaign min-h-screen px-4 pt-4 pb-16 sm:px-6">
       <div className="mx-auto max-w-screen-2xl">
-        <BlackfangTerminalShell title={terminalTitle}>
+        <BlackfangTerminalShell>
         <BlackfangBreadcrumbs items={breadcrumbItems} />
 
         <header className="bf-divider mt-6 border-b pb-8">
@@ -431,8 +430,8 @@ export default function HomebrewTeamPage() {
               <h2 className="bf-heading text-xl">Operative dataslates</h2>
               <div className="bf-panel flex rounded-lg p-1" role="tablist">
                 {[
-                  { id: 'po', label: 'POs' },
-                  { id: 'npo', label: 'NPOs' },
+                  { id: 'po', label: 'POs', tone: 'orange' },
+                  { id: 'npo', label: 'NPOs', tone: 'amber' },
                 ].map((tab) => (
                   <ActionButton
                     key={tab.id}
@@ -440,7 +439,7 @@ export default function HomebrewTeamPage() {
                     role="tab"
                     aria-selected={activeTab === tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`bf-tab ${activeTab === tab.id ? 'bf-tab-active' : 'bf-tab-inactive'}`}
+                    className={`bf-tab ${activeTab === tab.id ? `bf-tab-active ${bfToneClass(tab.tone)}` : 'bf-tab-inactive'}`}
                   />
                 ))}
               </div>

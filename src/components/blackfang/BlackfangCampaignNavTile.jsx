@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import { ButtonIcon } from '../ui/buttonIcons'
+import { bfToneClass } from '../../lib/blackfangNavigation'
 
-export default function BlackfangCampaignNavTile({ to, code, title, description, icon, iconLabel }) {
+export default function BlackfangCampaignNavTile({ to, title, description, icon, iconLabel, tone = 'green' }) {
   return (
-    <Link to={to} className="bf-campaign-nav-tile group">
+    <Link to={to} className={`bf-campaign-nav-tile ${bfToneClass(tone)} group`}>
       <div className="bf-campaign-nav-tile-head">
       <h3 className="bf-campaign-nav-tile-title">{title}</h3>
         <ButtonIcon icon={icon} label={iconLabel ?? title} className="bf-campaign-nav-tile-icon h-5 w-5" />

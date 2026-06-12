@@ -1,5 +1,5 @@
 import BlackfangCampaignNavTile from '../components/blackfang/BlackfangCampaignNavTile'
-import { CAMPAIGN_MODULE_TILES, REGISTRY_MODULE_TILES } from '../lib/blackfangNavigation'
+import { bfToneClass, CAMPAIGN_MODULE_TILES, REGISTRY_MODULE_TILES } from '../lib/blackfangNavigation'
 
 export default function BlackfangCampaignHomePage() {
   return (
@@ -29,7 +29,7 @@ export default function BlackfangCampaignHomePage() {
       </header>
 
       <div className="mt-8">
-        <h2 className="bf-section-label">Campaign modules</h2>
+        <h2 className={`bf-section-label ${bfToneClass('green')}`}>Campaign modules</h2>
         <ul className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {CAMPAIGN_MODULE_TILES.map((tile) => (
             <li key={tile.to}>
@@ -40,7 +40,7 @@ export default function BlackfangCampaignHomePage() {
       </div>
 
       <div className="mt-10">
-        <h2 className="bf-section-label">KT24 registry</h2>
+        <h2 className={`bf-section-label ${bfToneClass('cyan')}`}>KT24 registry</h2>
         <p className="bf-muted mt-1 max-w-2xl text-xs sm:text-sm">
           Direct links into the data registry — the same sections available under KT24 Data in the nav
           drawer.

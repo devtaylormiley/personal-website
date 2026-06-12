@@ -42,6 +42,8 @@ export default function HeroEraBackdrop() {
       </div>
 
       <div className="hero-era__layer hero-era__layer--modern" />
+
+      <div className="hero-era-backdrop__grain" />
     </div>
   )
 }

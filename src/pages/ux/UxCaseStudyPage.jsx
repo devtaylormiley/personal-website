@@ -112,15 +112,6 @@ export default function UxCaseStudyPage({
             ))}
           </ul>
         </section>
-
-        <p className="mt-10 text-center">
-          <Link
-            to="/#projects"
-            className="text-sm font-medium text-violet-300 transition-colors hover:text-violet-200"
-          >
-            ← Back to all improvements
-          </Link>
-        </p>
       </div>
     </article>
   )

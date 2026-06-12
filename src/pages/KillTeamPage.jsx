@@ -6,6 +6,7 @@ import KillTeamHeader from '../components/blackfang/KillTeamHeader'
 import StickyAfterFullScroll from '../components/blackfang/StickyAfterFullScroll'
 import OperativeDataslate from '../components/blackfang/OperativeDataslate'
 import ActionButton from '../components/ui/ActionButton'
+import { bfToneClass } from '../lib/blackfangNavigation'
 import { useKillTeamRoster } from '../hooks/useKillTeamRoster'
 
 export default function KillTeamPage() {
@@ -22,8 +23,6 @@ export default function KillTeamPage() {
 
   const [activeTab, setActiveTab] = useState('po')
 
-  const terminalTitle = (killTeam?.name ?? teamSlug ?? 'dataslate').replace(/\s+/g, '_').toUpperCase()
-
   if (!hydrated) {
     return (
       <div className="blackfang-campaign flex min-h-[50vh] items-center justify-center px-4 pt-4 bf-muted">
@@ -37,7 +36,7 @@ export default function KillTeamPage() {
     return (
       <div className="blackfang-campaign min-h-screen px-4 pt-4 pb-16 sm:px-6">
         <div className="mx-auto max-w-screen-2xl">
-          <BlackfangTerminalShell title="error">
+          <BlackfangTerminalShell>
             <BlackfangBreadcrumbs
               items={[
                 { label: 'Portfolio', to: '/#projects', icon: 'portfolio' },
@@ -63,7 +62,7 @@ export default function KillTeamPage() {
   return (
     <div className="blackfang-campaign min-h-screen px-4 pt-4 pb-16 sm:px-6">
       <div className="mx-auto max-w-screen-2xl">
-        <BlackfangTerminalShell title={terminalTitle}>
+        <BlackfangTerminalShell>
         <BlackfangBreadcrumbs items={breadcrumbItems} />
 
         <header className="bf-divider mt-6 border-b pb-8">
@@ -90,16 +89,16 @@ export default function KillTeamPage() {
               </div>
               <div className="bf-panel flex rounded-lg p-1" role="tablist" aria-label="Operative category">
                 {[
-                  { id: 'po', label: 'POs' },
-                  { id: 'npo', label: 'NPOs' },
-                ].map(({ id, label }) => (
+                  { id: 'po', label: 'POs', tone: 'orange' },
+                  { id: 'npo', label: 'NPOs', tone: 'amber' },
+                ].map(({ id, label, tone }) => (
                   <ActionButton
                     key={id}
                     label={label}
                     role="tab"
                     aria-selected={activeTab === id}
                     onClick={() => setActiveTab(id)}
-                    className={`bf-tab ${activeTab === id ? 'bf-tab-active' : 'bf-tab-inactive'}`}
+                    className={`bf-tab ${activeTab === id ? `bf-tab-active ${bfToneClass(tone)}` : 'bf-tab-inactive'}`}
                   />
                 ))}
               </div>

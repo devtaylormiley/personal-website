@@ -5,6 +5,7 @@ import BlackfangCampaignNav from '../components/blackfang/BlackfangCampaignNav'
 import BlackfangTerminalShell from '../components/blackfang/BlackfangTerminalShell'
 import ActionButton from '../components/ui/ActionButton'
 import { useAuth } from '../context/AuthContext'
+import { isBlackfangSignInVisible } from '../lib/blackfangAuth'
 import {
   CAMPAIGN_HUB_PATH,
   getCampaignSection,
@@ -25,7 +26,8 @@ function readNavCollapsed() {
 
 export default function BlackfangCampaignLayout() {
   const { user, loading, hasSupabaseEnv, signInWithGoogle, signOut } = useAuth()
-  const { pathname } = useLocation()
+  const { pathname, search } = useLocation()
+  const showSignIn = isBlackfangSignInVisible(search)
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const [navCollapsed, setNavCollapsed] = useState(readNavCollapsed)
 
@@ -71,10 +73,7 @@ export default function BlackfangCampaignLayout() {
         />
 
         <div className="bf-campaign-main">
-          <BlackfangTerminalShell
-            className="bf-campaign-terminal"
-            title={hub ? 'campaign_hub' : section?.shell ?? 'blackfang'}
-          >
+          <BlackfangTerminalShell className="bf-campaign-terminal">
             <div className="bf-campaign-chrome mb-4 border-b border-[var(--bf-border)] pb-3">
               <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
                 <div className="flex min-w-0 flex-1 items-center gap-2">
@@ -88,7 +87,7 @@ export default function BlackfangCampaignLayout() {
                   />
                   <BlackfangBreadcrumbs items={breadcrumbItems} />
                 </div>
-                {hasSupabaseEnv ? (
+                {hasSupabaseEnv && (user || showSignIn) ? (
                   <div className="flex shrink-0 items-center gap-2">
                     {user ? (
                       <>
@@ -108,7 +107,7 @@ export default function BlackfangCampaignLayout() {
                       />
                     )}
                   </div>
-                ) : (
+                ) : hasSupabaseEnv ? null : (
                   <p className="bf-hint shrink-0 text-[11px]">
                     Set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` to enable sign-in.
                   </p>

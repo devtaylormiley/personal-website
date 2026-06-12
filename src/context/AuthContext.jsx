@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react'
+import { isBlackfangSignInAllowed } from '../lib/blackfangAuth'
 import { hasSupabaseEnv, supabase } from '../lib/supabaseClient'
 
 const AuthContext = createContext(null)
@@ -34,12 +35,23 @@ export function AuthProvider({ children }) {
     }
   }, [])
 
+  useEffect(() => {
+    const email = session?.user?.email
+    if (!email || !supabase) return
+    if (isBlackfangSignInAllowed(email)) return
+    supabase.auth.signOut()
+  }, [session])
+
+  const user = session?.user ?? null
+  const allowedUser = user && isBlackfangSignInAllowed(user.email) ? user : null
+
   const value = useMemo(
     () => ({
-      session,
-      user: session?.user ?? null,
+      session: allowedUser ? session : null,
+      user: allowedUser,
       loading,
       hasSupabaseEnv,
+      isSignInAllowed: isBlackfangSignInAllowed,
       signInWithGoogle: async () => {
         if (!supabase) throw new Error('Supabase env vars are missing.')
         const redirectTo = `${window.location.origin}/projects/blackfang-campaign`
@@ -55,7 +67,7 @@ export function AuthProvider({ children }) {
         if (error) throw error
       },
     }),
-    [session, loading],
+    [session, allowedUser, loading],
   )
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>

@@ -6,6 +6,7 @@ export const CAMPAIGN_NAV_HUB = {
   title: 'Blackfang Campaign',
   icon: 'campaign',
   iconLabel: 'Blackfang Campaign',
+  tone: 'green',
 }
 
 export const CAMPAIGN_HUB_SUBROUTES = [
@@ -16,6 +17,7 @@ export const CAMPAIGN_HUB_SUBROUTES = [
     icon: 'lore',
     iconLabel: 'Campaign lore',
     pathMatch: '/about',
+    tone: 'amber',
   },
   {
     to: 'party',
@@ -24,6 +26,7 @@ export const CAMPAIGN_HUB_SUBROUTES = [
     icon: 'party',
     iconLabel: 'Party',
     pathMatch: '/party',
+    tone: 'orange',
   },
 ]
 
@@ -37,6 +40,7 @@ export const CAMPAIGN_SECTIONS = [
     iconLabel: 'Campaign lore',
     shell: 'lore',
     pathMatch: '/about',
+    tone: 'amber',
   },
   {
     to: 'party',
@@ -47,6 +51,7 @@ export const CAMPAIGN_SECTIONS = [
     iconLabel: 'Party',
     shell: 'party',
     pathMatch: '/party',
+    tone: 'orange',
   },
   {
     to: 'kt24-data',
@@ -57,6 +62,7 @@ export const CAMPAIGN_SECTIONS = [
     iconLabel: 'Data registry',
     shell: 'kt24_data',
     pathMatch: '/kt24-data',
+    tone: 'cyan',
   },
 ]
 
@@ -65,11 +71,11 @@ export const CAMPAIGN_NAV_SECTIONS = CAMPAIGN_SECTIONS.filter(
 )
 
 export const KT24_REGISTRY_TABS = [
-  { id: 'teams', label: 'Kill teams', iconLabel: 'Kill teams' },
-  { id: 'operatives', label: 'Operatives', iconLabel: 'Operatives' },
-  { id: 'joint-npos', label: 'Joint-op NPOs', iconLabel: 'Joint-op NPOs' },
-  { id: 'weapons', label: 'Weapons', iconLabel: 'Weapons' },
-  { id: 'equipment', label: 'Equipment', iconLabel: 'Equipment' },
+  { id: 'teams', label: 'Kill teams', iconLabel: 'Kill teams', tone: 'green' },
+  { id: 'operatives', label: 'Operatives', iconLabel: 'Operatives', tone: 'orange' },
+  { id: 'joint-npos', label: 'Joint-op NPOs', iconLabel: 'Joint-op NPOs', tone: 'amber' },
+  { id: 'weapons', label: 'Weapons', iconLabel: 'Weapons', tone: 'violet' },
+  { id: 'equipment', label: 'Equipment', iconLabel: 'Equipment', tone: 'cyan' },
 ]
 
 export const KT24_REGISTRY_TAB_IDS = KT24_REGISTRY_TABS.map((t) => t.id)
@@ -82,6 +88,7 @@ export const CAMPAIGN_MODULE_TILES = [
     description:
       'Setting, narrative frame, and mission background for the joint-operation in the Ghoul Stars.',
     iconLabel: 'Campaign Lore',
+    tone: 'amber',
   },
   {
     to: `${CAMPAIGN_HUB_PATH}/party`,
@@ -91,6 +98,7 @@ export const CAMPAIGN_MODULE_TILES = [
       'Your active campaign squad — six operative slots under one kill team, ready for the table.',
     icon: 'party',
     iconLabel: 'Party',
+    tone: 'orange',
   },
   {
     to: `${CAMPAIGN_HUB_PATH}/kt24-data`,
@@ -100,6 +108,7 @@ export const CAMPAIGN_MODULE_TILES = [
       'Official kill team rosters, operatives, joint-op NPOs, weapons, and equipment — plus homebrew teams when signed in.',
     icon: 'logbook',
     iconLabel: 'Data registry',
+    tone: 'cyan',
   },
 ]
 
@@ -109,6 +118,7 @@ export const REGISTRY_MODULE_TILES = KT24_REGISTRY_TABS.map((tab, index) => ({
   title: tab.label,
   description: registryTileDescription(tab.id),
   iconLabel: tab.label,
+  tone: tab.tone,
 }))
 
 function registryTileDescription(tabId) {
@@ -126,6 +136,10 @@ function registryTileDescription(tabId) {
     default:
       return ''
   }
+}
+
+export function bfToneClass(tone = 'green') {
+  return `bf-tone-${tone}`
 }
 
 export function isCampaignHub(pathname) {

@@ -17,6 +17,36 @@
   --bf-accent-dim: #1a6633;
   --bf-accent-bg: rgb(51 255 102 / 0.08);
   --bf-accent-glow: rgb(51 255 102 / 0.45);
+  --bf-phosphor-green: #33ff66;
+  --bf-phosphor-green-bright: #7dffb0;
+  --bf-phosphor-green-dim: #1a6633;
+  --bf-phosphor-green-border: #33a357;
+  --bf-phosphor-green-glow: rgb(51 255 102 / 0.45);
+  --bf-phosphor-green-bg: rgb(51 255 102 / 0.08);
+  --bf-phosphor-amber: #e8b84a;
+  --bf-phosphor-amber-bright: #ffd876;
+  --bf-phosphor-amber-dim: #6b5018;
+  --bf-phosphor-amber-border: #c9a227;
+  --bf-phosphor-amber-glow: rgb(232 184 74 / 0.4);
+  --bf-phosphor-amber-bg: rgb(232 184 74 / 0.08);
+  --bf-phosphor-orange: #ff8866;
+  --bf-phosphor-orange-bright: #ffaa88;
+  --bf-phosphor-orange-dim: #8a3d28;
+  --bf-phosphor-orange-border: #cc6644;
+  --bf-phosphor-orange-glow: rgb(255 136 102 / 0.4);
+  --bf-phosphor-orange-bg: rgb(255 136 102 / 0.08);
+  --bf-phosphor-cyan: #56d4f0;
+  --bf-phosphor-cyan-bright: #8deaff;
+  --bf-phosphor-cyan-dim: #1a5566;
+  --bf-phosphor-cyan-border: #2a9cb8;
+  --bf-phosphor-cyan-glow: rgb(86 212 240 / 0.4);
+  --bf-phosphor-cyan-bg: rgb(86 212 240 / 0.08);
+  --bf-phosphor-violet: #b794f6;
+  --bf-phosphor-violet-bright: #d4bbfc;
+  --bf-phosphor-violet-dim: #5b3480;
+  --bf-phosphor-violet-border: #9d6dd4;
+  --bf-phosphor-violet-glow: rgb(183 148 246 / 0.35);
+  --bf-phosphor-violet-bg: rgb(183 148 246 / 0.08);
   --bf-danger: #ff6b6b;
   --bf-font-display: 'VT323', 'IBM Plex Mono', monospace;
   --bf-font-mono: 'IBM Plex Mono', 'Consolas', 'Courier New', monospace;
@@ -34,17 +64,13 @@
   text-shadow: none;
 }
 
-/* CRT scanlines + vignette */
-.blackfang-campaign::before,
-.blackfang-campaign::after {
+/* CRT scanlines */
+.blackfang-campaign::before {
   content: '';
   pointer-events: none;
   position: fixed;
   inset: 0;
   z-index: 10000;
-}
-
-.blackfang-campaign::before {
   background: repeating-linear-gradient(
     0deg,
     rgb(0 0 0 / 0) 0px,
@@ -53,10 +79,6 @@
     rgb(0 0 0 / 0.22) 4px
   );
   opacity: 0.35;
-}
-
-.blackfang-campaign::after {
-  background: radial-gradient(ellipse 85% 75% at 50% 45%, transparent 35%, rgb(0 0 0 / 0.65) 100%);
 }
 
 .blackfang-campaign ::selection {
@@ -79,10 +101,10 @@
 
 /* —— Terminal frame —— */
 .bf-terminal-screen {
-  border: 2px solid var(--bf-border-bright);
+  border: 2px solid var(--bf-border);
   box-shadow:
     0 0 0 1px #000,
-    0 0 24px rgb(51 255 102 / 0.12),
+    0 0 24px rgb(51 255 102 / 0.08),
     inset 0 0 80px rgb(0 0 0 / 0.85);
   background: var(--bf-bg-elevated);
 }
@@ -94,7 +116,7 @@
   justify-content: space-between;
   gap: 0.5rem 1rem;
   padding: 0.35rem 0.75rem;
-  border-bottom: 1px solid var(--bf-border-bright);
+  border-bottom: 1px solid var(--bf-border);
   background: linear-gradient(180deg, rgb(8 28 14 / 0.95), rgb(2 8 4 / 0.98));
   font-family: var(--bf-font-mono);
   font-size: 0.75rem;
@@ -279,8 +301,8 @@
   height: 0.875rem;
   flex-shrink: 0;
   margin: 0 0.125rem;
-  color: var(--bf-border-bright);
-  opacity: 0.7;
+  color: var(--bf-text-muted);
+  opacity: 0.55;
 }
 
 .bf-breadcrumb-link {
@@ -341,11 +363,9 @@
 }
 
 .bf-panel-elevated {
-  border: 1px solid var(--bf-border-bright);
+  border: 1px solid var(--bf-border);
   background: var(--bf-surface);
-  box-shadow:
-    inset 0 0 32px rgb(0 0 0 / 0.5),
-    0 0 12px rgb(51 255 102 / 0.06);
+  box-shadow: inset 0 0 32px rgb(0 0 0 / 0.5);
 }
 
 .bf-panel-elevated::before {
@@ -462,6 +482,68 @@
   background: var(--bf-surface);
 }
 
+.bf-tab-active.bf-tone-green,
+.bf-tab-active:not([class*='bf-tone-']) {
+  border-color: var(--bf-item-border, var(--bf-border-bright));
+  background: var(--bf-item-bg, var(--bf-accent-bg));
+  color: var(--bf-item-bright, var(--bf-accent-bright));
+  box-shadow: inset 0 0 12px rgb(0 0 0 / 0.35);
+}
+
+.bf-tab-active[class*='bf-tone-']:not(.bf-tone-green) {
+  border-color: var(--bf-item-border);
+  background: var(--bf-item-bg);
+  color: var(--bf-item-bright);
+  box-shadow: inset 0 0 12px rgb(0 0 0 / 0.35);
+  text-shadow: 0 0 8px var(--bf-item-glow);
+}
+
+/* —— Phosphor tone accents (split-complement terminal palette) —— */
+.bf-tone-green {
+  --bf-item: var(--bf-phosphor-green);
+  --bf-item-bright: var(--bf-phosphor-green-bright);
+  --bf-item-dim: var(--bf-phosphor-green-dim);
+  --bf-item-border: var(--bf-phosphor-green-border);
+  --bf-item-glow: var(--bf-phosphor-green-glow);
+  --bf-item-bg: var(--bf-phosphor-green-bg);
+}
+
+.bf-tone-amber {
+  --bf-item: var(--bf-phosphor-amber);
+  --bf-item-bright: var(--bf-phosphor-amber-bright);
+  --bf-item-dim: var(--bf-phosphor-amber-dim);
+  --bf-item-border: var(--bf-phosphor-amber-border);
+  --bf-item-glow: var(--bf-phosphor-amber-glow);
+  --bf-item-bg: var(--bf-phosphor-amber-bg);
+}
+
+.bf-tone-orange {
+  --bf-item: var(--bf-phosphor-orange);
+  --bf-item-bright: var(--bf-phosphor-orange-bright);
+  --bf-item-dim: var(--bf-phosphor-orange-dim);
+  --bf-item-border: var(--bf-phosphor-orange-border);
+  --bf-item-glow: var(--bf-phosphor-orange-glow);
+  --bf-item-bg: var(--bf-phosphor-orange-bg);
+}
+
+.bf-tone-cyan {
+  --bf-item: var(--bf-phosphor-cyan);
+  --bf-item-bright: var(--bf-phosphor-cyan-bright);
+  --bf-item-dim: var(--bf-phosphor-cyan-dim);
+  --bf-item-border: var(--bf-phosphor-cyan-border);
+  --bf-item-glow: var(--bf-phosphor-cyan-glow);
+  --bf-item-bg: var(--bf-phosphor-cyan-bg);
+}
+
+.bf-tone-violet {
+  --bf-item: var(--bf-phosphor-violet);
+  --bf-item-bright: var(--bf-phosphor-violet-bright);
+  --bf-item-dim: var(--bf-phosphor-violet-dim);
+  --bf-item-border: var(--bf-phosphor-violet-border);
+  --bf-item-glow: var(--bf-phosphor-violet-glow);
+  --bf-item-bg: var(--bf-phosphor-violet-bg);
+}
+
 .bf-input,
 .blackfang-campaign .bf-input,
 .blackfang-campaign .bf-field-input {
@@ -550,11 +632,11 @@
 /* —— Operative dataslate card —— */
 .blackfang-campaign .operative-card {
   position: relative;
-  border: 1px solid var(--bf-border-bright) !important;
+  border: 1px solid var(--bf-border) !important;
   border-radius: 0 !important;
   background: #000 !important;
   box-shadow:
-    inset 0 0 40px rgb(51 255 102 / 0.03),
+    inset 0 0 40px rgb(51 255 102 / 0.02),
     0 0 20px rgb(0 0 0 / 0.8) !important;
 }
 
@@ -565,10 +647,10 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  border: 2px solid var(--bf-accent);
+  border: 2px solid var(--bf-accent-dim);
   z-index: 2;
   pointer-events: none;
-  opacity: 0.85;
+  opacity: 0.75;
 }
 
 .blackfang-campaign .operative-card::before {
@@ -762,7 +844,7 @@
 }
 
 .blackfang-campaign .operative-card-editor {
-  border-color: var(--bf-border-bright) !important;
+  border-color: var(--bf-border) !important;
   background: #000 !important;
 }
 
@@ -786,9 +868,8 @@
 }
 
 .blackfang-campaign .bf-weapon-combobox {
-  border: 1px solid var(--bf-border-bright);
+  border: 1px solid var(--bf-border);
   background: #000;
-  box-shadow: 0 0 24px rgb(51 255 102 / 0.1);
 }
 
 .blackfang-campaign .bf-weapon-combobox-item--active {
@@ -882,7 +963,7 @@
 
 .blackfang-campaign .bf-chip,
 .blackfang-campaign .bf-chip-violet {
-  border: 1px solid var(--bf-border-bright);
+  border: 1px solid var(--bf-border);
   background: #000;
   color: var(--bf-accent);
   font-family: var(--bf-font-mono);
@@ -1055,6 +1136,14 @@
   color: var(--bf-accent-bright);
 }
 
+.bf-section-label.bf-tone-amber {
+  color: var(--bf-phosphor-amber-bright);
+}
+
+.bf-section-label.bf-tone-cyan {
+  color: var(--bf-phosphor-cyan-bright);
+}
+
 .bf-section-label::before {
   content: '>> ';
   color: var(--bf-text-muted);
@@ -1076,13 +1165,13 @@
 }
 
 .bf-campaign-nav-tile:hover {
-  border-color: var(--bf-accent);
-  box-shadow: 0 0 16px rgb(51 255 102 / 0.12);
+  border-color: var(--bf-item-border, var(--bf-border-bright));
+  box-shadow: 0 0 16px var(--bf-item-glow, rgb(51 255 102 / 0.12));
   transform: translateY(-1px);
 }
 
 .bf-campaign-nav-tile:focus-visible {
-  outline: 1px solid var(--bf-accent-bright);
+  outline: 1px solid var(--bf-item-bright, var(--bf-accent-bright));
   outline-offset: 2px;
 }
 
@@ -1101,12 +1190,12 @@
 }
 
 .bf-campaign-nav-tile-icon {
-  color: var(--bf-accent-dim);
+  color: var(--bf-item-dim, var(--bf-accent-dim));
   transition: color 0.15s ease;
 }
 
 .bf-campaign-nav-tile:hover .bf-campaign-nav-tile-icon {
-  color: var(--bf-accent-bright);
+  color: var(--bf-item-bright, var(--bf-accent-bright));
 }
 
 .bf-campaign-nav-tile-title {
@@ -1116,7 +1205,8 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--bf-accent-bright);
+  color: var(--bf-item-bright, var(--bf-accent-bright));
+  text-shadow: 0 0 8px var(--bf-item-glow, var(--bf-accent-glow));
 }
 
 .bf-campaign-nav-tile-desc {
@@ -1133,11 +1223,11 @@
   font-size: 0.68rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--bf-accent);
+  color: var(--bf-item, var(--bf-accent));
 }
 
 .bf-campaign-nav-tile:hover .bf-campaign-nav-tile-cta {
-  color: var(--bf-accent-bright);
+  color: var(--bf-item-bright, var(--bf-accent-bright));
 }
 
 .bf-lazy-list-sentinel {
@@ -1220,7 +1310,7 @@
   max-width: 40rem;
   margin: 0 auto 1.75rem;
   padding-bottom: 1.25rem;
-  border-bottom: 1px solid var(--bf-border-bright);
+  border-bottom: 1px solid var(--bf-border);
 }
 
 .bf-lore-document-classification {
@@ -1230,7 +1320,8 @@
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--bf-accent-bright);
+  color: var(--bf-phosphor-amber-bright);
+  text-shadow: 0 0 8px var(--bf-phosphor-amber-glow);
 }
 
 .bf-lore-document-title {
@@ -1305,21 +1396,22 @@
   margin-bottom: 1.35rem !important;
 }
 
-.bf-lore-document-lead-dropcap::first-letter {
+.bf-lore-document-lead.bf-lore-document-lead-dropcap::first-letter {
   float: left;
   margin: 0.04em 0.14em 0 0;
   padding: 0.02em 0.08em 0 0;
-  font-family: var(--bf-font-dropcap);
+  font-family: var(--bf-font-dropcap) !important;
   font-size: 4.25rem;
   font-weight: 400;
+  font-style: normal;
   line-height: 0.78;
   letter-spacing: 0.02em;
-  color: var(--bf-accent-bright);
-  text-shadow: 0 0 14px var(--bf-accent-glow);
+  color: var(--bf-phosphor-amber-bright);
+  text-shadow: 0 0 14px var(--bf-phosphor-amber-glow);
 }
 
 @media (min-width: 640px) {
-  .bf-lore-document-lead-dropcap::first-letter {
+  .bf-lore-document-lead.bf-lore-document-lead-dropcap::first-letter {
     font-size: 4.75rem;
   }
 }
@@ -1337,9 +1429,8 @@
 
 .bf-lore-document-figure {
   margin: 1.35rem 0 1.5rem;
-  border: 1px solid var(--bf-border-bright);
+  border: 1px solid var(--bf-border);
   background: rgb(0 0 0 / 0.45);
-  box-shadow: inset 0 0 24px rgb(51 255 102 / 0.05);
 }
 
 .bf-lore-document-figure-img {
@@ -1377,11 +1468,9 @@
 .bf-mission-map-screen {
   position: relative;
   overflow: hidden;
-  border: 1px solid var(--bf-border-bright);
+  border: 1px solid var(--bf-border);
   background: #020804;
-  box-shadow:
-    inset 0 0 32px rgb(51 255 102 / 0.06),
-    0 0 18px rgb(51 255 102 / 0.08);
+  box-shadow: inset 0 0 32px rgb(51 255 102 / 0.04);
 }
 
 .bf-mission-map-screen::after {
@@ -1527,7 +1616,7 @@
 .bf-mission-map-legend-swatch {
   width: 0.65rem;
   height: 0.65rem;
-  border: 1px solid var(--bf-border-bright);
+  border: 1px solid var(--bf-border);
 }
 
 .bf-mission-map-legend-swatch--insert {
@@ -1559,9 +1648,9 @@
 .bf-lore-document-pullquote {
   margin: 1.75rem 0 0;
   padding: 1.1rem 1.25rem;
-  border: 1px solid var(--bf-border-bright);
+  border: 1px solid var(--bf-border);
+  border-left: 3px solid var(--bf-phosphor-amber-border);
   background: rgb(0 0 0 / 0.35);
-  box-shadow: inset 0 0 20px rgb(51 255 102 / 0.06);
   font-family: var(--bf-font-display);
   font-size: clamp(0.9rem, 2vw, 1.05rem);
   font-style: normal;
@@ -1571,8 +1660,8 @@
   text-align: center;
   text-indent: 0;
   text-transform: uppercase;
-  color: var(--bf-accent-bright);
-  text-shadow: 0 0 10px var(--bf-accent-glow);
+  color: var(--bf-phosphor-amber-bright);
+  text-shadow: 0 0 10px var(--bf-phosphor-amber-glow);
 }
 
 .bf-lore-document-footer {
@@ -1644,7 +1733,7 @@
   flex-direction: column;
   width: min(19rem, 90vw);
   height: 100%;
-  border-right: 1px solid var(--bf-border-bright);
+  border-right: 1px solid var(--bf-border);
   background: var(--bf-surface-elevated, var(--bf-surface));
   box-shadow: 8px 0 32px rgb(0 0 0 / 0.45);
   transform: translateX(-100%);
@@ -1828,11 +1917,11 @@
 }
 
 .bf-nav-drawer-link-active {
-  border-color: var(--bf-border-bright);
-  background: var(--bf-accent-bg);
-  color: var(--bf-accent-bright);
-  box-shadow: inset 0 0 12px rgb(51 255 102 / 0.1);
-  text-shadow: 0 0 10px var(--bf-accent-glow);
+  border-color: var(--bf-item-border, var(--bf-border-bright));
+  background: var(--bf-item-bg, var(--bf-accent-bg));
+  color: var(--bf-item-bright, var(--bf-accent-bright));
+  box-shadow: inset 0 0 12px rgb(0 0 0 / 0.35);
+  text-shadow: 0 0 10px var(--bf-item-glow, var(--bf-accent-glow));
 }
 
 .bf-nav-drawer-link-active::before {
@@ -1888,11 +1977,11 @@
 .bf-connection-panel {
   position: relative;
   width: min(100%, 42rem);
-  border: 2px solid var(--bf-border-bright);
+  border: 2px solid var(--bf-border);
   background: var(--bf-bg-elevated);
   box-shadow:
     0 0 0 1px #000,
-    0 0 32px rgb(51 255 102 / 0.18),
+    0 0 32px rgb(51 255 102 / 0.12),
     inset 0 0 100px rgb(0 0 0 / 0.9);
 }
 
@@ -1903,7 +1992,7 @@
   justify-content: space-between;
   gap: 0.5rem 1rem;
   padding: 0.35rem 0.75rem;
-  border-bottom: 1px solid var(--bf-border-bright);
+  border-bottom: 1px solid var(--bf-border);
   background: linear-gradient(180deg, rgb(8 28 14 / 0.95), rgb(2 8 4 / 0.98));
   font-family: var(--bf-font-mono);
   font-size: 0.75rem;
@@ -1994,7 +2083,7 @@
   gap: 2px;
   height: 1.125rem;
   padding: 2px;
-  border: 1px solid var(--bf-border-bright);
+  border: 1px solid var(--bf-border);
   background: rgb(0 0 0 / 0.65);
   box-shadow: inset 0 0 12px rgb(0 0 0 / 0.8);
 }

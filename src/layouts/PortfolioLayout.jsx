@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import HeroEraBackdrop from '../components/HeroEraBackdrop'
 import Navbar from '../components/Navbar'
+import PageEndNavFloats from '../components/PageEndNavFloats'
 import FortPykmanConnectionOverlay from '../components/blackfang/FortPykmanConnectionOverlay'
 import useScrollToTopOnNavigate from '../hooks/useScrollToTopOnNavigate'
 
@@ -33,6 +34,7 @@ export default function PortfolioLayout() {
         <main>
           <Outlet />
         </main>
+        <PageEndNavFloats variant="blackfang" />
         <FortPykmanConnectionOverlay runToken={connectionRunToken} />
       </div>
     )
@@ -49,6 +51,7 @@ export default function PortfolioLayout() {
         <footer className="portfolio-site__footer border-t border-zinc-800/80 px-4 py-6 text-center text-sm text-zinc-400 sm:px-6 sm:py-8">
           <p>© {new Date().getFullYear()} Taylor Miley. Built with React & Tailwind CSS.</p>
         </footer>
+        <PageEndNavFloats variant="portfolio" />
       </div>
     </div>
   )

@@ -22,9 +22,9 @@ const projectCards = [
   },
   {
     slug: 'schema-bridge',
-    title: 'Schema Bridge',
+    title: 'Schema Bridge - Agentic Development',
     description:
-      'A showcase of my skills with agentic AI development. A simple python pipeline takes three different file export types, standardizes their schema for data migration, and then gives the low confidence mappings to a Review Workbench UI where the user become the human-in-the-loop to make sure these abstract records are approved with human intervention.',
+      'This was made in a day. It is a show case of how agentic development can rapidly produce new workflows or features. A simple python pipeline takes three different file export types, standardizes their schema for data migration.',
     tags: ['Human-in-the-loop', 'Python', 'Pydantic', 'Hybrid ETL', 'AI mapping'],
     cta: 'View migration',
     imageSrc: portfolioImageUrl('project-schema-bridge-new.png'),

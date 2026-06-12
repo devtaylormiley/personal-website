@@ -140,15 +140,6 @@ export default function CheckoutFunnelSimplificationPage() {
             ))}
           </ul>
         </section>
-
-        <p className="mt-10 text-center">
-          <Link
-            to="/#projects"
-            className="text-sm font-medium text-violet-400 transition-colors hover:text-violet-300"
-          >
-            ← Back to all improvements
-          </Link>
-        </p>
       </div>
     </article>
   )
