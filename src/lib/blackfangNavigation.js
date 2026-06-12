@@ -162,11 +162,29 @@ export function hubSubrouteToPath(subrouteTo) {
   return `${CAMPAIGN_HUB_PATH}/${subrouteTo}`
 }
 
+const BLACKFANG_RESERVED_SEGMENTS = new Set([
+  'about',
+  'party',
+  'kt24-data',
+  'kill-teams',
+  'section-3',
+  'homebrew-operative',
+  'homebrew',
+  'deathwatch-veterans',
+])
+
+export function isKillTeamSlugPage(pathname) {
+  const match = pathname.match(/^\/projects\/blackfang-campaign\/([^/]+)$/)
+  if (!match) return false
+  return !BLACKFANG_RESERVED_SEGMENTS.has(match[1])
+}
+
 export function isKt24Branch(pathname) {
   return (
     pathname.includes('/kt24-data') ||
     pathname.includes('/homebrew-operative/') ||
-    pathname.includes('/homebrew/')
+    pathname.includes('/homebrew/') ||
+    isKillTeamSlugPage(pathname)
   )
 }
 
@@ -177,7 +195,11 @@ export function sectionIsActive(pathname, section) {
 
 export function getCampaignSection(pathname) {
   if (isCampaignHub(pathname)) return null
-  if (pathname.includes('/homebrew-operative/') || pathname.includes('/homebrew/')) {
+  if (
+    pathname.includes('/homebrew-operative/') ||
+    pathname.includes('/homebrew/') ||
+    isKillTeamSlugPage(pathname)
+  ) {
     return CAMPAIGN_SECTIONS.find((s) => s.pathMatch === '/kt24-data') ?? null
   }
   return CAMPAIGN_SECTIONS.find((s) => pathname.includes(s.pathMatch)) ?? null
@@ -185,7 +207,7 @@ export function getCampaignSection(pathname) {
 
 export function getRegistryTabId(pathname) {
   if (pathname.includes('/homebrew-operative/')) return 'operatives'
-  if (pathname.includes('/homebrew/')) return 'teams'
+  if (pathname.includes('/homebrew/') || isKillTeamSlugPage(pathname)) return 'teams'
   if (!pathname.includes('/kt24-data')) return null
   const match = pathname.match(/\/kt24-data\/([^/]+)/)
   const id = match?.[1]

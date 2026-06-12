@@ -13,6 +13,7 @@ import {
 import OperativeCardEditorBar from './operativeCard/OperativeCardEditorBar'
 import OperativeCardSection from './operativeCard/OperativeCardSection'
 import WeaponRulesChips from './WeaponRulesChips'
+import { bfToneClass } from '../../lib/blackfangNavigation'
 
 const categoryLabel = { po: 'Player operative', npo: 'Non-player operative' }
 
@@ -91,7 +92,6 @@ function OperativeCardWeapons({ operative, editable, compact, weaponsResetKey, w
         tableClassName={tableClass}
         headerClassName="operative-card-table-head"
         wrapperClassName=""
-        ruleChipClassName="bf-chip cursor-help"
         alignedColumns
       />
     )
@@ -156,6 +156,7 @@ export default function OperativeDataslate({
   density = 'default',
   onClose,
   showAbilityScores: showAbilityScoresProp = true,
+  accentTone = null,
 }) {
   const editable = Boolean(onFieldChange)
   const custom = operative.cardType === 'custom'
@@ -165,6 +166,7 @@ export default function OperativeDataslate({
 
   const cardBorderClass =
     editable && isDirty ? 'bf-dirty' : custom ? 'ring-1 ring-[var(--bf-border-bright)]' : ''
+  const accentClass = accentTone ? bfToneClass(accentTone) : ''
 
   return (
     <div className={editable ? 'space-y-0' : ''}>
@@ -180,7 +182,7 @@ export default function OperativeDataslate({
       ) : null}
 
       <article
-        className={`operative-card w-full min-w-0 overflow-hidden rounded-xl border-2 border-amber-800/60 bg-gradient-to-b from-zinc-900 via-zinc-950 to-black shadow-lg shadow-black/40 ${cardBorderClass} ${
+        className={`operative-card w-full min-w-0 overflow-hidden rounded-xl border-2 border-amber-800/60 bg-gradient-to-b from-zinc-900 via-zinc-950 to-black shadow-lg shadow-black/40 ${accentClass} ${cardBorderClass} ${
           weaponsTypeaheadOpen ? 'overflow-visible' : ''
         } ${editable ? 'rounded-t-none border-t-0' : ''}`}
       >

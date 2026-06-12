@@ -2,15 +2,61 @@ const LEGACY_PLOY_PREFIX = /^strategy\s*\/\s*firefight\s*ploys:\s*/i
 
 export const PLOYS_SECTION_TITLE = 'Strategy / firefight ploys'
 
+/** @typedef {'strategy' | 'firefight' | null} PloyType */
+
 function normalizePloy(entry) {
   if (!entry) return null
   const name = (entry.name ?? entry.ployName ?? '').trim()
   if (!name) return null
+  const type = entry.type ?? ployTypeFromApiCode(entry.ployType) ?? null
   return {
     name,
     description: (entry.description ?? '').trim(),
-    type: entry.type ?? null,
+    type,
+    cpCost: entry.cpCost ?? defaultCpCost(type),
+    ployId: entry.ployId ?? null,
   }
+}
+
+function ployTypeFromApiCode(code) {
+  if (code === 'S') return 'strategy'
+  if (code === 'T') return 'firefight'
+  return null
+}
+
+/** Default CP cost when not stored — KT24 core rules. */
+function defaultCpCost(type) {
+  if (type === 'strategy') return 0
+  if (type === 'firefight') return 1
+  return null
+}
+
+export function getPloyTypeLabel(type) {
+  if (type === 'strategy') return 'Strategy ploy'
+  if (type === 'firefight') return 'Firefight ploy'
+  return 'Ploy'
+}
+
+export function getPloyCpShortLabel(ploy) {
+  if (ploy.type === 'strategy') return '0'
+  if (ploy.cpCost === 1) {
+    if (/costs?\s+(?:you\s+)?0\s*CP/i.test(ploy.description ?? '')) {
+      return '1 (0*)'
+    }
+    return '1'
+  }
+  if (ploy.cpCost === 0) return '0*'
+  return '—'
+}
+
+export function getPloyUsageHint(description) {
+  const text = description?.trim() ?? ''
+  if (!text) return null
+  const oncePerBattle = text.match(/once per battle[^.]*\./i)
+  if (oncePerBattle) return oncePerBattle[0].trim()
+  const oncePerTurningPoint = text.match(/once per turning point[^.]*\./i)
+  if (oncePerTurningPoint) return oncePerTurningPoint[0].trim()
+  return null
 }
 
 /** @param {string | undefined} raw */
@@ -23,7 +69,7 @@ export function parseLegacyPloyNames(raw) {
     .split(',')
     .map((part) => part.trim())
     .filter(Boolean)
-    .map((name) => ({ name, description: '', type: null }))
+    .map((name) => ({ name, description: '', type: null, cpCost: null }))
 }
 
 /** @param {{ ploys?: { name: string, description?: string, type?: string | null }[], specialIssueAmmunition?: string } | undefined} killTeam */
@@ -58,21 +104,15 @@ export function parsePloysFromEditText(raw) {
     .map((block) => {
       const colon = block.indexOf(': ')
       if (colon === -1) {
-        return { name: block, description: '', type: null }
+        return { name: block, description: '', type: null, cpCost: null }
       }
       return {
         name: block.slice(0, colon).trim(),
         description: block.slice(colon + 2).trim(),
         type: null,
+        cpCost: null,
       }
     })
     .filter((p) => p.name)
 }
 
-export function ployTooltip(ploy) {
-  const desc = ploy.description?.trim()
-  if (!desc) return 'No description available.'
-  if (ploy.type === 'strategy') return `Strategy ploy — ${desc}`
-  if (ploy.type === 'firefight') return `Firefight ploy — ${desc}`
-  return desc
-}

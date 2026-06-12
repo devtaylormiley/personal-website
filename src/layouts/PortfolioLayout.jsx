@@ -34,7 +34,6 @@ export default function PortfolioLayout() {
         <main>
           <Outlet />
         </main>
-        <PageEndNavFloats variant="blackfang" />
         <FortPykmanConnectionOverlay runToken={connectionRunToken} />
       </div>
     )

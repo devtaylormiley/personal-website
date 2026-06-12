@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import ActionButton from '../ui/ActionButton'
-import { describeWeaponRule, splitWeaponRules } from '../../lib/weaponRules'
 import {
   OperativeCardTableColgroup,
   operativeCardTableAlignedClass,
 } from './operativeCard/operativeCardTableColumns'
 import WeaponNameCombobox from './WeaponNameCombobox'
+import WeaponRulesChips from './WeaponRulesChips'
 
 const EMPTY_WEAPON = { name: '', atk: '', hit: '', dmg: '', rules: '' }
 
@@ -24,7 +24,6 @@ export default function EditableWeaponsTable({
   onTypeaheadOpenChange,
   tableClassName,
   headerClassName = 'operative-card-table-head',
-  ruleChipClassName = 'bf-chip cursor-help',
   wrapperClassName = 'operative-card-table-wrap overflow-x-auto',
   alignedColumns = false,
 }) {
@@ -173,18 +172,11 @@ export default function EditableWeaponsTable({
                           {weapon.dmg || '—'}
                         </td>
                         <td className={cellPad}>
-                          <div className="flex flex-wrap gap-1">
-                            {splitWeaponRules(weapon.rules).map((rule) => (
-                              <span
-                                key={`${operativeId}-${index}-${rule}`}
-                                title={describeWeaponRule(rule)}
-                                className={`${ruleChipClassName} ${compact ? 'px-1.5 py-px text-[10px]' : 'px-2 py-0.5 text-xs'}`}
-                              >
-                                {rule}
-                              </span>
-                            ))}
-                            {!weapon.rules && <span className="bf-muted">—</span>}
-                          </div>
+                          <WeaponRulesChips
+                            rules={weapon.rules}
+                            compact={compact}
+                            ruleKeyPrefix={`${operativeId}-${index}`}
+                          />
                         </td>
                       </>
                     )}

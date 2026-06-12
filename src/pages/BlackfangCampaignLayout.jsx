@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import BlackfangBreadcrumbs from '../components/blackfang/BlackfangBreadcrumbs'
 import BlackfangCampaignNav from '../components/blackfang/BlackfangCampaignNav'
 import BlackfangTerminalShell from '../components/blackfang/BlackfangTerminalShell'
+import PageEndNavFloats from '../components/PageEndNavFloats'
 import ActionButton from '../components/ui/ActionButton'
 import { useAuth } from '../context/AuthContext'
 import { isBlackfangSignInVisible } from '../lib/blackfangAuth'
@@ -117,6 +118,7 @@ export default function BlackfangCampaignLayout() {
 
             <Outlet />
           </BlackfangTerminalShell>
+          <PageEndNavFloats variant="blackfang" />
         </div>
       </div>
     </div>

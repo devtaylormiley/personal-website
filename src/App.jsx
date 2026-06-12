@@ -45,13 +45,13 @@ function App() {
             <Route path="party" element={<BlackfangPartyPage />} />
             <Route path="section-3" element={<Navigate to="party" replace />} />
             <Route path="homebrew-operative/:operativeId" element={<HomebrewOperativePage />} />
+            <Route path="homebrew/:teamId" element={<HomebrewTeamPage />} />
+            <Route
+              path="deathwatch-veterans"
+              element={<Navigate to="/projects/blackfang-campaign/deathwatch" replace />}
+            />
+            <Route path=":teamSlug" element={<KillTeamPage />} />
           </Route>
-          <Route path="projects/blackfang-campaign/homebrew/:teamId" element={<HomebrewTeamPage />} />
-          <Route path="projects/blackfang-campaign/:teamSlug" element={<KillTeamPage />} />
-          <Route
-            path="projects/blackfang-campaign/deathwatch-veterans"
-            element={<Navigate to="/projects/blackfang-campaign/deathwatch" replace />}
-          />
         </Route>
       </Routes>
     </BrowserRouter>

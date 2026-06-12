@@ -1,12 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import BlackfangTerminalShell from '../components/blackfang/BlackfangTerminalShell'
-import BlackfangBreadcrumbs from '../components/blackfang/BlackfangBreadcrumbs'
 import KillTeamHeader from '../components/blackfang/KillTeamHeader'
 import OperativeDataslate from '../components/blackfang/OperativeDataslate'
 import StickyAfterFullScroll from '../components/blackfang/StickyAfterFullScroll'
 import ActionButton from '../components/ui/ActionButton'
 import { bfToneClass } from '../lib/blackfangNavigation'
+import { getOperativeAccentTone } from '../lib/operativeAccentTones'
 import { useAuth } from '../context/AuthContext'
 import {
   deleteHomebrewTeam,
@@ -132,20 +131,12 @@ export default function HomebrewTeamPage() {
   }
 
   if (!user) {
-    return (
-      <div className="blackfang-campaign min-h-screen px-4 pt-4 pb-16 sm:px-6">
-        <div className="mx-auto max-w-screen-2xl">
-          <BlackfangTerminalShell>
-            <p className="bf-body">Sign in with Google to access homebrew teams.</p>
-          </BlackfangTerminalShell>
-        </div>
-      </div>
-    )
+    return <p className="bf-body">Sign in with Google to access homebrew teams.</p>
   }
 
   if (loading) {
     return (
-      <div className="blackfang-campaign flex min-h-[50vh] items-center justify-center px-4 pt-4 bf-muted">
+      <div className="flex min-h-[50vh] items-center justify-center bf-muted">
         <span className="bf-terminal-prompt">LOADING_HOMEBREW</span>
         <span className="bf-terminal-cursor">█</span>
       </div>
@@ -153,29 +144,8 @@ export default function HomebrewTeamPage() {
   }
 
   if (error || !killTeam) {
-    return (
-      <div className="blackfang-campaign min-h-screen px-4 pt-4 pb-16 sm:px-6">
-        <div className="mx-auto max-w-screen-2xl">
-          <BlackfangTerminalShell>
-            <BlackfangBreadcrumbs
-              items={[
-                { label: 'Portfolio', to: '/#projects', icon: 'portfolio' },
-                { label: 'KT24 Data', to: '/projects/blackfang-campaign/kt24-data', icon: 'killTeams' },
-                { label: 'Not found', icon: 'team' },
-              ]}
-            />
-            <p className="bf-error mt-8 text-sm">{error || 'Homebrew team not found.'}</p>
-          </BlackfangTerminalShell>
-        </div>
-      </div>
-    )
+    return <p className="bf-error mt-8 text-sm">{error || 'Homebrew team not found.'}</p>
   }
-
-  const breadcrumbItems = [
-    { label: 'Portfolio', to: '/#projects', icon: 'portfolio' },
-    { label: 'KT24 Data', to: '/projects/blackfang-campaign/kt24-data', icon: 'killTeams' },
-    { label: killTeam.name, icon: 'team' },
-  ]
 
   const tabOperatives = operatives.filter((op) => op.category === activeTab)
 
@@ -376,123 +346,118 @@ export default function HomebrewTeamPage() {
   }
 
   return (
-    <div className="blackfang-campaign min-h-screen px-4 pt-4 pb-16 sm:px-6">
-      <div className="mx-auto max-w-screen-2xl">
-        <BlackfangTerminalShell>
-        <BlackfangBreadcrumbs items={breadcrumbItems} />
-
-        <header className="bf-divider mt-6 border-b pb-8">
-          <p className="bf-eyebrow">Homebrew private</p>
-          <h1 className="bf-title mt-2">{killTeam.name}</h1>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <ActionButton
-              label={saving ? 'Saving…' : 'Save changes'}
-              onClick={handleSave}
-              disabled={!isAnyDirty || saving}
-              className="bf-btn-primary px-4 py-2 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-40"
-            />
-            <ActionButton
-              label="Delete team"
-              onClick={handleDeleteTeam}
-              disabled={saving}
-              className="bf-btn-danger px-4 py-2 text-sm font-medium disabled:opacity-40"
-            />
-            <ActionButton
-              label="Add operative"
-              onClick={() => setOperatives((prev) => [...prev, makeNewOperative(prev.length)])}
-              disabled={saving}
-              className="bf-btn-ghost px-4 py-2 text-sm font-medium disabled:opacity-40"
-            />
-          </div>
-          {error && <p className="bf-error mt-4 text-sm">{error}</p>}
-        </header>
-
-        <div className="mt-10 grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-8">
-          <StickyAfterFullScroll className="min-w-0">
-            <KillTeamHeader
-              killTeam={killTeam}
-              killteamId={killteamId}
-              factionId={factionId}
-              imageUrl={imageUrl}
-              isDirty={isKillTeamDirty}
-              onFieldChange={updateKillTeamField}
-              officialTeams={officialTeams}
-              onCopyFromTeam={handleCopyFromTeam}
-              copyLoading={copyLoading}
-              onImageUpload={handleImageUpload}
-              onImageRemove={() => setImageUrl('')}
-              imageUploading={imageUploading}
-            />
-          </StickyAfterFullScroll>
-
-          <section className="min-w-0 overflow-x-hidden">
-            <div className="bf-divider flex flex-col gap-4 border-b pb-4 sm:flex-row sm:items-end sm:justify-between">
-              <h2 className="bf-heading text-xl">Operative dataslates</h2>
-              <div className="bf-panel flex rounded-lg p-1" role="tablist">
-                {[
-                  { id: 'po', label: 'POs', tone: 'orange' },
-                  { id: 'npo', label: 'NPOs', tone: 'amber' },
-                ].map((tab) => (
-                  <ActionButton
-                    key={tab.id}
-                    label={tab.label}
-                    role="tab"
-                    aria-selected={activeTab === tab.id}
-                    onClick={() => setActiveTab(tab.id)}
-                    className={`bf-tab ${activeTab === tab.id ? `bf-tab-active ${bfToneClass(tab.tone)}` : 'bf-tab-inactive'}`}
-                  />
-                ))}
-              </div>
-            </div>
-
-            {tabOperatives.length === 0 ? (
-              <p className="bf-muted mt-8 rounded-xl border border-dashed border-[var(--bf-border)] px-6 py-12 text-center text-sm">
-                No operatives in this tab.
-              </p>
-            ) : (
-              <ul className="mt-6 space-y-4">
-                {tabOperatives.map((operative) => (
-                  <li key={operative.id}>
-                    <div className="mb-1.5 flex justify-end">
-                      <ActionButton
-                        label="Remove operative"
-                        onClick={() => removeOperative(operative.id)}
-                        className="bf-btn-danger rounded-lg px-2.5 py-1 text-xs font-medium"
-                      />
-                    </div>
-                    <OperativeDataslate
-                      operative={operative}
-                      density="compact"
-                      isDirty={isOperativeDirty(operative.id)}
-                      onFieldChange={(field, value) =>
-                        updateOperativeField(operative.id, field, value)
-                      }
-                      onLevelChange={(level) => updateOperativeLevel(operative.id, level)}
-                      onAbilityScoreAdjust={(key, direction) =>
-                        adjustAbilityScore(operative.id, key, direction)
-                      }
-                      onWeaponChange={(weaponIndex, field, value) =>
-                        updateWeapon(operative.id, weaponIndex, field, value)
-                      }
-                      onReplaceWeapon={(weaponIndex, weapon) =>
-                        replaceWeapon(operative.id, weaponIndex, weapon)
-                      }
-                      onAddWeapon={(weapon) => addWeapon(operative.id, weapon)}
-                      onRemoveWeapon={(weaponIndex) => removeWeapon(operative.id, weaponIndex)}
-                      weaponOptions={weaponOptions}
-                      officialOperatives={officialOperatives}
-                      onCopyFromOperative={(key) => handleCopyFromOperative(operative.id, key)}
-                      copyLoading={operativeCopyId === operative.id}
-                      weaponsResetKey={weaponsResetVersions[operative.id] ?? 0}
-                    />
-                  </li>
-                ))}
-              </ul>
-            )}
-          </section>
+    <>
+      <header className="bf-divider border-b pb-8">
+        <p className="bf-eyebrow">Homebrew private</p>
+        <h1 className="bf-title mt-2">{killTeam.name}</h1>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <ActionButton
+            label={saving ? 'Saving…' : 'Save changes'}
+            onClick={handleSave}
+            disabled={!isAnyDirty || saving}
+            className="bf-btn-primary px-4 py-2 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-40"
+          />
+          <ActionButton
+            label="Delete team"
+            onClick={handleDeleteTeam}
+            disabled={saving}
+            className="bf-btn-danger px-4 py-2 text-sm font-medium disabled:opacity-40"
+          />
+          <ActionButton
+            label="Add operative"
+            onClick={() => setOperatives((prev) => [...prev, makeNewOperative(prev.length)])}
+            disabled={saving}
+            className="bf-btn-ghost px-4 py-2 text-sm font-medium disabled:opacity-40"
+          />
         </div>
-        </BlackfangTerminalShell>
+        {error && <p className="bf-error mt-4 text-sm">{error}</p>}
+      </header>
+
+      <div className="mt-10 grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-8">
+        <StickyAfterFullScroll className="min-w-0">
+          <KillTeamHeader
+            killTeam={killTeam}
+            killteamId={killteamId}
+            factionId={factionId}
+            imageUrl={imageUrl}
+            isDirty={isKillTeamDirty}
+            onFieldChange={updateKillTeamField}
+            officialTeams={officialTeams}
+            onCopyFromTeam={handleCopyFromTeam}
+            copyLoading={copyLoading}
+            onImageUpload={handleImageUpload}
+            onImageRemove={() => setImageUrl('')}
+            imageUploading={imageUploading}
+          />
+        </StickyAfterFullScroll>
+
+        <section className="min-w-0 overflow-x-hidden">
+          <div className="bf-divider flex flex-col gap-4 border-b pb-4 sm:flex-row sm:items-end sm:justify-between">
+            <h2 className="bf-heading text-xl">Operative dataslates</h2>
+            <div className="bf-panel flex rounded-lg p-1" role="tablist">
+              {[
+                { id: 'po', label: 'POs', tone: 'orange' },
+                { id: 'npo', label: 'NPOs', tone: 'amber' },
+              ].map((tab) => (
+                <ActionButton
+                  key={tab.id}
+                  label={tab.label}
+                  role="tab"
+                  aria-selected={activeTab === tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`bf-tab ${activeTab === tab.id ? `bf-tab-active ${bfToneClass(tab.tone)}` : 'bf-tab-inactive'}`}
+                />
+              ))}
+            </div>
+          </div>
+
+          {tabOperatives.length === 0 ? (
+            <p className="bf-muted mt-8 rounded-xl border border-dashed border-[var(--bf-border)] px-6 py-12 text-center text-sm">
+              No operatives in this tab.
+            </p>
+          ) : (
+            <ul className="mt-6 space-y-4">
+              {tabOperatives.map((operative, index) => (
+                <li key={operative.id}>
+                  <div className="mb-1.5 flex justify-end">
+                    <ActionButton
+                      label="Remove operative"
+                      onClick={() => removeOperative(operative.id)}
+                      className="bf-btn-danger rounded-lg px-2.5 py-1 text-xs font-medium"
+                    />
+                  </div>
+                  <OperativeDataslate
+                    operative={operative}
+                    density="compact"
+                    accentTone={getOperativeAccentTone(index)}
+                    isDirty={isOperativeDirty(operative.id)}
+                    onFieldChange={(field, value) =>
+                      updateOperativeField(operative.id, field, value)
+                    }
+                    onLevelChange={(level) => updateOperativeLevel(operative.id, level)}
+                    onAbilityScoreAdjust={(key, direction) =>
+                      adjustAbilityScore(operative.id, key, direction)
+                    }
+                    onWeaponChange={(weaponIndex, field, value) =>
+                      updateWeapon(operative.id, weaponIndex, field, value)
+                    }
+                    onReplaceWeapon={(weaponIndex, weapon) =>
+                      replaceWeapon(operative.id, weaponIndex, weapon)
+                    }
+                    onAddWeapon={(weapon) => addWeapon(operative.id, weapon)}
+                    onRemoveWeapon={(weaponIndex) => removeWeapon(operative.id, weaponIndex)}
+                    weaponOptions={weaponOptions}
+                    officialOperatives={officialOperatives}
+                    onCopyFromOperative={(key) => handleCopyFromOperative(operative.id, key)}
+                    copyLoading={operativeCopyId === operative.id}
+                    weaponsResetKey={weaponsResetVersions[operative.id] ?? 0}
+                  />
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
       </div>
-    </div>
+    </>
   )
 }

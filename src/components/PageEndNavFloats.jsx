@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
+import useBlackfangMainSectionInsets from '../hooks/useBlackfangMainSectionInsets'
 import useFooterClearance from '../hooks/useFooterClearance'
 import usePageEndReached from '../hooks/usePageEndReached'
 import useScrollPastThreshold from '../hooks/useScrollPastThreshold'
@@ -43,6 +44,7 @@ export default function PageEndNavFloats({ variant = 'portfolio' }) {
     variant === 'portfolio' ? '.portfolio-site__footer' : null,
     pathname,
   )
+  const mainInsets = useBlackfangMainSectionInsets(variant === 'blackfang' ? pathname : '')
 
   const showTop = scrolledPast
   const showParent = atPageEnd && parent
@@ -54,12 +56,19 @@ export default function PageEndNavFloats({ variant = 'portfolio' }) {
   }
 
   const themeClass = variant === 'blackfang' ? 'page-end-nav--blackfang' : 'page-end-nav--portfolio'
-  const bottomOffset = `calc(${BASE_BOTTOM_REM}rem + ${footerClearance}px)`
+  const navStyle =
+    variant === 'blackfang'
+      ? {
+          '--page-end-nav-bottom': `${mainInsets.bottomPx}px`,
+          '--page-end-nav-left': `${mainInsets.leftPx}px`,
+          '--page-end-nav-right': `${mainInsets.rightPx}px`,
+        }
+      : { '--page-end-nav-bottom': `calc(${BASE_BOTTOM_REM}rem + ${footerClearance}px)` }
 
   return (
     <div
       className={`page-end-nav ${themeClass}`}
-      style={{ '--page-end-nav-bottom': bottomOffset }}
+      style={navStyle}
       aria-live="polite"
     >
       {showParent ? (

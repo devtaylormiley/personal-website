@@ -47,6 +47,36 @@
   --bf-phosphor-violet-border: #9d6dd4;
   --bf-phosphor-violet-glow: rgb(183 148 246 / 0.35);
   --bf-phosphor-violet-bg: rgb(183 148 246 / 0.08);
+  --bf-phosphor-rose: #ff6e9e;
+  --bf-phosphor-rose-bright: #ff9ec4;
+  --bf-phosphor-rose-dim: #8a2848;
+  --bf-phosphor-rose-border: #d45682;
+  --bf-phosphor-rose-glow: rgb(255 110 158 / 0.4);
+  --bf-phosphor-rose-bg: rgb(255 110 158 / 0.08);
+  --bf-phosphor-lime: #b8ff3d;
+  --bf-phosphor-lime-bright: #d4ff7a;
+  --bf-phosphor-lime-dim: #4a6618;
+  --bf-phosphor-lime-border: #8acc28;
+  --bf-phosphor-lime-glow: rgb(184 255 61 / 0.4);
+  --bf-phosphor-lime-bg: rgb(184 255 61 / 0.08);
+  --bf-phosphor-teal: #3dd4b8;
+  --bf-phosphor-teal-bright: #7ae8d4;
+  --bf-phosphor-teal-dim: #1a6658;
+  --bf-phosphor-teal-border: #2ab89e;
+  --bf-phosphor-teal-glow: rgb(61 212 184 / 0.4);
+  --bf-phosphor-teal-bg: rgb(61 212 184 / 0.08);
+  --bf-phosphor-gold: #ffc947;
+  --bf-phosphor-gold-bright: #ffe082;
+  --bf-phosphor-gold-dim: #806820;
+  --bf-phosphor-gold-border: #e6a820;
+  --bf-phosphor-gold-glow: rgb(255 201 71 / 0.4);
+  --bf-phosphor-gold-bg: rgb(255 201 71 / 0.08);
+  --bf-phosphor-magenta: #e066ff;
+  --bf-phosphor-magenta-bright: #f0a0ff;
+  --bf-phosphor-magenta-dim: #702880;
+  --bf-phosphor-magenta-border: #c44de0;
+  --bf-phosphor-magenta-glow: rgb(224 102 255 / 0.38);
+  --bf-phosphor-magenta-bg: rgb(224 102 255 / 0.08);
   --bf-danger: #ff6b6b;
   --bf-font-display: 'VT323', 'IBM Plex Mono', monospace;
   --bf-font-mono: 'IBM Plex Mono', 'Consolas', 'Courier New', monospace;
@@ -544,6 +574,51 @@
   --bf-item-bg: var(--bf-phosphor-violet-bg);
 }
 
+.bf-tone-rose {
+  --bf-item: var(--bf-phosphor-rose);
+  --bf-item-bright: var(--bf-phosphor-rose-bright);
+  --bf-item-dim: var(--bf-phosphor-rose-dim);
+  --bf-item-border: var(--bf-phosphor-rose-border);
+  --bf-item-glow: var(--bf-phosphor-rose-glow);
+  --bf-item-bg: var(--bf-phosphor-rose-bg);
+}
+
+.bf-tone-lime {
+  --bf-item: var(--bf-phosphor-lime);
+  --bf-item-bright: var(--bf-phosphor-lime-bright);
+  --bf-item-dim: var(--bf-phosphor-lime-dim);
+  --bf-item-border: var(--bf-phosphor-lime-border);
+  --bf-item-glow: var(--bf-phosphor-lime-glow);
+  --bf-item-bg: var(--bf-phosphor-lime-bg);
+}
+
+.bf-tone-teal {
+  --bf-item: var(--bf-phosphor-teal);
+  --bf-item-bright: var(--bf-phosphor-teal-bright);
+  --bf-item-dim: var(--bf-phosphor-teal-dim);
+  --bf-item-border: var(--bf-phosphor-teal-border);
+  --bf-item-glow: var(--bf-phosphor-teal-glow);
+  --bf-item-bg: var(--bf-phosphor-teal-bg);
+}
+
+.bf-tone-gold {
+  --bf-item: var(--bf-phosphor-gold);
+  --bf-item-bright: var(--bf-phosphor-gold-bright);
+  --bf-item-dim: var(--bf-phosphor-gold-dim);
+  --bf-item-border: var(--bf-phosphor-gold-border);
+  --bf-item-glow: var(--bf-phosphor-gold-glow);
+  --bf-item-bg: var(--bf-phosphor-gold-bg);
+}
+
+.bf-tone-magenta {
+  --bf-item: var(--bf-phosphor-magenta);
+  --bf-item-bright: var(--bf-phosphor-magenta-bright);
+  --bf-item-dim: var(--bf-phosphor-magenta-dim);
+  --bf-item-border: var(--bf-phosphor-magenta-border);
+  --bf-item-glow: var(--bf-phosphor-magenta-glow);
+  --bf-item-bg: var(--bf-phosphor-magenta-bg);
+}
+
 .bf-input,
 .blackfang-campaign .bf-input,
 .blackfang-campaign .bf-field-input {
@@ -665,6 +740,53 @@
   right: 4px;
   border-left: none;
   border-top: none;
+}
+
+.blackfang-campaign .operative-card.bf-tone-green,
+.blackfang-campaign .operative-card.bf-tone-amber,
+.blackfang-campaign .operative-card.bf-tone-orange,
+.blackfang-campaign .operative-card.bf-tone-cyan,
+.blackfang-campaign .operative-card.bf-tone-violet {
+  border-color: var(--bf-item-border) !important;
+  box-shadow:
+    inset 0 0 40px var(--bf-item-bg),
+    0 0 20px rgb(0 0 0 / 0.8) !important;
+}
+
+.blackfang-campaign .operative-card.bf-tone-green::before,
+.blackfang-campaign .operative-card.bf-tone-green::after,
+.blackfang-campaign .operative-card.bf-tone-amber::before,
+.blackfang-campaign .operative-card.bf-tone-amber::after,
+.blackfang-campaign .operative-card.bf-tone-orange::before,
+.blackfang-campaign .operative-card.bf-tone-orange::after,
+.blackfang-campaign .operative-card.bf-tone-cyan::before,
+.blackfang-campaign .operative-card.bf-tone-cyan::after,
+.blackfang-campaign .operative-card.bf-tone-violet::before,
+.blackfang-campaign .operative-card.bf-tone-violet::after {
+  border-color: var(--bf-item);
+  opacity: 0.9;
+}
+
+.blackfang-campaign .operative-card.bf-tone-green .operative-card-name,
+.blackfang-campaign .operative-card.bf-tone-amber .operative-card-name,
+.blackfang-campaign .operative-card.bf-tone-orange .operative-card-name,
+.blackfang-campaign .operative-card.bf-tone-cyan .operative-card-name,
+.blackfang-campaign .operative-card.bf-tone-violet .operative-card-name {
+  border-bottom-color: var(--bf-item-border) !important;
+}
+
+.blackfang-campaign .operative-card.bf-tone-green .operative-card-name h3,
+.blackfang-campaign .operative-card.bf-tone-green .operative-card-name input,
+.blackfang-campaign .operative-card.bf-tone-amber .operative-card-name h3,
+.blackfang-campaign .operative-card.bf-tone-amber .operative-card-name input,
+.blackfang-campaign .operative-card.bf-tone-orange .operative-card-name h3,
+.blackfang-campaign .operative-card.bf-tone-orange .operative-card-name input,
+.blackfang-campaign .operative-card.bf-tone-cyan .operative-card-name h3,
+.blackfang-campaign .operative-card.bf-tone-cyan .operative-card-name input,
+.blackfang-campaign .operative-card.bf-tone-violet .operative-card-name h3,
+.blackfang-campaign .operative-card.bf-tone-violet .operative-card-name input {
+  color: var(--bf-item-bright) !important;
+  text-shadow: 0 0 8px var(--bf-item-glow);
 }
 
 .blackfang-campaign .operative-card-name {
@@ -969,6 +1091,22 @@
   font-family: var(--bf-font-mono);
   font-size: 0.6875rem;
   letter-spacing: 0.1em;
+}
+
+.blackfang-campaign .bf-chip.bf-tone-green,
+.blackfang-campaign .bf-chip.bf-tone-amber,
+.blackfang-campaign .bf-chip.bf-tone-orange,
+.blackfang-campaign .bf-chip.bf-tone-cyan,
+.blackfang-campaign .bf-chip.bf-tone-violet,
+.blackfang-campaign .bf-chip.bf-tone-rose,
+.blackfang-campaign .bf-chip.bf-tone-lime,
+.blackfang-campaign .bf-chip.bf-tone-teal,
+.blackfang-campaign .bf-chip.bf-tone-gold,
+.blackfang-campaign .bf-chip.bf-tone-magenta {
+  border-color: var(--bf-item-border);
+  background: var(--bf-item-bg);
+  color: var(--bf-item-bright);
+  text-shadow: 0 0 6px var(--bf-item-glow);
 }
 
 .blackfang-campaign .bf-field-label {
@@ -1695,6 +1833,7 @@
 .bf-campaign-main {
   flex: 1;
   min-width: 0;
+  position: relative;
 }
 
 .bf-campaign-main .bf-campaign-terminal {

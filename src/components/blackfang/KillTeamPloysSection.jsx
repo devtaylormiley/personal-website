@@ -5,7 +5,7 @@ import {
   PLOYS_SECTION_TITLE,
   resolveKillTeamPloys,
 } from '../../lib/killTeamPloys'
-import PloyChips from './PloyChips'
+import PloysTable from './PloysTable'
 
 function SectionHeading({ title, compact }) {
   return <p className={`bf-mono-label mb-2 ${compact ? 'text-[10px]' : ''}`}>{title}</p>
@@ -31,7 +31,7 @@ export default function KillTeamPloysSection({
       <label className={`block w-full min-w-0 ${className}`}>
         <span className="bf-mono-label mb-1 block">{PLOYS_SECTION_TITLE}</span>
         <span className="bf-hint mb-2 block text-xs">
-          One ploy per block. Use &quot;Name: description&quot; for tooltip text.
+          One ploy per block. Use &quot;Name: description&quot; for each entry.
         </span>
         <textarea
           value={draft}
@@ -51,11 +51,7 @@ export default function KillTeamPloysSection({
   return (
     <div className={`w-full min-w-0 ${className}`}>
       <SectionHeading title={PLOYS_SECTION_TITLE} compact={compact} />
-      <div
-        className={`w-full rounded-lg border border-[var(--bf-border)] bg-[rgb(4_10_6/0.6)] ${compact ? 'px-3 py-2' : 'px-4 py-3'}`}
-      >
-        <PloyChips ploys={ploys} compact={compact} />
-      </div>
+      <PloysTable ploys={ploys} />
     </div>
   )
 }

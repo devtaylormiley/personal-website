@@ -7,6 +7,20 @@ import { portfolioImageUrl } from '../lib/assetImages'
 
 const projectCards = [
   {
+    slug: 'schema-bridge',
+    title: 'Schema Bridge - Agentic Development',
+    description:
+      'This was made in less than a day. It is a show case of how agentic development can rapidly produce new workflows or features. A simple python pipeline takes three different file export types and standardizes their schema for data migration.',
+    tags: ['Human-in-the-loop', 'Python', 'Pydantic', 'Hybrid ETL', 'AI mapping'],
+    cta: 'View migration',
+    imageSrc: portfolioImageUrl('project-schema-bridge-new.png'),
+    imageFallback: projectCardArtUrl({
+      title: 'Schema Bridge',
+      subtitle: 'Human-in-the-loop migration',
+      accent: '#14b8a6',
+    }),
+  },
+  {
     slug: 'ux',
     title: 'Career Wins',
     description:
@@ -18,20 +32,6 @@ const projectCards = [
       title: 'UI/UX Improvements',
       subtitle: 'Product experience',
       accent: '#8b5cf6',
-    }),
-  },
-  {
-    slug: 'schema-bridge',
-    title: 'Schema Bridge - Agentic Development',
-    description:
-      'This was made in a day. It is a show case of how agentic development can rapidly produce new workflows or features. A simple python pipeline takes three different file export types, standardizes their schema for data migration.',
-    tags: ['Human-in-the-loop', 'Python', 'Pydantic', 'Hybrid ETL', 'AI mapping'],
-    cta: 'View migration',
-    imageSrc: portfolioImageUrl('project-schema-bridge-new.png'),
-    imageFallback: projectCardArtUrl({
-      title: 'Schema Bridge',
-      subtitle: 'Human-in-the-loop migration',
-      accent: '#14b8a6',
     }),
   },
   {

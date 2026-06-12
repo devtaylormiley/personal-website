@@ -1,3 +1,5 @@
+import { bfToneClass } from '../../lib/blackfangNavigation'
+import { getRuleChipTone } from '../../lib/ruleChipTones'
 import { describeWeaponRule, splitWeaponRules } from '../../lib/weaponRules'
 
 export default function WeaponRulesChips({
@@ -17,7 +19,7 @@ export default function WeaponRulesChips({
         <span
           key={`${ruleKeyPrefix}-${index}-${rule}`}
           title={describeWeaponRule(rule)}
-          className={`bf-chip cursor-help ${compact ? 'px-1.5 py-px text-[10px]' : 'px-2 py-0.5 text-xs'}`}
+          className={`bf-chip cursor-help ${bfToneClass(getRuleChipTone(rule, index))} ${compact ? 'px-1.5 py-px text-[10px]' : 'px-2 py-0.5 text-xs'}`}
         >
           {rule}
         </span>

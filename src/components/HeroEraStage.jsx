@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { heroContent } from '../data/homeContent'
 import { portraitUrl } from '../lib/heroPortrait'
 import SocialLinkButtons from './SocialLinkButtons'
@@ -32,12 +33,12 @@ export default function HeroEraStage({ className = '' }) {
 
           <div className="hero-era__actions mt-8 sm:mt-10">
             <div className="hero-era__action-buttons">
-              <a
-                href="#projects"
+              <Link
+                to={heroContent.primaryCta.to}
                 className="hero-era__btn-primary cursor-pointer rounded-full px-6 py-3 text-sm font-medium transition-colors sm:py-2.5"
               >
-                View my work
-              </a>
+                {heroContent.primaryCta.label}
+              </Link>
               <a
                 href="#contact"
                 className="hero-era__btn-secondary cursor-pointer rounded-full px-6 py-3 text-sm font-medium transition-colors sm:py-2.5"

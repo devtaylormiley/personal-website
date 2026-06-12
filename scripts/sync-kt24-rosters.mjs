@@ -111,9 +111,11 @@ function transformPloys(detail) {
   return (detail.ploys ?? [])
     .filter((p) => !p.isFactionRule)
     .map((p) => ({
+      ployId: p.ployId ?? null,
       name: p.ployName?.trim() ?? '',
       description: stripMarkup(p.description ?? ''),
       type: ployTypeFromApi(p.ployType),
+      cpCost: p.ployType === 'S' ? 0 : p.ployType === 'T' ? 1 : null,
     }))
     .filter((p) => p.name)
 }

@@ -1,14 +1,4 @@
-import { CAMPAIGN_HUB_PATH } from './blackfangNavigation'
-
-const BLACKFANG_RESERVED_SEGMENTS = new Set([
-  'about',
-  'party',
-  'kt24-data',
-  'kill-teams',
-  'section-3',
-  'homebrew-operative',
-  'deathwatch-veterans',
-])
+import { CAMPAIGN_HUB_PATH, isKillTeamSlugPage } from './blackfangNavigation'
 
 function normalizePath(pathname) {
   if (!pathname || pathname === '/') return '/'
@@ -25,13 +15,6 @@ export function pathHasChildRoutes(pathname) {
   if (path === `${CAMPAIGN_HUB_PATH}/kt24-data`) return true
 
   return false
-}
-
-function isKillTeamSlugPage(pathname) {
-  const match = pathname.match(/^\/projects\/blackfang-campaign\/([^/]+)$/)
-  if (!match) return false
-  const segment = match[1]
-  return !BLACKFANG_RESERVED_SEGMENTS.has(segment) && !segment.startsWith('homebrew')
 }
 
 /**

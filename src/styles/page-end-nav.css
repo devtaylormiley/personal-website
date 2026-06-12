@@ -101,6 +101,15 @@
 }
 
 /* Blackfang terminal */
+.page-end-nav--blackfang .page-end-nav__fab--top {
+  right: var(--page-end-nav-right, max(1rem, env(safe-area-inset-right, 0px)));
+}
+
+.page-end-nav--blackfang .page-end-nav__fab--parent {
+  left: var(--page-end-nav-left, max(1rem, env(safe-area-inset-left, 0px)));
+  max-width: min(16rem, calc(100% - var(--page-end-nav-left, 1rem) - var(--page-end-nav-right, 1rem) - 3.5rem));
+}
+
 .page-end-nav--blackfang .page-end-nav__fab {
   border: 1px solid var(--bf-border-bright, #33a357);
   border-radius: 0;
@@ -131,11 +140,11 @@
     min-height: 3rem;
   }
 
-  .page-end-nav__fab--top {
+  .page-end-nav:not(.page-end-nav--blackfang) .page-end-nav__fab--top {
     right: max(1.5rem, env(safe-area-inset-right, 0px));
   }
 
-  .page-end-nav__fab--parent {
+  .page-end-nav:not(.page-end-nav--blackfang) .page-end-nav__fab--parent {
     left: max(1.5rem, env(safe-area-inset-left, 0px));
     max-width: min(16rem, calc(100vw - 6rem));
   }
