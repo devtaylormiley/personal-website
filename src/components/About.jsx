@@ -10,6 +10,15 @@ export default function About() {
       title={aboutContent.title}
       lead={aboutContent.lead}
     >
+      <ul className="about-highlights">
+        {aboutContent.highlights.map(({ label, value }) => (
+          <li key={label} className="home-panel about-highlight">
+            <p className="about-highlight__label">{label}</p>
+            <p className="about-highlight__value">{value}</p>
+          </li>
+        ))}
+      </ul>
+
       <div className="about-grid">
         <div className="about-story">
           {aboutContent.paragraphs.map((paragraph, index) => (
@@ -17,9 +26,9 @@ export default function About() {
           ))}
         </div>
 
-        <ul className="about-pillars">
+        <ul className="about-pillars about-pillars--carousel">
           {aboutContent.pillars.map((pillar) => (
-            <li key={pillar.title}>
+            <li key={pillar.title} className="about-pillars__item">
               <Link to={pillar.href} className="home-panel home-panel--interactive about-pillar">
                 <p className="about-pillar__title">{pillar.title}</p>
                 <p className="about-pillar__description">{pillar.description}</p>
@@ -32,15 +41,6 @@ export default function About() {
           ))}
         </ul>
       </div>
-
-      <ul className="about-highlights">
-        {aboutContent.highlights.map(({ label, value }) => (
-          <li key={label} className="home-panel about-highlight">
-            <p className="about-highlight__label">{label}</p>
-            <p className="about-highlight__value">{value}</p>
-          </li>
-        ))}
-      </ul>
     </HomeSection>
   )
 }

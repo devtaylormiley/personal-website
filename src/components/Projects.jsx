@@ -68,6 +68,7 @@ export default function Projects() {
                 alt=""
                 aspect="video"
                 badge={project.featured ? 'Featured' : undefined}
+                className={project.featured ? 'project-card__media' : undefined}
               />
               <div className="project-card__body">
                 <h3 className="project-card__title">{project.title}</h3>
@@ -99,13 +100,16 @@ export default function Projects() {
               {project.slug ? (
                 <Link
                   to={`/projects/${project.slug}`}
-                  className="home-panel home-panel--interactive project-card"
+                  className={`home-panel home-panel--interactive project-card${project.featured ? ' project-card--featured' : ''}`}
                   aria-label={`${project.title} — ${project.cta ?? 'Open project'}`}
                 >
                   {body}
                 </Link>
               ) : (
-                <div className="home-panel project-card" aria-disabled="true">
+                <div
+                  className={`home-panel project-card${project.featured ? ' project-card--featured' : ''}`}
+                  aria-disabled="true"
+                >
                   {body}
                 </div>
               )}

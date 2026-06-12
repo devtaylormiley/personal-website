@@ -56,19 +56,21 @@ export default function HeroEraStage({ className = '' }) {
           <p className="hero-era__role">{heroContent.role}</p>
           <p className="hero-era__tagline mt-6">{heroContent.tagline}</p>
 
-          <div className="hero-era__actions mt-10">
-            <a
-              href="#projects"
-              className="hero-era__btn-primary cursor-pointer rounded-full px-6 py-2.5 text-sm font-medium transition-colors"
-            >
-              View my work
-            </a>
-            <a
-              href="#contact"
-              className="hero-era__btn-secondary cursor-pointer rounded-full px-6 py-2.5 text-sm font-medium transition-colors"
-            >
-              Get in touch
-            </a>
+          <div className="hero-era__actions mt-8 sm:mt-10">
+            <div className="hero-era__action-buttons">
+              <a
+                href="#projects"
+                className="hero-era__btn-primary cursor-pointer rounded-full px-6 py-3 text-sm font-medium transition-colors sm:py-2.5"
+              >
+                View my work
+              </a>
+              <a
+                href="#contact"
+                className="hero-era__btn-secondary cursor-pointer rounded-full px-6 py-3 text-sm font-medium transition-colors sm:py-2.5"
+              >
+                Get in touch
+              </a>
+            </div>
             <ul className="hero-era__social">
               {heroContent.socialLinks.map(({ label, href }) => (
                 <li key={label}>

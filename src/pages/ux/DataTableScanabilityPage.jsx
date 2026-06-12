@@ -8,14 +8,15 @@ const fixes = [
   'Per-column filters and sort live in the sticky header so narrowing the queue and reading results happen in the same place',
   'Complete, edit, download, and restart sit on every row so finishing work never depends on which tab you started on',
   'Zebra rows, color-coded status, monospaced numerics, and em-dash placeholders make long queues easier to scan',
+  'Mobile-responsive layout — stacked row cards with collapsible filters on small screens; horizontal scroll with a sticky work-order column on tablet and desktop',
 ]
 
 export default function DataTableScanabilityPage() {
   const [view, setView] = useState('before')
 
   return (
-    <article className="scroll-mt-20 px-6 pt-28 pb-24">
-      <div className="mx-auto w-full max-w-7xl">
+    <article className="scroll-mt-20 px-4 pt-28 pb-24 sm:px-6">
+      <div className="mx-auto w-full min-w-0 max-w-7xl">
         <nav className="text-sm text-zinc-500" aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-2">
             <li>
@@ -126,6 +127,11 @@ export default function DataTableScanabilityPage() {
                 <li>
                   Sticky header keeps filters visible while scrolling; zebra rows, monospaced
                   numerics, and em-dash placeholders for missing values
+                </li>
+                <li>
+                  Mobile-responsive — on small screens, rows become labeled cards with a collapsible
+                  filters &amp; sort panel; on tablet and desktop, the full table scrolls horizontally
+                  with the work-order column pinned
                 </li>
               </ul>
             </section>

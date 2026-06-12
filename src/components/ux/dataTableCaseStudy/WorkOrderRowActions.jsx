@@ -1,7 +1,7 @@
 import ActionButton from '../../ui/ActionButton'
 
 const iconButtonClass =
-  'rounded border border-zinc-700 p-1 text-zinc-400 transition-colors hover:border-violet-500 hover:bg-violet-950/40 hover:text-zinc-100'
+  'rounded border border-zinc-700 p-1.5 text-zinc-400 transition-colors hover:border-violet-500 hover:bg-violet-950/40 hover:text-zinc-100 sm:p-1'
 
 export default function WorkOrderRowActions({
   row,

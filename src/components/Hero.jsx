@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[85svh] flex-col items-center justify-center overflow-hidden px-6 pt-28 pb-20"
+      className="home-hero relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-4 pt-[calc(4.25rem+1.25rem)] pb-14 sm:px-6 sm:pt-32 sm:pb-20"
     >
       <HeroEraStage />
       <div className="hero-scroll-cue" aria-hidden="true">

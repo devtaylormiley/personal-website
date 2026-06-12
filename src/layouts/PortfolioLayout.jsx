@@ -46,7 +46,7 @@ export default function PortfolioLayout() {
         <main className="flex-1">
           <Outlet />
         </main>
-        <footer className="portfolio-site__footer border-t border-zinc-800/80 px-6 py-8 text-center text-sm text-zinc-400">
+        <footer className="portfolio-site__footer border-t border-zinc-800/80 px-4 py-6 text-center text-sm text-zinc-400 sm:px-6 sm:py-8">
           <p>© {new Date().getFullYear()} Taylor Miley. Built with React & Tailwind CSS.</p>
         </footer>
       </div>
