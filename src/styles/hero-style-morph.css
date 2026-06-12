@@ -91,6 +91,47 @@
   padding-top: 0;
 }
 
+/* Mobile hero — document flow so portrait clears navbar and social icons clear About */
+@media (max-width: 959px) {
+  .home-hero {
+    justify-content: flex-start;
+    overflow: visible;
+    padding-top: calc(var(--site-navbar-height) + env(safe-area-inset-top, 0px) + 1.25rem);
+    padding-bottom: clamp(3rem, 10vw, 4.5rem);
+    min-height: 100svh;
+    min-height: 100dvh;
+  }
+
+  .home-hero .hero-era__stage--editorial {
+    position: relative;
+    inset: auto;
+    flex: 0 1 auto;
+    justify-content: flex-start;
+    overflow: visible;
+    width: 100%;
+    padding-inline: 0;
+  }
+
+  .hero-layout--editorial .hero-era__actions {
+    gap: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .hero-layout--editorial .hero-era__social {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .home-hero {
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: calc(var(--site-navbar-height) + 1.5rem);
+    padding-bottom: 5rem;
+  }
+}
+
 .hero-era--switching .hero-era__stage {
   opacity: 0.72;
 }

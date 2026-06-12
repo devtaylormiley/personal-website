@@ -3,6 +3,7 @@ export default function HomeSection({
   eyebrow,
   title,
   lead,
+  headerAfterTitle,
   align = 'left',
   showDivider = true,
   className = '',
@@ -19,6 +20,9 @@ export default function HomeSection({
         <header className="home-section__header">
           <p className="home-section__eyebrow">{eyebrow}</p>
           <h2 className="home-section__title">{title}</h2>
+          {headerAfterTitle ? (
+            <div className="home-section__header-addon">{headerAfterTitle}</div>
+          ) : null}
           {lead ? <p className="home-section__lead">{lead}</p> : null}
         </header>
         {children}

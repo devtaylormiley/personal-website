@@ -10,7 +10,11 @@
     "preview": "vite preview",
     "sync:kt24": "node scripts/sync-kt24-rosters.mjs",
     "sync:operative-images": "node scripts/sync-operative-images.mjs",
-    "migrate:schema-bridge": "cd python && python -m schema_bridge migrate"
+    "migrate:schema-bridge": "cd python && python -m schema_bridge migrate",
+    "supabase:link": "supabase link --project-ref haalhagsofqacverufpp",
+    "supabase:contact-db": "supabase db query --linked -f supabase/contact_inquiries.sql",
+    "supabase:contact-webhook": "supabase db query --linked -f supabase/contact_inquiry_email_webhook.sql",
+    "supabase:deploy-contact-email": "supabase functions deploy send-contact-email --no-verify-jwt"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.106.2",

@@ -42,6 +42,20 @@
   margin-inline: auto;
 }
 
+.home-section__header-addon {
+  margin-top: 1rem;
+}
+
+.home-section--center .home-section__header-addon {
+  display: flex;
+  justify-content: center;
+}
+
+.home-section__social {
+  justify-content: center;
+  margin: 0;
+}
+
 .home-section__eyebrow {
   font-size: 0.75rem;
   font-weight: 600;
@@ -477,58 +491,9 @@
   }
 }
 
-.hero-scroll-cue {
-  position: absolute;
-  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
-  left: 50%;
-  z-index: 5;
-  display: flex;
-  transform: translateX(-50%);
-  flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
-  font-size: 0.6875rem;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--hero-fg-muted);
-  opacity: 0.65;
-  pointer-events: none;
-}
-
-.hero-scroll-cue__icon {
-  font-size: 1rem;
-  line-height: 1;
-  animation: hero-scroll-bob 2.4s ease-in-out infinite;
-}
-
-@keyframes hero-scroll-bob {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(0.35rem);
-  }
-}
-
-@media (min-width: 960px) {
-  .hero-scroll-cue {
-    display: none;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .hero-scroll-cue__icon {
-    animation: none;
-  }
-
-  .site-navbar__panel {
-    transition: none;
-  }
-
-  .site-navbar__backdrop {
+  .site-navbar-mobile-menu__panel,
+  .site-navbar-mobile-menu__backdrop {
     transition: none;
   }
 }

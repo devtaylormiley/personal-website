@@ -32,4 +32,7 @@ export const contactShowcaseCopy = {
   prevLabel: 'Previous form style',
   nextLabel: 'Next form style',
   toggleModeLabel: 'Toggle light or dark mode for current style',
+  submitLabel: 'Send message',
+  submittingLabel: 'Sending…',
+  successMessage: 'Thanks—your message is in. I will get back to you soon.',
 }

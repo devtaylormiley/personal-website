@@ -22,7 +22,24 @@ Set for **Production** (and Preview if you use branch deploys):
 | `VITE_SUPABASE_URL` | From [Supabase](https://supabase.com) project settings |
 | `VITE_SUPABASE_ANON_KEY` | Anon / publishable key only (never service role) |
 
-Copy names from [`.env.example`](.env.example). The site runs without these; Blackfang sign-in and homebrew CRUD need them.
+Copy names from [`.env.example`](.env.example). The site runs without these; Blackfang sign-in, homebrew CRUD, and the contact form submission need them.
+
+### Contact form email
+
+The form saves to Supabase and triggers the `send-contact-email` Edge Function (Resend → `devtaylormiley@gmail.com`). Full setup: [`supabase/README.md`](supabase/README.md).
+
+Quick checklist after cloning:
+
+```bash
+npm run supabase:link          # once, if not linked
+npm run supabase:contact-db
+npm run supabase:contact-webhook
+npm run supabase:deploy-contact-email
+```
+
+Then set Resend secrets (see [`scripts/setup-contact-email.ps1`](scripts/setup-contact-email.ps1)). **No Resend keys go in Vercel** — only `VITE_SUPABASE_*` above.
+
+`CONTACT_FROM_EMAIL` must use a domain verified in Resend. Until your domain is verified, use `onboarding@resend.dev` (test sender). Current production sender is configured in Supabase secrets, not in this repo.
 
 ## Local verify before deploy
 

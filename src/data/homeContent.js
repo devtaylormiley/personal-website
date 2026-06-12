@@ -5,9 +5,9 @@ export const heroContent = {
   tagline:
     'I build clear, accessible interfaces—and ship agentic tools where humans stay in the loop on the decisions that matter.',
   socialLinks: [
-    { label: 'GitHub', href: 'https://github.com' },
-    { label: 'LinkedIn', href: 'https://linkedin.com' },
-    { label: 'Email', href: 'mailto:hello@example.com' },
+    { label: 'GitHub', href: 'https://github.com/devtaylormiley' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/taylor-miley-136620108/' },
+    { label: 'Email', href: 'mailto:devtaylormiley@gmail.com' },
   ],
 }
 
@@ -52,5 +52,7 @@ export const projectsContent = {
 export const contactContent = {
   eyebrow: 'Contact',
   title: "Let's work together",
-  lead: 'Tell me about your project—or just say hello. I read every message.',
+  lead: 'Have a product challenge, a role in mind, or a collaboration idea? Send a note below—I read every message personally.',
+  showcaseNote:
+    'The form below is a live demo of four visual treatments. Pick a style, send a real message, and it lands in my inbox queue.',
 }
