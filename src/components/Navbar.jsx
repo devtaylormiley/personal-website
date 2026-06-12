@@ -5,6 +5,7 @@ import { Link, useLocation } from 'react-router-dom'
 const navLinks = [
   { label: 'About', href: '/#about' },
   { label: 'Projects', href: '/#projects' },
+  { label: 'Resume', to: '/resume' },
   { label: 'Contact', href: '/#contact' },
 ]
 
@@ -70,16 +71,27 @@ export default function Navbar({ minimal = false }) {
             >
               <p className="site-navbar-mobile-menu__label">Menu</p>
               <ul className="site-navbar-mobile-menu__links">
-                {navLinks.map(({ label, href }) => (
-                  <li key={href}>
-                    <a
-                      href={linkHref(href)}
-                      className="site-navbar-mobile-menu__link"
-                      tabIndex={menuOpen ? 0 : -1}
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      {label}
-                    </a>
+                {navLinks.map(({ label, href, to }) => (
+                  <li key={href ?? to}>
+                    {to ? (
+                      <Link
+                        to={to}
+                        className="site-navbar-mobile-menu__link"
+                        tabIndex={menuOpen ? 0 : -1}
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        {label}
+                      </Link>
+                    ) : (
+                      <a
+                        href={linkHref(href)}
+                        className="site-navbar-mobile-menu__link"
+                        tabIndex={menuOpen ? 0 : -1}
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        {label}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -108,14 +120,23 @@ export default function Navbar({ minimal = false }) {
           {!minimal && (
             <>
               <ul className="site-navbar__links hidden items-center gap-6 md:flex md:gap-8">
-                {navLinks.map(({ label, href }) => (
-                  <li key={href}>
-                    <a
-                      href={linkHref(href)}
-                      className="site-navbar__link cursor-pointer text-sm text-zinc-300 transition-colors hover:text-zinc-50"
-                    >
-                      {label}
-                    </a>
+                {navLinks.map(({ label, href, to }) => (
+                  <li key={href ?? to}>
+                    {to ? (
+                      <Link
+                        to={to}
+                        className="site-navbar__link cursor-pointer text-sm text-zinc-300 transition-colors hover:text-zinc-50"
+                      >
+                        {label}
+                      </Link>
+                    ) : (
+                      <a
+                        href={linkHref(href)}
+                        className="site-navbar__link cursor-pointer text-sm text-zinc-300 transition-colors hover:text-zinc-50"
+                      >
+                        {label}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

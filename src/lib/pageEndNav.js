@@ -51,6 +51,10 @@ export function getParentRouteNav(pathname) {
     return { to: '/#projects', label: 'Projects' }
   }
 
+  if (path === '/resume') {
+    return { to: '/', label: 'Home' }
+  }
+
   if (path === `${CAMPAIGN_HUB_PATH}/about` || path === `${CAMPAIGN_HUB_PATH}/party`) {
     return { to: CAMPAIGN_HUB_PATH, label: 'Blackfang Campaign' }
   }

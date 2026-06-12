@@ -1,7 +1,9 @@
+import { PROFESSIONAL_TITLE } from './siteProfile'
+
 export const heroContent = {
   eyebrow: "Hello, I'm",
   name: 'Taylor Miley',
-  role: 'Frontend engineer · UI & agentic tooling',
+  role: PROFESSIONAL_TITLE,
   tagline:
     'I build clear, accessible interfaces—and ship agentic tools where humans stay in the loop on the decisions that matter.',
   socialLinks: [

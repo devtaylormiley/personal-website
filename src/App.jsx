@@ -16,6 +16,7 @@ import ErrorLoadingPatternsPage from './pages/ux/ErrorLoadingPatternsPage'
 import AccessibilityCoreFlowsPage from './pages/ux/AccessibilityCoreFlowsPage'
 import UxImprovementsPage from './pages/ux/UxImprovementsPage'
 import SchemaBridgePage from './pages/SchemaBridgePage'
+import ResumePage from './pages/ResumePage'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<PortfolioLayout />}>
           <Route index element={<HomePage />} />
+          <Route path="resume" element={<ResumePage />} />
           <Route path="projects/ux" element={<UxImprovementsPage />} />
           <Route path="projects/ux/checkout-funnel-simplification" element={<CheckoutFunnelSimplificationPage />} />
           <Route path="projects/ux/onboarding-empty-states" element={<OnboardingEmptyStatesPage />} />
