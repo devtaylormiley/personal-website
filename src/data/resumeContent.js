@@ -76,5 +76,5 @@ export const resumeContent = {
       dates: '2012 – 2014',
     },
   ],
-  skills: ['Vue', 'Git', 'Accessibility', 'C#', 'Azure', 'SQL', '.NET', 'Angular'],
+  skills: ['Vue', 'Angular', 'React', 'TypeScript', 'Tailwind', '.NET', 'SQL', 'Python'],
 }
