@@ -6,15 +6,10 @@ const CATEGORIES = ['Mechanical', 'Electrical', 'Safety', 'Fleet', 'HVAC', 'Plum
 const fieldClass =
   'w-full rounded-lg border border-zinc-700 bg-zinc-950 px-3 py-2 text-sm text-zinc-200 outline-none focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/30'
 
-function queueItemKey(item) {
-  return `${item.source}-${item.row_index}`
-}
+const fieldLabelClass = 'mb-1 block text-xs text-zinc-400'
 
-function confidenceTone(confidence) {
-  if (confidence >= 0.9) return 'text-emerald-400 border-emerald-500/30 bg-emerald-500/10'
-  if (confidence >= 0.8) return 'text-amber-300 border-amber-500/30 bg-amber-500/10'
-  return 'text-red-300 border-red-500/30 bg-red-500/10'
-}
+const legacyValueClass =
+  'break-all border-l-2 border-zinc-700/70 py-0.5 pl-3 text-sm text-zinc-300'
 
 function LegacySnapshot({ legacy }) {
   const entries = Object.entries(legacy ?? {}).filter(([, value]) => value != null && value !== '')
@@ -24,15 +19,25 @@ function LegacySnapshot({ legacy }) {
   }
 
   return (
-    <dl className="space-y-2">
+    <dl className="space-y-3">
       {entries.map(([key, value]) => (
-        <div key={key} className="grid gap-1 sm:grid-cols-[minmax(0,8rem)_1fr]">
-          <dt className="text-xs font-medium tracking-wide text-zinc-500 uppercase">{key}</dt>
-          <dd className="break-all text-sm text-zinc-300">{String(value)}</dd>
+        <div key={key}>
+          <dt className={fieldLabelClass}>{key}</dt>
+          <dd className={legacyValueClass}>{String(value)}</dd>
         </div>
       ))}
     </dl>
   )
+}
+
+function queueItemKey(item) {
+  return `${item.source}-${item.row_index}`
+}
+
+function confidenceTone(confidence) {
+  if (confidence >= 0.9) return 'text-emerald-400 border-emerald-500/30 bg-emerald-500/10'
+  if (confidence >= 0.8) return 'text-amber-300 border-amber-500/30 bg-amber-500/10'
+  return 'text-red-300 border-red-500/30 bg-red-500/10'
 }
 
 function ReviewStatusBadge({ status }) {
@@ -250,8 +255,8 @@ export default function ReviewQueueWorkbench({ items = [] }) {
               </div>
 
               {activeItem.decisions?.length ? (
-                <div className="mt-4 rounded-lg border border-violet-500/20 bg-violet-500/5 p-3">
-                  <p className="text-xs font-medium tracking-wide text-violet-300 uppercase">
+                <div className="mt-4 rounded-lg border border-zinc-700/80 bg-zinc-900/60 p-3">
+                  <p className="text-xs font-medium tracking-wide text-zinc-400 uppercase">
                     AI mapping decisions
                   </p>
                   <ul className="mt-2 space-y-1.5">
@@ -260,9 +265,9 @@ export default function ReviewQueueWorkbench({ items = [] }) {
                         <span className="text-violet-300">{decision.method}</span>
                         {' · '}
                         <span className="text-zinc-300">{decision.field}</span>:{' '}
-                        <span className="text-zinc-500">{decision.source_value ?? '—'}</span>
+                        <span className="text-amber-300/90">{decision.source_value ?? '—'}</span>
                         {' → '}
-                        <span className="text-zinc-200">{decision.target_value ?? '—'}</span>
+                        <span className="text-teal-300">{decision.target_value ?? '—'}</span>
                         {decision.reason ? (
                           <span className="text-zinc-500"> ({decision.reason})</span>
                         ) : null}
@@ -272,29 +277,29 @@ export default function ReviewQueueWorkbench({ items = [] }) {
                 </div>
               ) : null}
 
-              <div className="mt-6 grid gap-6 lg:grid-cols-2">
-                <div>
-                  <p className="text-xs font-medium tracking-wide text-zinc-500 uppercase">
+              <div className="mt-6 grid gap-6 lg:grid-cols-2 lg:items-stretch">
+                <div className="flex min-w-0 flex-col lg:h-full">
+                  <p className="text-xs font-medium tracking-wide text-amber-400/90 uppercase">
                     Legacy source row
                   </p>
-                  <div className="mt-2 rounded-lg border border-zinc-800 bg-zinc-950/60 p-3">
+                  <div className="mt-2 flex flex-1 flex-col rounded-lg border border-zinc-800 bg-zinc-950/60 p-3">
                     <LegacySnapshot legacy={activeItem.legacy} />
                   </div>
                 </div>
 
-                <div>
-                  <p className="text-xs font-medium tracking-wide text-zinc-500 uppercase">
-                    Normalize & approve
+                <div className="flex min-w-0 flex-col lg:h-full">
+                  <p className="text-xs font-medium tracking-wide text-teal-400 uppercase">
+                    Normalized target record
                   </p>
                   <form
-                    className="mt-2 space-y-3 rounded-lg border border-zinc-800 bg-zinc-950/60 p-3"
+                    className="mt-2 flex flex-1 flex-col space-y-3 rounded-lg border border-zinc-800 bg-zinc-950/60 p-3"
                     onSubmit={(event) => {
                       event.preventDefault()
                       handleApprove()
                     }}
                   >
                     <label className="block">
-                      <span className="mb-1 block text-xs text-zinc-400">Category</span>
+                      <span className={fieldLabelClass}>Category</span>
                       <select
                         value={draft.category ?? ''}
                         onChange={(event) =>
@@ -312,7 +317,7 @@ export default function ReviewQueueWorkbench({ items = [] }) {
                     </label>
 
                     <label className="block">
-                      <span className="mb-1 block text-xs text-zinc-400">Status</span>
+                      <span className={fieldLabelClass}>Status</span>
                       <select
                         value={draft.status ?? ''}
                         onChange={(event) =>
@@ -329,7 +334,7 @@ export default function ReviewQueueWorkbench({ items = [] }) {
                     </label>
 
                     <label className="block">
-                      <span className="mb-1 block text-xs text-zinc-400">Site</span>
+                      <span className={fieldLabelClass}>Site</span>
                       <input
                         type="text"
                         value={draft.site ?? ''}
@@ -342,7 +347,7 @@ export default function ReviewQueueWorkbench({ items = [] }) {
                     </label>
 
                     <label className="block">
-                      <span className="mb-1 block text-xs text-zinc-400">Owner</span>
+                      <span className={fieldLabelClass}>Owner</span>
                       <input
                         type="text"
                         value={draft.owner ?? ''}
@@ -353,7 +358,7 @@ export default function ReviewQueueWorkbench({ items = [] }) {
                       />
                     </label>
 
-                    <div className="flex flex-wrap gap-2 border-t border-zinc-800 pt-4">
+                    <div className="mt-auto flex flex-wrap gap-2 border-t border-zinc-800 pt-4">
                       <button
                         type="submit"
                         className="rounded-lg border border-emerald-500/40 bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-200 transition-colors hover:bg-emerald-500/20"

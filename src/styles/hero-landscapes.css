@@ -15,20 +15,23 @@
 
 .hero-era__landscape-hills {
   position: absolute;
-  left: -5%;
-  right: -5%;
+  left: 0;
+  right: 0;
   bottom: 0;
-  height: 42%;
+  width: 100%;
+  height: auto;
+  /* Scale uniformly with viewport width so peak geometry stays consistent */
+  aspect-ratio: 100 / 42;
   transition: opacity var(--hero-era-transition, 640ms ease);
 }
 
 .hero-era__landscape-hills--back {
-  height: 34%;
+  aspect-ratio: 100 / 34;
   opacity: 0.55;
 }
 
 .hero-era__landscape-hills--front {
-  height: 26%;
+  aspect-ratio: 100 / 26;
   opacity: 0.85;
 }
 

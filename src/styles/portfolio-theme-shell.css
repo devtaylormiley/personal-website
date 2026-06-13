@@ -1,6 +1,8 @@
 /* Site-wide hero theme shell (portfolio routes except Blackfang campaign) */
 
 :root {
+  --site-page-bg: #120c18;
+  --site-page-bg-campaign: #09090b;
   --site-navbar-height: 3.75rem;
 }
 
@@ -12,7 +14,7 @@
 
 .portfolio-site--themed {
   position: relative;
-  background: transparent;
+  background-color: var(--site-page-bg);
   color: var(--hero-fg);
 }
 

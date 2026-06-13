@@ -97,7 +97,7 @@
     justify-content: flex-start;
     overflow: visible;
     padding-top: calc(var(--site-navbar-height) + env(safe-area-inset-top, 0px) + 1.25rem);
-    padding-bottom: clamp(3rem, 10vw, 4.5rem);
+    padding-bottom: max(1.25rem, env(safe-area-inset-bottom, 0px));
     min-height: 100svh;
     min-height: 100dvh;
   }
@@ -119,6 +119,18 @@
 
   .hero-layout--editorial .hero-era__social {
     margin-top: 0;
+  }
+
+  .hero-scroll-cue {
+    position: static;
+    left: auto;
+    bottom: auto;
+    z-index: auto;
+    flex-shrink: 0;
+    align-self: center;
+    margin-top: auto;
+    padding-top: 1.75rem;
+    transform: none;
   }
 }
 
