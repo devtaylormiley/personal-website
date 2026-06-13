@@ -1,7 +1,7 @@
 import HeroEraStage from './HeroEraStage'
 import { heroContent } from '../data/homeContent'
 
-export default function Hero({ onViewResume }) {
+export default function Hero() {
   const { scrollCue } = heroContent
 
   return (
@@ -9,7 +9,7 @@ export default function Hero({ onViewResume }) {
       id="hero"
       className="home-hero relative flex min-h-[100svh] flex-col px-4 sm:px-6"
     >
-      <HeroEraStage onViewResume={onViewResume} />
+      <HeroEraStage />
 
       <a href={scrollCue.href} className="hero-scroll-cue">
         <span>{scrollCue.label}</span>

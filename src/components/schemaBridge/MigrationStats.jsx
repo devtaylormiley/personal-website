@@ -1,3 +1,6 @@
+import ConfidenceBadge from './ConfidenceBadge'
+import SourceBadge from './SourceBadge'
+
 function StatCard({ label, value, detail }) {
   return (
     <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 px-5 py-4">
@@ -37,14 +40,45 @@ export default function MigrationStats({ manifest }) {
             {manifest.status_normalizations.map((entry) => (
               <li
                 key={entry.raw}
-                className="rounded-md border border-zinc-700/80 bg-zinc-800/60 px-2.5 py-1 text-xs text-zinc-300"
+                className="flex flex-wrap items-center gap-2 rounded-md border border-zinc-700/80 bg-zinc-800/60 px-2.5 py-1 text-xs text-zinc-300"
                 title={entry.reason}
               >
                 <span className="text-zinc-500">{entry.raw}</span>
-                <span className="mx-1 text-zinc-600" aria-hidden="true">
+                <span className="text-zinc-600" aria-hidden="true">
                   →
                 </span>
                 <span className="text-teal-300">{entry.canonical}</span>
+                {entry.confidence != null ? (
+                  <ConfidenceBadge confidence={entry.confidence} compact />
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
+      {manifest.field_inferences?.length ? (
+        <div className="rounded-xl border border-zinc-800 bg-zinc-900/30 p-5">
+          <h3 className="text-sm font-medium text-zinc-200">AI field inferences</h3>
+          <ul className="mt-3 space-y-2">
+            {manifest.field_inferences.map((entry) => (
+              <li
+                key={`${entry.source}-${entry.column}-${entry.target}`}
+                className="flex flex-wrap items-center gap-2 text-xs text-zinc-400"
+                title={entry.reason}
+              >
+                <span className="flex min-w-0 flex-1 flex-wrap items-center gap-1.5">
+                  <SourceBadge source={entry.source} compact />
+                  <span className="text-zinc-600" aria-hidden="true">
+                    ·
+                  </span>
+                  <span className="font-mono text-zinc-300">{entry.column}</span>
+                  <span className="mx-1 text-zinc-600">→</span>
+                  <span className="font-mono text-teal-300">{entry.target}</span>
+                </span>
+                {entry.confidence != null ? (
+                  <ConfidenceBadge confidence={entry.confidence} compact />
+                ) : null}
               </li>
             ))}
           </ul>

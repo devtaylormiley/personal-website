@@ -116,11 +116,13 @@
 
   .hero-layout--editorial .hero-era__actions {
     align-items: center;
+    justify-content: center;
   }
 
   .hero-layout--editorial .hero-era__action-buttons {
     width: 100%;
     max-width: 20rem;
+    justify-content: center;
   }
 
   .hero-layout--editorial .hero-era__social {

@@ -97,7 +97,7 @@
     justify-content: flex-start;
     overflow: visible;
     padding-top: calc(var(--site-navbar-height) + env(safe-area-inset-top, 0px) + 1.25rem);
-    padding-bottom: max(1.25rem, env(safe-area-inset-bottom, 0px));
+    padding-bottom: clamp(1.25rem, 4vw, 2rem);
     min-height: 100svh;
     min-height: 100dvh;
   }
@@ -114,23 +114,11 @@
 
   .hero-layout--editorial .hero-era__actions {
     gap: 1.25rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
   }
 
   .hero-layout--editorial .hero-era__social {
     margin-top: 0;
-  }
-
-  .hero-scroll-cue {
-    position: static;
-    left: auto;
-    bottom: auto;
-    z-index: auto;
-    flex-shrink: 0;
-    align-self: center;
-    margin-top: auto;
-    padding-top: 1.75rem;
-    transform: none;
   }
 }
 
@@ -494,6 +482,20 @@
   color: var(--hero-fg-muted);
   transform: translateX(-50%);
   transition: color 0.15s ease;
+}
+
+@media (max-width: 959px) {
+  .hero-scroll-cue {
+    position: static;
+    left: auto;
+    bottom: auto;
+    z-index: auto;
+    flex-shrink: 0;
+    align-self: center;
+    margin-top: auto;
+    padding-top: clamp(1.5rem, 5vw, 2.25rem);
+    transform: none;
+  }
 }
 
 .hero-scroll-cue:hover {

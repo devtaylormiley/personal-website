@@ -1,3 +1,6 @@
+import ConfidenceBadge from './ConfidenceBadge'
+import SourceBadge from './SourceBadge'
+
 function FieldRow({ label, before, after, changed }) {
   return (
     <div
@@ -57,15 +60,11 @@ export default function RecordCompare({ item }) {
     <article className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/30">
       <header className="border-b border-zinc-800 px-4 py-3 sm:px-5">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="rounded-md bg-zinc-800 px-2 py-0.5 font-mono text-xs text-zinc-400">
-            {source}
-          </span>
+          <SourceBadge source={source} />
           <span className="text-sm text-zinc-300">
             Row {item.row_index + 1}
           </span>
-          <span className="text-xs text-zinc-500">
-            Confidence {(confidence * 100).toFixed(0)}%
-          </span>
+          <ConfidenceBadge confidence={confidence} suffix="confidence" />
         </div>
         {reason ? <p className="mt-2 text-xs text-zinc-500">{reason}</p> : null}
       </header>
@@ -103,13 +102,18 @@ export default function RecordCompare({ item }) {
           </p>
           <ul className="mt-2 space-y-2">
             {decisions.map((decision) => (
-              <li key={`${decision.field}-${decision.source_value}`} className="text-xs text-zinc-400">
-                <span className="text-teal-300">{decision.method}</span>
-                {' · '}
-                {decision.field}: {decision.source_value ?? '—'}
-                {' → '}
-                {decision.target_value ?? '—'}
-                {decision.reason ? ` (${decision.reason})` : ''}
+              <li key={`${decision.field}-${decision.source_value}`} className="flex flex-wrap items-center gap-2 text-xs text-zinc-400">
+                <span className="min-w-0 flex-1">
+                  <span className="text-teal-300">{decision.method}</span>
+                  {' · '}
+                  {decision.field}: {decision.source_value ?? '—'}
+                  {' → '}
+                  {decision.target_value ?? '—'}
+                  {decision.reason ? ` (${decision.reason})` : ''}
+                </span>
+                {decision.confidence != null ? (
+                  <ConfidenceBadge confidence={decision.confidence} compact />
+                ) : null}
               </li>
             ))}
           </ul>

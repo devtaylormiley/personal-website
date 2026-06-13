@@ -52,7 +52,7 @@
     0 12px 32px -20px rgb(20 184 166 / 0.28);
 }
 
-/* Click-to-zoom hit target — same look as a static frame */
+/* Invisible tap target on mobile — same look as the frame div above */
 .schema-bridge-hero__zoom-hit {
   width: 100%;
   margin: 0;
@@ -72,13 +72,6 @@
 .schema-bridge-hero__zoom-hit:focus-visible {
   outline: 2px solid rgb(45 212 191 / 0.85);
   outline-offset: 2px;
-}
-
-.schema-bridge-hero__zoom-hit:hover {
-  border-color: rgb(20 184 166 / 0.35);
-  box-shadow:
-    0 0 0 1px rgb(20 184 166 / 0.12),
-    0 16px 40px -20px rgb(20 184 166 / 0.38);
 }
 
 .schema-bridge-hero__zoom-dialog {
@@ -170,4 +163,72 @@
   line-height: 1.45;
   color: rgb(161 161 170 / 0.95);
   text-align: center;
+}
+
+/* Review workbench — source vs target compare panels */
+.schema-bridge-workbench-compare {
+  align-items: stretch;
+}
+
+.schema-bridge-workbench-panel {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+}
+
+.schema-bridge-workbench-panel__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.schema-bridge-workbench-panel--source .schema-bridge-workbench-panel__label {
+  color: rgb(251 191 36);
+}
+
+.schema-bridge-workbench-panel--target .schema-bridge-workbench-panel__label {
+  color: rgb(45 212 191);
+}
+
+.schema-bridge-workbench-panel__card {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.schema-bridge-workbench-panel--source .schema-bridge-workbench-panel__card {
+  border: 1px solid rgb(245 158 11 / 0.35);
+  background: rgb(245 158 11 / 0.06);
+  box-shadow: inset 0 0 0 1px rgb(245 158 11 / 0.08);
+}
+
+.schema-bridge-workbench-panel--target .schema-bridge-workbench-panel__card {
+  border: 1px solid rgb(45 212 191 / 0.35);
+  background: rgb(45 212 191 / 0.06);
+  box-shadow: inset 0 0 0 1px rgb(45 212 191 / 0.08);
+}
+
+.schema-bridge-workbench-panel--source .schema-bridge-workbench-panel__card dt {
+  color: rgb(251 191 36 / 0.75);
+}
+
+.schema-bridge-workbench-panel__actions {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgb(63 63 70);
+}
+
+.schema-bridge-workbench-panel--target .schema-bridge-workbench-panel__actions {
+  border-top-color: rgb(45 212 191 / 0.22);
+}
+
+.schema-bridge-workbench-panel__fields {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 0.75rem;
 }

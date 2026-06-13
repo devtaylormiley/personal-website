@@ -1,15 +1,16 @@
 import { useEffect, useMemo, useState } from 'react'
 import { WORK_ORDER_STATUSES } from '../ux/dataTableCaseStudy/workOrderConstants'
+import ConfidenceBadge from './ConfidenceBadge'
+import SourceBadge from './SourceBadge'
 
 const CATEGORIES = ['Mechanical', 'Electrical', 'Safety', 'Fleet', 'HVAC', 'Plumbing']
 
 const fieldClass =
   'w-full rounded-lg border border-zinc-700 bg-zinc-950 px-3 py-2 text-sm text-zinc-200 outline-none focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/30'
 
-const fieldLabelClass = 'mb-1 block text-xs text-zinc-400'
-
-const legacyValueClass =
-  'break-all border-l-2 border-zinc-700/70 py-0.5 pl-3 text-sm text-zinc-300'
+function queueItemKey(item) {
+  return `${item.source}-${item.row_index}`
+}
 
 function LegacySnapshot({ legacy }) {
   const entries = Object.entries(legacy ?? {}).filter(([, value]) => value != null && value !== '')
@@ -19,25 +20,15 @@ function LegacySnapshot({ legacy }) {
   }
 
   return (
-    <dl className="space-y-3">
+    <dl className="space-y-2">
       {entries.map(([key, value]) => (
-        <div key={key}>
-          <dt className={fieldLabelClass}>{key}</dt>
-          <dd className={legacyValueClass}>{String(value)}</dd>
+        <div key={key} className="grid gap-1 sm:grid-cols-[minmax(0,8rem)_1fr]">
+          <dt className="text-xs font-medium tracking-wide text-zinc-500 uppercase">{key}</dt>
+          <dd className="break-all text-sm text-zinc-300">{String(value)}</dd>
         </div>
       ))}
     </dl>
   )
-}
-
-function queueItemKey(item) {
-  return `${item.source}-${item.row_index}`
-}
-
-function confidenceTone(confidence) {
-  if (confidence >= 0.9) return 'text-emerald-400 border-emerald-500/30 bg-emerald-500/10'
-  if (confidence >= 0.8) return 'text-amber-300 border-amber-500/30 bg-amber-500/10'
-  return 'text-red-300 border-red-500/30 bg-red-500/10'
 }
 
 function ReviewStatusBadge({ status }) {
@@ -208,8 +199,9 @@ export default function ReviewQueueWorkbench({ items = [] }) {
                       </span>
                       <ReviewStatusBadge status={outcome} />
                     </span>
-                    <span className="text-[10px] text-zinc-500">
-                      {(item.confidence * 100).toFixed(0)}% · {item.source}
+                    <span className="flex flex-wrap items-center gap-1.5">
+                      <ConfidenceBadge confidence={item.confidence} compact />
+                      <SourceBadge source={item.source} compact />
                     </span>
                   </button>
                 </li>
@@ -241,35 +233,34 @@ export default function ReviewQueueWorkbench({ items = [] }) {
                 <div>
                   <div className="flex flex-wrap items-center gap-2">
                     <h3 className="font-mono text-lg text-zinc-100">{draft.id}</h3>
-                    <span className="rounded-md bg-zinc-800 px-2 py-0.5 text-xs text-zinc-400">
-                      {activeItem.source}
-                    </span>
-                    <span
-                      className={`rounded-md border px-2 py-0.5 text-xs font-medium ${confidenceTone(activeItem.confidence)}`}
-                    >
-                      {(activeItem.confidence * 100).toFixed(0)}% confidence
-                    </span>
+                    <SourceBadge source={activeItem.source} />
+                    <ConfidenceBadge confidence={activeItem.confidence} suffix="confidence" />
                   </div>
                   <p className="mt-2 text-sm text-zinc-400">{activeItem.reason}</p>
                 </div>
               </div>
 
               {activeItem.decisions?.length ? (
-                <div className="mt-4 rounded-lg border border-zinc-700/80 bg-zinc-900/60 p-3">
-                  <p className="text-xs font-medium tracking-wide text-zinc-400 uppercase">
+                <div className="mt-4 rounded-lg border border-violet-500/20 bg-violet-500/5 p-3">
+                  <p className="text-xs font-medium tracking-wide text-violet-300 uppercase">
                     AI mapping decisions
                   </p>
                   <ul className="mt-2 space-y-1.5">
                     {activeItem.decisions.map((decision) => (
-                      <li key={`${decision.field}-${decision.source_value}`} className="text-xs text-zinc-400">
-                        <span className="text-violet-300">{decision.method}</span>
-                        {' · '}
-                        <span className="text-zinc-300">{decision.field}</span>:{' '}
-                        <span className="text-amber-300/90">{decision.source_value ?? '—'}</span>
-                        {' → '}
-                        <span className="text-teal-300">{decision.target_value ?? '—'}</span>
-                        {decision.reason ? (
-                          <span className="text-zinc-500"> ({decision.reason})</span>
+                      <li key={`${decision.field}-${decision.source_value}`} className="flex flex-wrap items-center gap-2 text-xs text-zinc-400">
+                        <span className="min-w-0 flex-1">
+                          <span className="text-violet-300">{decision.method}</span>
+                          {' · '}
+                          <span className="text-zinc-300">{decision.field}</span>:{' '}
+                          <span className="text-zinc-500">{decision.source_value ?? '—'}</span>
+                          {' → '}
+                          <span className="text-zinc-200">{decision.target_value ?? '—'}</span>
+                          {decision.reason ? (
+                            <span className="text-zinc-500"> ({decision.reason})</span>
+                          ) : null}
+                        </span>
+                        {decision.confidence != null ? (
+                          <ConfidenceBadge confidence={decision.confidence} compact />
                         ) : null}
                       </li>
                     ))}
@@ -277,88 +268,86 @@ export default function ReviewQueueWorkbench({ items = [] }) {
                 </div>
               ) : null}
 
-              <div className="mt-6 grid gap-6 lg:grid-cols-2 lg:items-stretch">
-                <div className="flex min-w-0 flex-col lg:h-full">
-                  <p className="text-xs font-medium tracking-wide text-amber-400/90 uppercase">
-                    Legacy source row
-                  </p>
-                  <div className="mt-2 flex flex-1 flex-col rounded-lg border border-zinc-800 bg-zinc-950/60 p-3">
+              <div className="schema-bridge-workbench-compare mt-6 grid gap-6 lg:grid-cols-2">
+                <div className="schema-bridge-workbench-panel schema-bridge-workbench-panel--source">
+                  <p className="schema-bridge-workbench-panel__label">Legacy source row</p>
+                  <div className="schema-bridge-workbench-panel__card mt-2">
                     <LegacySnapshot legacy={activeItem.legacy} />
                   </div>
                 </div>
 
-                <div className="flex min-w-0 flex-col lg:h-full">
-                  <p className="text-xs font-medium tracking-wide text-teal-400 uppercase">
-                    Normalized target record
-                  </p>
+                <div className="schema-bridge-workbench-panel schema-bridge-workbench-panel--target">
+                  <p className="schema-bridge-workbench-panel__label">Normalize & approve</p>
                   <form
-                    className="mt-2 flex flex-1 flex-col space-y-3 rounded-lg border border-zinc-800 bg-zinc-950/60 p-3"
+                    className="schema-bridge-workbench-panel__card mt-2"
                     onSubmit={(event) => {
                       event.preventDefault()
                       handleApprove()
                     }}
                   >
-                    <label className="block">
-                      <span className={fieldLabelClass}>Category</span>
-                      <select
-                        value={draft.category ?? ''}
-                        onChange={(event) =>
-                          setDraft((current) => ({ ...current, category: event.target.value }))
-                        }
-                        className={fieldClass}
-                      >
-                        <option value="">Unset</option>
-                        {CATEGORIES.map((category) => (
-                          <option key={category} value={category}>
-                            {category}
-                          </option>
-                        ))}
-                      </select>
-                    </label>
+                    <div className="schema-bridge-workbench-panel__fields">
+                      <label className="block">
+                        <span className="mb-1 block text-xs text-zinc-400">Category</span>
+                        <select
+                          value={draft.category ?? ''}
+                          onChange={(event) =>
+                            setDraft((current) => ({ ...current, category: event.target.value }))
+                          }
+                          className={fieldClass}
+                        >
+                          <option value="">Unset</option>
+                          {CATEGORIES.map((category) => (
+                            <option key={category} value={category}>
+                              {category}
+                            </option>
+                          ))}
+                        </select>
+                      </label>
 
-                    <label className="block">
-                      <span className={fieldLabelClass}>Status</span>
-                      <select
-                        value={draft.status ?? ''}
-                        onChange={(event) =>
-                          setDraft((current) => ({ ...current, status: event.target.value }))
-                        }
-                        className={fieldClass}
-                      >
-                        {WORK_ORDER_STATUSES.map((status) => (
-                          <option key={status} value={status}>
-                            {status}
-                          </option>
-                        ))}
-                      </select>
-                    </label>
+                      <label className="block">
+                        <span className="mb-1 block text-xs text-zinc-400">Status</span>
+                        <select
+                          value={draft.status ?? ''}
+                          onChange={(event) =>
+                            setDraft((current) => ({ ...current, status: event.target.value }))
+                          }
+                          className={fieldClass}
+                        >
+                          {WORK_ORDER_STATUSES.map((status) => (
+                            <option key={status} value={status}>
+                              {status}
+                            </option>
+                          ))}
+                        </select>
+                      </label>
 
-                    <label className="block">
-                      <span className={fieldLabelClass}>Site</span>
-                      <input
-                        type="text"
-                        value={draft.site ?? ''}
-                        onChange={(event) =>
-                          setDraft((current) => ({ ...current, site: event.target.value }))
-                        }
-                        className={fieldClass}
-                        placeholder="Site location"
-                      />
-                    </label>
+                      <label className="block">
+                        <span className="mb-1 block text-xs text-zinc-400">Site</span>
+                        <input
+                          type="text"
+                          value={draft.site ?? ''}
+                          onChange={(event) =>
+                            setDraft((current) => ({ ...current, site: event.target.value }))
+                          }
+                          className={fieldClass}
+                          placeholder="Site location"
+                        />
+                      </label>
 
-                    <label className="block">
-                      <span className={fieldLabelClass}>Owner</span>
-                      <input
-                        type="text"
-                        value={draft.owner ?? ''}
-                        onChange={(event) =>
-                          setDraft((current) => ({ ...current, owner: event.target.value }))
-                        }
-                        className={fieldClass}
-                      />
-                    </label>
+                      <label className="block">
+                        <span className="mb-1 block text-xs text-zinc-400">Owner</span>
+                        <input
+                          type="text"
+                          value={draft.owner ?? ''}
+                          onChange={(event) =>
+                            setDraft((current) => ({ ...current, owner: event.target.value }))
+                          }
+                          className={fieldClass}
+                        />
+                      </label>
+                    </div>
 
-                    <div className="mt-auto flex flex-wrap gap-2 border-t border-zinc-800 pt-4">
+                    <div className="schema-bridge-workbench-panel__actions flex flex-wrap gap-2">
                       <button
                         type="submit"
                         className="rounded-lg border border-emerald-500/40 bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-200 transition-colors hover:bg-emerald-500/20"
