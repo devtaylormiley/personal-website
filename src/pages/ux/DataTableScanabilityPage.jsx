@@ -52,8 +52,12 @@ export default function DataTableScanabilityPage() {
             them across two tabs, reshuffled columns between those views, and scattered actions so
             completing work meant leaving the row you were already reading.
           </p>
+          
         </header>
-
+        
+        <p className="mt-4 max-w-3xl leading-relaxed text-zinc-400">
+            Try to complete, restart, edit, and download WO-10384 on each 'Before' and 'After' view.
+          </p>
         <div className="mt-10 flex flex-wrap gap-2">
           {[
             { id: 'before', label: 'Before' },
@@ -73,7 +77,7 @@ export default function DataTableScanabilityPage() {
             </button>
           ))}
         </div>
-
+        
         <div className="mt-6 flex flex-col gap-12">
           {view === 'before' ? (
             <section>

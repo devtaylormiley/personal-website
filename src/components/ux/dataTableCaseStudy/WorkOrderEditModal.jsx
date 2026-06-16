@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import {
   getOperationCategories,
   getOperationSites,
-  WORK_ORDER_STATUSES,
+  WORK_ORDER_EDITABLE_STATUSES,
 } from './workOrderConstants'
 
 const fieldClass =
@@ -39,7 +39,7 @@ export default function WorkOrderEditModal({ row, allRows, onClose, onSave }) {
       ...row,
       asset: draft.asset.trim(),
       site: emptyToNull(draft.site ?? ''),
-      status: draft.status,
+      status: row.status === 'Closed' ? 'Closed' : draft.status,
       owner: emptyToNull(draft.owner ?? ''),
       price,
       updated: draft.updated,
@@ -105,17 +105,27 @@ export default function WorkOrderEditModal({ row, allRows, onClose, onSave }) {
 
           <label className="block">
             <span className="mb-1 block text-xs text-zinc-400">Status</span>
-            <select
-              value={draft.status}
-              onChange={(e) => setDraft((d) => ({ ...d, status: e.target.value }))}
-              className={fieldClass}
-            >
-              {WORK_ORDER_STATUSES.map((status) => (
-                <option key={status} value={status}>
-                  {status}
-                </option>
-              ))}
-            </select>
+            {row.status === 'Closed' ? (
+              <input
+                type="text"
+                value="Closed"
+                readOnly
+                className={`${fieldClass} text-zinc-500`}
+                aria-readonly="true"
+              />
+            ) : (
+              <select
+                value={draft.status}
+                onChange={(e) => setDraft((d) => ({ ...d, status: e.target.value }))}
+                className={fieldClass}
+              >
+                {WORK_ORDER_EDITABLE_STATUSES.map((status) => (
+                  <option key={status} value={status}>
+                    {status}
+                  </option>
+                ))}
+              </select>
+            )}
           </label>
 
           <label className="block sm:col-span-2">

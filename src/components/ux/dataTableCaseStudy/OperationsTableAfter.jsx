@@ -40,7 +40,10 @@ export default function OperationsTableAfter() {
   const [editingRow, setEditingRow] = useState(null)
 
   const { filters, setFilter, filteredRows } = useColumnFilters(rows)
-  const { sortedRows, sort, toggleSort } = useTableSort(filteredRows)
+  const { sortedRows, sort, toggleSort } = useTableSort(filteredRows, {
+    key: 'updated',
+    direction: 'desc',
+  })
 
   const handleSaveWorkOrder = useCallback((updatedRow) => {
     setRows((current) =>
