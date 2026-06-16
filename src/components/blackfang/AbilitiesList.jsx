@@ -1,11 +1,12 @@
-import DataslateTextSection from './DataslateTextSection'
+import OperativeAbilitiesTable from './OperativeAbilitiesTable'
 
-export default function AbilitiesList({ abilities, compact = false }) {
+export default function AbilitiesList({ abilities, compact = false, operativeId = 'operative' }) {
   return (
-    <DataslateTextSection
-      content={abilities}
-      parseNamedEntries
+    <OperativeAbilitiesTable
+      abilitiesText={abilities}
+      operativeId={operativeId}
       compact={compact}
+      editable={false}
     />
   )
 }

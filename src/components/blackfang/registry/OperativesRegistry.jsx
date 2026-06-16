@@ -13,7 +13,7 @@ import { ButtonIcon } from '../../ui/buttonIcons'
 export default function OperativesRegistry({
   displayOperatives,
   registryOperatives,
-  officialCount,
+  officialCount = 0,
   homebrewCount,
   homebrewTeams,
   query,
@@ -31,6 +31,11 @@ export default function OperativesRegistry({
   homebrewError,
   onCreateHomebrew,
   onDeleteHomebrew,
+  homebrewOnly = false,
+  editReturnTo,
+  createButtonLabel = 'New homebrew operative',
+  searchPlaceholder = 'Search operatives or kill teams…',
+  countLabel = 'operatives',
 }) {
   const [expandedKey, setExpandedKey] = useState(null)
   const [expandedOp, setExpandedOp] = useState(null)
@@ -78,10 +83,14 @@ export default function OperativesRegistry({
   function renderFooter(entry) {
     if (entry.kind !== 'homebrew') return null
 
+    const editPath = editReturnTo
+      ? `/projects/blackfang-campaign/homebrew-operative/${entry.id}?returnTo=${encodeURIComponent(editReturnTo)}`
+      : `/projects/blackfang-campaign/homebrew-operative/${entry.id}`
+
     return (
         <>
           <Link
-            to={`/projects/blackfang-campaign/homebrew-operative/${entry.id}`}
+            to={editPath}
             className="bf-btn-ghost inline-flex cursor-pointer items-center gap-1.5 rounded-md px-2.5 py-1.5 text-xs font-medium"
           >
             <ButtonIcon label="Edit" className="h-3.5 w-3.5 shrink-0" />
@@ -104,25 +113,27 @@ export default function OperativesRegistry({
           <RegistrySearch
             value={query}
             onChange={onQueryChange}
-            placeholder="Search operatives or kill teams…"
+            placeholder={searchPlaceholder}
             className="lg:max-w-xs"
           />
-          <select
-            value={opSource}
-            onChange={(e) => onOpSourceChange(e.target.value)}
-            className="bf-input rounded-lg px-4 py-2.5 text-sm"
-            aria-label="Filter by source"
-          >
-            <option value="all">Official + homebrew</option>
-            <option value="official">Official only</option>
-            <option value="homebrew">My homebrew only</option>
-          </select>
+          {!homebrewOnly && (
+            <select
+              value={opSource}
+              onChange={(e) => onOpSourceChange(e.target.value)}
+              className="bf-input rounded-lg px-4 py-2.5 text-sm"
+              aria-label="Filter by source"
+            >
+              <option value="all">Official + homebrew</option>
+              <option value="official">Official only</option>
+              <option value="homebrew">My homebrew only</option>
+            </select>
+          )}
           <select
             value={opTeamFilter}
             onChange={(e) => onOpTeamFilterChange(e.target.value)}
             className="bf-input rounded-lg px-4 py-2.5 text-sm"
             aria-label="Filter by kill team"
-            disabled={opSource === 'official'}
+            disabled={!homebrewOnly && opSource === 'official'}
           >
             <option value="all">All kill teams</option>
             <option value="unassigned">Unassigned homebrew</option>
@@ -143,10 +154,10 @@ export default function OperativesRegistry({
             <option value="team">Kill team</option>
             <option value="apl-desc">APL (high–low)</option>
             <option value="wounds-desc">Wounds (high–low)</option>
-            <option value="source">Homebrew, then official</option>
+            {!homebrewOnly && <option value="source">Homebrew, then official</option>}
           </select>
           <ActionButton
-            label={homebrewBusy ? 'Creating…' : 'New homebrew operative'}
+            label={homebrewBusy ? 'Creating…' : createButtonLabel}
             onClick={onCreateHomebrew}
             disabled={!user || homebrewBusy || !hasSupabaseEnv}
             className="bf-btn-primary cursor-pointer rounded-lg px-3 py-2 text-xs font-medium disabled:cursor-not-allowed disabled:opacity-40 lg:ml-auto"
@@ -159,14 +170,17 @@ export default function OperativesRegistry({
           </p>
         )}
         {!user && hasSupabaseEnv && (
-          <p className="bf-hint text-xs">Sign in with Google to create and manage homebrew operatives.</p>
+          <p className="bf-hint text-xs">
+            Sign in with Google to create and manage{' '}
+            {homebrewOnly ? 'custom player operatives' : 'homebrew operatives'}.
+          </p>
         )}
         {homebrewError && <p className="bf-error text-xs">{homebrewError}</p>}
       </div>
 
       <p className="bf-muted mt-4 text-xs">
-        {displayOperatives.length} of {registryOperatives.length} operatives
-        {registryOperatives.length > 0 && (
+        {displayOperatives.length} of {registryOperatives.length} {countLabel}
+        {!homebrewOnly && registryOperatives.length > 0 && (
           <span>
             {' '}
             ({officialCount} official

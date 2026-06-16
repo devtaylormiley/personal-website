@@ -50,9 +50,9 @@ export default function UxImprovementsPage() {
         </header>
 
         <ol className="mt-10 divide-y divide-zinc-800/80 overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/30">
-          {items.map((item, index) => (
-            <li key={item.title} className="px-6 py-5 sm:px-8 sm:py-6">
-              <div className="flex gap-4">
+          {items.map((item, index) => {
+            const rowBody = (
+              <>
                 <span
                   className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-violet-500/30 bg-violet-500/10 font-mono text-xs font-medium text-violet-300"
                   aria-hidden="true"
@@ -70,18 +70,30 @@ export default function UxImprovementsPage() {
                   </div>
                   <p className="mt-2 text-sm leading-relaxed text-zinc-300">{item.detail}</p>
                   {item.slug ? (
-                    <Link
-                      to={`/projects/ux/${item.slug}`}
-                      className="mt-3 inline-flex cursor-pointer items-center gap-1 text-sm font-medium text-violet-300 transition-colors hover:text-violet-200"
-                    >
+                    <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-violet-300 transition-colors group-hover:text-violet-200">
                       View before & after
                       <span aria-hidden="true">→</span>
-                    </Link>
+                    </span>
                   ) : null}
                 </div>
-              </div>
-            </li>
-          ))}
+              </>
+            )
+
+            return (
+              <li key={item.title}>
+                {item.slug ? (
+                  <Link
+                    to={`/projects/ux/${item.slug}`}
+                    className="group flex cursor-pointer gap-4 px-6 py-5 transition-colors hover:bg-violet-500/5 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-violet-400 sm:px-8 sm:py-6"
+                  >
+                    {rowBody}
+                  </Link>
+                ) : (
+                  <div className="flex gap-4 px-6 py-5 sm:px-8 sm:py-6">{rowBody}</div>
+                )}
+              </li>
+            )
+          })}
         </ol>
 
         <footer className="mt-10 border-t border-zinc-800 pt-8">

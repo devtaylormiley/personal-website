@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import OperativeDataslate from '../components/blackfang/OperativeDataslate'
-import BlackshieldCharacterForm from '../components/blackfang/BlackshieldCharacterForm'
 import ActionButton from '../components/ui/ActionButton'
 import { useAuth } from '../context/AuthContext'
 import {
@@ -15,6 +14,8 @@ import {
   listHomebrewTeams,
   updateHomebrewOperative,
 } from '../lib/homebrewApi'
+import { PLAYER_OPERATIVES_PATH } from '../lib/blackfangNavigation'
+import { getOperativeAccentTone } from '../lib/operativeAccentTones'
 import {
   collectWeaponOptions,
   fetchOperativesIndex,
@@ -25,6 +26,28 @@ import {
 
 function clone(value) {
   return structuredClone(value)
+}
+
+function homebrewOperativeReturnPath(returnTo) {
+  switch (returnTo) {
+    case 'party':
+      return '/projects/blackfang-campaign/party'
+    case 'player-operatives':
+      return PLAYER_OPERATIVES_PATH
+    default:
+      return '/projects/blackfang-campaign/kt24-data/operatives'
+  }
+}
+
+function homebrewOperativeReturnLabel(returnTo) {
+  switch (returnTo) {
+    case 'party':
+      return 'Party'
+    case 'player-operatives':
+      return 'Player Operatives'
+    default:
+      return 'Operatives registry'
+  }
 }
 
 export default function HomebrewOperativePage() {
@@ -84,6 +107,15 @@ export default function HomebrewOperativePage() {
       teamId !== original.teamId
     )
   }, [operative, original, teamId])
+
+  const accentTone = useMemo(() => {
+    if (!operativeId) return 'green'
+    let hash = 0
+    for (let i = 0; i < operativeId.length; i++) {
+      hash = (hash * 31 + operativeId.charCodeAt(i)) >>> 0
+    }
+    return getOperativeAccentTone(hash)
+  }, [operativeId])
 
   function updateField(field, value) {
     setOperative((prev) => (prev ? { ...prev, [field]: value } : prev))
@@ -178,8 +210,8 @@ export default function HomebrewOperativePage() {
       })
       setOperative({ ...saved, teamId: teamId ?? null })
       setOriginal({ operative: clone(saved), teamId: teamId ?? null })
-      if (returnTo === 'party') {
-        navigate('/projects/blackfang-campaign/party')
+      if (returnTo) {
+        navigate(homebrewOperativeReturnPath(returnTo))
       }
     } catch (err) {
       setError(err.message)
@@ -194,7 +226,7 @@ export default function HomebrewOperativePage() {
     setError('')
     try {
       await deleteHomebrewOperative(operativeId, user.id)
-      navigate(returnTo === 'party' ? '/projects/blackfang-campaign/party' : '/projects/blackfang-campaign/kt24-data/operatives')
+      navigate(homebrewOperativeReturnPath(returnTo))
     } catch (err) {
       setError(err.message)
       setSaving(false)
@@ -213,90 +245,58 @@ export default function HomebrewOperativePage() {
     return <p className="bf-error mt-8 text-sm">{error}</p>
   }
 
+  if (!operative) {
+    return <p className="bf-muted mt-8 text-center text-sm">Operative not found.</p>
+  }
+
   const assignedTeam = homebrewTeams.find((team) => team.id === teamId)
-  const isBlackshield = operative?.isBlackshield === true
+  const editorToolbar = (
+    <>
+      <p className="bf-mono-label text-[10px] sm:text-xs">
+        {isDirty ? 'Unsaved changes' : 'All changes saved'}
+      </p>
+      <div className="flex flex-wrap gap-2">
+        <ActionButton
+          label={saving ? 'Saving…' : 'Save changes'}
+          onClick={handleSave}
+          disabled={!isDirty || saving}
+          className="bf-btn-primary px-3 py-1.5 text-xs font-medium disabled:cursor-not-allowed disabled:opacity-40"
+        />
+        <ActionButton
+          label="Delete operative"
+          onClick={handleDelete}
+          disabled={saving}
+          className="bf-btn-danger px-3 py-1.5 text-xs font-medium disabled:opacity-40"
+        />
+      </div>
+    </>
+  )
 
   return (
-    <>
-      <header className="bf-divider border-b pb-8">
-        <p className="bf-eyebrow">{isBlackshield ? 'Blackshield operative' : 'Homebrew operative'}</p>
-        <h1 className="bf-title mt-2">{operative.name}</h1>
-
-        <div className="mt-6 flex max-w-md flex-col gap-2">
-          <label htmlFor="hb-op-team" className="bf-muted text-xs font-medium tracking-wider uppercase">
-            Kill team assignment
-          </label>
-          <select
-            id="hb-op-team"
-            value={teamId ?? ''}
-            onChange={(e) => setTeamId(e.target.value || null)}
-            className="bf-input rounded-lg px-4 py-2.5 text-sm"
-          >
-            <option value="">Unassigned — pick a team later</option>
-            {homebrewTeams.map((team) => (
-              <option key={team.id} value={team.id}>
-                {team.killTeam.name}
-              </option>
-            ))}
-          </select>
-          {assignedTeam ? (
-            <p className="bf-hint text-xs">
-              Assigned to{' '}
-              <Link
-                to={`/projects/blackfang-campaign/homebrew/${assignedTeam.id}`}
-                className="text-[var(--bf-accent)] hover:underline"
-              >
-                {assignedTeam.killTeam.name}
-              </Link>
-              . Saving here updates the roster link; edit the full team dataslate from that page.
-            </p>
-          ) : (
-            <p className="bf-hint text-xs">
-              This operative is not linked to a homebrew kill team yet. Assign one when ready.
-            </p>
-          )}
-        </div>
-
-        <div className="mt-6 flex flex-wrap gap-3">
-          <ActionButton
-            label={saving ? 'Saving…' : 'Save changes'}
-            onClick={handleSave}
-            disabled={!isDirty || saving}
-            className="bf-btn-primary px-4 py-2 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-40"
-          />
-          <ActionButton
-            label="Delete operative"
-            onClick={handleDelete}
-            disabled={saving}
-            className="bf-btn-danger px-4 py-2 text-sm font-medium disabled:opacity-40"
-          />
-        </div>
-        {error && <p className="bf-error mt-4 text-sm">{error}</p>}
-      </header>
-
-      {isBlackshield ? (
-        <section className="bf-panel-elevated mt-8 p-4 sm:p-6">
-          <h2 className="bf-section-label">Blackshield dossier</h2>
-          <p className="bf-muted mt-1 text-xs sm:text-sm">
-            Campaign identity for this party roster character — former chapter and backstory.
+    <section className="bf-panel-elevated p-4 sm:p-6">
+      <div className="mx-auto w-full max-w-3xl min-w-0">
+        {returnTo ? (
+          <p className="mb-4">
+            <Link
+              to={homebrewOperativeReturnPath(returnTo)}
+              className="bf-link inline-flex items-center gap-1 text-sm"
+            >
+              ← Back to {homebrewOperativeReturnLabel(returnTo)}
+            </Link>
           </p>
-          <div className="mt-6">
-            <BlackshieldCharacterForm
-              operative={operative}
-              onFieldChange={updateField}
-              onLevelChange={updateLevel}
-              onAbilityScoreAdjust={adjustAbilityScore}
-            />
-          </div>
-        </section>
-      ) : null}
+        ) : null}
 
-      <section className="mt-10 min-w-0">
+        {error ? <p className="bf-error mb-4 text-sm">{error}</p> : null}
+
         <OperativeDataslate
           operative={operative}
           density="compact"
+          accentTone={accentTone}
           isDirty={isDirty}
-          showAbilityScores={!isBlackshield}
+          teamId={teamId}
+          homebrewTeams={homebrewTeams}
+          onTeamChange={setTeamId}
+          toolbar={editorToolbar}
           onFieldChange={updateField}
           onLevelChange={updateLevel}
           onAbilityScoreAdjust={adjustAbilityScore}
@@ -310,7 +310,19 @@ export default function HomebrewOperativePage() {
           copyLoading={copyLoading}
           weaponsResetKey={weaponsResetKey}
         />
-      </section>
-    </>
+
+        {assignedTeam ? (
+          <p className="bf-hint mt-4 text-xs">
+            Full team dataslate:{' '}
+            <Link
+              to={`/projects/blackfang-campaign/homebrew/${assignedTeam.id}`}
+              className="text-[var(--bf-accent)] hover:underline"
+            >
+              {assignedTeam.killTeam.name}
+            </Link>
+          </p>
+        ) : null}
+      </div>
+    </section>
   )
 }

@@ -25,3 +25,8 @@ export function getRuleChipTone(rule, index = 0) {
   const hash = hashString(String(rule ?? '').toLowerCase())
   return RULE_CHIP_TONES[(hash + Math.abs(Number(index) || 0)) % RULE_CHIP_TONES.length]
 }
+
+/** Class name for dataslate rows/cards (ploys, abilities, etc.). */
+export function dataslateToneClass(label, index = 0) {
+  return `bf-tone-${getRuleChipTone(label, index)}`
+}

@@ -72,6 +72,22 @@ export function parseLegacyPloyNames(raw) {
     .map((name) => ({ name, description: '', type: null, cpCost: null }))
 }
 
+/** @param {{ name: string, description?: string, type?: string | null }[]} ploys */
+export function partitionKillTeamPloys(ploys) {
+  const strategy = []
+  const firefight = []
+
+  for (const ploy of ploys ?? []) {
+    if (ploy.type === 'firefight') {
+      firefight.push(ploy)
+    } else {
+      strategy.push(ploy)
+    }
+  }
+
+  return { strategy, firefight }
+}
+
 /** @param {{ ploys?: { name: string, description?: string, type?: string | null }[], specialIssueAmmunition?: string } | undefined} killTeam */
 export function resolveKillTeamPloys(killTeam) {
   if (Array.isArray(killTeam?.ploys) && killTeam.ploys.length) {

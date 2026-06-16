@@ -1,4 +1,5 @@
 export const CAMPAIGN_HUB_PATH = '/projects/blackfang-campaign'
+export const PLAYER_OPERATIVES_PATH = `${CAMPAIGN_HUB_PATH}/player-operatives`
 
 export const CAMPAIGN_NAV_HUB = {
   to: CAMPAIGN_HUB_PATH,
@@ -28,6 +29,15 @@ export const CAMPAIGN_HUB_SUBROUTES = [
     pathMatch: '/party',
     tone: 'orange',
   },
+  {
+    to: 'player-operatives',
+    label: 'Player Operatives',
+    title: 'Player operatives',
+    icon: 'user',
+    iconLabel: 'Player Operatives',
+    pathMatch: '/player-operatives',
+    tone: 'violet',
+  },
 ]
 
 export const CAMPAIGN_SECTIONS = [
@@ -52,6 +62,17 @@ export const CAMPAIGN_SECTIONS = [
     shell: 'party',
     pathMatch: '/party',
     tone: 'orange',
+  },
+  {
+    to: 'player-operatives',
+    label: 'Player Operatives',
+    title: 'Player operatives',
+    breadcrumbLabel: 'Player Operatives',
+    icon: 'user',
+    iconLabel: 'Player Operatives',
+    shell: 'player_operatives',
+    pathMatch: '/player-operatives',
+    tone: 'violet',
   },
   {
     to: 'kt24-data',
@@ -101,8 +122,18 @@ export const CAMPAIGN_MODULE_TILES = [
     tone: 'orange',
   },
   {
-    to: `${CAMPAIGN_HUB_PATH}/kt24-data`,
+    to: `${CAMPAIGN_HUB_PATH}/player-operatives`,
     code: '03',
+    title: 'Player Operatives',
+    description:
+      'Create and edit custom player operative dataslates — build characters, clone official profiles, and assign kill teams.',
+    icon: 'user',
+    iconLabel: 'Player Operatives',
+    tone: 'violet',
+  },
+  {
+    to: `${CAMPAIGN_HUB_PATH}/kt24-data`,
+    code: '04',
     title: 'KT24 Data Registry',
     description:
       'Official kill team rosters, operatives, joint-op NPOs, weapons, and equipment — plus homebrew teams when signed in.',
@@ -114,7 +145,7 @@ export const CAMPAIGN_MODULE_TILES = [
 
 export const REGISTRY_MODULE_TILES = KT24_REGISTRY_TABS.map((tab, index) => ({
   to: registryTabToPath(tab.id),
-  code: `03.${index + 1}`,
+  code: `04.${index + 1}`,
   title: tab.label,
   description: registryTileDescription(tab.id),
   iconLabel: tab.label,
@@ -150,7 +181,8 @@ export function isHubBranch(pathname) {
   return (
     isCampaignHub(pathname) ||
     pathname.includes('/about') ||
-    pathname.includes('/party')
+    pathname.includes('/party') ||
+    pathname.includes('/player-operatives')
   )
 }
 
@@ -165,6 +197,7 @@ export function hubSubrouteToPath(subrouteTo) {
 const BLACKFANG_RESERVED_SEGMENTS = new Set([
   'about',
   'party',
+  'player-operatives',
   'kt24-data',
   'kill-teams',
   'section-3',
@@ -193,8 +226,14 @@ export function sectionIsActive(pathname, section) {
   return pathname.includes(section.pathMatch)
 }
 
-export function getCampaignSection(pathname) {
+export function getCampaignSection(pathname, { returnTo } = {}) {
   if (isCampaignHub(pathname)) return null
+  if (pathname.includes('/player-operatives')) {
+    return CAMPAIGN_SECTIONS.find((s) => s.pathMatch === '/player-operatives') ?? null
+  }
+  if (pathname.includes('/homebrew-operative/') && returnTo === 'player-operatives') {
+    return CAMPAIGN_SECTIONS.find((s) => s.pathMatch === '/player-operatives') ?? null
+  }
   if (
     pathname.includes('/homebrew-operative/') ||
     pathname.includes('/homebrew/') ||
@@ -205,8 +244,10 @@ export function getCampaignSection(pathname) {
   return CAMPAIGN_SECTIONS.find((s) => pathname.includes(s.pathMatch)) ?? null
 }
 
-export function getRegistryTabId(pathname) {
-  if (pathname.includes('/homebrew-operative/')) return 'operatives'
+export function getRegistryTabId(pathname, { returnTo } = {}) {
+  if (pathname.includes('/homebrew-operative/')) {
+    return returnTo === 'player-operatives' ? null : 'operatives'
+  }
   if (pathname.includes('/homebrew/') || isKillTeamSlugPage(pathname)) return 'teams'
   if (!pathname.includes('/kt24-data')) return null
   const match = pathname.match(/\/kt24-data\/([^/]+)/)

@@ -2,7 +2,9 @@ import { Link, useLocation } from 'react-router-dom'
 import useBlackfangMainSectionInsets from '../hooks/useBlackfangMainSectionInsets'
 import useFooterClearance from '../hooks/useFooterClearance'
 import usePageEndReached from '../hooks/usePageEndReached'
+import usePageHasScrollbar from '../hooks/usePageHasScrollbar'
 import useScrollPastThreshold from '../hooks/useScrollPastThreshold'
+import useScrollY, { isAtScrollTop } from '../hooks/useScrollY'
 import { getParentRouteNav } from '../lib/pageEndNav'
 
 const BASE_BOTTOM_REM = 1.25
@@ -36,10 +38,12 @@ function ArrowLeftIcon() {
 }
 
 export default function PageEndNavFloats({ variant = 'portfolio' }) {
-  const { pathname } = useLocation()
+  const { pathname, search } = useLocation()
   const atPageEnd = usePageEndReached({ pathname })
+  const hasScrollbar = usePageHasScrollbar({ pathname })
+  const scrollY = useScrollY(pathname)
   const scrolledPast = useScrollPastThreshold({ pathname })
-  const parent = getParentRouteNav(pathname)
+  const parent = getParentRouteNav(pathname, search)
   const footerClearance = useFooterClearance(
     variant === 'portfolio' ? '.portfolio-site__footer' : null,
     pathname,
@@ -47,7 +51,9 @@ export default function PageEndNavFloats({ variant = 'portfolio' }) {
   const mainInsets = useBlackfangMainSectionInsets(variant === 'blackfang' ? pathname : '')
 
   const showTop = scrolledPast
-  const showParent = atPageEnd && parent
+  const showParent = Boolean(
+    parent && hasScrollbar && atPageEnd && !isAtScrollTop(scrollY),
+  )
 
   if (!showTop && !showParent) return null
 

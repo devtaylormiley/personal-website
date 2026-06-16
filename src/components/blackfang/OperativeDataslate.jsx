@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import ActionButton from '../ui/ActionButton'
 import DisplayField from './DisplayField'
-import AbilitiesList from './AbilitiesList'
+import OperativeAbilitiesTable from './OperativeAbilitiesTable'
 import EditableField from './EditableField'
 import EditableWeaponsTable from './EditableWeaponsTable'
 import AbilityScoresRow from './AbilityScoresRow'
@@ -14,6 +14,7 @@ import OperativeCardEditorBar from './operativeCard/OperativeCardEditorBar'
 import OperativeCardSection from './operativeCard/OperativeCardSection'
 import WeaponRulesChips from './WeaponRulesChips'
 import { bfToneClass } from '../../lib/blackfangNavigation'
+import { parseAbilities, serializeAbilities } from '../../lib/parseAbilities'
 
 const categoryLabel = { po: 'Player operative', npo: 'Non-player operative' }
 
@@ -157,6 +158,10 @@ export default function OperativeDataslate({
   onClose,
   showAbilityScores: showAbilityScoresProp = true,
   accentTone = null,
+  teamId,
+  homebrewTeams,
+  onTeamChange,
+  toolbar,
 }) {
   const editable = Boolean(onFieldChange)
   const custom = operative.cardType === 'custom'
@@ -168,8 +173,31 @@ export default function OperativeDataslate({
     editable && isDirty ? 'bf-dirty' : custom ? 'ring-1 ring-[var(--bf-border-bright)]' : ''
   const accentClass = accentTone ? bfToneClass(accentTone) : ''
 
+  function updateAbilities(entries) {
+    onFieldChange('abilities', serializeAbilities(entries))
+  }
+
+  function handleAbilityChange(index, field, value) {
+    const current = parseAbilities(operative.abilities ?? '')
+    updateAbilities(
+      current.map((entry, entryIndex) =>
+        entryIndex === index ? { ...entry, [field]: value } : entry,
+      ),
+    )
+  }
+
+  function handleAddAbility(entry) {
+    const current = parseAbilities(operative.abilities ?? '')
+    updateAbilities([...current, entry])
+  }
+
+  function handleRemoveAbility(index) {
+    const current = parseAbilities(operative.abilities ?? '')
+    updateAbilities(current.filter((_, entryIndex) => entryIndex !== index))
+  }
+
   return (
-    <div className={editable ? 'space-y-0' : ''}>
+    <div className={editable ? 'space-y-4' : ''}>
       {editable ? (
         <OperativeCardEditorBar
           operative={operative}
@@ -178,13 +206,17 @@ export default function OperativeDataslate({
           copyLoading={copyLoading}
           onFieldChange={onFieldChange}
           compact={compact}
+          teamId={teamId}
+          homebrewTeams={homebrewTeams}
+          onTeamChange={onTeamChange}
+          toolbar={toolbar}
         />
       ) : null}
 
       <article
         className={`operative-card w-full min-w-0 overflow-hidden rounded-xl border-2 border-amber-800/60 bg-gradient-to-b from-zinc-900 via-zinc-950 to-black shadow-lg shadow-black/40 ${accentClass} ${cardBorderClass} ${
           weaponsTypeaheadOpen ? 'overflow-visible' : ''
-        } ${editable ? 'rounded-t-none border-t-0' : ''}`}
+        }`}
       >
         <header
           className={`operative-card-name relative border-b border-zinc-600/50 text-left ${onClose ? 'pr-24' : ''} ${compact ? 'px-3 py-2.5' : 'px-4 py-3'}`}
@@ -257,6 +289,26 @@ export default function OperativeDataslate({
           </div>
         ) : null}
 
+        {operative.isBlackshield && editable ? (
+          <OperativeCardSection title="Blackshield dossier" compact={compact} className="border-t border-amber-900/30">
+            <div className="space-y-4">
+              <EditableField
+                label="Former chapter"
+                value={operative.formerChapter ?? ''}
+                onChange={(value) => onFieldChange('formerChapter', value)}
+                inputClassName={compact ? 'text-xs' : 'text-sm'}
+              />
+              <EditableField
+                label="Backstory"
+                value={operative.backstory ?? ''}
+                onChange={(value) => onFieldChange('backstory', value)}
+                multiline
+                inputClassName={`min-h-[5rem] ${compact ? 'text-xs' : 'text-sm'}`}
+              />
+            </div>
+          </OperativeCardSection>
+        ) : null}
+
         <section className="operative-card-weapons-block border-t border-zinc-600/50">
           <div className={`operative-card-section-body bg-zinc-950/60 ${compact ? 'p-2' : 'p-3'}`}>
             <div
@@ -289,17 +341,15 @@ export default function OperativeDataslate({
         </section>
 
         <OperativeCardSection title="Abilities" compact={compact} className="border-t border-amber-900/30">
-          {editable ? (
-            <textarea
-              value={operative.abilities ?? ''}
-              onChange={(e) => onFieldChange('abilities', e.target.value)}
-              rows={6}
-              className={`operative-card-abilities-input bf-field-input min-h-[5rem] w-full resize-y ${compact ? 'text-xs' : 'text-sm'}`}
-              placeholder="Operative abilities…"
-            />
-          ) : (
-            <AbilitiesList abilities={operative.abilities} compact={compact} />
-          )}
+          <OperativeAbilitiesTable
+            abilitiesText={operative.abilities ?? ''}
+            operativeId={operative.id}
+            compact={compact}
+            editable={editable}
+            onAbilityChange={handleAbilityChange}
+            onAddAbility={handleAddAbility}
+            onRemoveAbility={handleRemoveAbility}
+          />
         </OperativeCardSection>
 
         {editable || operative.notes ? (

@@ -33,8 +33,9 @@ export default function BlackfangCampaignLayout() {
   const [navCollapsed, setNavCollapsed] = useState(readNavCollapsed)
 
   const hub = isCampaignHub(pathname)
-  const section = getCampaignSection(pathname)
-  const registryTabId = getRegistryTabId(pathname)
+  const returnTo = new URLSearchParams(search).get('returnTo')
+  const section = getCampaignSection(pathname, { returnTo })
+  const registryTabId = getRegistryTabId(pathname, { returnTo })
   const registryTabLabel = registryTabId ? getRegistryTabLabel(registryTabId) : null
 
   useEffect(() => {

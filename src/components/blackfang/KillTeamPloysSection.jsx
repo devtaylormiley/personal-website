@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import {
   formatPloysForEdit,
   parsePloysFromEditText,
+  partitionKillTeamPloys,
   PLOYS_SECTION_TITLE,
   resolveKillTeamPloys,
 } from '../../lib/killTeamPloys'
@@ -9,6 +10,16 @@ import PloysTable from './PloysTable'
 
 function SectionHeading({ title, compact }) {
   return <p className={`bf-mono-label mb-2 ${compact ? 'text-[10px]' : ''}`}>{title}</p>
+}
+
+function PloyGroupHeading({ title, compact }) {
+  return (
+    <p
+      className={`bf-mono-label mb-2 text-[var(--bf-phosphor-amber)] ${compact ? 'text-[10px]' : 'text-xs'}`}
+    >
+      {title}
+    </p>
+  )
 }
 
 export default function KillTeamPloysSection({
@@ -19,6 +30,7 @@ export default function KillTeamPloysSection({
   compact = false,
 }) {
   const ploys = resolveKillTeamPloys(killTeam)
+  const { strategy, firefight } = partitionKillTeamPloys(ploys)
   const [draft, setDraft] = useState(() => formatPloysForEdit(ploys))
 
   useEffect(() => {
@@ -51,7 +63,23 @@ export default function KillTeamPloysSection({
   return (
     <div className={`w-full min-w-0 ${className}`}>
       <SectionHeading title={PLOYS_SECTION_TITLE} compact={compact} />
-      <PloysTable ploys={ploys} />
+      <div className="space-y-5">
+        {strategy.length ? (
+          <div>
+            <PloyGroupHeading title="Strategy ploys" compact={compact} />
+            <PloysTable ploys={strategy} emptyMessage="No strategy ploys listed." />
+          </div>
+        ) : null}
+        {firefight.length ? (
+          <div>
+            <PloyGroupHeading title="Firefight ploys" compact={compact} />
+            <PloysTable ploys={firefight} emptyMessage="No firefight ploys listed." />
+          </div>
+        ) : null}
+        {!strategy.length && !firefight.length ? (
+          <PloysTable ploys={[]} emptyMessage="No ploys listed." />
+        ) : null}
+      </div>
     </div>
   )
 }

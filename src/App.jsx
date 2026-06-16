@@ -6,6 +6,8 @@ import BlackfangAboutPage from './pages/BlackfangAboutPage'
 import BlackfangCampaignHomePage from './pages/BlackfangCampaignHomePage'
 import KillTeamIndex from './pages/KillTeamIndex'
 import BlackfangPartyPage from './pages/BlackfangPartyPage'
+import PlayerOperativesPage from './pages/PlayerOperativesPage'
+import NewPlayerOperativePage from './pages/NewPlayerOperativePage'
 import KillTeamPage from './pages/KillTeamPage'
 import HomebrewTeamPage from './pages/HomebrewTeamPage'
 import HomebrewOperativePage from './pages/HomebrewOperativePage'
@@ -43,6 +45,8 @@ function App() {
             <Route path="kt24-data/:tabId" element={<KillTeamIndex />} />
             <Route path="kill-teams" element={<Navigate to="kt24-data" replace />} />
             <Route path="party" element={<BlackfangPartyPage />} />
+            <Route path="player-operatives/new" element={<NewPlayerOperativePage />} />
+            <Route path="player-operatives" element={<PlayerOperativesPage />} />
             <Route path="section-3" element={<Navigate to="party" replace />} />
             <Route path="homebrew-operative/:operativeId" element={<HomebrewOperativePage />} />
             <Route path="homebrew/:teamId" element={<HomebrewTeamPage />} />

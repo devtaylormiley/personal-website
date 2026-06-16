@@ -6,10 +6,39 @@
 
 .page-resume__inner {
   width: 100%;
+  max-width: 64rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 1.5rem);
 }
 
 .page-resume__breadcrumb {
   margin-bottom: 0;
+}
+
+.page-resume__back-btn {
+  padding: 0.5rem 0;
+  border: none;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgb(196 181 253);
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.page-resume__back-btn:hover {
+  color: rgb(221 214 254);
+}
+
+.page-resume__back-btn:focus-visible {
+  outline: 2px solid rgb(167 139 250);
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+.page-resume--embed {
+  min-height: 0;
 }
 
 .page-resume__toolbar {

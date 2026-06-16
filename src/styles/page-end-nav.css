@@ -111,22 +111,22 @@
 }
 
 .page-end-nav--blackfang .page-end-nav__fab {
-  border: 1px solid var(--bf-border-bright, #33a357);
+  border: 1px solid var(--bf-border-bright, #4a8f62);
   border-radius: 0;
-  background: rgb(3 10 4 / 0.94);
-  color: var(--bf-accent-bright, #7dffb0);
+  background: rgb(7 13 8 / 0.94);
+  color: var(--bf-accent-bright, #78c892);
   font-family: var(--bf-font-mono, 'IBM Plex Mono', monospace);
   box-shadow:
-    0 0 12px rgb(51 255 102 / 0.18),
+    0 0 10px rgb(92 184 118 / 0.08),
     0 10px 28px -12px rgb(0 0 0 / 0.8);
 }
 
 .page-end-nav--blackfang .page-end-nav__fab:hover {
-  border-color: var(--bf-accent, #33ff66);
-  background: rgb(5 15 6 / 0.98);
-  color: var(--bf-accent, #33ff66);
+  border-color: var(--bf-accent, #5cb876);
+  background: rgb(10 17 12 / 0.98);
+  color: var(--bf-accent-bright, #78c892);
   box-shadow:
-    0 0 16px rgb(51 255 102 / 0.32),
+    0 0 12px rgb(92 184 118 / 0.12),
     0 14px 32px -12px rgb(0 0 0 / 0.85);
 }
 

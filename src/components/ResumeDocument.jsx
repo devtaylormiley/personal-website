@@ -12,13 +12,13 @@ export default function ResumeDocument({ variant = 'page', id, onBack }) {
   return (
     <article
       id={id}
-      className={`page-resume scroll-mt-20 px-4 pb-16 sm:px-6 sm:pb-20 ${
+      className={`page-resume scroll-mt-20 pb-16 sm:pb-20 ${
         embedded
           ? 'page-resume--embed pt-[calc(var(--site-navbar-height)+env(safe-area-inset-top,0px)+1.25rem)]'
           : 'pt-24 sm:pt-28'
       }`}
     >
-      <div className="page-resume__inner mx-auto max-w-3xl">
+      <div className="page-resume__inner">
         <div className="page-resume__toolbar">
           {embedded && onBack ? (
             <button type="button" className="page-resume__back-btn" onClick={onBack}>

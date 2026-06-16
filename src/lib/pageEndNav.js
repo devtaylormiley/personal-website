@@ -1,4 +1,4 @@
-import { CAMPAIGN_HUB_PATH, isKillTeamSlugPage } from './blackfangNavigation'
+import { CAMPAIGN_HUB_PATH, isKillTeamSlugPage, PLAYER_OPERATIVES_PATH } from './blackfangNavigation'
 
 function normalizePath(pathname) {
   if (!pathname || pathname === '/') return '/'
@@ -21,8 +21,9 @@ export function pathHasChildRoutes(pathname) {
  * Parent link for leaf routes only (null when at a section hub or home).
  * @returns {{ to: string, label: string } | null}
  */
-export function getParentRouteNav(pathname) {
+export function getParentRouteNav(pathname, search = '') {
   const path = normalizePath(pathname)
+  const returnTo = new URLSearchParams(search).get('returnTo')
 
   if (pathHasChildRoutes(path)) return null
 
@@ -31,7 +32,7 @@ export function getParentRouteNav(pathname) {
   }
 
   if (path === '/projects/schema-bridge') {
-    return { to: '/#projects', label: 'Projects' }
+    return { to: '/#projects', label: 'Skill Showcase' }
   }
 
   if (path === '/resume') {
@@ -40,6 +41,14 @@ export function getParentRouteNav(pathname) {
 
   if (path === `${CAMPAIGN_HUB_PATH}/about` || path === `${CAMPAIGN_HUB_PATH}/party`) {
     return { to: CAMPAIGN_HUB_PATH, label: 'Blackfang Campaign' }
+  }
+
+  if (path === PLAYER_OPERATIVES_PATH) {
+    return { to: CAMPAIGN_HUB_PATH, label: 'Blackfang Campaign' }
+  }
+
+  if (path === `${PLAYER_OPERATIVES_PATH}/new`) {
+    return { to: PLAYER_OPERATIVES_PATH, label: 'Player Operatives' }
   }
 
   const kt24TabMatch = path.match(/^\/projects\/blackfang-campaign\/kt24-data\/([^/]+)$/)
@@ -52,7 +61,13 @@ export function getParentRouteNav(pathname) {
   }
 
   if (/^\/projects\/blackfang-campaign\/homebrew-operative\/[^/]+$/.test(path)) {
-    return { to: `${CAMPAIGN_HUB_PATH}/party`, label: 'Party' }
+    if (returnTo === 'player-operatives') {
+      return { to: PLAYER_OPERATIVES_PATH, label: 'Player Operatives' }
+    }
+    if (returnTo === 'party') {
+      return { to: `${CAMPAIGN_HUB_PATH}/party`, label: 'Party' }
+    }
+    return { to: `${CAMPAIGN_HUB_PATH}/kt24-data/operatives`, label: 'Operatives' }
   }
 
   if (isKillTeamSlugPage(path)) {

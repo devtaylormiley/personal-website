@@ -1,9 +1,9 @@
 import RegistryTable from './registry/RegistryTable'
 import {
   getPloyCpShortLabel,
-  getPloyTypeLabel,
   getPloyUsageHint,
 } from '../../lib/killTeamPloys'
+import { dataslateToneClass } from '../../lib/ruleChipTones'
 
 function renderEffect(ploy) {
   const description = ploy.description?.trim()
@@ -16,7 +16,7 @@ function renderEffect(ploy) {
   return (
     <div className="space-y-1.5">
       {usageHint ? (
-        <p className="font-medium text-[var(--bf-phosphor-orange-bright)]">{usageHint}</p>
+        <p className="font-medium text-[var(--bf-phosphor-orange)]">{usageHint}</p>
       ) : null}
       {description ? (
         <p className="bf-body whitespace-pre-wrap text-[var(--bf-text)]">{description}</p>
@@ -29,27 +29,19 @@ const PLOY_COLUMNS = [
   {
     key: 'name',
     label: 'Ploy',
-    className: 'w-[22%] min-w-[7rem]',
+    className: 'w-[26%] min-w-[7rem]',
     render: (row) => (
-      <span className="font-medium text-[var(--bf-accent-bright)]">{row.name}</span>
-    ),
-  },
-  {
-    key: 'type',
-    label: 'Type',
-    className: 'w-[14%] min-w-[5.5rem] whitespace-nowrap',
-    render: (row) => (
-      <span className="font-medium text-[var(--bf-phosphor-amber-bright)]">
-        {getPloyTypeLabel(row.type)}
+      <span className="font-medium text-[var(--bf-item,var(--bf-accent))]">
+        {row.name}
       </span>
     ),
   },
   {
     key: 'cp',
     label: 'CP',
-    className: 'w-[12%] min-w-[4.5rem] whitespace-nowrap',
+    className: 'w-[3.5rem] min-w-[3rem] max-w-[4rem] whitespace-nowrap text-center',
     render: (row) => (
-      <span className="font-medium text-[var(--bf-phosphor-cyan-bright)]">
+      <span className="font-medium text-[var(--bf-phosphor-cyan)]">
         {getPloyCpShortLabel(row)}
       </span>
     ),
@@ -63,8 +55,9 @@ const PLOY_COLUMNS = [
 ]
 
 export default function PloysTable({ ploys, emptyMessage = 'No ploys listed.' }) {
-  const rows = (ploys ?? []).map((ploy) => ({
+  const rows = (ploys ?? []).map((ploy, index) => ({
     key: ploy.ployId ?? ploy.name,
+    toneClass: dataslateToneClass(ploy.name, index),
     ...ploy,
   }))
 

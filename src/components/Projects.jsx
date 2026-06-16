@@ -22,10 +22,18 @@ const projectCards = [
   },
   {
     slug: 'ux',
-    title: 'Career Wins',
+    title: 'UI/UX Improvements - Real Examples',
     description:
-      'Since the vast majority of my projects are proprietary projects I have included interface and experience wins from product work — before/after case studies across checkout, onboarding, data density, errors, and accessibility.',
-    tags: ['WCAG', 'Accessibility', 'User journey', 'Flow', 'Usability'],
+      'Since the vast majority of my projects are proprietary projects, I have included interface and experience wins from product work — before/after case studies across checkout, onboarding, data density, errors, and accessibility.',
+    tags: [
+      'WCAG',
+      'Accessibility',
+      'Mobile-first',
+      'Responsive design',
+      'User journey',
+      'Flow',
+      'Usability',
+    ],
     cta: 'View improvements',
     imageSrc: portfolioImageUrl('project-delta-ux-new.png'),
     imageFallback: projectCardArtUrl({

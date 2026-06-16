@@ -1,83 +1,83 @@
-/* Blackfang — CRT green phosphor terminal */
+/* Blackfang — CRT green phosphor terminal (WCAG AA on --bf-surface) */
 
 .blackfang-campaign {
-  --bf-bg: #000000;
-  --bf-bg-elevated: #030a04;
-  --bf-surface: #050f06;
-  --bf-surface-hover: #081408;
-  --bf-border: #1b4d2a;
-  --bf-border-bright: #33a357;
-  --bf-text: #e4e4e7;
-  --bf-text-bright: #fafafa;
-  --bf-text-muted: #b0b0b8;
-  --bf-field: #f4f4f5;
-  --bf-field-muted: #d0d0d6;
-  --bf-accent: #33ff66;
-  --bf-accent-bright: #7dffb0;
-  --bf-accent-dim: #1a6633;
-  --bf-accent-bg: rgb(51 255 102 / 0.08);
-  --bf-accent-glow: rgb(51 255 102 / 0.45);
-  --bf-phosphor-green: #33ff66;
-  --bf-phosphor-green-bright: #7dffb0;
-  --bf-phosphor-green-dim: #1a6633;
-  --bf-phosphor-green-border: #33a357;
-  --bf-phosphor-green-glow: rgb(51 255 102 / 0.45);
-  --bf-phosphor-green-bg: rgb(51 255 102 / 0.08);
-  --bf-phosphor-amber: #e8b84a;
-  --bf-phosphor-amber-bright: #ffd876;
-  --bf-phosphor-amber-dim: #6b5018;
-  --bf-phosphor-amber-border: #c9a227;
-  --bf-phosphor-amber-glow: rgb(232 184 74 / 0.4);
-  --bf-phosphor-amber-bg: rgb(232 184 74 / 0.08);
-  --bf-phosphor-orange: #ff8866;
-  --bf-phosphor-orange-bright: #ffaa88;
-  --bf-phosphor-orange-dim: #8a3d28;
-  --bf-phosphor-orange-border: #cc6644;
-  --bf-phosphor-orange-glow: rgb(255 136 102 / 0.4);
-  --bf-phosphor-orange-bg: rgb(255 136 102 / 0.08);
-  --bf-phosphor-cyan: #56d4f0;
-  --bf-phosphor-cyan-bright: #8deaff;
-  --bf-phosphor-cyan-dim: #1a5566;
-  --bf-phosphor-cyan-border: #2a9cb8;
-  --bf-phosphor-cyan-glow: rgb(86 212 240 / 0.4);
-  --bf-phosphor-cyan-bg: rgb(86 212 240 / 0.08);
-  --bf-phosphor-violet: #b794f6;
-  --bf-phosphor-violet-bright: #d4bbfc;
-  --bf-phosphor-violet-dim: #5b3480;
-  --bf-phosphor-violet-border: #9d6dd4;
-  --bf-phosphor-violet-glow: rgb(183 148 246 / 0.35);
-  --bf-phosphor-violet-bg: rgb(183 148 246 / 0.08);
-  --bf-phosphor-rose: #ff6e9e;
-  --bf-phosphor-rose-bright: #ff9ec4;
-  --bf-phosphor-rose-dim: #8a2848;
-  --bf-phosphor-rose-border: #d45682;
-  --bf-phosphor-rose-glow: rgb(255 110 158 / 0.4);
-  --bf-phosphor-rose-bg: rgb(255 110 158 / 0.08);
-  --bf-phosphor-lime: #b8ff3d;
-  --bf-phosphor-lime-bright: #d4ff7a;
-  --bf-phosphor-lime-dim: #4a6618;
-  --bf-phosphor-lime-border: #8acc28;
-  --bf-phosphor-lime-glow: rgb(184 255 61 / 0.4);
-  --bf-phosphor-lime-bg: rgb(184 255 61 / 0.08);
-  --bf-phosphor-teal: #3dd4b8;
-  --bf-phosphor-teal-bright: #7ae8d4;
-  --bf-phosphor-teal-dim: #1a6658;
-  --bf-phosphor-teal-border: #2ab89e;
-  --bf-phosphor-teal-glow: rgb(61 212 184 / 0.4);
-  --bf-phosphor-teal-bg: rgb(61 212 184 / 0.08);
-  --bf-phosphor-gold: #ffc947;
-  --bf-phosphor-gold-bright: #ffe082;
-  --bf-phosphor-gold-dim: #806820;
-  --bf-phosphor-gold-border: #e6a820;
-  --bf-phosphor-gold-glow: rgb(255 201 71 / 0.4);
-  --bf-phosphor-gold-bg: rgb(255 201 71 / 0.08);
-  --bf-phosphor-magenta: #e066ff;
-  --bf-phosphor-magenta-bright: #f0a0ff;
-  --bf-phosphor-magenta-dim: #702880;
-  --bf-phosphor-magenta-border: #c44de0;
-  --bf-phosphor-magenta-glow: rgb(224 102 255 / 0.38);
-  --bf-phosphor-magenta-bg: rgb(224 102 255 / 0.08);
-  --bf-danger: #ff6b6b;
+  --bf-bg: #040604;
+  --bf-bg-elevated: #070d08;
+  --bf-surface: #0a110c;
+  --bf-surface-hover: #0d150f;
+  --bf-border: #2a4a35;
+  --bf-border-bright: #4a8f62;
+  --bf-text: #d4d4da;
+  --bf-text-bright: #ebebef;
+  --bf-text-muted: #9a9aa4;
+  --bf-field: #e0e0e6;
+  --bf-field-muted: #b8b8c2;
+  --bf-accent: #5cb876;
+  --bf-accent-bright: #78c892;
+  --bf-accent-dim: #2a5238;
+  --bf-accent-bg: rgb(92 184 118 / 0.06);
+  --bf-accent-glow: rgb(92 184 118 / 0.16);
+  --bf-phosphor-green: #5cb876;
+  --bf-phosphor-green-bright: #78c892;
+  --bf-phosphor-green-dim: #2a5238;
+  --bf-phosphor-green-border: #4a8f62;
+  --bf-phosphor-green-glow: rgb(92 184 118 / 0.14);
+  --bf-phosphor-green-bg: rgb(92 184 118 / 0.05);
+  --bf-phosphor-amber: #b8944a;
+  --bf-phosphor-amber-bright: #c9a85a;
+  --bf-phosphor-amber-dim: #524020;
+  --bf-phosphor-amber-border: #967838;
+  --bf-phosphor-amber-glow: rgb(185 148 74 / 0.14);
+  --bf-phosphor-amber-bg: rgb(185 148 74 / 0.05);
+  --bf-phosphor-orange: #c07858;
+  --bf-phosphor-orange-bright: #c99078;
+  --bf-phosphor-orange-dim: #5a3828;
+  --bf-phosphor-orange-border: #a06848;
+  --bf-phosphor-orange-glow: rgb(192 120 88 / 0.14);
+  --bf-phosphor-orange-bg: rgb(192 120 88 / 0.05);
+  --bf-phosphor-cyan: #58a8bc;
+  --bf-phosphor-cyan-bright: #72b8cc;
+  --bf-phosphor-cyan-dim: #244850;
+  --bf-phosphor-cyan-border: #4090a4;
+  --bf-phosphor-cyan-glow: rgb(88 168 188 / 0.14);
+  --bf-phosphor-cyan-bg: rgb(88 168 188 / 0.05);
+  --bf-phosphor-violet: #9480b8;
+  --bf-phosphor-violet-bright: #a894c9;
+  --bf-phosphor-violet-dim: #443060;
+  --bf-phosphor-violet-border: #7868a0;
+  --bf-phosphor-violet-glow: rgb(148 128 184 / 0.12);
+  --bf-phosphor-violet-bg: rgb(148 128 184 / 0.05);
+  --bf-phosphor-rose: #b86888;
+  --bf-phosphor-rose-bright: #c97a98;
+  --bf-phosphor-rose-dim: #5a2838;
+  --bf-phosphor-rose-border: #a05878;
+  --bf-phosphor-rose-glow: rgb(184 104 136 / 0.14);
+  --bf-phosphor-rose-bg: rgb(184 104 136 / 0.05);
+  --bf-phosphor-lime: #98b858;
+  --bf-phosphor-lime-bright: #a8c96a;
+  --bf-phosphor-lime-dim: #404820;
+  --bf-phosphor-lime-border: #789838;
+  --bf-phosphor-lime-glow: rgb(152 184 88 / 0.14);
+  --bf-phosphor-lime-bg: rgb(152 184 88 / 0.05);
+  --bf-phosphor-teal: #58a898;
+  --bf-phosphor-teal-bright: #6ab8a8;
+  --bf-phosphor-teal-dim: #244840;
+  --bf-phosphor-teal-border: #409080;
+  --bf-phosphor-teal-glow: rgb(88 168 152 / 0.14);
+  --bf-phosphor-teal-bg: rgb(88 168 152 / 0.05);
+  --bf-phosphor-gold: #b89848;
+  --bf-phosphor-gold-bright: #c9ae68;
+  --bf-phosphor-gold-dim: #584818;
+  --bf-phosphor-gold-border: #987838;
+  --bf-phosphor-gold-glow: rgb(184 152 72 / 0.14);
+  --bf-phosphor-gold-bg: rgb(184 152 72 / 0.05);
+  --bf-phosphor-magenta: #a868b8;
+  --bf-phosphor-magenta-bright: #b882c9;
+  --bf-phosphor-magenta-dim: #502860;
+  --bf-phosphor-magenta-border: #9050a8;
+  --bf-phosphor-magenta-glow: rgb(168 104 184 / 0.12);
+  --bf-phosphor-magenta-bg: rgb(168 104 184 / 0.05);
+  --bf-danger: #d87070;
   --bf-font-display: 'VT323', 'IBM Plex Mono', monospace;
   --bf-font-mono: 'IBM Plex Mono', 'Consolas', 'Courier New', monospace;
   --bf-font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -105,15 +105,15 @@
     0deg,
     rgb(0 0 0 / 0) 0px,
     rgb(0 0 0 / 0) 2px,
-    rgb(0 0 0 / 0.22) 2px,
-    rgb(0 0 0 / 0.22) 4px
+    rgb(0 0 0 / 0.14) 2px,
+    rgb(0 0 0 / 0.14) 4px
   );
-  opacity: 0.35;
+  opacity: 0.22;
 }
 
 .blackfang-campaign ::selection {
-  background: rgb(51 255 102 / 0.35);
-  color: #000;
+  background: rgb(92 184 118 / 0.28);
+  color: var(--bf-bg);
   text-shadow: none;
 }
 
@@ -133,9 +133,9 @@
 .bf-terminal-screen {
   border: 2px solid var(--bf-border);
   box-shadow:
-    0 0 0 1px #000,
-    0 0 24px rgb(51 255 102 / 0.08),
-    inset 0 0 80px rgb(0 0 0 / 0.85);
+    0 0 0 1px var(--bf-bg),
+    0 0 20px rgb(92 184 118 / 0.05),
+    inset 0 0 80px rgb(0 0 0 / 0.75);
   background: var(--bf-bg-elevated);
 }
 
@@ -152,8 +152,8 @@
   font-size: 0.75rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--bf-accent);
-  text-shadow: 0 0 8px var(--bf-accent-glow);
+  color: var(--bf-accent-bright);
+  text-shadow: none;
 }
 
 .bf-terminal-titlebar-path {
@@ -233,9 +233,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--bf-accent-bright);
-  text-shadow:
-    0 0 6px var(--bf-accent-glow),
-    0 0 18px rgb(51 255 102 / 0.25);
+  text-shadow: none;
 }
 
 .bf-heading {
@@ -245,7 +243,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--bf-accent-bright);
-  text-shadow: 0 0 10px rgb(51 255 102 / 0.2);
+  text-shadow: none;
 }
 
 .bf-mono-label {
@@ -347,7 +345,7 @@
 
 .bf-breadcrumb-link:hover {
   color: var(--bf-accent-bright);
-  text-shadow: 0 0 8px var(--bf-accent-glow);
+  text-shadow: none;
 }
 
 .bf-breadcrumb-current {
@@ -355,7 +353,7 @@
   align-items: center;
   gap: 0.375rem;
   color: var(--bf-accent);
-  text-shadow: 0 0 6px rgb(51 255 102 / 0.2);
+  text-shadow: none;
 }
 
 .bf-breadcrumb-current span {
@@ -382,7 +380,7 @@
 
 .bf-link:hover {
   color: var(--bf-accent-bright);
-  text-shadow: 0 0 8px var(--bf-accent-glow);
+  text-shadow: none;
 }
 
 /* —— Surfaces —— */
@@ -445,9 +443,9 @@
 }
 
 .bf-btn-primary:hover:not(:disabled) {
-  background: rgb(51 255 102 / 0.15);
-  color: var(--bf-accent);
-  box-shadow: 0 0 12px rgb(51 255 102 / 0.2);
+  background: rgb(92 184 118 / 0.12);
+  color: var(--bf-accent-bright);
+  box-shadow: 0 0 10px rgb(92 184 118 / 0.08);
 }
 
 .bf-btn-primary:disabled {
@@ -493,7 +491,7 @@
   border-color: var(--bf-border-bright);
   background: var(--bf-accent-bg);
   color: var(--bf-accent-bright);
-  box-shadow: inset 0 0 12px rgb(51 255 102 / 0.1);
+  box-shadow: inset 0 0 12px rgb(92 184 118 / 0.1);
 }
 
 .bf-tab-active::before {
@@ -525,7 +523,7 @@
   background: var(--bf-item-bg);
   color: var(--bf-item-bright);
   box-shadow: inset 0 0 12px rgb(0 0 0 / 0.35);
-  text-shadow: 0 0 8px var(--bf-item-glow);
+  text-shadow: none;
 }
 
 /* —— Phosphor tone accents (split-complement terminal palette) —— */
@@ -625,7 +623,7 @@
   box-sizing: border-box;
   max-width: 100%;
   border: 1px solid var(--bf-border);
-  background: #000;
+  background: var(--bf-bg);
   color: var(--bf-field);
   font-family: var(--bf-font-body);
   outline: none;
@@ -650,7 +648,7 @@
   box-shadow:
     inset 0 0 12px rgb(0 0 0 / 0.8),
     0 0 0 1px var(--bf-accent-dim),
-    0 0 16px rgb(51 255 102 / 0.15);
+    0 0 16px rgb(92 184 118 / 0.15);
 }
 
 .blackfang-campaign .bf-registry-filter-control {
@@ -692,7 +690,7 @@
 .bf-error {
   font-family: var(--bf-font-body);
   color: var(--bf-danger);
-  text-shadow: 0 0 8px rgb(255 80 80 / 0.4);
+  text-shadow: none;
 }
 
 .bf-error::before {
@@ -709,9 +707,9 @@
   position: relative;
   border: 1px solid var(--bf-border) !important;
   border-radius: 0 !important;
-  background: #000 !important;
+  background: var(--bf-bg) !important;
   box-shadow:
-    inset 0 0 40px rgb(51 255 102 / 0.02),
+    inset 0 0 40px rgb(92 184 118 / 0.02),
     0 0 20px rgb(0 0 0 / 0.8) !important;
 }
 
@@ -786,13 +784,13 @@
 .blackfang-campaign .operative-card.bf-tone-violet .operative-card-name h3,
 .blackfang-campaign .operative-card.bf-tone-violet .operative-card-name input {
   color: var(--bf-item-bright) !important;
-  text-shadow: 0 0 8px var(--bf-item-glow);
+  text-shadow: none;
 }
 
 .blackfang-campaign .operative-card-name {
   border-color: rgb(113 113 122 / 0.45) !important;
   border-bottom-color: rgb(113 113 122 / 0.55) !important;
-  background: #000 !important;
+  background: var(--bf-bg) !important;
   border-style: solid;
   border-width: 0 0 1px;
 }
@@ -803,7 +801,7 @@
   font-family: var(--bf-font-display) !important;
   font-size: 1.5rem !important;
   letter-spacing: 0.08em;
-  text-shadow: 0 0 8px var(--bf-accent-glow);
+  text-shadow: none;
 }
 
 .blackfang-campaign .operative-card-name p {
@@ -826,7 +824,7 @@
 
 .blackfang-campaign .operative-card-keywords {
   border-color: var(--bf-border) !important;
-  background: #000 !important;
+  background: var(--bf-bg) !important;
 }
 
 .blackfang-campaign .operative-card-keywords--inline {
@@ -850,7 +848,7 @@
 
 .blackfang-campaign .operative-card-stat-ribbon {
   border-color: var(--bf-border) !important;
-  background: #000;
+  background: var(--bf-bg);
 }
 
 .blackfang-campaign .operative-card-stat-ribbon--inline {
@@ -875,7 +873,7 @@
 
 .blackfang-campaign .operative-card-section-head {
   border-color: var(--bf-border) !important;
-  background: #000 !important;
+  background: var(--bf-bg) !important;
 }
 
 .blackfang-campaign .operative-card-section-head h4 {
@@ -895,7 +893,7 @@
 }
 
 .blackfang-campaign .operative-card-section-body {
-  background: #000 !important;
+  background: var(--bf-bg) !important;
 }
 
 .blackfang-campaign .operative-card-table--aligned {
@@ -941,33 +939,37 @@
 }
 
 .blackfang-campaign .operative-card-table-head {
-  background: #000 !important;
+  background: var(--bf-bg) !important;
   border-bottom: 1px solid var(--bf-border);
   color: var(--bf-accent) !important;
 }
 
 .blackfang-campaign .operative-card-profile-stats-head th {
-  background: #000 !important;
+  background: var(--bf-bg) !important;
   border-bottom: 1px solid rgb(180 120 60 / 0.45);
-  color: rgb(232 168 124 / 0.92) !important;
+  color: rgb(201 168 90 / 0.92) !important;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  text-shadow: 0 0 6px rgb(232 168 124 / 0.2);
+  text-shadow: none;
 }
 
-.blackfang-campaign .operative-card ul li {
+.blackfang-campaign .operative-card ul li:not(.bf-dataslate-entry) {
   border-color: var(--bf-border) !important;
-  background: #000 !important;
+  background: var(--bf-bg) !important;
 }
 
-.blackfang-campaign .operative-card ul li p:first-child {
+.blackfang-campaign .operative-card ul li:not(.bf-dataslate-entry) p:first-child {
   color: var(--bf-accent) !important;
+}
+
+.blackfang-campaign .operative-card .bf-dataslate-entry[class*='bf-tone-'] p:first-child {
+  color: var(--bf-item, var(--bf-accent)) !important;
 }
 
 .blackfang-campaign .operative-card-editor {
   border-color: var(--bf-border) !important;
-  background: #000 !important;
+  background: var(--bf-bg) !important;
 }
 
 .blackfang-campaign .operative-card table td {
@@ -991,7 +993,7 @@
 
 .blackfang-campaign .bf-weapon-combobox {
   border: 1px solid var(--bf-border);
-  background: #000;
+  background: var(--bf-bg);
 }
 
 .blackfang-campaign .bf-weapon-combobox-item--active {
@@ -1004,12 +1006,12 @@
 
 .blackfang-campaign .bf-team-card {
   border: 1px solid var(--bf-border);
-  background: #000;
+  background: var(--bf-bg);
 }
 
 .blackfang-campaign .bf-team-card:hover {
-  border-color: var(--bf-accent);
-  box-shadow: 0 0 16px rgb(51 255 102 / 0.12);
+  border-color: var(--bf-border-bright);
+  box-shadow: 0 0 12px rgb(92 184 118 / 0.06);
 }
 
 .blackfang-campaign .bf-team-card h3,
@@ -1048,7 +1050,7 @@
 
 .blackfang-campaign .bf-team-card .rounded-md.uppercase {
   border: 1px solid var(--bf-border);
-  background: #000;
+  background: var(--bf-bg);
   color: var(--bf-accent);
   font-family: var(--bf-font-mono);
 }
@@ -1059,7 +1061,7 @@
 
 .blackfang-campaign .operative-card-campaign {
   border-color: var(--bf-border);
-  background: #000;
+  background: var(--bf-bg);
 }
 
 .blackfang-campaign .operative-card-campaign > p {
@@ -1074,19 +1076,19 @@
   0%,
   100% {
     color: var(--bf-accent);
-    text-shadow: 0 0 8px var(--bf-accent-glow);
+    text-shadow: none;
   }
 
   50% {
     color: var(--bf-accent-bright);
-    text-shadow: 0 0 16px rgb(125 255 176 / 0.8);
+    text-shadow: none;
   }
 }
 
 .blackfang-campaign .bf-chip,
 .blackfang-campaign .bf-chip-violet {
   border: 1px solid var(--bf-border);
-  background: #000;
+  background: var(--bf-bg);
   color: var(--bf-accent);
   font-family: var(--bf-font-mono);
   font-size: 0.6875rem;
@@ -1106,7 +1108,49 @@
   border-color: var(--bf-item-border);
   background: var(--bf-item-bg);
   color: var(--bf-item-bright);
-  text-shadow: 0 0 6px var(--bf-item-glow);
+  text-shadow: none;
+}
+
+/* Dataslate ploy rows + ability cards — per-entry phosphor tones */
+.blackfang-campaign tr.bf-dataslate-row.bf-tone-green,
+.blackfang-campaign tr.bf-dataslate-row.bf-tone-amber,
+.blackfang-campaign tr.bf-dataslate-row.bf-tone-orange,
+.blackfang-campaign tr.bf-dataslate-row.bf-tone-cyan,
+.blackfang-campaign tr.bf-dataslate-row.bf-tone-violet,
+.blackfang-campaign tr.bf-dataslate-row.bf-tone-rose,
+.blackfang-campaign tr.bf-dataslate-row.bf-tone-lime,
+.blackfang-campaign tr.bf-dataslate-row.bf-tone-teal,
+.blackfang-campaign tr.bf-dataslate-row.bf-tone-gold,
+.blackfang-campaign tr.bf-dataslate-row.bf-tone-magenta,
+.blackfang-campaign .bf-dataslate-entry.bf-tone-green,
+.blackfang-campaign .bf-dataslate-entry.bf-tone-amber,
+.blackfang-campaign .bf-dataslate-entry.bf-tone-orange,
+.blackfang-campaign .bf-dataslate-entry.bf-tone-cyan,
+.blackfang-campaign .bf-dataslate-entry.bf-tone-violet,
+.blackfang-campaign .bf-dataslate-entry.bf-tone-rose,
+.blackfang-campaign .bf-dataslate-entry.bf-tone-lime,
+.blackfang-campaign .bf-dataslate-entry.bf-tone-teal,
+.blackfang-campaign .bf-dataslate-entry.bf-tone-gold,
+.blackfang-campaign .bf-dataslate-entry.bf-tone-magenta {
+  border-color: var(--bf-item-border);
+  background: linear-gradient(
+    90deg,
+    var(--bf-item-bg) 0%,
+    var(--bf-surface) 100%
+  );
+}
+
+.blackfang-campaign tr.bf-dataslate-row[class*='bf-tone-']:hover,
+.blackfang-campaign .bf-dataslate-entry[class*='bf-tone-']:hover {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--bf-item-bg) 70%, var(--bf-surface)) 0%,
+    var(--bf-surface-hover) 100%
+  );
+}
+
+.blackfang-campaign tr.bf-dataslate-row[class*='bf-tone-'] td:first-child {
+  box-shadow: inset 2px 0 0 color-mix(in srgb, var(--bf-item-border) 60%, transparent);
 }
 
 .blackfang-campaign .bf-field-label {
@@ -1154,7 +1198,7 @@
 
 .blackfang-campaign .bf-killteam-panel {
   border: 1px solid var(--bf-border);
-  background: #000;
+  background: var(--bf-bg);
   box-shadow: inset 0 0 24px rgb(0 0 0 / 0.7);
   width: 100%;
   min-width: 0;
@@ -1172,7 +1216,7 @@
 
 .blackfang-campaign .bf-equipment-dataslate {
   border: 1px solid var(--bf-border);
-  background: #000;
+  background: var(--bf-bg);
   box-shadow: inset 0 0 20px rgb(0 0 0 / 0.65);
 }
 
@@ -1212,7 +1256,7 @@
 
 .blackfang-campaign .bf-weapon-dataslate {
   border: 1px solid var(--bf-border);
-  background: #000;
+  background: var(--bf-bg);
   box-shadow: inset 0 0 20px rgb(0 0 0 / 0.65);
 }
 
@@ -1248,12 +1292,12 @@
 }
 
 .blackfang-campaign .bf-team-card .rounded-md.uppercase {
-  text-shadow: 0 0 6px var(--bf-accent-glow);
+  text-shadow: none;
 }
 
 /* Nav active state enhancement */
 .blackfang-campaign nav .bf-tab-active {
-  text-shadow: 0 0 10px var(--bf-accent-glow);
+  text-shadow: none;
 }
 
 /* —— Campaign hub nav tiles —— */
@@ -1295,7 +1339,7 @@
   padding: .5rem 1rem 1rem 1rem;
   text-decoration: none;
   border: 1px solid var(--bf-border);
-  background: #000;
+  background: var(--bf-bg);
   transition:
     border-color 0.15s ease,
     box-shadow 0.15s ease,
@@ -1304,7 +1348,7 @@
 
 .bf-campaign-nav-tile:hover {
   border-color: var(--bf-item-border, var(--bf-border-bright));
-  box-shadow: 0 0 16px var(--bf-item-glow, rgb(51 255 102 / 0.12));
+  box-shadow: 0 0 12px var(--bf-item-glow, rgb(92 184 118 / 0.06));
   transform: translateY(-1px);
 }
 
@@ -1344,7 +1388,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--bf-item-bright, var(--bf-accent-bright));
-  text-shadow: 0 0 8px var(--bf-item-glow, var(--bf-accent-glow));
+  text-shadow: none;
 }
 
 .bf-campaign-nav-tile-desc {
@@ -1389,7 +1433,7 @@
   min-height: 10.5rem;
   padding: 1rem 1.1rem;
   border: 1px solid var(--bf-border);
-  background: #000;
+  background: var(--bf-bg);
   box-shadow: inset 0 0 18px rgb(0 0 0 / 0.55);
 }
 
@@ -1459,7 +1503,7 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--bf-phosphor-amber-bright);
-  text-shadow: 0 0 8px var(--bf-phosphor-amber-glow);
+  text-shadow: none;
 }
 
 .bf-lore-document-title {
@@ -1471,7 +1515,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--bf-accent-bright);
-  text-shadow: 0 0 12px var(--bf-accent-glow);
+  text-shadow: none;
 }
 
 .bf-lore-document-subtitle {
@@ -1545,7 +1589,7 @@
   line-height: 0.78;
   letter-spacing: 0.02em;
   color: var(--bf-phosphor-amber-bright);
-  text-shadow: 0 0 14px var(--bf-phosphor-amber-glow);
+  text-shadow: none;
 }
 
 @media (min-width: 640px) {
@@ -1562,7 +1606,7 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--bf-accent-bright);
-  text-shadow: 0 0 10px var(--bf-accent-glow);
+  text-shadow: none;
 }
 
 .bf-lore-document-figure {
@@ -1608,7 +1652,7 @@
   overflow: hidden;
   border: 1px solid var(--bf-border);
   background: #020804;
-  box-shadow: inset 0 0 32px rgb(51 255 102 / 0.04);
+  box-shadow: inset 0 0 32px rgb(92 184 118 / 0.04);
 }
 
 .bf-mission-map-screen::after {
@@ -1648,7 +1692,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--bf-accent-bright);
-  text-shadow: 0 0 10px var(--bf-accent-glow);
+  text-shadow: none;
 }
 
 .bf-mission-map-header-meta {
@@ -1703,7 +1747,7 @@
 }
 
 .bf-mission-map-svg-objective {
-  fill: #ff8866;
+  fill: var(--bf-phosphor-orange);
   font-size: 8px;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -1758,29 +1802,29 @@
 }
 
 .bf-mission-map-legend-swatch--insert {
-  background: #0f2e18;
-  border-color: #7dffb0;
+  background: #1a3024;
+  border-color: var(--bf-accent-bright);
 }
 
 .bf-mission-map-legend-swatch--room {
-  background: #081408;
-  border-color: #33a357;
+  background: #0d150f;
+  border-color: var(--bf-border-bright);
 }
 
 .bf-mission-map-legend-swatch--warn {
   background: #1a1408;
-  border-color: #c9a227;
+  border-color: var(--bf-phosphor-amber-border);
 }
 
 .bf-mission-map-legend-swatch--unknown {
-  background: #050806;
-  border-color: #1b4d2a;
+  background: var(--bf-surface);
+  border-color: var(--bf-border);
   border-style: dashed;
 }
 
 .bf-mission-map-legend-swatch--objective {
-  background: #2a120c;
-  border-color: #ff8866;
+  background: #2a1814;
+  border-color: var(--bf-phosphor-orange-border);
 }
 
 .bf-lore-document-pullquote {
@@ -1799,7 +1843,7 @@
   text-indent: 0;
   text-transform: uppercase;
   color: var(--bf-phosphor-amber-bright);
-  text-shadow: 0 0 10px var(--bf-phosphor-amber-glow);
+  text-shadow: none;
 }
 
 .bf-lore-document-footer {
@@ -1923,11 +1967,7 @@
   .bf-campaign-nav--collapsed .bf-nav-drawer-link,
   .bf-campaign-nav--collapsed .bf-nav-drawer-sublink {
     justify-content: center;
-    padding-inline: 0.5rem;
-  }
-
-  .bf-campaign-nav--collapsed .bf-nav-drawer-sublink {
-    padding-left: 0.5rem;
+    padding: 0.55rem 0.5rem;
   }
 
   .bf-campaign-nav--collapsed .bf-nav-drawer-link-active::before {
@@ -1935,7 +1975,9 @@
   }
 
   .bf-campaign-nav--collapsed .bf-nav-drawer-sublist {
-    margin-top: 0.1rem;
+    margin: 0.1rem 0 0;
+    padding: 0;
+    border-left: none;
   }
 }
 
@@ -2060,7 +2102,7 @@
   background: var(--bf-item-bg, var(--bf-accent-bg));
   color: var(--bf-item-bright, var(--bf-accent-bright));
   box-shadow: inset 0 0 12px rgb(0 0 0 / 0.35);
-  text-shadow: 0 0 10px var(--bf-item-glow, var(--bf-accent-glow));
+  text-shadow: none;
 }
 
 .bf-nav-drawer-link-active::before {
@@ -2089,7 +2131,7 @@
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
-  background: #000;
+  background: var(--bf-bg);
   opacity: 1;
   transition: opacity 0.55s ease;
 }
@@ -2119,8 +2161,8 @@
   border: 2px solid var(--bf-border);
   background: var(--bf-bg-elevated);
   box-shadow:
-    0 0 0 1px #000,
-    0 0 32px rgb(51 255 102 / 0.12),
+    0 0 0 1px var(--bf-bg),
+    0 0 24px rgb(92 184 118 / 0.06),
     inset 0 0 100px rgb(0 0 0 / 0.9);
 }
 
@@ -2138,7 +2180,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--bf-accent);
-  text-shadow: 0 0 8px var(--bf-accent-glow);
+  text-shadow: none;
 }
 
 .bf-connection-titlebar-meta {
@@ -2174,7 +2216,7 @@
   list-style: none;
   min-height: 9.5rem;
   color: var(--bf-accent-bright);
-  text-shadow: 0 0 6px var(--bf-accent-glow);
+  text-shadow: none;
 }
 
 .bf-connection-log li {
@@ -2208,7 +2250,7 @@
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   color: var(--bf-accent);
-  text-shadow: 0 0 6px var(--bf-accent-glow);
+  text-shadow: none;
 }
 
 .bf-connection-bar-pct {

@@ -6,7 +6,8 @@ export const heroContent = {
   role: PROFESSIONAL_TITLE,
   tagline:
     'I build clear, accessible interfaces—and ship agentic tools where humans stay in the loop on the decisions that matter.',
-  primaryCta: { label: 'View my resume', to: '/resume' },
+  primaryCta: { label: 'See Skill Showcase', href: '#projects' },
+  secondaryCta: { label: 'View my resume', closeLabel: 'Back to intro' },
   scrollCue: { label: 'Scroll for more', href: '#about' },
   socialLinks: [
     { label: 'GitHub', href: 'https://github.com/devtaylormiley' },
@@ -49,7 +50,7 @@ export const aboutContent = {
 
 export const projectsContent = {
   eyebrow: 'Work',
-  title: 'Skills showcase',
+  title: 'Skill Showcase',
   lead: 'AI-assisted pipelines, migration tooling, campaign resources, and UI/UX wins from product work.',
 }
 

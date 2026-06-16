@@ -1,18 +1,19 @@
 import { parseAbilities } from '../../lib/parseAbilities'
+import { dataslateToneClass } from '../../lib/ruleChipTones'
 
 function SectionHeading({ title, compact }) {
   if (!title?.trim()) return null
   return <p className={`bf-mono-label mb-2 ${compact ? 'text-[10px]' : ''}`}>{title}</p>
 }
 
-function EntryCard({ name, body, compact }) {
+function EntryCard({ name, body, compact, toneClass }) {
   return (
     <li
-      className={`w-full rounded-lg border border-[var(--bf-border)] bg-[rgb(4_10_6/0.6)] ${compact ? 'px-3 py-2' : 'px-4 py-3'}`}
+      className={`bf-dataslate-entry w-full rounded-lg border ${toneClass} ${compact ? 'px-3 py-2' : 'px-4 py-3'}`}
     >
       {name ? (
         <p
-          className={`font-semibold tracking-wide text-[var(--bf-accent)] uppercase ${compact ? 'font-mono text-xs' : 'font-mono text-sm'}`}
+          className={`font-semibold tracking-wide text-[var(--bf-item,var(--bf-accent))] uppercase ${compact ? 'font-mono text-xs' : 'font-mono text-sm'}`}
         >
           {name}
         </p>
@@ -47,6 +48,7 @@ export default function DataslateTextSection({
               name={entry.name}
               body={entry.body}
               compact={compact}
+              toneClass={dataslateToneClass(entry.name ?? entry.body, index)}
             />
           ))}
         </ul>

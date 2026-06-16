@@ -19,10 +19,10 @@ export default function RegistryTable({ columns, rows, emptyMessage = 'No matche
               </td>
             </tr>
           ) : (
-            rows.map((row) => (
+            rows.map((row, index) => (
               <tr
-                key={row.key}
-                className="border-t border-[var(--bf-border)]/60 hover:bg-[var(--bf-accent-bg)]"
+                key={row.key ?? index}
+                className={`bf-dataslate-row border-t border-[var(--bf-border)]/60 ${row.toneClass ?? 'hover:bg-[var(--bf-accent-bg)]'}`}
               >
                 {columns.map((column) => (
                   <td key={column.key} className={`px-3 py-2.5 align-top ${column.className ?? ''}`}>

@@ -67,7 +67,7 @@ export default function KarakTyrMissionMap() {
 
           {/* Insertion marker */}
           <g filter="url(#bf-map-glow)">
-            <polygon points="118,210 108,204 108,216" fill="#7dffb0" />
+            <polygon points="118,210 108,204 108,216" fill="#78c892" />
             <text x="118" y="248" className="bf-mission-map-svg-marker">
               YOU
             </text>
@@ -75,7 +75,7 @@ export default function KarakTyrMissionMap() {
 
           {/* Objective marker */}
           <g className="bf-mission-map-objective-pulse" filter="url(#bf-map-glow)">
-            <rect x="534" y="288" width="28" height="18" fill="none" stroke="#ff8866" strokeWidth="2" />
+            <rect x="534" y="288" width="28" height="18" fill="none" stroke="#c07858" strokeWidth="2" />
             <text x="548" y="340" textAnchor="middle" className="bf-mission-map-svg-objective">
               OBJ
             </text>
@@ -83,11 +83,11 @@ export default function KarakTyrMissionMap() {
 
           {/* Compass */}
           <g className="bf-mission-map-compass" transform="translate(648, 48)">
-            <circle r="22" fill="#030a04" stroke="#33a357" strokeWidth="1" />
+            <circle r="22" fill="#070d08" stroke="#4a8f62" strokeWidth="1" />
             <text y="-6" textAnchor="middle" className="bf-mission-map-svg-compass">
               N
             </text>
-            <path d="M 0 -14 L 0 14 M -14 0 L 14 0" stroke="#33ff66" strokeWidth="1" opacity="0.6" />
+            <path d="M 0 -14 L 0 14 M -14 0 L 14 0" stroke="#5cb876" strokeWidth="1" opacity="0.6" />
           </g>
         </svg>
 
@@ -123,11 +123,11 @@ export default function KarakTyrMissionMap() {
 }
 
 const ROOM_STYLES = {
-  default: { fill: '#081408', stroke: '#33a357', dash: null },
-  insert: { fill: '#0f2e18', stroke: '#7dffb0', dash: null },
-  warn: { fill: '#1a1408', stroke: '#c9a227', dash: null },
-  unknown: { fill: '#050806', stroke: '#1b4d2a', dash: '4 3' },
-  objective: { fill: '#2a120c', stroke: '#ff8866', dash: null },
+  default: { fill: '#0d150f', stroke: '#4a8f62', dash: null },
+  insert: { fill: '#1a3024', stroke: '#78c892', dash: null },
+  warn: { fill: '#1a1408', stroke: '#967838', dash: null },
+  unknown: { fill: '#0a110c', stroke: '#2a4a35', dash: '4 3' },
+  objective: { fill: '#2a1814', stroke: '#c07858', dash: null },
 }
 
 function Room({ x, y, w, h, label, sub, variant = 'default' }) {
