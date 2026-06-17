@@ -1,11 +1,12 @@
 import UxCaseStudyPage from './UxCaseStudyPage'
 import ErrorLoadingBefore from '../../components/ux/errorLoadingCaseStudy/ErrorLoadingBefore'
 import ErrorLoadingAfter from '../../components/ux/errorLoadingCaseStudy/ErrorLoadingAfter'
+import { getUxCaseNumber } from '../../data/uxImprovements'
 
 export default function ErrorLoadingPatternsPage() {
   return (
     <UxCaseStudyPage
-      caseNumber="04"
+      caseNumber={getUxCaseNumber('error-loading-patterns')}
       title="Error and loading patterns"
       context="Consumer app"
       intro="Inconsistent feedback made outages feel fatal: some screens showed a bare spinner with no layout shift, others dumped error codes with no recovery path. Users refreshed blindly or abandoned the session."

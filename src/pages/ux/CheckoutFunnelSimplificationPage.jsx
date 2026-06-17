@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import CheckoutFunnelBefore from '../../components/ux/checkoutCaseStudy/CheckoutFunnelBefore'
 import CheckoutFunnelAfter from '../../components/ux/checkoutCaseStudy/CheckoutFunnelAfter'
+import { getUxCaseNumber } from '../../data/uxImprovements'
 
 const fixes = [
   'Five screens became three — account merged into delivery, and review folded into a final confirm step with totals already known',
@@ -19,7 +20,7 @@ export default function CheckoutFunnelSimplificationPage() {
         <nav className="text-sm text-zinc-500" aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-2">
             <li>
-              <Link to="/#projects" className="transition-colors hover:text-violet-400">
+              <Link to="/" className="transition-colors hover:text-violet-400">
                 Portfolio
               </Link>
             </li>
@@ -27,7 +28,7 @@ export default function CheckoutFunnelSimplificationPage() {
               /
             </li>
             <li>
-              <Link to="/#projects" className="transition-colors hover:text-violet-400">
+              <Link to="/projects/ux" className="transition-colors hover:text-violet-400">
                 UI/UX improvements
               </Link>
             </li>
@@ -40,7 +41,7 @@ export default function CheckoutFunnelSimplificationPage() {
 
         <header className="mt-8 border-b border-zinc-800 pb-8">
           <p className="text-sm font-medium tracking-widest text-violet-400 uppercase">
-            Case study · 03
+            Case study · {getUxCaseNumber('checkout-funnel-simplification')}
           </p>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
             Checkout funnel simplification

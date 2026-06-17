@@ -1,11 +1,12 @@
 import UxCaseStudyPage from './UxCaseStudyPage'
 import AccessibilityFlowsBefore from '../../components/ux/accessibilityCaseStudy/AccessibilityFlowsBefore'
 import AccessibilityFlowsAfter from '../../components/ux/accessibilityCaseStudy/AccessibilityFlowsAfter'
+import { getUxCaseNumber } from '../../data/uxImprovements'
 
 export default function AccessibilityCoreFlowsPage() {
   return (
     <UxCaseStudyPage
-      caseNumber="06"
+      caseNumber={getUxCaseNumber('accessibility-core-flows')}
       title="Accessibility pass on core flows"
       context="Cross-product initiative"
       intro="Sign-in, search, and checkout failed WCAG 2.1 AA contrast on primary actions; forms relied on placeholders instead of labels; focus indicators were removed for aesthetics. Home navigation tiles used mouse-only spans instead of real links. Keyboard and screen-reader users hit dead ends on critical paths."

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { uxImprovements } from '../../data/uxImprovements'
+import { getUxCaseNumber, uxImprovements } from '../../data/uxImprovements'
 
 const focusTags = [
   'WCAG',
@@ -50,14 +50,15 @@ export default function UxImprovementsPage() {
         </header>
 
         <ol className="mt-10 divide-y divide-zinc-800/80 overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/30">
-          {items.map((item, index) => {
+          {items.map((item) => {
+            const caseNumber = getUxCaseNumber(item.slug)
             const rowBody = (
               <>
                 <span
                   className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-violet-500/30 bg-violet-500/10 font-mono text-xs font-medium text-violet-300"
                   aria-hidden="true"
                 >
-                  {String(index + 1).padStart(2, '0')}
+                  {caseNumber}
                 </span>
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">

@@ -31,7 +31,7 @@ export function getParentRouteNav(pathname, search = '') {
     return { to: '/projects/ux', label: 'UI/UX improvements' }
   }
 
-  if (path === '/projects/schema-bridge') {
+  if (path === '/projects/schema-bridge' || path === '/projects/ops-pulse') {
     return { to: '/#projects', label: 'Skill Showcase' }
   }
 

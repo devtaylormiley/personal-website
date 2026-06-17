@@ -21,6 +21,20 @@ const projectCards = [
     }),
   },
   {
+    slug: 'ops-pulse',
+    title: 'Ops Pulse — Dashboard Replacement',
+    description:
+      'Facilities teams often pay $300+/month for Databox wallboards of work-order KPIs. This live demo rebuilds the same chart types with Recharts and agentic development — maintenance data everyone already understands.',
+    tags: ['Recharts', 'React', 'Facilities ops', 'Agentic development', 'Cost reduction'],
+    cta: 'View dashboard',
+    imageSrc: portfolioImageUrl('graphics.png'),
+    imageFallback: projectCardArtUrl({
+      title: 'Ops Pulse',
+      subtitle: 'Recharts vs. Databox',
+      accent: '#14b8a6',
+    }),
+  },
+  {
     slug: 'ux',
     title: 'UI/UX Improvements - Real Examples',
     description:

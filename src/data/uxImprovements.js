@@ -14,6 +14,13 @@ export const uxImprovements = {
         'Introduced sticky headers, zebra striping, and full-width columns with search above the table on one screen — cut time-on-task for daily power users.',
     },
     {
+      slug: 'legal-letter-generation',
+      title: 'Official legal letter generation',
+      context: 'Legal operations',
+      detail:
+        'Replaced four disconnected rich text blocks with a letter-shaped form — fixed margins, section spacing, and typography so counsel filed what they saw on screen.',
+    },
+    {
       slug: 'onboarding-empty-states',
       title: 'Onboarding empty states',
       context: 'B2B SaaS',
@@ -42,4 +49,10 @@ export const uxImprovements = {
         'Fixed focus order, contrast on primary actions, and form labels in sign-in, search, and checkout — brought critical paths in line with WCAG 2.1 AA targets.',
     },
   ],
+}
+
+export function getUxCaseNumber(slug) {
+  const index = uxImprovements.items.findIndex((item) => item.slug === slug)
+  if (index < 0) return null
+  return String(index + 1).padStart(2, '0')
 }

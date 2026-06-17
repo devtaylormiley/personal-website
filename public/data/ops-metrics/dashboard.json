@@ -1,0 +1,525 @@
+{
+  "generatedAt": "2026-06-17",
+  "business": "Corner Cup Coffee Shop",
+  "locations": [
+    "All",
+    "Corner Cup — Main St",
+    "Farmers Market",
+    "Campus Kiosk"
+  ],
+  "defaultLocation": "All",
+  "byLocation": {
+    "All": {
+      "kpis": {
+        "revenue": 913,
+        "revenueDelta": -18.4,
+        "orders": 107,
+        "ordersDelta": -18.4,
+        "avgOrderValue": 8.53,
+        "avgOrderValueDelta": 3.1,
+        "repeatRate": 56.1,
+        "repeatRateDelta": 8.4
+      },
+      "weeklyTrend": [
+        {
+          "week": "2026-03-09",
+          "orders": 10,
+          "refunds": 1
+        },
+        {
+          "week": "2026-03-16",
+          "orders": 9,
+          "refunds": 0
+        },
+        {
+          "week": "2026-03-23",
+          "orders": 9,
+          "refunds": 1
+        },
+        {
+          "week": "2026-03-30",
+          "orders": 7,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-06",
+          "orders": 7,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-13",
+          "orders": 7,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-20",
+          "orders": 7,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-27",
+          "orders": 7,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-04",
+          "orders": 7,
+          "refunds": 1
+        },
+        {
+          "week": "2026-05-11",
+          "orders": 7,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-18",
+          "orders": 7,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-25",
+          "orders": 7,
+          "refunds": 0
+        },
+        {
+          "week": "2026-06-01",
+          "orders": 7,
+          "refunds": 0
+        },
+        {
+          "week": "2026-06-08",
+          "orders": 7,
+          "refunds": 0
+        },
+        {
+          "week": "2026-06-15",
+          "orders": 5,
+          "refunds": 0
+        }
+      ],
+      "byLocation": [
+        {
+          "name": "Corner Cup — Main St",
+          "count": 38
+        },
+        {
+          "name": "Farmers Market",
+          "count": 36
+        },
+        {
+          "name": "Campus Kiosk",
+          "count": 36
+        }
+      ],
+      "byCategory": [
+        {
+          "name": "Coffee",
+          "count": 44
+        },
+        {
+          "name": "Pastries",
+          "count": 23
+        },
+        {
+          "name": "Lunch",
+          "count": 18
+        },
+        {
+          "name": "Cold drinks",
+          "count": 15
+        },
+        {
+          "name": "Merch",
+          "count": 10
+        }
+      ],
+      "byChannel": [
+        {
+          "name": "Pickup",
+          "count": 72
+        },
+        {
+          "name": "Dine-in",
+          "count": 30
+        },
+        {
+          "name": "Delivery",
+          "count": 8
+        }
+      ]
+    },
+    "Corner Cup — Main St": {
+      "kpis": {
+        "revenue": 324,
+        "revenueDelta": -17.6,
+        "orders": 35,
+        "ordersDelta": -17.6,
+        "avgOrderValue": 9.24,
+        "avgOrderValueDelta": 3.1,
+        "repeatRate": 57.1,
+        "repeatRateDelta": 7.9
+      },
+      "weeklyTrend": [
+        {
+          "week": "2026-03-09",
+          "orders": 4,
+          "refunds": 1
+        },
+        {
+          "week": "2026-03-16",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-03-23",
+          "orders": 3,
+          "refunds": 1
+        },
+        {
+          "week": "2026-03-30",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-06",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-13",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-20",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-27",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-04",
+          "orders": 2,
+          "refunds": 1
+        },
+        {
+          "week": "2026-05-11",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-18",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-25",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-06-01",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-06-08",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-06-15",
+          "orders": 2,
+          "refunds": 0
+        }
+      ],
+      "byLocation": [
+        {
+          "name": "Corner Cup — Main St",
+          "count": 38
+        }
+      ],
+      "byCategory": [
+        {
+          "name": "Coffee",
+          "count": 15
+        },
+        {
+          "name": "Lunch",
+          "count": 8
+        },
+        {
+          "name": "Pastries",
+          "count": 8
+        },
+        {
+          "name": "Cold drinks",
+          "count": 4
+        },
+        {
+          "name": "Merch",
+          "count": 3
+        }
+      ],
+      "byChannel": [
+        {
+          "name": "Dine-in",
+          "count": 30
+        },
+        {
+          "name": "Delivery",
+          "count": 8
+        }
+      ]
+    },
+    "Farmers Market": {
+      "kpis": {
+        "revenue": 289,
+        "revenueDelta": -18.7,
+        "orders": 36,
+        "ordersDelta": -18.8,
+        "avgOrderValue": 8.03,
+        "avgOrderValueDelta": 3.1,
+        "repeatRate": 50,
+        "repeatRateDelta": 23.1
+      },
+      "weeklyTrend": [
+        {
+          "week": "2026-03-09",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-03-16",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-03-23",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-03-30",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-06",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-13",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-20",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-27",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-04",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-11",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-18",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-25",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-06-01",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-06-08",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-06-15",
+          "orders": 1,
+          "refunds": 0
+        }
+      ],
+      "byLocation": [
+        {
+          "name": "Farmers Market",
+          "count": 36
+        }
+      ],
+      "byCategory": [
+        {
+          "name": "Coffee",
+          "count": 13
+        },
+        {
+          "name": "Pastries",
+          "count": 9
+        },
+        {
+          "name": "Cold drinks",
+          "count": 7
+        },
+        {
+          "name": "Lunch",
+          "count": 4
+        },
+        {
+          "name": "Merch",
+          "count": 3
+        }
+      ],
+      "byChannel": [
+        {
+          "name": "Pickup",
+          "count": 36
+        }
+      ]
+    },
+    "Campus Kiosk": {
+      "kpis": {
+        "revenue": 300,
+        "revenueDelta": -18.8,
+        "orders": 36,
+        "ordersDelta": -18.8,
+        "avgOrderValue": 8.34,
+        "avgOrderValueDelta": 3.1,
+        "repeatRate": 61.1,
+        "repeatRateDelta": -1.5
+      },
+      "weeklyTrend": [
+        {
+          "week": "2026-03-09",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-03-16",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-03-23",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-03-30",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-06",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-13",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-20",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-04-27",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-04",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-11",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-18",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-05-25",
+          "orders": 3,
+          "refunds": 0
+        },
+        {
+          "week": "2026-06-01",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-06-08",
+          "orders": 2,
+          "refunds": 0
+        },
+        {
+          "week": "2026-06-15",
+          "orders": 2,
+          "refunds": 0
+        }
+      ],
+      "byLocation": [
+        {
+          "name": "Campus Kiosk",
+          "count": 36
+        }
+      ],
+      "byCategory": [
+        {
+          "name": "Coffee",
+          "count": 16
+        },
+        {
+          "name": "Pastries",
+          "count": 6
+        },
+        {
+          "name": "Lunch",
+          "count": 6
+        },
+        {
+          "name": "Merch",
+          "count": 4
+        },
+        {
+          "name": "Cold drinks",
+          "count": 4
+        }
+      ],
+      "byChannel": [
+        {
+          "name": "Pickup",
+          "count": 36
+        }
+      ]
+    }
+  }
+}

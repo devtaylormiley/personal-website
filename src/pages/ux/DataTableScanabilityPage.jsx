@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import OperationsTableBefore from '../../components/ux/dataTableCaseStudy/OperationsTableBefore'
 import OperationsTableAfter from '../../components/ux/dataTableCaseStudy/OperationsTableAfter'
+import { getUxCaseNumber } from '../../data/uxImprovements'
 const fixes = [
   'One screen replaces the Search → Pending Orders handoff — filter, read, and act without switching tabs or re-learning a second column layout',
   'Column order matches how operators review a row: identify the order and asset, confirm site and category, check assignee and cost, see when it last changed, then status and actions',
@@ -20,7 +21,7 @@ export default function DataTableScanabilityPage() {
         <nav className="text-sm text-zinc-500" aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-2">
             <li>
-              <Link to="/#projects" className="transition-colors hover:text-violet-400">
+              <Link to="/" className="transition-colors hover:text-violet-400">
                 Portfolio
               </Link>
             </li>
@@ -28,7 +29,7 @@ export default function DataTableScanabilityPage() {
               /
             </li>
             <li>
-              <Link to="/#projects" className="transition-colors hover:text-violet-400">
+              <Link to="/projects/ux" className="transition-colors hover:text-violet-400">
                 UI/UX improvements
               </Link>
             </li>
@@ -41,7 +42,7 @@ export default function DataTableScanabilityPage() {
 
         <header className="mt-8 border-b border-zinc-800 pb-8">
           <p className="text-sm font-medium tracking-widest text-violet-400 uppercase">
-            Case study · 01
+            Case study · {getUxCaseNumber('data-table-scanability')}
           </p>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
             Data table workflow improvement
@@ -56,7 +57,7 @@ export default function DataTableScanabilityPage() {
         </header>
         
         <p className="mt-4 max-w-3xl leading-relaxed text-zinc-400">
-            Try to complete, restart, edit, and download WO-10384 on each 'Before' and 'After' view.
+            Try to complete, restart, edit, and download the oldest record assigned to J. Rivera on each 'Before' and 'After' view.
           </p>
         <div className="mt-10 flex flex-wrap gap-2">
           {[

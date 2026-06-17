@@ -47,7 +47,16 @@ export default function UxCaseStudyPage({
             {title}
           </h1>
           <p className="mt-2 text-sm font-medium text-zinc-400 uppercase">{context}</p>
-          <p className="mt-4 max-w-3xl leading-relaxed text-zinc-300">{intro}</p>
+          <div className="mt-4 max-w-3xl space-y-4 leading-relaxed text-zinc-300">
+            {typeof intro === 'string'
+              ? intro
+                  .split(/\n\n+/)
+                  .filter((paragraph) => paragraph.trim())
+                  .map((paragraph) => (
+                    <p key={paragraph}>{paragraph.trim()}</p>
+                  ))
+              : intro}
+          </div>
         </header>
 
         <div className="mt-10 flex flex-wrap gap-2" role="tablist" aria-label="Before and after">

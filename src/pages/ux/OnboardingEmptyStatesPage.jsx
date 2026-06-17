@@ -1,11 +1,12 @@
 import UxCaseStudyPage from './UxCaseStudyPage'
 import OnboardingDashboardBefore from '../../components/ux/onboardingCaseStudy/OnboardingDashboardBefore'
 import OnboardingDashboardAfter from '../../components/ux/onboardingCaseStudy/OnboardingDashboardAfter'
+import { getUxCaseNumber } from '../../data/uxImprovements'
 
 export default function OnboardingEmptyStatesPage() {
   return (
     <UxCaseStudyPage
-      caseNumber="02"
+      caseNumber={getUxCaseNumber('onboarding-empty-states')}
       title="Onboarding empty states"
       context="B2B SaaS"
       intro="New teams signed up to a blank workspace with no projects, no sample data, and no suggested next steps. Time-to-first-value stretched across days of trial support instead of one guided session."

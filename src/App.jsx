@@ -16,8 +16,10 @@ import CheckoutFunnelSimplificationPage from './pages/ux/CheckoutFunnelSimplific
 import OnboardingEmptyStatesPage from './pages/ux/OnboardingEmptyStatesPage'
 import ErrorLoadingPatternsPage from './pages/ux/ErrorLoadingPatternsPage'
 import AccessibilityCoreFlowsPage from './pages/ux/AccessibilityCoreFlowsPage'
+import LegalLetterGenerationPage from './pages/ux/LegalLetterGenerationPage'
 import UxImprovementsPage from './pages/ux/UxImprovementsPage'
 import SchemaBridgePage from './pages/SchemaBridgePage'
+import OpsPulseDashboardPage from './pages/OpsPulseDashboardPage'
 import ResumePage from './pages/ResumePage'
 
 function App() {
@@ -29,11 +31,13 @@ function App() {
           <Route path="resume" element={<ResumePage />} />
           <Route path="projects/ux" element={<UxImprovementsPage />} />
           <Route path="projects/ux/checkout-funnel-simplification" element={<CheckoutFunnelSimplificationPage />} />
+          <Route path="projects/ux/legal-letter-generation" element={<LegalLetterGenerationPage />} />
           <Route path="projects/ux/onboarding-empty-states" element={<OnboardingEmptyStatesPage />} />
           <Route path="projects/ux/data-table-scanability" element={<DataTableScanabilityPage />} />
           <Route path="projects/ux/error-loading-patterns" element={<ErrorLoadingPatternsPage />} />
           <Route path="projects/ux/accessibility-core-flows" element={<AccessibilityCoreFlowsPage />} />
           <Route path="projects/schema-bridge" element={<SchemaBridgePage />} />
+          <Route path="projects/ops-pulse" element={<OpsPulseDashboardPage />} />
           <Route
             path="projects/human-in-the-loop-ai"
             element={<Navigate to="/projects/schema-bridge" replace />}
