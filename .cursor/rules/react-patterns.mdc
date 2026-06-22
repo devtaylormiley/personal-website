@@ -1,0 +1,32 @@
+---
+description: React component and app structure conventions
+globs: "**/*.{jsx,js}"
+alwaysApply: false
+---
+
+# React patterns
+
+## Components
+
+- Default export functional components: `export default function ComponentName({ ... })`.
+- Colocate by feature: `components/<feature>/`, pages in `pages/`, pure logic in `lib/`, static content in `data/`.
+- Reuse shared UI primitives (`ActionButton`, `StatChip`, etc.) before inventing new button/chip patterns.
+- Use `type="button"` explicitly on non-submit buttons.
+
+## State and routing
+
+- Keep page-level state in pages; pass callbacks down (`onFieldChange`, `onLevelChange`).
+- Derive display values from source data + level/config — avoid duplicated editable state when the UI is read-only.
+- Use React Router `Link` for navigation; wrap with transition helpers only when view transitions are intentional.
+
+## Props and accessibility basics
+
+- Icon-only buttons: `aria-label` + `title` (see `ActionButton`).
+- Expandable sections: `aria-expanded`, `aria-controls`.
+- Hidden/inert panels: `aria-hidden` + `inert` when content must not be focusable.
+- Prefer `<button>` for actions; use `<a href>` only for real navigation.
+
+## JSX style
+
+- Tailwind for layout/spacing utilities; semantic/visual tokens in CSS classes (e.g. `bf-btn-primary`, `hero-action-btn`).
+- Do not mix ad-hoc inline styles when a CSS class or token already exists.

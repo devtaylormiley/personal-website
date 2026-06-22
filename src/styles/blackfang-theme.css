@@ -774,15 +774,15 @@
 }
 
 .blackfang-campaign .operative-card.bf-tone-green .operative-card-name h3,
-.blackfang-campaign .operative-card.bf-tone-green .operative-card-name input,
+.blackfang-campaign .operative-card.bf-tone-green .operative-card-name > input,
 .blackfang-campaign .operative-card.bf-tone-amber .operative-card-name h3,
-.blackfang-campaign .operative-card.bf-tone-amber .operative-card-name input,
+.blackfang-campaign .operative-card.bf-tone-amber .operative-card-name > input,
 .blackfang-campaign .operative-card.bf-tone-orange .operative-card-name h3,
-.blackfang-campaign .operative-card.bf-tone-orange .operative-card-name input,
+.blackfang-campaign .operative-card.bf-tone-orange .operative-card-name > input,
 .blackfang-campaign .operative-card.bf-tone-cyan .operative-card-name h3,
-.blackfang-campaign .operative-card.bf-tone-cyan .operative-card-name input,
+.blackfang-campaign .operative-card.bf-tone-cyan .operative-card-name > input,
 .blackfang-campaign .operative-card.bf-tone-violet .operative-card-name h3,
-.blackfang-campaign .operative-card.bf-tone-violet .operative-card-name input {
+.blackfang-campaign .operative-card.bf-tone-violet .operative-card-name > input {
   color: var(--bf-item-bright) !important;
   text-shadow: none;
 }
@@ -796,7 +796,7 @@
 }
 
 .blackfang-campaign .operative-card-name h3,
-.blackfang-campaign .operative-card-name input {
+.blackfang-campaign .operative-card-name > input {
   color: var(--bf-accent-bright) !important;
   font-family: var(--bf-font-display) !important;
   font-size: 1.5rem !important;
@@ -836,7 +836,17 @@
 .blackfang-campaign .operative-card-keywords--inline input {
   color: var(--bf-field-muted) !important;
   font-family: var(--bf-font-body) !important;
+  font-size: 0.625rem !important;
+  line-height: 1.375 !important;
   text-shadow: none;
+}
+
+@media (min-width: 640px) {
+  .blackfang-campaign .operative-card-name:not(.operative-card-name--compact) .operative-card-keywords--inline p,
+  .blackfang-campaign .operative-card-name:not(.operative-card-name--compact) .operative-card-keywords--inline input {
+    font-size: 0.75rem !important;
+    line-height: 1.625 !important;
+  }
 }
 
 .blackfang-campaign .operative-card-keywords p,
@@ -977,6 +987,11 @@
   font-family: var(--bf-font-body);
   font-size: 0.8125rem;
   text-shadow: none;
+  vertical-align: top;
+}
+
+.blackfang-campaign .bf-panel table td {
+  vertical-align: top;
 }
 
 .blackfang-campaign .operative-card table td.font-medium {
@@ -1866,6 +1881,57 @@
 /* —— Campaign app shell + nav —— */
 .bf-campaign-app {
   width: 100%;
+}
+
+.bf-skip-to-main {
+  position: fixed;
+  top: env(safe-area-inset-top, 0px);
+  left: 0;
+  z-index: 10000;
+  margin: 0.5rem;
+  border: 1px solid var(--bf-border-bright);
+  background: var(--bf-bg);
+  padding: 0.5rem 0.875rem;
+  font: inherit;
+  font-family: var(--bf-font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bf-accent-bright);
+  cursor: pointer;
+  box-shadow:
+    0 8px 24px rgb(0 0 0 / 0.45),
+    inset 0 0 0 1px rgb(92 184 118 / 0.08);
+  transform: translateY(calc(-100% - 1rem));
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.bf-skip-to-main:focus-visible {
+  transform: translateY(0);
+  border-color: var(--bf-accent);
+  box-shadow:
+    0 8px 24px rgb(0 0 0 / 0.45),
+    0 0 14px rgb(92 184 118 / 0.18);
+  outline: 2px solid var(--bf-accent);
+  outline-offset: 2px;
+}
+
+#bf-main-content {
+  scroll-margin-top: 0.75rem;
+}
+
+#bf-main-content:focus {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bf-skip-to-main {
+    transition: none;
+  }
 }
 
 .bf-campaign-shell {

@@ -1,5 +1,7 @@
 import { supabase } from './supabaseClient'
 import { computeAbilityScores, DEFAULT_ABILITY_BASE, normalizeAbilityScores } from './abilityScores'
+import { applyStarfinderBuildToOperative } from '../data/deathwatchVeteranStarfinder.js'
+import { normalizeSf2eAbilityScores } from './starfinderScores'
 
 const IMAGE_BUCKET = 'homebrew-team-images'
 const MAX_IMAGE_BYTES = 5 * 1024 * 1024
@@ -31,7 +33,9 @@ function mapTeam(row) {
 
 function mapOperative(row) {
   const isBlackshield = Boolean(row.is_blackshield)
-  return {
+  const isSf2e = row.scoring_system === 'sf2e'
+  const level = isBlackshield || isSf2e ? (row.level ?? 1) : undefined
+  const base = {
     id: row.id,
     opTypeId: row.op_type_id,
     name: row.name,
@@ -52,12 +56,27 @@ function mapOperative(row) {
     formerChapter: row.former_chapter ?? '',
     homePlanet: row.home_planet ?? '',
     backstory: row.backstory ?? '',
-    level: isBlackshield ? (row.level ?? 1) : undefined,
+    level,
     abilityScores: isBlackshield
-      ? normalizeAbilityScores(row.ability_scores, row.level ?? 1)
-      : undefined,
+      ? normalizeAbilityScores(row.ability_scores, level ?? 1)
+      : isSf2e
+        ? normalizeSf2eAbilityScores(row.ability_scores, level ?? 1)
+        : undefined,
+    scoringSystem: row.scoring_system ?? null,
+    sf2eClass: row.sf2e_class ?? null,
+    sourceVeteranId: row.source_veteran_id ?? null,
+    starfinderSaves:
+      row.starfinder_saves && typeof row.starfinder_saves === 'object'
+        ? row.starfinder_saves
+        : undefined,
     sortOrder: row.sort_order ?? 0,
   }
+
+  if (isSf2e && row.source_veteran_id) {
+    return applyStarfinderBuildToOperative(base, level ?? 1)
+  }
+
+  return base
 }
 
 export async function listHomebrewTeams(userId) {
@@ -166,7 +185,8 @@ export async function updateHomebrewTeam({
 
 function operativeToRow(op, userId, teamId, idx) {
   const isBlackshield = Boolean(op.isBlackshield)
-  const level = isBlackshield ? Math.min(20, Math.max(1, Number(op.level) || 1)) : 1
+  const isSf2e = op.scoringSystem === 'sf2e'
+  const level = isBlackshield || isSf2e ? Math.min(20, Math.max(1, Number(op.level) || 1)) : 1
   return {
     id: op.id?.length === 36 ? op.id : undefined,
     team_id: teamId ?? null,
@@ -187,12 +207,18 @@ function operativeToRow(op, userId, teamId, idx) {
     notes: op.notes ?? '',
     image_url: op.imageUrl ?? '',
     is_blackshield: isBlackshield,
+    scoring_system: op.scoringSystem ?? null,
+    sf2e_class: op.sf2eClass ?? null,
+    source_veteran_id: op.sourceVeteranId ?? null,
+    starfinder_saves: isSf2e ? op.starfinderSaves ?? null : null,
     former_chapter: op.formerChapter ?? '',
     home_planet: op.homePlanet ?? '',
     backstory: op.backstory ?? '',
     level,
     ability_scores: isBlackshield
       ? normalizeAbilityScores(op.abilityScores ?? { ...DEFAULT_ABILITY_BASE }, level)
+      : isSf2e
+        ? normalizeSf2eAbilityScores(op.abilityScores ?? { ...DEFAULT_ABILITY_BASE }, level)
       : { ...DEFAULT_ABILITY_BASE },
     sort_order: idx,
     updated_at: new Date().toISOString(),

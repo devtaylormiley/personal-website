@@ -1,0 +1,211 @@
+/* Hero CTA + social button micro-interactions */
+
+@keyframes hero-btn-shimmer {
+  0% {
+    transform: translateX(-130%) skewX(-12deg);
+  }
+
+  100% {
+    transform: translateX(130%) skewX(-12deg);
+  }
+}
+
+.hero-action-btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transition:
+    transform 220ms cubic-bezier(0.34, 1.4, 0.64, 1),
+    box-shadow 260ms ease,
+    border-color 220ms ease,
+    background-color 220ms ease,
+    color 220ms ease,
+    filter 220ms ease;
+  will-change: transform;
+}
+
+.hero-action-btn::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.hero-action-btn > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Primary — lift, glow, shimmer sweep */
+.hero-action-btn--primary::before,
+.hero-action-btn--primary-themed::before {
+  background: linear-gradient(
+    105deg,
+    transparent 38%,
+    rgb(255 255 255 / 0.28) 50%,
+    transparent 62%
+  );
+  opacity: 0;
+}
+
+.hero-era--modern.hero-era--dark
+  .hero-action-btn--primary:not(.hero-action-btn--primary-themed):is(:hover, :focus-visible) {
+  transform: translateY(-3px) scale(1.02);
+  background: #7c3aed;
+  box-shadow:
+    0 14px 36px rgb(109 40 217 / 0.48),
+    0 0 0 1px rgb(244 114 182 / 0.45),
+    0 0 28px rgb(167 139 250 / 0.22);
+}
+
+.hero-era--modern.hero-era--dark
+  .hero-action-btn--primary:not(.hero-action-btn--primary-themed):is(:hover, :focus-visible)::before {
+  opacity: 1;
+  animation: hero-btn-shimmer 680ms ease forwards;
+}
+
+.hero-era--modern.hero-era--light
+  .hero-action-btn--primary:not(.hero-action-btn--primary-themed):is(:hover, :focus-visible) {
+  transform: translateY(-3px) scale(1.02);
+  background: #5b21b6;
+  box-shadow:
+    0 12px 28px rgb(91 33 182 / 0.35),
+    0 0 0 1px rgb(109 40 217 / 0.25);
+}
+
+.hero-era--modern.hero-era--light
+  .hero-action-btn--primary:not(.hero-action-btn--primary-themed):is(:hover, :focus-visible)::before {
+  opacity: 1;
+  animation: hero-btn-shimmer 680ms ease forwards;
+}
+
+/* Secondary — softer lift + border bloom */
+.hero-action-btn--secondary:is(:hover, :focus-visible) {
+  transform: translateY(-2px);
+}
+
+.hero-era--modern.hero-era--dark .hero-action-btn--secondary:is(:hover, :focus-visible) {
+  border-color: rgb(244 114 182 / 0.45);
+  background: rgb(30 18 44 / 0.78);
+  box-shadow:
+    0 10px 24px rgb(0 0 0 / 0.22),
+    inset 0 1px 0 rgb(255 255 255 / 0.06);
+}
+
+.hero-era--modern.hero-era--light .hero-action-btn--secondary:is(:hover, :focus-visible) {
+  border-color: rgb(124 58 237 / 0.35);
+  box-shadow: 0 8px 20px rgb(124 58 237 / 0.12);
+}
+
+/* Social — compact lift */
+.hero-action-btn--ghost:is(:hover, :focus-visible) {
+  transform: translateY(-2px) scale(1.06);
+}
+
+.hero-era--modern.hero-era--dark .hero-action-btn--ghost:is(:hover, :focus-visible) {
+  border-color: rgb(167 139 250 / 0.5);
+  color: #fcd34d;
+  box-shadow:
+    0 8px 20px rgb(0 0 0 / 0.2),
+    0 0 16px rgb(167 139 250 / 0.15);
+}
+
+.hero-era--modern.hero-era--light .hero-action-btn--ghost:is(:hover, :focus-visible) {
+  border-color: rgb(109 40 217 / 0.4);
+  box-shadow: 0 6px 16px rgb(91 33 182 / 0.12);
+}
+
+/* Retro 16-bit era */
+.hero-era--retro16 .hero-action-btn--primary:is(:hover, :focus-visible),
+.hero-era--retro16 .hero-action-btn--secondary:is(:hover, :focus-visible) {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 rgb(0 0 0 / 0.45);
+}
+
+.hero-era--retro16.hero-era--light .hero-action-btn--primary:is(:hover, :focus-visible),
+.hero-era--retro16.hero-era--light .hero-action-btn--secondary:is(:hover, :focus-visible) {
+  box-shadow: 8px 8px 0 rgb(37 99 235 / 0.35);
+}
+
+.hero-era--retro16 .hero-action-btn--ghost:is(:hover, :focus-visible) {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 rgb(0 0 0 / 0.4);
+}
+
+/* Contact form submit — same motion as hero primary, theme token colors */
+.contact-showcase__submit.hero-action-btn--primary-themed:is(:hover, :focus-visible):not(:disabled) {
+  transform: translateY(-3px) scale(1.02);
+  background: var(--cs-btn-bg);
+  color: var(--cs-btn-fg);
+  filter: brightness(1.08);
+  box-shadow:
+    0 14px 32px rgb(0 0 0 / 0.25),
+    0 0 0 1px var(--cs-btn-border),
+    0 0 24px color-mix(in srgb, var(--cs-btn-bg) 38%, transparent);
+}
+
+.contact-showcase__submit.hero-action-btn--primary-themed:is(:hover, :focus-visible)::before {
+  opacity: 1;
+  animation: hero-btn-shimmer 680ms ease forwards;
+}
+
+.contact-showcase__dot.hero-action-btn--ghost:is(:hover, :focus-visible):not(:disabled) {
+  transform: scale(1.35);
+}
+
+.contact-showcase__dot.hero-action-btn--ghost:active:not(:disabled) {
+  transform: scale(1.15);
+}
+
+.contact-showcase__dot.contact-showcase__dot--active.hero-action-btn--ghost:is(:hover, :focus-visible) {
+  transform: scale(1.45);
+}
+
+.hero-action-btn:disabled,
+.hero-action-btn:disabled:is(:hover, :focus-visible) {
+  transform: none;
+  filter: none;
+  box-shadow: none;
+}
+
+.hero-action-btn:disabled::before,
+.hero-action-btn:disabled:is(:hover, :focus-visible)::before {
+  animation: none;
+  opacity: 0;
+}
+
+/* Press feedback */
+.hero-action-btn:active:not(:disabled) {
+  transform: translateY(0) scale(0.97);
+  transition-duration: 80ms;
+}
+
+.hero-era--retro16 .hero-action-btn:active:not(:disabled) {
+  transform: translate(0, 0);
+  box-shadow: 2px 2px 0 rgb(0 0 0 / 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-action-btn {
+    transition:
+      border-color 220ms ease,
+      background-color 220ms ease,
+      color 220ms ease,
+      box-shadow 220ms ease;
+    will-change: auto;
+  }
+
+  .hero-action-btn:is(:hover, :focus-visible),
+  .hero-action-btn:active {
+    transform: none;
+  }
+
+  .hero-action-btn--primary:is(:hover, :focus-visible)::before,
+  .hero-action-btn--primary-themed:is(:hover, :focus-visible)::before {
+    animation: none;
+    opacity: 0;
+  }
+}

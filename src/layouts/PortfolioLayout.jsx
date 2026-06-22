@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import HeroEraBackdrop from '../components/HeroEraBackdrop'
 import Navbar from '../components/Navbar'
 import PageEndNavFloats from '../components/PageEndNavFloats'
+import SkipToMainContent from '../components/SkipToMainContent'
 import FortPykmanConnectionOverlay from '../components/blackfang/FortPykmanConnectionOverlay'
 import useScrollToTopOnNavigate from '../hooks/useScrollToTopOnNavigate'
 
@@ -43,8 +44,9 @@ export default function PortfolioLayout() {
     <div className="portfolio-site portfolio-site--themed hero-era hero-era--modern hero-era--dark min-h-svh font-sans antialiased">
       <HeroEraBackdrop />
       <div className="portfolio-site__foreground flex min-h-svh flex-col">
+        <SkipToMainContent />
         <Navbar />
-        <main className="flex-1">
+        <main id="main-content" tabIndex={-1} className="flex-1">
           <Outlet />
         </main>
         <footer className="portfolio-site__footer border-t border-zinc-800/80 px-4 py-6 text-center text-sm text-zinc-400 sm:px-6 sm:py-8">

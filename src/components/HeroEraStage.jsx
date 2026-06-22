@@ -40,7 +40,7 @@ export default function HeroEraStage({
             <div className="hero-era__action-buttons">
               <a
                 href={primaryCta.href}
-                className="hero-era__btn-primary cursor-pointer rounded-full px-6 py-3 text-sm font-medium transition-colors sm:py-2.5"
+                className="hero-era__btn-primary hero-action-btn hero-action-btn--primary cursor-pointer rounded-full px-6 py-3 text-sm font-medium sm:py-2.5"
               >
                 {primaryCta.label}
               </a>
@@ -49,7 +49,7 @@ export default function HeroEraStage({
                 onClick={onToggleResume}
                 aria-expanded={resumeOpen}
                 aria-controls="resume"
-                className="hero-era__btn-secondary cursor-pointer rounded-full px-6 py-3 text-sm font-medium transition-colors sm:py-2.5"
+                className="hero-era__btn-secondary hero-action-btn hero-action-btn--secondary cursor-pointer rounded-full px-6 py-3 text-sm font-medium sm:py-2.5"
               >
                 {resumeOpen ? secondaryCta.closeLabel : secondaryCta.label}
               </button>

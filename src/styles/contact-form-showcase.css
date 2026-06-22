@@ -54,13 +54,16 @@
 .contact-showcase__mode-btn {
   cursor: pointer;
   border: 1px solid var(--hero-border);
-  background: var(--hero-surface);
+  background: rgb(18 10 28 / 0.88);
   color: var(--hero-fg);
-  backdrop-filter: blur(10px);
-  transition:
-    border-color 180ms ease,
-    background-color 180ms ease,
-    color 180ms ease;
+}
+
+@media (min-width: 768px) {
+  .contact-showcase__nav-btn,
+  .contact-showcase__mode-btn {
+    background: var(--hero-surface);
+    backdrop-filter: blur(10px);
+  }
 }
 
 .contact-showcase__nav-btn {
@@ -71,25 +74,6 @@
   justify-content: center;
   border-radius: 9999px;
   font-size: 1rem;
-  transition:
-    border-color 180ms ease,
-    background-color 180ms ease,
-    color 180ms ease,
-    transform 120ms ease;
-}
-
-.contact-showcase__nav-btn:hover {
-  border-color: rgb(244 114 182 / 0.4);
-  color: var(--hero-title-fg);
-}
-
-.contact-showcase__nav-btn:active {
-  transform: scale(0.94);
-}
-
-.contact-showcase__nav-btn:focus-visible {
-  outline: 2px solid rgb(167 139 250 / 0.85);
-  outline-offset: 2px;
 }
 
 .contact-showcase__mode-row {
@@ -127,9 +111,7 @@
   border: none;
   border-radius: 9999px;
   background: rgb(161 161 170 / 0.45);
-  transition:
-    transform 180ms ease,
-    background-color 180ms ease;
+  padding: 0;
 }
 
 .contact-showcase__dot--active {
@@ -256,13 +238,6 @@
   color: var(--cs-btn-fg);
   font-size: 0.875rem;
   font-weight: 600;
-  transition:
-    filter 180ms ease,
-    background-color 180ms ease;
-}
-
-.contact-showcase__submit:hover {
-  filter: brightness(1.06);
 }
 
 .contact-showcase__submit:focus-visible {
@@ -538,8 +513,13 @@
 .contact-showcase__aurora-blob {
   position: absolute;
   border-radius: 9999px;
-  filter: blur(48px);
   opacity: 0.55;
+}
+
+@media (min-width: 768px) {
+  .contact-showcase__aurora-blob {
+    filter: blur(48px);
+  }
 }
 
 .contact-showcase__aurora-blob--violet {
@@ -760,9 +740,5 @@
 @media (prefers-reduced-motion: reduce) {
   .contact-showcase__track {
     transition: none;
-  }
-
-  .contact-showcase__nav-btn:active {
-    transform: none;
   }
 }

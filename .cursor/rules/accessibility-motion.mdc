@@ -1,0 +1,38 @@
+---
+description: WCAG-oriented accessibility and purposeful micro-interactions
+globs: "**/*.{jsx,css}"
+alwaysApply: false
+---
+
+# Accessibility and motion
+
+## Baseline a11y
+
+- Target **WCAG AA** contrast on text and interactive controls.
+- Global `:focus-visible` outline; remove default `:focus` ring only when `:focus-visible` replaces it.
+- **Skip to main content**: `<button type="button">` (not `<a>`) so Space and Enter both work; hidden off-screen until `:focus-visible`; target `<main id="..." tabIndex={-1}>`.
+- Section-specific skip links when nav chrome differs (e.g. sidebar vs top navbar).
+- Set `scroll-margin-top` on skip targets under fixed headers.
+- Correct `cursor` on interactive vs text inputs (pointer vs text).
+
+## Interactive parity
+
+- **Hover and `:focus-visible` must match** for buttons and controls — keyboard users get the same affordance as mouse users.
+- Use `:is(:hover, :focus-visible)` in CSS for shared treatment.
+- Disabled controls: no transform/glow; `cursor: not-allowed`; clear `opacity`.
+
+## Motion (UX Engineer bar)
+
+- Motion must **communicate state** (feedback, hierarchy, continuity) — not decorate.
+- Animate **`transform` and `opacity`** first; avoid layout-thrashing properties when possible.
+- Timing: ~100–200ms small UI, ~220–350ms panels, longer only for deliberate “moments”.
+- Include **`:active` press** feedback (brief scale/shadow compress).
+- Always provide `@media (prefers-reduced-motion: reduce)` fallbacks — color/border only, no transform/shimmer.
+- Prefer **CSS-first** animations; add JS libraries only when orchestration truly requires it.
+
+## Shared button motion pattern
+
+- Base class + variant modifiers (`hero-action-btn`, `--primary`, `--secondary`, `--ghost`).
+- Primary: lift + glow + optional shimmer via `::before`.
+- Secondary: softer lift + border bloom.
+- Themed contexts: separate variant (e.g. `--primary-themed`) when hover colors must respect CSS variables.

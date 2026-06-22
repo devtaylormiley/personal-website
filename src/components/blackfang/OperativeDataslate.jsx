@@ -5,6 +5,7 @@ import OperativeAbilitiesTable from './OperativeAbilitiesTable'
 import EditableField from './EditableField'
 import EditableWeaponsTable from './EditableWeaponsTable'
 import AbilityScoresRow from './AbilityScoresRow'
+import StarfinderScoreSheet from './StarfinderScoreSheet'
 import OperativeCardProfileStatsTable from './operativeCard/OperativeCardProfileStatsTable'
 import {
   OperativeCardTableColgroup,
@@ -34,9 +35,7 @@ function OperativeCardKeywords({ operative, editable, onFieldChange, compact, in
     ? 'text-[10px] leading-snug'
     : 'text-xs leading-relaxed'
 
-  const fieldClass = `bg-transparent text-left font-medium tracking-wide uppercase outline-none placeholder:text-amber-900/60 focus:text-amber-50 ${textClass} ${
-    inline ? 'min-w-0 flex-1' : 'w-full'
-  }`
+  const fieldClass = `w-full bg-transparent text-left font-medium tracking-wide uppercase outline-none placeholder:text-amber-900/60 focus:text-amber-50 ${textClass}`
 
   if (editable && onFieldChange) {
     const input = (
@@ -48,7 +47,7 @@ function OperativeCardKeywords({ operative, editable, onFieldChange, compact, in
         aria-label="Operative keywords"
       />
     )
-    if (inline) return <div className="operative-card-keywords operative-card-keywords--inline min-w-0 flex-1">{input}</div>
+    if (inline) return <div className="operative-card-keywords operative-card-keywords--inline w-full min-w-0">{input}</div>
     return (
       <div className="operative-card-keywords border-b border-amber-900/30 bg-zinc-950/80 px-3 py-2 text-left">
         {input}
@@ -62,7 +61,7 @@ function OperativeCardKeywords({ operative, editable, onFieldChange, compact, in
     <p className={`font-medium tracking-wide uppercase ${textClass}`}>{operative.keywords}</p>
   )
   if (inline) {
-    return <div className="operative-card-keywords operative-card-keywords--inline min-w-0 flex-1">{text}</div>
+    return <div className="operative-card-keywords operative-card-keywords--inline w-full min-w-0">{text}</div>
   }
   return (
     <div className="operative-card-keywords border-b border-amber-900/30 bg-zinc-950/80 px-3 py-2 text-left">
@@ -168,6 +167,7 @@ export default function OperativeDataslate({
   const compact = density === 'compact'
   const [weaponsTypeaheadOpen, setWeaponsTypeaheadOpen] = useState(false)
   const showAbilityScores = showAbilityScoresProp && operative?.isBlackshield === true
+  const showStarfinderScores = showAbilityScoresProp && operative?.scoringSystem === 'sf2e'
 
   const cardBorderClass =
     editable && isDirty ? 'bf-dirty' : custom ? 'ring-1 ring-[var(--bf-border-bright)]' : ''
@@ -219,7 +219,7 @@ export default function OperativeDataslate({
         }`}
       >
         <header
-          className={`operative-card-name relative border-b border-zinc-600/50 text-left ${onClose ? 'pr-24' : ''} ${compact ? 'px-3 py-2.5' : 'px-4 py-3'}`}
+          className={`operative-card-name relative border-b border-zinc-600/50 text-left ${onClose ? 'pr-24' : ''} ${compact ? 'operative-card-name--compact px-3 py-2.5' : 'px-4 py-3'}`}
         >
           {onClose ? (
             <div className={`absolute z-10 ${compact ? 'top-1.5 right-1.5' : 'top-2 right-2'}`}>
@@ -243,7 +243,7 @@ export default function OperativeDataslate({
             </h3>
           )}
 
-          <div className="mt-1 flex flex-wrap items-baseline gap-x-3 gap-y-0.5">
+          <div className="mt-1 w-full">
             <OperativeCardKeywords
               operative={operative}
               editable={editable}
@@ -251,10 +251,11 @@ export default function OperativeDataslate({
               compact={compact}
               inline
             />
+          </div>
 
-            <div
-              className={`operative-card-base shrink-0 text-[var(--bf-text-muted)] ${compact ? 'text-[10px]' : 'text-xs'}`}
-            >
+          <div
+            className={`operative-card-base flex justify-end text-[var(--bf-text-muted)] ${compact ? 'mt-0.5 text-[10px]' : 'mt-1 text-xs'}`}
+          >
               {editable ? (
                 <label className="inline-flex items-baseline gap-1.5">
                   <span className="tracking-[0.12em] uppercase">Base</span>
@@ -272,7 +273,6 @@ export default function OperativeDataslate({
                   <span className="font-medium tabular-nums">{operative.points ?? '—'}</span>
                 </p>
               )}
-            </div>
           </div>
         </header>
 
@@ -285,6 +285,18 @@ export default function OperativeDataslate({
               compact={compact}
               onLevelChange={onLevelChange}
               onAbilityScoreAdjust={onAbilityScoreAdjust}
+            />
+          </div>
+        ) : null}
+
+        {showStarfinderScores ? (
+          <div className="operative-card-campaign border-b px-2 py-2">
+            <p className="bf-mono-label mb-1 text-left">Campaign — Starfinder 2e</p>
+            <StarfinderScoreSheet
+              operative={operative}
+              editable={editable}
+              compact={compact}
+              onLevelChange={onLevelChange}
             />
           </div>
         ) : null}

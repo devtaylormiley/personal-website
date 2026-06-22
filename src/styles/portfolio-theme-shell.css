@@ -28,17 +28,12 @@ html:has(.portfolio-site--themed) body {
   z-index: 0;
   overflow: hidden;
   pointer-events: none;
+  transform: translateZ(0);
+  contain: strict;
 }
 
 .hero-era-backdrop__grain {
-  position: absolute;
-  inset: 0;
-  z-index: 30;
-  pointer-events: none;
-  opacity: 0.065;
-  mix-blend-mode: soft-light;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
-  background-size: 140px 140px;
+  display: none;
 }
 
 .portfolio-site__foreground {
@@ -58,9 +53,15 @@ html:has(.portfolio-site--themed) body {
 
 .portfolio-site--themed .site-navbar {
   border-color: var(--hero-border);
-  background: var(--hero-surface);
+  background: rgb(12 10 18 / 0.92);
   color: var(--hero-fg);
-  backdrop-filter: blur(14px);
+}
+
+@media (min-width: 768px) {
+  .portfolio-site--themed .site-navbar {
+    background: var(--hero-surface);
+    backdrop-filter: blur(14px);
+  }
 }
 
 .portfolio-site--themed .site-navbar--menu-open {

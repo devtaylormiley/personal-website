@@ -1,0 +1,36 @@
+---
+description: Core engineering standards — scope, quality bar, git, and agent behavior
+alwaysApply: true
+---
+
+# Core standards
+
+## Philosophy
+
+- **Radical simplicity for users**: reduce cognitive friction; every flow should feel obvious.
+- **Minimize diff scope**: fix the requested problem only; do not refactor, rename, or “improve” unrelated code.
+- **Avoid over-engineering**: no one-line helpers, no premature abstractions, no extra error handling for impossible edges.
+- **Match the codebase**: read surrounding files first; new code should look like the same author wrote it.
+- **Human-in-the-loop**: when AI or automation is involved, keep review/edit paths visible and trustworthy.
+
+## Implementation
+
+- Prefer extending existing components and utilities over parallel implementations.
+- Comments only for non-obvious business logic — not for self-explanatory code.
+- Tests only when they cover real behavior; skip trivial assertions.
+- Run build/lint/tests yourself; do not ask the user to verify what you can run locally.
+- Only commit or push when explicitly asked.
+
+## Communication
+
+- Write like a clear technical blog post: complete sentences, plain language, proportional length.
+- Use code citation blocks (`startLine:endLine:filepath`) when referencing existing code.
+- Do not create markdown docs the user did not ask for.
+
+## Stack defaults (adapt per project)
+
+- React (functional components) + Vite + React Router
+- Tailwind CSS v4 via `@import 'tailwindcss'`; domain styles in separate CSS files
+- Plain JS/JSX unless the project uses TypeScript
+- `node:test` + `node:assert/strict` for unit tests when tests exist
+- Supabase for auth/data when backend is needed

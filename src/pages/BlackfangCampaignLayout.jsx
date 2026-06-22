@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import BlackfangBreadcrumbs from '../components/blackfang/BlackfangBreadcrumbs'
 import BlackfangCampaignNav from '../components/blackfang/BlackfangCampaignNav'
+import BlackfangSkipToMainContent from '../components/blackfang/BlackfangSkipToMainContent'
 import BlackfangTerminalShell from '../components/blackfang/BlackfangTerminalShell'
 import PageEndNavFloats from '../components/PageEndNavFloats'
 import ActionButton from '../components/ui/ActionButton'
@@ -66,6 +67,7 @@ export default function BlackfangCampaignLayout() {
 
   return (
     <div className="blackfang-campaign bf-campaign-app min-h-screen">
+      <BlackfangSkipToMainContent />
       <div className="bf-campaign-shell">
         <BlackfangCampaignNav
           mobileOpen={mobileNavOpen}
@@ -74,7 +76,7 @@ export default function BlackfangCampaignLayout() {
           onToggleCollapsed={() => setNavCollapsed((value) => !value)}
         />
 
-        <div className="bf-campaign-main">
+        <div id="bf-main-content" tabIndex={-1} className="bf-campaign-main">
           <BlackfangTerminalShell className="bf-campaign-terminal">
             <div className="bf-campaign-chrome mb-4 border-b border-[var(--bf-border)] pb-3">
               <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">

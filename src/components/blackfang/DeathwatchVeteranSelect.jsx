@@ -1,18 +1,12 @@
 import { getDeathwatchVeteranGuide } from '../../data/deathwatchVeteranGuides'
+import { deriveStarfinderProfileFromOperative } from '../../data/deathwatchVeteranStarfinder'
 import { bfToneClass } from '../../lib/blackfangNavigation'
 import { getOperativeAccentTone } from '../../lib/operativeAccentTones'
+import StarfinderScoreSheet from './StarfinderScoreSheet'
+import StatChip from './StatChip'
 
 function isGravisOperative(operative) {
   return (operative.keywords ?? '').toUpperCase().includes('GRAVIS')
-}
-
-function StatChip({ label, value }) {
-  return (
-    <span className="inline-flex items-center gap-1 rounded border border-[var(--bf-border)] bg-[var(--bf-bg)] px-1.5 py-0.5 font-mono text-[10px] text-[var(--bf-text-muted)]">
-      <span className="uppercase tracking-wide">{label}</span>
-      <span className="font-semibold text-[var(--bf-field)]">{value}</span>
-    </span>
-  )
 }
 
 export default function DeathwatchVeteranSelect({
@@ -36,6 +30,7 @@ export default function DeathwatchVeteranSelect({
       <ul className="grid gap-3 sm:grid-cols-2" role="list">
         {operatives.map((operative, index) => {
           const guide = getDeathwatchVeteranGuide(operative.id)
+          const starfinderProfile = deriveStarfinderProfileFromOperative(operative)
           const selected = selectedId === operative.id
           const applying = applyingId === operative.id
           const tone = getOperativeAccentTone(index)
@@ -87,6 +82,10 @@ export default function DeathwatchVeteranSelect({
                   <StatChip label="Wounds" value={operative.wounds} />
                   <StatChip label="Base" value={operative.points} />
                 </div>
+                <StarfinderScoreSheet
+                  operative={starfinderProfile}
+                  preview
+                />
 
                 {guide ? (
                   <div className="mt-3 space-y-2 border-t border-[var(--bf-border)]/60 pt-3">

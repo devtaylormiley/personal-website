@@ -37,7 +37,7 @@ export default function SocialLinkButtons({ className = '' }) {
             target={href.startsWith('http') ? '_blank' : undefined}
             rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
             aria-label={label}
-            className="hero-era__social-link flex h-11 w-11 cursor-pointer items-center justify-center rounded-full transition-colors"
+            className="hero-era__social-link hero-action-btn hero-action-btn--ghost flex h-11 w-11 cursor-pointer items-center justify-center rounded-full"
           >
             {socialIcons[label]}
           </a>

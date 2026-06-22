@@ -319,7 +319,6 @@
   color: transparent;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  animation: hero-modern-title-shimmer 14s ease-in-out infinite;
 }
 
 @media (prefers-contrast: more) {
@@ -350,7 +349,7 @@
   box-shadow: 0 8px 24px rgb(109 40 217 / 0.35);
 }
 
-.hero-era--modern.hero-era--dark .hero-era__btn-primary:hover {
+.hero-era--modern.hero-era--dark .hero-era__btn-primary:is(:hover, :focus-visible) {
   background: #7c3aed;
 }
 
@@ -372,7 +371,7 @@
   color: #fff;
 }
 
-.hero-era--modern.hero-era--light .hero-era__btn-primary:hover {
+.hero-era--modern.hero-era--light .hero-era__btn-primary:is(:hover, :focus-visible) {
   background: #5b21b6;
 }
 
@@ -459,23 +458,23 @@
   outline-color: #fcd34d;
 }
 
-.hero-era--retro16.hero-era--dark .hero-era__btn-primary:hover {
+.hero-era--retro16.hero-era--dark .hero-era__btn-primary:is(:hover, :focus-visible) {
   background: #eab308;
   color: #1e1b4b;
 }
 
-.hero-era--retro16.hero-era--dark .hero-era__btn-secondary:hover,
-.hero-era--retro16.hero-era--light .hero-era__btn-secondary:hover {
+.hero-era--retro16.hero-era--dark .hero-era__btn-secondary:is(:hover, :focus-visible),
+.hero-era--retro16.hero-era--light .hero-era__btn-secondary:is(:hover, :focus-visible) {
   filter: brightness(0.97);
 }
 
-.hero-era--modern.hero-era--dark .hero-era__btn-secondary:hover {
+.hero-era--modern.hero-era--dark .hero-era__btn-secondary:is(:hover, :focus-visible) {
   border-color: rgb(244 114 182 / 0.35);
   background: rgb(24 14 36 / 0.62);
   color: #fff;
 }
 
-.hero-era--modern.hero-era--dark .hero-era__social-link:hover {
+.hero-era--modern.hero-era--dark .hero-era__social-link:is(:hover, :focus-visible) {
   border-color: rgb(167 139 250 / 0.4);
   color: #fcd34d;
 }

@@ -8,6 +8,7 @@ import {
   clampAbilityScoresToLevel,
   resolveOperativeAbilityScores,
 } from '../lib/abilityScores'
+import { resolveStarfinderBuildAtLevel } from '../data/deathwatchVeteranStarfinder'
 import {
   deleteHomebrewOperative,
   getHomebrewOperative,
@@ -124,6 +125,20 @@ export default function HomebrewOperativePage() {
   function updateLevel(level) {
     setOperative((prev) => {
       if (!prev) return prev
+      if (prev.scoringSystem === 'sf2e') {
+        const build = resolveStarfinderBuildAtLevel({
+          veteranId: prev.sourceVeteranId,
+          level,
+          sf2eClass: prev.sf2eClass,
+        })
+        return {
+          ...prev,
+          level: build.level,
+          abilityScores: build.abilityScores,
+          starfinderSaves: build.starfinderSaves,
+        }
+      }
+      if (!prev.isBlackshield) return prev
       const scores = resolveOperativeAbilityScores(prev)
       return {
         ...prev,
@@ -299,7 +314,7 @@ export default function HomebrewOperativePage() {
           toolbar={editorToolbar}
           onFieldChange={updateField}
           onLevelChange={updateLevel}
-          onAbilityScoreAdjust={adjustAbilityScore}
+          onAbilityScoreAdjust={operative.isBlackshield ? adjustAbilityScore : undefined}
           onWeaponChange={updateWeapon}
           onReplaceWeapon={replaceWeapon}
           onAddWeapon={addWeapon}

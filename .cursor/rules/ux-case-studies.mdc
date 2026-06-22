@@ -1,0 +1,32 @@
+---
+description: UX showcase and before/after demo patterns
+globs: "**/ux/**/*.{jsx,js,css}"
+alwaysApply: false
+---
+
+# UX case study demos
+
+## Structure
+
+- Before/after pairs in dedicated components (`*Before.jsx`, `*After.jsx`).
+- Shared demo chrome wrapper for consistent framing (`CaseStudyDemoChrome`).
+- Page-level narrative: eyebrow → title → subtitle → intro → interactive demo → takeaways.
+- Breadcrumb back to portfolio hub on project subpages.
+
+## Demo quality bar
+
+- Show **realistic product UI**, not lorem-only placeholders when demonstrating a flow.
+- Interactive demos should be keyboard-operable and reflect the same a11y/motion standards as production UI.
+- When documenting a win, tie UI change to user outcome (fewer steps, clearer hierarchy, error recovery, etc.).
+
+## Data density and forms
+
+- Tables: scannable headers, sort/filter when demonstrating enterprise patterns.
+- Forms: visible labels, inline validation timing, loading/submit/success/error states as part of the story.
+- Empty and error states are first-class — include them in case studies when relevant.
+
+## What to avoid in showcases
+
+- Decorative motion with no UX purpose.
+- Breaking real accessibility to make a demo look prettier.
+- Scope creep into unrelated product features during a case-study fix.

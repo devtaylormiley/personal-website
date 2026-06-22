@@ -5,12 +5,8 @@ import OperativeDataslate from '../components/blackfang/OperativeDataslate'
 import ActionButton from '../components/ui/ActionButton'
 import { useAuth } from '../context/AuthContext'
 import { DEATHWATCH_TEAM_SLUG } from '../data/deathwatchVeteranGuides'
-import {
-  adjustAbilityScoreWithBoost,
-  clampAbilityScoresToLevel,
-  resolveOperativeAbilityScores,
-} from '../lib/abilityScores'
-import { createHomebrewOperative, listHomebrewTeams } from '../lib/homebrewApi'
+import { deriveStarfinderProfileFromOperative, resolveStarfinderBuildAtLevel } from '../data/deathwatchVeteranStarfinder'
+import { createHomebrewOperative } from '../lib/homebrewApi'
 import { makeDefaultHomebrewOperative } from '../lib/homebrewDefaults'
 import { PLAYER_OPERATIVES_PATH } from '../lib/blackfangNavigation'
 import { getOperativeAccentTone } from '../lib/operativeAccentTones'
@@ -18,7 +14,6 @@ import {
   collectWeaponOptions,
   fetchOfficialKillTeam,
   fetchOfficialOperative,
-  fetchOperativesIndex,
   fetchWeaponsIndex,
   mapOfficialOperativeToHomebrew,
 } from '../lib/kt24Teams'
@@ -28,12 +23,19 @@ const DRAFT_OPERATIVE_ID = 'new-player-operative'
 
 function applyVeteranTemplate(official) {
   const mapped = mapOfficialOperativeToHomebrew(official, {})
+  const sf2eProfile = deriveStarfinderProfileFromOperative(official)
   delete mapped.id
   return {
     ...mapped,
     cardType: 'custom',
     category: 'po',
     notes: mapped.notes ?? '',
+    scoringSystem: 'sf2e',
+    sourceVeteranId: official.id,
+    sf2eClass: sf2eProfile.sf2eClass,
+    level: sf2eProfile.level,
+    abilityScores: sf2eProfile.abilityScores,
+    starfinderSaves: sf2eProfile.starfinderSaves,
   }
 }
 
@@ -48,20 +50,13 @@ export default function NewPlayerOperativePage() {
     ...makeDefaultHomebrewOperative(0),
     id: DRAFT_OPERATIVE_ID,
   }))
-  const [teamId, setTeamId] = useState(null)
-  const [homebrewTeams, setHomebrewTeams] = useState([])
   const [deathwatchOperatives, setDeathwatchOperatives] = useState([])
   const [selectedVeteranId, setSelectedVeteranId] = useState(null)
   const [applyingVeteranId, setApplyingVeteranId] = useState(null)
-  const [officialOperatives, setOfficialOperatives] = useState([])
   const [globalWeapons, setGlobalWeapons] = useState([])
-  const [copyLoading, setCopyLoading] = useState(false)
   const [weaponsResetKey, setWeaponsResetKey] = useState(0)
 
   useEffect(() => {
-    fetchOperativesIndex()
-      .then(setOfficialOperatives)
-      .catch(() => setOfficialOperatives([]))
     fetchWeaponsIndex()
       .then(setGlobalWeapons)
       .catch(() => setGlobalWeapons([]))
@@ -76,15 +71,11 @@ export default function NewPlayerOperativePage() {
     setLoading(true)
     setError('')
 
-    Promise.all([
-      fetchOfficialKillTeam(DEATHWATCH_TEAM_SLUG),
-      listHomebrewTeams(user.id),
-    ])
-      .then(([team, teams]) => {
+    fetchOfficialKillTeam(DEATHWATCH_TEAM_SLUG)
+      .then((team) => {
         setDeathwatchOperatives(
           [...(team.operatives ?? [])].sort((a, b) => a.name.localeCompare(b.name)),
         )
-        setHomebrewTeams(teams)
       })
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false))
@@ -105,26 +96,19 @@ export default function NewPlayerOperativePage() {
     setOperative((prev) => (prev ? { ...prev, [field]: value } : prev))
   }
 
-  function updateLevel(level) {
+  function updateSf2eLevel(level) {
     setOperative((prev) => {
-      if (!prev) return prev
-      const scores = resolveOperativeAbilityScores(prev)
-      return {
-        ...prev,
+      if (!prev || prev.scoringSystem !== 'sf2e') return prev
+      const build = resolveStarfinderBuildAtLevel({
+        veteranId: prev.sourceVeteranId,
         level,
-        abilityScores: clampAbilityScoresToLevel(scores, level),
-      }
-    })
-  }
-
-  function adjustAbilityScore(key, direction) {
-    setOperative((prev) => {
-      if (!prev) return prev
-      const scores = resolveOperativeAbilityScores(prev)
-      const level = Math.min(20, Math.max(1, Number(prev.level) || 1))
+        sf2eClass: prev.sf2eClass,
+      })
       return {
         ...prev,
-        abilityScores: adjustAbilityScoreWithBoost(scores, key, direction, level),
+        level: build.level,
+        abilityScores: build.abilityScores,
+        starfinderSaves: build.starfinderSaves,
       }
     })
   }
@@ -180,22 +164,6 @@ export default function NewPlayerOperativePage() {
     }
   }
 
-  async function handleCopyFromOperative(key) {
-    if (!key) return
-    const [teamSlug, officialOpId] = key.split(':')
-    setCopyLoading(true)
-    setError('')
-    try {
-      const official = await fetchOfficialOperative(teamSlug, officialOpId)
-      setOperative({ ...applyVeteranTemplate(official), id: DRAFT_OPERATIVE_ID })
-      setWeaponsResetKey((value) => value + 1)
-    } catch (err) {
-      setError(err.message)
-    } finally {
-      setCopyLoading(false)
-    }
-  }
-
   async function handleCreate() {
     if (!user || !operative || !canCreate) return
     setSaving(true)
@@ -205,7 +173,6 @@ export default function NewPlayerOperativePage() {
       const created = await createHomebrewOperative({
         userId: user.id,
         operative: operativePayload,
-        teamId,
       })
       navigate(
         `/projects/blackfang-campaign/homebrew-operative/${created.id}?returnTo=${RETURN_TO}`,
@@ -290,21 +257,14 @@ export default function NewPlayerOperativePage() {
             density="compact"
             accentTone={accentTone}
             isDirty={canCreate}
-            teamId={teamId}
-            homebrewTeams={homebrewTeams}
-            onTeamChange={setTeamId}
             toolbar={editorToolbar}
             onFieldChange={updateField}
-            onLevelChange={updateLevel}
-            onAbilityScoreAdjust={adjustAbilityScore}
+            onLevelChange={operative?.scoringSystem === 'sf2e' ? updateSf2eLevel : undefined}
             onWeaponChange={updateWeapon}
             onReplaceWeapon={replaceWeapon}
             onAddWeapon={addWeapon}
             onRemoveWeapon={removeWeapon}
             weaponOptions={weaponOptions}
-            officialOperatives={officialOperatives}
-            onCopyFromOperative={handleCopyFromOperative}
-            copyLoading={copyLoading}
             weaponsResetKey={weaponsResetKey}
           />
         </div>

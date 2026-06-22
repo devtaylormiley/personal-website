@@ -1,0 +1,38 @@
+---
+description: CSS architecture, design tokens, and theme shells
+globs: "**/*.css"
+alwaysApply: false
+---
+
+# CSS and design system
+
+## File organization
+
+- Import order in main CSS entry: Tailwind → theme tokens → domain/feature stylesheets → global a11y.
+- One concern per file: `hero-theme-tokens.css`, `hero-action-buttons.css`, `blackfang-theme.css`, `site-a11y.css`, etc.
+- Avoid giant monolithic CSS; co-locate feature chrome with feature names.
+
+## Tokens
+
+- Define colors/spacing/type on **theme root classes** (e.g. `.hero-era--modern`, `.blackfang-campaign`).
+- Use semantic names: `--bf-accent`, `--hero-fg-muted`, `--cs-btn-bg` — not raw hex in components.
+- Document WCAG intent in file headers when contrast pairs matter.
+- Per-theme overrides via modifier classes (`--dark`, `--light`, `--retro16`).
+
+## Layout patterns
+
+- **Portfolio/marketing**: aurora backdrops, glass panels (`backdrop-filter`), Fraunces + Inter, violet/rose accent palette.
+- **Terminal/product UI**: mono labels, uppercase tracking, phosphor accent system, inset borders, dense tables.
+- Tables: top-aligned cells (`align-top`), shared table chrome classes (`operative-card-table`, `bf-dataslate-row`).
+
+## Tailwind + CSS split
+
+- Tailwind: flex/grid, spacing, responsive breakpoints, `min-w-0` overflow fixes.
+- CSS classes: repeated visual language, animations, pseudo-elements, complex shadows, theme tokens.
+- Do not fight Tailwind with `!important`; add a semantic class instead.
+
+## Responsive and safe areas
+
+- Use `clamp()` for fluid type where the portfolio does.
+- Account for `env(safe-area-inset-top)` on fixed/sticky chrome and skip links.
+- Mobile-first nav: drawer + backdrop; desktop sidebar — skip link must bypass nav tab stops.

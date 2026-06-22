@@ -40,6 +40,10 @@ create table if not exists public.homebrew_operatives (
   notes text default '',
   level integer default 1,
   ability_scores jsonb not null default '{"strength":10,"dexterity":10,"constitution":10,"intelligence":10,"wisdom":10,"charisma":10}'::jsonb,
+  scoring_system text default null,
+  sf2e_class text default null,
+  source_veteran_id text default null,
+  starfinder_saves jsonb default null,
   image_url text default '',
   sort_order integer not null default 0,
   created_at timestamptz not null default now(),
@@ -98,6 +102,10 @@ alter table public.homebrew_kill_teams add column if not exists image_url text d
 
 alter table public.homebrew_operatives add column if not exists level integer default 1;
 alter table public.homebrew_operatives add column if not exists ability_scores jsonb default '{"strength":10,"dexterity":10,"constitution":10,"intelligence":10,"wisdom":10,"charisma":10}'::jsonb;
+alter table public.homebrew_operatives add column if not exists scoring_system text default null;
+alter table public.homebrew_operatives add column if not exists sf2e_class text default null;
+alter table public.homebrew_operatives add column if not exists source_veteran_id text default null;
+alter table public.homebrew_operatives add column if not exists starfinder_saves jsonb default null;
 alter table public.homebrew_operatives add column if not exists image_url text default '';
 
 -- Allow operatives without a kill team assignment (assign later from the registry editor)

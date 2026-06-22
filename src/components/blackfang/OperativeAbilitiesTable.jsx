@@ -91,7 +91,7 @@ export default function OperativeAbilitiesTable({
     })
   }
 
-  const cellPad = compact ? 'px-2 py-1.5' : 'px-3 py-2.5'
+  const cellPad = compact ? 'px-2 py-1.5 align-top' : 'px-3 py-2.5 align-top'
   const headClass = compact ? 'px-2 py-1 text-[10px]' : 'px-3 py-2 text-xs'
   const tableClass = `operative-card-table w-full min-w-0 text-left ${compact ? 'text-xs' : 'text-sm'}`
 

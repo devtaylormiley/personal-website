@@ -130,7 +130,11 @@ function ContactFormSlide({
           />
         </div>
 
-        <button type="submit" className="contact-showcase__submit" disabled={isSubmitting}>
+        <button
+          type="submit"
+          className="contact-showcase__submit hero-action-btn hero-action-btn--primary-themed"
+          disabled={isSubmitting}
+        >
           {isSubmitting ? contactShowcaseCopy.submittingLabel : contactShowcaseCopy.submitLabel}
         </button>
 
@@ -277,7 +281,7 @@ export default function ContactFormShowcase() {
         <div className="contact-showcase__toolbar">
           <button
             type="button"
-            className="contact-showcase__nav-btn"
+            className="contact-showcase__nav-btn hero-action-btn hero-action-btn--ghost"
             onClick={goPrev}
             aria-label={contactShowcaseCopy.prevLabel}
             disabled={isSubmitting}
@@ -294,7 +298,7 @@ export default function ContactFormShowcase() {
 
           <button
             type="button"
-            className="contact-showcase__nav-btn"
+            className="contact-showcase__nav-btn hero-action-btn hero-action-btn--ghost"
             onClick={goNext}
             aria-label={contactShowcaseCopy.nextLabel}
             disabled={isSubmitting}
@@ -306,7 +310,7 @@ export default function ContactFormShowcase() {
         <div className="contact-showcase__mode-row">
           <button
             type="button"
-            className={`contact-showcase__mode-btn${colorMode === 'dark' ? ' contact-showcase__mode-btn--active' : ''}`}
+            className={`contact-showcase__mode-btn hero-action-btn hero-action-btn--secondary${colorMode === 'dark' ? ' contact-showcase__mode-btn--active' : ''}`}
             onClick={() => setColorMode('dark')}
             aria-pressed={colorMode === 'dark'}
             disabled={isSubmitting}
@@ -315,7 +319,7 @@ export default function ContactFormShowcase() {
           </button>
           <button
             type="button"
-            className={`contact-showcase__mode-btn${colorMode === 'light' ? ' contact-showcase__mode-btn--active' : ''}`}
+            className={`contact-showcase__mode-btn hero-action-btn hero-action-btn--secondary${colorMode === 'light' ? ' contact-showcase__mode-btn--active' : ''}`}
             onClick={() => setColorMode('light')}
             aria-pressed={colorMode === 'light'}
             disabled={isSubmitting}
@@ -330,7 +334,7 @@ export default function ContactFormShowcase() {
               key={entry.id}
               type="button"
               role="tab"
-              className={`contact-showcase__dot${index === themeIndex ? ' contact-showcase__dot--active' : ''}`}
+              className={`contact-showcase__dot hero-action-btn hero-action-btn--ghost${index === themeIndex ? ' contact-showcase__dot--active' : ''}`}
               aria-selected={index === themeIndex}
               aria-label={`${entry.name} form style`}
               onClick={() => goToIndex(index)}

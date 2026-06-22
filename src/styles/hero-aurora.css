@@ -1,14 +1,12 @@
-/* Hero — modern watercolor atmosphere (split-complementary: violet + coral + teal) */
+/* Hero — modern watercolor atmosphere (static; GPU-friendly) */
 
 .hero-aurora {
   --wc-violet: #7c3aed;
   --wc-indigo: #6366f1;
   --wc-rose: #f472b6;
   --wc-coral: #fb7185;
-  --wc-peach: #fdba74;
   --wc-teal: #2dd4bf;
   --wc-sky: #38bdf8;
-  --wc-paper: #faf6f1;
   --wc-ink: #120c18;
 
   position: absolute;
@@ -25,50 +23,12 @@
   background:
     radial-gradient(ellipse 85% 60% at 50% -8%, rgb(250 246 241 / 0.07) 0%, transparent 58%),
     radial-gradient(ellipse 55% 40% at 18% 22%, rgb(244 114 182 / 0.09) 0%, transparent 62%);
-  mix-blend-mode: soft-light;
-  pointer-events: none;
-}
-
-.hero-aurora__paper {
-  position: absolute;
-  inset: 0;
-  opacity: 0.35;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
-  background-size: 180px 180px;
-  mix-blend-mode: overlay;
   pointer-events: none;
 }
 
 .hero-aurora__blob {
   position: absolute;
-  filter: url('#hero-watercolor-bleed') blur(56px);
-  will-change: transform, opacity;
-  mix-blend-mode: screen;
-}
-
-.hero-aurora__blob--purple {
-  width: min(78vw, 580px);
-  height: min(62vw, 440px);
-  left: -8%;
-  top: 8%;
-  border-radius: 62% 38% 54% 46% / 48% 52% 44% 56%;
-  background:
-    radial-gradient(ellipse at 35% 40%, rgb(124 58 237 / 0.72) 0%, rgb(99 102 241 / 0.35) 42%, transparent 72%),
-    radial-gradient(ellipse at 70% 65%, rgb(167 139 250 / 0.25) 0%, transparent 55%);
-  animation: watercolor-drift-a 28s ease-in-out infinite;
-}
-
-.hero-aurora__blob--blue {
-  width: min(72vw, 540px);
-  height: min(58vw, 420px);
-  right: -12%;
-  top: 18%;
-  border-radius: 44% 56% 38% 62% / 58% 42% 60% 40%;
-  background:
-    radial-gradient(ellipse at 40% 35%, rgb(56 189 248 / 0.55) 0%, rgb(99 102 241 / 0.28) 45%, transparent 70%),
-    radial-gradient(ellipse at 75% 70%, rgb(45 212 191 / 0.2) 0%, transparent 50%);
-  animation: watercolor-drift-b 32s ease-in-out infinite;
-  mix-blend-mode: color-dodge;
+  pointer-events: none;
   opacity: 0.85;
 }
 
@@ -79,87 +39,8 @@
   bottom: -6%;
   border-radius: 58% 42% 64% 36% / 42% 58% 38% 62%;
   background:
-    radial-gradient(ellipse at 50% 45%, rgb(45 212 191 / 0.5) 0%, rgb(56 189 248 / 0.18) 50%, transparent 72%);
-  animation: watercolor-drift-c 26s ease-in-out infinite;
-}
-
-.hero-aurora__blob--indigo {
-  width: min(60vw, 460px);
-  height: min(48vw, 360px);
-  right: 14%;
-  bottom: 12%;
-  border-radius: 48% 52% 42% 58% / 55% 45% 52% 48%;
-  background:
-    radial-gradient(ellipse at 45% 50%, rgb(251 113 133 / 0.62) 0%, rgb(244 114 182 / 0.32) 40%, transparent 68%),
-    radial-gradient(ellipse at 80% 30%, rgb(253 186 116 / 0.22) 0%, transparent 55%);
-  animation: watercolor-drift-d 24s ease-in-out infinite;
-  mix-blend-mode: soft-light;
-}
-
-.hero-aurora__blob--coral {
-  width: min(50vw, 380px);
-  height: min(44vw, 320px);
-  left: 42%;
-  top: 38%;
-  border-radius: 52% 48% 58% 42% / 46% 54% 48% 52%;
-  background:
-    radial-gradient(ellipse at 50% 50%, rgb(253 186 116 / 0.35) 0%, rgb(251 113 133 / 0.15) 45%, transparent 70%);
-  filter: blur(64px);
-  animation: watercolor-drift-e 20s ease-in-out infinite;
-  mix-blend-mode: overlay;
-  opacity: 0.9;
-}
-
-.hero-aurora__sweep {
-  position: absolute;
-  inset: -35%;
-  background: conic-gradient(
-    from 210deg at 48% 42%,
-    transparent 0deg,
-    rgb(244 114 182 / 0.14) 35deg,
-    rgb(124 58 237 / 0.16) 95deg,
-    rgb(56 189 248 / 0.12) 165deg,
-    rgb(251 113 133 / 0.1) 235deg,
-    rgb(45 212 191 / 0.11) 305deg,
-    transparent 360deg
-  );
-  filter: blur(48px);
-  animation: watercolor-sweep 36s linear infinite;
-  opacity: 0.75;
-  mix-blend-mode: screen;
-}
-
-.hero-aurora__caustics {
-  position: absolute;
-  inset: 0;
-  opacity: 0.42;
-  background-image:
-    radial-gradient(ellipse 70% 55% at 22% 58%, rgb(244 114 182 / 0.18) 0%, transparent 52%),
-    radial-gradient(ellipse 55% 45% at 78% 38%, rgb(56 189 248 / 0.14) 0%, transparent 48%),
-    radial-gradient(ellipse 45% 38% at 52% 78%, rgb(253 186 116 / 0.12) 0%, transparent 42%);
-  background-size: 220% 220%;
-  animation: watercolor-caustics 16s ease-in-out infinite;
-  mix-blend-mode: soft-light;
-  pointer-events: none;
-}
-
-.hero-aurora__caustics::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    repeating-linear-gradient(
-      118deg,
-      transparent 0px,
-      transparent 52px,
-      rgb(250 246 241 / 0.018) 52px,
-      rgb(250 246 241 / 0.035) 104px,
-      transparent 156px
-    );
-  background-size: 280px 280px;
-  animation: watercolor-fiber 24s linear infinite;
-  opacity: 0.55;
-  mix-blend-mode: overlay;
+    radial-gradient(ellipse at 50% 45%, rgb(45 212 191 / 0.38) 0%, rgb(56 189 248 / 0.14) 50%, transparent 72%);
+  opacity: 0.7;
 }
 
 .hero-aurora__depth {
@@ -180,148 +61,9 @@
   pointer-events: none;
 }
 
-.hero-aurora__particles {
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(circle at 12% 28%, rgb(253 186 116 / 0.08) 0 2px, transparent 2px),
-    radial-gradient(circle at 88% 32%, rgb(244 114 182 / 0.06) 0 1.5px, transparent 1.5px),
-    radial-gradient(circle at 58% 72%, rgb(56 189 248 / 0.07) 0 2px, transparent 2px),
-    radial-gradient(circle at 34% 82%, rgb(167 139 250 / 0.05) 0 1px, transparent 1px),
-    radial-gradient(circle at 72% 18%, rgb(250 246 241 / 0.04) 0 1px, transparent 1px);
-  background-size: 100% 100%;
-  animation: watercolor-sparkle 20s ease-in-out infinite;
-  pointer-events: none;
-  mix-blend-mode: screen;
-}
-
 .hero-content {
   position: relative;
   z-index: 10;
-}
-
-@keyframes watercolor-drift-a {
-  0%,
-  100% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
-    opacity: 0.82;
-  }
-
-  33% {
-    transform: translate(6%, -4%) rotate(3deg) scale(1.06);
-    opacity: 0.95;
-  }
-
-  66% {
-    transform: translate(-4%, 5%) rotate(-2deg) scale(0.96);
-    opacity: 0.78;
-  }
-}
-
-@keyframes watercolor-drift-b {
-  0%,
-  100% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
-  }
-
-  50% {
-    transform: translate(-8%, 6%) rotate(-4deg) scale(1.08);
-  }
-}
-
-@keyframes watercolor-drift-c {
-  0%,
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
-
-  40% {
-    transform: translate(5%, -6%) scale(1.04);
-  }
-
-  80% {
-    transform: translate(-6%, 4%) scale(0.94);
-  }
-}
-
-@keyframes watercolor-drift-d {
-  0%,
-  100% {
-    transform: translate(0, 0) rotate(0deg);
-    opacity: 0.72;
-  }
-
-  50% {
-    transform: translate(4%, -8%) rotate(5deg);
-    opacity: 0.92;
-  }
-}
-
-@keyframes watercolor-drift-e {
-  0%,
-  100% {
-    transform: translate(0, 0) scale(1);
-    opacity: 0.75;
-  }
-
-  50% {
-    transform: translate(-5%, 3%) scale(1.12);
-    opacity: 0.95;
-  }
-}
-
-@keyframes watercolor-sweep {
-  from {
-    transform: rotate(0deg) scale(1);
-  }
-
-  to {
-    transform: rotate(360deg) scale(1.02);
-  }
-}
-
-@keyframes watercolor-caustics {
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-@keyframes watercolor-fiber {
-  from {
-    transform: translateX(0) translateY(0);
-  }
-
-  to {
-    transform: translateX(-140px) translateY(30px);
-  }
-}
-
-@keyframes watercolor-sparkle {
-  0%,
-  100% {
-    transform: translateY(0);
-    opacity: 0.65;
-  }
-
-  50% {
-    transform: translateY(-10px);
-    opacity: 1;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-aurora__blob,
-  .hero-aurora__sweep,
-  .hero-aurora__caustics,
-  .hero-aurora__caustics::after,
-  .hero-aurora__particles {
-    animation: none;
-  }
 }
 
 /* ——— Modern light: watercolor on paper ——— */
@@ -336,57 +78,15 @@
   background:
     radial-gradient(ellipse 85% 60% at 50% -8%, rgb(255 255 255 / 0.85) 0%, transparent 58%),
     radial-gradient(ellipse 55% 40% at 18% 22%, rgb(244 114 182 / 0.14) 0%, transparent 62%);
-  mix-blend-mode: multiply;
-}
-
-.hero-era--modern.hero-era--light .hero-aurora__paper {
-  opacity: 0.22;
-  mix-blend-mode: multiply;
 }
 
 .hero-era--modern.hero-era--light .hero-aurora__blob {
-  mix-blend-mode: multiply;
-  filter: url('#hero-watercolor-bleed') blur(48px);
-  opacity: 0.72;
-}
-
-.hero-era--modern.hero-era--light .hero-aurora__blob--purple {
-  background:
-    radial-gradient(ellipse at 35% 40%, rgb(167 139 250 / 0.55) 0%, rgb(196 181 253 / 0.28) 42%, transparent 72%);
-}
-
-.hero-era--modern.hero-era--light .hero-aurora__blob--blue {
-  mix-blend-mode: multiply;
-  background:
-    radial-gradient(ellipse at 40% 35%, rgb(125 211 252 / 0.55) 0%, rgb(147 197 253 / 0.25) 45%, transparent 70%);
+  opacity: 0.65;
 }
 
 .hero-era--modern.hero-era--light .hero-aurora__blob--teal {
   background:
-    radial-gradient(ellipse at 50% 45%, rgb(153 246 228 / 0.45) 0%, rgb(186 230 253 / 0.18) 50%, transparent 72%);
-}
-
-.hero-era--modern.hero-era--light .hero-aurora__blob--indigo {
-  mix-blend-mode: multiply;
-  background:
-    radial-gradient(ellipse at 45% 50%, rgb(251 113 133 / 0.42) 0%, rgb(244 114 182 / 0.22) 40%, transparent 68%),
-    radial-gradient(ellipse at 80% 30%, rgb(253 186 116 / 0.28) 0%, transparent 55%);
-}
-
-.hero-era--modern.hero-era--light .hero-aurora__blob--coral {
-  mix-blend-mode: multiply;
-  background:
-    radial-gradient(ellipse at 50% 50%, rgb(254 215 170 / 0.45) 0%, rgb(251 113 133 / 0.12) 45%, transparent 70%);
-}
-
-.hero-era--modern.hero-era--light .hero-aurora__sweep {
-  mix-blend-mode: multiply;
-  opacity: 0.55;
-}
-
-.hero-era--modern.hero-era--light .hero-aurora__caustics {
-  mix-blend-mode: multiply;
-  opacity: 0.35;
+    radial-gradient(ellipse at 50% 45%, rgb(153 246 228 / 0.35) 0%, rgb(186 230 253 / 0.14) 50%, transparent 72%);
 }
 
 .hero-era--modern.hero-era--light .hero-aurora__depth {
@@ -401,8 +101,8 @@
     inset 0 0 220px rgb(219 39 119 / 0.04);
 }
 
-.hero-era--modern.hero-era--light .hero-aurora__particles {
-  mix-blend-mode: multiply;
-  opacity: 0.55;
+@media (max-width: 767px) {
+  .hero-aurora__blob--teal {
+    opacity: 0.5;
+  }
 }
-
